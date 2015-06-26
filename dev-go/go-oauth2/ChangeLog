@@ -1,0 +1,23 @@
+# ChangeLog for dev-go/go-oauth2
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-go/go-oauth2/ChangeLog,v 1.4 2015/06/25 20:27:57 williamh Exp $
+
+*go-oauth2-9999 (25 Jun 2015)
+
+  25 Jun 2015; William Hubbs <williamh@gentoo.org> +go-oauth2-9999.ebuild:
+  Add live ebuild that uses the go eclasses
+
+*go-oauth2-1.4.2_p20150527 (09 Jun 2015)
+
+  09 Jun 2015; Zac Medico <zmedico@gentoo.org>
+  +go-oauth2-1.4.2_p20150527.ebuild:
+  Add 1.4.2_p20150527 snapshot with timestamp preservation for bug 551486.
+
+  07 Jun 2015; Justin Lecher <jlec@gentoo.org> metadata.xml:
+  Add github to remote-id in metadata.xml
+
+*go-oauth2-1.4.2_p20150511 (25 May 2015)
+
+  25 May 2015; Zac Medico <zmedico@gentoo.org>
+  +go-oauth2-1.4.2_p20150511.ebuild, +metadata.xml:
+  Add go-oauth2.
