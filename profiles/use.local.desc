@@ -1241,7 +1241,6 @@ dev-db/cppdb:sqlite_internal - Don't build a separate sqlite3 loadable module bu
 dev-db/drizzle:curl - Enable the HTTP authentication plugin (using net-misc/curl). This is needed for the tests to apply properly.
 dev-db/drizzle:doc - Build the API documentation for the package, using app-doc/doxygen. Warning, this might take over an hour on slower machines.
 dev-db/drizzle:gearman - Enable the gearman plugins for user-defined functions and logging (using sys-cluster/gearman).
-dev-db/drizzle:haildb - Use the dev-db/haildb libraries to replace the innodb plugin storage engine with haildb (an innodb fork).
 dev-db/drizzle:md5 - Enable the MD5 plugin, using dev-libs/libgcrypt; this replaces the older openssl and gnutls USE flags.
 dev-db/drizzle:memcache - Enable the memcache plugin for user-defined functions and statistics in I_S tables (using dev-libs/libmemcached). Currently restricts tests because of an upstream testsuite bug.
 dev-db/drizzle:pam - Enable the PAM authentication plugin (using sys-libs/pam). The configuration file created will be /etc/pam.d/drizzle.
@@ -1620,7 +1619,6 @@ dev-java/gnu-classpath:gstreamer - Build with GStreamer javax.sound.sampler prov
 dev-java/gnu-classpath:gtk - Build with Gtk+ AWT peers
 dev-java/gnu-classpath:qt4 - Build with Qt4 AWT peers
 dev-java/gnu-classpath:xml - Build with native XML backend
-dev-java/httpcomponents-core:deprecated - Build deprecated classes
 dev-java/ibm-jdk-bin:javacomm - Enable Java Communications API support
 dev-java/icedtea:X - Make X buildtime-only depenency.
 dev-java/icedtea:alsa - Make alsa buildtime-only dependency.
@@ -5343,7 +5341,6 @@ net-irc/unrealircd:operoverride-verify - Enable requiring opers to invite themse
 net-irc/unrealircd:prefixaq - Enable chanadmin and chanowner prefixes
 net-irc/unrealircd:showlistmodes - Support displaying channel modes in /list
 net-irc/unrealircd:shunnotices - Enable notifying a user when un-shunned
-net-irc/unrealircd:spoof - Enable the spoof protection
 net-irc/unrealircd:topicisnuhost - Enable displaying nick!user@host as topic setter
 net-irc/unrealircd:usermod - Enable /set* and /chg* commands
 net-irc/weechat:alias - Enable plugin for alias control.
@@ -6394,7 +6391,6 @@ sci-chemistry/molequeue:server - Build the serve application
 sci-chemistry/molequeue:zeromq - Build with net-libs/zeromq support
 sci-chemistry/mopac7:gmxmopac7 - Add support library for gromacs
 sci-chemistry/oasis:minimal - Restricts functionality on free software
-sci-chemistry/openbabel:swig - Use swig to rebuild language bindings.
 sci-chemistry/pdb2pqr:opal - Add web interface via opal
 sci-chemistry/pdb2pqr:pdb2pka - Install experimental pdb2pka interface
 sci-chemistry/pymol:apbs - Install the apbs plugin

@@ -1,6 +1,19 @@
 # ChangeLog for eclass directory
 # Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.1691 2015/06/27 22:02:21 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.1694 2015/06/29 00:27:17 pesa Exp $
+
+  29 Jun 2015; Davide Pesavento <pesa@gentoo.org> qmake-utils.eclass:
+  Introduce qt{4,5}_get_plugindir(). Rephrase some eclass doc.
+
+  28 Jun 2015; James Le Cuirot <chewi@gentoo.org> java-utils-2.eclass:
+  The -source flag was added in 1.3 or 1.4 (not sure) and we have special code
+  to handle this but no one in their right mind would build with 1.2 or 1.3
+  now. Removing this code allows the ecj-gcj ebuild to call java-pkg_javac-args
+  without a proper VM present.
+
+  28 Jun 2015; Johannes Huber <johu@gentoo.org> kde5.eclass:
+  Loop optimization as suggested by Michal Górny <mgorny@gentoo.org> on -dev
+  ml.
 
   27 Jun 2015; Johannes Huber <johu@gentoo.org> kde5-functions.eclass,
   kde5.eclass:
