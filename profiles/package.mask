@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.16645 2015/07/02 12:20:16 monsieurp Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.16653 2015/07/05 11:45:17 monsieurp Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -29,6 +29,31 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Patrice Clement <monsieurp@gentoo.org> (5 Jul 2015)
+# Package does not compile with recent JDKs (>= jdk-1.8). More recent versions
+# use Gradle which we don't have packaged in Gentoo yet.
+# Removal in 30 days. See bug #552452.
+net-p2p/frostwire
+
+# Manuel Rüger <mrueg@gentoo.org> (5 Jul 2015)
+# Mask for various issues (missing ruby20 support, test failures)
+# Removal in 30 days
+app-text/deplate
+app-text/migemo
+dev-utils/travis-yaml
+
+# Hans de Graaff <graaff@gentoo.org> (5 Jul 2015)
+# Mask for removal in 30 days. This is an old slot with a supporting
+# package only needed for this slot. Use dev-ruby/dotenv:2 instead.
+# This also fixes bug #553402 (file collision between slots).
+dev-ruby/dotenv:0
+dev-ruby/dotenv-deployment
+
+# Michael Orlitzky <mjo@gentoo.org> (3 Jul 2015)
+# Mask for removal in 30 days. Superseded by dev-haskell/biosff;
+# use that instead. Bug #553636.
+sci-biology/flower
 
 # Patrick Lauer <patrick@gentoo.org> (1 Jul 2015)
 # Wrong version #553670
@@ -224,7 +249,6 @@ dev-lang/php:7.0
 =virtual/perl-Text-Balanced-2.30.0
 =virtual/perl-Text-ParseWords-3.300.0
 =virtual/perl-Time-Piece-1.290.0
-=virtual/perl-Unicode-Collate-1.120.0
 =virtual/perl-XSLoader-0.200.0
 =virtual/perl-autodie-2.260.0
 =virtual/perl-bignum-0.390.0
@@ -253,19 +277,6 @@ dev-lang/php:7.0
 # see bug 526642. Please uninstall it and/or upgrade to media-libs/lcms:2
 # # (Please keep this mask and message in place for a month.)
 media-libs/lcms:0
-
-# Hans de Graaff <graaff@gentoo.org> (25 May 2015)
-# With the wwwold services going offline gorg no longer plays a role
-# in Gentoo's web environment. The wwwold services went offline due to
-# issues with gorg and instead of trying to fix them it was decided to
-# move the offline date forward. Consequently gorg will now also be
-# masked for removal in 30 days.
-www-servers/gorg
-
-# Anthony G. Basile <blueness@gentoo.org> (14 May 2015)
-# No longer required by any packages in the tree.
-# Masked for removal in 30 days.
-sys-apps/getent
 
 # Ian Delaney <idella4@gentoo.org> (13 May 2015)
 # package unused, no revdeps, obsolete.
@@ -537,6 +548,7 @@ dev-java/ibm-jdk-bin:1.5
 # Needs to be further tested and revised by both Java and Ruby herds.
 >=dev-java/jruby-1.7.12
 dev-ruby/bitescript
+dev-ruby/bouncy-castle-java
 dev-ruby/duby
 dev-ruby/jruby-openssl
 dev-ruby/weakling
