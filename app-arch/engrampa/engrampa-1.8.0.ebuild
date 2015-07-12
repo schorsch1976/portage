@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-arch/engrampa/engrampa-1.8.0.ebuild,v 1.6 2014/07/18 14:40:15 tomwij Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-arch/engrampa/engrampa-1.8.0.ebuild,v 1.8 2015/07/12 00:28:59 np-hardass Exp $
 
 EAPI="5"
 
