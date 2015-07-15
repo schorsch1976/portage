@@ -1,6 +1,16 @@
 # ChangeLog for dev-ruby/ruby-clutter-gtk
 # Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-clutter-gtk/ChangeLog,v 1.8 2015/07/05 10:25:31 mrueg Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-clutter-gtk/ChangeLog,v 1.10 2015/07/10 08:14:48 graaff Exp $
+
+*ruby-clutter-gtk-2.2.5 (10 Jul 2015)
+
+  10 Jul 2015; Hans de Graaff <graaff@gentoo.org>
+  +ruby-clutter-gtk-2.2.5.ebuild:
+  Version bump. Run tests.
+
+  09 Jul 2015; Mikle Kolyada <zlogene@gentoo.org>
+  ruby-clutter-gtk-2.2.3-r1.ebuild, ruby-clutter-gtk-2.2.3.ebuild:
+  Add ~x86 keyword wrt bug #554164
 
 *ruby-clutter-gtk-2.2.3-r1 (05 Jul 2015)
 

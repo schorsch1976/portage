@@ -1,6 +1,18 @@
 # ChangeLog for dev-texlive/texlive-latexextra
-# Copyright 1999-2014 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-latexextra/ChangeLog,v 1.91 2014/11/04 10:41:32 aballier Exp $
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-latexextra/ChangeLog,v 1.94 2015/07/14 12:23:27 aballier Exp $
+
+  14 Jul 2015; Alexis Ballier <aballier@gentoo.org>
+  texlive-latexextra-2014.ebuild:
+  fix previous commit: bump tl-fontsrecommended dep.
+
+  14 Jul 2015; Alexis Ballier <aballier@gentoo.org>
+  texlive-latexextra-2014.ebuild:
+  add dep on dev-texlive/texlive-fontsrecommended, bug #552192 by Mathy
+  Vanvoorden
+
+  12 Jul 2015; Agostino Sarubbo <ago@gentoo.org> texlive-latexextra-2014.ebuild:
+  Stable for amd64, wrt bug #550840
 
   04 Nov 2014; Alexis Ballier <aballier@gentoo.org>
   -texlive-latexextra-2011-r2.ebuild:
