@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/wireshark-1.12.4.ebuild,v 1.12 2015/04/13 17:29:19 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/wireshark-1.12.4.ebuild,v 1.14 2015/07/20 16:28:19 pinkbyte Exp $
 
 EAPI=5
 inherit autotools eutils fcaps multilib qmake-utils qt4-r2 user
@@ -11,7 +11,7 @@ SRC_URI="${HOMEPAGE}download/src/all-versions/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0/${PV}"
-KEYWORDS="alpha amd64 ~arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd"
+KEYWORDS="ia64"
 IUSE="
 	adns +caps crypt doc doc-pdf geoip +gtk3 ipv6 kerberos lua +netlink +pcap
 	portaudio +qt4 qt5 sbc selinux smi ssl zlib
@@ -48,7 +48,7 @@ CDEPEND="
 		)
 	qt5? (
 		dev-qt/qtcore:5
-		dev-qt/qtgui:5[accessibility]
+		dev-qt/qtgui:5
 		dev-qt/qtprintsupport:5
 		dev-qt/qtwidgets:5
 		x11-misc/xdg-utils
