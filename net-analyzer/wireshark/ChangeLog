@@ -1,6 +1,16 @@
 # ChangeLog for net-analyzer/wireshark
 # Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/ChangeLog,v 1.737 2015/07/20 16:28:19 pinkbyte Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/ChangeLog,v 1.740 2015/07/24 05:44:36 jer Exp $
+
+  24 Jul 2015; Jeroen Roovers <jer@gentoo.org> wireshark-1.12.6.ebuild,
+  +files/wireshark-1.12.6-rcc.patch:
+  With USE=qt5, make sure we discover the correct RCC (bug #555638).
+
+  22 Jul 2015; Mikle Kolyada <zlogene@gentoo.org> -wireshark-1.12.4.ebuild:
+  Drop old insecure version
+
+  22 Jul 2015; Mikle Kolyada <zlogene@gentoo.org> wireshark-1.12.6.ebuild:
+  ia64 stable wrt bug #552434
 
   20 Jul 2015; Sergey Popov <pinkbyte@gentoo.org> wireshark-1.12.4.ebuild,
   wireshark-1.12.6.ebuild, wireshark-1.99.7.ebuild, wireshark-99999999.ebuild:

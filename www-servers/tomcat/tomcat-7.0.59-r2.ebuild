@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-servers/tomcat/tomcat-7.0.59-r2.ebuild,v 1.1 2015/07/21 15:33:26 monsieurp Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-servers/tomcat/tomcat-7.0.59-r2.ebuild,v 1.5 2015/07/23 09:07:57 ago Exp $
 
 EAPI=5
 
@@ -16,7 +16,7 @@ SRC_URI="mirror://apache/${PN}/tomcat-7/v${PV}/src/${MY_P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="7"
-KEYWORDS="~amd64 ~x86 ~ppc ~ppc64 ~x86-freebsd ~amd64-linux ~x86-linux ~x86-solaris"
+KEYWORDS="amd64 ~ppc ~ppc64 x86 ~x86-freebsd ~amd64-linux ~x86-linux ~x86-solaris"
 IUSE="extra-webapps websockets"
 
 RESTRICT="test" # can we run them on a production system?
@@ -69,7 +69,7 @@ EANT_EXTRA_ARGS="-Dversion=${PV}-gentoo -Dversion.number=${PV} -Dcompile.debug=f
 IM_REV="-r1"
 
 src_compile() {
-	use websockets && EANT_EXTRA_ARGS="-Djava.7.home=${JAVA_HOME}"
+	EANT_EXTRA_ARGS+=" -Djava.7.home=${JAVA_HOME}"
 	EANT_GENTOO_CLASSPATH_EXTRA+=":$(java-pkg_getjar --build-only ant-core ant.jar)"
 	java-pkg-2_src_compile
 }
@@ -109,8 +109,8 @@ src_install() {
 
 	# create "logs" directory in $CATALINA_BASE
 	# and set correct perms, see #458890
-	dodir logs
-	fperms 0750 logs
+	dodir "${dest}"/logs
+	fperms 0750 "${dest}"/logs
 
 	# replace the default pw with a random one, see #92281
 	local randpw=$(echo ${RANDOM}|md5sum|cut -c 1-15)
