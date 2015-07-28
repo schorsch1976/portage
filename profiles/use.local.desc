@@ -1446,6 +1446,7 @@ dev-haskell/biosff:fclip - Build the fclip executable.
 dev-haskell/biosff:flower - Build the flower executable.
 dev-haskell/biosff:frecover - Build the frecover executable.
 dev-haskell/c2hs:regression - run regression tests
+dev-haskell/cabal-install:network-uri - Get Network.URI from the network-uri package.
 dev-haskell/cabal-install:noprefs - Ignore 'preferred-versions' file from hackage's tarball.
 dev-haskell/certificate:executable - Build the executable
 dev-haskell/cgi:extensible-exceptions-in-base - Required to be enabled for >=dev-lang/ghc-7.
@@ -4146,6 +4147,9 @@ media-sound/fapg:xspf - Enable support for saving XSPF playlists.
 media-sound/flacon:mac - Add support for Monkey's Audio files
 media-sound/flacon:replaygain - Support for Replay Gain metadata, for relative volume adjustment
 media-sound/flacon:tta - Add support for True Audio encoding
+media-sound/forked-daapd:itunes - Enable support for iTunes library XML
+media-sound/forked-daapd:lastfm - Enable LastFM scrobbling support
+media-sound/forked-daapd:mpd - Enable streaming to mpd
 media-sound/freewheeling:fluidsynth - compile with support for fluidsynth
 media-sound/frescobaldi:portmidi - Enable media-libs/portmidi support
 media-sound/gejengel:audioscrobbler - Enable track submission on last.fm
@@ -5428,6 +5432,7 @@ net-libs/libetpan:liblockfile - Enable support for liblockfile library
 net-libs/libgsasl:gcrypt - Use dev-libs/libgcrypt for low-level crypto
 net-libs/libgsasl:ntlm - Add support for Microsoft's NTLM mechanism using net-libs/libntlm
 net-libs/libinfinity:server - Build and install the server binary including init.d/conf.d-scripts. Needed if you want to host an infinote server for gobby.
+net-libs/libisds:openssl - Use dev-libs/openssl as crypto backend instead of app-crypt/gpgme and dev-libs/libgcrypt
 net-libs/libkolabxml:csharp - Enable C# language bindings
 net-libs/libmicrohttpd:epoll - use epoll() system call
 net-libs/libmicrohttpd:messages - enable error messages
