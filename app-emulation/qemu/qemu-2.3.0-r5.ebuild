@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/qemu-2.3.0-r5.ebuild,v 1.1 2015/08/03 15:36:55 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/qemu-2.3.0-r5.ebuild,v 1.4 2015/08/05 06:43:00 vapier Exp $
 
 EAPI=5
 
@@ -20,7 +20,7 @@ else
 	SRC_URI="http://wiki.qemu-project.org/download/${P}.tar.bz2
 	${BACKPORTS:+
 		http://dev.gentoo.org/~cardoe/distfiles/${P}-${BACKPORTS}.tar.xz}"
-	KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd"
+	KEYWORDS="amd64 ~ppc ~ppc64 x86 ~x86-fbsd"
 fi
 
 DESCRIPTION="QEMU + Kernel-based Virtual Machine userland tools"
@@ -528,14 +528,14 @@ src_install() {
 	newdoc pc-bios/README README.pc-bios
 	dodoc docs/qmp/*.txt
 
-	# Remove SeaBIOS since we're using the SeaBIOS packaged one
-	rm "${ED}/usr/share/qemu/bios.bin"
-	if use qemu_softmmu_targets_x86_64 || use qemu_softmmu_targets_i386; then
-		dosym ../seabios/bios.bin /usr/share/qemu/bios.bin
-	fi
-
-	# Remove vgabios since we're using the vgabios packaged one
 	if [[ -n ${softmmu_targets} ]]; then
+		# Remove SeaBIOS since we're using the SeaBIOS packaged one
+		rm "${ED}/usr/share/qemu/bios.bin"
+		if use qemu_softmmu_targets_x86_64 || use qemu_softmmu_targets_i386; then
+			dosym ../seabios/bios.bin /usr/share/qemu/bios.bin
+		fi
+
+		# Remove vgabios since we're using the vgabios packaged one
 		rm "${ED}/usr/share/qemu/vgabios.bin"
 		rm "${ED}/usr/share/qemu/vgabios-cirrus.bin"
 		rm "${ED}/usr/share/qemu/vgabios-qxl.bin"
