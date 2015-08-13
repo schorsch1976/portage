@@ -1,10 +1,12 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/curses-hexedit/curses-hexedit-0.9.7.ebuild,v 1.2 2014/12/30 23:29:21 vapier Exp $
+# $Id$
 
 # There's already a "hexedit" package in the tree, so name this one differently
 
-EAPI="4"
+EAPI="5"
+
+inherit toolchain-funcs
 
 MY_P=${P/curses-}
 DESCRIPTION="full screen curses hex editor (with insert/delete support)"
@@ -16,11 +18,14 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND="sys-libs/ncurses"
+RDEPEND="sys-libs/ncurses:="
 DEPEND="${RDEPEND}"
 
 S=${WORKDIR}/${MY_P}
 
 src_configure() {
+	# Package has an old configure script.
+	CONFIG_SHELL="/bin/bash"
+	tc-export CC
 	econf --program-prefix=curses-
 }
