@@ -32,7 +32,6 @@ app-admin/clsync:extra-hardened - Enable extra security checks. This will hurt p
 app-admin/clsync:gio - Enable GIO for FS monitoring (glib based alternative to inotify interface, not recommended; if both are compiled, may be selected at runtime).
 app-admin/clsync:highload-locks - Allows to use spinlocks for short delays instead of mutexes, but only on SMP systems.
 app-admin/clsync:namespaces - Enable namespaces isolation.
-app-admin/clsync:seccomp - Enable seccomp for system call filtering.
 app-admin/collectd:collectd_plugins_aggregation - Build the aggregation plugin (aggregate multiplte values into a single value)
 app-admin/collectd:collectd_plugins_apache - Build the apache input plugin (transferred bytes, handled requests, detailed scoreboard statistics)
 app-admin/collectd:collectd_plugins_apcups - Build the apcups input plugin (UPS charge, load, input/output/battery voltage, etc.)
@@ -3911,6 +3910,7 @@ media-libs/mlt:ruby - Build SWIG bindings for Ruby
 media-libs/netpbm:rle - Build converters for the RLE format (utah raster toolkit)
 media-libs/openal:alstream - Build and install the FFmpeg based alstream example utility
 media-libs/opencolorio:pdf - Install extra documentation in PDF format
+media-libs/opencv:contrib - Install user contributed scripts from opencv_contrib
 media-libs/opencv:cuda - Enable NVIDIA Cuda computations support
 media-libs/opencv:eigen - Enable usage of dev-cpp/eigen for computations
 media-libs/opencv:ipp - Enable Intel Integrated Primitive support
@@ -7004,7 +7004,6 @@ sys-apps/v86d:x86emu - Use x86emu for Video BIOS calls
 sys-apps/watchdog:nfs - enable support for checking nfs mounts
 sys-apps/xinetd:rpc - support RPC services
 sys-auth/consolekit:cgroups - Use the kernel to track processes instead of the session cookie.
-sys-auth/consolekit:pm-utils - Adds support for suspend/resume using sys-power/pm-utils
 sys-auth/consolekit:policykit - Use the PolicyKit framework (sys-auth/polkit) to get authorization for suspend/shutdown.
 sys-auth/consolekit:systemd-units - Install systemd unit files to replace the modern functionality of logind in sys-apps/systemd. Not recommended.
 sys-auth/fingerprint-gui:upekbsapi - Add UPEK BSAPI drivers for identify functions on some readers
