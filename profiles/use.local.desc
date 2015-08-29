@@ -3162,6 +3162,7 @@ kde-apps/dolphin-plugins:bazaar - Enable support for the bazaar VCS
 kde-apps/dolphin-plugins:mercurial - Enable support for the mercurial VCS
 kde-apps/gwenview:kipi - Support for the KDE Image Plugin Interface.
 kde-apps/kaccessible:speechd - Enable support for the speech-dispatcher speech synthesizer
+kde-apps/kaccounts-integration:kdepim - KDE PIM integration via kde-apps/kdepimlibs
 kde-apps/kalzium:editor - Enable the embedded molecule editor/viewer
 kde-apps/kalzium:solver - Enable the equation solver
 kde-apps/kdeadmin-meta:cron - Installs KDE application for virtual/cron configuration
@@ -7804,7 +7805,6 @@ x11-apps/intel-gpu-tools:python - Install python based register dumper utilities
 x11-apps/intel-gpu-tools:test-programs - Install test programs for DRM driver development
 x11-apps/intel-gpu-tools:unwind - Provide automatic stack traces on test failures
 x11-apps/mesa-progs:egl - Build EGL utilities
-x11-apps/mesa-progs:gles1 - Build OpenGL ES 1 utilities
 x11-apps/mesa-progs:gles2 - Build OpenGL ES 2 utilities
 x11-apps/xdm:consolekit - Enable native sys-auth/consolekit support
 x11-apps/xdm:xdm-auth - Enable XDM-AUTHENTICATION-1 support
