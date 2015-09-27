@@ -30,6 +30,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Dion Moult <moult@gentoo.org> (27 Sep 2015)
+# Masked for removal in 30 days. Bug #514514
+# Fails to build for ages.
+sci-geosciences/grass
+sci-geosciences/gdal-grass
+
 # Patrice Clement <monsieurp@gentoo.org> (24 Sep 2015)
 # This package was never marked stable 
 # and is relying on an old version of JavaCC.
@@ -73,11 +79,6 @@ net-wireless/rtl8180
 # Masked for removal in 30 days. Bug #552284
 # Upstream disappeared. Use sci-chemistry/openbabel instead.
 sci-chemistry/babel
-
-# Dion Moult <moult@gentoo.org> (24 Sep 2015)
-# Masked for removal in 30 days.
-# Upstream disappeared. Bug #510594
-app-cdr/nero
 
 # Dion Moult <moult@gentoo.org> (24 Sep 2015)
 # Masked for removal in 30 days.
