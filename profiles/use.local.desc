@@ -1972,7 +1972,7 @@ dev-libs/gf2x:bindist - Disable automatic fine-tuning to local processor feature
 dev-libs/glib:dbus - Enable dependencies required by glib libraries using dbus service to manage settings saving
 dev-libs/glib:mime - Pull in shared MIME database that many glib-based applications require at runtime to detect or open files. Warning: do not disable this flag unless installing on a headless server.
 dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util/systemtap
-dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software.
+dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software; build gresource utility with ELF support.
 dev-libs/gmp:pgo - after building gmp, run some tests against to produce faster libraries -- this option will double the compile time
 dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
 dev-libs/hidapi:fox - Build a x11-libs/fox GUI
@@ -7001,7 +7001,8 @@ sys-apps/openrc:tools - build optional tools
 sys-apps/pacman:gpg - Support verifying packages signed with GPG using app-crypt/gpgme
 sys-apps/paludis:pbins - Enable binary package support. Adds dependency upon app-arch/libarchive
 sys-apps/paludis:pink - Use a less boring colourscheme than the default
-sys-apps/paludis:search-index - Enable cave search --index. Requires sqlite.
+sys-apps/paludis:search-index - Enable cave search --index. Requires dev-db/sqlite.
+sys-apps/paludis:xml - Build xml things for metadata.xml and GLSA support (needs dev-libs/libxml2).
 sys-apps/pciutils:dns - Enable support for querying the central database of PCI IDs using DNS
 sys-apps/pciutils:kmod - Enable sys-apps/kmod support for the -k switch in lspci command
 sys-apps/pciutils:zlib - Support compressed pci.ids database
