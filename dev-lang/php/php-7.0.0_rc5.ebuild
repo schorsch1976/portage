@@ -745,13 +745,13 @@ pkg_postinst() {
 	fi
 	elog
 	elog "This ebuild installed a version of php.ini based on php.ini-${PHP_INI_VERSION} version."
-	elog "You can chose which version of php.ini to install by default by setting PHP_INI_VERSION to either"
+	elog "You can choose which version of php.ini to install by default by setting PHP_INI_VERSION to either"
 	elog "'production' or 'development' in ${EPREFIX}/etc/make.conf"
 	elog "Both versions of php.ini can be found in ${EPREFIX}/usr/share/doc/${PF}"
 
 	elog
-	elog "For more details on how minor version slotting works (PHP_TARGETS) please read the upgrade guide:"
-	elog "https://www.gentoo.org/proj/en/php/php-upgrading.xml"
+	elog "For more details on how minor version slotting works (PHP_TARGETS) please see the wiki:"
+	elog "https://wiki.gentoo.org/wiki/PHP"
 	elog
 }
 
