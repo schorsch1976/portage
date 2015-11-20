@@ -32,3 +32,8 @@
 
   Package-Manager: portage-2.2.25
 
+  18 Nov 2015; Ole Reifschneider <tranquility@gentoo.org> zeal-0.2.0.ebuild:
+  Simplify dependencies
+
+  Package-Manager: portage-2.2.25
+
