@@ -17,3 +17,8 @@
   kde-frameworks/solid and kde-plasma/libkscreen are not keyworded for arm
   and arm64
 
+  29 Nov 2015; Ulrich Müller <ulm@gentoo.org> +metadata.xml:
+  lxqt-base: [QA] Fix Manifest files, add missing metadata.xml.
+
+  Package-Manager: portage-2.2.26
+
