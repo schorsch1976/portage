@@ -30,6 +30,25 @@
 
 #--- END OF EXAMPLES ---
 
+# Mike Frysinger <vapier@gentoo.org> (18 Jan 2016)
+# Force people to migrate to the new combined libraries:
+# media-libs/elementary & dev-libs/efl. #571796
+app-benchmarks/expedite
+dev-libs/ecore
+dev-libs/edbus
+dev-libs/eet
+dev-libs/eeze
+dev-libs/efreet
+dev-libs/eina
+dev-libs/eio
+dev-libs/embryo
+dev-libs/eobj
+dev-libs/ephysics
+media-libs/edje
+media-libs/emotion
+media-libs/ethumb
+media-libs/evas
+
 # Sergei Trofimovich <slyfox@gentoo.org> (19 Jan 2016)
 # Mask broken package. Exposes badly designed API
 # that can't be transparently used in ghc-7.8 and
@@ -814,8 +833,8 @@ dev-perl/YAML-Parser-Syck
 
 # Fabian Groffen <grobian@gentoo.org> (11 Dec 2015)
 # Release candidates for Exim 4.87
-=mail-mta/exim-4.87_rc1
 =mail-mta/exim-4.87_rc2
+=mail-mta/exim-4.87_rc3
 
 # Pawel Hajdan, Jr. <phajdan.jr@gentoo.org> (07 Dec 2015)
 # Dev channel releases are only for people who are developers or want more
