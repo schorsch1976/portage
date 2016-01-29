@@ -392,3 +392,46 @@
   Remove C++11 checks since the relevant gcc versions are stable for long
   enough already.
 
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Unify quoting in metadata.xml files for machine processing
+
+  Force unified quoting in all metadata.xml files since lxml does not
+  preserve original use of single and double quotes. Ensuring unified
+  quoting before the process allows distinguishing the GLEP 67-related
+  metadata.xml changes from unrelated quoting changes.
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Set appropriate maintainer types in metadata.xml (GLEP 67)
+
+  25 Jan 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/llvm-3.9-llvm-config.patch, llvm-9999.ebuild:
+  fix live ebuild
+
+  Update clang version, bug #572396
+  Update llvm-config patch, bug #572564
+
+  Package-Manager: portage-2.2.27
+
+  27 Jan 2016; Fabian Groffen <grobian@gentoo.org> llvm-3.7.1.ebuild:
+  add darwin patch to 3.7.1
+
+  Package-Manager: portage-2.2.20-prefix
+
+*llvm-3.8.0_rc1 (27 Jan 2016)
+
+  27 Jan 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/cmake/llvm-3.8.0-compiler_rt_arm_march_flags.patch,
+  +llvm-3.8.0_rc1.ebuild, llvm-9999.ebuild:
+  add (masked) 3.8 release candidate for testing
+
+  Package-Manager: portage-2.2.27
+
+  28 Jan 2016; Bernard Cafarelli <voyageur@gentoo.org> llvm-3.8.0_rc1.ebuild:
+  work on 3.8.0_rc1 install, bug #573202
+
+  Also add man-pages tarball
+
+  clang tests still fail
+
+  Package-Manager: portage-2.2.27
+

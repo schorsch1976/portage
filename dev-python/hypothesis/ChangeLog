@@ -187,3 +187,27 @@
   Package-Manager: portage-2.2.26
   Signed-off-by: Justin Lecher <jlec@gentoo.org>
 
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Replace all herds with appropriate projects (GLEP 67)
+
+  Replace all uses of herd with appropriate project maintainers, or no
+  maintainers in case of herds requested to be disbanded.
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Set appropriate maintainer types in metadata.xml (GLEP 67)
+
+  27 Jan 2016; Justin Lecher <jlec@gentoo.org> -hypothesis-1.14.0.ebuild,
+  -hypothesis-1.15.0.ebuild, -hypothesis-1.18.1.ebuild:
+  Clean old
+
+  Package-Manager: portage-2.2.27
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+
+*hypothesis-2.0.0 (27 Jan 2016)
+
+  27 Jan 2016; Justin Lecher <jlec@gentoo.org> +hypothesis-2.0.0.ebuild:
+  Version Bump
+
+  Package-Manager: portage-2.2.27
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

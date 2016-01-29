@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -142,6 +142,8 @@ src_prepare() {
 	sed -e "/RUN/s/-warn-error A//" -i test/Bindings/OCaml/*ml  || die
 	# Fix libdir for ocaml bindings install, bug #559134
 	epatch "${FILESDIR}"/cmake/${PN}-3.7.0-ocaml-multilib.patch
+	# Do not build/install ocaml docs with USE=-doc, bug #562008
+	epatch "${FILESDIR}"/cmake/${PN}-3.7.0-ocaml-build_doc.patch
 
 	# Make it possible to override Sphinx HTML install dirs
 	# https://llvm.org/bugs/show_bug.cgi?id=23780
@@ -160,7 +162,7 @@ src_prepare() {
 
 	# Fix llvm-config for shared linking and sane flags
 	# https://bugs.gentoo.org/show_bug.cgi?id=565358
-	epatch "${FILESDIR}"/llvm-3.8-llvm-config.patch
+	epatch "${FILESDIR}"/llvm-3.9-llvm-config.patch
 
 	# disable use of SDK on OSX, bug #568758
 	sed -i -e 's/xcrun/false/' utils/lit/lit/util.py || die
@@ -221,7 +223,7 @@ multilib_src_configure() {
 		"${mycmakeargs[@]}"
 		-DLLVM_LIBDIR_SUFFIX=${libdir#lib}
 
-		-DBUILD_SHARED_LIBS=ON
+		-DLLVM_LINK_LLVM_DYLIB=ON
 		-DLLVM_ENABLE_TIMESTAMPS=OFF
 		-DLLVM_TARGETS_TO_BUILD="${targets}"
 		-DLLVM_BUILD_TESTS=$(usex test)
@@ -374,7 +376,7 @@ src_install() {
 
 	if use clang; then
 		# note: magic applied in multilib_src_install()!
-		CLANG_VERSION=3.8
+		CLANG_VERSION=3.9
 
 		MULTILIB_CHOST_TOOLS+=(
 			/usr/bin/clang
