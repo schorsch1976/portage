@@ -372,3 +372,168 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*nvidia-drivers-352.79 (29 Jan 2016)
+
+  29 Jan 2016; Jeroen Roovers <jer@gentoo.org> +nvidia-drivers-352.79.ebuild:
+  Version bump (bug #573224 by cfrye).
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-355.11-r3 (29 Jan 2016)
+*nvidia-drivers-340.96-r1 (29 Jan 2016)
+
+  29 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  +nvidia-drivers-340.96-r1.ebuild, +nvidia-drivers-355.11-r3.ebuild,
+  nvidia-drivers-361.18-r1.ebuild:
+  Raise x11-base/xorg-server compatibility (bug #572730 by Martijn Schmidt).
+
+  Package-Manager: portage-2.2.27
+
+  29 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  -nvidia-drivers-340.93-r1.ebuild, -nvidia-drivers-358.16-r1.ebuild:
+  Old.
+
+  Package-Manager: portage-2.2.27
+
+  29 Jan 2016; Jeroen Roovers <jer@gentoo.org> -nvidia-drivers-352.68.ebuild:
+  Old.
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-346.96-r2 (29 Jan 2016)
+
+  29 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  +nvidia-drivers-346.96-r2.ebuild:
+  Raise x11-base/xorg-server compatibility (bug #572730 by Martijn Schmidt).
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-304.131-r1 (29 Jan 2016)
+
+  29 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  +nvidia-drivers-304.131-r1.ebuild:
+  Raise x11-base/xorg-server compatibility (bug #572730 by Martijn Schmidt).
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-361.18-r2 (29 Jan 2016)
+
+  29 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  +nvidia-drivers-361.18-r2.ebuild:
+  Build tools from source (bug #562910 by Christian Strahl).
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-358.16-r1 (29 Jan 2016)
+*nvidia-drivers-340.93-r1 (29 Jan 2016)
+
+  29 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  +nvidia-drivers-340.93-r1.ebuild, +nvidia-drivers-358.16-r1.ebuild:
+  Put back the old stable for now
+
+  Package-Manager: portage-2.2.27
+  RepoMan-Options: --force
+
+  30 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  nvidia-drivers-304.131-r1.ebuild, nvidia-drivers-361.18-r2.ebuild:
+  Build tools from source (bug #562910 by Christian Strahl).
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-340.96-r2 (30 Jan 2016)
+
+  30 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  +nvidia-drivers-340.96-r2.ebuild:
+  Build tools from source (bug #562910 by Christian Strahl).
+
+  Package-Manager: portage-2.2.27
+
+  30 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  nvidia-drivers-340.96-r2.ebuild:
+  Block media-video/nvidia-settings.
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-352.79-r1 (30 Jan 2016)
+
+  30 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  nvidia-drivers-304.131-r1.ebuild, +nvidia-drivers-352.79-r1.ebuild,
+  nvidia-drivers-361.18-r2.ebuild:
+  USE=static-libs requires USE=tools. Update 352 branch for bug #562910.
+
+  Package-Manager: portage-2.2.27
+
+  30 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  nvidia-drivers-358.16-r1.ebuild:
+  Stable for AMD64 x86 too.
+
+  Package-Manager: portage-2.2.27
+  RepoMan-Options: --ignore-arches
+
+*nvidia-drivers-358.16-r2 (30 Jan 2016)
+
+  30 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  +nvidia-drivers-358.16-r2.ebuild, nvidia-drivers-361.18-r2.ebuild:
+  Update 358 branch for bug #562910. Clean up 361 branch ebuild.
+
+  Package-Manager: portage-2.2.27
+
+  30 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  nvidia-drivers-304.131-r1.ebuild, nvidia-drivers-340.96-r2.ebuild,
+  nvidia-drivers-352.79-r1.ebuild, nvidia-drivers-358.16-r2.ebuild,
+  nvidia-drivers-361.18-r2.ebuild:
+  Install libXNVCtrl header only when USE=static-libs.
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-346.96-r3 (30 Jan 2016)
+
+  30 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  +nvidia-drivers-346.96-r3.ebuild:
+  Update 346 branch for bug #562910.
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-361.18-r3 (31 Jan 2016)
+*nvidia-drivers-358.16-r3 (31 Jan 2016)
+*nvidia-drivers-352.79-r2 (31 Jan 2016)
+*nvidia-drivers-346.96-r4 (31 Jan 2016)
+*nvidia-drivers-340.96-r3 (31 Jan 2016)
+*nvidia-drivers-304.131-r2 (31 Jan 2016)
+
+  31 Jan 2016; Jeroen Roovers <jer@gentoo.org> +files/nvidia-settings.desktop,
+  +nvidia-drivers-304.131-r2.ebuild, +nvidia-drivers-340.96-r3.ebuild,
+  +nvidia-drivers-346.96-r4.ebuild, +nvidia-drivers-352.79-r2.ebuild,
+  +nvidia-drivers-358.16-r3.ebuild, +nvidia-drivers-361.18-r3.ebuild:
+  Fix desktop file (bug #562910)
+
+  Package-Manager: portage-2.2.27
+
+*nvidia-drivers-361.18-r4 (31 Jan 2016)
+*nvidia-drivers-358.16-r4 (31 Jan 2016)
+*nvidia-drivers-352.79-r3 (31 Jan 2016)
+*nvidia-drivers-346.96-r5 (31 Jan 2016)
+*nvidia-drivers-340.96-r4 (31 Jan 2016)
+*nvidia-drivers-304.131-r3 (31 Jan 2016)
+
+  31 Jan 2016; Jeroen Roovers <jer@gentoo.org> +files/95-nvidia-settings-r1,
+  -nvidia-drivers-304.131-r2.ebuild, +nvidia-drivers-304.131-r3.ebuild,
+  -nvidia-drivers-340.96-r3.ebuild, +nvidia-drivers-340.96-r4.ebuild,
+  -nvidia-drivers-346.96-r4.ebuild, +nvidia-drivers-346.96-r5.ebuild,
+  -nvidia-drivers-352.79-r2.ebuild, +nvidia-drivers-352.79-r3.ebuild,
+  -nvidia-drivers-358.16-r3.ebuild, +nvidia-drivers-358.16-r4.ebuild,
+  -nvidia-drivers-361.18-r3.ebuild, +nvidia-drivers-361.18-r4.ebuild:
+  Fix nvidia-settings location in /etc/X11/xinit/xinitrc.d/95-nvidia-settings
+  (bug #573452 by Constantin Baranov).
+
+  Package-Manager: portage-2.2.27
+
+  31 Jan 2016; Jeroen Roovers <jer@gentoo.org>
+  -nvidia-drivers-340.96-r1.ebuild, -nvidia-drivers-340.96-r2.ebuild,
+  -nvidia-drivers-346.96-r2.ebuild, -nvidia-drivers-346.96-r3.ebuild,
+  -nvidia-drivers-352.79-r1.ebuild, -nvidia-drivers-358.16-r2.ebuild,
+  -nvidia-drivers-361.18-r2.ebuild:
+  Old.
+
+  Package-Manager: portage-2.2.27
+
