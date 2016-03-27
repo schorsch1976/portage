@@ -168,3 +168,23 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  26 Mar 2016; Johannes Huber <johu@gentoo.org> quassel-0.12.3-r1.ebuild:
+  Restore ppc
+
+  Package-Manager: portage-2.2.28
+
+  26 Mar 2016; Johannes Huber <johu@gentoo.org> quassel-0.12.3-r1.ebuild:
+  Restore x86
+
+  Package-Manager: portage-2.2.28
+
+  26 Mar 2016; Johannes Huber <johu@gentoo.org> quassel-0.12.3-r1.ebuild:
+  Restore arm
+
+  Package-Manager: portage-2.2.28
+
+  26 Mar 2016; Johannes Huber <johu@gentoo.org> -quassel-0.12.3.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.2.28
+
