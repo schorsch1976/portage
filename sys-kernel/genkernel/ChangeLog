@@ -249,3 +249,11 @@
   genkernel-3.5.0.0.ebuild, genkernel-9999.ebuild:
   drop redundant keywords
 
+*genkernel-3.5.0.1 (27 Mar 2016)
+*genkernel-3.4.52.4-r1 (27 Mar 2016)
+
+  27 Mar 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/genkernel-3.4.52.4-system-map.patch, +genkernel-3.4.52.4-r1.ebuild,
+  +genkernel-3.5.0.1.ebuild:
+  version bump for System.map fixes #570822
+
