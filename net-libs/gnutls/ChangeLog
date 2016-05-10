@@ -284,3 +284,11 @@
 
   Package-Manager: portage-2.2.26
 
+*gnutls-3.5.0 (09 May 2016)
+
+  09 May 2016; Alon Bar-Lev <alonbl@gentoo.org>
+  +files/gnutls-3.5.0-build.patch, +gnutls-3.5.0.ebuild:
+  version bump
+
+  Package-Manager: portage-2.2.26
+
