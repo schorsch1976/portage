@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=dev-lang/lua-5.1
+DESCRIPTION=Allows to send commands to some microcontrollers, for example to change leds or sound a buzzer
+EAPI=0
+HOMEPAGE=http://qnap.nas-central.org/index.php/PIC_Control_Software
+KEYWORDS=arm
+LICENSE=GPL-3
+RDEPEND=>=dev-lang/lua-5.1
+SLOT=0
+SRC_URI=mirror://debian/pool/main/q/qcontrol/qcontrol_0.4.2.orig.tar.gz mirror://debian/pool/main/q/qcontrol/qcontrol_0.4.2-6.diff.gz
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=e3d66dfe563cebf43bf006c5818cb270

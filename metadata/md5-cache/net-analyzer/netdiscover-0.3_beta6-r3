@@ -1,0 +1,12 @@
+DEFINED_PHASES=prepare
+DEPEND=net-libs/libnet:1.1 >=net-libs/libpcap-0.8.3-r1 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=An active/passive address reconnaissance tool
+EAPI=5
+HOMEPAGE=http://nixgeneration.com/~jaime/netdiscover/
+KEYWORDS=~amd64 ~sparc ~x86 ~amd64-linux ~x86-linux ~x86-macos
+LICENSE=GPL-2
+RDEPEND=net-libs/libnet:1.1 >=net-libs/libpcap-0.8.3-r1
+SLOT=0
+SRC_URI=http://nixgeneration.com/~jaime/netdiscover/releases/netdiscover-0.3-beta6.tar.gz https://dev.gentoo.org/~jer/netdiscover-0.3-beta6-oui-db-update-20091010.patch.bz2
+_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	eutils	792f83d5ec9536cb5ccef375469d8bde	libtool	4890219c51da247200223277f993e054	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=410de83140e2c87240338e1906264467

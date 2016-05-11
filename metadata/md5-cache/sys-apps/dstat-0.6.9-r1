@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm prepare setup
+DEPEND==dev-lang/python-2*
+DESCRIPTION=Versatile replacement for vmstat, iostat and ifstat
+EAPI=4
+HOMEPAGE=http://dag.wieers.com/home-made/dstat/
+KEYWORDS=~alpha amd64 hppa ~ia64 ~mips ~ppc ~ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND==dev-lang/python-2*
+SLOT=0
+SRC_URI=http://dag.wieers.com/home-made/dstat/dstat-0.6.9.tar.bz2
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	python	efc1c55fc44c5b7272fc2ffba73c3e6f	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=eae940372f0411162a008647f9e8dba1

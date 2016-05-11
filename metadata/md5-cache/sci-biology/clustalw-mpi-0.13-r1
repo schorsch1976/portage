@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DEPEND=virtual/mpi
+DESCRIPTION=A parallel (MPI) implemention of the Clustal-W general purpose multiple alignment algorithm
+EAPI=4
+HOMEPAGE=http://www.bii.a-star.edu.sg/achievements/applications/clustalw/index.php
+IUSE=mpi_njtree static_pairalign
+KEYWORDS=~amd64 ~x86
+LICENSE=public-domain
+RDEPEND=virtual/mpi
+SLOT=0
+SRC_URI=http://web.bii.a-star.edu.sg/~kuobin/clustalw-mpi/clustalw-mpi-0.13.tar.gz
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=35aeabe13c3f17845ebe48287b554312

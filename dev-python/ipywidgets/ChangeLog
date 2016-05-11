@@ -1,0 +1,21 @@
+# ChangeLog for dev-python/ipywidgets
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*ipywidgets-4.1.1 (27 Nov 2015)
+
+  27 Nov 2015; Marius Brehler <marbre@linux.sungazer.de>
+  +ipywidgets-4.1.1.ebuild, +metadata.xml:
+  Import from science overlay
+
+  Package-Manager: portage-2.2.20.1
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Replace all herds with appropriate projects (GLEP 67)
+
+  Replace all uses of herd with appropriate project maintainers, or no
+  maintainers in case of herds requested to be disbanded.
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Set appropriate maintainer types in metadata.xml (GLEP 67)
+

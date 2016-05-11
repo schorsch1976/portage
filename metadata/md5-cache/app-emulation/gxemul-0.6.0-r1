@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=X? ( x11-libs/libX11 ) X? ( x11-proto/xproto )
+DESCRIPTION=A Machine Emulator, Mainly emulates MIPS, but supports other CPU types
+EAPI=4
+HOMEPAGE=http://gxemul.sourceforge.net/
+IUSE=debug X
+KEYWORDS=~amd64 ~mips ~ppc ~sparc ~x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=X? ( x11-libs/libX11 )
+SLOT=0
+SRC_URI=mirror://sourceforge/project/gxemul/GXemul/0.6.0/gxemul-0.6.0.tar.gz
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=27ad915e60a6211d994489cb6ffde9f8

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install setup unpack
+DESCRIPTION=Httpush is an intercepting proxy, allowing user to modify HTTP requests on-the-fly
+EAPI=0
+HOMEPAGE=http://httpush.sourceforge.net/
+IUSE=xml
+KEYWORDS=~x86
+LICENSE=BSD
+RDEPEND=dev-perl/URI virtual/perl-MIME-Base64 dev-perl/libwww-perl dev-perl/Net-SSLeay dev-perl/Crypt-SSLeay dev-perl/HTML-Parser xml? ( dev-perl/XML-Twig )
+SLOT=0
+SRC_URI=mirror://sourceforge/httpush/httpush-0.9b11.tar.gz
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=5c330e9aff5fb2ce7b88ed24028b76ff

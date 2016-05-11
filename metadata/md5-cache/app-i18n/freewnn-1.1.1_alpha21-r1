@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=X? ( x11-libs/libX11 x11-libs/libXmu x11-libs/libXt )
+DESCRIPTION=Network-Extensible Kana-to-Kanji Conversion System
+EAPI=0
+HOMEPAGE=http://freewnn.sourceforge.jp/ http://www.freewnn.org/
+IUSE=X ipv6
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=X? ( x11-libs/libX11 x11-libs/libXmu x11-libs/libXt )
+SLOT=0
+SRC_URI=mirror://sourceforge.jp/freewnn/17724/FreeWnn-1.1.1-a021.tar.bz2
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=8f941326d8993b83ea0756985fa3144b

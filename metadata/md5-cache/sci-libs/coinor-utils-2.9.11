@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=sys-libs/readline:0= bzip2? ( app-arch/bzip2 ) blas? ( virtual/blas ) glpk? ( sci-mathematics/glpk:= ) lapack? ( virtual/lapack ) zlib? ( sys-libs/zlib ) virtual/pkgconfig doc? ( app-doc/doxygen[dot] ) test? ( sci-libs/coinor-sample )
+DESCRIPTION=COIN-OR Matrix, Vector and other utility classes
+EAPI=5
+HOMEPAGE=https://projects.coin-or.org/CoinUtils/
+IUSE=bzip2 doc glpk blas lapack static-libs test zlib
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=EPL-1.0
+RDEPEND=sys-libs/readline:0= bzip2? ( app-arch/bzip2 ) blas? ( virtual/blas ) glpk? ( sci-mathematics/glpk:= ) lapack? ( virtual/lapack ) zlib? ( sys-libs/zlib )
+SLOT=0/3
+SRC_URI=http://www.coin-or.org/download/source/CoinUtils/CoinUtils-2.9.11.tgz
+_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	autotools-utils	419811142edf3516b0d0cf1a254d93cb	eutils	792f83d5ec9536cb5ccef375469d8bde	libtool	4890219c51da247200223277f993e054	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=876d2bf7bf6e3788bdea643f8beac730

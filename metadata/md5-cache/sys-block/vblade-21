@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=vblade exports a block device using AoE
+EAPI=4
+HOMEPAGE=http://sf.net/projects/aoetools/
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=sys-apps/util-linux
+SLOT=0
+SRC_URI=mirror://sourceforge/aoetools/vblade-21.tgz
+_eclasses_=multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=3152d8ee829e732cae543128d6230950

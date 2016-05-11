@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare test
+DEPEND=>=dev-lang/lua-5.1 dev-libs/gobject-introspection dev-libs/glib virtual/libffi virtual/pkgconfig test? ( x11-libs/cairo[glib] x11-libs/gtk+[introspection] !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DESCRIPTION=Lua bindings using gobject-introspection
+EAPI=4
+HOMEPAGE=https://github.com/pavouk/lgi
+IUSE=examples test
+KEYWORDS=amd64 arm ppc ppc64 x86 ~x86-fbsd
+LICENSE=MIT
+RDEPEND=>=dev-lang/lua-5.1 dev-libs/gobject-introspection dev-libs/glib virtual/libffi
+SLOT=0
+SRC_URI=https://github.com/pavouk/lgi/archive/0.7.2.tar.gz -> lgi-0.7.2.tar.gz
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	d270fa247153df66074f795fa42dba3e	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb	virtualx	86c9305a59b3e0459e7fbef3a5f30b96
+_md5_=7e5a663d24b91eb97b8adac29306cd5e

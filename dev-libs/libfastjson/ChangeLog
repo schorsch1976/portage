@@ -1,0 +1,29 @@
+# ChangeLog for dev-libs/libfastjson
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*libfastjson-0.99.2 (15 Mar 2016)
+
+  15 Mar 2016; Patrice Clement <monsieurp@gentoo.org>
+  +files/libfastjson-0.99.2-fix-for-implicit-declaration-of-vasprintf.patch,
+  +libfastjson-0.99.2.ebuild, +metadata.xml:
+  Add libfastjson to the tree.
+
+  libfastjson will be a requirement for the upcoming app-admin/rsyslog-8.17.0
+  ebuild.
+
+  Package-Manager: portage-2.2.28
+  Closes: https://github.com/gentoo/gentoo/pull/1050
+
+  21 Apr 2016; Markus Meier <maekke@gentoo.org> libfastjson-0.99.2.ebuild:
+  add ~arm, bug #577508
+
+  Package-Manager: portage-2.2.28
+  RepoMan-Options: --include-arches="arm"
+
+  29 Apr 2016; Jeroen Roovers <jer@gentoo.org> libfastjson-0.99.2.ebuild:
+  Mark ~hppa (bug #577508).
+
+  Package-Manager: portage-2.2.28
+  RepoMan-Options: --ignore-arches
+

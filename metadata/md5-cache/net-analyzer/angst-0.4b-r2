@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=net-libs/libpcap net-libs/libnet:1.0
+DESCRIPTION=an active sniffer that provides methods for aggressive sniffing on switched LANs
+EAPI=5
+HOMEPAGE=http://angst.sourceforge.net/
+KEYWORDS=~amd64 ~ppc x86
+LICENSE=BSD
+RDEPEND=net-libs/libpcap net-libs/libnet:1.0
+SLOT=0
+SRC_URI=http://angst.sourceforge.net/angst-0.4b.tar.gz
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=c71ba2b3f6ccf2093610f5bb03439044

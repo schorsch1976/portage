@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=dev-python/wxpython:2.8 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DESCRIPTION=Glade-like GUI designer which can generate Python, Perl, C++ or XRC code
+EAPI=2
+HOMEPAGE=http://wxglade.sourceforge.net/
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=MIT
+RDEPEND=dev-python/wxpython:2.8 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+SLOT=0
+SRC_URI=mirror://sourceforge/wxglade/wxGlade-0.6.3.tar.gz
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	python	efc1c55fc44c5b7272fc2ffba73c3e6f	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=e790390a9d3b2ce1a9aa55cc55fc44a3

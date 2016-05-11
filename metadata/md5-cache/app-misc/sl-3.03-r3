@@ -1,0 +1,14 @@
+DEFINED_PHASES=install prepare setup
+DEPEND=sys-libs/ncurses
+DESCRIPTION=sophisticated graphical program which corrects your miss typing
+EAPI=4
+HOMEPAGE=http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/index_e.html http://www.izumix.org.uk/sl/
+IUSE=debug linguas_ja vanilla
+KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=freedist
+RDEPEND=sys-libs/ncurses
+REQUIRED_USE=debug? ( !vanilla )
+SLOT=0
+SRC_URI=http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/sl/sl.tar !vanilla? ( http://www.linet.gr.jp/~izumi/sl/sl5-1.patch http://www.sodan.ecc.u-tokyo.ac.jp/~okayama/sl/sl.en.1.gz )
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	d270fa247153df66074f795fa42dba3e	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=09eee8796b53c5d3fcb564ab25114fcf

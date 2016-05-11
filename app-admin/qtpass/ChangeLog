@@ -1,0 +1,57 @@
+# ChangeLog for app-admin/qtpass
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*qtpass-1.0.5 (04 Jan 2016)
+
+  04 Jan 2016; Ian Delaney <idella4@gentoo.org> +metadata.xml,
+  +qtpass-1.0.5.ebuild:
+  New ebuild, a GUI for app-admin/pass in qt
+
+  ebuild submitted by the OP Anne Jan Brouwer which was edited by
+  Merlijn Wajer who agreed to proxy maintain, however in the end,
+  ebuild also submitted by spiderx who also agreed to proxy maintain.
+  With consent by Merlijn Wajer, the proxy maintainership has been
+  assigned to spiderx; ebuild submitted in Comment 8 of the gentoo bug
+  and usedfor this addition to the tree with minor touchups to bring
+  style and syntax in the ebuild and metadata to required needs.
+  Cross tested fully by user wraeth and myself. Fixes and closes the gentoo
+  bug
+
+  Gentoo bug: #564190
+
+  Package-Manager: portage-2.2.26
+
+  07 Jan 2016; Justin Lecher <jlec@gentoo.org> metadata.xml:
+  Update remote-ids in metadata.xml
+
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Unify quoting in metadata.xml files for machine processing
+
+  Force unified quoting in all metadata.xml files since lxml does not
+  preserve original use of single and double quotes. Ensuring unified
+  quoting before the process allows distinguishing the GLEP 67-related
+  metadata.xml changes from unrelated quoting changes.
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Replace all herds with appropriate projects (GLEP 67)
+
+  Replace all uses of herd with appropriate project maintainers, or no
+  maintainers in case of herds requested to be disbanded.
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Set appropriate maintainer types in metadata.xml (GLEP 67)
+
+*qtpass-1.1.0 (02 Feb 2016)
+
+  02 Feb 2016; Ian Delaney <idella4@gentoo.org> +qtpass-1.1.0.ebuild:
+  bump to vn. 1.1.0
+
+  ebuild by maintainer sourced from the gentoo bug
+
+  Gentoo bug: #572986
+
+  Package-Manager: portage-2.2.26
+
