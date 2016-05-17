@@ -1008,3 +1008,32 @@
 
   Package-Manager: portage-2.2.28_p107_p84176
 
+  13 May 2016; Agostino Sarubbo <ago@gentoo.org>
+  chromium-50.0.2661.102.ebuild:
+  amd64 stable wrt bug #582828
+
+  Package-Manager: portage-2.2.26
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 May 2016; Agostino Sarubbo <ago@gentoo.org>
+  chromium-50.0.2661.102.ebuild:
+  x86 stable wrt bug #582828
+
+  Package-Manager: portage-2.2.26
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 May 2016; Agostino Sarubbo <ago@gentoo.org>
+  -chromium-50.0.2661.94.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.2.26
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  15 May 2016; Pawel Hajdan, Jr <phajdan.jr@gentoo.org>
+  chromium-52.0.2723.2.ebuild:
+  reconfigure bundled ffmpeg when using GN
+
+  Package-Manager: portage-2.2.26
+

@@ -78,3 +78,20 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*visit-2.9.2 (13 May 2016)
+
+  13 May 2016; Slawomir Lis <slis@gentoo.org> +visit-2.9.2.ebuild:
+  version bump + #582598
+
+  Package-Manager: portage-2.2.28
+
+  15 May 2016; Slawomir Lis <slis@gentoo.org>
+  +files/visit-2.9.2-cmakelist.patch,
+  +files/visit-2.9.2-dont_symlink_visit_dir.patch,
+  +files/visit-2.9.2-findpython.patch, +files/visit-2.9.2-findsilo.patch,
+  +files/visit-2.9.2-findvtk.patch, +files/visit-2.9.2-vtklibs.patch,
+  +files/visit-2.9.2-vtkmpi.patch:
+  updated visit patchset (#582598)
+
+  Package-Manager: portage-2.2.28
+

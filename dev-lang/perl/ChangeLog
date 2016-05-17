@@ -130,3 +130,32 @@
 
   Package-Manager: portage-2.2.28
 
+*perl-5.24.0 (14 May 2016)
+
+  14 May 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +files/eblits/src_prepare-v50240001.eblit, +perl-5.24.0.ebuild:
+  Version bump to 5.24.0
+
+  Package-Manager: portage-2.2.28
+
+  14 May 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +files/eblits/pkg_postinst-v50240001.eblit,
+  +files/eblits/pkg_postrm-v50240001.eblit,
+  +files/eblits/pkg_setup-v50240001.eblit, perl-5.24.0.ebuild:
+  Clean up eblits a bit and remove obsolete .ph generation
+
+  Package-Manager: portage-2.2.28
+
+  14 May 2016; Andreas K. Hüttel <dilfridge@gentoo.org> perl-5.24.0.ebuild:
+  Fix some bundled version numbers
+
+  Package-Manager: portage-2.2.28
+
+  15 May 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +files/eblits/common-v50240001.eblit,
+  +files/eblits/src_configure-v50240001.eblit,
+  +files/eblits/src_install-v50240001.eblit, perl-5.24.0.ebuild:
+  Add some missing files to fix the eblit logic
+
+  Package-Manager: portage-2.2.28
+
