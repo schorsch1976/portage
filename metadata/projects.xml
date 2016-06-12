@@ -1857,11 +1857,6 @@
       <name>Daniel Gryniewicz</name>
       <role>Member (Kernel, User Mode Linux)</role>
     </member>
-    <member>
-      <email>joker@gentoo.org</email>
-      <name>Christian Birchinger</name>
-      <role>Member (Kernel, sparc-sources)</role>
-    </member>
     <member is-lead="1">
       <email>mpagano@gentoo.org</email>
       <name>Mike Pagano</name>
@@ -3967,11 +3962,6 @@
       <name>Amy Winston</name>
       <role>Member</role>
     </member>
-    <member>
-      <email>zlg@gentoo.org</email>
-      <name>Daniel Campbell</name>
-      <role>Member</role>
-    </member>
   </project>
   <project>
     <email>tex@gentoo.org</email>
@@ -4040,6 +4030,10 @@
     <member is-lead="1">
       <email>hwoarang@gentoo.org</email>
       <name>Markos Chandras</name>
+    </member>
+    <member>
+      <email>johu@gentoo.org</email>
+      <name>Johannes Huber</name>
     </member>
     <member>
       <email>kensington@gentoo.org</email>
@@ -4187,10 +4181,6 @@
     <member>
       <email>yngwin@gentoo.org</email>
       <name>Ben de Groot</name>
-    </member>
-    <member>
-      <email>zlg@gentoo.org</email>
-      <name>Daniel Campbell</name>
     </member>
   </project>
   <project>
