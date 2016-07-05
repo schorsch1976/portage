@@ -79,3 +79,16 @@
   28 Jun 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Drop to maint-needed, #587144
 
+  03 Jul 2016; Andreas K. Hüttel <dilfridge@gentoo.org> yaz-3.0.53.ebuild,
+  yaz-4.2.30.ebuild, yaz-4.2.51.ebuild:
+  add missing slot operator on dev-libs/icu dependency
+
+  Package-Manager: portage-2.3.0
+
+  04 Jul 2016; Tobias Klausmann <klausman@gentoo.org> yaz-3.0.53.ebuild:
+  3.0.53-r0: add alpha keyword
+
+  Gentoo-Bug: 522674
+
+  Package-Manager: portage-2.3.0
+

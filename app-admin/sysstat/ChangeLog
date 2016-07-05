@@ -194,3 +194,32 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  30 Jun 2016; Tobias Klausmann <klausman@gentoo.org>
+  sysstat-11.2.4-r1.ebuild:
+  11.2.4-r1: add alpha keyword
+
+  Gentoo-Bug: 586566
+
+  Package-Manager: portage-2.3.0
+
+  01 Jul 2016; Jeroen Roovers <jer@gentoo.org> sysstat-11.2.4-r1.ebuild:
+  Stable for HPPA PPC64 (bug #586566).
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --ignore-arches
+
+*sysstat-11.3.5 (03 Jul 2016)
+*sysstat-11.2.5 (03 Jul 2016)
+
+  03 Jul 2016; Jeroen Roovers <jer@gentoo.org> +sysstat-11.2.5.ebuild,
+  +sysstat-11.3.5.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.0
+
+  03 Jul 2016; Jeroen Roovers <jer@gentoo.org> -sysstat-11.2.3.ebuild,
+  -sysstat-11.2.4.ebuild, -sysstat-11.3.3.ebuild, -sysstat-11.3.4.ebuild:
+  Old.
+
+  Package-Manager: portage-2.3.0
+

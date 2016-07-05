@@ -166,3 +166,30 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  02 Jul 2016; Agostino Sarubbo <ago@gentoo.org> dnsmasq-2.76.ebuild:
+  amd64 stable wrt bug #585280
+
+  Package-Manager: portage-2.2.28
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  02 Jul 2016; Agostino Sarubbo <ago@gentoo.org> dnsmasq-2.76.ebuild:
+  x86 stable wrt bug #585280
+
+  Package-Manager: portage-2.2.28
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  03 Jul 2016; Jeroen Roovers <jer@gentoo.org> dnsmasq-2.76.ebuild:
+  Stable for HPPA PPC64 (bug #585280).
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --ignore-arches
+
+  04 Jul 2016; Tobias Klausmann <klausman@gentoo.org> dnsmasq-2.76.ebuild:
+  2.76-r0: add alpha keyword
+
+  Gentoo-Bug: 585280
+
+  Package-Manager: portage-2.3.0
+
