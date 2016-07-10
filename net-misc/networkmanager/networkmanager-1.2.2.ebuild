@@ -19,7 +19,7 @@ SLOT="0" # add subslot if libnm-util.so.2 or libnm-glib.so.4 bumps soname versio
 
 IUSE="bluetooth connection-sharing consolekit +dhclient gnutls +introspection \
 kernel_linux +nss +modemmanager ncurses +ppp resolvconf selinux systemd teamd test \
-vala +wext +wifi zeroconf"
+vala +wext +wifi"
 
 REQUIRED_USE="
 	modemmanager? ( ppp )
@@ -59,7 +59,6 @@ COMMON_DEPEND="
 	systemd? ( >=sys-apps/systemd-209:0= )
 	!systemd? ( || ( sys-power/upower sys-power/upower-pm-utils ) )
 	teamd? ( >=net-misc/libteam-1.9 )
-	zeroconf? ( net-dns/avahi:=[autoipd] )
 "
 RDEPEND="${COMMON_DEPEND}
 	consolekit? ( sys-auth/consolekit )
@@ -116,6 +115,9 @@ src_prepare() {
 
 	# Don't build examples, they are not needed and can cause build failure
 	sed -e '/^\s*examples\s*\\/d' -i Makefile.{am,in} || die
+
+	# Upstream patches from 1.2 branch
+	eapply "${FILESDIR}/${P}-sleep-monitor-upower-include.patch" #588278
 
 	use vala && vala_src_prepare
 	gnome2_src_prepare
@@ -205,7 +207,7 @@ multilib_src_compile() {
 		emake
 	else
 		emake all-am
-		emake -C include
+		emake -C shared
 		emake -C introspection # generated headers, needed for libnm
 		emake -C libnm-core
 		emake -C libnm
@@ -227,7 +229,7 @@ multilib_src_install() {
 		gnome2_src_install completiondir="$(get_bashcompdir)"
 	else
 		emake DESTDIR="${D}" install-am
-		emake DESTDIR="${D}" install -C include
+		emake DESTDIR="${D}" install -C shared
 		emake DESTDIR="${D}" install -C introspection
 		emake DESTDIR="${D}" install -C libnm-core
 		emake DESTDIR="${D}" install -C libnm
