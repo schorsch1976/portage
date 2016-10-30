@@ -2594,6 +2594,7 @@ dev-util/anjuta:terminal - Enable terminal plugin based on x11-libs/vte
 dev-util/apitrace:cli - Enable command line interface
 dev-util/apitrace:egl - Enable EGL support
 dev-util/apitrace:system-snappy - Link dynamic against app-arch/snappy
+dev-util/bazel:tools - Install extra bazel tools to build from sources
 dev-util/bitcoin-tx:ljr - Enable Luke Dashjr's patches
 dev-util/buildbot:irc - Add support for status delivery through an ircbot.
 dev-util/buildbot:mail - Add support for watching a maildir for commits.
@@ -2993,6 +2994,7 @@ games-rpg/grimrock:bundled-libs - Use bundled libraries.
 games-rpg/kqlives:cheats - Enable cheating mode
 games-rpg/manaplus:mumble - Enable support for voice chat
 games-rpg/manaplus:pugixml - Use dev-libs/pugixml for XML parsing isntead of dev-libs/libxml2
+games-rpg/manaplus:sdl2 - Use libsdl2 instead of libsdl
 games-rpg/nwn:hou - Install the Hordes of the Underdark expansion pack
 games-rpg/nwn:sou - Installs the Shadows of Undrentide expension pack
 games-rpg/nwn-data:hou - Install the Hordes of the Underdark expansion pack
@@ -3309,7 +3311,6 @@ kde-frameworks/sonnet:aspell - Enable the app-text/aspell spell-checking backend
 kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking backend
 kde-misc/kcm-grub2:hwinfo - Used to work out supported framebuffer resolutions
 kde-misc/kcm-grub2:imagemagick - Create splash images compatible with GRUB2
-kde-misc/kcm-grub2:packagekit - Add support for packagekit integration
 kde-misc/kdeconnect:app - Enable experimental kcapp frontend
 kde-misc/kdeconnect:telepathy - Enable net-libs/telepathy-qt support to receive text messages and respond to them
 kde-misc/kdeconnect:wayland - Enable kwin_wayland support for mousepad plugin using kde-frameworks/kwayland
@@ -3318,8 +3319,6 @@ kde-misc/kimtoy:scim - Enable Smart Common Input Method support
 kde-misc/kio-gdrive:dolphin - Enable integration with kde-apps/dolphin
 kde-misc/krusader:bookmarks - Add dependency on bookmark package.
 kde-misc/networkmanagement:openconnect - Build support for the OpenConnect VPN client
-kde-misc/plasma-nm:modemmanager - Enable support for mobile broadband devices
-kde-misc/plasma-nm:openconnect - Build support for the OpenConnect VPN client
 kde-misc/tellico:addressbook - Add support for kdepim addressbook (kabc)
 kde-plasma/kde-cli-tools:kdesu - Build graphical frontend for kde-frameworks/kdesu
 kde-plasma/kde-gtk-config:gtk3 - Add support for gtk+3-based applications.
@@ -3741,6 +3740,7 @@ media-gfx/geeqie:gtk3 - Link against x11-libs/gtk+:3 instead of x11-libs/gtk+:2
 media-gfx/geeqie:map - Enable items map display - experimental
 media-gfx/gimp:smp - Enable support for multiprocessors
 media-gfx/gimp:vector-icons - Enable support for vector icons (experimental)
+media-gfx/gmic:cli - Build CLI interface
 media-gfx/gmic:graphicsmagick - Enable support for many common image file formats using the GraphicsMagick++ library
 media-gfx/gmic:opencv - Enable support for webcams using the OpenCV library
 media-gfx/graphicsmagick:fpx - Enable FlashPix support with media-libs/libfpx
