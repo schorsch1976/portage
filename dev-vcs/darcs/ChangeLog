@@ -127,3 +127,9 @@
 
   Package-Manager: portage-2.3.2
 
+  15 Nov 2016; Michael Orlitzky <mjo@gentoo.org>
+  -files/darcs-2.8.5-ghc-7.10.patch:
+  remove unused patch
+
+  Signed-off-by: Michael Orlitzky <mjo@gentoo.org>
+

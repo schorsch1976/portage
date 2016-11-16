@@ -157,3 +157,9 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*binutils-2.27 (15 Nov 2016)
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> +binutils-2.27.ebuild,
+  binutils-9999.ebuild:
+  sys-libs/binutils-libs: version bump to 2.27 #595148
+

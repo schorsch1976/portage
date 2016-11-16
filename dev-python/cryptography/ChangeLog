@@ -559,3 +559,10 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+*cryptography-1.5.2 (14 Nov 2016)
+
+  14 Nov 2016; David Seifert <soap@gentoo.org> +cryptography-1.5.2.ebuild:
+  Reintroduce stable 1.5.2 ebuild
+
+  Package-Manager: portage-2.3.2
+

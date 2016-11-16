@@ -196,3 +196,16 @@
 
   Package-Manager: portage-2.3.2
 
+*DateTime-1.400.0 (15 Nov 2016)
+
+  15 Nov 2016; Kent Fredric <kentnl@gentoo.org> +DateTime-1.400.0.ebuild:
+  Bump to 1.400.0 (masked)
+
+  This version requires Test2 infra and has to be masked
+  till we're ready to drop that ball.
+
+  Upstream:
+  - Replace internals with Params::ValidationCompiler
+
+  Package-Manager: portage-2.3.2
+

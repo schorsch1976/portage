@@ -11,3 +11,8 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> libpcre2-10.22.ebuild:
+  10.22-r0: stable on alpha
+
+  Gentoo-Bug: 599218
+

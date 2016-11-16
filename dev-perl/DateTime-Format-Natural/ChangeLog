@@ -63,3 +63,25 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  15 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  DateTime-Format-Natural-1.10.0-r1.ebuild:
+  Remove POD Authortests
+
+  Package-Manager: portage-2.3.2
+
+*DateTime-Format-Natural-1.40.0 (15 Nov 2016)
+
+  15 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +DateTime-Format-Natural-1.40.0.ebuild:
+  Bump to 1.40.0
+
+  - EAPI6
+  - Fix Description
+  - Parallel Testing
+
+  Upstream:
+  - Supports ISO 8601 <date>T<time> format
+  - Treat <count> <unit> as a duration
+
+  Package-Manager: portage-2.3.2
+

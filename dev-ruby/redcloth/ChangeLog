@@ -145,3 +145,8 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+  15 Nov 2016; Manuel Rüger <mrueg@gentoo.org> redcloth-4.2.9-r3.ebuild:
+  Remove ruby19
+
+  Package-Manager: portage-2.3.2
+

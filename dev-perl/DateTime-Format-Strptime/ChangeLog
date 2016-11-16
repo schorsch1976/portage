@@ -95,3 +95,20 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*DateTime-Format-Strptime-1.680.0 (15 Nov 2016)
+
+  15 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +DateTime-Format-Strptime-1.680.0.ebuild:
+  Bump to 1.680.0
+
+  Upstream:
+  - No longer silently ignore lost-rewritten ignored text.
+  - String w/ epoch + ns prepped for newer DateTimes
+  - Now supports parsing short zone names like "+07"
+  - Added support for custom time zone abbreviations
+  - Match on word boundaries instead of overly permissive
+    anywhere-in-string matcher
+  - Large volume of author tests hidden from user side test suites.
+
+  Package-Manager: portage-2.3.2
+

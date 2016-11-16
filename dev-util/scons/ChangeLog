@@ -151,3 +151,8 @@
   06 Nov 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Add myself as primary maint
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> scons-2.4.1.ebuild:
+  2.4.1-r0: stable on alpha
+
+  Gentoo-Bug: 598902
+

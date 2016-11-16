@@ -339,3 +339,8 @@
 
   Package-Manager: portage-2.2.28
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> xapian-1.2.24.ebuild:
+  1.2.24-r0: stable on alpha
+
+  Gentoo-Bug: 597894
+

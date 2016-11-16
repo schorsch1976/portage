@@ -112,3 +112,10 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-ssh2-9999 (15 Nov 2016)
+
+  15 Nov 2016; Brian Evans <grknight@gentoo.org> +pecl-ssh2-9999.ebuild:
+  Add live ebuild wrt bug 599750
+
+  Package-Manager: portage-2.3.2
+

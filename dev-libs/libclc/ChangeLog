@@ -118,3 +118,8 @@
   libclc-0.2.0_pre20160921.ebuild:
   Drop ~ppc from newest due to LLVM-3.9 keywords
 
+  15 Nov 2016; Michał Górny <mgorny@gentoo.org>
+  -files/libclc-llvm-3.5-compat.patch, -libclc-0.0.1_pre20140101-r1.ebuild,
+  -libclc-0.0.1_pre20141027.ebuild:
+  Drop old
+

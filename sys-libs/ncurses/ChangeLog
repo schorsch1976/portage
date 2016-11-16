@@ -335,3 +335,11 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> ncurses-5.9-r5.ebuild,
+  ncurses-5.9-r99.ebuild:
+  mark 5.9-r5 & 5.9-r99 m68k/sh stable
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> ncurses-6.0.ebuild,
+  ncurses-6.0-r1.ebuild:
+  mark 6.0 & 6.0-r1 arm64/ia64/m68k/ppc/s390/sh/sparc stable #594338
+

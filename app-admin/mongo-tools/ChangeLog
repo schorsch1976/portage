@@ -203,3 +203,12 @@
 
   Package-Manager: portage-2.3.2
 
+*mongo-tools-3.2.10-r1 (15 Nov 2016)
+
+  15 Nov 2016; Tony Vroon <chainsaw@gentoo.org>
+  +files/mongo-tools-3.2.10-pie.patch, +mongo-tools-3.2.10-r1.ebuild:
+  Build PIE (Position Independent Executables) to avoid text relocations.
+  Patch by "runtarod" closes bug #582854.
+
+  Package-Manager: portage-2.3.0
+

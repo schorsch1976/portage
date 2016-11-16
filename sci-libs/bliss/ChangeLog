@@ -69,3 +69,9 @@
 
   Package-Manager: portage-2.3.0
 
+  15 Nov 2016; Christoph Junghans <junghans@gentoo.org>
+  files/bliss-0.72-autotools.patch:
+  update patch
+
+  Package-Manager: portage-2.3.0
+

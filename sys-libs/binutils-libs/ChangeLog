@@ -94,3 +94,8 @@
 
   Package-Manager: portage-2.2.28
 
+*binutils-libs-2.27 (15 Nov 2016)
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> +binutils-libs-2.27.ebuild:
+  sys-devel/binutils & sys-libs/binutils-libs: version bump to 2.27 #595148
+

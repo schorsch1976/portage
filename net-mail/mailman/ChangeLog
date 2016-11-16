@@ -104,3 +104,13 @@
   18 May 2016; Austin English <wizardedit@gentoo.org> files/mailman.rc:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+*mailman-2.1.23 (15 Nov 2016)
+
+  15 Nov 2016; Hanno <hanno@gentoo.org> +mailman-2.1.23.ebuild:
+  Version bump.
+
+  Fix security bug #592858 (CSRF, CVE-2016-6893).
+  Fix python optimization paths.
+
+  Package-Manager: portage-2.3.2
+

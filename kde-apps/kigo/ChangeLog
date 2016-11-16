@@ -188,3 +188,15 @@
 
   Package-Manager: portage-2.3.2
 
+*kigo-16.08.3 (15 Nov 2016)
+
+  15 Nov 2016; Johannes Huber <johu@gentoo.org> +kigo-16.08.3.ebuild:
+  kde-apps: Version bump KDE Applications 16.08.3
+
+  Package-Manager: portage-2.3.2
+
+  15 Nov 2016; Johannes Huber <johu@gentoo.org> -kigo-16.08.2.ebuild:
+  kde-apps: Remove KDE Applications 16.08.2
+
+  Package-Manager: portage-2.3.2
+

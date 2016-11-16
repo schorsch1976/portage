@@ -244,3 +244,14 @@
 
   Package-Manager: portage-2.3.2
 
+  15 Nov 2016; Thomas Beierlein <tomjbe@gentoo.org> -fldigi-3.23.14.ebuild:
+  Drop old buggy version
+
+  Package-Manager: portage-2.3.2
+
+  15 Nov 2016; Thomas Beierlein <tomjbe@gentoo.org>
+  +files/fldigi-3.23.12.patch, fldigi-3.23.12.ebuild:
+  Fix bug #599582. Thanks for reporting.
+
+  Package-Manager: portage-2.3.2
+

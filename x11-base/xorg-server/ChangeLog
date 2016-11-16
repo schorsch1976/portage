@@ -358,3 +358,8 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*xorg-server-1.19.0 (15 Nov 2016)
+
+  15 Nov 2016; Matt Turner <mattst88@gentoo.org> +xorg-server-1.19.0.ebuild:
+  Version bump to 1.19.
+

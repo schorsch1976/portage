@@ -90,3 +90,6 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> pcalc-3-r1.ebuild:
+  mark 3-r1 stable for all #597764
+

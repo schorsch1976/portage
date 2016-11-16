@@ -96,3 +96,9 @@
 
   Package-Manager: portage-2.3.0
 
+  15 Nov 2016; Christoph Junghans <junghans@gentoo.org>
+  files/tpacpi-bat.initd.1, files/tpacpi-bat.initd.2:
+  update patch
+
+  Package-Manager: portage-2.3.0
+

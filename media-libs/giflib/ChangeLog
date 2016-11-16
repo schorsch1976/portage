@@ -127,3 +127,8 @@
   giflib-5.1.3.ebuild, giflib-5.1.4.ebuild:
   sourceforge: switch to https:// URIs
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> giflib-5.1.4.ebuild:
+  5.1.4-r0: stable on alpha
+
+  Gentoo-Bug: 597250
+

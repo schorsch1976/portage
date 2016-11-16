@@ -1073,3 +1073,9 @@
   12 Nov 2016; Michał Górny <mgorny@gentoo.org> llvm-9999.ebuild:
   Remove OCaml (now in dev-ml/llvm-ocaml)
 
+  15 Nov 2016; Michał Górny <mgorny@gentoo.org>
+  -files/3.5.0/fix_LLVMExports_cmake.patch, -llvm-3.5.0.ebuild:
+  Remove 3.5.0
+
+  Closes: https://github.com/gentoo/gentoo/pull/2828
+

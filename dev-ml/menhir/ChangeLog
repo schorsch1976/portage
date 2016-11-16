@@ -207,3 +207,10 @@
 
   Package-Manager: portage-2.3.0
 
+*menhir-20161114 (15 Nov 2016)
+
+  15 Nov 2016; Alexis Ballier <aballier@gentoo.org> +menhir-20161114.ebuild:
+  bump to 20161114
+
+  Package-Manager: portage-2.3.2
+

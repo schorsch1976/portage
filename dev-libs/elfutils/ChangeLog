@@ -206,3 +206,11 @@
   Upstream updated the headers to work w/older versions of glibc,
   so we don't need the blocker anymore.
 
+*elfutils-0.167 (15 Nov 2016)
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> +elfutils-0.167.ebuild:
+  version bump to 0.167 #597662
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> elfutils-0.166.ebuild:
+  mark 0.166 arm64/ia64/m68k/s390/sh/sparc stable #585476
+

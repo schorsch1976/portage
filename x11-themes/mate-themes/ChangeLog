@@ -162,3 +162,12 @@
 
   Package-Manager: portage-2.3.0
 
+*mate-themes-3.22.4 (14 Nov 2016)
+*mate-themes-3.20.13 (14 Nov 2016)
+
+  14 Nov 2016; NP-Hardass <NP-Hardass@gentoo.org> +mate-themes-3.20.13.ebuild,
+  +mate-themes-3.22.4.ebuild:
+  Bump for gtk+ 3.20 and 3.22
+
+  Package-Manager: portage-2.3.0
+

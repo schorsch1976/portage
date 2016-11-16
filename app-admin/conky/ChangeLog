@@ -254,3 +254,8 @@
 
   Package-Manager: portage-2.3.0
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> conky-1.10.4.ebuild:
+  1.10.4-r0: stable on alpha
+
+  Gentoo-Bug: 595652
+

@@ -10,3 +10,11 @@
 
   Package-Manager: portage-2.3.0
 
+*acpilight-0_pre20161031 (15 Nov 2016)
+
+  15 Nov 2016; Brian Evans <grknight@gentoo.org>
+  +acpilight-0_pre20161031.ebuild:
+  Add new snapshot version
+
+  Package-Manager: portage-2.3.2
+

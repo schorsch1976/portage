@@ -367,3 +367,6 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> gcc-4.9.4.ebuild:
+  mark 4.9.4 arm64/ia64/m68k/ppc/s390/sh/sparc stable #595560
+

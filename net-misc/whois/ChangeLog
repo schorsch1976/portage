@@ -125,3 +125,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --ignore-arches
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> whois-5.2.12.ebuild:
+  5.2.12-r0: stable on alpha
+
+  Gentoo-Bug: 598657
+

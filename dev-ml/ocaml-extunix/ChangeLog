@@ -16,3 +16,11 @@
 
   Package-Manager: portage-2.3.0
 
+*ocaml-extunix-0.1.4 (15 Nov 2016)
+
+  15 Nov 2016; Alexis Ballier <aballier@gentoo.org>
+  +ocaml-extunix-0.1.4.ebuild:
+  bump to 0.1.4
+
+  Package-Manager: portage-2.3.2
+

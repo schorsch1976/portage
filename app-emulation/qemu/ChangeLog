@@ -994,3 +994,9 @@
 
   Package-Manager: portage-2.3.0
 
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> qemu-2.7.0-r7.ebuild:
+  drop libpcre dep as qemu does not use it #591202
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> qemu-9999.ebuild:
+  sync readme #575326 and gbm updates #590230
+

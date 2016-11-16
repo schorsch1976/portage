@@ -303,3 +303,17 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*libdrm-2.4.72 (14 Nov 2016)
+
+  14 Nov 2016; Matt Turner <mattst88@gentoo.org> +libdrm-2.4.72.ebuild:
+  Version bump to 2.4.72.
+
+*libdrm-2.4.73 (15 Nov 2016)
+
+  15 Nov 2016; Matt Turner <mattst88@gentoo.org> +libdrm-2.4.73.ebuild:
+  Version bump to 2.4.73.
+
+  15 Nov 2016; Matt Turner <mattst88@gentoo.org> -libdrm-2.4.71.ebuild,
+  -libdrm-2.4.72.ebuild:
+  Drop old.
+

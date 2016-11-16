@@ -352,3 +352,10 @@
 
   Package-Manager: portage-2.3.0
 
+*cinder-9.1.0 (15 Nov 2016)
+
+  15 Nov 2016; Matthew Thode <prometheanfire@gentoo.org> +cinder-9.1.0.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+

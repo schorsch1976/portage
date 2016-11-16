@@ -324,3 +324,8 @@
   +eix-0.32.1-r1.ebuild:
   Own the cache directory
 
+  15 Nov 2016; Michał Górny <mgorny@gentoo.org> eix-0.32.1-r1.ebuild:
+  Fix chown for cache dir, FL-3379
+
+  Bug: https://bugs.funtoo.org/browse/FL-3379
+

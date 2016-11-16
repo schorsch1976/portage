@@ -105,3 +105,6 @@
   runit-2.1.2.ebuild, runit-2.1.2-r1.ebuild:
   add arm64/m68k love
 
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> runit-2.1.1-r1.ebuild:
+  mark 2.1.1-r1 s390/sh stable
+

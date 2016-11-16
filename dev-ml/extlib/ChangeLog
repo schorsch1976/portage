@@ -129,3 +129,10 @@
   +extlib-1.6.1-r1.ebuild:
   Drop non-camlp4 support, #586910
 
+*extlib-1.7.1 (15 Nov 2016)
+
+  15 Nov 2016; Alexis Ballier <aballier@gentoo.org> +extlib-1.7.1.ebuild:
+  bump to 1.7.1
+
+  Package-Manager: portage-2.3.2
+

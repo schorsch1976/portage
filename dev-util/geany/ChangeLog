@@ -171,3 +171,8 @@
 
   Package-Manager: portage-2.3.2
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> geany-1.28.ebuild:
+  1.28-r0: stable on alpha
+
+  Gentoo-Bug: 599264
+

@@ -128,3 +128,7 @@
   llvmlite-0.11.0.ebuild, llvmlite-0.12.1.ebuild, llvmlite-0.13.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  15 Nov 2016; Michał Górny <mgorny@gentoo.org> -llvmlite-0.2.1.ebuild,
+  -llvmlite-0.2.2.ebuild:
+  Drop old
+

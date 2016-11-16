@@ -215,3 +215,8 @@
 
   Package-Manager: portage-2.3.0
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> p7zip-16.02-r1.ebuild:
+  16.02-r1: stable on alpha
+
+  Gentoo-Bug: 593986
+

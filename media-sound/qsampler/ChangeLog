@@ -130,3 +130,10 @@
 
   Package-Manager: portage-2.3.1
 
+*qsampler-0.4.2 (15 Nov 2016)
+
+  15 Nov 2016; Alexis Ballier <aballier@gentoo.org> +qsampler-0.4.2.ebuild:
+  bump to 0.4.2
+
+  Package-Manager: portage-2.3.2
+

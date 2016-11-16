@@ -165,3 +165,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  e2fsprogs-libs-1.43.3.ebuild:
+  sys-fs/e2fsprogs: mark 1.43.3 arm64/ia64/m68k/ppc/s390/sh/sparc stable
+  #596788
+

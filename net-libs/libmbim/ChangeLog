@@ -123,3 +123,6 @@
 
   Package-Manager: portage-2.2.28
 
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> libmbim-1.14.0.ebuild:
+  fix up style & description
+

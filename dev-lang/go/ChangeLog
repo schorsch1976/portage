@@ -494,3 +494,8 @@
 
   Package-Manager: portage-2.3.0
 
+  14 Nov 2016; William Hubbs <williamh@gentoo.org> go-1.7.3.ebuild:
+  stable 1.7.3 on amd64 for #593984
+
+  Package-Manager: portage-2.3.0
+

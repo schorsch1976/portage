@@ -87,3 +87,15 @@
   RepoMan-Options: --include-arches="alpha amd64 amd64-fbsd arm arm64 hppa
   ia64 m68k mips nios2 ppc ppc64 riscv s390 sh sparc sparc-fbsd x86 x86-fbsd"
 
+  14 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  -Color-Calc-1.73.0.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+
+  14 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  Color-Calc-1.74.0.ebuild:
+  Stable for amd64 and x86 using the ALLARCHES policy.
+
+  Package-Manager: portage-2.3.0
+

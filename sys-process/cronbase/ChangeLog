@@ -197,3 +197,9 @@
 
   Gentoo-Bug: 595492
 
+*cronbase-0.3.7-r6 (15 Nov 2016)
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> -cronbase-0.3.7-r5.ebuild,
+  +cronbase-0.3.7-r6.ebuild, files/run-crons-0.3.7:
+  fix non-POSIX shell code #595492
+

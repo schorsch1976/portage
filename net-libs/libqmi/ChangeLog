@@ -114,3 +114,17 @@
 
   Package-Manager: portage-2.2.28
 
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  -files/libqmi-1.0.0-python3.patch, -libqmi-1.0.0.ebuild,
+  -libqmi-1.4.0.ebuild, -libqmi-1.8.0.ebuild, -libqmi-1.10.2.ebuild:
+  drop old <1.12 versions
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> libqmi-1.16.0.ebuild:
+  add libmbim to RDEPEND too #599250
+
+*libqmi-1.16.2 (15 Nov 2016)
+
+  15 Nov 2016; Mike Frysinger <vapier@gentoo.org> +libqmi-1.16.2.ebuild,
+  libqmi-9999.ebuild, metadata.xml:
+  version bump to 1.16.2
+

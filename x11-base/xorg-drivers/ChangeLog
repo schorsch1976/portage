@@ -198,3 +198,9 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*xorg-drivers-1.19 (15 Nov 2016)
+
+  15 Nov 2016; Matt Turner <mattst88@gentoo.org> +xorg-drivers-1.19.ebuild,
+  xorg-drivers-9999.ebuild:
+  Version bump to 1.19.
+

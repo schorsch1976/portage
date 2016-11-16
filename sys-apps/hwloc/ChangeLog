@@ -94,3 +94,8 @@
 
   Package-Manager: portage-2.3.0
 
+  15 Nov 2016; Tobias Klausmann <klausman@gentoo.org> hwloc-1.11.2.ebuild:
+  1.11.2-r0: stable on alpha
+
+  Gentoo-Bug: 595656
+
