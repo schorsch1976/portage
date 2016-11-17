@@ -290,3 +290,11 @@
 
   Package-Manager: portage-2.3.2
 
+*kguiaddons-5.28.0 (16 Nov 2016)
+
+  16 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +kguiaddons-5.28.0.ebuild:
+  kde-frameworks: version bump 5.28.0
+
+  Package-Manager: portage-2.3.2
+

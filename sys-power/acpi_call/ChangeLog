@@ -71,3 +71,9 @@
 
   Package-Manager: portage-2.3.0
 
+  16 Nov 2016; Christoph Junghans <junghans@gentoo.org>
+  files/acpi_call-1.1.0-linux-3.17.patch:
+  update patch
+
+  Package-Manager: portage-2.3.0
+

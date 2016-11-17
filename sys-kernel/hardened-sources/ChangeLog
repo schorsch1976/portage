@@ -1535,3 +1535,13 @@
 
   Package-Manager: portage-2.3.0
 
+*hardened-sources-4.8.8 (16 Nov 2016)
+
+  16 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  +hardened-sources-4.8.8.ebuild:
+  version bump to 4.8.8
+
+  vanilla-4.8 + genpatches-4.8-8 + grsecurity-3.1-4.8.8-201611150756
+
+  Package-Manager: portage-2.3.0
+

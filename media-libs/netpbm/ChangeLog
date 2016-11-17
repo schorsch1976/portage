@@ -87,3 +87,15 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*netpbm-10.76.00 (16 Nov 2016)
+
+  16 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/netpbm-10.76.00-build.patch, +files/netpbm-10.76.00-test.patch,
+  +netpbm-10.76.00.ebuild:
+  version bump to 10.76.00
+
+  16 Nov 2016; Tobias Klausmann <klausman@gentoo.org> netpbm-10.70.00.ebuild:
+  10.70.00-r0: stable on alpha
+
+  Gentoo-Bug: 599940
+

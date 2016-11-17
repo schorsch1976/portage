@@ -134,3 +134,38 @@
   Closes: https://github.com/gentoo/gentoo/pull/1936
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*sqlitebrowser-3.9.1 (15 Nov 2016)
+
+  15 Nov 2016; David Seifert <soap@gentoo.org>
+  +files/sqlitebrowser-3.9.1-cmake.patch, +sqlitebrowser-3.9.1.ebuild:
+  3.9.1 version bump
+
+  Gentoo-bug: 596884
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2793
+
+  Signed-off-by: David Seifert <soap@gentoo.org>
+
+  15 Nov 2016; David Seifert <soap@gentoo.org> sqlitebrowser-3.8.0.ebuild:
+  Eliminate qt4 vs. qt5 REQUIRED_USE
+
+  Drop useless subslot operator. Minimal change.
+
+  Package-Manager: portage-2.3.0
+
+  sqlitebrowser-3.8.0.ebuild
+  Closes: https://github.com/gentoo/gentoo/pull/2793
+
+  Signed-off-by: David Seifert <soap@gentoo.org>
+
+  15 Nov 2016; David Seifert <soap@gentoo.org> -sqlitebrowser-3.7.0-r1.ebuild:
+  Drop old
+
+  3.8.0 is already stable while 3.7.0 wasn't.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2793
+
+  Signed-off-by: David Seifert <soap@gentoo.org>
+

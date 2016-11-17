@@ -1,0 +1,12 @@
+# ChangeLog for sci-mathematics/dunshire
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*dunshire-0.1.1 (16 Nov 2016)
+
+  16 Nov 2016; Michael Orlitzky <mjo@gentoo.org> +dunshire-0.1.1.ebuild,
+  +metadata.xml:
+  new package to solve linear games over cones.
+
+  Package-Manager: portage-2.3.0
+

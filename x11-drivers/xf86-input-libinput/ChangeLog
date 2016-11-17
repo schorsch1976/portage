@@ -284,3 +284,11 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  16 Nov 2016; Agostino Sarubbo <ago@gentoo.org>
+  xf86-input-libinput-0.19.0.ebuild:
+  ia64 stable wrt bug #579266
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ia64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

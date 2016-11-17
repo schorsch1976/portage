@@ -86,3 +86,13 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*DateTime-Set-0.390.0 (16 Nov 2016)
+
+  16 Nov 2016; Kent Fredric <kentnl@gentoo.org> +DateTime-Set-0.390.0.ebuild:
+  Bump to 0.390.0
+
+  Upstream:
+  - max and min are now aliases to end and start respectively
+
+  Package-Manager: portage-2.3.2
+

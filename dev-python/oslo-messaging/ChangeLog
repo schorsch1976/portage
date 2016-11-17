@@ -148,3 +148,20 @@
 
   Package-Manager: portage-2.3.0
 
+*oslo-messaging-5.10.0-r1 (16 Nov 2016)
+*oslo-messaging-4.6.1-r1 (16 Nov 2016)
+
+  16 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +oslo-messaging-4.6.1-r1.ebuild, +oslo-messaging-5.10.0-r1.ebuild:
+  Block kombu 4.0.0
+
+  oslo.messaging is not compatible with it, for two reasons: because we
+  cap amqp<2.0.0 there; and because the code of the library needs some
+  adjustments.
+
+  Until we clear that up, we will block the new  kombu release. We don't
+  cap because it's against the direction we want to take long term
+  (adopting to new upstream releases).
+
+  Package-Manager: portage-2.3.0
+

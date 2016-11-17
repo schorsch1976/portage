@@ -110,3 +110,10 @@
 
   Gentoo-Bug: 579266
 
+  16 Nov 2016; Agostino Sarubbo <ago@gentoo.org> xorg-cf-files-1.0.6.ebuild:
+  ia64 stable wrt bug #579266
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ia64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

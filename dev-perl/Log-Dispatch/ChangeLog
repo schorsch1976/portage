@@ -119,3 +119,18 @@
 
   Package-Manager: portage-2.2.28
 
+*Log-Dispatch-2.580.0 (16 Nov 2016)
+
+  16 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Log-Dispatch-2.580.0.ebuild,
+  metadata.xml:
+  Bump to 2.580.0
+
+  Upstream:
+  - Guard against $@ $! and $? being unintentionally changed
+  - Added remove_callback method(s)
+
+  Keywording:
+  - Dropped ppc due to new dependency, dev-perl/Test-Needs
+
+  Package-Manager: portage-2.3.2
+

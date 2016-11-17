@@ -246,3 +246,8 @@
   version bump to 1.60_p20161110235919.ebuild to fix build w/linux-
   headers-4.8+
 
+  16 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  net-tools-1.60_p20160215155418.ebuild,
+  net-tools-1.60_p20161110235919.ebuild, net-tools-9999.ebuild:
+  clear out env vars that we do not need #599602
+

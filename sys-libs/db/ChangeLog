@@ -182,3 +182,8 @@
   14 Nov 2016; Mike Frysinger <vapier@gentoo.org> db-4.8.30-r2.ebuild:
   mark 4.8.30-r2 arm64/m68k/s390/sh stable
 
+  16 Nov 2016; Tobias Klausmann <klausman@gentoo.org> db-5.3.28-r2.ebuild:
+  5.3.28-r2: stable on alpha
+
+  Gentoo-Bug: 599134
+

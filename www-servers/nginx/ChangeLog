@@ -661,3 +661,47 @@
 
   Package-Manager: portage-2.3.2
 
+*nginx-1.11.6 (15 Nov 2016)
+
+  15 Nov 2016; Thomas Deutschmann <whissi@gentoo.org>
+  +files/http_memc-0.17-issue_26.patch, +nginx-1.11.6.ebuild:
+  Bump to v1.11.6 mainline
+
+  Ebuild changes:
+  ===============
+   - ngx_headers_more module updated to v0.32
+
+   - LUA module updated to v0.10.7
+
+   - Patch for ngx_memc added to solve a build issue with
+     latest nginx [Link 1]
+
+  Link 1: https://github.com/openresty/memc-nginx-module/issues/26
+
+  Package-Manager: portage-2.3.2
+
+*nginx-1.10.2-r2 (15 Nov 2016)
+
+  15 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> +nginx-1.10.2-r2.ebuild:
+  Bump to v1.10.2-r2 stable
+
+  Ebuild changes:
+  ===============
+   - ngx_headers_more module updated to v0.32
+
+   - LUA module updated to v0.10.7
+
+   - Patch for ngx_memc added to solve a build issue with
+     latest nginx [Link 1]
+
+  Link 1: https://github.com/openresty/memc-nginx-module/issues/26
+
+  Package-Manager: portage-2.3.2
+
+  15 Nov 2016; Thomas Deutschmann <whissi@gentoo.org>
+  -files/http-sticky-nginx-1.11.2.patch, -nginx-1.10.1-r3.ebuild,
+  -nginx-1.10.1-r4.ebuild, -nginx-1.11.4.ebuild:
+  Cleanup old.
+
+  Package-Manager: portage-2.3.2
+

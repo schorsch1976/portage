@@ -76,3 +76,8 @@
   mirrorselect-9999.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  16 Nov 2016; Brian Dolbec <dolsen@gentoo.org> mirrorselect-2.2.0.1.ebuild:
+  Fix homepage link bug 597676
+
+  Package-Manager: portage-2.3.2_p3
+

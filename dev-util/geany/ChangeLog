@@ -176,3 +176,8 @@
 
   Gentoo-Bug: 599264
 
+  16 Nov 2016; Pacho Ramos <pacho@gentoo.org> geany-1.28.ebuild:
+  amd64/x86 stable, bug #599264
+
+  Package-Manager: portage-2.3.2
+

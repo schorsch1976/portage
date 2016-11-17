@@ -138,3 +138,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  16 Nov 2016; Tobias Klausmann <klausman@gentoo.org> netifrc-0.4.0-r1.ebuild:
+  0.4.0-r1: stable on alpha
+
+  Gentoo-Bug: 591826
+

@@ -182,3 +182,20 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*DBD-SQLite-1.520.0 (16 Nov 2016)
+
+  16 Nov 2016; Kent Fredric <kentnl@gentoo.org> +DBD-SQLite-1.520.0.ebuild,
+  metadata.xml:
+  Bump to 1.520.0
+
+  Testing indicates system-sqlite works again, at least, with
+  sqlite-3.15.1
+
+  Upstream:
+  - Update bundled SQLite to 3.13.0
+  - Enabled FTS5
+  - REGEXP function fixed to work under sqlite_unicode
+  - column_info now parses column_info with spaces correctly.
+
+  Package-Manager: portage-2.3.2
+

@@ -140,3 +140,11 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  15 Nov 2016; David Seifert <soap@gentoo.org>
+  -files/rapidsvn-svncpp_link.patch:
+  remove unused patch
+
+  Closes: https://github.com/gentoo/gentoo/pull/2832
+
+  Signed-off-by: David Seifert <soap@gentoo.org>
+

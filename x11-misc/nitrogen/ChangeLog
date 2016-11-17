@@ -75,3 +75,8 @@
 
   Package-Manager: portage-2.3.2
 
+  16 Nov 2016; Jeroen Roovers <jer@gentoo.org> nitrogen-1.6.0.ebuild:
+  Fix sandbox violation (bug #599720 by Toralf Förster).
+
+  Package-Manager: portage-2.3.2
+

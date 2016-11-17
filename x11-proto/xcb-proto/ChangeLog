@@ -192,3 +192,10 @@
   xcb-proto-1.12-r1.ebuild, xcb-proto-1.12-r2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  16 Nov 2016; Agostino Sarubbo <ago@gentoo.org> xcb-proto-1.12-r2.ebuild:
+  ia64 stable wrt bug #579266
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ia64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

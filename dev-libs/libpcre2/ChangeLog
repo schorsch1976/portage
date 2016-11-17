@@ -16,3 +16,8 @@
 
   Gentoo-Bug: 599218
 
+  16 Nov 2016; Pacho Ramos <pacho@gentoo.org> libpcre2-10.22.ebuild:
+  amd64/x86 stable, bug #599218
+
+  Package-Manager: portage-2.3.2
+

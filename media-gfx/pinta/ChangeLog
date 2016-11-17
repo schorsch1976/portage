@@ -136,3 +136,8 @@
 
   Package-Manager: portage-2.3.1
 
+  16 Nov 2016; Pacho Ramos <pacho@gentoo.org> pinta-9999.ebuild:
+  Update live ebuild (#598854 by Alessandro Calorì)
+
+  Package-Manager: portage-2.3.2
+

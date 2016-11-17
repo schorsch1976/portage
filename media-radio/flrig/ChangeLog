@@ -107,3 +107,16 @@
 
   Package-Manager: portage-2.3.1
 
+  16 Nov 2016; Thomas Beierlein <tomjbe@gentoo.org> -flrig-1.3.19.ebuild,
+  -flrig-1.3.21.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+
+*flrig-1.3.27 (16 Nov 2016)
+
+  16 Nov 2016; Thomas Beierlein <tomjbe@gentoo.org> +flrig-1.3.27.ebuild:
+  Maintenance release
+
+  Package-Manager: portage-2.3.2
+

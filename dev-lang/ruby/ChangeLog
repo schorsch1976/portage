@@ -441,3 +441,12 @@
 
   Package-Manager: portage-2.3.0
 
+*ruby-2.3.2 (16 Nov 2016)
+*ruby-2.2.6 (16 Nov 2016)
+
+  16 Nov 2016; Hans de Graaff <graaff@gentoo.org> +ruby-2.2.6.ebuild,
+  +ruby-2.3.2.ebuild:
+  add 2.2.6 and 2.3.2
+
+  Package-Manager: portage-2.3.0
+
