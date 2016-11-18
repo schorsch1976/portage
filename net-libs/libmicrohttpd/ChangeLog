@@ -305,3 +305,9 @@
 
   Gentoo-Bug: 597392
 
+  16 Nov 2016; Markus Meier <maekke@gentoo.org> libmicrohttpd-0.9.51.ebuild:
+  arm stable, bug #597392
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

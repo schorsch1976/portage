@@ -209,3 +209,20 @@
 
   Package-Manager: portage-2.3.2
 
+*DateTime-1.410.0 (17 Nov 2016)
+
+  17 Nov 2016; Kent Fredric <kentnl@gentoo.org> +DateTime-1.410.0.ebuild,
+  metadata.xml:
+  Bump to version 1.410.0 (masked)
+
+  Upstream:
+  - add and subtract methods now expressly support DateTime::Duration
+    objects as arguments
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Kent Fredric <kentnl@gentoo.org> -DateTime-1.400.0.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

@@ -205,3 +205,8 @@
   gvim-7.4.2102.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  17 Nov 2016; Tim Harder <radhermit@gentoo.org> gvim-9999.ebuild:
+  app-editors/vim: update live ebuilds to work with renamed file
+
+  configure.in was renamed to configure.ac (bug #599992).
+

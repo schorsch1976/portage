@@ -93,3 +93,11 @@
 
   Package-Manager: portage-2.3.2
 
+  17 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +files/qlipper-5.0.0-build.patch, qlipper-5.0.0.ebuild:
+  add patch to resolve build failure
+
+  Gentoo-bug: 599164
+
+  Package-Manager: portage-2.3.2
+

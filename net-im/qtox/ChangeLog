@@ -92,3 +92,11 @@
 
   Package-Manager: portage-2.3.0
 
+*qtox-1.6.0 (17 Nov 2016)
+
+  17 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> -qtox-1.3.0.ebuild,
+  -qtox-1.4.0.ebuild, +qtox-1.6.0.ebuild:
+  bump version to v1.6.0 and remove outdated versions
+
+  Package-Manager: portage-2.3.0
+

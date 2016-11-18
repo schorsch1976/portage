@@ -250,3 +250,10 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  17 Nov 2016; Agostino Sarubbo <ago@gentoo.org> libevdev-1.5.2.ebuild:
+  ppc stable wrt bug #579266
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ppc"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

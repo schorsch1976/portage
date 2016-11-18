@@ -118,3 +118,13 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> pyfits-3.3-r1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*pyfits-3.4-r1 (17 Nov 2016)
+
+  17 Nov 2016; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/01-system-cfitsio.patch, +files/02-numpy-deprecation-warning.patch,
+  +files/03-fix-for-cfitsio-3380.patch, -pyfits-3.4.ebuild,
+  +pyfits-3.4-r1.ebuild:
+  add several patches from debian, also fixing #596240
+
+  Package-Manager: portage-2.3.2
+

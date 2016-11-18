@@ -1,0 +1,17 @@
+# ChangeLog for dev-util/drone
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*drone-0.5.0_pre20161019 (17 Nov 2016)
+
+  17 Nov 2016; Manuel Rüger <mrueg@gentoo.org>
+  +drone-0.5.0_pre20161019.ebuild, +metadata.xml:
+  Initial version
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Manuel Rüger <mrueg@gentoo.org> drone-0.5.0_pre20161019.ebuild:
+  Fix quotes
+
+  Package-Manager: portage-2.3.2
+

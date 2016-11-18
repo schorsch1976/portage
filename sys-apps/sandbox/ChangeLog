@@ -189,3 +189,10 @@
   sandbox-2.10-r1.ebuild, sandbox-2.10-r2.ebuild, sandbox-2.11-r2.ebuild:
   add usersandbox to the error message disable list
 
+*sandbox-2.11-r3 (16 Nov 2016)
+
+  16 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/sandbox-2.11-exec-prelink.patch, -sandbox-2.11-r2.ebuild,
+  +sandbox-2.11-r3.ebuild:
+  fix crashes when the system is prelinked #599894
+

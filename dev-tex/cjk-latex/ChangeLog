@@ -69,3 +69,9 @@
 
   Gentoo-Bug: 596938
 
+  16 Nov 2016; Markus Meier <maekke@gentoo.org> cjk-latex-4.8.4.ebuild:
+  arm stable, bug #596938
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

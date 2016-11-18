@@ -69,3 +69,25 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*MP3-Tag-1.140.0 (17 Nov 2016)
+
+  17 Nov 2016; Kent Fredric <kentnl@gentoo.org> +MP3-Tag-1.140.0.ebuild:
+  Bump to version 1.140.0 re bug #600062
+
+  - EAPI6
+  - Add USE="examples"
+
+  Upstream:
+  - Fixed warnings on Perl 5.22+
+  - New method have_one_of_frame
+  - New methods *_have() for all basic types like "title" etc
+  - New tunable ampersand_joiner
+  - New method _auto_field_from
+  - Fix _parse_rex_microinterpolate not updateing $ecount with %%
+  - Fix some %-escapes not being matched
+  - More careful ID3v2 frame name parsing
+
+  Bug: https://bugs.gentoo.org/600062
+
+  Package-Manager: portage-2.3.2
+

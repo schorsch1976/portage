@@ -333,3 +333,19 @@
 
   Package-Manager: portage-2.3.2
 
+*kservice-5.28.0-r1 (17 Nov 2016)
+
+  17 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +kservice-5.28.0-r1.ebuild:
+  avoid breaking the menu
+
+  Gentoo-bug: 596316
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  -kservice-5.28.0.ebuild:
+  remove broken revision
+
+  Package-Manager: portage-2.3.2
+

@@ -565,3 +565,16 @@
 
   Gentoo-Bug: 597582
 
+*openrc-0.22.4 (17 Nov 2016)
+
+  17 Nov 2016; William Hubbs <williamh@gentoo.org> +openrc-0.22.4.ebuild:
+  0.22.4 bump for SELinux fix
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --force
+
+  17 Nov 2016; William Hubbs <williamh@gentoo.org> -openrc-0.22.3-r1.ebuild:
+  remove 0.22.3-r1 since 0.22.4 is going stable
+
+  Package-Manager: portage-2.3.0
+

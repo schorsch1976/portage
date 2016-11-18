@@ -103,3 +103,17 @@
   RepoMan-Options: --include-arches="alpha amd64 amd64-fbsd arm arm64 hppa
   ia64 m68k mips nios2 ppc ppc64 riscv s390 sh sparc sparc-fbsd x86 x86-fbsd"
 
+*Module-ScanDeps-1.230.0 (17 Nov 2016)
+
+  17 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Module-ScanDeps-1.230.0.ebuild, metadata.xml:
+  Bump to version 1.230.0
+
+  - EAPI6
+
+  Upstream:
+  - add _glob_in_inc_1 helper
+  - add more preload rules
+
+  Package-Manager: portage-2.3.2
+

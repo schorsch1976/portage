@@ -106,3 +106,9 @@
 
   Gentoo-Bug: 597926
 
+  16 Nov 2016; Markus Meier <maekke@gentoo.org> libcdio-0.93.ebuild:
+  arm stable, bug #597926
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

@@ -72,3 +72,7 @@
   quilt-0.63.ebuild, quilt-9999.ebuild:
   savannah: switch to https URLs
 
+  17 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  -files/quilt-0.48-no-graphviz.patch:
+  remove unused patch
+

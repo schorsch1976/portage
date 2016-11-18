@@ -110,3 +110,21 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*PDF-Create-1.370.0 (17 Nov 2016)
+
+  17 Nov 2016; Kent Fredric <kentnl@gentoo.org> +PDF-Create-1.370.0.ebuild,
+  metadata.xml:
+  Bump to version 1.370.0
+
+  Upstream:
+  - fixed block_text() line spacing calculation
+  - Added util verify-char-width for font character with testing
+  - Fixed calculation of Helvetica and HelveticaBold fonts
+  - Ensure to close passed write filehandles to avoid corruption
+
+  Keywording:
+  - New dependencies
+  - Dropped alpha ia64 ppc sparc
+
+  Package-Manager: portage-2.3.2
+

@@ -123,3 +123,15 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*gloox-1.0.18 (17 Nov 2016)
+
+  17 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +gloox-1.0.18.ebuild:
+  Bump to version 1.0.18
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -gloox-1.0.16-r1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

@@ -406,3 +406,11 @@
 
   Package-Manager: portage-2.3.1
 
+*poppler-0.49.0 (17 Nov 2016)
+
+  17 Nov 2016; Johannes Huber <johu@gentoo.org> +poppler-0.49.0.ebuild,
+  poppler-9999.ebuild:
+  Version bump 0.49.0
+
+  Package-Manager: portage-2.3.2
+

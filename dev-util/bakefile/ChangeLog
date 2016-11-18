@@ -64,3 +64,7 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  17 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  -files/bakefile-0.2.6-enlarge-buffers.patch:
+  remove unused patch
+

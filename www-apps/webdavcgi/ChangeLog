@@ -81,3 +81,21 @@
   files/apache-webdavcgi-0.8-example.conf:
   apache: switch to https:// URI
 
+*webdavcgi-1.1.1 (16 Nov 2016)
+
+  16 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org>
+  +files/apache-webdavcgi-1.1-example.conf, +files/webdav-1.1.conf,
+  +webdavcgi-1.1.1.ebuild:
+  Version bump to 1.1.1
+
+  Added new upstream 1.1.1 WebDAV CGI release with the following changes:
+  * Switched to EAPI 6
+  * Updated dependencies
+  * Moved temporary directories from /var/cache to /var/tmp (to make QA happy)
+  * Pre-create trash and optimizer directory
+  * Added updated Apache HTTP configuration snipped for version 2.4
+  * Added updated wedav 1.1 configuration
+  * Added note for systemd users
+
+  Gentoo-Bug: 595060
+

@@ -73,3 +73,18 @@
 
   Bug: https://bugs.gentoo.org/594428
 
+*xf86-video-amdgpu-1.2.0 (17 Nov 2016)
+
+  17 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +xf86-video-amdgpu-1.2.0.ebuild:
+  Bump to version 1.2.0 (bug #600100).
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -xf86-video-amdgpu-0.0.01_pre20150814.ebuild,
+  -xf86-video-amdgpu-1.0.1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

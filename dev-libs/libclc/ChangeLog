@@ -123,3 +123,11 @@
   -libclc-0.0.1_pre20141027.ebuild:
   Drop old
 
+  17 Nov 2016; Agostino Sarubbo <ago@gentoo.org>
+  libclc-0.2.0_pre20160209.ebuild:
+  ppc stable wrt bug #579266
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ppc"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

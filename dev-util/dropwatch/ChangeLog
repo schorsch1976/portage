@@ -75,3 +75,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*dropwatch-1.4_p20150706 (16 Nov 2016)
+
+  16 Nov 2016; Andrew Savchenko <bircoph@gentoo.org>
+  +dropwatch-1.4_p20150706.ebuild, files/dropwatch-1.4-binutils-2.23.patch,
+  +files/dropwatch-1.4_p20150706-makefile.patch:
+  version bump and fixes
+
+  - update to the latest git HEAD snapshot (20150706);
+  - update to EAPI 6;
+  - add subsolt dep on binutils-libs (fixes bug 599908), thanks
+    Thomas Deutschmann (whissi@gentoo.org) for the report and the patch.
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+

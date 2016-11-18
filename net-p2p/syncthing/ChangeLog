@@ -402,3 +402,21 @@
 
   Package-Manager: portage-2.3.2
 
+*syncthing-0.14.11 (16 Nov 2016)
+
+  16 Nov 2016; David Seifert <soap@gentoo.org> +syncthing-0.14.11.ebuild:
+  bump to 0.14.11
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2838
+
+  Signed-off-by: David Seifert <soap@gentoo.org>
+
+  16 Nov 2016; David Seifert <soap@gentoo.org> -syncthing-0.14.7.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2838
+
+  Signed-off-by: David Seifert <soap@gentoo.org>
+

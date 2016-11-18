@@ -304,3 +304,9 @@
 
   Gentoo-Bug: 596864
 
+  17 Nov 2016; Jeroen Roovers <jer@gentoo.org> guile-1.8.8-r3.ebuild:
+  Stable for HPPA PPC64 (bug #596864).
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --ignore-arches
+

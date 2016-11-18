@@ -164,3 +164,9 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  -files/dolphin-5.0-dynamic-llvm-detect.patch,
+  -files/dolphin-5.0-miniupnpc-abi-14.patch,
+  -files/dolphin-emu-3.5-gcc-4.8.patch:
+  remove unused patches
+

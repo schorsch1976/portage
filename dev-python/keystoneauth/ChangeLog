@@ -76,3 +76,9 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  keystoneauth-2.4.2.ebuild:
+  2.4.2 stable amd64 and x86
+
+  Package-Manager: portage-2.3.0
+

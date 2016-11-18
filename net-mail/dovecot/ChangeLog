@@ -296,3 +296,9 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --ignore-arches
 
+  16 Nov 2016; Markus Meier <maekke@gentoo.org> dovecot-2.2.25.ebuild:
+  arm stable, bug #596820
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+
