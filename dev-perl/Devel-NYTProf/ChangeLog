@@ -86,3 +86,20 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Devel-NYTProf-6.30.0 (18 Nov 2016)
+
+  18 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Devel-NYTProf-6.30.0.ebuild:
+  Bump to version 6.30.0
+
+  - EAPI6
+  - Add USE="examples"
+  - Remove author tests
+  - Parallel tests enabled
+
+  Upstream:
+  - Fix for optimizations since 5.23.8
+  - Fix SIGUSR2 and Div/0 failures on Win32
+  - Unifty profile format error messages
+
+  Package-Manager: portage-2.3.2
+

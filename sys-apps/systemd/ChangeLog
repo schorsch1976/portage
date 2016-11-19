@@ -609,3 +609,19 @@
 
   Package-Manager: portage-2.3.2_p4
 
+  18 Nov 2016; Mike Gilbert <floppym@gentoo.org> systemd-232.ebuild,
+  systemd-9999.ebuild:
+  make the ebuild compiler-agnostic
+
+  Remove binutils and gcc from depend. Remove gcc version check.
+  Pass --with-efi-libdir to workaround compilers which do not support the
+  -print-multi-os-directory option.
+
+  Note that gnu-efi headers still require gcc; EFI_CC can be set to gcc to
+  work
+  around this.
+
+  Bug: https://bugs.gentoo.org/599210
+
+  Package-Manager: portage-2.3.2_p8
+

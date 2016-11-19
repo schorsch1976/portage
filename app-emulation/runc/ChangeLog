@@ -121,3 +121,10 @@
 
   Package-Manager: portage-2.3.0
 
+*runc-1.0.0_rc2-r1 (18 Nov 2016)
+
+  18 Nov 2016; William Hubbs <williamh@gentoo.org> +runc-1.0.0_rc2-r1.ebuild:
+  1.0.0_rc2-r1 revbump to add commit to version output
+
+  Package-Manager: portage-2.3.0
+

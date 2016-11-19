@@ -28,3 +28,13 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*Devel-CheckLib-1.70.0 (18 Nov 2016)
+
+  18 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Devel-CheckLib-1.70.0.ebuild:
+  Bump to version 1.70.0
+
+  Upstream:
+  - add analyze_binary feature
+
+  Package-Manager: portage-2.3.2
+

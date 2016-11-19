@@ -174,3 +174,25 @@
 
   Package-Manager: portage-2.3.2
 
+*kdeconnect-1.0.2 (17 Nov 2016)
+
+  17 Nov 2016; Johannes Huber <johu@gentoo.org> +kdeconnect-1.0.2.ebuild:
+  Version bump 1.0.2
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Johannes Huber <johu@gentoo.org> -kdeconnect-0.9g.ebuild:
+  Remove 0.9g
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Johannes Huber <johu@gentoo.org> -kdeconnect-1.0.ebuild:
+  Remove 1.0
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Johannes Huber <johu@gentoo.org> -kdeconnect-1.0.1.ebuild:
+  Remove 1.0.1
+
+  Package-Manager: portage-2.3.2
+

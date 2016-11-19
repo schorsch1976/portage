@@ -159,3 +159,16 @@
 
   Package-Manager: portage-2.3.0
 
+  18 Nov 2016; Matthias Maier <tamiko@gentoo.org>
+  libvirt-glib-0.2.3-r1.ebuild:
+  stabilize 0.2.3-r1 for amd64 and x86
+
+  Package-Manager: portage-2.3.0
+
+*libvirt-glib-1.0.0 (18 Nov 2016)
+
+  18 Nov 2016; Matthias Maier <tamiko@gentoo.org> +libvirt-glib-1.0.0.ebuild:
+  version bump to 1.0.0
+
+  Package-Manager: portage-2.3.0
+

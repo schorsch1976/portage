@@ -73,3 +73,18 @@
 
   Package-Manager: portage-2.2.27
 
+*DateTime-Tiny-1.60.0 (18 Nov 2016)
+
+  18 Nov 2016; Kent Fredric <kentnl@gentoo.org> +DateTime-Tiny-1.60.0.ebuild:
+  Bump to version 1.60.0
+
+  - EAPI6
+  - Parallel Tests
+  - Patch upstreamed
+
+  Upstream:
+  - Fix test compat against DateTime::Locale >1.0
+  - Ensure Carp is loaded before using it.
+
+  Package-Manager: portage-2.3.2
+

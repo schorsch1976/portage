@@ -318,3 +318,10 @@
 
   Package-Manager: portage-2.3.2
 
+  18 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> tortoisehg-4.0.ebuild:
+  don't install hgext3rd/__init__.py (bug #599266).
+
+  It's already provided by dev-vcs/mercurial.
+
+  Package-Manager: portage-2.3.2
+

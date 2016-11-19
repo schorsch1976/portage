@@ -71,3 +71,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Devel-CheckCompiler-0.60.0 (18 Nov 2016)
+
+  18 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Devel-CheckCompiler-0.60.0.ebuild, metadata.xml:
+  Bump to version 0.60.0
+
+  - EAPI6
+  - Parallel Test
+
+  Upstream:
+  - Stricter C99 Checking code
+  - Fixes for older GCCs
+
+  Package-Manager: portage-2.3.2
+

@@ -199,3 +199,16 @@
   +readline-7.0-r1.ebuild:
   add upstream patch for excessive history memory allocs #597006
 
+*readline-7.0_p1 (18 Nov 2016)
+
+  18 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -files/readline-7.0-history-alloclist.patch, -readline-7.0-r1.ebuild,
+  +readline-7.0_p1.ebuild:
+  Bump to version 7.0_p1. Removed old.
+
+  We already had the issue fixed in 7.0-r1 that 7.0_p1 is fixing but now we
+  have
+  the official patch.
+
+  Package-Manager: portage-2.3.2
+

@@ -68,3 +68,17 @@
 
   Package-Manager: portage-2.3.0
 
+*Digest-JHash-0.90.0 (18 Nov 2016)
+
+  18 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Digest-JHash-0.90.0.ebuild:
+  Bump to version 0.90.0
+
+  - EAPI6
+  - Add USE="examples"
+  - Cleanup tests
+
+  Upstream:
+  - Packaging updates
+
+  Package-Manager: portage-2.3.2
+

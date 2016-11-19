@@ -98,3 +98,59 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> metadata.xml:
+  Add myself as maintainer
+
+  Package-Manager: portage-2.3.2
+
+*fcron-3.2.1 (17 Nov 2016)
+
+  17 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> +fcron-3.2.1.ebuild,
+  +files/crontab.2,
+  +files/fcron-3.2.1-configure-fix-audit-parameter-check.patch,
+  +files/fcron.init.4:
+  Bumped to v3.2.1
+
+  EBuild changes:
+  ===============
+   - Migrated to EAPI=6.
+
+   - Automagic on sys-process/audit removed. (Bug #540446)
+
+   - Previously we did only install cronjobs which remove lastrun lock files
+     however we did not install a cronjob which actually called "run-crons"
+     in the default systab when using USE=-system-crontab with the result
+     that we never actually executed any cronjob from
+     /etc/cron.{hourly,daily,weekly,monthly}. This was fixed by adding the
+     missing job. (Bug #464278)
+
+   - Default systab rewritten to clarify the purpose of /etc/crontab when the
+     package was built with USE=system-crontab. (Bug #466900, #467316)
+
+   - Systab commands are now using absolute path. (Bug #525242)
+
+   - OpenRC runscript updated
+
+    - Shebang updated to use openrc-run. (Bug #573846)
+
+    - Multi instance support fixed which was broken due to missing quotes in
+      getconfig(). (Bug #520264, #533786)
+
+    - Runscript now "use clock" instead of "need clock". (Bug #546138)
+
+    - Runscript is now more reliable because it waits 1000ms per default to
+      ensure that fcron daemon is really up and running and has not
+      terminated due to a problem.
+
+  Gentoo-Bug: https://bugs.gentoo.org/464278
+  Gentoo-Bug: https://bugs.gentoo.org/466900
+  Gentoo-Bug: https://bugs.gentoo.org/467316
+  Gentoo-Bug: https://bugs.gentoo.org/520264
+  Gentoo-Bug: https://bugs.gentoo.org/525242
+  Gentoo-Bug: https://bugs.gentoo.org/533786
+  Gentoo-Bug: https://bugs.gentoo.org/540446
+  Gentoo-Bug: https://bugs.gentoo.org/546138
+  Gentoo-Bug: https://bugs.gentoo.org/573846
+
+  Package-Manager: portage-2.3.2
+

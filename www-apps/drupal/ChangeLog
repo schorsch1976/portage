@@ -284,3 +284,28 @@
   Signed-off-by: Jorge Manuel B. S. Vicetto (jmbsvicetto)
   <jmbsvicetto@gentoo.org>
 
+*drupal-8.2.3 (18 Nov 2016)
+*drupal-7.52 (18 Nov 2016)
+
+  18 Nov 2016; Jorge Manuel B. S. Vicetto (jmbsvicetto)
+  <jmbsvicetto@gentoo.org> +drupal-7.52.ebuild, +drupal-8.2.3.ebuild:
+  Add 8.2.3 and 7.52 releases - (DRUPAL-SA-CORE-2016-005) bug 600124.
+
+  Signed-off-by: Jorge Manuel B. S. Vicetto (jmbsvicetto)
+  <jmbsvicetto@gentoo.org>
+
+  18 Nov 2016; Jorge Manuel B. S. Vicetto (jmbsvicetto)
+  <jmbsvicetto@gentoo.org> -drupal-7.50.ebuild, -drupal-7.51.ebuild,
+  -drupal-8.2.0_rc1.ebuild, -drupal-8.2.0.ebuild:
+  Drop old and vulnerable versions.
+
+  Signed-off-by: Jorge Manuel B. S. Vicetto (jmbsvicetto)
+  <jmbsvicetto@gentoo.org>
+
+  18 Nov 2016; Jorge Manuel B. S. Vicetto (jmbsvicetto)
+  <jmbsvicetto@gentoo.org> -drupal-8.1.10.ebuild:
+  Drop 8.1.10 as it's vulnerable to DRUPAL-SA-CORE-2016-005 - bug 600124. Mask
+  6.38 as it's no longer supported and will be removed at the end of the year.
+
+  Package-Manager: portage-2.3.2
+

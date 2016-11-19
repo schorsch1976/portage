@@ -45,3 +45,11 @@
 
   Package-Manager: portage-2.3.0
 
+*grafana-bin-3.1.1 (18 Nov 2016)
+
+  18 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  +grafana-bin-3.1.1.ebuild:
+  version bump to v3.1.1
+
+  Package-Manager: portage-2.3.2
+

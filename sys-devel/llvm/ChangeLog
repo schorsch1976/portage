@@ -1079,3 +1079,6 @@
 
   Closes: https://github.com/gentoo/gentoo/pull/2828
 
+  18 Nov 2016; Michał Górny <mgorny@gentoo.org> llvm-9999.ebuild:
+  Switch to newly-added LLVM_ENABLE_LIBEDIT
+

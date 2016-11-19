@@ -391,3 +391,11 @@
 
   Package-Manager: portage-2.3.2
 
+*lightdm-1.21.0-r1 (18 Nov 2016)
+
+  18 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -lightdm-1.21.0.ebuild,
+  +lightdm-1.21.0-r1.ebuild:
+  Revbump to fix session-wrapper sed magic for lightdm.conf.
+
+  Package-Manager: portage-2.3.2
+

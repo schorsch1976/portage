@@ -327,3 +327,16 @@
   libvirt-python-9999.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*libvirt-python-2.4.0 (18 Nov 2016)
+
+  18 Nov 2016; Matthias Maier <tamiko@gentoo.org>
+  +libvirt-python-2.4.0.ebuild:
+  version bump to 2.4.0, bug #599176
+
+  Package-Manager: portage-2.3.0
+
+  18 Nov 2016; Matthias Maier <tamiko@gentoo.org> libvirt-python-2.3.0.ebuild:
+  stabilize 2.4.0 for amd64 and x86
+
+  Package-Manager: portage-2.3.0
+

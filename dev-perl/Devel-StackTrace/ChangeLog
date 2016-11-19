@@ -79,3 +79,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Devel-StackTrace-2.10.0 (18 Nov 2016)
+
+  18 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Devel-StackTrace-2.10.0.ebuild:
+  Bump to version 2.10.0
+
+  - EAPI6
+  - Remove author tests
+  - Enable parallel tests
+
+  Upstream:
+  - Fix bugs with calling 'frames' with arguments.
+
+  Package-Manager: portage-2.3.2
+

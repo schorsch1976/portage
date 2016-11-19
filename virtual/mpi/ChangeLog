@@ -101,3 +101,15 @@
 
   Package-Manager: portage-2.2.28
 
+*mpi-2.0-r5 (17 Nov 2016)
+
+  17 Nov 2016; Ian Stakenvicius <axs@gentoo.org> -mpi-2.0-r4.ebuild,
+  +mpi-2.0-r5.ebuild:
+  profiles/package.mask: put mask back on sandbox-2.11+ for bug 580726
+
+*mpi-2.0-r4 (17 Nov 2016)
+
+  17 Nov 2016; Ian Stakenvicius <axs@gentoo.org> +mpi-2.0-r4.ebuild,
+  -mpi-2.0-r5.ebuild:
+  Fix dirty commit b667bf29eafb77ec92833398a4cdad5830f2e9c5
+

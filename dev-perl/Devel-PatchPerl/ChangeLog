@@ -95,3 +95,16 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Devel-PatchPerl-1.440.0 (18 Nov 2016)
+
+  18 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Devel-PatchPerl-1.440.0.ebuild:
+  Bump to version 1.440.0
+
+  Upstream:
+  - Fix patches for Errno on GCC5+
+  - Update hints for darwin, freebsd, and gnu hurd
+  - Don't patch patchlevel on Git repositories
+
+  Package-Manager: portage-2.3.2
+

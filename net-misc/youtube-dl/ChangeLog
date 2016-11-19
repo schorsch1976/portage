@@ -1193,3 +1193,16 @@
 
   Package-Manager: portage-2.3.2
 
+*youtube-dl-2016.11.18 (18 Nov 2016)
+
+  18 Nov 2016; Jeroen Roovers <jer@gentoo.org> +youtube-dl-2016.11.18.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.2
+
+  18 Nov 2016; Jeroen Roovers <jer@gentoo.org>
+  -youtube-dl-2016.11.08.1-r2.ebuild:
+  Old.
+
+  Package-Manager: portage-2.3.2
+

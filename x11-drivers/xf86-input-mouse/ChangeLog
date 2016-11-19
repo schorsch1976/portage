@@ -67,3 +67,15 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*xf86-input-mouse-1.9.2 (17 Nov 2016)
+
+  17 Nov 2016; Manuel Rüger <mrueg@gentoo.org> +xf86-input-mouse-1.9.2.ebuild:
+  Version bump to 1.9.2
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Manuel Rüger <mrueg@gentoo.org> -xf86-input-mouse-1.9.0.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

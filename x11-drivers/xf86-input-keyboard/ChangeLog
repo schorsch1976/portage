@@ -123,3 +123,21 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*xf86-input-keyboard-1.9.0 (17 Nov 2016)
+
+  17 Nov 2016; Manuel Rüger <mrueg@gentoo.org>
+  +xf86-input-keyboard-1.9.0.ebuild:
+  Version bump to 1.9.0
+
+  Supports xorg-server-1.19
+
+  Gentoo-Bug: 599938
+
+  Package-Manager: portage-2.3.2
+
+  17 Nov 2016; Manuel Rüger <mrueg@gentoo.org>
+  -xf86-input-keyboard-1.8.0.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

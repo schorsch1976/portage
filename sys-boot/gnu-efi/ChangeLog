@@ -121,3 +121,10 @@
   03 Jun 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml:
   add myself as a maintainer
 
+*gnu-efi-3.0.4 (18 Nov 2016)
+
+  18 Nov 2016; Mike Gilbert <floppym@gentoo.org> +gnu-efi-3.0.4.ebuild:
+  bump to 3.0.4
+
+  Package-Manager: portage-2.3.2_p8
+

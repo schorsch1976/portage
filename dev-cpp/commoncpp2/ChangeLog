@@ -105,3 +105,8 @@
 
   Package-Manager: portage-2.3.1
 
+  18 Nov 2016; David Seifert <soap@gentoo.org> commoncpp2-1.8.1-r2.ebuild:
+  Pin subslots and remove REQUIRED_USE
+
+  Package-Manager: portage-2.3.2
+

@@ -1941,3 +1941,11 @@
 
   Package-Manager: portage-2.3.2_p5
 
+*chromium-55.0.2883.52 (18 Nov 2016)
+
+  18 Nov 2016; Mike Gilbert <floppym@gentoo.org>
+  +chromium-55.0.2883.52.ebuild:
+  beta channnel bump (55.0.2883.52)
+
+  Package-Manager: portage-2.3.2_p8
+
