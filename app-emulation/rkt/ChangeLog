@@ -272,3 +272,14 @@
 
   Package-Manager: portage-2.3.2
 
+  19 Nov 2016; Zac Medico <zmedico@gentoo.org> rkt-1.16.0.ebuild,
+  rkt-1.17.0.ebuild, rkt-1.18.0.ebuild:
+  use emake V=3
+
+  Package-Manager: portage-2.3.2
+
+  19 Nov 2016; Zac Medico <zmedico@gentoo.org> rkt-1.18.0.ebuild:
+  adjust qemu deps for bug 600042
+
+  Package-Manager: portage-2.3.2
+

@@ -101,3 +101,19 @@
 
   Package-Manager: portage-2.2.28
 
+*Math-BigInt-GMP-1.600.0 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Math-BigInt-GMP-1.600.0.ebuild:
+  Bump to version 1.600.0 (masked)
+
+  - Masked due to needing newer virtual/perl-Math-BigInt
+  - Removed toxic author tests
+
+  Upstream:
+  - Reimplemented in terms of a Math::BigInt::Lib subclass
+  - Removed methods _digit, _num, _nok, and _log_int
+  - _check no longer warns of uninitialzed values if given an object
+
+  Package-Manager: portage-2.3.2
+

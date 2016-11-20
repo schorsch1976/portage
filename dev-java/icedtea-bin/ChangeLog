@@ -563,3 +563,17 @@
 
   Package-Manager: portage-2.3.1
 
+*icedtea-bin-3.2.0 (19 Nov 2016)
+
+  19 Nov 2016; James Le Cuirot <chewi@gentoo.org> +icedtea-bin-3.2.0.ebuild:
+  Version bump to 3.2.0 wrt security bug #600224
+
+  Package-Manager: portage-2.3.2
+
+*icedtea-bin-7.2.6.8 (19 Nov 2016)
+
+  19 Nov 2016; James Le Cuirot <chewi@gentoo.org> +icedtea-bin-7.2.6.8.ebuild:
+  Version bump to 7.2.6.8 wrt security bug #600224
+
+  Package-Manager: portage-2.3.2
+

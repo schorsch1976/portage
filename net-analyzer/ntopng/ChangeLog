@@ -94,3 +94,14 @@
 
   Package-Manager: portage-2.3.2
 
+*ntopng-2.4 (19 Nov 2016)
+
+  19 Nov 2016; Slawomir Lis <slis@gentoo.org>
+  +files/ntopng-2.4-dont-build-ndpi.patch, +files/ntopng-2.4-mysqltool.patch,
+  +ntopng-2.4.ebuild:
+  version bump to 2.4
+
+  Updated DEPEND also, as mysql client libraries are needed.
+
+  Package-Manager: portage-2.3.2
+

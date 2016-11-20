@@ -75,3 +75,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Crypt-OpenSSL-DSA-0.180.0 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Crypt-OpenSSL-DSA-0.180.0.ebuild:
+  Bump to version 0.180.0
+
+  - EAPI6
+
+  Upstream:
+  - Support OPENSSL_PREFIX and similar env vars
+  - Openssl linking probed by pkg-config
+  - OpenSSL 1.1.0 Compat fixes
+
+  Package-Manager: portage-2.3.2
+

@@ -128,3 +128,9 @@
 
   Package-Manager: portage-2.3.0
 
+  19 Nov 2016; William Hubbs <williamh@gentoo.org> -runc-0.0.2.ebuild,
+  -runc-0.0.5.ebuild, -runc-0.1.1.ebuild:
+  remove unstable versions
+
+  Package-Manager: portage-2.3.0
+

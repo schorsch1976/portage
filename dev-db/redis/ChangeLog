@@ -205,3 +205,37 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+*redis-3.2.5-r1 (18 Nov 2016)
+*redis-3.2.5 (18 Nov 2016)
+
+  18 Nov 2016; Robin H. Johnson <robbat2@gentoo.org> +files/configure.ac-3.2,
+  +files/redis-3.2.3-config.patch, +files/redis-3.2.3-sharedlua.patch,
+  +files/redis-3.2.5-shared.patch, metadata.xml, +redis-3.2.5.ebuild,
+  +redis-3.2.5-r1.ebuild:
+  bump for bug #589044.
+
+  Package-Manager: portage-2.3.2
+
+  19 Nov 2016; Ultrabug <ultrabug@gentoo.org> metadata.xml:
+  removing awol proxy-maintainer
+
+  19 Nov 2016; Ultrabug <ultrabug@gentoo.org> -redis-2.8.21.ebuild,
+  -redis-3.0.5.ebuild, -redis-3.0.6.ebuild, -redis-3.2.0.ebuild:
+  remove useless unstable ebuilds
+
+  Package-Manager: portage-2.3.2
+
+  19 Nov 2016; Agostino Sarubbo <ago@gentoo.org> redis-3.2.5.ebuild:
+  amd64 stable wrt bug #595730
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  19 Nov 2016; Agostino Sarubbo <ago@gentoo.org> redis-3.2.5.ebuild:
+  x86 stable wrt bug #595730
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

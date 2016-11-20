@@ -128,3 +128,13 @@
 
   Package-Manager: portage-2.3.2
 
+*PDF-Create-1.380.0 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org> +PDF-Create-1.380.0.ebuild:
+  Bump to version 1.380.0
+
+  Upstream:
+  - Documentation fixes
+
+  Package-Manager: portage-2.3.2
+

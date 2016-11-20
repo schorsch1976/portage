@@ -156,3 +156,9 @@
   RepoMan-Options: --include-arches="sparc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  19 Nov 2016; Thomas Deutschmann <whissi@gentoo.org>
+  -jabberd2-2.3.1-r2.ebuild, -jabberd2-2.3.2-r2.ebuild:
+  Drop old vulnerable versions (bug #539534)
+
+  Package-Manager: portage-2.3.2
+

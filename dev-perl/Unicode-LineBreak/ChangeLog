@@ -86,3 +86,11 @@
 
   Package-Manager: portage-2.3.0
 
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  Unicode-LineBreak-2016.3.0.ebuild:
+  Keyword for ~x86
+
+  Tested by kensington@gentoo.org
+
+  Package-Manager: portage-2.3.2
+

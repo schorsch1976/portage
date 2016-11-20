@@ -86,3 +86,18 @@
 
   Package-Manager: portage-2.2.27
 
+*Math-BigInt-1.999.800 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Math-BigInt-1.999.800.ebuild,
+  metadata.xml:
+  Bump to version 1.999.800 (masked)
+
+  This is added for staging and testing purposes, but is unlikely
+  to be unmasked until deemed necessary to avoid complications with
+  virtual management
+
+  - Add USE=examples
+  - Purge lots of toxic, slow, authortests.
+
+  Package-Manager: portage-2.3.2
+

@@ -176,3 +176,17 @@
   openldap-2.4.43-r1.ebuild, openldap-2.4.44.ebuild:
   fix cross-compiling due to pthread tests #463966
 
+  19 Nov 2016; Agostino Sarubbo <ago@gentoo.org> openldap-2.4.43.ebuild:
+  amd64 stable wrt bug #560424
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  19 Nov 2016; Agostino Sarubbo <ago@gentoo.org> openldap-2.4.43.ebuild:
+  x86 stable wrt bug #560424
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

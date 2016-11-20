@@ -201,3 +201,11 @@
   10 Nov 2016; Mike Frysinger <vapier@gentoo.org> libgpg-error-1.24.ebuild:
   mark arm64/m68k/s390/sh 1.24 stable
 
+*libgpg-error-1.25 (19 Nov 2016)
+
+  19 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org>
+  +libgpg-error-1.25.ebuild:
+  New upstream version
+
+  Package-Manager: portage-2.3.2
+

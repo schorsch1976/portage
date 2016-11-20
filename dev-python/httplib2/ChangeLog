@@ -130,3 +130,14 @@
   httplib2-0.9.1.ebuild, httplib2-0.9.2-r1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*httplib2-0.9.2-r2 (19 Nov 2016)
+
+  19 Nov 2016; Mike Gilbert <floppym@gentoo.org>
+  +files/python-httplib2-0.9-cve-2013-2037.patch, -httplib2-0.9.2-r1.ebuild,
+  +httplib2-0.9.2-r2.ebuild:
+  apply patch for CVE-2013-2037
+
+  Bug: https://bugs.gentoo.org/468252
+
+  Package-Manager: portage-2.3.2_p8
+

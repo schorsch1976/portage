@@ -65,3 +65,19 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*meme-4.11.2_p2 (19 Nov 2016)
+
+  19 Nov 2016; David Seifert <soap@gentoo.org>
+  +files/meme-4.11.2_p2-fix-build-system.patch,
+  +files/meme-4.11.2_p2-patch1.patch, +files/meme-4.11.2_p2-patch2.patch,
+  +meme-4.11.2_p2.ebuild:
+  Version bump to 4.11.2_p2
+
+  Gentoo-bug: 599860
+  * EAPI=6
+  * Install documentation and examples correctly
+  * Install perl and python modules correctly
+  * Add missing perl runtime dependencies
+
+  Package-Manager: portage-2.3.2
+

@@ -1,0 +1,14 @@
+# ChangeLog for dev-perl/XML-Compile-SOAP
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*XML-Compile-SOAP-3.200.0 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +XML-Compile-SOAP-3.200.0.ebuild, +metadata.xml:
+  Add version 3.200.0
+
+  Required by sci-biology/meme
+
+  Package-Manager: portage-2.3.2
+

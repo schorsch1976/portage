@@ -117,3 +117,7 @@
   -gentoo-syntax-20150823.ebuild:
   remove old
 
+  18 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  gentoo-syntax-20160530.ebuild:
+  mark 20160530 m68k/s390/sh stable
+

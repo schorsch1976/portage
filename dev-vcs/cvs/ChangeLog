@@ -125,3 +125,23 @@
 
   Package-Manager: portage-2.2.28
 
+*cvs-1.12.12-r11 (23 Oct 2016)
+
+  23 Oct 2016; Felix Janda <felix.janda@posteo.de> +cvs-1.12.12-r11.ebuild,
+  +files/cvs-1.12.12-CVE-2012-0804.patch,
+  +files/cvs-1.12.12-format-security.patch, files/cvs-1.12.12-getdelim.patch,
+  files/cvs-1.12.12-hash-nameclash.patch,
+  files/cvs-1.12.12-mktime-configure.patch, +files/cvs-1.12.12-musl.patch,
+  files/cvs-1.12.12-rcs2log-coreutils.patch:
+  security fix, QA fix and musl compilation fix
+
+  * add patch for CVE-2012-0804 (#402593)
+  * respect AR (#440270)
+  * fix format-security (#520508)
+  * fix compilation with musl libc
+  * modernize ebuild
+
+  Gentoo-Bug: https://bugs.gentoo.org/402593
+  Gentoo-Bug: https://bugs.gentoo.org/440270
+  Gentoo-Bug: https://bugs.gentoo.org/520508
+

@@ -77,3 +77,19 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*biogrep-1.0-r2 (18 Nov 2016)
+
+  18 Nov 2016; David Seifert <soap@gentoo.org> +biogrep-1.0-r2.ebuild:
+  Port to EAPI=6
+
+  * Add USE="doc" and USE="examples"
+  * Run 'eautoreconf' to modernize configure script
+
+  Package-Manager: portage-2.3.2
+
+  18 Nov 2016; David Seifert <soap@gentoo.org> -biogrep-1.0.ebuild,
+  -biogrep-1.0-r1.ebuild:
+  Remove old ebuilds
+
+  Package-Manager: portage-2.3.2
+

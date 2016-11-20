@@ -1,0 +1,14 @@
+# ChangeLog for dev-perl/Log-Report
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Log-Report-1.180.0 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Log-Report-1.180.0.ebuild,
+  +metadata.xml:
+  Add version 1.180.0
+
+  Deep dependency of sci-biology/meme
+
+  Package-Manager: portage-2.3.2
+

@@ -143,3 +143,10 @@
 
   Signed-off-by: Doug Goldstein <cardoe@gentoo.org>
 
+*rust-bin-1.13.0 (19 Nov 2016)
+
+  19 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> +rust-bin-1.13.0.ebuild:
+  version bump to 1.13.0
+
+  Package-Manager: portage-2.3.0
+

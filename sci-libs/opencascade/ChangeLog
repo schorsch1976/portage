@@ -135,3 +135,19 @@
 
   Package-Manager: portage-2.3.2
 
+*opencascade-6.9.1-r1 (19 Nov 2016)
+*opencascade-6.9.0-r1 (19 Nov 2016)
+*opencascade-6.8.0-r1 (19 Nov 2016)
+*opencascade-6.7.1-r1 (19 Nov 2016)
+
+  19 Nov 2016; David Seifert <soap@gentoo.org> -opencascade-6.7.1.ebuild,
+  +opencascade-6.7.1-r1.ebuild, -opencascade-6.8.0.ebuild,
+  +opencascade-6.8.0-r1.ebuild, -opencascade-6.9.0.ebuild,
+  +opencascade-6.9.0-r1.ebuild, -opencascade-6.9.1.ebuild,
+  +opencascade-6.9.1-r1.ebuild:
+  Restore installing modules into /etc/env.d/${PN}
+
+  Gentoo-bug: 599920
+
+  Package-Manager: portage-2.3.2
+

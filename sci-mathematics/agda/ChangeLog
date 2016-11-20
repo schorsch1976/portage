@@ -149,3 +149,11 @@
 
   Package-Manager: portage-2.3.0
 
+  18 Nov 2016; Sergei Trofimovich <slyfox@gentoo.org> agda-2.4.2.5-r2.ebuild:
+  allow alex-3.2, bug #600034
+
+  Reported-by: Anton Kochkov
+  Bug: https://bugs.gentoo.org/600034
+
+  Package-Manager: portage-2.3.2
+

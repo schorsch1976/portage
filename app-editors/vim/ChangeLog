@@ -216,3 +216,6 @@
 
   configure.in was renamed to configure.ac (bug #599992).
 
+  18 Nov 2016; Mike Frysinger <vapier@gentoo.org> vim-7.4.769.ebuild:
+  mark 7.4.769 m68k/s390/sh stable
+

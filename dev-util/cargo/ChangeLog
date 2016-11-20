@@ -70,3 +70,10 @@
   01 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> cargo-0.13.0-r1.ebuild:
   0.13.0-r1: add libressl support
 
+*cargo-0.14.0 (19 Nov 2016)
+
+  19 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> +cargo-0.14.0.ebuild:
+  version bump to 0.14.0
+
+  Package-Manager: portage-2.3.0
+

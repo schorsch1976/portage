@@ -242,3 +242,16 @@
 
   Package-Manager: portage-2.3.0
 
+*docker-compose-1.9.0 (18 Nov 2016)
+
+  18 Nov 2016; Manuel Rüger <mrueg@gentoo.org> +docker-compose-1.9.0.ebuild:
+  Version bump to 1.9.0
+
+  Package-Manager: portage-2.3.2
+
+  18 Nov 2016; Manuel Rüger <mrueg@gentoo.org> -docker-compose-1.8.0.ebuild,
+  -docker-compose-1.9.0_rc1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

@@ -93,3 +93,17 @@
   -libupnp-1.6.19.ebuild, +libupnp-1.6.19-r1.ebuild:
   Apply patch for #589136 (CVE-2016-6255)
 
+  19 Nov 2016; Agostino Sarubbo <ago@gentoo.org> libupnp-1.6.18-r2.ebuild:
+  amd64 stable wrt bug #589136
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  19 Nov 2016; Agostino Sarubbo <ago@gentoo.org> libupnp-1.6.18-r2.ebuild:
+  x86 stable wrt bug #589136
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

@@ -128,3 +128,47 @@
 
   Package-Manager: portage-2.3.0
 
+*sabnzbd-1.1.1 (19 Nov 2016)
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> +sabnzbd-1.1.1.ebuild:
+  Bump version
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org>
+  -files/1.1.x/0001-use-system-configobj-and-feedparser.patch,
+  -files/1.1.x/0002-assume-gntp-1.0.patch,
+  -files/1.1.x/0003-cfg-disable-growl-by-default.patch,
+  -files/1.1.x/0004-use-system-rarfile.patch,
+  +files/patches/0001-use-system-configobj-and-feedparser.patch,
+  +files/patches/0002-assume-gntp-1.0.patch,
+  +files/patches/0003-cfg-disable-growl-by-default.patch,
+  +files/patches/0004-use-system-rarfile.patch, sabnzbd-1.1.1.ebuild:
+  Migrate to EAPI 6
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.1.ebuild:
+  Migrate to python-single-r1
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> -files/sabnzbd,
+  files/sabnzbd.initd, sabnzbd-1.1.1.ebuild:
+  Drop custom wrapper script
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.1.ebuild:
+  Quote function arguments
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.1.ebuild:
+  Improve formatting of post-install messages
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.1.ebuild:
+  Use GitHub instead of SourceForge
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.1.ebuild:
+  Update dead link, use HTTPS
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> files/sabnzbd.confd:
+  Quote values in conf.d file
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> files/sabnzbd.ini:
+  Accept IPv6 connections by default
+
+  19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> files/sabnzbd.initd:
+  Use dummy NULL signal instead of SIGCONT
+

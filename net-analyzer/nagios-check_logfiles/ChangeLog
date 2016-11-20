@@ -96,3 +96,12 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*nagios-check_logfiles-3.7.5.2 (19 Nov 2016)
+
+  19 Nov 2016; David Seifert <soap@gentoo.org>
+  +nagios-check_logfiles-3.7.5.2.ebuild:
+  version bump
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2751
+

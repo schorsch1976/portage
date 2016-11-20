@@ -198,3 +198,15 @@
 
   Package-Manager: portage-2.3.1
 
+  19 Nov 2016; Michael Palimaka <kensington@gentoo.org> kaffeine-2.0.5.ebuild:
+  amd64/x86 stable
+
+  Gentoo-bug: 600240
+
+  Package-Manager: portage-2.3.2
+
+  19 Nov 2016; Johannes Huber <johu@gentoo.org> -kaffeine-2.0.4.ebuild:
+  Remove 2.0.4
+
+  Package-Manager: portage-2.3.2
+

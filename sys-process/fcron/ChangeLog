@@ -154,3 +154,30 @@
 
   Package-Manager: portage-2.3.2
 
+*fcron-3.2.1-r1 (19 Nov 2016)
+
+  19 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> -fcron-3.2.1.ebuild,
+  +fcron-3.2.1-r1.ebuild, files/fcron.init.4:
+  Bashism in runscript removed
+
+  With the previous bump 531e27c45e1 I have accidentally introduced bashisms
+  into
+  the runscript which are now removed. (Bug #600228)
+
+  This revision also introduces a sanity check for multi instances to make
+  sure
+  that they don't use the default values so that they don't clash with the
+  default
+  instance.
+
+  Gentoo-Bug: https://bugs.gentoo.org/600228
+
+  Package-Manager: portage-2.3.2
+
+  19 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> files/fcron.init.4:
+  runscript: Make shellcheck happy
+
+  Further POSIX improvements.
+
+  Package-Manager: portage-2.3.2
+

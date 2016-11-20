@@ -132,3 +132,17 @@
 
   Gentoo-Bug: 597250
 
+  19 Nov 2016; Agostino Sarubbo <ago@gentoo.org> giflib-5.1.4.ebuild:
+  amd64 stable wrt bug #569652
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  19 Nov 2016; Agostino Sarubbo <ago@gentoo.org> giflib-5.1.4.ebuild:
+  x86 stable wrt bug #569652
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

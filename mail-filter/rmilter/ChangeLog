@@ -141,3 +141,18 @@
 
   Package-Manager: portage-2.2.28
 
+  19 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> -rmilter-1.8.5.ebuild,
+  -rmilter-1.9.0.ebuild, -rmilter-1.9.1.ebuild:
+  mail-filters/rmilter: remove old versions
+
+  Package-Manager: portage-2.3.0
+
+*rmilter-9999 (19 Nov 2016)
+
+  19 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> +rmilter-9999.ebuild:
+  add live ebuild (fixes bug 600242)
+
+  Thanks to Christian Roessner for contributing the ebuild.
+
+  Package-Manager: portage-2.3.0
+

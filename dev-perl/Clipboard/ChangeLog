@@ -63,3 +63,33 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Clipboard-0.130.0-r2 (19 Nov 2016)
+
+  19 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  +Clipboard-0.130.0-r2.ebuild,
+  +files/Clipboard-0.130.0-insecure-tempfile.patch:
+  fix insecure temporary file usage.
+
+  This is a community patch taken from
+  https://anonscm.debian.org/cgit/pkg-perl/packages/libclipboard-
+  perl.git/tree/debian/patches/insecure-tempfile.patch.
+
+  Courtesy of Gregor Herrmann <gregoa@debian.org>.
+
+  Gentoo-Bug: https://bugs.gentoo.org/521890
+
+  Package-Manager: portage-2.3.0
+
+  19 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  Clipboard-0.130.0-r2.ebuild:
+  Stable for amd64. Mark stable for the remaining arches using the ALLARCHES
+  policy.
+
+  Package-Manager: portage-2.3.0
+
+  19 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  -Clipboard-0.130.0-r1.ebuild:
+  Clean up old.
+
+  Package-Manager: portage-2.3.0
+

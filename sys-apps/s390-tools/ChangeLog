@@ -67,3 +67,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  19 Nov 2016; Mike Frysinger <vapier@gentoo.org> metadata.xml,
+  s390-tools-1.23.1.ebuild:
+  add USE=ncurses to control hyptop dep
+
+  Also add missing zlib dep used by a few programs.
+

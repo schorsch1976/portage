@@ -157,3 +157,13 @@
 
   Package-Manager: portage-2.3.1
 
+*apcupsd-3.14.14-r1 (18 Nov 2016)
+
+  18 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org>
+  +apcupsd-3.14.14-r1.ebuild, metadata.xml:
+  Add support for modbus
+
+  Gentoo-Bug: 597292
+
+  Package-Manager: portage-2.3.2
+

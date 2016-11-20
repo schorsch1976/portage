@@ -524,3 +524,25 @@
 
   Package-Manager: portage-2.3.0
 
+*gnupg-2.1.16 (18 Nov 2016)
+
+  18 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> -gnupg-2.1.15-r1.ebuild,
+  +gnupg-2.1.16.ebuild, metadata.xml:
+  New upstream version 2.1.16
+
+  Remove 2.1.15-r1 in bump
+
+  Package-Manager: portage-2.3.2
+
+  18 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> -gnupg-2.0.29-r1.ebuild:
+  Cleanup 2.0.29-r1
+
+  Package-Manager: portage-2.3.2
+
+  19 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> gnupg-2.1.16.ebuild:
+  Enable tools IUSE by default
+
+  At least until bug 600208 is resolved
+
+  Package-Manager: portage-2.3.2
+

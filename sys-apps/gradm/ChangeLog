@@ -114,3 +114,17 @@
 
   Package-Manager: portage-2.2.28
 
+*gradm-3.1.201608131257 (19 Nov 2016)
+
+  19 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  +gradm-3.1.201608131257.ebuild:
+  version bump to 3.1.201608131257
+
+  Package-Manager: portage-2.3.0
+
+  19 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  -gradm-3.1.201507191652.ebuild, gradm-3.1.201607172312.ebuild:
+  stable on amd64 and x86, and remove older
+
+  Package-Manager: portage-2.3.0
+

@@ -68,3 +68,14 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*thc-ipv6-9999 (19 Nov 2016)
+*thc-ipv6-3.0 (19 Nov 2016)
+
+  19 Nov 2016; Robin H. Johnson <robbat2@gentoo.org>
+  +files/thc-ipv6-3.0-Makefile.patch, thc-ipv6-2.3.ebuild,
+  thc-ipv6-2.5.ebuild, thc-ipv6-2.7.ebuild, +thc-ipv6-3.0.ebuild,
+  +thc-ipv6-9999.ebuild:
+  bump.
+
+  Package-Manager: portage-2.3.2
+

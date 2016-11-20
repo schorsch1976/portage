@@ -71,3 +71,9 @@
 
   Package-Manager: portage-2.3.1
 
+  19 Nov 2016; Jeroen Roovers <jer@gentoo.org>
+  tcptraceroute-1.5_beta7-r2.ebuild:
+  Depend on net-libs/libnet:1.1 (bug #600154 by Toralf Förster).
+
+  Package-Manager: portage-2.3.2
+

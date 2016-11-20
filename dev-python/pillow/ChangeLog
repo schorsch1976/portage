@@ -292,3 +292,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  19 Nov 2016; Jeroen Roovers <jer@gentoo.org> pillow-3.4.2.ebuild:
+  Stable for HPPA PPC64 (bug #599610).
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --ignore-arches
+

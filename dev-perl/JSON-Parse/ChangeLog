@@ -41,3 +41,13 @@
 
   Package-Manager: portage-2.3.2
 
+*JSON-Parse-0.470.0 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org> +JSON-Parse-0.470.0.ebuild:
+  Bump to version 0.470.0
+
+  Upstream:
+  - Inactivate diagnostics_hash function on Perl <5.14
+
+  Package-Manager: portage-2.3.2
+

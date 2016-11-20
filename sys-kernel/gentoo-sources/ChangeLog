@@ -2420,3 +2420,25 @@
 
   Gentoo-Bug: 599526
 
+  19 Nov 2016; Jeroen Roovers <jer@gentoo.org> gentoo-sources-4.1.35.ebuild:
+  Stable for PPC64 (bug #598378).
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --ignore-arches
+
+*gentoo-sources-4.8.9 (19 Nov 2016)
+
+  19 Nov 2016; Alice Ferrazzi <alicef@gentoo.org>
+  +gentoo-sources-4.8.9.ebuild:
+  Linux patch 4.8.9
+
+  Package-Manager: portage-2.3.2
+
+*gentoo-sources-4.4.33 (19 Nov 2016)
+
+  19 Nov 2016; Alice Ferrazzi <alicef@gentoo.org>
+  +gentoo-sources-4.4.33.ebuild:
+  Linux patch 4.4.33
+
+  Package-Manager: portage-2.3.2
+

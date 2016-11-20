@@ -112,3 +112,11 @@
   files/racoon.init.d-r3:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+*ipsec-tools-0.8.2-r5 (19 Nov 2016)
+
+  19 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  +files/ipsec-tools-CVE-2015-4047.patch, +ipsec-tools-0.8.2-r5.ebuild:
+  fix bug #550118, CVE-2015-4047
+
+  Package-Manager: portage-2.3.0
+
