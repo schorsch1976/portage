@@ -135,3 +135,11 @@
   neovim-python-client-0.1.9.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*neovim-python-client-0.1.11 (20 Nov 2016)
+
+  20 Nov 2016; Ole Reifschneider <tranquility@gentoo.org>
+  +neovim-python-client-0.1.11.ebuild:
+  Bump version to 0.1.11
+
+  Package-Manager: portage-2.3.2
+

@@ -159,3 +159,12 @@
   +keepalived-1.2.23.ebuild:
   version bump fix #589062
 
+*keepalived-1.2.24 (20 Nov 2016)
+
+  20 Nov 2016; Yixun Lan <dlan@gentoo.org> +keepalived-1.2.24.ebuild:
+  version bump
+
+  Gentoo-Bug: 596006
+
+  Package-Manager: portage-2.3.2
+

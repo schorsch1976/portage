@@ -138,3 +138,14 @@
 
   Package-Manager: portage-2.3.2
 
+*PDF-Create-1.390.0 (20 Nov 2016)
+
+  20 Nov 2016; Kent Fredric <kentnl@gentoo.org> +PDF-Create-1.390.0.ebuild:
+  Bump to version 1.390.0
+
+  Upstream:
+  - Avoid warning with small block_text() on a single page without
+    requiring setting start_y and end_y
+
+  Package-Manager: portage-2.3.2
+

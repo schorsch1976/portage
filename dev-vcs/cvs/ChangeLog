@@ -145,3 +145,17 @@
   Gentoo-Bug: https://bugs.gentoo.org/440270
   Gentoo-Bug: https://bugs.gentoo.org/520508
 
+  20 Nov 2016; Agostino Sarubbo <ago@gentoo.org> cvs-1.12.12-r11.ebuild:
+  amd64 stable wrt bug #402593
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  20 Nov 2016; Agostino Sarubbo <ago@gentoo.org> cvs-1.12.12-r11.ebuild:
+  x86 stable wrt bug #402593
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

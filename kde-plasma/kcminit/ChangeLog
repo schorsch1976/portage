@@ -1,0 +1,10 @@
+# ChangeLog for kde-plasma/kcminit
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*kcminit-4.11.22 (20 Nov 2016)
+
+  20 Nov 2016; Johannes Huber <johu@gentoo.org> +kcminit-4.11.22.ebuild,
+  +metadata.xml:
+  kde-base/kcminit -> kde-plasma/kcminit
+

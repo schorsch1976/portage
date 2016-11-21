@@ -352,3 +352,7 @@
   i2pd-2.10.1.ebuild:
   ROOT -> EROOT
 
+  20 Nov 2016; Anthony G. Basile <blueness@gentoo.org> i2pd-2.8.0.ebuild,
+  i2pd-2.9.0-r1.ebuild, i2pd-2.10.0.ebuild, i2pd-2.10.1.ebuild:
+  require openssl[-bindist]
+

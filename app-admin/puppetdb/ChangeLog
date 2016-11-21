@@ -277,3 +277,17 @@
 
   Package-Manager: portage-2.3.0
 
+*puppetdb-4.3.0-r1 (19 Nov 2016)
+
+  19 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -puppetdb-4.3.0.ebuild, +puppetdb-4.3.0-r1.ebuild:
+  fix 4.3.0 missing cli commands #600130
+
+  Puppetdb-4.3.0 changed the way the systemd unit works, which now calls
+  puppetdb {start|stop|reload}. These commands are distributed as extra
+  scripts, and so need to be installed.
+
+  Fixes #600130
+
+  Signed-off-by: Matthew Thode <prometheanfire@gentoo.org>
+

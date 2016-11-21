@@ -76,3 +76,22 @@
 
   Package-Manager: portage-2.2.28
 
+*Mail-Sender-0.903.0 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Mail-Sender-0.903.0.ebuild,
+  metadata.xml:
+  Bump to version 0.903.0
+
+  - EAPI6
+  - Add deprecation warning
+
+  Upstream:
+  - Fixed conditional deps
+  - Fixed locale tests'
+  - Files now end \n
+  - Disable unintialized warnings
+  - Remove EXPORT_OK
+  - Mark dist deprecated
+
+  Package-Manager: portage-2.3.2
+

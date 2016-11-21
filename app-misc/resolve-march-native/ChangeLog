@@ -47,3 +47,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*resolve-march-native-0.9.2 (20 Nov 2016)
+
+  20 Nov 2016; Sebastian Pipping <sping@gentoo.org>
+  +resolve-march-native-0.9.2.ebuild:
+  0.9.2
+
+  Package-Manager: portage-2.3.2
+

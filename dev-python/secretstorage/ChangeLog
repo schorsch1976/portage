@@ -16,3 +16,9 @@
 
   Package-Manager: portage-2.3.0
 
+  20 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  secretstorage-2.3.1.ebuild:
+  2.3.1 stable amd64 and x86
+
+  Package-Manager: portage-2.3.0
+

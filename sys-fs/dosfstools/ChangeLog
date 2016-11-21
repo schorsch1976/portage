@@ -198,3 +198,10 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --include-arches="arm"
 
+  20 Nov 2016; Agostino Sarubbo <ago@gentoo.org> dosfstools-4.0-r1.ebuild:
+  x86 stable wrt bug #582530
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

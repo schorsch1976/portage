@@ -117,3 +117,10 @@
 
   Package-Manager: portage-2.2.28
 
+*android-ndk-13b (20 Nov 2016)
+
+  20 Nov 2016; Jason Zaman <perfinion@gentoo.org> +android-ndk-13b.ebuild:
+  bump to 13b
+
+  Package-Manager: portage-2.3.0
+

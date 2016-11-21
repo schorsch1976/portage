@@ -394,3 +394,27 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+*gst-plugins-bad-1.8.3-r1 (20 Nov 2016)
+
+  20 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +files/gst-plugins-bad-1.8.3-CVE-2016-9445.patch,
+  +gst-plugins-bad-1.8.3-r1.ebuild:
+  backport patch from upstream to resolve CVE-2016-9445
+
+  Gentoo-bug: 600142
+  Acked-by: Mart Raudsepp <leio@gentoo.org>
+
+  Package-Manager: portage-2.3.2
+
+*gst-plugins-bad-0.10.23-r4 (20 Nov 2016)
+
+  20 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +gst-plugins-bad-0.10.23-r4.ebuild:
+  disable vnmc and nsf plugins to resolve CVE-2016-9445, CVE-2016-9446 and
+  CVE-2016-9447
+
+  Gentoo-bug: 600142
+  Acked-by: Mart Raudsepp <leio@gentoo.org>
+
+  Package-Manager: portage-2.3.2
+

@@ -135,3 +135,7 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  20 Nov 2016; Aaron Bauman <bman@gentoo.org> -potrace-1.10-r1.ebuild,
+  -potrace-1.11.ebuild:
+  drop vulnerable versions wrt security bug #545036
+

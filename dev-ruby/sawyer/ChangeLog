@@ -52,3 +52,10 @@
 
   Package-Manager: portage-2.3.0
 
+*sawyer-0.8.1 (20 Nov 2016)
+
+  20 Nov 2016; Manuel Rüger <mrueg@gentoo.org> +sawyer-0.8.1.ebuild:
+  Version bump to 0.8.1
+
+  Package-Manager: portage-2.3.2
+

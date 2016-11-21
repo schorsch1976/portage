@@ -264,3 +264,38 @@
 
   Package-Manager: portage-2.3.1
 
+*octave-4.2.0 (20 Nov 2016)
+
+  20 Nov 2016; David Seifert <soap@gentoo.org>
+  +files/octave-4.2.0-disable-getcwd-path-max-test-as-it-is-too-slow.patch,
+  +files/octave-4.2.0-imagemagick-configure.patch,
+  +files/octave-4.2.0-imagemagick.patch,
+  +files/octave-4.2.0-ncurses-pkgconfig.patch,
+  +files/octave-4.2.0-pkgbuilddir.patch, +files/octave-4.2.0-texi.patch,
+  +files/octave-4.2.0-zlib-underlinking.patch, metadata.xml,
+  +octave-4.2.0.ebuild:
+  Version bump to 4.2.0
+
+  Gentoo-bug: 594794
+  * Add USE="openssl"
+  * Add USE="portaudio"
+  * Add USE="sndfile"
+  * GUI provided with USE="qt5"
+  * Replace EROOT in src_install
+
+  Package-Manager: portage-2.3.2
+
+  20 Nov 2016; David Seifert <soap@gentoo.org>
+  -files/octave-3.6.4-gcc-4.8.patch, -files/octave-3.8.0-pkgbuilddir.patch,
+  -files/octave-4.0.0-imagemagick-configure.patch,
+  -files/octave-4.0.0-imagemagick.patch, -files/octave-4.0.0-texinfo.patch,
+  -files/octave-4.0.3-imagemagick.patch,
+  -files/octave-4.0.3-ncurses-pkgconfig.patch,
+  -files/octave-4.0.3-zlib-underlinking.patch, -octave-3.6.4-r1.ebuild,
+  -octave-4.0.0.ebuild, -octave-4.0.0-r1.ebuild, -octave-4.0.1.ebuild,
+  -octave-4.0.1-r1.ebuild, -octave-4.0.2-r2.ebuild, -octave-4.0.3.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2872
+

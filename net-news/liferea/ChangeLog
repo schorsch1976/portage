@@ -107,3 +107,18 @@
 
   Package-Manager: portage-2.3.1
 
+*liferea-1.12_rc1 (20 Nov 2016)
+*liferea-1.10.19 (20 Nov 2016)
+
+  20 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> +liferea-1.10.19.ebuild,
+  +liferea-1.12_rc1.ebuild, metadata.xml:
+  version bump, eapi 6 bump, removed gconf dependency.
+
+  Added myself as proxy-maintainer.
+
+  Gentoo-Bug: https://bugs.gentoo.org/546188
+  Gentoo-Bug: https://bugs.gentoo.org/568190
+  Gentoo-Bug: https://bugs.gentoo.org/577452
+
+  Acked-by: Iskren Slavov <iskren.s@gmail.com>
+

@@ -175,3 +175,29 @@
 
   Package-Manager: portage-2.3.2
 
+  20 Nov 2016; Daniel Campbell <zlg@gentoo.org> files/lighttpd.initd:
+  Prevent hang in initd
+
+  Prevents a hang on read-only filesystems, fixing bug 598468
+
+  Thanks, Marek Behun!
+
+  Gentoo-Bug: 598468
+  Gentoo-Bug-URL: https://bugs.gentoo.org/598468
+
+  Package-Manager: portage-2.3.2
+
+  20 Nov 2016; Agostino Sarubbo <ago@gentoo.org> lighttpd-1.4.42.ebuild:
+  amd64 stable wrt bug #550458
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  20 Nov 2016; Agostino Sarubbo <ago@gentoo.org> lighttpd-1.4.42.ebuild:
+  x86 stable wrt bug #550458
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

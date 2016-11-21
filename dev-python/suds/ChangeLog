@@ -107,3 +107,6 @@
   suds-0.6-r1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  20 Nov 2016; Aaron Bauman <bman@gentoo.org> -suds-0.4-r1.ebuild:
+  clean vulnerable version wrt security bug #474990
+

@@ -96,3 +96,8 @@
 
   Package-Manager: portage-2.2.28
 
+  20 Nov 2016; Jason Zaman <perfinion@gentoo.org> cachefilesd-0.10.9.ebuild:
+  amd64 stable
+
+  Package-Manager: portage-2.3.0
+

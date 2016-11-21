@@ -77,3 +77,22 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*CGI-Fast-2.110.0 (20 Nov 2016)
+
+  20 Nov 2016; Kent Fredric <kentnl@gentoo.org> +CGI-Fast-2.110.0.ebuild,
+  metadata.xml:
+  Bump to version 2.110.0
+
+  - EAPI6
+  - Disable bad author tests
+
+  Upstream:
+  - Actually use dependency CGI::Carp
+
+  Keywords:
+  - Dependency on dev-perl/FCGI has broken keywording
+  - Dropped keywords: amd64-fbsd, arm64, m68k, mips, s390, sh,
+    x86-fbsd
+
+  Package-Manager: portage-2.3.2
+

@@ -233,3 +233,18 @@
 
   Package-Manager: portage-2.3.0
 
+*puppetserver-2.7.0-r1 (19 Nov 2016)
+
+  19 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -puppetserver-2.7.0.ebuild, +puppetserver-2.7.0-r1.ebuild:
+  fix 2.7.0 missing cli commands
+
+  The way the puppetserver systemd service unit starts and stops the server
+  has changed, and the additional cli commands are not installed by the 2.7.0
+  ebuild. This commit adds the missing files.
+
+  Fixes #600136
+  Related to #600130
+
+  Signed-off-by: Matthew Thode <prometheanfire@gentoo.org>
+

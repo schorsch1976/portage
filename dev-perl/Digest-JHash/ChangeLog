@@ -82,3 +82,13 @@
 
   Package-Manager: portage-2.3.2
 
+*Digest-JHash-0.100.0 (20 Nov 2016)
+
+  20 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Digest-JHash-0.100.0.ebuild:
+  Bump to version 0.100.0
+
+  Upstream:
+  - Clean up cruft files
+
+  Package-Manager: portage-2.3.2
+

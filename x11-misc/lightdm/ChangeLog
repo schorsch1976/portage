@@ -399,3 +399,10 @@
 
   Package-Manager: portage-2.3.2
 
+  20 Nov 2016; Michał Górny <mgorny@gentoo.org> lightdm-1.21.0-r1.ebuild:
+  Fix gtk-doc install directory
+
+  Remove the gtk-doc install directory, to make it possible for gtk-doc
+  tools to find the installed documentation. Also fixes the QA warning
+  issued by Portage.
+

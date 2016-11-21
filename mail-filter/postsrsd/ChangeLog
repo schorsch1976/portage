@@ -21,3 +21,8 @@
 
   Package-Manager: portage-2.3.0
 
+  20 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> postsrsd-1.4-r1.ebuild:
+  mail-filters/postsrsd: fix incorrect path to new init file
+
+  Package-Manager: portage-2.3.0
+

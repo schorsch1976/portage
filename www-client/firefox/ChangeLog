@@ -1045,3 +1045,27 @@
 
   Package-Manager: portage-2.3.2
 
+*firefox-45.5.0 (20 Nov 2016)
+
+  20 Nov 2016; Ian Stakenvicius <axs@gentoo.org> +firefox-45.5.0.ebuild:
+  45: bump to 45.5.0
+
+  Stable for amd64
+
+  Package-Manager: portage-2.3.0
+
+*firefox-50.0 (20 Nov 2016)
+
+  20 Nov 2016; Ian Stakenvicius <axs@gentoo.org> -firefox-49.0.ebuild,
+  +firefox-50.0.ebuild:
+  bump to 50.0
+
+  Package-Manager: portage-2.3.0
+
+  20 Nov 2016; Agostino Sarubbo <ago@gentoo.org> firefox-45.5.0.ebuild:
+  x86 stable wrt bug #599924
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

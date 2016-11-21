@@ -344,3 +344,16 @@
 
   Package-Manager: portage-2.3.2
 
+*mongodb-3.2.11 (20 Nov 2016)
+
+  20 Nov 2016; Ultrabug <ultrabug@gentoo.org> +mongodb-3.2.11.ebuild:
+  version bump with boost version detection wrt #596222
+
+  Package-Manager: portage-2.3.2
+
+  20 Nov 2016; Ultrabug <ultrabug@gentoo.org> -mongodb-3.0.12.ebuild,
+  -mongodb-3.2.8.ebuild, -mongodb-3.2.9.ebuild, -mongodb-3.2.10.ebuild:
+  drop old and useless versions
+
+  Package-Manager: portage-2.3.2
+

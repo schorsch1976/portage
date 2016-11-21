@@ -81,3 +81,11 @@
 
   Package-Manager: portage-2.3.2
 
+  20 Nov 2016; David Seifert <soap@gentoo.org>
+  files/meme-4.11.2_p2-fix-build-system.patch:
+  Add $(DESTDIR) to install hooks
+
+  Gentoo-bug: 600316
+
+  Package-Manager: portage-2.3.2
+

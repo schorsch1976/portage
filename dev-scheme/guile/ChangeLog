@@ -310,3 +310,10 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --ignore-arches
 
+  20 Nov 2016; Agostino Sarubbo <ago@gentoo.org> guile-1.8.8-r3.ebuild:
+  x86 stable wrt bug #596864
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

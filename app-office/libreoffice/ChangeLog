@@ -757,3 +757,15 @@
 
   Package-Manager: portage-2.3.2
 
+  19 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  libreoffice-5.2.9999.ebuild, libreoffice-9999.ebuild:
+  do not call is-flagq in global scope, bug 593424
+
+  Package-Manager: portage-2.3.2
+
+  19 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  libreoffice-5.2.9999.ebuild, libreoffice-9999.ebuild:
+  add symlink for gnome-documents, bug 593514
+
+  Package-Manager: portage-2.3.2
+

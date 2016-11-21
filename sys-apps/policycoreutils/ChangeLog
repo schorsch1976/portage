@@ -190,3 +190,8 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> policycoreutils-2.5.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  20 Nov 2016; Jason Zaman <perfinion@gentoo.org> policycoreutils-9999.ebuild:
+  some utils have been split out into separate packages
+
+  Package-Manager: portage-2.3.0
+

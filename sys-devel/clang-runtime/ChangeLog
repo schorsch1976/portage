@@ -13,3 +13,11 @@
   clang-runtime-3.9.0.ebuild:
   add ~amd64-fbsd, ~x86-fbsd KEYWORDS
 
+  20 Nov 2016; Michał Górny <mgorny@gentoo.org> clang-runtime-3.9.0.ebuild,
+  clang-runtime-9999.ebuild:
+  Add multilib propagation flags
+
+  Add multilib flags and use them to propagate ABI support to runtime
+  packages. This makes it possible to reliably enforce support for
+  a particular ABI via the central package.
+

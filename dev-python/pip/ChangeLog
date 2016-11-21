@@ -356,3 +356,11 @@
   pip-8.1.1.ebuild, pip-8.1.2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*pip-9.0.1 (20 Nov 2016)
+
+  20 Nov 2016; Sebastian Pipping <sping@gentoo.org>
+  +files/pip-9.0.1-disable-version-check.patch, +pip-9.0.1.ebuild:
+  9.0.1 (bug #590828)
+
+  Package-Manager: portage-2.3.2
+

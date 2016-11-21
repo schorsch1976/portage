@@ -91,3 +91,21 @@
 
   Package-Manager: portage-2.2.28
 
+*Net-Twitter-4.10.410 (20 Nov 2016)
+
+  20 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Net-Twitter-4.10.410.ebuild,
+  metadata.xml:
+  Bump to version 4.10.410
+
+  - Use simplified USE="examples" syntax
+
+  Upstream:
+  - Add create_media_metadata endpoint
+  - Use JSON::MaybeXS
+  - Add method upload_status
+  - Add attchment_url parameter to update method
+  - Rename placeholder :category to :slug (/w backcompat)
+  - Add trait WrapResult
+
+  Package-Manager: portage-2.3.2
+

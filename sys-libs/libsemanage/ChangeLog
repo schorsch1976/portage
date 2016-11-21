@@ -182,3 +182,9 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> libsemanage-2.5.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  20 Nov 2016; Jason Zaman <perfinion@gentoo.org>
+  +files/libsemanage-2.7-build-paths.patch, libsemanage-9999.ebuild:
+  update build paths patch for live ebuild
+
+  Package-Manager: portage-2.3.0
+

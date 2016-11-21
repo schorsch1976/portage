@@ -138,3 +138,16 @@
 
   Package-Manager: portage-2.2.28
 
+*rebar-2.6.2 (19 Nov 2016)
+
+  19 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> +rebar-2.6.2.ebuild:
+  version bump to 2.6.2
+
+  Package-Manager: portage-2.3.0
+
+  19 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> -rebar-2.5.1.ebuild,
+  -rebar-2.6.0.ebuild:
+  remove old versions
+
+  Package-Manager: portage-2.3.0
+

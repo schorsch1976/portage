@@ -110,3 +110,11 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  20 Nov 2016; Zac Medico <zmedico@gentoo.org>
+  +files/tlsdate-0.0.13-tlsdated-service.patch, +files/tlsdated.default,
+  +files/tlsdated.tmpfiles.conf, tlsdate-0.0.13.ebuild:
+  systemd support, bug 533380
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Zac Medico <zmedico@gentoo.org>
+

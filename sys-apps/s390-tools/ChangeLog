@@ -73,3 +73,15 @@
 
   Also add missing zlib dep used by a few programs.
 
+*s390-tools-1.36.1 (20 Nov 2016)
+
+  20 Nov 2016; Mike Frysinger <vapier@gentoo.org> metadata.xml,
+  +s390-tools-1.36.1.ebuild:
+  version bump to 1.36.1
+
+  20 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  -files/s390-tools-1.13.0-build.patch, -files/s390-tools-1.13.0-larl.patch,
+  -files/s390-tools-1.16.0-build.patch, -files/s390-tools-1.9.0-build.patch,
+  -s390-tools-1.17.0.ebuild:
+  drop old <1.23.1 versions
+

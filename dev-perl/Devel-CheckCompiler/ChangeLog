@@ -86,3 +86,15 @@
 
   Package-Manager: portage-2.3.2
 
+*Devel-CheckCompiler-0.70.0 (20 Nov 2016)
+
+  20 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Devel-CheckCompiler-0.70.0.ebuild, metadata.xml:
+  Bump to version 0.70.0
+
+  Upstream:
+  - Change packaging to Module::Build::Tiny
+  - Prune unwanted deps
+
+  Package-Manager: portage-2.3.2
+

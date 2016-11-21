@@ -76,3 +76,11 @@
   +xfce4-mpc-plugin-0.4.99.ebuild:
   Bump to 0.4.99, the GTK+3 pre-release
 
+*xfce4-mpc-plugin-0.5.0 (20 Nov 2016)
+
+  20 Nov 2016; Jason Zaman <perfinion@gentoo.org>
+  -xfce4-mpc-plugin-0.4.99.ebuild, +xfce4-mpc-plugin-0.5.0.ebuild:
+  bump version and EAPI6
+
+  Package-Manager: portage-2.3.0
+

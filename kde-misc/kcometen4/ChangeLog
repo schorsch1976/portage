@@ -71,3 +71,6 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  20 Nov 2016; Johannes Huber <johu@gentoo.org> kcometen4-1.0.8.ebuild:
+  kde-base/kscreensaver -> kde-plasma/kscreensaver
+

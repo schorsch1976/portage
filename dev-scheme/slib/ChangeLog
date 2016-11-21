@@ -136,3 +136,15 @@
 
   Package-Manager: portage-2.3.1
 
+*slib-3.2.5-r1 (20 Nov 2016)
+
+  20 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org> -slib-3.2.5.ebuild,
+  +slib-3.2.5-r1.ebuild:
+  revision bump
+
+  * fixes setting permissions in 3.2.5
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=600096
+
+  Package-Manager: portage-2.3.1
+

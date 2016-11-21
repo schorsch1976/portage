@@ -312,3 +312,17 @@
 
   Package-Manager: portage-2.3.2
 
+*DBD-mysql-4.40.0 (20 Nov 2016)
+
+  20 Nov 2016; Kent Fredric <kentnl@gentoo.org> +DBD-mysql-4.40.0.ebuild:
+  Bump to version 4.40.0
+
+  Upstream:
+  - Fix compilation issues on bigendian mips, s390 and sparc
+  - Fix many integer types in conjunction with server-side prepare
+    statements
+  - Fix numeric conversions creating underflow/overflow even when in
+    strict mode
+
+  Package-Manager: portage-2.3.2
+

@@ -297,3 +297,11 @@
 
   Package-Manager: portage-2.3.0
 
+*thunderbird-bin-45.5.0 (20 Nov 2016)
+
+  20 Nov 2016; Ian Stakenvicius <axs@gentoo.org>
+  -thunderbird-bin-45.4.0.ebuild, +thunderbird-bin-45.5.0.ebuild:
+  bump to 45.5.0
+
+  Package-Manager: portage-2.3.0
+

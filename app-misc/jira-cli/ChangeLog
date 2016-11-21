@@ -15,3 +15,15 @@
 
   Package-Manager: portage-2.3.2
 
+*jira-cli-2.1.4-r1 (20 Nov 2016)
+
+  20 Nov 2016; Manuel Rüger <mrueg@gentoo.org> +jira-cli-2.1.4-r1.ebuild:
+  Filter deps from requirements
+
+  Package-Manager: portage-2.3.2
+
+  20 Nov 2016; Manuel Rüger <mrueg@gentoo.org> -jira-cli-2.1.4.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

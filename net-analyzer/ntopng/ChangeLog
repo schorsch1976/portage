@@ -105,3 +105,12 @@
 
   Package-Manager: portage-2.3.2
 
+  20 Nov 2016; Slawomir Lis <slis@gentoo.org> +files/ntopng-2.4-cxx.patch,
+  ntopng-2.4.ebuild:
+  Patch to use CC/CXX variables
+
+  This fixes a bug 600246, where clang++ was used directly.
+  Thanks to Chris White.
+
+  Package-Manager: portage-2.3.2
+

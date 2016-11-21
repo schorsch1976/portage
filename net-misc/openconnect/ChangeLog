@@ -281,3 +281,8 @@
 
   Closes: https://github.com/gentoo/gentoo/pull/2727
 
+  20 Nov 2016; Mike Gilbert <floppym@gentoo.org> openconnect-9999.ebuild:
+  general ebuild cleanup
+
+  Package-Manager: portage-2.3.2_p8
+

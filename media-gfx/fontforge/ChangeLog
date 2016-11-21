@@ -263,3 +263,11 @@
 
   Package-Manager: portage-2.3.2_p5
 
+  20 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  fontforge-20160404.ebuild:
+  x86 stable
+
+  Gentoo-bug: 593602
+
+  Package-Manager: portage-2.3.2
+

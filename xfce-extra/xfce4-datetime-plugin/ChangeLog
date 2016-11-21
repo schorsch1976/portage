@@ -63,3 +63,11 @@
   +xfce4-datetime-plugin-0.6.99.ebuild:
   Bump to 0.6.99, the GTK+3 pre-release
 
+*xfce4-datetime-plugin-0.7.0 (20 Nov 2016)
+
+  20 Nov 2016; Jason Zaman <perfinion@gentoo.org>
+  -xfce4-datetime-plugin-0.6.99.ebuild, +xfce4-datetime-plugin-0.7.0.ebuild:
+  bump version and EAPI6
+
+  Package-Manager: portage-2.3.0
+

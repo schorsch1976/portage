@@ -244,3 +244,9 @@
 
   Package-Manager: portage-2.3.2
 
+  20 Nov 2016; Johannes Huber <johu@gentoo.org> metadata.xml,
+  okular-16.04.3.ebuild, okular-16.08.3.ebuild:
+  Drop deprecated Plasma 4 support
+
+  Package-Manager: portage-2.3.2
+

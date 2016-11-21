@@ -112,3 +112,12 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  20 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> powertop-9999.ebuild:
+  generate version information for SCM build
+
+  Also:
+  - update header date
+  - migrate to EAPI=6 and git-r3 eclass
+
+  Package-Manager: portage-2.2.28
+

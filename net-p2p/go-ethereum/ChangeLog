@@ -64,3 +64,12 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+*go-ethereum-1.5.2 (20 Nov 2016)
+
+  20 Nov 2016; David Seifert <soap@gentoo.org> -go-ethereum-1.4.18.ebuild,
+  +go-ethereum-1.5.2.ebuild:
+  version bump to 1.5.2
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2867
+

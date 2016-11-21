@@ -312,3 +312,18 @@
 
   Package-Manager: portage-2.3.2
 
+*konsole-16.08.3-r1 (20 Nov 2016)
+
+  20 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +files/konsole-16.08.3-filefilter.patch, +konsole-16.08.3-r1.ebuild:
+  backport patch from upstream making the file filter optional
+
+  The file filter was introduced in 16.08 and can cause high CPU usage and
+  general lag in konsole. This backports a commit from 16.12 making the file
+  filter optional and disabled by default.
+
+  KDE-bug: 367882
+  KDE-bug: 368234
+
+  Package-Manager: portage-2.3.2
+

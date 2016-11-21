@@ -89,3 +89,11 @@
 
   Package-Manager: portage-2.3.2
 
+  19 Nov 2016; Johannes Huber <johu@gentoo.org> -colord-kde-0.3.0.ebuild,
+  -files/colord-kde-0.3.0-cmake34.patch:
+  Drop slot 4
+
+  Exported to kde-sunset overlay.
+
+  Package-Manager: portage-2.3.2
+

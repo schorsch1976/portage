@@ -691,3 +691,7 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  20 Nov 2016; Matt Turner <mattst88@gentoo.org> mesa-13.0.1.ebuild,
+  mesa-9999.ebuild:
+  Wrap vulkan header removal with check
+

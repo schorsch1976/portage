@@ -594,3 +594,23 @@
 
   Package-Manager: portage-2.3.0
 
+*thunderbird-45.5.0 (20 Nov 2016)
+
+  20 Nov 2016; Ian Stakenvicius <axs@gentoo.org> -thunderbird-45.4.0.ebuild,
+  +thunderbird-45.5.0.ebuild:
+  bump to 45.5.0
+
+  Package-Manager: portage-2.3.0
+
+  20 Nov 2016; Ian Stakenvicius <axs@gentoo.org> thunderbird-45.5.0.ebuild:
+  stabilize 45.5.0 for amd64 for security bug 599924
+
+  Package-Manager: portage-2.3.0
+
+  20 Nov 2016; Agostino Sarubbo <ago@gentoo.org> thunderbird-45.5.0.ebuild:
+  x86 stable wrt bug #599924
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

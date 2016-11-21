@@ -71,3 +71,6 @@
 
   Package-Manager: portage-2.3.1
 
+  20 Nov 2016; Aaron Bauman <bman@gentoo.org> smarty-3.1.30.ebuild:
+  stabilized per ALLARCH policy wrt security bug #596080
+
