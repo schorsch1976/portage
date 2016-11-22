@@ -1,0 +1,19 @@
+# ChangeLog for dev-perl/PerlIO-utf8_strict
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*PerlIO-utf8_strict-0.6.0 (21 Nov 2016)
+
+  21 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +PerlIO-utf8_strict-0.6.0.ebuild, +metadata.xml:
+  Add w/ version 0.6.0
+
+  This is a requirement for dev-perl/Mixin-Linewise, which is in turn
+  required for dev-perl/Config-INI, which is in turn required for
+  dev-perl/Dist-Zilla
+
+  Was previously in the ::perl-experimental overlay since April 2014,
+  maintained by myself.
+
+  Package-Manager: portage-2.3.2
+

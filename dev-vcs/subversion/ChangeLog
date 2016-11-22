@@ -376,3 +376,9 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  21 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -files/subversion-1.6.3-hpux-dso.patch, -files/svnserve.initd2:
+  remove unused patch/file
+
+  Closes: https://github.com/gentoo/gentoo/pull/2840
+

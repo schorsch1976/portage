@@ -172,3 +172,28 @@
   19 Nov 2016; Justin Bronder <jsbronder@gentoo.org> files/sabnzbd.initd:
   Use dummy NULL signal instead of SIGCONT
 
+  21 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.0.ebuild,
+  sabnzbd-1.1.1.ebuild:
+  Fix starting when default Python is not 2.x
+
+  Gentoo-Bug: 600356
+
+  21 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.1.ebuild:
+  Support Prefix
+
+  21 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.1.ebuild:
+  Remove superfluous post-install message
+
+  21 Nov 2016; Justin Bronder <jsbronder@gentoo.org> sabnzbd-1.1.0.ebuild:
+  Fix patch paths
+
+  Gentoo-Bug: 600264
+
+*sabnzbd-1.1.1-r1 (21 Nov 2016)
+
+  21 Nov 2016; Justin Bronder <jsbronder@gentoo.org> -sabnzbd-1.1.1.ebuild,
+  +sabnzbd-1.1.1-r1.ebuild:
+  revbump to force python2.7 fixes
+
+  Package-Manager: portage-2.3.0
+

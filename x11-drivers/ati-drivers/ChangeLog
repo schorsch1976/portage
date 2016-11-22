@@ -229,3 +229,9 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="amd64"
 
+  21 Nov 2016; Matt Turner <mattst88@gentoo.org> -ati-drivers-15.9-r1.ebuild,
+  -files/15.9-fpu.patch, -files/15.9-remove-gpl-symbols.patch:
+  Drop old version 15.9.
+
+  Bug: https://bugs.gentoo.org/565520
+

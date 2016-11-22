@@ -115,3 +115,15 @@
 
   Signed-off-by: Anthony G. Basile <blueness@gentoo.org>
 
+*torsocks-2.2.0 (21 Nov 2016)
+
+  21 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> +torsocks-2.2.0.ebuild:
+  bump to version 2.2.0
+
+  - disable network tests (bug #562848)
+  - drop unecessary patch
+  - use default DOCS (same installed files)
+
+  Gentoo-Bug: https://bugs.gentoo.org/562848
+  Gentoo-Bug: https://bugs.gentoo.org/597642
+

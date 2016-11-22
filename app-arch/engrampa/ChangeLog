@@ -149,3 +149,15 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: NP-Hardass <NP-Hardass@gentoo.org>
 
+*engrampa-1.14.1 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org> +engrampa-1.14.1.ebuild:
+  Version bump to 1.14.1
+
+  Package-Manager: portage-2.3.0
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org> engrampa-1.14.1.ebuild:
+  swap out itstool for proper dep yelp-tools
+
+  Package-Manager: portage-2.3.1
+

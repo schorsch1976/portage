@@ -77,3 +77,15 @@
 
   Package-Manager: portage-2.3.2
 
+  21 Nov 2016; Jeroen Roovers <jer@gentoo.org> pps-tools-0.0.20120407.ebuild:
+  Mark ~hppa (bug #599048).
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --ignore-arches
+
+  21 Nov 2016; Jeroen Roovers <jer@gentoo.org> pps-tools-0.0.20120407.ebuild:
+  Mark ~ppc64 (bug #599048).
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --ignore-arches
+

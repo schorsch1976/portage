@@ -169,3 +169,11 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*x2goserver-4.0.1.20 (21 Nov 2016)
+
+  21 Nov 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  +x2goserver-4.0.1.20.ebuild:
+  version bump to 4.0.1.20
+
+  Package-Manager: portage-2.3.2
+

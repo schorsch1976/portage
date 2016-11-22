@@ -152,3 +152,9 @@
   particular bug assignment/CC to ensure that the requested assignee
   always goes first, in order to match the bug wrangling policies.
 
+*youtube-viewer-3.2.4 (20 Nov 2016)
+
+  20 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org>
+  +youtube-viewer-3.2.4.ebuild:
+  version bump to 3.2.4
+

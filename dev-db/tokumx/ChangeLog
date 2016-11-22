@@ -70,3 +70,15 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*tokumx-2.0.2 (21 Nov 2016)
+
+  21 Nov 2016; Tony Vroon <chainsaw@gentoo.org> -files/1.5.0-Werror.diff,
+  -files/tokumx-2.0.1-no-werror.patch, +files/tokumx-2.0.2-boost-57.patch,
+  +files/tokumx-2.0.2-no-werror.patch,
+  -files/tokumx-disable-bundled-libs.patch, -tokumx-1.5.0.ebuild,
+  -tokumx-1.5.0-r1.ebuild, -tokumx-2.0.1.ebuild, +tokumx-2.0.2.ebuild:
+  Version bump to 2.0.2; remove all previous builds which are broken in
+  various ways and essentially unfixable.
+
+  Package-Manager: portage-2.3.2
+

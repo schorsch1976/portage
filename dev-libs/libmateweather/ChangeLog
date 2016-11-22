@@ -137,3 +137,22 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: NP-Hardass <NP-Hardass@gentoo.org>
 
+*libmateweather-1.14.0 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +libmateweather-1.14.0.ebuild:
+  Version bump to 1.14.0
+
+  Package-Manager: portage-2.3.0
+
+*libmateweather-1.14.3 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -libmateweather-1.12.1-r2.ebuild, -libmateweather-1.14.0.ebuild,
+  +libmateweather-1.14.3.ebuild:
+  Version bump 1.14.3
+
+  * Drop old 1.12.1-r2
+
+  Package-Manager: portage-2.3.0
+

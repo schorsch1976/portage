@@ -193,3 +193,7 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  20 Nov 2016; Aaron Bauman <bman@gentoo.org> -postgis-2.1.1.ebuild:
+  drop old which depended on vulnerable dev-libs/json-c wrt security bug
+  #507218
+

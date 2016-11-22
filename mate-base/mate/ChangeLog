@@ -132,3 +132,10 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: NP-Hardass <NP-Hardass@gentoo.org>
 
+*mate-1.14 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org> +mate-1.14.ebuild:
+  Version bump to 1.14
+
+  Package-Manager: portage-2.3.0
+

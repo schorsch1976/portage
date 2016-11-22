@@ -1,0 +1,17 @@
+# ChangeLog for dev-perl/Config-INI
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Config-INI-0.25.0 (21 Nov 2016)
+
+  21 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Config-INI-0.25.0.ebuild,
+  +metadata.xml:
+  Add w/ version 0.25.0
+
+  A requirement for dev-perl/Dist-Zilla
+
+  Previously maintained by myself and Torsten Veller on ::perl-experimental
+  since May 2009
+
+  Package-Manager: portage-2.3.2
+

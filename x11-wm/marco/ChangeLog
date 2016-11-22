@@ -123,3 +123,10 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: NP-Hardass <NP-Hardass@gentoo.org>
 
+*marco-1.14.2 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org> +marco-1.14.2.ebuild:
+  Version bump to 1.14.0
+
+  Package-Manager: portage-2.3.0
+

@@ -388,3 +388,11 @@
   exim-4.87-r1.ebuild, exim-4.88_rc2.ebuild:
   depend on libmysqlclient, no need for the server, bug #579010
 
+*exim-4.88_rc5 (21 Nov 2016)
+
+  21 Nov 2016; Fabian Groffen <grobian@gentoo.org> -exim-4.88_rc2.ebuild,
+  +exim-4.88_rc5.ebuild:
+  bump to 4.88 RC5
+
+  Package-Manager: portage-2.3.0
+

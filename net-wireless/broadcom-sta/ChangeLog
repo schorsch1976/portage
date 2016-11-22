@@ -209,3 +209,14 @@
 
   Package-Manager: portage-2.3.0
 
+*broadcom-sta-6.30.223.271-r4 (21 Nov 2016)
+
+  21 Nov 2016; Matt Turner <mattst88@gentoo.org>
+  +broadcom-sta-6.30.223.271-r4.ebuild,
+  +files/broadcom-sta-6.30.223.271-r4-linux-4.7.patch,
+  +files/broadcom-sta-6.30.223.271-r4-linux-4.8.patch:
+  Add support for Linux v4.8
+
+  Bug: https://bugs.gentoo.org/590078
+  Bug: https://bugs.gentoo.org/596342
+

@@ -103,3 +103,10 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*wlc-0.0.7 (21 Nov 2016)
+
+  21 Nov 2016; David Seifert <soap@gentoo.org> +wlc-0.0.7.ebuild:
+  version bump to 0.0.7
+
+  Closes: https://github.com/gentoo/gentoo/pull/2883
+

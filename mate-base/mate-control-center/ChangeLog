@@ -140,3 +140,19 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: NP-Hardass <NP-Hardass@gentoo.org>
 
+*mate-control-center-1.14.1 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +mate-control-center-1.14.1.ebuild:
+  Version bump to 1.14.1
+
+  Package-Manager: portage-2.2.26
+
+*mate-control-center-1.14.1-r1 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -mate-control-center-1.14.1.ebuild, +mate-control-center-1.14.1-r1.ebuild:
+  apply appindicator patch to 1.14.1, #593678
+
+  Package-Manager: portage-2.3.0
+

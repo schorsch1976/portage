@@ -203,3 +203,11 @@
 
   Package-Manager: portage-2.3.2
 
+*gdm-3.22.1-r1 (21 Nov 2016)
+
+  21 Nov 2016; Rémi Cardona <remi@gentoo.org>
+  +files/gdm-3.22.1-pam-module-dir.patch, +gdm-3.22.1-r1.ebuild:
+  install pam_gdm.so in correct location, bug #599714
+
+  Package-Manager: portage-2.3.2
+

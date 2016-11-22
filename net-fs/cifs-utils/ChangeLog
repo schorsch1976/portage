@@ -171,3 +171,22 @@
 
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*cifs-utils-6.6-r1 (21 Nov 2016)
+
+  21 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +cifs-utils-6.6-r1.ebuild:
+  Added pam USE flag (bug #599760).
+
+  Package-Manager: portage-2.3.2
+
+*cifs-utils-6.6-r2 (21 Nov 2016)
+
+  21 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -cifs-utils-6.6-r1.ebuild, +cifs-utils-6.6-r2.ebuild:
+  Another revbump to fix incomplete USE="pam" support.
+
+  Removed cifs-utils-6.6-r1
+  Thanks to Joakim Tjernlund for bringing that to my attention.
+
+  Package-Manager: portage-2.3.2
+

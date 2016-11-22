@@ -134,3 +134,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  20 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  ipsec-tools-0.8.2-r5.ebuild:
+  stable on ppc and ppc64, bug #550118
+
+  Package-Manager: portage-2.3.0
+

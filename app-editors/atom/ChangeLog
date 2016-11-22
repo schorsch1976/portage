@@ -181,3 +181,28 @@
 
   Signed-off-by: Yixun Lan <dlan@gentoo.org>
 
+*atom-1.12.2 (21 Nov 2016)
+
+  21 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> +atom-1.12.2.ebuild,
+  files/atom-apm-path.patch, +files/atom-license-path.patch,
+  files/atom-python.patch:
+  Version bump to 1.12.2
+
+  Gentoo-Bug: https://bugs.gentoo.org/597442
+
+  Package-Manager: portage-2.3.0
+
+  21 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> atom-1.12.2.ebuild:
+  Use newer bash syntax
+
+  Package-Manager: portage-2.3.0
+
+  21 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> -atom-1.7.4-r4.ebuild,
+  -atom-1.8.0-r1.ebuild, -atom-1.10.2.ebuild, atom-1.12.2.ebuild,
+  -files/asar-require.patch:
+  Drop old versions
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=596758
+
+  Package-Manager: portage-2.3.0
+

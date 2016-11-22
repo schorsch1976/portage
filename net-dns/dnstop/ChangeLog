@@ -85,3 +85,12 @@
 
   Package-Manager: portage-2.2.28
 
+*dnstop-20140915-r2 (21 Nov 2016)
+
+  21 Nov 2016; Michael Weber <xmw@gentoo.org> -dnstop-20140915-r1.ebuild,
+  +dnstop-20140915-r2.ebuild, +files/dnstop-20140915-pkg-config.patch:
+  fix net-libs/libpcap[ipv6] situation, drop USE=ipv6, use pkg-config for
+  ncurses[tinfo] (thanks lorem_ipsum and b4b1@free.fr, bug 595184).
+
+  Package-Manager: portage-2.2.28
+

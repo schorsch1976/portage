@@ -273,3 +273,14 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  21 Nov 2016; David Seifert <soap@gentoo.org> kodi-16.1.ebuild:
+  16.1: Fix USE=-java
+
+  kodi-16.1-generated-addons.tar.xz is missing the parent directory and
+  xbmc/interfaces/json-rpc/ServiceDescription.h, breaking USE=-java.
+
+  kodi-16.1-generated-addons-r1.tar.xz fixes those problems.
+
+  Gentoo-bug: 598058
+  Closes: https://github.com/gentoo/gentoo/pull/2875
+

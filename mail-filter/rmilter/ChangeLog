@@ -156,3 +156,15 @@
 
   Package-Manager: portage-2.3.0
 
+*rmilter-1.10.0 (21 Nov 2016)
+
+  21 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> +rmilter-1.10.0.ebuild:
+  version bump to 1.10.0
+
+  Package-Manager: portage-2.3.0
+
+  21 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> -rmilter-1.8.6.ebuild:
+  remove old version
+
+  Package-Manager: portage-2.3.0
+

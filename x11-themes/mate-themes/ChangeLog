@@ -171,3 +171,12 @@
 
   Package-Manager: portage-2.3.0
 
+*mate-themes-3.22.2 (21 Nov 2016)
+*mate-themes-3.20.11 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +mate-themes-3.20.11.ebuild, +mate-themes-3.22.2.ebuild:
+  Bump to 3.20.11, 3.22.2
+
+  Package-Manager: portage-2.3.0
+

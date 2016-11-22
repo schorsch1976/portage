@@ -477,3 +477,12 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*rt-sources-4.4.32_p43 (21 Nov 2016)
+
+  21 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  +rt-sources-4.4.32_p43.ebuild:
+  version bump to 4.4.32_p43.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2863
+

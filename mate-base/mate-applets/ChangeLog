@@ -216,3 +216,18 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: NP-Hardass <NP-Hardass@gentoo.org>
 
+*mate-applets-1.14.1 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +mate-applets-1.14.1.ebuild:
+  Version bump to 1.14.1
+
+  Package-Manager: portage-2.2.26
+
+*mate-applets-1.14.1-r1 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +files/mate-applets-1.14.1-revert-upstream-cpupower-4.7-fix.patch,
+  -mate-applets-1.14.1.ebuild, +mate-applets-1.14.1-r1.ebuild:
+  revert upstream patch, require <cpupower-4.7 #593470
+

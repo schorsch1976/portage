@@ -435,3 +435,6 @@
   15 Nov 2016; Michał Górny <mgorny@gentoo.org> -clang-3.5.0-r100.ebuild:
   Remove 3.5.0
 
+  20 Nov 2016; Michał Górny <mgorny@gentoo.org> clang-9999.ebuild:
+  Enforce ${CHOST}-llvm-config for multilib
+

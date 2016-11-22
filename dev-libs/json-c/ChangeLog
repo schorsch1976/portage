@@ -140,3 +140,11 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  20 Nov 2016; Aaron Bauman <bman@gentoo.org> -json-c-0.9-r1.ebuild,
+  -json-c-0.10-r1.ebuild:
+  drop vulnerable versions wrt security bug #507218
+
+  20 Nov 2016; Aaron Bauman <bman@gentoo.org> -json-c-0.11.ebuild,
+  -json-c-0.11-r1.ebuild:
+  drop remaining vulnerable versions wrt security bug #507218
+

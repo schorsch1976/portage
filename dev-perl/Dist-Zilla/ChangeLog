@@ -1,0 +1,26 @@
+# ChangeLog for dev-perl/Dist-Zilla
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Dist-Zilla-6.8.0 (21 Nov 2016)
+
+  21 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Dist-Zilla-6.8.0.ebuild,
+  +metadata.xml:
+  Add w/ version 6.8.0
+
+  required by app-admin/rex for doing VCS installs.
+
+  NOTE: This perl module is an "authorside" module and as such it is
+  not TYPICALLY used by anything for installation, as the point of
+  Dist::Zilla is to create simplifed distributions that don't need
+  a lot of install-time magic.
+
+  It is subsequently *not* used on typical CPAN sources, and should
+  only be used against VCS sources to create an analog of a published
+  CPAN distrubition as part of the VCS build workflow.
+
+  Previously maintained in ::perl-experimental by Torsten Veller,
+  Michele Beltrame and myself since May 2009
+
+  Package-Manager: portage-2.3.2
+

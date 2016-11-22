@@ -243,3 +243,22 @@
 
   Package-Manager: portage-2.3.0
 
+  21 Nov 2016; Davide Pesavento <pesa@gentoo.org> qt-creator-3.6.1.ebuild,
+  qt-creator-4.0.3.ebuild:
+  restrict dep on qbs to avoid build failures
+
+  Gentoo-Bug: 594256
+
+  Package-Manager: portage-2.3.2
+
+*qt-creator-4.1.0 (21 Nov 2016)
+
+  21 Nov 2016; Davide Pesavento <pesa@gentoo.org> metadata.xml,
+  +qt-creator-4.1.0.ebuild, qt-creator-9999.ebuild:
+  version bump
+
+  Gentoo-Bug: 592148
+  Gentoo-Bug: 596178
+
+  Package-Manager: portage-2.3.2
+

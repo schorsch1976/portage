@@ -161,3 +161,9 @@
 
   Package-Manager: portage-2.3.2
 
+  21 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> qtcurve-9999.ebuild:
+  Use kde5.eclass
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2879
+

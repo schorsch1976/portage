@@ -149,3 +149,32 @@
 
   Package-Manager: portage-2.2.27
 
+*IO-Socket-SSL-2.39.0 (21 Nov 2016)
+
+  21 Nov 2016; Kent Fredric <kentnl@gentoo.org> +IO-Socket-SSL-2.39.0.ebuild,
+  metadata.xml:
+  Bump to version 2.39.0
+
+  - EAPI6
+  - Add USE="examples"
+  - Parallel Testing
+
+  Upstream:
+  - Fix memleak with SSL_crl_file
+  - Follow Mozilla cipher recommendations for defaults, disabling
+    RC4 and adding CHACHA20 for clients.
+  - Add del_session method to session cache
+  - use SSL_session_key for the cache key instead of a derivative
+  - Don't re-add existing extensions
+  - Support creating ECC keys
+  - Direct Cache IO instead ov via session_cache sub
+  - Set session id ctx only server side.
+  - Support session ticket reuse
+  - Support OpenSSL >= 1.1.0c
+  - Global SSL arguments handled in context creation
+  - Disable OCSP w/ Net::SSLeay 1.7{5..7}
+  - Extend SSL fingerprint to pubkey digest
+  - Restrict session ticket callback to Net::SSLeay 1.79+
+
+  Package-Manager: portage-2.3.2
+

@@ -192,3 +192,9 @@
 
   Package-Manager: portage-2.3.0
 
+  20 Nov 2016; Sven Wegener <swegener@gentoo.org>
+  +files/pdns-recursor-4.0.3-ecdsa.patch, pdns-recursor-4.0.3.ebuild:
+  Fix building with disabled ECDSA support, bug #590370
+
+  Package-Manager: portage-2.3.0
+

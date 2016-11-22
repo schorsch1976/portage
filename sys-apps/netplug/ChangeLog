@@ -62,3 +62,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*netplug-1.2.9.2-r2 (21 Nov 2016)
+
+  21 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +files/netplug-1.2.9.2-downandout.patch, +netplug-1.2.9.2-r2.ebuild:
+  Fixed DOWNANDOUT crash (bug #599400).
+
+  Package-Manager: portage-2.3.2
+

@@ -106,3 +106,19 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: NP-Hardass <NP-Hardass@gentoo.org>
 
+*mate-media-1.14.0 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +mate-media-1.14.0.ebuild:
+  Version bump to 1.14.0
+
+  Package-Manager: portage-2.3.0
+
+*mate-media-1.14.1 (21 Nov 2016)
+
+  21 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -mate-media-1.14.0.ebuild, +mate-media-1.14.1.ebuild:
+  Bump to 1.14.1
+
+  Package-Manager: portage-2.2.28
+

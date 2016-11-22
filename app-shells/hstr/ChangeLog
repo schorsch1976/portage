@@ -85,3 +85,16 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*hstr-1.21 (21 Nov 2016)
+
+  21 Nov 2016; Patrice Clement <monsieurp@gentoo.org> +hstr-1.21.ebuild:
+  version bump.
+
+  Package-Manager: portage-2.3.0
+
+  21 Nov 2016; Patrice Clement <monsieurp@gentoo.org> -hstr-1.17.ebuild,
+  -hstr-1.18.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+

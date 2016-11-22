@@ -63,3 +63,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*bitmeter-1.2-r1 (21 Nov 2016)
+
+  21 Nov 2016; David Seifert <soap@gentoo.org> -bitmeter-1.2.ebuild,
+  +bitmeter-1.2-r1.ebuild, +files/bitmeter-1.2-fix-build-system.patch,
+  +files/bitmeter-1.2-qa-desktop-file.patch:
+  Fix build with GCC-5
+
+  Gentoo-bug: 586148
+
+  Fix desktop file.
+  Update HOMEPAGE, DESCRIPTION, SRC_URI, bump to EAPI 6.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2877
+

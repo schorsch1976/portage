@@ -325,3 +325,8 @@
 
   Package-Manager: portage-2.3.2
 
+  21 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> tortoisehg-4.0.ebuild:
+  Don't use dohtml with EAPI-6.
+
+  Package-Manager: portage-2.3.2
+

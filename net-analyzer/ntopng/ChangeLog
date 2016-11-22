@@ -114,3 +114,28 @@
 
   Package-Manager: portage-2.3.2
 
+  21 Nov 2016; Slawomir Lis <slis@gentoo.org> metadata.xml, ntopng-2.4.ebuild:
+  updated dependencies
+
+  Added missing dependencies: dev-libs/json-c
+  and added redis use flag, and dependency to dev-libs/hiredis
+
+  I'm not sure if dev-db/redis is still needed
+
+  Package-Manager: portage-2.3.2
+
+  21 Nov 2016; Slawomir Lis <slis@gentoo.org> metadata.xml, ntopng-2.4.ebuild:
+  fixes problems with hardcoded g++ calls
+
+  Thanks to Thomas Deutschmann this should finally fixes problems with 600246.
+
+  Package-Manager: portage-2.3.2
+
+  21 Nov 2016; Slawomir Lis <slis@gentoo.org> -ntopng-1.2.1.ebuild,
+  -ntopng-2.0.ebuild:
+  Drop old versions
+
+  Dropped version 2.0 and 1.2.1
+
+  Package-Manager: portage-2.3.2
+

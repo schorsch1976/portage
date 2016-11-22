@@ -1,0 +1,19 @@
+# ChangeLog for dev-perl/Term-UI
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Term-UI-0.460.0 (21 Nov 2016)
+
+  21 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Term-UI-0.460.0.ebuild,
+  +metadata.xml:
+  Add w/ version 0.460.0
+
+  Required for dev-perl/Dist-Zilla
+
+  Previously maintained in ::perl-experimental by Torsten Veller and myself
+  since December 2009.
+
+  Was also formerly known as perl-core/Term-UI
+
+  Package-Manager: portage-2.3.2
+

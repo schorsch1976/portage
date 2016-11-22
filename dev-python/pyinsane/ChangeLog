@@ -82,3 +82,12 @@
 
   Package-Manager: portage-2.3.2
 
+*pyinsane-2.0.6 (21 Nov 2016)
+
+  21 Nov 2016; Bernard Cafarelli <voyageur@gentoo.org> +pyinsane-2.0.6.ebuild:
+  version bump to 2.0.6
+
+  Mostly keeping up with upstream version, most changes are windows-only
+
+  Package-Manager: portage-2.3.2
+
