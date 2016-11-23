@@ -102,3 +102,18 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  22 Nov 2016; Vicente Olivert Riera <vincent@gentoo.org>
+  mtd-utils-1.5.2.ebuild:
+  amd64 stable
+
+  Stable request:
+    https://bugs.gentoo.org/show_bug.cgi?id=592742
+
+  Package-Manager: portage-2.3.0
+
+  22 Nov 2016; Vicente Olivert Riera <vincent@gentoo.org>
+  mtd-utils-1.5.2.ebuild:
+  switch to EAPI 5
+
+  Package-Manager: portage-2.3.0
+

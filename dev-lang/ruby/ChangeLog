@@ -450,3 +450,10 @@
 
   Package-Manager: portage-2.3.0
 
+*ruby-2.3.3 (22 Nov 2016)
+
+  22 Nov 2016; Hans de Graaff <graaff@gentoo.org> +ruby-2.3.3.ebuild:
+  add 2.3.3, drop 2.3.2 due to regression bug
+
+  Package-Manager: portage-2.3.0
+

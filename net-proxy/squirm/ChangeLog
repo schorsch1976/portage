@@ -66,3 +66,14 @@
 
   Bug: 575810
 
+  21 Nov 2016; David Seifert <soap@gentoo.org> +files/squirm-1.26-gcc5.patch,
+  squirm-1.26-r1.ebuild:
+  Fix build with GCC-5
+
+  Adding squid to DEPEND because squid user is expected at install
+
+  Gentoo-bug: 554800
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2887
+

@@ -218,3 +218,15 @@
 
   Package-Manager: portage-2.3.2
 
+  22 Nov 2016; Johannes Huber <johu@gentoo.org> kdepim-l10n-16.08.3.ebuild:
+  Fix install w/o anything to install
+
+  But also add checks to identify empty L10N.
+  closes #2893
+
+  Gentoo-bug: 600312
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+

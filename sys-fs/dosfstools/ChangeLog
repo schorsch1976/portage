@@ -205,3 +205,6 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Mike Frysinger <vapier@gentoo.org> dosfstools-4.0-r1.ebuild:
+  mark 4.0-r1 arm64/ia64/ppc/s390/sh/sparc stable #582530
+

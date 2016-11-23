@@ -375,3 +375,15 @@
 
   Signed-off-by: Richard Yao <ryao@gentoo.org>
 
+*zfs-0.6.5.8-r1 (22 Nov 2016)
+
+  22 Nov 2016; Yixun Lan <dlan@gentoo.org> +zfs-0.6.5.8-r1.ebuild:
+  fix udev-init-scripts dep
+
+  remove <=sys-fs/udev-init-scripts-28
+  tested and it works fine on both systemd and openrc
+
+  Gentoo-Bug: 565920
+
+  Package-Manager: portage-2.3.2
+

@@ -707,3 +707,19 @@
 
   Gentoo-Bug: 592658
 
+  22 Nov 2016; Agostino Sarubbo <ago@gentoo.org> python-2.7.12.ebuild,
+  python-3.4.5.ebuild:
+  amd64 stable wrt bug #585946
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  22 Nov 2016; Agostino Sarubbo <ago@gentoo.org> python-2.7.12.ebuild,
+  python-3.4.5.ebuild:
+  x86 stable wrt bug #585946
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

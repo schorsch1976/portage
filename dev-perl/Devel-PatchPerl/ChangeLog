@@ -108,3 +108,14 @@
 
   Package-Manager: portage-2.3.2
 
+*Devel-PatchPerl-1.460.0 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Devel-PatchPerl-1.460.0.ebuild:
+  Bump to version 1.460.0
+
+  Upstream:
+  - Hints update
+
+  Package-Manager: portage-2.3.2
+

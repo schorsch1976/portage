@@ -156,3 +156,18 @@
 
   Package-Manager: portage-2.3.0
 
+*libsndfile-1.0.27-r1 (22 Nov 2016)
+
+  22 Nov 2016; David Seifert <soap@gentoo.org>
+  +files/libsndfile-1.0.27-fix-tests.patch, +libsndfile-1.0.27-r1.ebuild:
+  Port to EAPI=6
+
+  Gentoo-bug: 492754
+
+  Package-Manager: portage-2.3.2
+
+  22 Nov 2016; David Seifert <soap@gentoo.org> -libsndfile-1.0.27.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

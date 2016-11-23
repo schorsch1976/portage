@@ -605,3 +605,36 @@
 
   Package-Manager: portage-2.3.2
 
+*xen-tools-4.7.1-r1 (22 Nov 2016)
+*xen-tools-4.6.4-r1 (22 Nov 2016)
+
+  22 Nov 2016; Yixun Lan <dlan@gentoo.org> +xen-tools-4.6.4-r1.ebuild,
+  +xen-tools-4.7.1-r1.ebuild:
+  security bump, fix various XSA
+
+  fix XSA-191,192,193,194,195,196,197,198
+
+  Package-Manager: portage-2.3.2
+
+  22 Nov 2016; Yixun Lan <dlan@gentoo.org> files/gentoo-patches.conf,
+  xen-tools-4.6.4-r1.ebuild, xen-tools-4.7.1-r1.ebuild:
+  increase xenstore stack size
+
+  this patch is needed if rbd(ceph) enabled, otherwise
+  /etc/init.d/xenqemu will fail to start
+
+  https://lists.gnu.org/archive/html/qemu-devel/2016-09/msg03961.html
+
+  Package-Manager: portage-2.3.2
+
+*xen-tools-4.7.1-r2 (22 Nov 2016)
+*xen-tools-4.6.4-r2 (22 Nov 2016)
+
+  22 Nov 2016; Yixun Lan <dlan@gentoo.org> +xen-tools-4.6.4-r2.ebuild,
+  +xen-tools-4.7.1-r2.ebuild:
+  USE=ovmf require dev-lang/nasm
+
+  Gentoo-Bug: 599594
+
+  Package-Manager: portage-2.3.2
+

@@ -119,3 +119,18 @@
 
   Package-Manager: portage-2.3.0
 
+*librecad-2.1.3 (22 Nov 2016)
+
+  22 Nov 2016; Slawomir Lis <slis@gentoo.org> +librecad-2.1.3.ebuild:
+  version bump to 2.1.3
+
+  This also should fix a bug 597704
+
+  Package-Manager: portage-2.3.2
+
+  22 Nov 2016; Slawomir Lis <slis@gentoo.org> -librecad-2.0.5.ebuild,
+  -librecad-2.0.6.ebuild, -librecad-2.0.7.ebuild, -librecad-2.0.8.ebuild:
+  drop old versions
+
+  Package-Manager: portage-2.3.2
+

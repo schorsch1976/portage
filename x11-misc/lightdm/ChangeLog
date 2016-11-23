@@ -406,3 +406,6 @@
   tools to find the installed documentation. Also fixes the QA warning
   issued by Portage.
 
+  22 Nov 2016; Aaron Bauman <bman@gentoo.org> -lightdm-1.10.5.ebuild:
+  remove vulnerable versions wrt security bug #566640
+

@@ -170,3 +170,19 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*xf86-input-synaptics-1.9.0 (22 Nov 2016)
+
+  22 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +xf86-input-synaptics-1.9.0.ebuild:
+  Bump to version 1.9.0
+
+  Package-Manager: portage-2.3.2
+
+  22 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -files/xf86-input-synaptics-1.7-glibc-2.20.patch,
+  -xf86-input-synaptics-1.7.4.ebuild, -xf86-input-synaptics-1.7.8.ebuild,
+  -xf86-input-synaptics-1.8.1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

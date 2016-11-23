@@ -93,3 +93,14 @@
 
   Package-Manager: portage-2.2.27
 
+*GDGraph-1.540.0 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org> +GDGraph-1.540.0.ebuild:
+  Bump to version 1.540.0
+
+  Upstream:
+  - Disable Y axis alignments w/ multiple max/min y-values.
+  - Fix division by zero when x min/max + tick_number=auto
+
+  Package-Manager: portage-2.3.2
+

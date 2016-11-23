@@ -88,3 +88,15 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*gpa-0.9.10 (22 Nov 2016)
+
+  22 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +gpa-0.9.10.ebuild:
+  Bump to version 0.9.10
+
+  Package-Manager: portage-2.3.2
+
+  22 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -gpa-0.9.7.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

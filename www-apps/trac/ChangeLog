@@ -159,3 +159,10 @@
 
   Package-Manager: portage-2.3.0
 
+*trac-1.2-r1 (22 Nov 2016)
+
+  22 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> +trac-1.2-r1.ebuild:
+  remove cgi/fcgi flags for 1.2 (fixes bug 600278)
+
+  Package-Manager: portage-2.3.0
+

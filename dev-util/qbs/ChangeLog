@@ -206,3 +206,8 @@
 
   Package-Manager: portage-2.3.2
 
+  22 Nov 2016; Davide Pesavento <pesa@gentoo.org> -qbs-1.6.0.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+

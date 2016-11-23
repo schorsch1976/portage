@@ -290,3 +290,10 @@
   cinnamon-3.0.6.ebuild, cinnamon-3.0.7.ebuild, cinnamon-3.0.7-r1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*cinnamon-3.2.0 (22 Nov 2016)
+
+  22 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> +cinnamon-3.2.0.ebuild:
+  New upstream version 3.2.0
+
+  Package-Manager: portage-2.3.2
+

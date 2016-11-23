@@ -1,0 +1,15 @@
+# ChangeLog for dev-perl/Test-Version
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Test-Version-2.50.0 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Test-Version-2.50.0.ebuild,
+  +metadata.xml:
+  Add w/ version 2.50.0
+
+  Required for app-admin/rex via VCS
+  via dev-perl/Dist-Zilla-Plugin-OurPkgVersion
+
+  Package-Manager: portage-2.3.2
+

@@ -560,3 +560,12 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*virtualbox-5.1.10 (22 Nov 2016)
+*virtualbox-5.0.28 (22 Nov 2016)
+
+  22 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +virtualbox-5.0.28.ebuild, +virtualbox-5.1.10.ebuild:
+  virtualbox packages: Bump to versions 5.0.28 and 5.1.10
+
+  Package-Manager: portage-2.3.2
+

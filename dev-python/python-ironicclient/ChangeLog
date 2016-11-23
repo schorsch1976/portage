@@ -105,3 +105,11 @@
   -python-ironicclient-0.5.1.ebuild, -python-ironicclient-0.8.1.ebuild:
   massive cleanup of old openstack stuff
 
+*python-ironicclient-1.7.1 (22 Nov 2016)
+
+  22 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +python-ironicclient-1.7.1.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+

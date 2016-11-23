@@ -38,3 +38,23 @@
 
   Package-Manager: portage-2.3.2
 
+*Params-ValidationCompiler-0.190.0 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Params-ValidationCompiler-0.190.0.ebuild:
+  Bump to version 0.190.0
+
+  Upstream:
+  - Avoid syntax error combining Non-inlineable Specio types with
+    positional params
+  - Fix coercions and defaults on positional params not ever
+    returning
+
+  Package-Manager: portage-2.3.2
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -Params-ValidationCompiler-0.180.0.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

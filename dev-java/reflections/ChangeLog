@@ -89,3 +89,11 @@
 
   Package-Manager: portage-2.2.28
 
+*reflections-0.9.10-r1 (21 Nov 2016)
+
+  21 Nov 2016; James Le Cuirot <chewi@gentoo.org> -reflections-0.9.10.ebuild,
+  +reflections-0.9.10-r1.ebuild:
+  Use newer guava SLOT, EAPI bump to 6
+
+  Package-Manager: portage-2.3.2
+

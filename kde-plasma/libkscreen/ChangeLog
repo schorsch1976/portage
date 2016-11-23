@@ -462,3 +462,10 @@
   +libkscreen-1.0.5_p20150822.ebuild:
   x11-libs/libkscreen -> kde-plasma/libkscreen
 
+*libkscreen-5.8.4 (22 Nov 2016)
+
+  22 Nov 2016; Johannes Huber <johu@gentoo.org> +libkscreen-5.8.4.ebuild:
+  kde-plasma: Version bump KDE Plasma 5.8.4
+
+  Package-Manager: portage-2.3.2
+

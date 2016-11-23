@@ -210,3 +210,11 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="x86"
 
+*cinnamon-settings-daemon-3.2.0 (22 Nov 2016)
+
+  22 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org>
+  +cinnamon-settings-daemon-3.2.0.ebuild:
+  New upstream version 3.2.0
+
+  Package-Manager: portage-2.3.2
+

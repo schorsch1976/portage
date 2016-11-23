@@ -75,3 +75,10 @@
   systemd-cron-1.5.4.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  21 Nov 2016; Richard Freeman <rich0@gentoo.org> systemd-cron-1.5.4.ebuild:
+  amd64 stable
+
+  Bug: 600442
+
+  Package-Manager: portage-2.3.0
+

@@ -546,3 +546,22 @@
 
   Package-Manager: portage-2.3.2
 
+  22 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> +files/gnupg-2.1.16-gpgs
+  cm-Use-shorter-socket-path-lengts-to-improve-tes.patch, gnupg-2.1.16.ebuild:
+  Minor changes to 2.1.16
+
+  For now tools subdir always needs to be built, even though the use flag
+  controls
+  whether some of the resulting binaries are installed or not, as e.g
+  gpg-connect-agent and gpg-wks-client is expected to be installed
+  unconditionally.
+
+  Given that tools subdir is a cheap build, this doesn't constitute much of an
+  actual issue, but upstream is notified.
+
+  Gentoo-Bug: 600208
+
+  Add patch to mitigate test failure due to overlong socket path.
+
+  Package-Manager: portage-2.3.2
+

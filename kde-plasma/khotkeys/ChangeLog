@@ -458,3 +458,10 @@
   khotkeys-5.8.3.ebuild:
   kde-base/systemsettings -> kde-plasma/systemsettings
 
+*khotkeys-5.8.4 (22 Nov 2016)
+
+  22 Nov 2016; Johannes Huber <johu@gentoo.org> +khotkeys-5.8.4.ebuild:
+  kde-plasma: Version bump KDE Plasma 5.8.4
+
+  Package-Manager: portage-2.3.2
+

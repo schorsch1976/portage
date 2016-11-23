@@ -1,0 +1,14 @@
+# ChangeLog for dev-perl/Dist-Zilla-Plugin-MakeMaker-Awesome
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Dist-Zilla-Plugin-MakeMaker-Awesome-0.380.0 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Dist-Zilla-Plugin-MakeMaker-Awesome-0.380.0.ebuild, +metadata.xml:
+  Add w/ version 0.380.0
+
+  Used by app-admin/rex VCS
+
+  Package-Manager: portage-2.3.2
+

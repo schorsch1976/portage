@@ -113,3 +113,12 @@
 
   Package-Manager: portage-2.2.28
 
+*mcabber-1.0.4 (22 Nov 2016)
+
+  22 Nov 2016; Wolfram Schlich <wschlich@gentoo.org> -mcabber-1.0.2.ebuild,
+  -mcabber-1.0.3.ebuild, +mcabber-1.0.4.ebuild:
+  version bump (fixes a security issue, see https://mcabber.com/ and
+  CVE-2015-8688), removed older unstable versions
+
+  Package-Manager: portage-2.3.0
+

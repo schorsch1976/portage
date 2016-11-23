@@ -1273,3 +1273,19 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*vanilla-sources-4.8.10 (22 Nov 2016)
+
+  22 Nov 2016; Mike Pagano <mpagano@gentoo.org> -vanilla-sources-4.8.9.ebuild,
+  +vanilla-sources-4.8.10.ebuild:
+  Linux p patch 4.8.10
+
+  Package-Manager: portage-2.3.0
+
+*vanilla-sources-4.4.34 (22 Nov 2016)
+
+  22 Nov 2016; Mike Pagano <mpagano@gentoo.org>
+  -vanilla-sources-4.4.33.ebuild, +vanilla-sources-4.4.34.ebuild:
+  Linux patch 4.4.34
+
+  Package-Manager: portage-2.3.0
+

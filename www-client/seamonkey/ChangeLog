@@ -297,3 +297,22 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  22 Nov 2016; Patrick Lauer <patrick@gentoo.org> seamonkey-2.40.ebuild:
+  Fix build failure #588070
+
+  Package-Manager: portage-2.3.2
+
+*seamonkey-2.46_pre6 (22 Nov 2016)
+
+  22 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> metadata.xml,
+  +seamonkey-2.46_pre6.ebuild:
+  Bump to version 2.46_pre6 (latest rc).
+
+  Package-Manager: portage-2.3.2
+
+  22 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> metadata.xml,
+  seamonkey-2.46_pre6.ebuild:
+  Stick with gtk2 as default for now.
+
+  Package-Manager: portage-2.3.2
+

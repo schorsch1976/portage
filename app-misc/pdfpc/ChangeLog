@@ -107,3 +107,16 @@
 
   Package-Manager: portage-2.3.1
 
+*pdfpc-4.0.4 (22 Nov 2016)
+
+  22 Nov 2016; Manuel Rüger <mrueg@gentoo.org> +pdfpc-4.0.4.ebuild:
+  Version bump to 4.0.4
+
+  Package-Manager: portage-2.3.2
+
+  22 Nov 2016; Manuel Rüger <mrueg@gentoo.org> -pdfpc-4.0.2.ebuild,
+  -pdfpc-4.0.3.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+
