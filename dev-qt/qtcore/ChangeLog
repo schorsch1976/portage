@@ -286,3 +286,8 @@
 
   Package-Manager: portage-2.3.2
 
+  23 Nov 2016; Davide Pesavento <pesa@gentoo.org> -qtcore-5.6.2.ebuild:
+  drop 5.6.2-r0
+
+  Package-Manager: portage-2.3.2
+

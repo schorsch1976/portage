@@ -120,3 +120,10 @@
 
   Gentoo-Bug: 597252
 
+  22 Nov 2016; Marek Szuba <marecki@gentoo.org> libafterimage-1.20-r1.ebuild:
+  1.20-r1: stable on amd64
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=597252
+
+  Package-Manager: portage-2.3.2
+

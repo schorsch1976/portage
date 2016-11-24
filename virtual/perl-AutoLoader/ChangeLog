@@ -86,3 +86,20 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --ignore-arches
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-AutoLoader-5.740.0-r2.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-AutoLoader-5.740.0-r3 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-AutoLoader-5.740.0-r2.ebuild, +perl-AutoLoader-5.740.0-r3.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

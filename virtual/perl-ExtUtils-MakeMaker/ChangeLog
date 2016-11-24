@@ -140,3 +140,56 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-ExtUtils-MakeMaker-6.980.0.ebuild,
+  perl-ExtUtils-MakeMaker-7.40.0.ebuild,
+  perl-ExtUtils-MakeMaker-7.40.100_rc.ebuild,
+  perl-ExtUtils-MakeMaker-7.100.100_rc.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-ExtUtils-MakeMaker-7.100.100_rc-r1 (22 Nov 2016)
+*perl-ExtUtils-MakeMaker-7.40.100_rc-r1 (22 Nov 2016)
+*perl-ExtUtils-MakeMaker-7.40.0-r1 (22 Nov 2016)
+*perl-ExtUtils-MakeMaker-6.980.0-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-ExtUtils-MakeMaker-6.980.0.ebuild,
+  +perl-ExtUtils-MakeMaker-6.980.0-r1.ebuild,
+  -perl-ExtUtils-MakeMaker-7.40.0.ebuild,
+  +perl-ExtUtils-MakeMaker-7.40.0-r1.ebuild,
+  -perl-ExtUtils-MakeMaker-7.40.100_rc.ebuild,
+  +perl-ExtUtils-MakeMaker-7.40.100_rc-r1.ebuild,
+  -perl-ExtUtils-MakeMaker-7.100.100_rc.ebuild,
+  +perl-ExtUtils-MakeMaker-7.100.100_rc-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+
+*perl-ExtUtils-MakeMaker-7.100.200_rc (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-ExtUtils-MakeMaker-7.100.200_rc.ebuild:
+  Bump to 7.100.200_rc for perl 5.24.1
+
+  Package-Manager: portage-2.3.0
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-ExtUtils-MakeMaker-7.100.100_rc-r1.ebuild:
+  7.100.100 not in 5.24.1+
+
+  Package-Manager: portage-2.3.2
+
+*perl-ExtUtils-MakeMaker-7.100.100_rc-r2 (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-ExtUtils-MakeMaker-7.100.100_rc-r1.ebuild,
+  +perl-ExtUtils-MakeMaker-7.100.100_rc-r2.ebuild:
+  r1 bump
+
+  Package-Manager: portage-2.3.2
+

@@ -162,3 +162,49 @@
 
   Package-Manager: portage-2.3.2
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Storable-2.490.100-r1.ebuild, perl-Storable-2.530.0-r1.ebuild,
+  perl-Storable-2.530.100-r1.ebuild, perl-Storable-2.560.0.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Storable-2.560.0-r1 (22 Nov 2016)
+*perl-Storable-2.530.100-r2 (22 Nov 2016)
+*perl-Storable-2.530.0-r2 (22 Nov 2016)
+*perl-Storable-2.490.100-r2 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Storable-2.490.100-r1.ebuild, +perl-Storable-2.490.100-r2.ebuild,
+  -perl-Storable-2.530.0-r1.ebuild, +perl-Storable-2.530.0-r2.ebuild,
+  -perl-Storable-2.530.100-r1.ebuild, +perl-Storable-2.530.100-r2.ebuild,
+  -perl-Storable-2.560.0.ebuild, +perl-Storable-2.560.0-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+
+*perl-Storable-2.560.100_rc (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-Storable-2.560.100_rc.ebuild:
+  Bump to 2.560.100_rc for perl 5.24.1
+
+  Package-Manager: portage-2.3.0
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Storable-2.560.0-r1.ebuild:
+  2.560.0 not on perl 5.24.1+
+
+  Package-Manager: portage-2.3.2
+
+*perl-Storable-2.560.0-r2 (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Storable-2.560.0-r1.ebuild, +perl-Storable-2.560.0-r2.ebuild:
+  r1 bump
+
+  Package-Manager: portage-2.3.2
+

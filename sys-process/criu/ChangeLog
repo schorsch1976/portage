@@ -274,3 +274,11 @@
 
   Package-Manager: portage-2.3.2
 
+*criu-2.8 (23 Nov 2016)
+
+  23 Nov 2016; Yixun Lan <dlan@gentoo.org> +criu-2.8.ebuild,
+  +files/criu-2.8-automagic-libbsd.patch:
+  version bump
+
+  Package-Manager: portage-2.3.2
+

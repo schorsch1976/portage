@@ -109,3 +109,8 @@
 
   Package-Manager: portage-2.3.2
 
+  23 Nov 2016; Tobias Klausmann <klausman@gentoo.org> DirectFB-1.7.6.ebuild:
+  1.7.6-r0: stable on alpha
+
+  Gentoo-Bug: 510472
+

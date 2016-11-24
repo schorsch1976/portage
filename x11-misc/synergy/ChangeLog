@@ -172,3 +172,13 @@
 
   Package-Manager: portage-2.3.0
 
+*synergy-1.8.5 (23 Nov 2016)
+
+  23 Nov 2016; Yixun Lan <dlan@gentoo.org> +files/synergy-1.8.5-gtest.patch,
+  +synergy-1.8.5.ebuild:
+  version bump
+
+  Gentoo-Bug: 598802
+
+  Package-Manager: portage-2.3.2
+

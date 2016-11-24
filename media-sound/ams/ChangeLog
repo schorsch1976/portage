@@ -65,3 +65,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*ams-2.1.2 (23 Nov 2016)
+
+  23 Nov 2016; David Seifert <soap@gentoo.org> +ams-2.1.2.ebuild,
+  +files/ams-2.1.2-fix-build-system.patch:
+  Version bump to 2.1.2
+
+  Gentoo-bug: 561980, 588942
+  * EAPI=6
+  * Add missing depend on sci-libs/fftw
+  * Use Qt5 instead of Qt4
+  * Build with GCC 6 in C++98 mode
+  * [QA] Remove hardcoded CXXFLAGS
+
+  Package-Manager: portage-2.3.2
+

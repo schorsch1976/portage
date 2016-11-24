@@ -353,3 +353,10 @@
 
   Package-Manager: portage-2.3.2
 
+*spice-0.13.3 (23 Nov 2016)
+
+  23 Nov 2016; Yixun Lan <dlan@gentoo.org> +spice-0.13.3.ebuild:
+  version bump
+
+  Package-Manager: portage-2.3.2
+

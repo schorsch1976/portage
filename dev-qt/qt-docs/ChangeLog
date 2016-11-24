@@ -133,3 +133,23 @@
 
   Package-Manager: portage-2.3.1
 
+*qt-docs-5.6.2_p0-r1 (23 Nov 2016)
+
+  23 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +qt-docs-5.6.2_p0-r1.ebuild:
+  revision bump to remove colliding files
+
+  Gentoo-bug: 597026
+
+  Package-Manager: portage-2.3.2
+
+  23 Nov 2016; Davide Pesavento <pesa@gentoo.org> -qt-docs-5.6.2_p0.ebuild:
+  drop version that triggers file collisions
+
+  Package-Manager: portage-2.3.2
+
+  23 Nov 2016; Davide Pesavento <pesa@gentoo.org> qt-docs-5.6.2_p0-r1.ebuild:
+  do not hardcode version number; add "|| die"
+
+  Package-Manager: portage-2.3.2
+

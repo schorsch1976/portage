@@ -79,3 +79,20 @@
 
   Package-Manager: portage-2.2.28
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Tie-RefHash-1.390.0-r5.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Tie-RefHash-1.390.0-r6 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Tie-RefHash-1.390.0-r5.ebuild, +perl-Tie-RefHash-1.390.0-r6.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

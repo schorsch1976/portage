@@ -138,3 +138,29 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Attribute-Handlers-0.960.0.ebuild,
+  perl-Attribute-Handlers-0.970.0.ebuild,
+  perl-Attribute-Handlers-0.990.0.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Attribute-Handlers-0.990.0-r1 (22 Nov 2016)
+*perl-Attribute-Handlers-0.970.0-r1 (22 Nov 2016)
+*perl-Attribute-Handlers-0.960.0-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Attribute-Handlers-0.960.0.ebuild,
+  +perl-Attribute-Handlers-0.960.0-r1.ebuild,
+  -perl-Attribute-Handlers-0.970.0.ebuild,
+  +perl-Attribute-Handlers-0.970.0-r1.ebuild,
+  -perl-Attribute-Handlers-0.990.0.ebuild,
+  +perl-Attribute-Handlers-0.990.0-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

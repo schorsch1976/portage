@@ -565,3 +565,12 @@
 
   Package-Manager: portage-2.3.2
 
+  23 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org>
+  -files/gnupg-2.0.26-Need-to-init-the-trustdb-for-import.patch,
+  -files/gnupg-2.0.26-misc-cve.patch,
+  -files/gnupg-2.1-fix-gentoo-dash-issue.patch,
+  -files/gnupg-2.1.12-fix-signature-checking.patch:
+  Clean up unused files
+
+  Package-Manager: portage-2.3.2
+

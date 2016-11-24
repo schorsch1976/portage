@@ -167,3 +167,10 @@
 
   Package-Manager: portage-2.3.2
 
+  23 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> metadata.xml:
+  Add proxied maintainer
+
+  Gentoo-Bug: 597292
+
+  Package-Manager: portage-2.3.2
+

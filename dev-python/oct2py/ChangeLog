@@ -129,3 +129,10 @@
   oct2py-3.3.3.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*oct2py-3.6.0 (23 Nov 2016)
+
+  23 Nov 2016; David Seifert <soap@gentoo.org> +oct2py-3.6.0.ebuild:
+  Version bump to 3.6.0
+
+  Package-Manager: portage-2.3.2
+

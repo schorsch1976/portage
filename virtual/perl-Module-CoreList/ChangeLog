@@ -165,3 +165,66 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Module-CoreList-5.201.502.140-r1.ebuild,
+  perl-Module-CoreList-5.201.505.200-r3.ebuild,
+  perl-Module-CoreList-5.201.512.130.ebuild,
+  perl-Module-CoreList-5.201.604.290.ebuild,
+  perl-Module-CoreList-5.201.605.60.ebuild,
+  perl-Module-CoreList-5.201.605.70.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Module-CoreList-5.201.605.70-r1 (22 Nov 2016)
+*perl-Module-CoreList-5.201.605.60-r1 (22 Nov 2016)
+*perl-Module-CoreList-5.201.604.290-r1 (22 Nov 2016)
+*perl-Module-CoreList-5.201.512.130-r1 (22 Nov 2016)
+*perl-Module-CoreList-5.201.505.200-r4 (22 Nov 2016)
+*perl-Module-CoreList-5.201.502.140-r2 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Module-CoreList-5.201.502.140-r1.ebuild,
+  +perl-Module-CoreList-5.201.502.140-r2.ebuild,
+  -perl-Module-CoreList-5.201.505.200-r3.ebuild,
+  +perl-Module-CoreList-5.201.505.200-r4.ebuild,
+  -perl-Module-CoreList-5.201.512.130.ebuild,
+  +perl-Module-CoreList-5.201.512.130-r1.ebuild,
+  -perl-Module-CoreList-5.201.604.290.ebuild,
+  +perl-Module-CoreList-5.201.604.290-r1.ebuild,
+  -perl-Module-CoreList-5.201.605.60.ebuild,
+  +perl-Module-CoreList-5.201.605.60-r1.ebuild,
+  -perl-Module-CoreList-5.201.605.70.ebuild,
+  +perl-Module-CoreList-5.201.605.70-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+
+*perl-Module-CoreList-5.201.610.192.400_rc (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-Module-CoreList-5.201.610.192.400_rc.ebuild:
+  Bump to 5.201.610.192.400_rc for perl 5.24.1
+
+  Somebody is writing letters to grandma in their versions.
+
+  Package-Manager: portage-2.3.0
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Module-CoreList-5.201.605.60-r1.ebuild:
+  5.201.605.60 not in 5.24.1+
+
+  Package-Manager: portage-2.3.2
+
+*perl-Module-CoreList-5.201.605.60-r2 (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Module-CoreList-5.201.605.60-r1.ebuild,
+  +perl-Module-CoreList-5.201.605.60-r2.ebuild:
+  r1 bump
+
+  Package-Manager: portage-2.3.2
+

@@ -95,3 +95,13 @@
 
   Package-Manager: portage-2.2.28
 
+*shellinabox-2.20 (23 Nov 2016)
+
+  23 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  +shellinabox-2.20.ebuild:
+  version bump.
+
+  Gentoo-Bug: https://bugs.gentoo.org/587724
+
+  Package-Manager: portage-2.3.0
+

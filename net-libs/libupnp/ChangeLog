@@ -107,3 +107,8 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  23 Nov 2016; Tobias Klausmann <klausman@gentoo.org> libupnp-1.6.20.ebuild:
+  1.6.20-r0: stable on alpha
+
+  Gentoo-Bug: 589136
+

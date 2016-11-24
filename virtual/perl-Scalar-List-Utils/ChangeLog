@@ -150,3 +150,33 @@
 
   Package-Manager: portage-2.3.2
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Scalar-List-Utils-1.380.0.ebuild,
+  perl-Scalar-List-Utils-1.410.0.ebuild,
+  perl-Scalar-List-Utils-1.420.200_rc.ebuild,
+  perl-Scalar-List-Utils-1.460.0.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Scalar-List-Utils-1.460.0-r1 (22 Nov 2016)
+*perl-Scalar-List-Utils-1.420.200_rc-r1 (22 Nov 2016)
+*perl-Scalar-List-Utils-1.410.0-r1 (22 Nov 2016)
+*perl-Scalar-List-Utils-1.380.0-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Scalar-List-Utils-1.380.0.ebuild,
+  +perl-Scalar-List-Utils-1.380.0-r1.ebuild,
+  -perl-Scalar-List-Utils-1.410.0.ebuild,
+  +perl-Scalar-List-Utils-1.410.0-r1.ebuild,
+  -perl-Scalar-List-Utils-1.420.200_rc.ebuild,
+  +perl-Scalar-List-Utils-1.420.200_rc-r1.ebuild,
+  -perl-Scalar-List-Utils-1.460.0.ebuild,
+  +perl-Scalar-List-Utils-1.460.0-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

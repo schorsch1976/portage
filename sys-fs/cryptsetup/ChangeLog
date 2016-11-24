@@ -246,3 +246,11 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> cryptsetup-1.6.5.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  23 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> cryptsetup-1.7.3.ebuild,
+  -files/cryptsetup-1.7.1-sysmacros.patch,
+  +files/cryptsetup-1.7.3-libressl.patch:
+  Add LibreSSL patch.
+
+  Remove unused sysmacros patch.
+  Closes: https://github.com/gentoo/gentoo/pull/2724
+

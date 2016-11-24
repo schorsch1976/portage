@@ -140,3 +140,24 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org> perl-Carp-1.330.100.ebuild,
+  perl-Carp-1.360.0.ebuild, perl-Carp-1.400.0.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Carp-1.400.0-r1 (22 Nov 2016)
+*perl-Carp-1.360.0-r1 (22 Nov 2016)
+*perl-Carp-1.330.100-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org> -perl-Carp-1.330.100.ebuild,
+  +perl-Carp-1.330.100-r1.ebuild, -perl-Carp-1.360.0.ebuild,
+  +perl-Carp-1.360.0-r1.ebuild, -perl-Carp-1.400.0.ebuild,
+  +perl-Carp-1.400.0-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

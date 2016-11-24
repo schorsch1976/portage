@@ -10,3 +10,11 @@
 
   Package-Manager: portage-2.3.0
 
+*airline-0.7-r1 (22 Nov 2016)
+
+  22 Nov 2016; James Le Cuirot <chewi@gentoo.org> -airline-0.7.ebuild,
+  +airline-0.7-r1.ebuild:
+  Bump guava SLOT, don't build tests, doc/source flags
+
+  Package-Manager: portage-2.3.2
+

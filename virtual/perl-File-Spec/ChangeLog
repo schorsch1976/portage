@@ -147,3 +147,49 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-File-Spec-3.480.100-r1.ebuild, perl-File-Spec-3.560.0-r1.ebuild,
+  perl-File-Spec-3.560.100.ebuild, perl-File-Spec-3.630.0.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-File-Spec-3.630.0-r1 (22 Nov 2016)
+*perl-File-Spec-3.560.100-r1 (22 Nov 2016)
+*perl-File-Spec-3.560.0-r2 (22 Nov 2016)
+*perl-File-Spec-3.480.100-r2 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-File-Spec-3.480.100-r1.ebuild, +perl-File-Spec-3.480.100-r2.ebuild,
+  -perl-File-Spec-3.560.0-r1.ebuild, +perl-File-Spec-3.560.0-r2.ebuild,
+  -perl-File-Spec-3.560.100.ebuild, +perl-File-Spec-3.560.100-r1.ebuild,
+  -perl-File-Spec-3.630.0.ebuild, +perl-File-Spec-3.630.0-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+
+*perl-File-Spec-3.630.100_rc (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-File-Spec-3.630.100_rc.ebuild:
+  Bump to 3.630.100_rc for perl 5.24.1
+
+  Package-Manager: portage-2.3.0
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-File-Spec-3.630.0-r1.ebuild:
+  3.630.0 not in 5.24.1+
+
+  Package-Manager: portage-2.3.2
+
+*perl-File-Spec-3.630.0-r2 (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-File-Spec-3.630.0-r1.ebuild, +perl-File-Spec-3.630.0-r2.ebuild:
+  r1 bump
+
+  Package-Manager: portage-2.3.2
+

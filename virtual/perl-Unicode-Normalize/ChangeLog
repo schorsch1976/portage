@@ -102,3 +102,29 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Unicode-Normalize-1.170.0.ebuild,
+  perl-Unicode-Normalize-1.180.0.ebuild,
+  perl-Unicode-Normalize-1.250.0-r1.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Unicode-Normalize-1.250.0-r2 (22 Nov 2016)
+*perl-Unicode-Normalize-1.180.0-r1 (22 Nov 2016)
+*perl-Unicode-Normalize-1.170.0-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Unicode-Normalize-1.170.0.ebuild,
+  +perl-Unicode-Normalize-1.170.0-r1.ebuild,
+  -perl-Unicode-Normalize-1.180.0.ebuild,
+  +perl-Unicode-Normalize-1.180.0-r1.ebuild,
+  -perl-Unicode-Normalize-1.250.0-r1.ebuild,
+  +perl-Unicode-Normalize-1.250.0-r2.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

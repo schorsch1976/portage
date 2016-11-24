@@ -73,3 +73,50 @@
   RepoMan-Options: --include-arches="alpha amd64 amd64-fbsd arm arm64 hppa
   ia64 m68k mips nios2 ppc ppc64 riscv s390 sh sparc sparc-fbsd x86 x86-fbsd"
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Parse-CPAN-Meta-1.441.400-r1.ebuild,
+  perl-Parse-CPAN-Meta-1.441.700.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Parse-CPAN-Meta-1.441.700-r1 (22 Nov 2016)
+*perl-Parse-CPAN-Meta-1.441.400-r2 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Parse-CPAN-Meta-1.441.400-r1.ebuild,
+  +perl-Parse-CPAN-Meta-1.441.400-r2.ebuild,
+  -perl-Parse-CPAN-Meta-1.441.700.ebuild,
+  +perl-Parse-CPAN-Meta-1.441.700-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+
+*perl-Parse-CPAN-Meta-1.441.700.100_rc (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-Parse-CPAN-Meta-1.441.700.100_rc.ebuild:
+  Bump to 1.441.700.100_rc for perl 5.24.1
+
+  Yes, Version = 1.4417_001 looks weird when normalised.
+
+  Package-Manager: portage-2.3.0
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Parse-CPAN-Meta-1.441.700-r1.ebuild:
+  1.441.700 not in 5.24.1+
+
+  Package-Manager: portage-2.3.2
+
+*perl-Parse-CPAN-Meta-1.441.700-r2 (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Parse-CPAN-Meta-1.441.700-r1.ebuild,
+  +perl-Parse-CPAN-Meta-1.441.700-r2.ebuild:
+  r1 bump
+
+  Package-Manager: portage-2.3.2
+

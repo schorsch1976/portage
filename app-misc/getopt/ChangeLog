@@ -77,3 +77,8 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  23 Nov 2016; Michael Haubenwallner <haubi@gentoo.org> getopt-1.1.6.ebuild:
+  keyword ~x64-cygwin
+
+  Package-Manager: portage-2.2.28
+

@@ -111,3 +111,9 @@
   10 Aug 2016; Tim Harder <radhermit@gentoo.org> +sshuttle-0.78.1.ebuild:
   version bump to 0.78.1
 
+  23 Nov 2016; Tim Harder <radhermit@gentoo.org> sshuttle-0.78.1.ebuild:
+  stabilize 0.78.1
+
+  23 Nov 2016; Tim Harder <radhermit@gentoo.org> -sshuttle-0.78.0.ebuild:
+  remove old
+

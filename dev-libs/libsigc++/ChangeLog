@@ -166,3 +166,18 @@
 
   Package-Manager: portage-2.3.2
 
+  23 Nov 2016; Gilles Dartiguelongue <eva@gentoo.org>
+  +files/libsigc++-2.10.0-make-disable-benchmarks-work.patch,
+  libsigc++-2.10.0.ebuild:
+  properly disable benchmarking
+
+  Also make boost dependency a multilib one
+
+  Upstream bug logged: https://bugzilla.gnome.org/show_bug.cgi?id=774732
+
+  Gentoo-Bug: 599764
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2842
+
+  Signed-off-by: Gilles Dartiguelongue <eva@gentoo.org>
+

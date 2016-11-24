@@ -16,3 +16,8 @@
   16 Sep 2016; Tim Harder <radhermit@gentoo.org> +btfs-2.12.ebuild:
   version bump to 2.12
 
+*btfs-2.13 (23 Nov 2016)
+
+  23 Nov 2016; Tim Harder <radhermit@gentoo.org> +btfs-2.13.ebuild:
+  version bump to 2.13
+

@@ -137,3 +137,33 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Test-Harness-3.330.0.ebuild, perl-Test-Harness-3.350.0.ebuild,
+  perl-Test-Harness-3.360.0.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Test-Harness-3.360.0-r1 (22 Nov 2016)
+*perl-Test-Harness-3.350.0-r1 (22 Nov 2016)
+*perl-Test-Harness-3.330.0-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Test-Harness-3.330.0.ebuild, +perl-Test-Harness-3.330.0-r1.ebuild,
+  -perl-Test-Harness-3.350.0.ebuild, +perl-Test-Harness-3.350.0-r1.ebuild,
+  -perl-Test-Harness-3.360.0.ebuild, +perl-Test-Harness-3.360.0-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+
+*perl-Test-Harness-3.360.100_rc (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-Test-Harness-3.360.100_rc.ebuild:
+  Bump to 3.360.100_rc for perl 5.24.1
+
+  Package-Manager: portage-2.3.0
+

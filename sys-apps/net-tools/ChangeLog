@@ -251,3 +251,13 @@
   net-tools-1.60_p20161110235919.ebuild, net-tools-9999.ebuild:
   clear out env vars that we do not need #599602
 
+  23 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> +files/net-tools-1.60_p2
+  0161110235919-fix-building-w-older-linux-headers.patch,
+  net-tools-1.60_p20161110235919.ebuild:
+  Fix building w/<linux-headers-4.8
+
+  Acked-by: Lars Wendler <polynomial-c@gentoo.org>
+  Gentoo-Bug: https://bugs.gentoo.org/599542
+
+  Package-Manager: portage-2.3.2
+

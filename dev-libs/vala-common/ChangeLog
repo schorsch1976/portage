@@ -244,3 +244,11 @@
   +vala-common-0.34.2.ebuild:
   version bump 0.32.1 → 0.34.2
 
+*vala-common-0.34.3 (23 Nov 2016)
+
+  23 Nov 2016; Gilles Dartiguelongue <eva@gentoo.org>
+  +vala-common-0.34.3.ebuild:
+  version bump 0.34.2 → 0.34.3
+
+  Package-Manager: portage-2.3.2
+

@@ -144,3 +144,27 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-CPAN-Meta-2.140.640.ebuild, perl-CPAN-Meta-2.143.240.ebuild,
+  perl-CPAN-Meta-2.150.1.ebuild, perl-CPAN-Meta-2.150.5.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-CPAN-Meta-2.150.5-r1 (22 Nov 2016)
+*perl-CPAN-Meta-2.150.1-r1 (22 Nov 2016)
+*perl-CPAN-Meta-2.143.240-r1 (22 Nov 2016)
+*perl-CPAN-Meta-2.140.640-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-CPAN-Meta-2.140.640.ebuild, +perl-CPAN-Meta-2.140.640-r1.ebuild,
+  -perl-CPAN-Meta-2.143.240.ebuild, +perl-CPAN-Meta-2.143.240-r1.ebuild,
+  -perl-CPAN-Meta-2.150.1.ebuild, +perl-CPAN-Meta-2.150.1-r1.ebuild,
+  -perl-CPAN-Meta-2.150.5.ebuild, +perl-CPAN-Meta-2.150.5-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

@@ -434,3 +434,15 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  23 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  gst-plugins-bad-0.10.23-r4.ebuild:
+  0.10.23-r4: stable on alpha
+
+  Gentoo-Bug: 600142
+
+  23 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  gst-plugins-bad-1.8.3-r1.ebuild:
+  1.8.3-r1: stable on alpha
+
+  Gentoo-Bug: 600142
+

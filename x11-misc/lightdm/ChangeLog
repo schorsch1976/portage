@@ -409,3 +409,9 @@
   22 Nov 2016; Aaron Bauman <bman@gentoo.org> -lightdm-1.10.5.ebuild:
   remove vulnerable versions wrt security bug #566640
 
+  23 Nov 2016; Markos Chandras <hwoarang@gentoo.org> -lightdm-1.17.6.ebuild,
+  -lightdm-1.19.4.ebuild:
+  Remove old ebuilds
+
+  Package-Manager: portage-2.2.27
+

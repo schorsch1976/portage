@@ -143,3 +143,44 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Digest-SHA-5.880.0.ebuild, perl-Digest-SHA-5.950.0-r1.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Digest-SHA-5.950.0-r2 (22 Nov 2016)
+*perl-Digest-SHA-5.880.0-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Digest-SHA-5.880.0.ebuild, +perl-Digest-SHA-5.880.0-r1.ebuild,
+  -perl-Digest-SHA-5.950.0-r1.ebuild, +perl-Digest-SHA-5.950.0-r2.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+
+*perl-Digest-SHA-5.950.100_rc (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-Digest-SHA-5.950.100_rc.ebuild:
+  Bump to 5.950.100_rc for perl-5.24.1
+
+  Package-Manager: portage-2.3.0
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Digest-SHA-5.950.0-r2.ebuild:
+  5.950.0 not on perl 5.24.1+
+
+  Package-Manager: portage-2.3.2
+
+*perl-Digest-SHA-5.950.0-r3 (23 Nov 2016)
+
+  23 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Digest-SHA-5.950.0-r2.ebuild, +perl-Digest-SHA-5.950.0-r3.ebuild:
+  r1 bump
+
+  Package-Manager: portage-2.3.2
+

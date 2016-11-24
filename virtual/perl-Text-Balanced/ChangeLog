@@ -143,3 +143,22 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Text-Balanced-2.20.0-r6.ebuild, perl-Text-Balanced-2.30.0-r1.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Text-Balanced-2.30.0-r2 (22 Nov 2016)
+*perl-Text-Balanced-2.20.0-r7 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Text-Balanced-2.20.0-r6.ebuild, +perl-Text-Balanced-2.20.0-r7.ebuild,
+  -perl-Text-Balanced-2.30.0-r1.ebuild, +perl-Text-Balanced-2.30.0-r2.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

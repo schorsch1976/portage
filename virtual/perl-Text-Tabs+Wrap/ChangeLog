@@ -85,3 +85,21 @@
 
   Package-Manager: portage-2.2.28
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Text-Tabs+Wrap-2013.52.300-r3.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Text-Tabs+Wrap-2013.52.300-r4 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Text-Tabs+Wrap-2013.52.300-r3.ebuild,
+  +perl-Text-Tabs+Wrap-2013.52.300-r4.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

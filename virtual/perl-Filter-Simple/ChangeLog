@@ -142,3 +142,23 @@
 
   Package-Manager: portage-2.3.2
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Filter-Simple-0.910.0.ebuild, perl-Filter-Simple-0.920.0-r1.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Filter-Simple-0.920.0-r2 (22 Nov 2016)
+*perl-Filter-Simple-0.910.0-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Filter-Simple-0.910.0.ebuild, +perl-Filter-Simple-0.910.0-r1.ebuild,
+  -perl-Filter-Simple-0.920.0-r1.ebuild,
+  +perl-Filter-Simple-0.920.0-r2.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

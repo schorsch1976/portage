@@ -236,3 +236,15 @@
 
   Package-Manager: portage-2.3.0
 
+  23 Nov 2016; Jason Zaman <perfinion@gentoo.org>
+  selinux-nessus-2.20151208-r5.ebuild:
+  sec-policy: Stabilize selinux policy 2.20151208-r5
+
+  Package-Manager: portage-2.3.0
+
+  23 Nov 2016; Jason Zaman <perfinion@gentoo.org>
+  selinux-nessus-2.20151208-r6.ebuild:
+  sec-policy: Stabilize selinux policy 2.20151208-r6
+
+  Package-Manager: portage-2.3.0
+

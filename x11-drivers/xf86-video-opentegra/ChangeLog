@@ -63,3 +63,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  23 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  xf86-video-opentegra-0.7.0.ebuild:
+  update links.
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

@@ -271,3 +271,28 @@
 
   Package-Manager: portage-2.3.2
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org> perl-Test-Simple-1.1.2.ebuild,
+  perl-Test-Simple-1.1.14-r2.ebuild, perl-Test-Simple-1.1.14_p522.ebuild,
+  perl-Test-Simple-1.302.62.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-Test-Simple-1.302.62-r1 (22 Nov 2016)
+*perl-Test-Simple-1.1.14_p522-r1 (22 Nov 2016)
+*perl-Test-Simple-1.1.14-r3 (22 Nov 2016)
+*perl-Test-Simple-1.1.2-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Test-Simple-1.1.2.ebuild, +perl-Test-Simple-1.1.2-r1.ebuild,
+  -perl-Test-Simple-1.1.14-r2.ebuild, +perl-Test-Simple-1.1.14-r3.ebuild,
+  -perl-Test-Simple-1.1.14_p522.ebuild,
+  +perl-Test-Simple-1.1.14_p522-r1.ebuild, -perl-Test-Simple-1.302.62.ebuild,
+  +perl-Test-Simple-1.302.62-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

@@ -275,3 +275,17 @@
   virtualenv-15.0.3.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*virtualenv-15.1.0 (23 Nov 2016)
+
+  23 Nov 2016; Manuel Rüger <mrueg@gentoo.org> +virtualenv-15.1.0.ebuild:
+  Version bump to 15.1.0
+
+  Package-Manager: portage-2.3.2
+
+  23 Nov 2016; Manuel Rüger <mrueg@gentoo.org> -virtualenv-14.0.1.ebuild,
+  -virtualenv-14.0.3.ebuild, -virtualenv-14.0.5.ebuild,
+  -virtualenv-15.0.1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

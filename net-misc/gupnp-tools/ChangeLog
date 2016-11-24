@@ -132,3 +132,8 @@
 
   Closes: https://github.com/gentoo/gentoo/pull/2847
 
+  22 Nov 2016; Manuel Rüger <mrueg@gentoo.org> gupnp-tools-0.8.11.ebuild:
+  Drop useless blank line
+
+  Package-Manager: portage-2.3.2
+

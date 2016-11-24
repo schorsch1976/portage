@@ -151,3 +151,24 @@
 
   Package-Manager: portage-2.3.2
 
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org> perl-XSLoader-0.170.0.ebuild,
+  perl-XSLoader-0.200.0.ebuild, perl-XSLoader-0.210.0.ebuild:
+  virtual/perl-*: Subslot dep on perl
+
+  This is not striclty necessary, but is added in the
+  hope it will help portage propagate rebuilds in slot upgrades.
+
+  Package-Manager: portage-2.3.2
+
+*perl-XSLoader-0.210.0-r1 (22 Nov 2016)
+*perl-XSLoader-0.200.0-r1 (22 Nov 2016)
+*perl-XSLoader-0.170.0-r1 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org> -perl-XSLoader-0.170.0.ebuild,
+  +perl-XSLoader-0.170.0-r1.ebuild, -perl-XSLoader-0.200.0.ebuild,
+  +perl-XSLoader-0.200.0-r1.ebuild, -perl-XSLoader-0.210.0.ebuild,
+  +perl-XSLoader-0.210.0-r1.ebuild:
+  virtual/perl-*: -r1 bump to propagate subslot dep
+
+  Package-Manager: portage-2.3.2
+

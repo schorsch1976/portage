@@ -107,3 +107,10 @@
   +moc-2.6_alpha2.ebuild:
   version bumps to 2.5.1 and 2.6.0_alpha2
 
+*moc-2.6_alpha3 (23 Nov 2016)
+*moc-2.5.2 (23 Nov 2016)
+
+  23 Nov 2016; Tim Harder <radhermit@gentoo.org> +moc-2.5.2.ebuild,
+  +moc-2.6_alpha3.ebuild:
+  version bumps to 2.5.2 and 2.6_alpha3
+

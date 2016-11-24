@@ -23,3 +23,9 @@
 
   Package-Manager: portage-2.3.2
 
+  23 Nov 2016; Kacper Kowalik <xarthisius@gentoo.org>
+  docker-proxy-0.8.0_p20161111.ebuild, docker-proxy-9999.ebuild:
+  soft block docker<=1.12. Fixes #599904
+
+  Package-Manager: portage-2.3.2
+
