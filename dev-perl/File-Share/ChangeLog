@@ -12,3 +12,9 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  File-Share-0.250.0.ebuild:
+  0.250.0-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 600066
+

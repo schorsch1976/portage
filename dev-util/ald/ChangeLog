@@ -72,3 +72,22 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
 
+*ald-0.1.7-r2 (24 Nov 2016)
+
+  24 Nov 2016; Andrew Savchenko <bircoph@gentoo.org> +ald-0.1.7-r2.ebuild,
+  metadata.xml:
+  small qa fixes
+
+  - update to EAPI 6
+  - fix too long description
+  - fix ncurses subslot dep
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  24 Nov 2016; Andrew Savchenko <bircoph@gentoo.org> -ald-0.1.7-r1.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+

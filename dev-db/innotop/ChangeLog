@@ -87,3 +87,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*innotop-1.11.1 (24 Nov 2016)
+
+  24 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> +innotop-1.11.1.ebuild:
+  Bump to v1.11.1
+
+  First version without Google Code SRC_URI.
+
+  Package-Manager: portage-2.3.2
+
+  24 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> innotop-1.9.0-r1.ebuild,
+  innotop-1.9.1.ebuild, innotop-1.11.1.ebuild:
+  DESCRIPTION updated to make repoman happy
+
+  Package-Manager: portage-2.3.2
+

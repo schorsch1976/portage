@@ -161,3 +161,8 @@
 
   Gentoo-Bug: 468252
 
+  24 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> -httplib2-0.8.ebuild:
+  remove old version (Google Code)
+
+  Package-Manager: portage-2.3.0
+

@@ -197,3 +197,15 @@
 
   Package-Manager: portage-2.3.0
 
+*eigen-3.2.10 (24 Nov 2016)
+*eigen-3.2.9 (24 Nov 2016)
+
+  24 Nov 2016; Justin Lecher <jlec@gentoo.org> +eigen-3.2.9.ebuild,
+  +eigen-3.2.10.ebuild:
+  Version Bump
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=599554
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

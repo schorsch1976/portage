@@ -82,3 +82,9 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Tony Vroon <chainsaw@gentoo.org> tokumx-2.0.2.ebuild:
+  Add CHECKREQS enforcement of 13G free build space. Research by Toralf
+  Förster closes bug #543612.
+
+  Package-Manager: portage-2.3.2
+

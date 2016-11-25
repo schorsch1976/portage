@@ -73,3 +73,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pysvg-0.2.2 (24 Nov 2016)
+
+  24 Nov 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml,
+  -pysvg-0.2.1-r1.ebuild, +pysvg-0.2.2.ebuild:
+  bump to 0.2.2
+
+  Package-Manager: portage-2.3.2_p8
+

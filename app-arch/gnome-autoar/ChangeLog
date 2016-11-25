@@ -10,3 +10,9 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  gnome-autoar-0.1.1.ebuild:
+  0.1.1-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 599574
+

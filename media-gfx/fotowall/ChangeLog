@@ -108,3 +108,9 @@
 
   Package-Manager: portage-2.2.28
 
+  24 Nov 2016; Davide Pesavento <pesa@gentoo.org> fotowall-0.9-r2.ebuild,
+  metadata.xml:
+  migrate to github
+
+  Package-Manager: portage-2.3.2
+

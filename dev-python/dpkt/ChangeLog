@@ -88,3 +88,11 @@
 
   I successfully installed and used it on Raspberry Pi 3 board.
 
+*dpkt-1.8.8 (24 Nov 2016)
+
+  24 Nov 2016; Mike Gilbert <floppym@gentoo.org> dpkt-1.8-r1.ebuild,
+  +dpkt-1.8.8.ebuild, metadata.xml:
+  bump to 1.8.8
+
+  Package-Manager: portage-2.3.2_p8
+

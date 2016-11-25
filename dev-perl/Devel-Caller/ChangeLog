@@ -93,3 +93,9 @@
   Package-Manager: portage-2.2.27
   RepoMan-Options: --ignore-arches
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  Devel-Caller-2.60.0.ebuild:
+  2.60.0-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 599550
+

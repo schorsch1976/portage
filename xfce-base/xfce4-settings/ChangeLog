@@ -130,3 +130,11 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+*xfce4-settings-4.13.0 (24 Nov 2016)
+
+  24 Nov 2016; Jason Zaman <perfinion@gentoo.org>
+  +xfce4-settings-4.13.0.ebuild:
+  bump to 4.13.0
+
+  Package-Manager: portage-2.3.0
+

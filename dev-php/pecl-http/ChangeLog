@@ -92,3 +92,17 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  24 Nov 2016; Michael Orlitzky <mjo@gentoo.org> -pecl-http-1.7.6-r2.ebuild,
+  -pecl-http-1.7.6-r3.ebuild:
+  remove old masked versions.
+
+  This removal is in response to CVE-2016-5873. That vulnerability may
+  not in fact affect our pecl-http-1.x, according to Comment 2 on the
+  associated bug. However, php-5.5 is end-of-life and masked in the
+  tree, and the removed versions of pecl-http only support php-5.5. As
+  a result, their days were numbered anyway.
+
+  Gentoo-Bug: 587466
+
+  Package-Manager: portage-2.3.0
+

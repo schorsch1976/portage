@@ -149,3 +149,9 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  PDF-Create-1.370.0.ebuild:
+  1.370.0-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 600066
+

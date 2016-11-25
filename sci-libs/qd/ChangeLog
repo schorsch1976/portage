@@ -80,3 +80,21 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*qd-2.3.17 (24 Nov 2016)
+
+  24 Nov 2016; David Seifert <soap@gentoo.org>
+  +files/qd-2.3.17-fix-build-system.patch, +qd-2.3.17.ebuild:
+  Version bump to 2.3.17
+
+  * EAPI=6
+  * Remove .la files when USE="-static-libs"
+  * Add FMA CPU_FLAGS_X86 flags
+
+  Package-Manager: portage-2.3.2
+
+  24 Nov 2016; David Seifert <soap@gentoo.org>
+  -files/qd-2.3.13-autotools.patch, -qd-2.3.14.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

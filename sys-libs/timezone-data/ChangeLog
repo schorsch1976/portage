@@ -253,3 +253,10 @@
   10 Nov 2016; Mike Frysinger <vapier@gentoo.org> timezone-data-2016h.ebuild:
   mark 2016h stable for all #597976
 
+*timezone-data-2016j (24 Nov 2016)
+
+  24 Nov 2016; Dirkjan Ochtman <djc@gentoo.org> +timezone-data-2016j.ebuild:
+  version bump to 2016j
+
+  Package-Manager: portage-2.3.0
+

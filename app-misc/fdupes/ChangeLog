@@ -87,3 +87,17 @@
 
   Package-Manager: portage-2.2.26
 
+*fdupes-1.6.1 (24 Nov 2016)
+*fdupes-1.5.1 (24 Nov 2016)
+
+  24 Nov 2016; Jason A. Donenfeld <zx2c4@gentoo.org> +fdupes-1.5.1.ebuild,
+  +fdupes-1.6.1.ebuild, -fdupes-1.51.ebuild:
+  bump
+
+  We also rename stable from 1.51 to 1.5.1 so that versioning can work. But,
+  no other changes to the stable package, and hopefully it will be going away
+  soon anyway.
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --force
+

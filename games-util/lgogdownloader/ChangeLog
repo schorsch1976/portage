@@ -10,3 +10,14 @@
 
   Package-Manager: portage-2.3.0
 
+*lgogdownloader-3.0 (23 Nov 2016)
+
+  23 Nov 2016; James Le Cuirot <chewi@gentoo.org> -lgogdownloader-2.28.ebuild,
+  +lgogdownloader-3.0.ebuild:
+  Version bump to 3.0
+
+  Now migrated to tinyxml2. Upstream has included my fixes that will
+  help to run this under Portage one day.
+
+  Package-Manager: portage-2.3.2
+

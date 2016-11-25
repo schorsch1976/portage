@@ -255,3 +255,9 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Manuel Rüger <mrueg@gentoo.org>
+  -docker-compose-1.9.0_rc4.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

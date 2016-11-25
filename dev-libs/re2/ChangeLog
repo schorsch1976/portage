@@ -119,3 +119,10 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Mike Gilbert <floppym@gentoo.org> -re2-0_p20130115.ebuild,
+  -re2-0_p20130115-r1.ebuild, -re2-0_p20130712.ebuild,
+  -re2-0_p20140304.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2_p8
+

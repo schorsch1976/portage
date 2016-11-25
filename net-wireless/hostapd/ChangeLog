@@ -167,3 +167,10 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> hostapd-2.6.ebuild:
+  Allow users to apply patches to src/drivers
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=596306#c5
+
+  Package-Manager: portage-2.3.2
+

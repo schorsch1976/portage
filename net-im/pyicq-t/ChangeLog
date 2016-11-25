@@ -92,3 +92,13 @@
 
   Package-Manager: portage-2.2.26
 
+*pyicq-t-0.8.1.5-r6 (24 Nov 2016)
+
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  +pyicq-t-0.8.1.5-r6.ebuild:
+  Allow monolithic twisted to satisfy dependencies
+
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  pyicq-t-0.8.1.5-r6.ebuild:
+  Whitespace fixes
+

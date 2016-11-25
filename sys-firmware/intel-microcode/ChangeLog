@@ -33,3 +33,15 @@
 
   Package-Manager: portage-2.3.1
 
+*intel-microcode-20161104 (24 Nov 2016)
+
+  24 Nov 2016; Markos Chandras <hwoarang@gentoo.org>
+  +intel-microcode-20161104.ebuild:
+  Version bump to 20161104
+
+  Ebuild by Alexander Turenko <totktonada.ru@gmail.com>
+
+  Gentoo-Bug: 599748
+
+  Package-Manager: portage-2.2.27
+

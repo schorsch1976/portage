@@ -337,3 +337,8 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Mikhail Pukhlikov <cynede@gentoo.org> mono-4.9.0.729.ebuild:
+  add cmake depend
+
+  Package-Manager: portage-2.3.2
+

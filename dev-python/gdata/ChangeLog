@@ -96,3 +96,9 @@
 
   Gentoo-Bug: 599290
 
+  24 Nov 2016; Mike Gilbert <floppym@gentoo.org> gdata-2.0.14.ebuild,
+  gdata-2.0.18.ebuild, metadata.xml:
+  replace googlecode links
+
+  Package-Manager: portage-2.3.2_p8
+

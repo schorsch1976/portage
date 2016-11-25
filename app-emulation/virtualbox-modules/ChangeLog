@@ -453,3 +453,11 @@
 
   Package-Manager: portage-2.3.2
 
+*virtualbox-modules-5.0.30 (24 Nov 2016)
+
+  24 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +virtualbox-modules-5.0.30.ebuild:
+  virtualbox packages: Bump to version 5.0.30
+
+  Package-Manager: portage-2.3.2
+

@@ -88,3 +88,10 @@
   pyglet-1.2.3.ebuild, pyglet-1.2.4.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  24 Nov 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml,
+  pyglet-1.1.4-r2.ebuild, pyglet-1.2.2.ebuild, pyglet-1.2.3.ebuild,
+  pyglet-1.2.4.ebuild:
+  replace googlecode links
+
+  Package-Manager: portage-2.3.2_p8
+

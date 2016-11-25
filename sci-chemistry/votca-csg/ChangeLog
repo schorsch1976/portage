@@ -159,3 +159,9 @@
 
   Package-Manager: portage-2.3.0
 
+  24 Nov 2016; Christoph Junghans <junghans@gentoo.org> metadata.xml,
+  votca-csg-1.2.4-r1.ebuild:
+  remove googlecode refs
+
+  Package-Manager: portage-2.3.0
+

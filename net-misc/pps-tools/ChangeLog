@@ -89,3 +89,9 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --ignore-arches
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  pps-tools-0.0.20120407.ebuild:
+  0.0.20120407-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 599048
+

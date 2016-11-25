@@ -73,3 +73,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*casting-spels-emacs-19-r2 (24 Nov 2016)
+
+  24 Nov 2016; Ulrich Müller <ulm@gentoo.org>
+  +casting-spels-emacs-19-r2.ebuild:
+  Bump to EAPI 6. Update HOMEPAGE.
+
+  Package-Manager: portage-2.3.2
+

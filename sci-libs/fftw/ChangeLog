@@ -150,3 +150,8 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org> fftw-2.1.5-r9.ebuild:
+  2.1.5-r9: stable on alpha
+
+  Gentoo-Bug: 600616
+

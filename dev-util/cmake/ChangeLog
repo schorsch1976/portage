@@ -514,3 +514,13 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --ignore-arches
 
+  24 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> cmake-3.7.0.ebuild:
+  dev-libs/libuv is a runtime dependency (bug #600636).
+
+  Package-Manager: portage-2.3.2
+
+  24 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> cmake-3.7.0.ebuild:
+  rm -f" and "die" don't get along well.
+
+  Package-Manager: portage-2.3.2
+

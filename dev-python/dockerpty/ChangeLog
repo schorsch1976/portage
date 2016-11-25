@@ -75,3 +75,8 @@
   dockerpty-0.3.4.ebuild, dockerpty-0.4.1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  24 Nov 2016; Manuel Rüger <mrueg@gentoo.org> -dockerpty-0.3.3.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

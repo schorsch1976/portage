@@ -63,3 +63,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*macchanger-1.7.0-r1 (23 Nov 2016)
+
+  23 Nov 2016; Robin H. Johnson <robbat2@gentoo.org>
+  +files/macchanger-1.7.0-fix-caddr_t.patch, +macchanger-1.7.0-r1.ebuild:
+  net-proxy/macchanger: add patch for compilation with musl
+
+  The patch is used by Alpine Linux, and has been submitted upstream:
+
+  https://github.com/alobbs/macchanger/issues/14
+
+  Also, do a revbump, bump EAPI, and eprefixify.
+
+  Gentoo-Bug: https://bugs.gentoo.org/588248
+  (cherry picked from commit d139a40e069d59ca895871fe47bf45d6b82ba171)
+

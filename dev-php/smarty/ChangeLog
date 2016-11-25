@@ -74,3 +74,11 @@
   20 Nov 2016; Aaron Bauman <bman@gentoo.org> smarty-3.1.30.ebuild:
   stabilized per ALLARCH policy wrt security bug #596080
 
+  24 Nov 2016; Michael Orlitzky <mjo@gentoo.org> -smarty-3.1.21-r1.ebuild,
+  -smarty-3.1.27.ebuild:
+  remove old vulnerable versions.
+
+  Gentoo-Bug: 596080
+
+  Package-Manager: portage-2.3.0
+

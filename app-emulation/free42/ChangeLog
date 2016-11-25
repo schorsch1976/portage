@@ -109,3 +109,12 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*free42-1.5.12 (24 Nov 2016)
+
+  24 Nov 2016; Chema Alonso Josa <nimiux@gentoo.org>
+  +files/free42-1.5.12-fix-build-intel-lib.patch,
+  +files/free42-1.5.12-fix-makefile.patch, +free42-1.5.12.ebuild:
+  Bumps version to 1.5.12
+
+  Package-Manager: portage-2.3.0
+

@@ -398,3 +398,31 @@
 
   Package-Manager: portage-2.2.28
 
+  23 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -icinga2-2.4.1-r4.ebuild, -icinga2-2.4.10-r1.ebuild, icinga2-9999.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+
+*icinga2-2.5.4-r1 (24 Nov 2016)
+
+  24 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +icinga2-2.5.4-r1.ebuild:
+  bup with new wxgtk
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --force
+
+  24 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  icinga2-2.5.4-r1.ebuild:
+  stable the new wxgtk fix
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --force
+
+  24 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -icinga2-2.4.4-r1.ebuild, -icinga2-2.5.4.ebuild:
+  cleanup to fix the tree
+
+  Package-Manager: portage-2.3.0
+

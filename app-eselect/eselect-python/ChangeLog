@@ -230,3 +230,13 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+*eselect-python-20140125-r2 (24 Nov 2016)
+
+  24 Nov 2016; Mike Gilbert <floppym@gentoo.org>
+  -eselect-python-20140125-r1.ebuild, +eselect-python-20140125-r2.ebuild:
+  regen python-config in pkg_postinst
+
+  Bug: https://bugs.gentoo.org/567866
+
+  Package-Manager: portage-2.3.2_p8
+

@@ -191,3 +191,12 @@
 
   Package-Manager: portage-2.3.2
 
+*shadowsocks-libev-2.5.6 (24 Nov 2016)
+
+  24 Nov 2016; Yixun Lan <dlan@gentoo.org> +shadowsocks-libev-2.5.6.ebuild:
+  version bump
+
+  Gentoo-Bug: 600438
+
+  Package-Manager: portage-2.3.2
+

@@ -12,3 +12,8 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org> Specio-0.310.0.ebuild:
+  0.310.0-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 599550
+

@@ -76,3 +76,19 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  24 Nov 2016; Michael Orlitzky <mjo@gentoo.org> xjobs-20151016.ebuild:
+  stabilize xjobs-20151016 on x86.
+
+  As the maintainer, I've tested this on my own x86 server. To relieve
+  some of the burden on the arch teams, I've gone ahead and stabilized
+  it myself.
+
+  Gentoo-Bug: 590844
+
+  Package-Manager: portage-2.3.0
+
+  24 Nov 2016; Michael Orlitzky <mjo@gentoo.org> -xjobs-20140125.ebuild:
+  remove old xjobs-20140125.
+
+  Package-Manager: portage-2.3.0
+

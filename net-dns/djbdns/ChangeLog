@@ -91,3 +91,8 @@
 
   Package-Manager: portage-2.2.28
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org> djbdns-1.05-r31.ebuild:
+  1.05-r31: stable on alpha
+
+  Gentoo-Bug: 600634
+

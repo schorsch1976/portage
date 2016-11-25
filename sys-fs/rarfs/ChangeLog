@@ -60,3 +60,15 @@
   27 Jul 2016; Mike Frysinger <vapier@gentoo.org> rarfs-0.1.1.ebuild:
   sourceforge: switch to https:// URIs
 
+*rarfs-0.1.1-r1 (24 Nov 2016)
+
+  24 Nov 2016; Sergey Popov <pinkbyte@gentoo.org> -rarfs-0.1.1.ebuild,
+  +rarfs-0.1.1-r1.ebuild:
+  revision bump
+
+  EAPI 6, port to python-r1 eclass. Drop old revision
+
+  Gentoo-Bug: 599828
+
+  Package-Manager: portage-2.3.2
+

@@ -504,3 +504,15 @@
 
   Package-Manager: portage-2.3.2
 
+*docker-1.13.0_rc2 (24 Nov 2016)
+
+  24 Nov 2016; Manuel Rüger <mrueg@gentoo.org> +docker-1.13.0_rc2.ebuild:
+  Version bump to 1.13.0_rc2
+
+  Package-Manager: portage-2.3.2
+
+  24 Nov 2016; Manuel Rüger <mrueg@gentoo.org> -docker-1.13.0_rc1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

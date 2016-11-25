@@ -83,3 +83,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pybluez-0.22 (24 Nov 2016)
+
+  24 Nov 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml,
+  pybluez-0.18-r1.ebuild, +pybluez-0.22.ebuild:
+  bump to 0.22
+
+  Package-Manager: portage-2.3.2_p8
+

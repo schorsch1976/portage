@@ -87,3 +87,11 @@
 
   Package-Manager: portage-2.2.28
 
+*coffee-script-1.11.1 (24 Nov 2016)
+
+  24 Nov 2016; Michael Orlitzky <mjo@gentoo.org>
+  -coffee-script-1.10.0-r1.ebuild, +coffee-script-1.11.1.ebuild:
+  replace v1.10.0 with v1.11.1.
+
+  Package-Manager: portage-2.3.0
+

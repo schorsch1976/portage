@@ -72,3 +72,12 @@
   deap-1.0.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*deap-1.0.1 (24 Nov 2016)
+
+  24 Nov 2016; Slawomir Lis <slis@gentoo.org> +deap-1.0.1.ebuild:
+  version bump to 1.0.1
+
+  Also changed homepage and source to new on github
+
+  Package-Manager: portage-2.3.2
+

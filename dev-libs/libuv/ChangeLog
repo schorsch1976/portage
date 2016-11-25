@@ -192,3 +192,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --ignore-arches
 
+  24 Nov 2016; Tobias Klausmann <klausman@gentoo.org> libuv-1.10.0.ebuild:
+  1.10.0-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 599668
+

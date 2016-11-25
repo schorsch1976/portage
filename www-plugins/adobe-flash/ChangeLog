@@ -649,3 +649,9 @@
 
   Package-Manager: portage-2.3.2
 
+  24 Nov 2016; Jeroen Roovers <jer@gentoo.org>
+  adobe-flash-11.2.202.644.ebuild, adobe-flash-24.0.0.154.ebuild:
+  Add USE=npapi dependencies (bug #600672 by reagentoo)
+
+  Package-Manager: portage-2.3.2
+
