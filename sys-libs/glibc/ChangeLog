@@ -456,3 +456,10 @@
   glibc-2.24.ebuild:
   add upstream fix for default ssp detection w/gcc-6.2 #582690
 
+  25 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  files/eblits/pkg_pretend.eblit:
+  permit downgrades between r# versions
+
+  The ABI should not be changed by Gentoo patchsets, so allow people to
+  move between -r# versions.
+

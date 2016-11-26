@@ -127,3 +127,14 @@
   Gentoo-Bug: https://bugs.gentoo.org/562848
   Gentoo-Bug: https://bugs.gentoo.org/597642
 
+  25 Nov 2016; Anthony G. Basile <blueness@gentoo.org> torsocks-2.2.0.ebuild:
+  version 2.2.0 stable on amd64 and x86
+
+  Package-Manager: portage-2.3.0
+
+  25 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  -torsocks-1.2-r2.ebuild, -torsocks-2.1.0-r1.ebuild:
+  remove older versions
+
+  Package-Manager: portage-2.3.0
+

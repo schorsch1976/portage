@@ -78,3 +78,13 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  25 Nov 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  diff-match-patch-20121119.ebuild:
+  Update HOMEPAGE
+
+  Set HOMEPAGE to an unofficial package of the Python versions for PyPI.
+  Upstream hasn't moved the home page from Google Code to somewhere else,
+  so better point to an unofficial one than to nothing.
+
+  Package-Manager: portage-2.3.2
+

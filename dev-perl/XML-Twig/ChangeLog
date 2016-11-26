@@ -95,3 +95,23 @@
 
   Package-Manager: portage-2.3.2
 
+*XML-Twig-3.520.0 (25 Nov 2016)
+
+  25 Nov 2016; Kent Fredric <kentnl@gentoo.org> +XML-Twig-3.520.0.ebuild,
+  metadata.xml:
+  Bump to version 3.520.0 (re bug #598764)
+
+  - EAPI6
+  - Parallel Testing
+  - Author test cleanup
+
+  Upstream:
+  - New option "no_xxe" for XML::Twig->new, which causes the parse to
+    fail if external entities are used. (See CVE-2016-9180)
+  - Fix warnings/errors with unescaped regex braces.
+  - Partial fixes for getNamespaces in XML::Twig::XPath::Elt
+
+  Bug: https://bugs.gentoo.org/598764
+
+  Package-Manager: portage-2.3.2
+

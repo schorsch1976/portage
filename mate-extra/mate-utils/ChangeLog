@@ -154,3 +154,15 @@
 
   Package-Manager: portage-2.3.0
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -mate-utils-1.10.4-r1.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -mate-utils-1.10.4.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

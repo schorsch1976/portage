@@ -75,3 +75,23 @@
 
   Package-Manager: portage-2.3.0
 
+*iodine-0.7.0-r1 (25 Nov 2016)
+
+  25 Nov 2016; Aaron Bauman <bman@gentoo.org> iodine-0.7.0.ebuild,
+  +iodine-0.7.0-r1.ebuild:
+  revbump wrt security bug #477102
+
+  25 Nov 2016; Aaron Bauman <bman@gentoo.org> -iodine-0.7.0.ebuild:
+  cleanup wrt security bug #477102
+
+*iodine-0.7.0-r2 (25 Nov 2016)
+
+  25 Nov 2016; Jason A. Donenfeld <zx2c4@gentoo.org>
+  files/iodine-0.7.0-new-systemd.patch, -iodine-0.7.0-r1.ebuild,
+  +iodine-0.7.0-r2.ebuild:
+  fix 477102 competently
+
+  While we're at it, we make sure this builds with new systemd.
+
+  Package-Manager: portage-2.3.2
+

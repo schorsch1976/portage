@@ -122,3 +122,9 @@
   02 Nov 2016; Michał Górny <mgorny@gentoo.org> +creduce-9999.ebuild:
   Add a live ebuild
 
+  25 Nov 2016; Michał Górny <mgorny@gentoo.org> creduce-9999.ebuild:
+  Switch to cmake, now that LLVM linking is fixed
+
+  25 Nov 2016; Michał Górny <mgorny@gentoo.org> creduce-9999.ebuild:
+  Fix gen name to be lowercase
+

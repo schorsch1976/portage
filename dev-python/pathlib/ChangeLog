@@ -90,3 +90,9 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> pathlib-1.0.1-r1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  25 Nov 2016; Michał Górny <mgorny@gentoo.org> pathlib-1.0.1-r1.ebuild:
+  Support running tests
+
+  25 Nov 2016; Michał Górny <mgorny@gentoo.org> pathlib-1.0.1-r1.ebuild:
+  Enable pypy3
+

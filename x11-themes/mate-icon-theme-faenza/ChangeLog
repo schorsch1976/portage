@@ -128,3 +128,9 @@
 
   Package-Manager: portage-2.2.26
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -mate-icon-theme-faenza-1.10.1.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

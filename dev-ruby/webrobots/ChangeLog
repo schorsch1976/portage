@@ -102,3 +102,8 @@
 
   Package-Manager: portage-2.2.26
 
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> webrobots-0.1.1-r2.ebuild:
+  drop x86 stable keyword, bug 589428
+
+  Package-Manager: portage-2.3.0
+

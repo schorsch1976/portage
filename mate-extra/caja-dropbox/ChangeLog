@@ -129,3 +129,9 @@
 
   Package-Manager: portage-2.3.0
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -caja-dropbox-1.10.1.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

@@ -138,3 +138,11 @@
 
   Package-Manager: portage-2.2.26
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -files/mate-session-manager-1.10.3-upower-0.99-series.patch,
+  -files/mate-session-manager-1.5.2-save-session-ui.patch,
+  -mate-session-manager-1.10.3.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

@@ -161,3 +161,14 @@
 
   Package-Manager: portage-2.3.1
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -engrampa-1.10.2-r1.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org> -engrampa-1.10.2.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

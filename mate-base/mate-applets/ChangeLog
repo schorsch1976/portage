@@ -231,3 +231,10 @@
   -mate-applets-1.14.1.ebuild, +mate-applets-1.14.1-r1.ebuild:
   revert upstream patch, require <cpupower-4.7 #593470
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -files/mate-applets-1.10.4-drop-icon-theme-dep.patch,
+  -mate-applets-1.10.4-r1.ebuild, -mate-applets-1.10.4-r2.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

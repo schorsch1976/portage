@@ -149,3 +149,12 @@
 
   Package-Manager: portage-2.3.1
 
+  25 Nov 2016; Pacho Ramos <pacho@gentoo.org>
+  -files/plplot-5.10.0-cmake.patch, -files/plplot-5.10.0-have-config-h.patch,
+  -files/plplot-5.9.11-multiarch.patch, -files/plplot-5.9.11-ocaml.patch,
+  -files/plplot-5.9.11-octave.patch, -plplot-5.10.0-r1.ebuild,
+  -plplot-5.11.0-r1.ebuild, -plplot-5.11.1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

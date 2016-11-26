@@ -103,3 +103,8 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> mechanize-2.7.3-r1.ebuild:
+  drop x86 stable keyword, bug 589428
+
+  Package-Manager: portage-2.3.0
+

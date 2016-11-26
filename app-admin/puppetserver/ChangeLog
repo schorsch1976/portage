@@ -263,3 +263,14 @@
 
   Package-Manager: portage-2.3.0
 
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> puppetserver-2.3.2.ebuild:
+  drop stable x86 keyword, bug 575610
+
+  Package-Manager: portage-2.3.0
+
+  25 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  puppetserver-2.3.2.ebuild:
+  Revert "app-admin/puppetserver: drop stable x86 keyword, bug 575610"
+
+  This reverts commit 7970b3025cd6d448679649fac3778a746078ec81.
+

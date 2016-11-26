@@ -197,3 +197,8 @@
 
   Package-Manager: portage-2.3.2
 
+  25 Nov 2016; Tobias Klausmann <klausman@gentoo.org> mod_perl-2.0.10.ebuild:
+  2.0.10-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 597822
+

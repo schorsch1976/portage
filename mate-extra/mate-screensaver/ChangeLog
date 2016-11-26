@@ -188,3 +188,12 @@
 
   Package-Manager: portage-2.3.0
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -files/mate-screensaver-1.10-fix-systemd-configure.ac.patch,
+  -files/mate-screensaver-1.2.0-fix-popsquares-includes.patch,
+  -files/mate-screensaver-1.2.0-fix-with-libgl.patch,
+  -mate-screensaver-1.10.2-r2.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

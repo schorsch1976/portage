@@ -233,3 +233,17 @@
   lxc-1.0.8.ebuild, lxc-2.0.3-r1.ebuild, lxc-2.0.4.ebuild, lxc-2.0.5.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  25 Nov 2016; Agostino Sarubbo <ago@gentoo.org> lxc-1.0.8.ebuild:
+  amd64 stable wrt bug #556310
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  25 Nov 2016; Agostino Sarubbo <ago@gentoo.org> lxc-1.0.8.ebuild:
+  x86 stable wrt bug #556310
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

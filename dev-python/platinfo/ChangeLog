@@ -84,3 +84,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  25 Nov 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  platinfo-0.15.0-r1.ebuild:
+  Update SRC_URI
+
+  Point to PyPI instead of Google Code.
+
+  Package-Manager: portage-2.3.2
+

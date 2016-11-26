@@ -126,3 +126,10 @@
 
   Package-Manager: portage-2.3.0
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  -files/mate-system-monitor-1.10.1-cxxflags-cpp11.patch,
+  -mate-system-monitor-1.10.1.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

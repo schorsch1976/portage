@@ -128,3 +128,16 @@
 
   Package-Manager: portage-2.3.2
 
+*tcpreplay-4.1.2 (24 Nov 2016)
+
+  24 Nov 2016; Jeroen Roovers <jer@gentoo.org> +tcpreplay-4.1.2.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.2
+
+  24 Nov 2016; Jeroen Roovers <jer@gentoo.org>
+  -files/tcpreplay-4.1.1-MAXPACKET.patch, -tcpreplay-4.1.1-r1.ebuild:
+  Old.
+
+  Package-Manager: portage-2.3.2
+

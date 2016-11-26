@@ -89,3 +89,13 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  25 Nov 2016; Pacho Ramos <pacho@gentoo.org> treeviewx-0.5.1-r3.ebuild:
+  x86 stable, bug #584034
+
+  Package-Manager: portage-2.3.2
+
+  25 Nov 2016; Pacho Ramos <pacho@gentoo.org> -treeviewx-0.5.1-r2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

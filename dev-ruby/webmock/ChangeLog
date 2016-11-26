@@ -220,3 +220,8 @@
 
   Package-Manager: portage-2.3.0
 
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> -webmock-1.19.0.ebuild:
+  cleanup; drop x86 stable keyword, bug 589428
+
+  Package-Manager: portage-2.3.0
+

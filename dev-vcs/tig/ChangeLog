@@ -99,3 +99,9 @@
   +tig-9999.ebuild:
   version bump to 2.2 and add live ebuild
 
+*tig-2.2.1 (25 Nov 2016)
+
+  25 Nov 2016; Tim Harder <radhermit@gentoo.org> +tig-2.2.1.ebuild,
+  tig-9999.ebuild:
+  version bump to 2.2.1
+

@@ -23,3 +23,9 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> python-ipaddress-1.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*python-ipaddress-1.0-r1 (25 Nov 2016)
+
+  25 Nov 2016; Michał Górny <mgorny@gentoo.org> -python-ipaddress-1.0.ebuild,
+  +python-ipaddress-1.0-r1.ebuild:
+  ipaddress module is built-in in pypy3
+

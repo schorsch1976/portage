@@ -87,3 +87,17 @@
   pykerberos-1.1.7.ebuild, pykerberos-1.1.9.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  25 Nov 2016; Agostino Sarubbo <ago@gentoo.org> pykerberos-1.1.9.ebuild:
+  amd64 stable wrt bug #550120
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  25 Nov 2016; Agostino Sarubbo <ago@gentoo.org> pykerberos-1.1.9.ebuild:
+  x86 stable wrt bug #550120
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

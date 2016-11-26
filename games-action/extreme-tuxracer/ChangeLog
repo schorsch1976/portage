@@ -103,3 +103,14 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  25 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  -files/extreme-tuxracer.svg:
+  remove unused file
+
+  25 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  -extreme-tuxracer-0.6.0.ebuild, -files/extreme-tuxracer-0.6.0-libsdl.patch,
+  -files/extreme-tuxracer-0.6.0-segfault.patch:
+  remove old
+
+  Package-Manager: portage-2.3.2
+

@@ -128,3 +128,8 @@
 
   Package-Manager: portage-2.3.0
 
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> -rgen-0.6.6.ebuild:
+  cleanup; drop stable ppc, sparc, x86 keywords, bug 576626
+
+  Package-Manager: portage-2.3.0
+

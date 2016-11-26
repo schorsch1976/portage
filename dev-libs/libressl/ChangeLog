@@ -214,3 +214,8 @@
 
   Package-Manager: portage-2.3.0
 
+  25 Nov 2016; Anthony G. Basile <blueness@gentoo.org> metadata.xml:
+  change maintainer to libressl project, bug #600408
+
+  Package-Manager: portage-2.3.0
+

@@ -211,3 +211,8 @@
 
   Package-Manager: portage-2.3.0
 
+  25 Nov 2016; Pacho Ramos <pacho@gentoo.org> gnuplot-5.0.1-r1.ebuild:
+  x86 stable, bug #574242
+
+  Package-Manager: portage-2.3.2
+

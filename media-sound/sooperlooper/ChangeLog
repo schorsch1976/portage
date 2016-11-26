@@ -82,3 +82,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  25 Nov 2016; Pacho Ramos <pacho@gentoo.org>
+  -files/sooperlooper-1.6.5-cxxflags.patch,
+  -files/sooperlooper-1.7.3-sigc++-2.5.patch, -sooperlooper-1.6.17.ebuild,
+  -sooperlooper-1.6.18.ebuild, -sooperlooper-1.7.3.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

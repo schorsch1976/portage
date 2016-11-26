@@ -76,3 +76,10 @@
 
   Package-Manager: portage-2.2.27
 
+  25 Nov 2016; Slawomir Lis <slis@gentoo.org> metadata.xml:
+  extend metadata use description
+
+  Related to bug 600752
+
+  Package-Manager: portage-2.3.2
+

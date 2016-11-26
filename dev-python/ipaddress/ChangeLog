@@ -190,3 +190,8 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*ipaddress-1.0.17-r1 (25 Nov 2016)
+
+  25 Nov 2016; Michał Górny <mgorny@gentoo.org> +ipaddress-1.0.17-r1.ebuild:
+  Disable pypy3, it is built-in there
+

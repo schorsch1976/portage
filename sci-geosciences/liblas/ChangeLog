@@ -34,3 +34,15 @@
 
   Package-Manager: portage-2.2.28
 
+*liblas-1.8.1 (25 Nov 2016)
+
+  25 Nov 2016; Sam Jorna <wraeth@gentoo.org> +liblas-1.8.1.ebuild:
+  bump to 1.8.1
+
+  Version bumped to 1.8.1. Multilib removed as builds were failing due to
+  non-multilib deps and nothing appears to depend on this being multilib.
+  Tests restricted as they were loading the installed version (if there,
+  otherwise nothing) rather than the built version. EAPI bumped to 6.
+
+  Package-Manager: portage-2.3.2
+

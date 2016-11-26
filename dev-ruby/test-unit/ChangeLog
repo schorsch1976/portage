@@ -254,3 +254,14 @@
 
   Package-Manager: portage-2.3.2
 
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> test-unit-1.2.3-r3.ebuild:
+  drop stable ia64, sparc keywords, bug 576630
+
+  Package-Manager: portage-2.3.0
+
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> test-unit-2.5.5-r2.ebuild:
+  drop redcloth dependency altogether since it is no effective for ruby21 and
+  ruby20 will be dropped
+
+  Package-Manager: portage-2.3.0
+

@@ -292,3 +292,21 @@
 
   Package-Manager: portage-2.3.2
 
+*libkipi-16.08.3-r1 (25 Nov 2016)
+
+  25 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +files/libkipi-16.08.3-public-deps.patch, +libkipi-16.08.3-r1.ebuild:
+  Fix public dependencies
+
+  Gentoo-bug: 600602
+
+  See also: https://git.reviewboard.kde.org/r/129555/
+
+  Package-Manager: portage-2.3.0
+
+  25 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  -libkipi-16.08.3.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.0
+

@@ -106,3 +106,12 @@
 
   Package-Manager: portage-2.3.2
 
+*c++-gtk-utils-2.2.14.1 (24 Nov 2016)
+*c++-gtk-utils-2.0.31.1 (24 Nov 2016)
+
+  24 Nov 2016; Jeroen Roovers <jer@gentoo.org> +c++-gtk-utils-2.0.31.1.ebuild,
+  +c++-gtk-utils-2.2.14.1.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.2
+

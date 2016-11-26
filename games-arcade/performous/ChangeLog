@@ -114,3 +114,9 @@
 
   Package-Manager: portage-2.3.1
 
+  25 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  -files/performous-1.0-gcc52.patch, -files/performous-1.0-gentoo.patch,
+  -files/performous-1.0-include.patch, -files/performous-1.0-libav.patch,
+  -files/performous-1.0-linguas.patch:
+  remove unused patches
+

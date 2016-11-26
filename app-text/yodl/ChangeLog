@@ -81,3 +81,6 @@
 
   Fixes build failure in bug #589728.
 
+  25 Nov 2016; Tim Harder <radhermit@gentoo.org> -yodl-3.05.01.ebuild:
+  remove old
+

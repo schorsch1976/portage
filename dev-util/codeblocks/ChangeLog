@@ -106,3 +106,8 @@
   -files/codeblocks-10.05-wxChartCtrl-crash.patch:
   remove unused patches
 
+  25 Nov 2016; Pacho Ramos <pacho@gentoo.org> -codeblocks-13.12.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

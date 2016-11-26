@@ -70,3 +70,19 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*libchart-1.3_p21050415 (25 Nov 2016)
+
+  25 Nov 2016; Brian Evans <grknight@gentoo.org>
+  +libchart-1.3_p21050415.ebuild, metadata.xml:
+  Snapshot bump, convert to EAPI6 and move to github
+
+  Upstream moved to github with the pending googlecode shutdown
+
+  Package-Manager: portage-2.3.2
+
+  25 Nov 2016; Brian Evans <grknight@gentoo.org> -libchart-1.2.2.ebuild,
+  -libchart-1.3.ebuild:
+  Drop old versions
+
+  Package-Manager: portage-2.3.2
+

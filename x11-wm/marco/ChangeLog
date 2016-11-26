@@ -130,3 +130,8 @@
 
   Package-Manager: portage-2.3.0
 
+  24 Nov 2016; Ettore Di Giacinto <mudler@gentoo.org> -marco-1.10.3.ebuild:
+  Drop 1.10.x
+
+  Package-Manager: portage-2.3.1
+

@@ -129,3 +129,8 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> -coderay-1.1.0-r1.ebuild:
+  drop stable ia64, sparc keywords, bug 576630
+
+  Package-Manager: portage-2.3.0
+

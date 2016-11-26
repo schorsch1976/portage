@@ -219,3 +219,9 @@
 
   Package-Manager: portage-2.3.0
 
+  25 Nov 2016; Hans de Graaff <graaff@gentoo.org> -puppet-3.7.3-r1.ebuild,
+  -puppet-3.7.4-r3.ebuild, -puppet-3.8.4.ebuild, -puppet-3.8.5.ebuild:
+  cleanup; drop stable ppc, sparc, x86 keywords, bug 575610
+
+  Package-Manager: portage-2.3.0
+

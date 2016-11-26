@@ -68,3 +68,14 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*SabreAMF-1.3.234_p0 (25 Nov 2016)
+
+  25 Nov 2016; Brian Evans <grknight@gentoo.org> -SabreAMF-1.3.234.ebuild,
+  +SabreAMF-1.3.234_p0.ebuild, metadata.xml:
+  Bump for EAPI6 and upstream move to github
+
+  A revision bump might not have worked as the tarball changed
+  significatly.  Adding a _p0 will forcefully avoid Manifest errors.
+
+  Package-Manager: portage-2.3.2
+
