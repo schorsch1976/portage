@@ -120,3 +120,15 @@
 
   Package-Manager: portage-2.2.28
 
+  26 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/memtest86+-5.01-no-C-headers.patch, memtest86+-5.01-r2.ebuild:
+  fix build w/out 32-bit glibc #592638
+
+  26 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  files/memtest86+-5.01-gcc-473.patch,
+  files/memtest86+-5.01-io-extern-inline.patch,
+  files/memtest86+-5.01-no-C-headers.patch,
+  files/memtest86+-5.01-no-clean.patch, files/memtest86+-5.01-no-scp.patch,
+  files/memtest86+-5.01-reboot-def.patch:
+  add links to patches sent upstream
+

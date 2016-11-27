@@ -383,3 +383,10 @@
 
   Package-Manager: portage-2.3.2
 
+  26 Nov 2016; James Le Cuirot <chewi@gentoo.org> icedtea-3.2.0.ebuild:
+  Explicitly state whether we want ccache or not
+
+  The default is still automagic.
+
+  Package-Manager: portage-2.3.2
+

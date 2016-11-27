@@ -122,3 +122,11 @@
 
   Package-Manager: portage-2.2.28
 
+*coffee-script-source-1.11.1 (26 Nov 2016)
+
+  26 Nov 2016; Hans de Graaff <graaff@gentoo.org>
+  +coffee-script-source-1.11.1.ebuild:
+  add 1.11.1
+
+  Package-Manager: portage-2.3.0
+

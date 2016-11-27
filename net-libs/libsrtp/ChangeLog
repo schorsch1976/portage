@@ -89,3 +89,21 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*libsrtp-2.0.0 (25 Nov 2016)
+*libsrtp-1.5.4 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  files/libsrtp-pcap-automagic-r0.patch, +libsrtp-1.5.4.ebuild,
+  +libsrtp-2.0.0.ebuild:
+  version bump to 1.5.4 and 2.0.0.
+
+  This commit:
+  * adds LibreSSL support.
+  * switches to EAPI 6.
+  * cleans up the src_prepare phase.
+
+  Gentoo-Bug: https://bugs.gentoo.org/596398
+  Closes: https://github.com/gentoo/gentoo/pull/2689
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

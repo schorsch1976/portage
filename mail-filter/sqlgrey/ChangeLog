@@ -76,3 +76,12 @@
   Package-Manager: portage-2.2.27
   RepoMan-Options: --include-arches="arm"
 
+*sqlgrey-1.7.6-r2 (26 Nov 2016)
+
+  26 Nov 2016; Michał Górny <mgorny@gentoo.org> files/sqlgrey.service,
+  -sqlgrey-1.7.6-r1.ebuild, +sqlgrey-1.7.6-r2.ebuild:
+  systemd .service hardening
+
+  Bug: https://bugs.gentoo.org/587596
+  Closes: https://github.com/gentoo/gentoo/pull/1800
+

@@ -103,3 +103,16 @@
 
   Package-Manager: portage-2.3.2
 
+*Devel-NYTProf-6.40.0 (26 Nov 2016)
+
+  26 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Devel-NYTProf-6.40.0.ebuild:
+  Bump to version 6.40.0
+
+  Upstream:
+  - Fixed compilation against Perl 5.25+
+  - Fix nytprofmerge on win32
+  - Fix nytprofhtml invalid UTF8 Char
+  - Table headers stay visible
+
+  Package-Manager: portage-2.3.2
+

@@ -68,3 +68,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*texmaths-0.42 (26 Nov 2016)
+
+  26 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org> +texmaths-0.42.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+

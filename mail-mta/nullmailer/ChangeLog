@@ -112,3 +112,17 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Justin Lecher <jlec@gentoo.org>
 
+*nullmailer-2.0-r1 (26 Nov 2016)
+
+  26 Nov 2016; Sergei Trofimovich <slyfox@gentoo.org>
+  +files/init.d-nullmailer-r6, +nullmailer-2.0-r1.ebuild:
+  remove '+=' bashism from init.d script
+
+  Noticed as a sourcing failure on a system with 'sh' ->/bin/dash:
+      dash: 9: /etc/init.d/nullmailer: start_stop_daemon_args+= --stdout
+  /var/log/nullmailer/nullmailer.log: not found
+      dash: 10: /etc/init.d/nullmailer: start_stop_daemon_args+= --stderr
+  /var/log/nullmailer/nullmailer.log: not found
+
+  Package-Manager: portage-2.3.2
+

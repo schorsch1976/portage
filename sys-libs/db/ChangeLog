@@ -187,3 +187,9 @@
 
   Gentoo-Bug: 599134
 
+  26 Nov 2016; Markus Meier <maekke@gentoo.org> db-5.3.28-r2.ebuild:
+  arm stable, bug #599134
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

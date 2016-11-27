@@ -114,3 +114,17 @@
 
   Package-Manager: portage-2.3.2
 
+  26 Nov 2016; Agostino Sarubbo <ago@gentoo.org> mailman-2.1.23.ebuild:
+  amd64 stable wrt bug #592858
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  26 Nov 2016; Agostino Sarubbo <ago@gentoo.org> mailman-2.1.23.ebuild:
+  x86 stable wrt bug #592858
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

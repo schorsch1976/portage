@@ -109,3 +109,13 @@
   +files/boot0-11.0-gcc46.patch, +files/boot0-11.0-uefi-support.patch:
   sys-freebsd: bump to 11.0
 
+*boot0-11.0-r1 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org> -boot0-11.0.ebuild,
+  +boot0-11.0-r1.ebuild:
+  fix FreeBSD-EN-16:18.loader.
+
+  Closes: https://github.com/gentoo/gentoo/pull/2707
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

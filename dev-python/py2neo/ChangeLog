@@ -83,3 +83,12 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> py2neo-2.0.8.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*py2neo-2.0.9 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org> +py2neo-2.0.9.ebuild:
+  version bump.
+
+  Gentoo-Bug: https://bugs.gentoo.org/600462
+
+  Package-Manager: portage-2.3.0
+

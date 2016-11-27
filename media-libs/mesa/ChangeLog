@@ -695,3 +695,10 @@
   mesa-9999.ebuild:
   Wrap vulkan header removal with check
 
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org> mesa-9999.ebuild:
+  use https for git access.
+
+  Closes: https://github.com/gentoo/gentoo/pull/2546
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

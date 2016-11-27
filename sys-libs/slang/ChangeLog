@@ -95,3 +95,16 @@
 
   Gentoo-Bug: 598655
 
+  26 Nov 2016; Markus Meier <maekke@gentoo.org> slang-2.3.0.ebuild:
+  arm stable, bug #598655
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+
+*slang-2.3.1a (26 Nov 2016)
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +slang-2.3.1a.ebuild:
+  Bump to version 2.3.1a
+
+  Package-Manager: portage-2.3.2
+

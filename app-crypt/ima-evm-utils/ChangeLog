@@ -84,3 +84,10 @@
 
   Package-Manager: portage-2.3.0
 
+*ima-evm-utils-1.0 (26 Nov 2016)
+
+  26 Nov 2016; Jason Zaman <perfinion@gentoo.org> +ima-evm-utils-1.0.ebuild:
+  bump to 1.0
+
+  Package-Manager: portage-2.3.0
+

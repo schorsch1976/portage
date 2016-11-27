@@ -1101,3 +1101,23 @@
 
   Package-Manager: portage-2.3.2
 
+*vivaldi-1.5.676.6_p1 (26 Nov 2016)
+
+  26 Nov 2016; Jeroen Roovers <jer@gentoo.org> +vivaldi-1.5.676.6_p1.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; Jeroen Roovers <jer@gentoo.org> -vivaldi-1.5.658.42_p1.ebuild:
+  Old.
+
+  Package-Manager: portage-2.3.2
+
+*vivaldi-1.5.676.6_p1-r1 (26 Nov 2016)
+
+  26 Nov 2016; Jeroen Roovers <jer@gentoo.org> -vivaldi-1.5.676.6_p1.ebuild,
+  +vivaldi-1.5.676.6_p1-r1.ebuild:
+  Remove dangling symlink.
+
+  Package-Manager: portage-2.3.2
+

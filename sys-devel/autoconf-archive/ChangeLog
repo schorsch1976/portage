@@ -175,3 +175,8 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  25 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  autoconf-archive-2016.03.20-r1.ebuild:
+  mark 2016.03.20-r1 arm64/hppa/ia64/m68k/ppc/ppc64/s390/sh/sparc/x86 stable
+  #589390
+

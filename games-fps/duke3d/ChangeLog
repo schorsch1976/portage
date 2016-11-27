@@ -82,3 +82,8 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  26 Nov 2016; David Seifert <soap@gentoo.org> -files/20040817-gcc4.patch:
+  remove unused patch
+
+  Closes: https://github.com/gentoo/gentoo/pull/2919
+

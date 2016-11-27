@@ -12,3 +12,18 @@
 
   Package-Manager: portage-2.2.27
 
+*Time-Moment-0.390.0 (26 Nov 2016)
+
+  26 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Time-Moment-0.390.0.ebuild:
+  Bump to version 0.390.0
+
+  - EAPI6
+  - Add USE="examples"
+
+  Upstream:
+  - Add "precision" and "with_precision" methods
+  - Add {Western,Orthodox}EasterSunday() and NearestMinuteInterval
+    adjusters
+
+  Package-Manager: portage-2.3.2
+

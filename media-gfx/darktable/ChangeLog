@@ -247,3 +247,9 @@
 
   Package-Manager: portage-2.3.2
 
+  26 Nov 2016; Markus Meier <maekke@gentoo.org> darktable-2.0.7.ebuild,
+  darktable-9999.ebuild:
+  remove x11-themes/gtk-engines from DEPEND, bug #600284
+
+  Package-Manager: portage-2.3.2
+

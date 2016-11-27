@@ -31,3 +31,11 @@
 
   Package-Manager: portage-2.3.0
 
+*librfm-5.3.16.3-r1 (26 Nov 2016)
+
+  26 Nov 2016; Pacho Ramos <pacho@gentoo.org> -librfm-5.3.16.3.ebuild,
+  +librfm-5.3.16.3-r1.ebuild:
+  Fix deps, bug #595204 and #599736 by Toralf Förster
+
+  Package-Manager: portage-2.3.2
+

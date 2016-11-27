@@ -97,3 +97,30 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*kmymoney-4.8.0 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  +files/kmymoney-4.8.0-alkimia-detect.patch,
+  +files/kmymoney-4.8.0-fix-csvdialog.patch,
+  +files/kmymoney-4.8.0-gpgmepp.patch,
+  +files/kmymoney-4.8.0-kdepimlibs-optional.patch,
+  +files/kmymoney-4.8.0-soversion.patch, +files/kmymoney-4.8.0-tests.patch,
+  +kmymoney-4.8.0.ebuild, metadata.xml:
+  version bump and a bunch of other changes.
+
+  Changes:
+  * version bump to 4.8.0.
+  * add USE=pim,weboob.
+  * add USE=pim for optional kdepimlibs or app-crypt/gpgme[cxx] dependency.
+  * EAPI 6.
+  * fix HOMEPAGE, DESCRIPTION.
+
+  metadata.xml: no longer at sourceforge.
+
+  Gentoo-Bug: https://bugs.gentoo.org/587244
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2667
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

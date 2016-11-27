@@ -250,3 +250,15 @@
 
   Package-Manager: portage-2.3.0
 
+*i2p-0.9.27 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  +files/i2p-0.9.27-add_libs.patch, +files/i2p-0.9.27.initd,
+  +files/i2p-0.9.27.service, +i2p-0.9.27.ebuild:
+  version bump to 0.9.27.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2769
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

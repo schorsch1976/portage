@@ -234,3 +234,11 @@
 
   Package-Manager: portage-2.3.2
 
+*libreoffice-bin-5.2.3.3 (26 Nov 2016)
+
+  26 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +libreoffice-bin-5.2.3.3.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+

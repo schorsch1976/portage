@@ -156,3 +156,9 @@
 
   Gentoo-Bug: 598902
 
+  26 Nov 2016; Markus Meier <maekke@gentoo.org> scons-2.4.1.ebuild:
+  arm stable, bug #598902
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

@@ -145,3 +145,8 @@
   This reverts commit 9cd25c21392af7f1e5d127acddb3dab73e5a4227.
   We need these until I look at containerd
 
+  26 Nov 2016; William Hubbs <williamh@gentoo.org> metadata.xml:
+  add myself as a maintainer
+
+  Package-Manager: portage-2.3.0
+

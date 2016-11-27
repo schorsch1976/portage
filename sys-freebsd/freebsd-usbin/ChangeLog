@@ -167,3 +167,11 @@
   -freebsd-usbin-10.3.ebuild, +freebsd-usbin-10.3-r1.ebuild:
   fix FreeBSD-SA-16:30.portsnap
 
+*freebsd-usbin-11.0-r1 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  -freebsd-usbin-11.0.ebuild, +freebsd-usbin-11.0-r1.ebuild:
+  fix FreeBSD-SA-16:32.bhyve.
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

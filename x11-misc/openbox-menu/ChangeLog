@@ -90,3 +90,14 @@
 
   Package-Manager: portage-2.2.26
 
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org> metadata.xml,
+  openbox-menu-0.5.1.ebuild, openbox-menu-0.7.0.ebuild,
+  openbox-menu-0.8.0.ebuild:
+  update HOMEPAGE and metadata.xml.
+
+  Gentoo-Bug: https://bugs.gentoo.org/582380
+
+  Closes: https://github.com/gentoo/gentoo/pull/2886
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

@@ -70,3 +70,19 @@
   files/dbmail-pop3d.initd, files/dbmail-timsieved.initd:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+*dbmail-3.2.3-r1 (25 Nov 2016)
+
+  25 Nov 2016; Thomas Raschbacher <lordvan@gentoo.org>
+  +dbmail-3.2.3-r1.ebuild:
+  Migrate to /run and EAPI 6
+
+  Also:
+  - Install man pages
+  - Remove sqlite USE flag
+  - Minor repoman fixes and other tidy-ups
+
+  Gentoo-Bug: https://bugs.gentoo.org/529504
+  Gentoo-Bug: https://bugs.gentoo.org/529506
+
+  Signed-off-by: Thomas Raschbacher <lordvan@gentoo.org>
+

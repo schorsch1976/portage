@@ -142,3 +142,11 @@
   pitivi-0.96-r1.ebuild, pitivi-0.97.1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org> pitivi-0.97.1.ebuild:
+  Ensure sane libdir value and add prefix support.
+
+  Gentoo-Bug: https://bugs.gento.org/597414
+  Closes: https://github.com/gentoo/gentoo/pull/2624
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

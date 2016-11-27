@@ -358,3 +358,6 @@
 
   Package-Manager: portage-2.3.2_p4
 
+  25 Nov 2016; Mike Frysinger <vapier@gentoo.org> udev-225-r1.ebuild:
+  mark 225-r1 hppa/ppc64 stable #568082
+

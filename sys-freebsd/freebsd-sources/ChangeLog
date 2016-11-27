@@ -260,3 +260,19 @@
   freebsd-sources-11.0.ebuild:
   replace from zfs to dtrace
 
+*freebsd-sources-11.0-r1 (25 Nov 2016)
+*freebsd-sources-10.3-r6 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  -freebsd-sources-10.3-r5.ebuild, +freebsd-sources-10.3-r6.ebuild,
+  -freebsd-sources-11.0.ebuild, +freebsd-sources-11.0-r1.ebuild:
+  fix FreeBSD-SA-16:15.sysarch.
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  freebsd-sources-10.3-r6.ebuild:
+  fix FreeBSD-EN-16:17.vm.
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

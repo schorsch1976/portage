@@ -420,3 +420,19 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+*syncthing-0.14.12 (26 Nov 2016)
+
+  26 Nov 2016; David Seifert <soap@gentoo.org> +syncthing-0.14.12.ebuild:
+  bump to 0.14.12, fix DEPEND
+
+  Gentoo-Bug: 600466
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2913
+
+  26 Nov 2016; David Seifert <soap@gentoo.org> -syncthing-0.14.11.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2913
+

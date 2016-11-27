@@ -143,3 +143,11 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*backuppc-3.3.1-r3 (26 Nov 2016)
+
+  26 Nov 2016; Pacho Ramos <pacho@gentoo.org> +backuppc-3.3.1-r3.ebuild,
+  +files/backuppc-3.3.1-perl522.patch:
+  Fix perl-5.22 compat (#580254 by Till Korten)
+
+  Package-Manager: portage-2.3.2
+

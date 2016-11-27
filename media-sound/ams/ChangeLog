@@ -80,3 +80,16 @@
 
   Package-Manager: portage-2.3.2
 
+  26 Nov 2016; David Seifert <soap@gentoo.org> ams-2.1.2.ebuild,
+  files/ams-2.1.2-fix-build-system.patch:
+  Disable automagic media-libs/liblo dependency
+
+  Gentoo-bug: 600642
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; David Seifert <soap@gentoo.org> ams-2.1.2.ebuild:
+  Specify moc binary paths in econf call
+
+  Package-Manager: portage-2.3.2
+

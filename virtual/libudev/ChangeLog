@@ -66,3 +66,14 @@
 
   Package-Manager: portage-2.3.0
 
+  26 Nov 2016; Mike Gilbert <floppym@gentoo.org> libudev-215-r1.ebuild:
+  match provider order to virtual/udev
+
+  Package-Manager: portage-2.3.2_p8
+
+  26 Nov 2016; Mike Gilbert <floppym@gentoo.org> libudev-215-r1.ebuild,
+  libudev-232.ebuild:
+  simplify systemd dep
+
+  Package-Manager: portage-2.3.2_p8
+

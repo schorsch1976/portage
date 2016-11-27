@@ -165,3 +165,9 @@
 
   Package-Manager: portage-2.3.0
 
+  25 Nov 2016; Christoph Junghans <junghans@gentoo.org>
+  votca-csg-1.2.4-r1.ebuild:
+  fix deps
+
+  Package-Manager: portage-2.3.0
+

@@ -58,3 +58,16 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*tiobench-0.4.2 (26 Nov 2016)
+
+  26 Nov 2016; David Seifert <soap@gentoo.org>
+  +files/tiobench-0.4.2-fix-perl-shebang.patch,
+  +files/tiobench-0.4.2-gcc5.patch, metadata.xml, +tiobench-0.4.2.ebuild:
+  0.4.2 version bump, fix build w/ GCC-5
+
+  Gentoo-bug: 520986, 570842
+  * Also fix perl shebangs to be more portable
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2878
+

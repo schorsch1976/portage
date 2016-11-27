@@ -769,3 +769,11 @@
 
   Package-Manager: portage-2.3.2
 
+*libreoffice-5.2.3.3-r1 (26 Nov 2016)
+
+  26 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +libreoffice-5.2.3.3-r1.ebuild:
+  Add revision bump (stable candidate with bugfixes)
+
+  Package-Manager: portage-2.3.2
+

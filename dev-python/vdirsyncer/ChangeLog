@@ -62,3 +62,10 @@
 
   Package-Manager: portage-2.3.0
 
+  26 Nov 2016; Amy Winston <amynka@gentoo.org> -vdirsyncer-0.7.5.ebuild,
+  -vdirsyncer-0.9.0.ebuild, -vdirsyncer-0.9.3.ebuild,
+  -vdirsyncer-0.10.0.ebuild, -vdirsyncer-0.11.2.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.0
+

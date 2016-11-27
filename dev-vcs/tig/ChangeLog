@@ -105,3 +105,10 @@
   tig-9999.ebuild:
   version bump to 2.2.1
 
+  26 Nov 2016; Justin Lecher <jlec@gentoo.org> +files/tig-2.2.1-tinfo.patch,
+  tig-2.2.1.ebuild:
+  Add patch for ncurses[tinfo] support
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

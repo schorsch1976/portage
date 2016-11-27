@@ -112,3 +112,9 @@
 
   Package-Manager: portage-2.2.26
 
+  26 Nov 2016; David Seifert <soap@gentoo.org>
+  -files/alienarena-20130207-nodocs.patch:
+  remove unused patch
+
+  Closes: https://github.com/gentoo/gentoo/pull/2919
+

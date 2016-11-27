@@ -135,3 +135,56 @@
 
   Package-Manager: portage-2.3.2_p8
 
+  25 Nov 2016; Mike Gilbert <floppym@gentoo.org> open-vm-tools-10.1.0.ebuild:
+  optionally build kernel modules
+
+  The build system does some crazy stuff that is difficult to replicate in
+  open-vm-tools-kmod.
+
+  Package-Manager: portage-2.3.2_p8
+
+  25 Nov 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml,
+  -open-vm-tools-9.4.0.1280544.ebuild, -open-vm-tools-9.10.0_p2476743.ebuild,
+  -open-vm-tools-9.10.2_p2822639.ebuild,
+  -open-vm-tools-10.0.0_p3000743.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2_p8
+
+  25 Nov 2016; Mike Gilbert <floppym@gentoo.org> open-vm-tools-10.1.0.ebuild:
+  add kernel config checks
+
+  Package-Manager: portage-2.3.2_p8
+
+  26 Nov 2016; Mike Gilbert <floppym@gentoo.org>
+  +files/10.1.0-mount.vmhgfs.patch, open-vm-tools-10.1.0.ebuild:
+  fix mount.vmhgfs symlink
+
+  https://github.com/vmware/open-vm-tools/pull/66
+
+  Package-Manager: portage-2.3.2_p8
+
+  26 Nov 2016; Mike Gilbert <floppym@gentoo.org> open-vm-tools-10.1.0.ebuild:
+  cleanup dependencies
+
+  Package-Manager: portage-2.3.2_p8
+
+  26 Nov 2016; Mike Gilbert <floppym@gentoo.org> open-vm-tools-10.1.0.ebuild:
+  drop RDEPEND on x11 drivers
+
+  Package-Manager: portage-2.3.2_p8
+
+  26 Nov 2016; Mike Gilbert <floppym@gentoo.org> open-vm-tools-10.1.0.ebuild:
+  fix suid perms and drop custom xdg autostart file
+
+  Package-Manager: portage-2.3.2_p8
+
+  26 Nov 2016; Mike Gilbert <floppym@gentoo.org> +files/10.1.0-Werror.patch,
+  open-vm-tools-10.1.0.ebuild:
+  patch -Werror out of configure.ac
+
+  This is less fragile than sed-ing all the Makefiles.
+
+  Bug: https://bugs.gentoo.org/600886
+  Package-Manager: portage-2.3.2_p8
+

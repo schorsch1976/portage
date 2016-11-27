@@ -168,3 +168,6 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  25 Nov 2016; Mike Frysinger <vapier@gentoo.org> hdparm-9.48.ebuild:
+  mark 9.48 arm64/ia64/m68k/s390/sh/sparc stable #578456
+

@@ -209,3 +209,17 @@
 
   Package-Manager: portage-2.3.0
 
+*gdal-2.0.2-r3 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org> +gdal-2.0.2-r3.ebuild:
+  only install Python modules for PYTHON_TARGETS.
+
+  Also adds byte-compilation for Python modules.
+
+  Gentoo-Bug: https://bugs.gentoo.org/536528
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2423
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

@@ -33,3 +33,8 @@
 
   Package-Manager: portage-2.3.0
 
+  26 Nov 2016; Amy Winston <amynka@gentoo.org> -khal-0.7.0.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.0
+

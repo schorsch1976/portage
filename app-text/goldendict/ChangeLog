@@ -64,3 +64,14 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*goldendict-1.5.0_rc2 (26 Nov 2016)
+
+  26 Nov 2016; Michael Palimaka <kensington@gentoo.org>
+  +files/goldendict-1.5.0-qtsingleapplication-unbundle.patch,
+  +goldendict-1.5.0_rc2.ebuild, metadata.xml:
+  Add 1.5.0_rc2 to have a Qt5 version
+
+  Ebuild taken from qt overlay.
+
+  Package-Manager: portage-2.3.0
+

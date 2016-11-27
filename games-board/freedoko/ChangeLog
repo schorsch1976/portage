@@ -127,3 +127,9 @@
 
   Package-Manager: portage-2.3.0
 
+  26 Nov 2016; David Seifert <soap@gentoo.org> -files/Fix_Cardset_Make.patch,
+  -files/nodoc.patch, -files/nonet.patch, -files/portage-cxx.patch:
+  remove unused patches
+
+  Closes: https://github.com/gentoo/gentoo/pull/2919
+

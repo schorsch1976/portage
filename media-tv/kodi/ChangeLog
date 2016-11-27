@@ -284,3 +284,11 @@
   Gentoo-bug: 598058
   Closes: https://github.com/gentoo/gentoo/pull/2875
 
+*kodi-17.0_beta5 (26 Nov 2016)
+
+  26 Nov 2016; David Seifert <soap@gentoo.org> -kodi-17.0_beta4-r1.ebuild,
+  +kodi-17.0_beta5.ebuild:
+  bump to 17.0b5
+
+  Closes: https://github.com/gentoo/gentoo/pull/2903
+

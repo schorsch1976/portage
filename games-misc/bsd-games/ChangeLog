@@ -73,3 +73,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  26 Nov 2016; David Seifert <soap@gentoo.org>
+  -files/bsd-games-2.17-64bit.patch, -files/bsd-games-2.17-gcc43.patch,
+  -files/bsd-games-2.17-glibc2.10.patch:
+  remove unused patches
+
+  Closes: https://github.com/gentoo/gentoo/pull/2919
+

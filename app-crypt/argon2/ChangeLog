@@ -1,0 +1,17 @@
+# ChangeLog for app-crypt/argon2
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*argon2-20160821 (25 Nov 2016)
+
+  25 Nov 2016; Patrice Clement <monsieurp@gentoo.org> +argon2-20160821.ebuild,
+  +files/argon2-20160821-makefile-install-target.patch,
+  +files/argon2-20160821-makefile-soname-symlinks.patch, +metadata.xml:
+  new ebuild.
+
+  Argon2 is a password hashing tool and library that won the Password Hashing
+  Competition (https://password-hashing.net/).
+
+  Gentoo-Bug: https://bugs.gentoo.org/597062
+  Closes: https://github.com/gentoo/gentoo/pull/2561
+
