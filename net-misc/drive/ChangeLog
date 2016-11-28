@@ -41,3 +41,8 @@
 
   Package-Manager: portage-2.3.2
 
+  27 Nov 2016; Zac Medico <zmedico@gentoo.org> drive-0.3.8.1.ebuild:
+  add dev-lang/go dependency, bug 601020
+
+  Package-Manager: portage-2.3.2
+

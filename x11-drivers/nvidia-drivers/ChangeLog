@@ -868,3 +868,18 @@
 
   Package-Manager: portage-2.3.2
 
+*nvidia-drivers-375.20-r1 (27 Nov 2016)
+
+  27 Nov 2016; Jeroen Roovers <jer@gentoo.org> -nvidia-drivers-375.20.ebuild,
+  +nvidia-drivers-375.20-r1.ebuild:
+  Raise kernel, xorg-server dependencies.
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Jeroen Roovers <jer@gentoo.org>
+  -files/nvidia-drivers-375.10-profiles-rc.patch,
+  -nvidia-drivers-375.10.ebuild, -nvidia-drivers-375.10-r1.ebuild:
+  Old.
+
+  Package-Manager: portage-2.3.2
+

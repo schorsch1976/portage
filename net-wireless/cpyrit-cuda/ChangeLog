@@ -81,3 +81,21 @@
 
   Package-Manager: portage-2.2.28
 
+*cpyrit-cuda-0.5.0 (27 Nov 2016)
+
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> +cpyrit-cuda-0.5.0.ebuild:
+  bump to 0.5.0
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org>
+  -cpyrit-cuda-0.4.0-r1.ebuild:
+  remove old #544092
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> cpyrit-cuda-0.5.0.ebuild:
+  die in pretend if gcc > 4.8
+
+  Package-Manager: portage-2.3.0
+

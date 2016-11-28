@@ -107,3 +107,8 @@
 
   Package-Manager: portage-2.3.1
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> bedtools-2.26.0.ebuild:
+  This needs slot 0 of samtools (#597982)
+
+  Package-Manager: portage-2.3.2
+

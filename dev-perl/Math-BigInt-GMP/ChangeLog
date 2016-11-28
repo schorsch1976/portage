@@ -117,3 +117,20 @@
 
   Package-Manager: portage-2.3.2
 
+*Math-BigInt-GMP-1.600.100 (27 Nov 2016)
+
+  27 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  +Math-BigInt-GMP-1.600.100.ebuild:
+  Bump to version 1.600.100 (masked)
+
+  Upstream:
+  - Synced tests with Math::BigInt 1.999.801
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Kent Fredric <kentnl@gentoo.org>
+  -Math-BigInt-GMP-1.600.0.ebuild:
+  remove old masked version
+
+  Package-Manager: portage-2.3.2
+

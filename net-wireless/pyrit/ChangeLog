@@ -73,3 +73,20 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> pyrit-0.4.0-r1.ebuild:
+  migrate away from google code #544092
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> pyrit-0.4.0-r1.ebuild:
+  fix the license
+
+  Package-Manager: portage-2.3.0
+
+*pyrit-0.5.0 (27 Nov 2016)
+
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> +pyrit-0.5.0.ebuild:
+  bump to 0.5.0
+
+  Package-Manager: portage-2.3.0
+

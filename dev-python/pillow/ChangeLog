@@ -303,3 +303,17 @@
 
   Gentoo-Bug: 599610
 
+  27 Nov 2016; Agostino Sarubbo <ago@gentoo.org> pillow-3.4.2.ebuild:
+  arm stable wrt bug #599610
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="arm"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  27 Nov 2016; Agostino Sarubbo <ago@gentoo.org> pillow-3.4.2.ebuild:
+  ppc stable wrt bug #599610
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ppc"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

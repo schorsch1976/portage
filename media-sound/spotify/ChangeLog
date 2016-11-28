@@ -411,3 +411,11 @@
 
   Package-Manager: portage-2.3.0
 
+*spotify-1.0.43 (27 Nov 2016)
+
+  27 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +spotify-1.0.43.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+

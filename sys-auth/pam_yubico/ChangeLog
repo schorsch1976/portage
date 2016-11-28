@@ -74,3 +74,16 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*pam_yubico-2.24 (26 Nov 2016)
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +pam_yubico-2.24.ebuild:
+  Bump to version 2.24
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -files/2.11-drop_privs.patch, -pam_yubico-2.19-r1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

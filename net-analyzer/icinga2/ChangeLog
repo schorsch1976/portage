@@ -426,3 +426,9 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  icinga2-2.5.4-r1.ebuild, icinga2-9999.ebuild:
+  fixing build issue with wxwidgets bug 600644
+
+  Package-Manager: portage-2.3.0
+

@@ -53,3 +53,11 @@
 
   Package-Manager: portage-2.3.2
 
+*grafana-bin-4.0_beta2 (27 Nov 2016)
+
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  +grafana-bin-4.0_beta2.ebuild:
+  Add 4.0_beta2
+
+  Package-Manager: portage-2.3.2
+

@@ -260,3 +260,8 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  -files/timezone-data-2016c-makefile.patch, -timezone-data-2016e.ebuild,
+  -timezone-data-2016f.ebuild, -timezone-data-2016g.ebuild:
+  drop old <2016h versions
+

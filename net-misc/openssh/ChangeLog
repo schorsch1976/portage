@@ -679,3 +679,34 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --ignore-arches
 
+  27 Nov 2016; Agostino Sarubbo <ago@gentoo.org> openssh-7.3_p1-r7.ebuild:
+  arm stable wrt bug #597360
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="arm"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  27 Nov 2016; Agostino Sarubbo <ago@gentoo.org> openssh-7.3_p1-r7.ebuild:
+  ppc stable wrt bug #597360
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ppc"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+*openssh-7.3_p1-r8 (27 Nov 2016)
+
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  files/openssh-7.3-mips-seccomp-n32.patch,
+  files/openssh-7.3_p1-Unregister-the-KEXINIT-handler-after-receive.patch,
+  files/openssh-7.3_p1-fix-ssh1-with-no-ssh1-host-key.patch,
+  +files/openssh-7.3_p1-hpn-12-x509-9.2-glue.patch, +openssh-7.3_p1-r8.ebuild:
+  clean up patches a bit
+
+  Add documentation to the new patches to track their provenance.
+
+  Clean up the hpn patchset to resync it with upstream and drop the
+  extended server logging patch again.
+
+  Change how we apply the mips ABI patch to use the right USE flags
+  rather than keying off a subset of CHOSTs.
+

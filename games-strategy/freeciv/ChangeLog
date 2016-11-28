@@ -161,3 +161,16 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*freeciv-2.5.6 (26 Nov 2016)
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +freeciv-2.5.6.ebuild:
+  Bump to version 2.5.6
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> freeciv-2.5.5.ebuild,
+  freeciv-2.5.6.ebuild:
+  Removed forgotten calls to games eclass functions.
+
+  Package-Manager: portage-2.3.2
+

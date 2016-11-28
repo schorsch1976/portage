@@ -73,3 +73,8 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> yasis-icon-theme-0.4.2.ebuild:
+  Use adwaita instead of dead gnome-icon-theme
+
+  Package-Manager: portage-2.3.2
+

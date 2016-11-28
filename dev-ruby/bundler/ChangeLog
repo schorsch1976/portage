@@ -180,3 +180,15 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Hans de Graaff <graaff@gentoo.org> bundler-1.8.9.ebuild:
+  drop ia64, sparc stable keywords, bug 576632
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Hans de Graaff <graaff@gentoo.org> bundler-1.8.9.ebuild:
+  Revert "dev-ruby/bundler: drop ia64, sparc stable keywords, bug 576632"
+
+  This reverts commit 06d0c889cf763ce28887454a32114e0629ae4dd4.
+
+  Revert until we can drop all keywords for ia64 and sparc
+

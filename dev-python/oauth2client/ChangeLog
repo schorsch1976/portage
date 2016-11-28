@@ -164,3 +164,10 @@
   oauth2client-2.1.0.ebuild, oauth2client-2.2.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  26 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  -oauth2client-1.4.6.ebuild, -oauth2client-1.4.11.ebuild,
+  -oauth2client-1.4.12.ebuild, -oauth2client-1.5.1.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+

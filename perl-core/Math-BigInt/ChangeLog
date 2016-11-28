@@ -101,3 +101,25 @@
 
   Package-Manager: portage-2.3.2
 
+*Math-BigInt-1.999.801 (27 Nov 2016)
+
+  27 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Math-BigInt-1.999.801.ebuild:
+  Bump to version 1.999.801 (masked)
+
+  Upstream:
+  - All mathematical methods except ->blog() no longer accept `undef` as
+  operands.
+  - Add _lcm function to Math::BigInt::Lib
+  - Remove internal __lcm()
+  - BigInt and BigFloat can now use bgcd() and blcm() as class-methods.
+  - Prefer getting config values via `->config('name')` instead of
+  `->config()->{name}`
+  - Lock tests to their target libraries
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Kent Fredric <kentnl@gentoo.org> -Math-BigInt-1.999.800.ebuild:
+  Remove old masked version
+
+  Package-Manager: portage-2.3.2
+

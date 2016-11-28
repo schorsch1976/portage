@@ -87,3 +87,8 @@
 
   Package-Manager: portage-2.3.2
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> -genius-1.0.19.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

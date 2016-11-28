@@ -66,3 +66,13 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  27 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  -files/gnome-do-0.8.3.1-gtk-2.22.patch,
+  -files/gnome-do-0.8.3.1-mono-2.8.patch,
+  -files/gnome-do-0.8.4-mono-2.8.patch, -files/gnome-do-0.8.5-glib-2.32.patch:
+  remove unused patches.
+
+  Closes: https://github.com/gentoo/gentoo/pull/2929
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

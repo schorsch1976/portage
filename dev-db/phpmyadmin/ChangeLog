@@ -550,3 +550,32 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+*phpmyadmin-4.6.5.1 (27 Nov 2016)
+*phpmyadmin-4.4.15.9 (27 Nov 2016)
+*phpmyadmin-4.0.10.18 (27 Nov 2016)
+
+  27 Nov 2016; Jorge Manuel B. S. Vicetto (jmbsvicetto)
+  <jmbsvicetto@gentoo.org> +phpmyadmin-4.0.10.18.ebuild,
+  +phpmyadmin-4.4.15.9.ebuild, +phpmyadmin-4.6.5.1.ebuild:
+  dev-db/phpmyadmin: Security bump - bug 600814
+  4.6.5.1, 4.4.15.9 and 4.0.10.18 releases version bump (PMASA-2016-[58-71]).
+  THe 4.6.5.1 release is a minor release fixing some regressions introduced on
+  4.6.5.
+  The 4.4.10.18 is expected to be the last 4.4 branch release as it stopped
+  being security supported on October 1st.
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Jorge Manuel B. S. Vicetto (jmbsvicetto)
+  <jmbsvicetto@gentoo.org> -phpmyadmin-4.0.10.15.ebuild,
+  -phpmyadmin-4.0.10.17.ebuild, -phpmyadmin-4.6.4.ebuild:
+  Drop vulnerable versions, but keep the last stable versions.
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  phpmyadmin-4.6.5.1.ebuild:
+  4.6.5.1-r0: stable on alpha
+
+  Gentoo-Bug: 600814
+

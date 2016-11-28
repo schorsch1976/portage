@@ -72,3 +72,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*jackson-module-jaxb-annotations-2.8.5 (26 Nov 2016)
+
+  26 Nov 2016; James Le Cuirot <chewi@gentoo.org>
+  +jackson-module-jaxb-annotations-2.8.5.ebuild:
+  Version bump to 2.8.5
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; James Le Cuirot <chewi@gentoo.org>
+  -jackson-module-jaxb-annotations-2.5.1.ebuild,
+  -jackson-module-jaxb-annotations-2.5.2.ebuild:
+  Remove old 2.5.{1,2}
+
+  Package-Manager: portage-2.3.2
+

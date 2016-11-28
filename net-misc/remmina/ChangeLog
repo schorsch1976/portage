@@ -218,3 +218,9 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> remmina-9999.ebuild:
+  Use virtual/freedesktop-icon-theme instead of dead gnome-icon-theme as the
+  other versions
+
+  Package-Manager: portage-2.3.2
+

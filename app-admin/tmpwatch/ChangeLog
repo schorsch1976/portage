@@ -72,3 +72,18 @@
 
   Package-Manager: portage-2.2.28
 
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org> tmpwatch-2.11-r2.ebuild:
+  2.11-r2: stable on alpha
+
+  Gentoo-Bug: 600900
+
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> tmpwatch-2.11-r2.ebuild:
+  amd64/x86 stable, bug #600900
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> -tmpwatch-2.11-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

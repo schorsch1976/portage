@@ -157,3 +157,9 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  27 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -icaclient-13.3.0.344519-r1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

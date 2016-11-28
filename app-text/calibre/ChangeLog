@@ -238,3 +238,19 @@
 
   Package-Manager: portage-2.3.2
 
+*calibre-2.73.0 (26 Nov 2016)
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +calibre-2.73.0.ebuild:
+  Bump to version 2.73.0
+
+  Disabled build/installation of uninstaller (/usr/bin/calibre-uninstaller).
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -calibre-2.35.0-r2.ebuild, -calibre-2.47.0.ebuild, -calibre-2.55.0.ebuild,
+  -calibre-2.68.0.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

@@ -112,3 +112,9 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Justin Lecher <jlec@gentoo.org>
 
+  27 Nov 2016; Justin Lecher <jlec@gentoo.org> files/tig-2.2.1-tinfo.patch:
+  Backport upstream patch
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

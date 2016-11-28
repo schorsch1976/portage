@@ -152,3 +152,8 @@
   15 Jun 2016; Mike Frysinger <vapier@gentoo.org> portage-utils-0.62.ebuild:
   mark 0.62 arm64/ia64/m68k/ppc/s390/sh/sparc stable
 
+*portage-utils-0.64 (27 Nov 2016)
+
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org> +portage-utils-0.64.ebuild:
+  version bump to 0.64
+

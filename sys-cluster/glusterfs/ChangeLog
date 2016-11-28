@@ -154,3 +154,10 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*glusterfs-3.8.6 (27 Nov 2016)
+
+  27 Nov 2016; Ultrabug <ultrabug@gentoo.org> +glusterfs-3.8.6.ebuild:
+  version bump, fix #560750 #582732 #592174 #589058
+
+  Package-Manager: portage-2.3.2
+

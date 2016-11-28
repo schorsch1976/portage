@@ -69,3 +69,15 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  27 Nov 2016; Ulrich Müller <ulm@gentoo.org> -po-mode-0.18.3.2.ebuild:
+  Remove old.
+
+  Package-Manager: portage-2.3.2
+
+*po-mode-0.19.8.1 (27 Nov 2016)
+
+  27 Nov 2016; Ulrich Müller <ulm@gentoo.org> +po-mode-0.19.8.1.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.2
+

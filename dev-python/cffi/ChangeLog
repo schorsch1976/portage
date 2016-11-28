@@ -404,3 +404,15 @@
   cffi-1.5.2.ebuild, cffi-1.6.0.ebuild, cffi-1.7.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*cffi-1.9.1 (26 Nov 2016)
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +cffi-1.9.1.ebuild:
+  Bump to version 1.9.1
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -cffi-1.8.2.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

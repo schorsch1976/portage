@@ -116,3 +116,8 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Michael Palimaka <kensington@gentoo.org> krusader-2.5.0.ebuild:
+  stabilise 2.5.0 for amd64/x86
+
+  Package-Manager: portage-2.3.2
+

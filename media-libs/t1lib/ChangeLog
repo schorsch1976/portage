@@ -65,3 +65,32 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*t1lib-5.1.2-r1 (27 Nov 2016)
+
+  27 Nov 2016; Aaron Bauman <bman@gentoo.org>
+  +files/t1lib-5.1.2-CVE-2010-2642_2011-0433_2011-5244.patch,
+  +files/t1lib-5.1.2-CVE-2011-0764.patch,
+  +files/t1lib-5.1.2-CVE-2011-1552_1553_1554.patch,
+  +files/t1lib-5.1.2-format-security.patch,
+  +files/t1lib-do-not-install-t1lib_doc-r1.patch, +t1lib-5.1.2-r1.ebuild:
+  Security revbump to fix multiple vulnerabilities (bug #358667)
+
+  EBuild changes:
+  ===============
+   - Migrated to EAPI=6
+
+   - Fix for CVE-2010-2642, CVE-2011-0433 and CVE-2011-5244 added
+
+   - Fix for CVE-2011-0764 added
+
+   - Fix for CVE-2011-1552, CVE-2011-1553 and CVE-2011-1554 added
+
+   - Fixes for building with -Werror=format-security added
+
+  Gentoo-Bug: https://bugs.gentoo.org/358667
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2906
+
+  Signed-off-by: Aaron Bauman <bman@gentoo.org>
+

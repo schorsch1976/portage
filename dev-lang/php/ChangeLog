@@ -2030,3 +2030,17 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --ignore-arches
 
+  27 Nov 2016; Agostino Sarubbo <ago@gentoo.org> php-5.6.28.ebuild:
+  arm stable wrt bug #599326
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="arm"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  27 Nov 2016; Agostino Sarubbo <ago@gentoo.org> php-5.6.28.ebuild:
+  ppc stable wrt bug #599326
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ppc"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

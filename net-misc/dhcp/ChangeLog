@@ -239,3 +239,8 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org> dhcp-4.3.5.ebuild:
+  4.3.5-r0: stable on alpha
+
+  Gentoo-Bug: 576866
+

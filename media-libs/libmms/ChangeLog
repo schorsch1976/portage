@@ -116,3 +116,7 @@
   libmms-0.6.2-r1.ebuild, libmms-0.6.4.ebuild:
   sourceforge: switch to https:// URIs
 
+  27 Nov 2016; Aaron Bauman <bman@gentoo.org> -libmms-0.6.2.ebuild,
+  -libmms-0.6.2-r1.ebuild:
+  clean vulnerable versions wrt security bug #507822
+

@@ -89,3 +89,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*netqmail-1.06-r5 (27 Nov 2016)
+
+  27 Nov 2016; Robin H. Johnson <robbat2@gentoo.org>
+  +files/qmail-smtputf8.patch, +netqmail-1.06-r5.ebuild:
+  Add SMTPUTF8 support for qmail
+
+  SMTPUTF8 (RFCs 6531 and 6532, plus several that aren't relevant to qmail)
+  allows using unencoded UTF8 almost everywhere in email, including in
+  localparts, domains, subjects and message bodies.
+
+  Thanks to cnnic.cn for sponsoring this work.
+
+  (cherry picked from commit 5116b83a9bf93f59fb7b7d3fcd286f7b2c4da438)
+  Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
+

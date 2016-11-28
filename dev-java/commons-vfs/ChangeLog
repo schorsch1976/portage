@@ -71,3 +71,19 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*commons-vfs-1.0-r1 (27 Nov 2016)
+
+  27 Nov 2016; James Le Cuirot <chewi@gentoo.org> +commons-vfs-1.0-r1.ebuild:
+  EAPI 6, fixes bug #600964
+
+  r0 used EAPI 0 and therefore lacked SLOT dependencies. Rewritten with
+  java-pkg-simple and fixed the SRC_URI.
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; James Le Cuirot <chewi@gentoo.org> -commons-vfs-1.0.ebuild,
+  -files/1.0-noget.patch:
+  Remove broken 1.0-r0
+
+  Package-Manager: portage-2.3.2
+

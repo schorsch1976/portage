@@ -234,3 +234,20 @@
 
   Package-Manager: portage-2.3.2
 
+*jasper-2.0.0 (27 Nov 2016)
+
+  27 Nov 2016; David Seifert <soap@gentoo.org>
+  +files/jasper-2.0.0-fix-build-system.patch, +jasper-2.0.0.ebuild:
+  Version bump to 2.0.0
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; David Seifert <soap@gentoo.org>
+  files/jasper-2.0.0-fix-build-system.patch:
+  use set() instead of option() in CMakeLists.txt
+
+  * option() should only be used for boolean arguments
+    https://cmake.org/cmake/help/latest/command/option.html?highlight=option
+
+  Package-Manager: portage-2.3.2
+

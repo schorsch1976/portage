@@ -97,3 +97,10 @@
 
   Package-Manager: portage-2.2.26
 
+  27 Nov 2016; Hans de Graaff <graaff@gentoo.org>
+  -capistrano-2.15.5-r1.ebuild, capistrano-2.15.5-r2.ebuild:
+  mark ruby21 revision stable; drop stable ppc, ppc64, x86 keywords for bug
+  589432
+
+  Package-Manager: portage-2.3.0
+

@@ -79,3 +79,13 @@
 
   Package-Manager: portage-2.3.2
 
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org> liboauth-1.0.3.ebuild:
+  1.0.3-r0: stable on alpha
+
+  Gentoo-Bug: 600858
+
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> liboauth-1.0.3.ebuild:
+  amd64/x86 stable, bug #600858
+
+  Package-Manager: portage-2.3.2
+

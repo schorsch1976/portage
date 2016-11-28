@@ -101,3 +101,15 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*PAR-1.12.0 (26 Nov 2016)
+
+  26 Nov 2016; Kent Fredric <kentnl@gentoo.org> +PAR-1.12.0.ebuild:
+  Bump to version 1.12.0
+
+  Upstream:
+  - Guard against conccurrent extraction to "inc"
+  - Fix for build/test without "." in @INC
+  - Suppress "uninitialised" warning in "do file"
+
+  Package-Manager: portage-2.3.2
+

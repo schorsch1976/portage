@@ -169,3 +169,8 @@
   16 Apr 2016; Mike Frysinger <vapier@gentoo.org> coreutils-8.25.ebuild:
   fix building w/glibc-2.23 #580014
 
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org> coreutils-8.25.ebuild:
+  8.25-r0: stable on alpha
+
+  Gentoo-Bug: 596850
+

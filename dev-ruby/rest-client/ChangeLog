@@ -112,3 +112,13 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Hans de Graaff <graaff@gentoo.org> rest-client-1.8.0-r1.ebuild:
+  mark ruby21 revision stable
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Hans de Graaff <graaff@gentoo.org> -rest-client-1.8.0.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+

@@ -110,3 +110,9 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  27 Nov 2016; David Seifert <soap@gentoo.org> libextractor-1.3-r1.ebuild:
+  fix compilation with USE=tidy
+
+  Gentoo-Bug: https://bugs.gentoo.org/600470
+  Closes: https://github.com/gentoo/gentoo/pull/2923
+

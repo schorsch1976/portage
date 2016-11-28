@@ -71,3 +71,8 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> tango-icon-theme-0.8.90.ebuild:
+  Use adwaita instead of dead gnome-icon-theme
+
+  Package-Manager: portage-2.3.2
+

@@ -301,3 +301,15 @@
 
   Package-Manager: portage-2.3.0
 
+*facter-9999 (27 Nov 2016)
+
+  27 Nov 2016; Matthew Thode <prometheanfire@gentoo.org> +facter-9999.ebuild:
+  adding 9999 version
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Hans de Graaff <graaff@gentoo.org> -facter-2.4.1.ebuild:
+  cleanup; drop stable ppc, sparc keywords for bug 575610
+
+  Package-Manager: portage-2.3.0
+

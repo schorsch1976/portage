@@ -162,3 +162,9 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org>
+  lightdm-gtk-greeter-2.0.2.ebuild:
+  Use adwaita as gnome-icon-theme will be removed as soon as possible
+
+  Package-Manager: portage-2.3.2
+

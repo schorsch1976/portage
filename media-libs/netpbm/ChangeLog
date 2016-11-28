@@ -99,3 +99,20 @@
 
   Gentoo-Bug: 599940
 
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org> netpbm-10.70.00.ebuild,
+  netpbm-10.76.00.ebuild:
+  fix test failures when USE=-jpeg #599940#1
+
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  files/netpbm-10.76.00-test.patch, netpbm-10.76.00.ebuild:
+  rework how we skip tests of disabled tools
+
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/netpbm-10.76.00-misc-deps.patch, files/netpbm-10.76.00-test.patch,
+  netpbm-10.76.00.ebuild:
+  handle more test failures when USE flags are disabled #600998
+
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/netpbm-10.76.00-pbmtext-test.patch, netpbm-10.76.00.ebuild:
+  fix pbmtext test failure in some locales #601012
+

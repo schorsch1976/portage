@@ -89,3 +89,33 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  27 Nov 2016; Akinori Hattori <hattya@gentoo.org>
+  +files/gauche-0.9-ext-ldflags.patch, +files/gauche-0.9-gauche.m4.patch,
+  +files/gauche-0.9-rfc.tls.patch, +files/gauche-0.9-rpath.patch,
+  +files/gauche-0.9-xz-info.patch, -files/gauche-0.9.3.3-gauche.threads.diff,
+  +files/gauche-0.9.3.3-gauche.threads.patch, -files/gauche-ext-ldflags.diff,
+  -files/gauche-gauche.m4.diff, -files/gauche-rfc.tls.diff,
+  -files/gauche-rpath.diff, -files/gauche-xz-info.diff, gauche-0.9.3.3.ebuild,
+  gauche-0.9.4-r1.ebuild:
+  rename patches
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Akinori Hattori <hattya@gentoo.org> gauche-0.9.3.3.ebuild,
+  gauche-0.9.4-r1.ebuild:
+  update to EAPI 6
+
+  Package-Manager: portage-2.3.0
+
+*gauche-0.9.5 (27 Nov 2016)
+
+  27 Nov 2016; Akinori Hattori <hattya@gentoo.org>
+  +files/gauche-0.9.5-bsd.patch, +files/gauche-0.9.5-libressl.patch,
+  +files/gauche-0.9.5-main.patch, +files/gauche-0.9.5-unicode.patch,
+  +files/gauche-ext-ldflags.patch, +files/gauche-gauche.m4.patch,
+  +files/gauche-rfc.tls.patch, +files/gauche-rpath.patch,
+  +files/gauche-xz-info.patch, +gauche-0.9.5.ebuild:
+  new upstream release
+
+  Package-Manager: portage-2.3.0
+

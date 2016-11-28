@@ -100,3 +100,8 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org> tcl-8.6.6.ebuild:
+  8.6.6-r0: stable on alpha
+
+  Gentoo-Bug: 586300
+

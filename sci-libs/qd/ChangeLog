@@ -98,3 +98,11 @@
 
   Package-Manager: portage-2.3.2
 
+  27 Nov 2016; Andrey Grozin <grozin@gentoo.org>
+  files/qd-2.3.17-fix-build-system.patch:
+  fixing somebody's typo in qd-2.3.17-fix-build-system.patch
+
+  Bug: 600784
+
+  Package-Manager: portage-2.3.0
+

@@ -218,3 +218,11 @@
   14 Nov 2016; Mike Frysinger <vapier@gentoo.org> gmp-6.1.0.ebuild:
   mark 6.1.0 arm64/ia64/m68k/ppc/s390/sh/sparc/x86 stable
 
+  26 Nov 2016; Mike Frysinger <vapier@gentoo.org> +files/gmp-6.1.0-udiv.patch,
+  gmp-6.1.0.ebuild, gmp-6.1.1.ebuild:
+  add upstream fix for USE=-asm builds
+
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/gmp-6.1.0-tune-printf.patch, gmp-6.1.0.ebuild, gmp-6.1.1.ebuild:
+  fix USE=pgo builds for some systems #568320
+

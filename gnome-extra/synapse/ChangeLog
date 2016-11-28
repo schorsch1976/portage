@@ -140,3 +140,8 @@
 
   Package-Manager: portage-2.3.1
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> synapse-0.2.99.2.ebuild:
+  Use adwaita instead of dead gnome-icon-theme
+
+  Package-Manager: portage-2.3.2
+

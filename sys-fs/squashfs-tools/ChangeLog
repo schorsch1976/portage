@@ -109,3 +109,7 @@
   squashfs-tools-4.3-r2.ebuild, squashfs-tools-9999.ebuild:
   add USE=static support
 
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  squashfs-tools-4.3-r2.ebuild, squashfs-tools-9999.ebuild:
+  add USE=debug support for internal tool tracing
+

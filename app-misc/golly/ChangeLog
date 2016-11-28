@@ -75,3 +75,13 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> golly-2.7-r1.ebuild:
+  amd64/x86 stable, bug #583998
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> -golly-2.4-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

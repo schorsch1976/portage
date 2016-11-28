@@ -80,3 +80,19 @@
   particular bug assignment/CC to ensure that the requested assignee
   always goes first, in order to match the bug wrangling policies.
 
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> lastfmlib-0.4.0.ebuild,
+  metadata.xml:
+  migrate away from google code #544092
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> lastfmlib-0.4.0.ebuild:
+  fix the license
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> metadata.xml:
+  simplify metadata
+
+  Package-Manager: portage-2.3.0
+

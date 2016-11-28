@@ -82,3 +82,8 @@
 
   Package-Manager: portage-2.3.2
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> -gnome-subtitles-1.2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

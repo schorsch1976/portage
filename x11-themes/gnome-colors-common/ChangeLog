@@ -89,3 +89,9 @@
 
   Package-Manager: portage-2.2.28
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org>
+  gnome-colors-common-5.5.1.ebuild:
+  Use adwaita instead of dead gnome-icon-theme
+
+  Package-Manager: portage-2.3.2
+

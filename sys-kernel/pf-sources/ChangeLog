@@ -187,3 +187,22 @@
 
   Package-Manager: portage-2.3.0
 
+*pf-sources-4.8_p8 (26 Nov 2016)
+
+  26 Nov 2016; Markos Chandras <hwoarang@gentoo.org>
+  -pf-sources-2.6.31_p9.ebuild, -pf-sources-2.6.32_p16.ebuild,
+  -pf-sources-2.6.33_p4.ebuild, -pf-sources-2.6.34_p7.ebuild,
+  -pf-sources-2.6.35_p11.ebuild, -pf-sources-2.6.36_p6.ebuild,
+  -pf-sources-2.6.37_p6.ebuild, -pf-sources-2.6.38_p8.ebuild,
+  -pf-sources-2.6.39_p4.ebuild, +pf-sources-4.8_p8.ebuild:
+  Version bump. Remove 2.6* ebuilds
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=598786
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml:
+  unused USE flag descriptions
+
+  Package-Manager: portage-2.3.2_p8
+

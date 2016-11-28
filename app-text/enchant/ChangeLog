@@ -78,3 +78,9 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Justin Lecher <jlec@gentoo.org>
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> enchant-1.6.0.ebuild,
+  +files/enchant-1.6.0-hunspell150_fix.patch:
+  Fix hunspell 1.5 support (#600952 by Lars Wendler)
+
+  Package-Manager: portage-2.3.2
+

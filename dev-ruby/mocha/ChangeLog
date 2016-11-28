@@ -226,3 +226,8 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Hans de Graaff <graaff@gentoo.org> mocha-0.10.5-r2.ebuild:
+  mark ruby21 revision stable
+
+  Package-Manager: portage-2.3.0
+

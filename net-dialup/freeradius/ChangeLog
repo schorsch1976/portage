@@ -170,3 +170,35 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*freeradius-3.0.12-r1 (26 Nov 2016)
+
+  26 Nov 2016; Matt Turner <mattst88@gentoo.org> +freeradius-3.0.12-r1.ebuild:
+  Add 3.0.12-r1.
+
+  The following commits will fix a few bugs, so to make those changes more
+  obvious copy the ebuild separately.
+
+  26 Nov 2016; Matt Turner <mattst88@gentoo.org> freeradius-3.0.12-r1.ebuild:
+  Allow parallel make.
+
+  Bug: https://bugs.gentoo.org/509498
+
+  26 Nov 2016; Matt Turner <mattst88@gentoo.org> +files/radius.conf-r4,
+  freeradius-3.0.12-r1.ebuild:
+  Run service as radius user by default.
+
+  Bug: https://bugs.gentoo.org/465768
+
+  26 Nov 2016; Matt Turner <mattst88@gentoo.org> +files/freeradius.service,
+  +files/freeradius.tmpfiles, freeradius-3.0.12-r1.ebuild:
+  Add systemd unit files.
+
+  Bug: https://bugs.gentoo.org/show_bug.cgi?id=543464
+
+  26 Nov 2016; Matt Turner <mattst88@gentoo.org> freeradius-3.0.12-r1.ebuild:
+  Add keywords to 3.0.12-r1.
+
+  26 Nov 2016; Matt Turner <mattst88@gentoo.org> -freeradius-3.0.11-r2.ebuild,
+  -freeradius-3.0.12.ebuild:
+  Drop old versions 3.0.11-r2 and 3.0.12.
+

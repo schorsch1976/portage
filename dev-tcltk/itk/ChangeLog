@@ -83,3 +83,8 @@
 
   Package-Manager: portage-2.2.28
 
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org> itk-4.0.1.ebuild:
+  4.0.1-r0: stable on alpha
+
+  Gentoo-Bug: 586300
+

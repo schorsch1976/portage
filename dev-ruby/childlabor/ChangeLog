@@ -74,3 +74,8 @@
 
   Gentoo-Bug: 592756
 
+  27 Nov 2016; Hans de Graaff <graaff@gentoo.org> childlabor-0.0.3-r1.ebuild:
+  add ruby23
+
+  Package-Manager: portage-2.3.0
+

@@ -102,3 +102,9 @@
   pyicq-t-0.8.1.5-r6.ebuild:
   Whitespace fixes
 
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  pyicq-t-0.8.1.5-r6.ebuild:
+  Fix wrong twisted dependency
+
+  Package-Manager: portage-2.3.2
+

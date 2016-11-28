@@ -103,3 +103,15 @@
 
   Package-Manager: portage-2.3.1
 
+*opus-1.2_alpha (26 Nov 2016)
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +opus-1.2_alpha.ebuild:
+  Bump to version 1.2_alpha
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -opus-1.1.2.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

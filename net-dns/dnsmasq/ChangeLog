@@ -225,3 +225,6 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org> dnsmasq-2.76.ebuild:
+  use correct pkg-config tool
+

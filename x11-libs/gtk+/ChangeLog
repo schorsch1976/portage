@@ -606,3 +606,9 @@
 
   Signed-off-by: Gilles Dartiguelongue <eva@gentoo.org>
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org> gtk+-2.24.31-r1.ebuild:
+  We are pulling adwaita-icon-theme already and we would like to deprecate the
+  obsolete gnome-icon-theme, use it then as first option by default then.
+
+  Package-Manager: portage-2.3.2
+

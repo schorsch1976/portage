@@ -89,3 +89,8 @@
   files/pyaim-t-0.8-initd-r1:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+  27 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org> pyaim-t-0.8.0.1-r1.ebuild:
+  migrate away from google code #544092
+
+  Package-Manager: portage-2.3.0
+

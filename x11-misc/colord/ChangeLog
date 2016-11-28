@@ -178,3 +178,15 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+*colord-1.3.4 (26 Nov 2016)
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +colord-1.3.4.ebuild:
+  Bump to version 1.3.4
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -colord-1.3.2.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

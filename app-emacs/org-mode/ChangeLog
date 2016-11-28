@@ -96,3 +96,22 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  27 Nov 2016; Ulrich Müller <ulm@gentoo.org> -org-mode-8.3.2.ebuild:
+  Remove old.
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Ulrich Müller <ulm@gentoo.org> org-mode-8.3.2-r1.ebuild:
+  Update to readme.gentoo-r1.eclass.
+
+  Package-Manager: portage-2.3.2
+
+*org-mode-9.0.1 (27 Nov 2016)
+
+  27 Nov 2016; Ulrich Müller <ulm@gentoo.org> +org-mode-9.0.1.ebuild:
+  Version bump.
+
+  Bug: 599262
+
+  Package-Manager: portage-2.3.2
+

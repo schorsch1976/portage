@@ -89,3 +89,31 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*a2ps-4.14-r5 (27 Nov 2016)
+
+  27 Nov 2016; Aaron Bauman <bman@gentoo.org> +a2ps-4.14-r5.ebuild,
+  +files/a2ps-4.14-CVE-2014-0466.patch:
+  Security revbump to fix CVE-2014-0466 (bug #506352)
+
+  Patch for CVE-2014-0466 taken from Debian [Link 1].
+
+  Link 1: https://sources.debian.net/src/a2ps/1:4.14-1.1%2Bdeb7u1/debian/patch
+  es/10_CVE-2014-0466.dpatch/
+  Gentoo-Bug: https://bugs.gentoo.org/506352
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2898
+
+  Signed-off-by: Aaron Bauman <bman@gentoo.org>
+
+  27 Nov 2016; Aaron Bauman <bman@gentoo.org> a2ps-4.14-r3.ebuild,
+  a2ps-4.14-r4.ebuild, a2ps-4.14-r5.ebuild:
+  Update HOMEPAGE
+
+  Gentoo-Bug: https://bugs.gentoo.org/600598
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2898
+
+  Signed-off-by: Aaron Bauman <bman@gentoo.org>
+

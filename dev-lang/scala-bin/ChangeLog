@@ -77,3 +77,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*scala-bin-2.11.8 (27 Nov 2016)
+
+  27 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  +scala-bin-2.11.8.ebuild:
+  version bump.
+
+  Package-Manager: portage-2.3.0
+

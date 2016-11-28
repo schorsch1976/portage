@@ -139,3 +139,6 @@
   -potrace-1.11.ebuild:
   drop vulnerable versions wrt security bug #545036
 
+  27 Nov 2016; Aaron Bauman <bman@gentoo.org> -potrace-1.12.ebuild:
+  cleanup vulnerable wrt sec bug #564874
+

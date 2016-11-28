@@ -80,3 +80,9 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; David Seifert <soap@gentoo.org> openjade-1.3.2-r6.ebuild:
+  fix build with clang and older gcc
+
+  Gentoo-Bug: https://bugs.gentoo.org/596506
+  Closes: https://github.com/gentoo/gentoo/pull/2921
+

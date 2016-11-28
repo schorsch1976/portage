@@ -203,3 +203,15 @@
   +files/udisks-1.0.5-sysmacros.patch, udisks-1.0.5-r1.ebuild:
   fix old SLOT=0 building w/newer glibc too #580230
 
+*udisks-2.1.8 (26 Nov 2016)
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +udisks-2.1.8.ebuild:
+  Bump to version 2.1.8
+
+  Package-Manager: portage-2.3.2
+
+  26 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -udisks-2.1.6.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

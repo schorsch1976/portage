@@ -78,3 +78,9 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Matthias Maier <tamiko@gentoo.org>
 
+  27 Nov 2016; Pacho Ramos <pacho@gentoo.org>
+  +files/libqalculate-0.9.9-readline.patch, libqalculate-0.9.9.ebuild:
+  Fix compilation with -readline USE (#590490 by Ryoto Yayame)
+
+  Package-Manager: portage-2.3.2
+

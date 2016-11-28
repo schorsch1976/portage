@@ -95,3 +95,7 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  27 Nov 2016; Aaron Bauman <bman@gentoo.org> -catdoc-0.94.4.ebuild,
+  -catdoc-0.94.4-r1.ebuild:
+  cleanup vulnerable wrt sec bug #571820
+

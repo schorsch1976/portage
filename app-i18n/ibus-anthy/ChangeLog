@@ -92,3 +92,22 @@
 
   Package-Manager: portage-2.3.1
 
+*ibus-anthy-1.5.9 (27 Nov 2016)
+
+  27 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  +ibus-anthy-1.5.9.ebuild:
+  version bump to 1.5.9.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2910
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+
+  27 Nov 2016; Patrice Clement <monsieurp@gentoo.org> metadata.xml:
+  remove googlecode reference.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2910
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

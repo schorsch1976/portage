@@ -122,3 +122,6 @@
   Signed-off-by: Sam Jorna <wraeth@gentoo.org>
   Closes: https://github.com/gentoo/gentoo/pull/1335
 
+  26 Nov 2016; Mike Frysinger <vapier@gentoo.org> protobuf-c-1.1.1.ebuild:
+  mark 1.1.1 amd64/arm/arm64/ppc/ppc64/x86 stable
+

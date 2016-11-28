@@ -10,3 +10,10 @@
 
   Package-Manager: portage-2.3.0
 
+  26 Nov 2016; Chema Alonso Josa <nimiux@gentoo.org> libdsk-1.4.2.ebuild:
+  Fixes doc installation
+
+  Fixes bug #600354
+
+  Package-Manager: portage-2.3.0
+
