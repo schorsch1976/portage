@@ -710,3 +710,17 @@
   Change how we apply the mips ABI patch to use the right USE flags
   rather than keying off a subset of CHOSTs.
 
+  28 Nov 2016; Agostino Sarubbo <ago@gentoo.org> openssh-7.3_p1-r7.ebuild:
+  sparc stable wrt bug #597360
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="sparc"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  28 Nov 2016; Agostino Sarubbo <ago@gentoo.org> openssh-7.3_p1-r7.ebuild:
+  ia64 stable wrt bug #597360
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ia64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

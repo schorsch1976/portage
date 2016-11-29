@@ -105,3 +105,18 @@
 
   Signed-off-by: Anthony G. Basile <blueness@gentoo.org>
 
+*plan9port-20140306-r3 (28 Nov 2016)
+
+  28 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  +plan9port-20140306-r3.ebuild:
+  switch SRC_URI to github
+
+  Package-Manager: portage-2.3.0
+
+  28 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  -plan9port-20140306.ebuild, -plan9port-20140306-r1.ebuild,
+  -plan9port-20140306-r2.ebuild:
+  remove older versions
+
+  Package-Manager: portage-2.3.0
+

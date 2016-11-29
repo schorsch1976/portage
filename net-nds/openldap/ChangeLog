@@ -195,3 +195,10 @@
 
   Gentoo-Bug: 560424
 
+  28 Nov 2016; Robin H. Johnson <robbat2@gentoo.org> openldap-2.4.42.ebuild,
+  openldap-2.4.42-r1.ebuild, openldap-2.4.43.ebuild,
+  openldap-2.4.43-r1.ebuild, openldap-2.4.44.ebuild:
+  bug #588792, ensure dev-db/lmdb matches or exceeds bundled lmdb.
+
+  Package-Manager: portage-2.3.2
+

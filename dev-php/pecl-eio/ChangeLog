@@ -78,3 +78,16 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-eio-2.0.1 (28 Nov 2016)
+
+  28 Nov 2016; Brian Evans <grknight@gentoo.org> +pecl-eio-2.0.1.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  28 Nov 2016; Brian Evans <grknight@gentoo.org> -pecl-eio-1.2.5-r1.ebuild,
+  -pecl-eio-2.0.0.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

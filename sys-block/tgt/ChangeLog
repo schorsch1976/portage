@@ -194,3 +194,13 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/tgt-1.0.69-sysmacros.patch, tgt-1.0.69.ebuild:
+  fix build w/newer glibc #580594
+
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org> -files/tgtd,
+  -files/tgtd-1.0.24.confd, -files/tgtd-1.0.24.initd, files/tgtd.initd:
+  fix bashisms in init.d script
+
+  Also drop old unused init.d scripts.
+

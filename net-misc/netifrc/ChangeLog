@@ -143,3 +143,18 @@
 
   Gentoo-Bug: 591826
 
+  27 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> netifrc-0.4.0-r1.ebuild,
+  netifrc-0.5.0.ebuild, netifrc-0.5.1.ebuild, netifrc-9999.ebuild:
+  Update RDEPEND
+
+   - Block on <sys-fs/udev-init-scripts-27 for smoother upgrade path
+     added. (bug #599096)
+
+   - Bumped requirement on sys-apps/openrc to >=sys-apps/openrc-0.15 which
+     is the first version providing the "#!/sbin/openrc-run" shebang we now
+     depend on.
+
+  Gentoo-Bug: https://bugs.gentoo.org/599096
+
+  Package-Manager: portage-2.3.2
+

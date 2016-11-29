@@ -80,3 +80,10 @@
 
   Package-Manager: portage-2.3.1
 
+*obfs4proxy-0.0.7 (28 Nov 2016)
+
+  28 Nov 2016; Marek Szuba <marecki@gentoo.org> +obfs4proxy-0.0.7.ebuild:
+  bump to 0.0.7
+
+  Package-Manager: portage-2.3.2
+

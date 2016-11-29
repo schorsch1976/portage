@@ -141,3 +141,32 @@
 
   Package-Manager: portage-2.3.2
 
+*links-2.13 (28 Nov 2016)
+
+  28 Nov 2016; Patrice Clement <monsieurp@gentoo.org> +links-2.13.ebuild:
+  version bump.
+
+  Package-Manager: portage-2.3.0
+
+*links-2.14 (28 Nov 2016)
+
+  28 Nov 2016; Patrice Clement <monsieurp@gentoo.org> +links-2.14.ebuild:
+  version bump.
+
+  Gentoo-Bug: https://bugs.gentoo.org/600940
+
+  Package-Manager: portage-2.3.0
+
+  28 Nov 2016; Patrice Clement <monsieurp@gentoo.org> -links-2.8-r1.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+
+  28 Nov 2016; Patrice Clement <monsieurp@gentoo.org> links-2.14.ebuild:
+  minor fixes.
+
+  * Sort USE flags in RDEPEND.
+  * Add missing dies in src_install() phase.
+
+  Package-Manager: portage-2.3.0
+

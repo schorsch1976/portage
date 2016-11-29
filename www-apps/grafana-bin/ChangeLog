@@ -61,3 +61,17 @@
 
   Package-Manager: portage-2.3.2
 
+  28 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  grafana-bin-4.0_beta2.ebuild:
+  Fix fat-fingered SRC_URI
+
+  Package-Manager: portage-2.3.2
+
+*grafana-bin-4.0.0_beta2 (28 Nov 2016)
+
+  28 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  -grafana-bin-4.0_beta2.ebuild, +grafana-bin-4.0.0_beta2.ebuild:
+  Fix wandering SRC checksum and version number
+
+  Package-Manager: portage-2.3.2
+

@@ -105,3 +105,27 @@
 
   Package-Manager: portage-2.3.2
 
+*beignet-1.2.1-r1 (28 Nov 2016)
+
+  28 Nov 2016; Marek Szuba <marecki@gentoo.org> +beignet-1.2.1-r1.ebuild,
+  +files/beignet-1.2.1-oclicd_optional_gentoo.patch, metadata.xml:
+  fix detection of OCL ICD and installation of ICD files
+
+  In the past, Beignet CMake scripts would automatically enable its
+  compatibility
+  with the OCL ICD Loader depending on whether dev-libs/ocl-icd was found in
+  the
+  system or not. Patch the scripts so that ocl-icd is only searched for if an
+  appropriate option is set, and define a local use flag which controls the
+  value
+  of this option (and of course the dependency on dev-libs/ocl-icd). Nb. the
+  patch has been submitted upstream.
+
+  Moreover, given we always install Beignet ICD files (they are needed by
+  eselect-opencl) do not install another copy when OCL ICD Loader has been
+  enabled.
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=599512
+
+  Package-Manager: portage-2.3.2
+

@@ -83,3 +83,8 @@
 
   Package-Manager: portage-2.2.28
 
+  28 Nov 2016; Brian Evans <grknight@gentoo.org> -httpd-php-5.5.ebuild:
+  Drop old, obsolete slot
+
+  Package-Manager: portage-2.3.2
+

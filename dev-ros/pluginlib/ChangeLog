@@ -85,3 +85,12 @@
 
   Package-Manager: portage-2.3.2
 
+*pluginlib-1.10.4-r1 (28 Nov 2016)
+
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org> +files/gentoo.patch,
+  -pluginlib-1.10.4.ebuild, +pluginlib-1.10.4-r1.ebuild,
+  pluginlib-9999.ebuild:
+  look for package.xml in ros_packages too for plugins.
+
+  Package-Manager: portage-2.3.2
+

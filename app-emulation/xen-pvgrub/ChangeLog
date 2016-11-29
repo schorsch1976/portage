@@ -225,3 +225,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  28 Nov 2016; Yixun Lan <dlan@gentoo.org> -xen-pvgrub-4.6.3.ebuild,
+  -xen-pvgrub-4.7.0.ebuild, -xen-pvgrub-4.7.0-r1.ebuild:
+  drop old
+
+  Package-Manager: portage-2.3.2
+

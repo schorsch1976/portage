@@ -129,3 +129,11 @@
   -files/lua-5.1-make_static.patch, -files/lua-5.2-make.patch:
   remove unused patches
 
+*lua-5.1.5-r4 (28 Nov 2016)
+
+  28 Nov 2016; Rafael Martins <rafaelmartins@gentoo.org>
+  +files/lua-5.1.5-fix_vararg_calls.patch, +lua-5.1.5-r4.ebuild:
+  fix for bug #520480
+
+  Package-Manager: portage-2.2.28
+

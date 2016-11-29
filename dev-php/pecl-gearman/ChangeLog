@@ -68,3 +68,23 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-gearman-1.0.2-r2 (28 Nov 2016)
+
+  28 Nov 2016; Brian Evans <grknight@gentoo.org>
+  +pecl-gearman-1.0.2-r2.ebuild:
+  Revbump to drop php 5.4 and 5.5 dependencies
+
+  There are newer versions on github, including for 7.0, but they require
+  newer sys-cluster/gearmand to install.
+
+  Please update this package or it may be dropped when php 5.6 becomes
+  obsolete.
+
+  Package-Manager: portage-2.3.2
+
+  28 Nov 2016; Brian Evans <grknight@gentoo.org>
+  -pecl-gearman-1.0.2-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

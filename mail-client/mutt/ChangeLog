@@ -400,3 +400,22 @@
 
   Package-Manager: portage-2.3.0
 
+*mutt-1.7.1-r5 (27 Nov 2016)
+
+  27 Nov 2016; Fabian Groffen <grobian@gentoo.org> -mutt-1.7.1-r4.ebuild,
+  +mutt-1.7.1-r5.ebuild:
+  revbump for latest patches including fix for bug #600600
+
+  Package-Manager: portage-2.3.0
+
+  27 Nov 2016; Fabian Groffen <grobian@gentoo.org> mutt-1.5.23-r7.ebuild,
+  mutt-1.5.24-r2.ebuild:
+  restrict gpgme to a compile-time compatible version, bug #600600
+
+  Package-Manager: portage-2.3.0
+
+  28 Nov 2016; Fabian Groffen <grobian@gentoo.org> mutt-1.7.1-r5.ebuild:
+  bump patchset to enable gpgme fix
+
+  Package-Manager: portage-2.3.0
+

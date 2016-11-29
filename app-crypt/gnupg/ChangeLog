@@ -574,3 +574,13 @@
 
   Package-Manager: portage-2.3.2
 
+  27 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> metadata.xml:
+  More verbose description of tools
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> metadata.xml:
+  Fix typo in previous commit
+
+  Package-Manager: portage-2.3.2
+

@@ -116,3 +116,8 @@
   mpi4py-2.0.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  28 Nov 2016; Christoph Junghans <junghans@gentoo.org> mpi4py-2.0.0.ebuild:
+  added ~arm (tested by me)
+
+  Package-Manager: portage-2.3.0
+

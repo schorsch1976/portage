@@ -84,3 +84,9 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org> +files/uutf.patch,
+  tyxml-4.0.0.ebuild:
+  fix build with uutf 1.0
+
+  Package-Manager: portage-2.3.2
+

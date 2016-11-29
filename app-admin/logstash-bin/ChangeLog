@@ -361,3 +361,10 @@
 
   Package-Manager: portage-2.3.2
 
+*logstash-bin-5.0.1 (28 Nov 2016)
+
+  28 Nov 2016; Patrick Lauer <patrick@gentoo.org> +logstash-bin-5.0.1.ebuild:
+  Bump
+
+  Package-Manager: portage-2.3.2
+

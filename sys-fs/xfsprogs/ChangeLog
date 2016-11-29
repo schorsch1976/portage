@@ -211,3 +211,15 @@
   -xfsprogs-3.1.11-r1.ebuild, -xfsprogs-4.2.0.ebuild, -xfsprogs-4.3.0.ebuild:
   drop some older versions
 
+*xfsprogs-4.8.0 (28 Nov 2016)
+
+  28 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +xfsprogs-4.8.0.ebuild:
+  Bump to version 4.8.0 (bug #601086).
+
+  Package-Manager: portage-2.3.2
+
+  28 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> xfsprogs-4.7.0.ebuild:
+  Re-added $Id$ header.
+
+  Package-Manager: portage-2.3.2
+

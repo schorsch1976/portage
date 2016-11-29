@@ -105,3 +105,11 @@
 
   Package-Manager: portage-2.2.28
 
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  libvncserver-0.9.10-r3.ebuild, libvncserver-0.9.10-r4.ebuild,
+  libvncserver-0.9.10_p20160127.ebuild:
+  require USE=threads for openssl builds #550916
+
+  The libvncclient/tls_openssl.c module hard requires pthread support
+  currently, so update the required USE list to reflect that.
+

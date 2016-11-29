@@ -107,3 +107,11 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-geoip-1.1.1-r2 (28 Nov 2016)
+
+  28 Nov 2016; Brian Evans <grknight@gentoo.org> -pecl-geoip-1.1.1-r1.ebuild,
+  +pecl-geoip-1.1.1-r2.ebuild:
+  Revbump to drop PHP 5.5 support
+
+  Package-Manager: portage-2.3.2
+

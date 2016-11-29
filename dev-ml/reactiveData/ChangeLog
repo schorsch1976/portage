@@ -90,3 +90,11 @@
 
   Package-Manager: portage-2.3.0
 
+*reactiveData-0.2.1 (28 Nov 2016)
+
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org>
+  +reactiveData-0.2.1.ebuild:
+  bump to 0.2.1
+
+  Package-Manager: portage-2.3.2
+

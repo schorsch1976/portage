@@ -65,3 +65,15 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  28 Nov 2016; Johannes Huber <johu@gentoo.org> +@:
+  kde-base/kstartupconfig -> kde-plasma/kstartupconfig
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org> -@:
+  Drop invalid file
+
+  Regression in commit 0978999c9e9f59141c39b037946556fcd2429754.
+
+  Thanks-to: robbat2
+
+  Package-Manager: portage-2.3.2
+

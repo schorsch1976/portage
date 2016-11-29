@@ -16,3 +16,31 @@
   26 Oct 2016; Tim Harder <radhermit@gentoo.org> +languagetool-3.5.ebuild:
   version bump to 3.5
 
+*languagetool-3.5-r1 (27 Nov 2016)
+
+  27 Nov 2016; James Le Cuirot <chewi@gentoo.org> +languagetool-3.5-r1.ebuild:
+  Bump guava SLOT, use Gentoo Java scripts
+
+  guava:20 is needed so that Java 7 can be dropped from Gentoo.
+
+  Using our Java scripts makes the ebuild cleaner, avoids symlinks, and
+  ensures that the correct JVM is chosen at runtime.
+
+  There are still many external libraries being bundled and we don't
+  have the time to package them all right now but I have bumped jackson
+  and friends to a newer version than is bundled here so that can be
+  used and I've also introduced commons-collections:4.
+
+  I noticed that jna:0 was used before, which is version 3, but it's
+  actually version 4 that's bundled so I've amended that dependency.
+
+  This was given the +1 by Radhermit.
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; James Le Cuirot <chewi@gentoo.org> -languagetool-3.4.ebuild,
+  -languagetool-3.5.ebuild:
+  Remove old 3.4 and 3.5
+
+  Package-Manager: portage-2.3.2
+

@@ -114,3 +114,7 @@
 
   Package-Manager: portage-2.3.2
 
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/xine-lib-1.2.6-sysmacros.patch, xine-lib-1.2.6-r1.ebuild:
+  fix build w/newer glibc #580012
+

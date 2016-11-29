@@ -76,3 +76,6 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  28 Nov 2016; Johannes Huber <johu@gentoo.org> homerun-1.2.5.ebuild:
+  kde-base/libkworkspace -> kde-plasma/libkworkspace
+

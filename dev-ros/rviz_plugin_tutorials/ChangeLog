@@ -56,3 +56,12 @@
 
   Package-Manager: portage-2.3.2
 
+*rviz_plugin_tutorials-0.10.1-r2 (28 Nov 2016)
+
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org> -files/install_loc.patch,
+  -rviz_plugin_tutorials-0.10.1-r1.ebuild,
+  +rviz_plugin_tutorials-0.10.1-r2.ebuild, rviz_plugin_tutorials-9999.ebuild:
+  drop install path patch now that rospack returns a correct one.
+
+  Package-Manager: portage-2.3.2
+

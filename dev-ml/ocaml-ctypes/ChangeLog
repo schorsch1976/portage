@@ -217,3 +217,11 @@
 
   Package-Manager: portage-2.3.2
 
+*ocaml-ctypes-0.11.1 (28 Nov 2016)
+
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org>
+  +ocaml-ctypes-0.11.1.ebuild:
+  bump to 0.11.1
+
+  Package-Manager: portage-2.3.2
+

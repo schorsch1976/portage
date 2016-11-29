@@ -82,3 +82,10 @@
   18 May 2016; Austin English <wizardedit@gentoo.org> files/init.d:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+  28 Nov 2016; Andreas K. Huettel <dilfridge@gentoo.org>
+  -files/zoneminder-1.24.2-db_upgrade_script_location.patch,
+  -zoneminder-1.27.0.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

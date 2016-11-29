@@ -27,3 +27,11 @@
 
   Package-Manager: portage-2.3.1
 
+*rosserial_tivac-0.7.5 (28 Nov 2016)
+
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org>
+  +rosserial_tivac-0.7.5.ebuild:
+  Bump to 0.7.5.
+
+  Package-Manager: portage-2.3.2
+

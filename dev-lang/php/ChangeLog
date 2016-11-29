@@ -2044,3 +2044,23 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  28 Nov 2016; Agostino Sarubbo <ago@gentoo.org> php-5.6.28.ebuild:
+  sparc stable wrt bug #599326
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="sparc"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  28 Nov 2016; Agostino Sarubbo <ago@gentoo.org> php-5.6.28.ebuild:
+  ia64 stable wrt bug #599326
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="ia64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  28 Nov 2016; Brian Evans <grknight@gentoo.org> -php-5.6.26.ebuild,
+  -php-5.6.27.ebuild:
+  Security cleanup wrt bug 599326
+
+  Package-Manager: portage-2.3.2
+

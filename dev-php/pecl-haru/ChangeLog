@@ -78,3 +78,15 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-haru-1.0.4-r2 (28 Nov 2016)
+
+  28 Nov 2016; Brian Evans <grknight@gentoo.org> +pecl-haru-1.0.4-r2.ebuild:
+  Revbump to drop php 5.5 dependencies
+
+  Package-Manager: portage-2.3.2
+
+  28 Nov 2016; Brian Evans <grknight@gentoo.org> -pecl-haru-1.0.4-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

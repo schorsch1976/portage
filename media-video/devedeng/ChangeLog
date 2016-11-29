@@ -53,3 +53,10 @@
 
   Package-Manager: portage-2.3.2
 
+*devedeng-4.8.5 (28 Nov 2016)
+
+  28 Nov 2016; Bernard Cafarelli <voyageur@gentoo.org> +devedeng-4.8.5.ebuild:
+  version bump to 4.8.5
+
+  Package-Manager: portage-2.3.2
+

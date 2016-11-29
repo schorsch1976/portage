@@ -154,3 +154,10 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*x11vnc-0.9.14-r1 (27 Nov 2016)
+
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/x11vnc-0.9.14-libvncserver-defines-1.patch,
+  +files/x11vnc-0.9.14-libvncserver-defines-2.patch, +x11vnc-0.9.14-r1.ebuild:
+  add upstream fixes for -unixpw handling #567612
+

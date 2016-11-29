@@ -71,3 +71,12 @@
   rospack-9999.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*rospack-2.3.1-r1 (28 Nov 2016)
+
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org> +files/gentoo.patch,
+  -rospack-2.3.1.ebuild, +rospack-2.3.1-r1.ebuild, rospack-9999.ebuild:
+  add custom patch to return proper package paths with our package.xml moved
+  to ros_packages.
+
+  Package-Manager: portage-2.3.2
+

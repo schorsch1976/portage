@@ -93,3 +93,6 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  27 Nov 2016; Aaron Bauman <bman@gentoo.org> -oath-toolkit-2.4.1.ebuild:
+  remove vulnerable wrt sec bug #600520
+

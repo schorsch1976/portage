@@ -72,3 +72,8 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  27 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> librdkafka-0.9.1.ebuild:
+  x86 stable, bug #591974
+
+  Package-Manager: portage-2.3.2
+

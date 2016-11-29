@@ -80,3 +80,8 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+  27 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> grok-0.9.2.ebuild:
+  amd64/x86 stable, bug #591972
+
+  Package-Manager: portage-2.3.2
+

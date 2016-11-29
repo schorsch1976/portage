@@ -147,3 +147,22 @@
 
   Package-Manager: portage-2.2.27
 
+*jython-2.7.0-r1 (27 Nov 2016)
+
+  27 Nov 2016; James Le Cuirot <chewi@gentoo.org>
+  files/jython-2.5.2-distutils_scripts_location.patch,
+  files/jython-2.5.2-respect_PYTHONPATH.patch,
+  files/jython-2.7.0-build.xml.patch, +jython-2.7.0-r1.ebuild:
+  Bump guava SLOT, drop readline, EAPI bump
+
+  guava:20 is needed so that Java 7 can be dropped from Gentoo.
+
+  Support for GNU Readline was dropped from Jython in an earlier version
+  so the flag and its associated code is of no use now.
+
+  There is no need to fix the CLASSPATH in src/shell/jython as this
+  script is not installed or used at all. I have verified this by
+  grepping the installed result and deleting the script before building.
+
+  Package-Manager: portage-2.3.2
+

@@ -347,3 +347,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  28 Nov 2016; Anthony G. Basile <blueness@gentoo.org> -tor-0.2.7.6.ebuild:
+  remove insecure version, bug #591008
+
+  Package-Manager: portage-2.3.0
+

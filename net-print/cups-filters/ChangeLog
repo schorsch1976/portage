@@ -521,3 +521,11 @@
 
   Signed-off-by: Andreas K. Hüttel <dilfridge@gentoo.org>
 
+*cups-filters-1.12.0 (28 Nov 2016)
+
+  28 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +cups-filters-1.12.0.ebuild:
+  Bump to version 1.12.0
+
+  Package-Manager: portage-2.3.2
+

@@ -66,3 +66,6 @@
   06 Nov 2016; Johannes Huber <johu@gentoo.org> smaragd-0.0.7.ebuild:
   kde-base/kwin -> kde-plasma/kwin
 
+  28 Nov 2016; Johannes Huber <johu@gentoo.org> smaragd-0.0.7.ebuild:
+  kde-base/libkworkspace -> kde-plasma/libkworkspace
+

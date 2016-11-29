@@ -268,3 +268,31 @@
   kdebase-startkde-4.11.22-r2.ebuild:
   kde-base/ksystraycmd -> kde-plasma/ksystraycmd
 
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  kdebase-startkde-4.11.22-r2.ebuild:
+  kde-base/kstartupconfig -> kde-plasma/kstartupconfig
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  kdebase-startkde-4.11.22-r2.ebuild:
+  kde-base/qguiplatformplugin_kde -> kde-plasma/qguiplatformplugin_kde
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  kdebase-startkde-4.11.22-r2.ebuild:
+  kde-base/ksplash -> kde-plasma/ksplash
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  kdebase-startkde-4.11.22-r2.ebuild:
+  kde-base/libkworkspace -> kde-plasma/libkworkspace
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  kdebase-startkde-4.11.22-r2.ebuild:
+  kde-base/libplasmagenericshell -> kde-plasma/libplasmagenericshell
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  kdebase-startkde-4.11.22-r2.ebuild:
+  kde-base/libplasmaclock -> kde-plasma/libplasmaclock
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  kdebase-startkde-4.11.22-r2.ebuild:
+  kde-base/libtaskmanager -> kde-plasma/libtaskmanager
+

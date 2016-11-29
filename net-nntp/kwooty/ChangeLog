@@ -79,3 +79,6 @@
   27 Jul 2016; Mike Frysinger <vapier@gentoo.org> metadata.xml:
   sourceforge: switch to https:// URIs
 
+  28 Nov 2016; Johannes Huber <johu@gentoo.org> kwooty-1.1.0.ebuild:
+  kde-base/libkworkspace -> kde-plasma/libkworkspace
+

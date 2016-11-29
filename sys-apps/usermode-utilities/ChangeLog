@@ -81,3 +81,8 @@
 
   Bug: 575810
 
+  27 Nov 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/usermode-utilities-20070815-headers.patch,
+  usermode-utilities-20070815-r3.ebuild:
+  fix build w/newer glibc #580816
+

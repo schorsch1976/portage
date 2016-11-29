@@ -316,3 +316,9 @@
 
   Package-Manager: portage-2.3.2
 
+  28 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  seamonkey-2.46_pre6.ebuild:
+  Added app-crypt/pinentry[qt5] as pinentry provider.
+
+  Package-Manager: portage-2.3.2
+

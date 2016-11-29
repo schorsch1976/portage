@@ -625,3 +625,10 @@
 
   Package-Manager: portage-2.3.2
 
+*jenkins-bin-2.33 (28 Nov 2016)
+
+  28 Nov 2016; Patrick Lauer <patrick@gentoo.org> +jenkins-bin-2.33.ebuild:
+  Bump
+
+  Package-Manager: portage-2.3.2
+

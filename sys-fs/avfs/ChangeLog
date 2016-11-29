@@ -69,3 +69,8 @@
   avfs-1.0.2.ebuild, avfs-1.0.3.ebuild:
   sourceforge: switch to https:// URIs
 
+*avfs-1.0.4 (27 Nov 2016)
+
+  27 Nov 2016; Tim Harder <radhermit@gentoo.org> +avfs-1.0.4.ebuild:
+  version bump to 1.0.4
+

@@ -62,3 +62,10 @@
 
   Package-Manager: portage-2.3.2
 
+*pyicu-1.9.5 (28 Nov 2016)
+
+  28 Nov 2016; Marek Szuba <marecki@gentoo.org> +pyicu-1.9.5.ebuild:
+  bump to 1.9.5
+
+  Package-Manager: portage-2.3.2
+

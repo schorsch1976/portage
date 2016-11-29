@@ -135,3 +135,19 @@
 
   Package-Manager: portage-2.3.2
 
+*hunspell-1.5.2 (27 Nov 2016)
+
+  27 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -hunspell-1.5.0.ebuild,
+  +hunspell-1.5.2.ebuild:
+  Bump to version 1.5.2. Removed old.
+
+  Package-Manager: portage-2.3.2
+
+*hunspell-1.5.3 (28 Nov 2016)
+
+  28 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -hunspell-1.5.2.ebuild,
+  +hunspell-1.5.3.ebuild:
+  Bump to version 1.5.3. Removed old.
+
+  Package-Manager: portage-2.3.2
+

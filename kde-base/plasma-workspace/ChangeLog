@@ -144,3 +144,19 @@
   plasma-workspace-4.11.22.ebuild:
   kde-base/kephal -> kde-plasma/kephal
 
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  plasma-workspace-4.11.22.ebuild:
+  kde-base/libkworkspace -> kde-plasma/libkworkspace
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  plasma-workspace-4.11.22.ebuild:
+  kde-base/libplasmagenericshell -> kde-plasma/libplasmagenericshell
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  plasma-workspace-4.11.22.ebuild:
+  kde-base/libplasmaclock -> kde-plasma/libplasmaclock
+
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  plasma-workspace-4.11.22.ebuild:
+  kde-base/libtaskmanager -> kde-plasma/libtaskmanager
+

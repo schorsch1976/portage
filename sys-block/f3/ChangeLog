@@ -22,3 +22,8 @@
 
   Package-Manager: portage-2.3.0
 
+  27 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> f3-6.0.ebuild:
+  amd64/x86 stable, bug #595460
+
+  Package-Manager: portage-2.3.2
+

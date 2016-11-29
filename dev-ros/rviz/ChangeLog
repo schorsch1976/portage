@@ -130,3 +130,18 @@
 
   Package-Manager: portage-2.3.2
 
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org> -rviz-1.12.1-r1.ebuild,
+  -rviz-1.12.3-r1.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+
+*rviz-1.12.4-r1 (28 Nov 2016)
+
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org> -files/install_loc.patch,
+  -files/urdfdom1-2.patch, -files/urdfdom1.patch, -rviz-1.12.4.ebuild,
+  +rviz-1.12.4-r1.ebuild:
+  stop patching now that rospack returns proper package path
+
+  Package-Manager: portage-2.3.2
+

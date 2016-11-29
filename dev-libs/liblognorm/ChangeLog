@@ -226,3 +226,8 @@
 
   Package-Manager: portage-2.3.2
 
+  27 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> liblognorm-2.0.1.ebuild:
+  amd64/x86 stable, bug #593808
+
+  Package-Manager: portage-2.3.2
+

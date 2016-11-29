@@ -71,3 +71,7 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  28 Nov 2016; Johannes Huber <johu@gentoo.org>
+  plasma-applet-daisy-0.0.4.26-r1.ebuild:
+  kde-base/libtaskmanager -> kde-plasma/libtaskmanager
+
