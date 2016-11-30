@@ -34,3 +34,10 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> easy-thumbnails-2.2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*easy-thumbnails-2.3 (29 Nov 2016)
+
+  29 Nov 2016; Slawomir Lis <slis@gentoo.org> +easy-thumbnails-2.3.ebuild:
+  version bump to 2.3
+
+  Package-Manager: portage-2.3.2
+

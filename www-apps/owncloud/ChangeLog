@@ -271,3 +271,23 @@
 
   Package-Manager: portage-2.3.1
 
+  29 Nov 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  -owncloud-8.0.13.ebuild, -owncloud-8.0.14.ebuild, -owncloud-8.0.15.ebuild,
+  -owncloud-8.1.9.ebuild, -owncloud-8.2.7.ebuild, -owncloud-9.0.4.ebuild,
+  -owncloud-9.1.0.ebuild:
+  drop old versions and unsupported 8.0 branch
+
+  Package-Manager: portage-2.3.2
+
+*owncloud-9.1.2 (29 Nov 2016)
+*owncloud-9.0.6 (29 Nov 2016)
+*owncloud-8.2.9 (29 Nov 2016)
+*owncloud-8.1.11 (29 Nov 2016)
+
+  29 Nov 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  +owncloud-8.1.11.ebuild, +owncloud-8.2.9.ebuild, +owncloud-9.0.6.ebuild,
+  +owncloud-9.1.2.ebuild:
+  version bumps, bug #600646
+
+  Package-Manager: portage-2.3.2
+

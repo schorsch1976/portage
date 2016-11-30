@@ -67,3 +67,20 @@
 
   Bug: 575810
 
+*python-dsv-1.4.1-r2 (29 Nov 2016)
+
+  29 Nov 2016; Pacho Ramos <pacho@gentoo.org>
+  +files/python-dsv-1.4.1-env.patch, +files/python-dsv-1.4.1-unicode.patch,
+  +files/python-dsv-1.4.1-wx-namespace.patch,
+  +files/python-dsv-1.4.1-wxpython30.patch,
+  files/python-dsv-1.4.1-wxversion.patch, +python-dsv-1.4.1-r2.ebuild:
+  Apply Debian patches also fixing wxpython3 compat (#601178)
+
+  Package-Manager: portage-2.3.2
+
+  29 Nov 2016; Pacho Ramos <pacho@gentoo.org>
+  -files/python-dsv-1.4.1-wxversion.patch, -python-dsv-1.4.1-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

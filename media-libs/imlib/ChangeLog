@@ -106,3 +106,9 @@
 
   Package-Manager: portage-2.3.2
 
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> imlib-1.9.15-r5.ebuild:
+  arm stable, bug #597250
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

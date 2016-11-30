@@ -77,3 +77,7 @@
 
   Package-Manager: portage-2.2.27
 
+  29 Nov 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  -files/price-1.0.0-PRCustTraceEdges_include.patch:
+  remove unused patch
+

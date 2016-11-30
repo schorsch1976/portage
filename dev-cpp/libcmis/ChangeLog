@@ -113,3 +113,25 @@
 
   Package-Manager: portage-2.2.28
 
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org>
+  libcmis-0.5.2_pre20160820.ebuild:
+  amd64 stable wrt bug #600038
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org>
+  libcmis-0.5.2_pre20160820.ebuild:
+  x86 stable wrt bug #600038
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  29 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  -libcmis-0.5.0-r1.ebuild, -libcmis-0.5.1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

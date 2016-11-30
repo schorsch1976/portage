@@ -13,3 +13,12 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*chump-1.5.2 (29 Nov 2016)
+
+  29 Nov 2016; David Seifert <soap@gentoo.org> +chump-1.5.2.ebuild,
+  metadata.xml:
+  bump to 1.5.2, add doc
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2946
+

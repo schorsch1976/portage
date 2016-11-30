@@ -146,3 +146,8 @@
 
   Package-Manager: portage-2.3.2
 
+  29 Nov 2016; Pacho Ramos <pacho@gentoo.org> openscenegraph-3.4.0.ebuild:
+  amd64/x86 stable, bug #584004
+
+  Package-Manager: portage-2.3.2
+

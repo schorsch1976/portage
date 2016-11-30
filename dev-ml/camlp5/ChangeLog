@@ -120,3 +120,10 @@
   Package-Manager: portage-2.2.28
   Signed-off-by: Alexis Ballier <aballier@gentoo.org>
 
+*camlp5-6.17 (29 Nov 2016)
+
+  29 Nov 2016; Alexis Ballier <aballier@gentoo.org> +camlp5-6.17.ebuild:
+  bump to 6.17
+
+  Package-Manager: portage-2.3.2
+

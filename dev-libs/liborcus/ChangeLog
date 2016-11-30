@@ -164,3 +164,24 @@
 
   Package-Manager: portage-2.3.0
 
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org> liborcus-0.11.2.ebuild:
+  amd64 stable wrt bug #600038
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org> liborcus-0.11.2.ebuild:
+  x86 stable wrt bug #600038
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  29 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  -liborcus-0.7.1.ebuild, -liborcus-0.7.1-r1.ebuild,
+  -liborcus-0.9.2-r1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

@@ -128,3 +128,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> DirectFB-1.7.6.ebuild:
+  arm stable, bug #510472
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

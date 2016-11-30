@@ -19,3 +19,15 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*backports-unittest-mock-1.2.1 (29 Nov 2016)
+
+  29 Nov 2016; David Seifert <soap@gentoo.org>
+  +backports-unittest-mock-1.2.1.ebuild, metadata.xml:
+  bump to 1.2.1, add doc
+
+  build_sphinx isn't supported as per
+  jaraco/backports.unittest_mock@6c0f14a40d7b49b7f5114690191b95485bbd729b
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2948
+

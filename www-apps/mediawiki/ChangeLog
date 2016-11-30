@@ -132,3 +132,17 @@
 
   Package-Manager: portage-2.3.0
 
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org> mediawiki-1.27.1.ebuild:
+  amd64 stable wrt bug #600190
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org> mediawiki-1.27.1.ebuild:
+  x86 stable wrt bug #600190
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

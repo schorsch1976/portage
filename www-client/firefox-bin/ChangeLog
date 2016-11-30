@@ -405,3 +405,9 @@
 
   Package-Manager: portage-2.3.0
 
+*firefox-bin-50.0.1 (29 Nov 2016)
+
+  29 Nov 2016; Jory A. Pratt <anarchy@gentoo.org> -firefox-bin-50.0.ebuild,
+  +firefox-bin-50.0.1.ebuild:
+  www-client/firefox : 50.0.1 security bump, bug #601142
+

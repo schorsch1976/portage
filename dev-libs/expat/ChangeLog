@@ -261,3 +261,9 @@
 
   Gentoo-Bug: 585510
 
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> expat-2.2.0-r1.ebuild:
+  arm stable, bug #585510
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

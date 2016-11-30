@@ -52,3 +52,18 @@
 
   Package-Manager: portage-2.3.0
 
+  29 Nov 2016; Alexis Ballier <aballier@gentoo.org>
+  -ignition-math-2.2.2.ebuild, -ignition-math-2.3.0.ebuild,
+  -ignition-math-2.4.0.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+
+*ignition-math-2.6.0 (29 Nov 2016)
+
+  29 Nov 2016; Alexis Ballier <aballier@gentoo.org>
+  +ignition-math-2.6.0.ebuild:
+  bump to 2.6.0
+
+  Package-Manager: portage-2.3.2
+

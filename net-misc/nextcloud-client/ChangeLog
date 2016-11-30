@@ -33,3 +33,15 @@
 
   Package-Manager: portage-2.3.2
 
+*nextcloud-client-2.2.4-r2 (29 Nov 2016)
+
+  29 Nov 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/nextcloud-client-2.2.4-dolphin.patch,
+  +nextcloud-client-2.2.4-r2.ebuild:
+  desktop fixes
+
+  Fix dolphin integration, thanks Felix Tiede in bug #600116
+  Fix menu icon, bug #601150
+
+  Package-Manager: portage-2.3.2
+

@@ -331,3 +331,9 @@
 
   Gentoo-Bug: 598950
 
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> libarchive-3.2.2.ebuild:
+  arm stable, bug #598950
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

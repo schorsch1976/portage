@@ -91,3 +91,17 @@
 
   Package-Manager: portage-2.2.28
 
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org> c-ares-1.12.0.ebuild:
+  amd64 stable wrt bug #595536
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org> c-ares-1.12.0.ebuild:
+  x86 stable wrt bug #595536
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

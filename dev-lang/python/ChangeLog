@@ -728,3 +728,9 @@
 
   Gentoo-Bug: 585946
 
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> python-3.4.5.ebuild:
+  arm stable, bug #585946
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

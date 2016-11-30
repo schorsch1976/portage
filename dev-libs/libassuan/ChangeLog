@@ -174,3 +174,8 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="arm"
 
+  28 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> libassuan-2.4.3.ebuild:
+  x86 stable, bug #590652
+
+  Package-Manager: portage-2.3.2
+

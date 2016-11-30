@@ -166,3 +166,9 @@
 
   Package-Manager: portage-2.3.2
 
+  29 Nov 2016; Alexis Ballier <aballier@gentoo.org> -files/boost162.patch,
+  -files/tinyxml2.patch, -gazebo-7.2.0.ebuild, -gazebo-7.3.1.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+

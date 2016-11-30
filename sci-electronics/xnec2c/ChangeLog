@@ -115,3 +115,10 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*xnec2c-3.5.1 (29 Nov 2016)
+
+  29 Nov 2016; Thomas Beierlein <tomjbe@gentoo.org> +xnec2c-3.5.1.ebuild:
+  Minor maintenance release
+
+  Package-Manager: portage-2.3.2
+

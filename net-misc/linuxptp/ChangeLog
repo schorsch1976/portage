@@ -71,3 +71,10 @@
 
   Package-Manager: portage-2.3.0
 
+*linuxptp-1.8 (29 Nov 2016)
+
+  29 Nov 2016; Thomas Beierlein <tomjbe@gentoo.org> +linuxptp-1.8.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+

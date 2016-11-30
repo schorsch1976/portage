@@ -74,3 +74,15 @@
 
   Bug: 575810
 
+*nts-82-r1 (29 Nov 2016)
+
+  29 Nov 2016; Pacho Ramos <pacho@gentoo.org> +nts-82-r1.ebuild:
+  Make it work with wxpython3 (#601196)
+
+  Package-Manager: portage-2.3.2
+
+  29 Nov 2016; Pacho Ramos <pacho@gentoo.org> -nts-82.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

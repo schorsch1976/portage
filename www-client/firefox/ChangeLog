@@ -1069,3 +1069,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*firefox-50.0.1 (29 Nov 2016)
+
+  29 Nov 2016; Jory A. Pratt <anarchy@gentoo.org> -firefox-50.0.ebuild,
+  +firefox-50.0.1.ebuild:
+  50.0.1 security bump, bug #601142
+

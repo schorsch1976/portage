@@ -282,3 +282,15 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*dbus-1.10.14 (29 Nov 2016)
+
+  29 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +dbus-1.10.14.ebuild:
+  Bump to version 1.10.14
+
+  Package-Manager: portage-2.3.2
+
+  29 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -dbus-1.10.10.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

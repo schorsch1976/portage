@@ -23,3 +23,10 @@
 
   Package-Manager: portage-2.3.2_p3
 
+*uncompyle6-2.9.6 (29 Nov 2016)
+
+  29 Nov 2016; Brian Dolbec <dolsen@gentoo.org> +uncompyle6-2.9.6.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+

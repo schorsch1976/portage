@@ -63,3 +63,17 @@
   kfoldersync-3.3.0.ebuild:
   fix LICENSE
 
+*kfoldersync-3.3.1 (29 Nov 2016)
+
+  29 Nov 2016; Johannes Huber <johu@gentoo.org> +kfoldersync-3.3.1.ebuild:
+  version bump
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+
+  29 Nov 2016; Johannes Huber <johu@gentoo.org> -kfoldersync-3.3.0.ebuild:
+  remove old version
+
+  closes #2947
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+

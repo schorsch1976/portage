@@ -161,3 +161,10 @@
   -files/bash-completion.pc, -files/bash-completion.sh-gentoo-1.2:
   Prune old
 
+*bash-completion-2.4-r1 (29 Nov 2016)
+
+  29 Nov 2016; Michał Górny <mgorny@gentoo.org>
+  +bash-completion-2.4-r1.ebuild,
+  +files/bash-completion-2.1-escape-characters-r1.patch:
+  Fix unquoted ~ in readline patch, #601194
+

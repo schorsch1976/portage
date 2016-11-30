@@ -161,3 +161,21 @@
 
   Package-Manager: portage-2.2.28
 
+*tinc-1.1_pre14-r3 (29 Nov 2016)
+*tinc-1.0.30 (29 Nov 2016)
+
+  29 Nov 2016; Yixun Lan <dlan@gentoo.org> +tinc-1.0.30.ebuild,
+  +tinc-1.1_pre14-r3.ebuild:
+  version bump
+
+  bump 1.0.30, also update 1.1 upstream patch set
+
+  Package-Manager: portage-2.3.2
+
+  29 Nov 2016; Yixun Lan <dlan@gentoo.org> -files/tinc-1.1_pre14-upnp.patch,
+  -tinc-1.0.28.ebuild, -tinc-1.1_pre14.ebuild, -tinc-1.1_pre14-r1.ebuild,
+  -tinc-1.1_pre14-r2.ebuild:
+  drop old
+
+  Package-Manager: portage-2.3.2
+

@@ -378,3 +378,19 @@
 
   Gentoo-Bug: 600430
 
+  28 Nov 2016; Thomas Deutschmann <whissi@gentoo.org>
+  +files/ntp-4.2.8_p9-fix-build-wo-ssl-or-libressl.patch, ntp-4.2.8_p9.ebuild:
+  Fix building w/ SSL or against libressl
+
+  Acked-by: Lars Wendler <polynomial-c@gentoo.org>
+  Gentoo-Bug: https://bugs.gentoo.org/600454
+  Gentoo-Bug: https://bugs.gentoo.org/600668
+
+  Package-Manager: portage-2.3.2
+
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> ntp-4.2.8_p9.ebuild:
+  arm stable, bug #600430
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

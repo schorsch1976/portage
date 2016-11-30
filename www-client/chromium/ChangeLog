@@ -1970,3 +1970,11 @@
 
   Package-Manager: portage-2.3.2_p8
 
+*chromium-56.0.2924.3 (29 Nov 2016)
+
+  29 Nov 2016; Mike Gilbert <floppym@gentoo.org> -chromium-56.0.2914.3.ebuild,
+  +chromium-56.0.2924.3.ebuild:
+  dev channel bump (56.0.2924.3)
+
+  Package-Manager: portage-2.3.2_p11
+

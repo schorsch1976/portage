@@ -11,3 +11,10 @@
   Package-Manager: portage-2.2.27
   Signed-off-by: Alexis Ballier <aballier@gentoo.org>
 
+*uuidm-0.9.6 (29 Nov 2016)
+
+  29 Nov 2016; Alexis Ballier <aballier@gentoo.org> +uuidm-0.9.6.ebuild:
+  bump to 0.9.6
+
+  Package-Manager: portage-2.3.2
+

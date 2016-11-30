@@ -123,3 +123,30 @@
 
   Package-Manager: portage-2.3.2
 
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org> libmwaw-0.3.8.ebuild:
+  amd64 stable wrt bug #600038
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  29 Nov 2016; Agostino Sarubbo <ago@gentoo.org> libmwaw-0.3.8.ebuild:
+  x86 stable wrt bug #600038
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  29 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org> -libmwaw-0.3.6.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+
+*libmwaw-0.3.9 (29 Nov 2016)
+
+  29 Nov 2016; Andreas K. Hüttel <dilfridge@gentoo.org> +libmwaw-0.3.9.ebuild,
+  libmwaw-9999.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+

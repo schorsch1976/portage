@@ -37,3 +37,14 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+*libopenshot-audio-0.1.2-r1 (29 Nov 2016)
+
+  29 Nov 2016; David Seifert <soap@gentoo.org>
+  -libopenshot-audio-0.1.2.ebuild, +libopenshot-audio-0.1.2-r1.ebuild:
+  fix dependencies
+
+  Gentoo-Bug: 594664
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2944
+

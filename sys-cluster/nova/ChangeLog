@@ -613,3 +613,22 @@
 
   Package-Manager: portage-2.3.0
 
+  29 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +files/nova-compute.conf, files/nova.initd, nova-2016.1.9999.ebuild,
+  nova-2016.2.9999.ebuild:
+  switch to cdrtools for bug 591784
+
+  Package-Manager: portage-2.3.0
+
+  29 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  files/nova-compute.conf, files/nova.initd:
+  make init posix again, and a comment to a conf file
+
+  Package-Manager: portage-2.3.0
+
+  29 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  nova-2016.1.9999.ebuild, nova-2016.2.9999.ebuild:
+  fixing python_install methods
+
+  Package-Manager: portage-2.3.0
+

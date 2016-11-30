@@ -44,3 +44,8 @@
 
   Package-Manager: portage-2.2.28
 
+  29 Nov 2016; Pacho Ramos <pacho@gentoo.org> laszip-2.2.0.ebuild:
+  amd64/x86 stable, bug #598844
+
+  Package-Manager: portage-2.3.2
+

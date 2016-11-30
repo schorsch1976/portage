@@ -166,3 +166,9 @@
 
   Package-Manager: portage-2.3.0
 
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> httplib2-0.9.2-r2.ebuild:
+  arm stable, bug #468252
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

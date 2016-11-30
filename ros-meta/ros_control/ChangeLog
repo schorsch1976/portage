@@ -79,3 +79,11 @@
 
   Package-Manager: portage-2.3.0
 
+*ros_control-0.11.2 (29 Nov 2016)
+
+  29 Nov 2016; Alexis Ballier <aballier@gentoo.org>
+  +ros_control-0.11.2.ebuild:
+  Bump to 0.11.2.
+
+  Package-Manager: portage-2.3.2
+

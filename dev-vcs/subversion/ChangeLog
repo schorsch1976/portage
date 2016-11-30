@@ -382,3 +382,14 @@
 
   Closes: https://github.com/gentoo/gentoo/pull/2840
 
+*subversion-1.9.5 (29 Nov 2016)
+*subversion-1.8.17 (29 Nov 2016)
+
+  29 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +subversion-1.8.17.ebuild, +subversion-1.9.5.ebuild:
+  Sec bump to versions 1.8.17 and 1.9.5 (bug #600468).
+
+  CVE-2016-8734
+
+  Package-Manager: portage-2.3.2
+

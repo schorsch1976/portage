@@ -209,3 +209,8 @@
 
   Package-Manager: portage-2.3.2
 
+  29 Nov 2016; Alexis Ballier <aballier@gentoo.org> ocaml-4.04.0.ebuild:
+  restore keywords on 4.04
+
+  Package-Manager: portage-2.3.2
+

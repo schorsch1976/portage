@@ -146,3 +146,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> giflib-5.1.4.ebuild:
+  arm stable, bug #569652
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

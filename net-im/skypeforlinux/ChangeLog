@@ -106,3 +106,12 @@
   * Use EPREFIX instead of EROOT (Reported-by: Soap)
   Closes: https://github.com/gentoo/gentoo/pull/2865
 
+*skypeforlinux-1.13.0.3 (29 Nov 2016)
+
+  29 Nov 2016; David Seifert <soap@gentoo.org> -skypeforlinux-1.12.0.4.ebuild,
+  +skypeforlinux-1.13.0.3.ebuild:
+  Version bump to 1.13.0.3
+
+  Gentoo-bug: 601114
+  Closes: https://github.com/gentoo/gentoo/pull/2949
+

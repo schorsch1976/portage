@@ -94,3 +94,9 @@
 
   Package-Manager: portage-2.3.0
 
+  29 Nov 2016; Thomas Deutschmann <whissi@gentoo.org>
+  monkeysphere-0.37.ebuild:
+  x86 stable
+
+  Package-Manager: portage-2.3.2
+

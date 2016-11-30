@@ -89,3 +89,8 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  29 Nov 2016; Alexis Ballier <aballier@gentoo.org> texlive-2015.ebuild:
+  bump cjk-latex dep, bug #599966
+
+  Package-Manager: portage-2.3.2
+

@@ -112,3 +112,9 @@
 
   Gentoo-Bug: 589136
 
+  29 Nov 2016; Markus Meier <maekke@gentoo.org> libupnp-1.6.20.ebuild:
+  arm stable, bug #589136
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

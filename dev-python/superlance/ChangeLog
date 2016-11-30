@@ -34,3 +34,18 @@
 
   Package-Manager: portage-2.3.0
 
+*superlance-1.0.0 (29 Nov 2016)
+
+  29 Nov 2016; David Seifert <soap@gentoo.org> metadata.xml,
+  +superlance-1.0.0.ebuild:
+  bump to 1.0.0
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2942
+
+  29 Nov 2016; David Seifert <soap@gentoo.org> -superlance-0.13.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2942
+
