@@ -529,3 +529,15 @@
 
   Gentoo-Bug: 599668
 
+*cmake-3.7.0-r1 (30 Nov 2016)
+
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> -cmake-3.7.0.ebuild,
+  +cmake-3.7.0-r1.ebuild, files/cmake-2.8.10.2-FindPythonLibs.patch,
+  files/cmake-3.1.0-FindPythonInterp.patch, files/cmake-3.5.2-FindQt4.patch:
+  Support indicating Gentoo build via CMAKE_GENTOO_BUILD
+
+  Support indicating Gentoo package build using a new CMAKE_GENTOO_BUILD
+  CMake variable, as an alternative to relying on CMAKE_BUILD_TYPE being
+  equal to Gentoo. This makes it possible to reduce reliance on a custom
+  build type in the future.
+

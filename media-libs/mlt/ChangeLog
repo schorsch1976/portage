@@ -241,3 +241,13 @@
 
   Package-Manager: portage-2.3.0
 
+*mlt-6.4.1 (30 Nov 2016)
+
+  30 Nov 2016; Michael Palimaka <kensington@gentoo.org> metadata.xml,
+  +mlt-6.4.1.ebuild:
+  version bump to 6.4.1
+
+  Gentoo-bug: 601202
+
+  Package-Manager: portage-2.3.2
+

@@ -109,3 +109,10 @@
   flask-9999.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*flask-0.11.1-r1 (30 Nov 2016)
+
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org>
+  +files/flask-0.11.1-pypy3.patch, -flask-0.11.1.ebuild,
+  +flask-0.11.1-r1.ebuild:
+  Backport PyPy3 fix, #601298
+

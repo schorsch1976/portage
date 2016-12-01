@@ -91,3 +91,6 @@
   -bleach-1.4.2.ebuild:
   remove old
 
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> bleach-1.5.0.ebuild:
+  Enable pypy3
+

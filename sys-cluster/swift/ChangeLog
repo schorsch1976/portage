@@ -250,3 +250,11 @@
 
   Package-Manager: portage-2.3.0
 
+*swift-2.10.0-r1 (30 Nov 2016)
+
+  30 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +swift-2.10.0-r1.ebuild:
+  switch to python_install_all
+
+  Package-Manager: portage-2.3.0
+

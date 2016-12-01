@@ -288,3 +288,9 @@
 
   Gentoo-Bug: 598836
 
+  30 Nov 2016; Markus Meier <maekke@gentoo.org> memcached-1.4.33.ebuild:
+  arm stable, bug #598836
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

@@ -361,3 +361,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  30 Nov 2016; Markus Meier <maekke@gentoo.org> bind-tools-9.10.4_p4.ebuild:
+  arm stable, bug #598750
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

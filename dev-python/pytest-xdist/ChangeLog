@@ -107,3 +107,9 @@
 
   Package-Manager: portage-2.3.0
 
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> pytest-xdist-1.15.0.ebuild:
+  Enable pypy3
+
+  Test results for pypy3 only a little worse than for python3*. This thing
+  really needs a proper upstream fix.
+

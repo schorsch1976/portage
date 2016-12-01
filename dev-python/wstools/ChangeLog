@@ -68,3 +68,12 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*wstools-0.4.4 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +wstools-0.4.4.ebuild:
+  Bump to version 0.4.4
+
+  Dropped most KEYWORDS because of new dependencies.
+
+  Package-Manager: portage-2.3.2
+

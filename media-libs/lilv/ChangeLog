@@ -86,3 +86,10 @@
   lilv-0.20.0.ebuild, lilv-0.22.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*lilv-0.24.0 (30 Nov 2016)
+
+  30 Nov 2016; Alexis Ballier <aballier@gentoo.org> +lilv-0.24.0.ebuild:
+  bump to 0.24.0
+
+  Package-Manager: portage-2.3.2
+

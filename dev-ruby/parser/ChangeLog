@@ -172,3 +172,16 @@
 
   Package-Manager: portage-2.3.0
 
+  30 Nov 2016; Hans de Graaff <graaff@gentoo.org> -parser-2.3.1.2.ebuild,
+  -parser-2.3.1.3.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+
+*parser-2.3.3.0 (30 Nov 2016)
+
+  30 Nov 2016; Hans de Graaff <graaff@gentoo.org> +parser-2.3.3.0.ebuild:
+  add 2.3.3.0
+
+  Package-Manager: portage-2.3.0
+

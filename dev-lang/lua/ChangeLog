@@ -137,3 +137,9 @@
 
   Package-Manager: portage-2.2.28
 
+  30 Nov 2016; Markus Meier <maekke@gentoo.org> lua-5.1.5-r4.ebuild:
+  arm stable, bug #520480
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

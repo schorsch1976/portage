@@ -95,3 +95,12 @@
   redshift-1.11.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*redshift-1.11-r1 (30 Nov 2016)
+
+  30 Nov 2016; Sebastian Pipping <sping@gentoo.org> +redshift-1.11-r1.ebuild:
+  Python 3.5, REQUIRED_USE (bug #601234)
+
+  Thanks to Ben Kohler!
+
+  Package-Manager: portage-2.3.2
+

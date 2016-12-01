@@ -268,3 +268,17 @@
 
   Package-Manager: portage-2.3.0
 
+*sqlalchemy-1.1.4 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +sqlalchemy-1.1.4.ebuild:
+  Bump to version 1.1.4
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -sqlalchemy-1.0.12.ebuild, -sqlalchemy-1.1.2.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

@@ -2497,3 +2497,32 @@
 
   Package-Manager: portage-2.3.2
 
+*gentoo-sources-4.1.36 (30 Nov 2016)
+
+  30 Nov 2016; Mike Pagano <mpagano@gentoo.org> +gentoo-sources-4.1.36.ebuild:
+  Linux patch 4.1.36. Update gentoo kconfig patch for
+  GENTOO_LINUX_INIT_SYSTEMD. See bug #598623
+
+  Package-Manager: portage-2.3.0
+
+*gentoo-sources-3.12.68 (30 Nov 2016)
+
+  30 Nov 2016; Alice Ferrazzi <alicef@gentoo.org>
+  +gentoo-sources-3.12.68.ebuild:
+  Linux patch 3.12.68
+
+  Update gentoo kconfig patch adding CHECKPOINT_RESTORE for
+  GENTOO_LINUX_INIT_SYSTEMD.
+  See bug #598623. (Mike Pagano)
+
+  Package-Manager: portage-2.3.2
+
+*gentoo-sources-3.18.45 (30 Nov 2016)
+
+  30 Nov 2016; Mike Pagano <mpagano@gentoo.org>
+  +gentoo-sources-3.18.45.ebuild:
+  Linux 3.18.45.  Update gentoo kconfig patch adding CHECKPOINT_RESTORE for
+  GENTOO_LINUX_INIT_SYSTEMD. See bug #598623.
+
+  Package-Manager: portage-2.3.0
+

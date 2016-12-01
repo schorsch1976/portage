@@ -146,3 +146,8 @@
   10 Nov 2016; Tim Harder <radhermit@gentoo.org> +apsw-3.15.0_p1.ebuild:
   version bump to 3.15.0_p1
 
+*apsw-3.15.1_p1 (30 Nov 2016)
+
+  30 Nov 2016; Tim Harder <radhermit@gentoo.org> +apsw-3.15.1_p1.ebuild:
+  version bump to 3.15.1_p1
+

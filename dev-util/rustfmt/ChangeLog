@@ -1,0 +1,12 @@
+# ChangeLog for dev-util/rustfmt
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*rustfmt-0.5.0 (30 Nov 2016)
+
+  30 Nov 2016; Doug Goldstein <cardoe@gentoo.org> +metadata.xml,
+  +rustfmt-0.5.0.ebuild:
+  rustfmt: initial version
+
+  This is an initial version of rustfmt.
+

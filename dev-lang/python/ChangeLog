@@ -734,3 +734,10 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  30 Nov 2016; Mike Gilbert <floppym@gentoo.org> python-2.7.12.ebuild:
+  restore eselect python set --python2 call
+
+  This broke Funtoo stage building since it relies on the python2 symlink.
+
+  Package-Manager: portage-2.3.2_p11
+

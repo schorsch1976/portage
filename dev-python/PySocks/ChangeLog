@@ -38,3 +38,6 @@
   PySocks-1.5.7.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> PySocks-1.5.7.ebuild:
+  Enable pypy3
+

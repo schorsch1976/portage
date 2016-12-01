@@ -124,3 +124,8 @@
 
   Package-Manager: portage-2.3.0
 
+  30 Nov 2016; Chema Alonso Josa <nimiux@gentoo.org> free42-1.5.12.ebuild:
+  Changes eapply_user in src_prepare
+
+  Package-Manager: portage-2.3.0
+

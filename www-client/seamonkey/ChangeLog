@@ -322,3 +322,11 @@
 
   Package-Manager: portage-2.3.2
 
+*seamonkey-2.46_pre6-r1 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> metadata.xml,
+  -seamonkey-2.46_pre6.ebuild, +seamonkey-2.46_pre6-r1.ebuild:
+  Revbump to add calendar support.
+
+  Package-Manager: portage-2.3.2
+

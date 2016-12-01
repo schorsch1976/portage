@@ -636,3 +636,9 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  30 Nov 2016; Markus Meier <maekke@gentoo.org> imagemagick-6.9.6.6.ebuild:
+  arm stable, bug #599744
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

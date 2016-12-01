@@ -10,3 +10,8 @@
 
   Package-Manager: portage-2.3.0
 
+  30 Nov 2016; William Hubbs <williamh@gentoo.org> opentmpfiles-9999.ebuild:
+  fix src_uri in live ebuild
+
+  Package-Manager: portage-2.3.0
+

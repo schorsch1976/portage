@@ -115,3 +115,6 @@
   snakeoil-0.7.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> snakeoil-9999.ebuild:
+  Add missing mock dep, bump to EAPI 6
+

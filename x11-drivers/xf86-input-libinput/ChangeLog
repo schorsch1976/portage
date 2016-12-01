@@ -300,3 +300,9 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  29 Nov 2016; Manuel Rüger <mrueg@gentoo.org>
+  -xf86-input-libinput-0.6.0.ebuild, -xf86-input-libinput-0.20.0.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

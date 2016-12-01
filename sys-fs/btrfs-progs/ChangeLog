@@ -353,3 +353,10 @@
 
   Package-Manager: portage-2.3.2
 
+*btrfs-progs-4.8.5 (30 Nov 2016)
+
+  30 Nov 2016; Mike Gilbert <floppym@gentoo.org> +btrfs-progs-4.8.5.ebuild:
+  bump to 4.8.5
+
+  Package-Manager: portage-2.3.2_p11
+

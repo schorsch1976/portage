@@ -342,3 +342,23 @@
 
   Package-Manager: portage-2.3.2
 
+*mono-4.9.0.729-r1 (30 Nov 2016)
+*mono-4.6.1.5-r1 (30 Nov 2016)
+
+  30 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +mono-4.6.1.5-r1.ebuild, +mono-4.9.0.729-r1.ebuild:
+  make kernel config checking not need a kernel to be installed
+
+  Change to linux_chkconfig_builtin as the value can only be 'y' and even if
+  the
+  kernel config value could be 'm' we don't have a way of checking if it is
+  loaded.
+
+  Package-Manager: portage-2.3.0
+
+*mono-4.8.0.371 (30 Nov 2016)
+
+  30 Nov 2016; Mikhail Pukhlikov <cynede@gentoo.org> +mono-4.8.0.371.ebuild,
+  -mono-4.9.0.729.ebuild, -mono-4.9.0.729-r1.ebuild:
+  downgrade unstable mono from nightly
+

@@ -84,3 +84,21 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-libevent-0.1.0-r2 (30 Nov 2016)
+
+  30 Nov 2016; Brian Evans <grknight@gentoo.org>
+  +pecl-libevent-0.1.0-r2.ebuild:
+  Revbump to drop php 5.5 dependencies
+
+  This package has not been ported and fails with PHP 7.0.
+  Patches are welcome, but this package is in danger of being dropped
+  when PHP 5.6 becomes obsolete.
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Brian Evans <grknight@gentoo.org>
+  -pecl-libevent-0.1.0-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

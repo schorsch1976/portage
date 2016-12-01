@@ -443,3 +443,10 @@
 
   Package-Manager: portage-2.2.28
 
+*collectd-5.6.2 (30 Nov 2016)
+
+  30 Nov 2016; Thomas Deutschmann <whissi@gentoo.org> +collectd-5.6.2.ebuild:
+  Bump to v5.6.2
+
+  Package-Manager: portage-2.3.2
+

@@ -376,3 +376,20 @@
 
   Package-Manager: portage-2.3.0
 
+*pytest-3.0.4 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +pytest-3.0.4.ebuild:
+  Bump to version 3.0.4
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> pytest-9999.ebuild:
+  Bump live ebuild to EAPI-6.
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> pytest-3.0.3.ebuild:
+  Enable pypy3
+
+  The tests are no worse than on other implementations.
+

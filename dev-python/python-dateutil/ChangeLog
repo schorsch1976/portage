@@ -120,3 +120,19 @@
   python-dateutil-2.4.2-r1.ebuild, python-dateutil-2.5.3.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*python-dateutil-2.6.0 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +python-dateutil-2.6.0.ebuild:
+  Bump to version 2.6.0
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -files/python-dateutil-2.1-open-utf-8.patch, -python-dateutil-2.1-r1.ebuild,
+  -python-dateutil-2.4.0.ebuild, -python-dateutil-2.4.1-r1.ebuild,
+  -python-dateutil-2.4.2.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

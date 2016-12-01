@@ -86,3 +86,15 @@
   sord-0.12.2.ebuild, sord-0.14.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*sord-0.16.0 (30 Nov 2016)
+
+  30 Nov 2016; Alexis Ballier <aballier@gentoo.org> +sord-0.16.0.ebuild:
+  bump to 0.16.0
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Alexis Ballier <aballier@gentoo.org> sord-0.16.0.ebuild:
+  bump serd dep, bug #601284
+
+  Package-Manager: portage-2.3.2
+

@@ -71,3 +71,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pecl-lzf-1.6.5 (30 Nov 2016)
+
+  30 Nov 2016; Brian Evans <grknight@gentoo.org> +pecl-lzf-1.6.5.ebuild:
+  Version bump
+
+  Drop PHP 5.4 and 5.5 support
+  Add PHP 7.0 support
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Brian Evans <grknight@gentoo.org> -pecl-lzf-1.6.3.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

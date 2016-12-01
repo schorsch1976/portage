@@ -192,3 +192,17 @@
   -files/checkbashisms-2.15.9-printf-b.patch:
   remove unused patch
 
+*checkbashisms-2.16.10 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +checkbashisms-2.16.10.ebuild:
+  Bump to version 2.16.10
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -checkbashisms-2.16.7.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

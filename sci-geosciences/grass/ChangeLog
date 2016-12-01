@@ -259,3 +259,14 @@
 
   Package-Manager: portage-2.3.2
 
+*grass-7.0.5-r1 (30 Nov 2016)
+
+  30 Nov 2016; Sam Jorna <wraeth@gentoo.org> +grass-7.0.5-r1.ebuild:
+  use wxGTK:3.0 per #600986
+
+  Now builds against wxGTK:3.0 as per the bug. Bumped to EAPI 6,
+  corrected subslot.
+
+  Gentoo-Bug: 600986
+  Package-Manager: portage-2.3.2
+

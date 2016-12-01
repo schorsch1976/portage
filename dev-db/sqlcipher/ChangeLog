@@ -86,3 +86,16 @@
 
   Package-Manager: portage-2.3.1
 
+*sqlcipher-3.4.0 (30 Nov 2016)
+
+  30 Nov 2016; Sergey Popov <pinkbyte@gentoo.org> +sqlcipher-3.4.0.ebuild:
+  version bump
+
+  EAPI 6, switch from autotools-multilib to multilib-minimal eclass.
+  Add support for libressl.
+
+  Reported-by: Ian <csmk@chaoslab.org>
+  Gentoo-Bug: 598402
+
+  Package-Manager: portage-2.3.2
+

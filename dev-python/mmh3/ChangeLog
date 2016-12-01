@@ -1,0 +1,12 @@
+# ChangeLog for dev-python/mmh3
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*mmh3-2.3.1 (30 Nov 2016)
+
+  30 Nov 2016; William Hubbs <williamh@gentoo.org> +metadata.xml,
+  +mmh3-2.3.1.ebuild:
+  initial import of mmh3-2.3.1
+
+  Package-Manager: portage-2.3.0
+

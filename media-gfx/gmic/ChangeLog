@@ -101,3 +101,10 @@
   29 Oct 2016; Tim Harder <radhermit@gentoo.org> metadata.xml:
   update upstream metadata to use github
 
+*gmic-1.7.9 (30 Nov 2016)
+
+  30 Nov 2016; Tim Harder <radhermit@gentoo.org>
+  +files/gmic-1.7.9-flags.patch, +files/gmic-1.7.9-man.patch,
+  +gmic-1.7.9.ebuild:
+  version bump to 1.7.9
+

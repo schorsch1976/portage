@@ -67,3 +67,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  30 Nov 2016; Tim Harder <radhermit@gentoo.org>
+  gentoo-zsh-completions-20150103.ebuild:
+  stabilize 20150103
+
+  30 Nov 2016; Tim Harder <radhermit@gentoo.org> metadata.xml:
+  update upstream metadata
+

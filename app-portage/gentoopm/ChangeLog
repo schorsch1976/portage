@@ -99,3 +99,9 @@
   gentoopm-9999.ebuild, metadata.xml:
   Migrated to GitHub
 
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> gentoopm-9999.ebuild:
+  Fix EGIT_REPO_URI
+
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> gentoopm-9999.ebuild:
+  Unifdef and modernize the live ebuild
+

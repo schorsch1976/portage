@@ -166,3 +166,15 @@
 
   Package-Manager: portage-2.3.2
 
+  29 Nov 2016; Manuel Rüger <mrueg@gentoo.org> zsh-completions-0.22.0.ebuild:
+  Stable on amd64
+
+  Gentoo-Bug: #601188
+
+  Package-Manager: portage-2.3.2
+
+  29 Nov 2016; Manuel Rüger <mrueg@gentoo.org> -zsh-completions-0.21.0.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

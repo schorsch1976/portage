@@ -77,3 +77,14 @@
 
   Package-Manager: portage-2.3.0
 
+  30 Nov 2016; Doug Goldstein <cardoe@gentoo.org> cargo-0.12.0.ebuild,
+  cargo-0.13.0.ebuild, cargo-0.13.0-r1.ebuild, cargo-0.14.0.ebuild:
+  preserve older build method
+
+  Cargo bootstraps itself with a 0.10.0 version of Cargo that does not
+  support the newer features we're rolling into the eclass. As a result
+  this lifts out bits from the eclass and moves it into the Cargo ebuilds
+  so that the eclass can be updated.
+
+  Signed-off-by: Doug Goldstein <cardoe@gentoo.org>
+

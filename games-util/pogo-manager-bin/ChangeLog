@@ -10,3 +10,11 @@
 
   Package-Manager: portage-2.3.0
 
+*pogo-manager-bin-0.1.5 (29 Nov 2016)
+
+  29 Nov 2016; Austin English <wizardedit@gentoo.org>
+  +pogo-manager-bin-0.1.5.ebuild:
+  version bump, 0.1.5
+
+  Package-Manager: portage-2.3.2
+

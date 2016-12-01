@@ -244,3 +244,9 @@
 
   Gentoo-Bug: 576866
 
+  30 Nov 2016; Markus Meier <maekke@gentoo.org> dhcp-4.3.4.ebuild:
+  arm stable, bug #576866
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

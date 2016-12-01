@@ -48,3 +48,9 @@
 
   Package-Manager: portage-2.3.0
 
+  30 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  heat-2016.2.9999.ebuild:
+  switch to python_install_all
+
+  Package-Manager: portage-2.3.0
+

@@ -133,3 +133,10 @@
 
   Package-Manager: portage-2.3.2
 
+*hplip-plugin-3.16.11 (29 Nov 2016)
+
+  29 Nov 2016; Manuel Rüger <mrueg@gentoo.org> +hplip-plugin-3.16.11.ebuild:
+  Version bump to 3.6.11
+
+  Package-Manager: portage-2.3.2
+

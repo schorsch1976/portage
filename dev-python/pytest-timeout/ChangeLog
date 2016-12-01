@@ -83,3 +83,11 @@
   pytest-timeout-1.0.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*pytest-timeout-1.2.0 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +pytest-timeout-1.2.0.ebuild:
+  Bump to version 1.2.0
+
+  Package-Manager: portage-2.3.2
+

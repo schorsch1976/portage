@@ -632,3 +632,18 @@
 
   Package-Manager: portage-2.3.0
 
+  30 Nov 2016; Matthew Thode <prometheanfire@gentoo.org> files/nova.initd:
+  fixing nova.initd
+
+  Package-Manager: portage-2.3.0
+
+  30 Nov 2016; Matthew Thode <prometheanfire@gentoo.org> files/nova.initd:
+  fixing init for realz
+
+  Package-Manager: portage-2.3.0
+
+  30 Nov 2016; Matthew Thode <prometheanfire@gentoo.org> files/nova.initd:
+  make the pid file
+
+  Package-Manager: portage-2.3.0
+
