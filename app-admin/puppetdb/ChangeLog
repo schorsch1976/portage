@@ -291,3 +291,15 @@
 
   Signed-off-by: Matthew Thode <prometheanfire@gentoo.org>
 
+  01 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  puppetdb-4.3.0-r1.ebuild:
+  4.3.0-r1 stable amd64 and x86
+
+  Package-Manager: portage-2.3.0
+
+  01 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -puppetdb-4.0.2.ebuild:
+  4.0.2 cleanup
+
+  Package-Manager: portage-2.3.0
+

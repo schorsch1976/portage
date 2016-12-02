@@ -41,3 +41,10 @@
   30 Nov 2016; Michał Górny <mgorny@gentoo.org> PySocks-1.5.7.ebuild:
   Enable pypy3
 
+*PySocks-1.6.4 (01 Dec 2016)
+
+  01 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +PySocks-1.6.4.ebuild:
+  Bump to version 1.6.4
+
+  Package-Manager: portage-2.3.2
+

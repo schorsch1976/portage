@@ -250,3 +250,10 @@
 
   Package-Manager: portage-2.3.2
 
+*mkvtoolnix-9.6.0 (01 Dec 2016)
+
+  01 Dec 2016; Alexis Ballier <aballier@gentoo.org> +mkvtoolnix-9.6.0.ebuild:
+  bump to 9.6.0
+
+  Package-Manager: portage-2.3.2
+

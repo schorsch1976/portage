@@ -110,3 +110,12 @@
   files/npcd.initd:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+  30 Nov 2016; Patrice Clement <monsieurp@gentoo.org>
+  pnp4nagios-0.6.25-r3.ebuild:
+  remove dep. on outdated apache eclass, various fixes.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2943
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

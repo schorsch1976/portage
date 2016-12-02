@@ -63,3 +63,17 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  01 Dec 2016; Agostino Sarubbo <ago@gentoo.org> regex-pcre-0.94.4-r1.ebuild:
+  amd64 stable wrt bug #570240
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  01 Dec 2016; Agostino Sarubbo <ago@gentoo.org> regex-pcre-0.94.4-r1.ebuild:
+  x86 stable wrt bug #570240
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

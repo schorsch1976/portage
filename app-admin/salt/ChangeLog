@@ -357,3 +357,22 @@
 
   Package-Manager: portage-2.3.0
 
+*salt-2016.3.4 (01 Dec 2016)
+
+  01 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  +files/salt-2016.3.4-dont-test-ordering.patch,
+  +files/salt-2016.3.4-test-nonexist-dirs.patch, +salt-2016.3.4.ebuild:
+  Version bump to 2016.3.4
+
+  Package-Manager: portage-2.3.2
+
+  01 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  -files/salt-2016.3.1-broken-tests.patch,
+  -files/salt-2016.3.2-broken-tests.patch,
+  -files/salt-2016.3.3-broken-tests.patch, -salt-2015.8.8.ebuild,
+  -salt-2015.8.10.ebuild, -salt-2015.8.11.ebuild, -salt-2016.3.1.ebuild,
+  -salt-2016.3.2.ebuild, -salt-2016.3.3.ebuild:
+  Remove old versions
+
+  Package-Manager: portage-2.3.2
+

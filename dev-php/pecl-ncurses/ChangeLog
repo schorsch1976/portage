@@ -71,3 +71,17 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pecl-ncurses-1.0.2-r3 (01 Dec 2016)
+
+  01 Dec 2016; Brian Evans <grknight@gentoo.org>
+  +pecl-ncurses-1.0.2-r3.ebuild:
+  Revision bump to add php 7 and drop 5.4 and 5.5
+
+  Package-Manager: portage-2.3.2
+
+  01 Dec 2016; Brian Evans <grknight@gentoo.org>
+  -pecl-ncurses-1.0.2-r2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

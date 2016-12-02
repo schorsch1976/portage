@@ -99,3 +99,12 @@
   -files/invocname.patch:
   remove unused patch
 
+*kpathsea-6.2.1_p20150521-r2 (01 Dec 2016)
+
+  01 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +files/insecure_tmp_mktexlsr.patch, -kpathsea-6.2.1_p20150521-r1.ebuild,
+  +kpathsea-6.2.1_p20150521-r2.ebuild:
+  fix insecure use of /tmp, bug #536454
+
+  Package-Manager: portage-2.3.2
+

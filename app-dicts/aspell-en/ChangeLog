@@ -66,3 +66,11 @@
 
   Bug: 575810
 
+*aspell-en-2016.11.20.0 (01 Dec 2016)
+
+  01 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +aspell-en-2016.11.20.0.ebuild:
+  Bump to version 2016.11.20.0
+
+  Package-Manager: portage-2.3.2
+

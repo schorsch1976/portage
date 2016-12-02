@@ -541,3 +541,15 @@
   equal to Gentoo. This makes it possible to reduce reliance on a custom
   build type in the future.
 
+*cmake-3.7.1 (01 Dec 2016)
+
+  01 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +cmake-3.7.1.ebuild:
+  Bump to version 3.7.1
+
+  Package-Manager: portage-2.3.2
+
+  01 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -cmake-3.6.2.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

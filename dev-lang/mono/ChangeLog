@@ -362,3 +362,9 @@
   -mono-4.9.0.729.ebuild, -mono-4.9.0.729-r1.ebuild:
   downgrade unstable mono from nightly
 
+  30 Nov 2016; Sergei Trofimovich <slyfox@gentoo.org>
+  +files/mono-4.8.0.371-makedev.patch, mono-4.8.0.371.ebuild:
+  fix makedev() declaration on glibc-2.24
+
+  Package-Manager: portage-2.3.2
+

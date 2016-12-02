@@ -78,3 +78,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  30 Nov 2016; Patrice Clement <monsieurp@gentoo.org> raincoat-0.5.ebuild,
+  raincoat-0.11.ebuild:
+  update HOMEPAGE.
+
+  Gentoo-Bug: https://bugs.gentoo.org/545402
+  Closes: https://github.com/gentoo/gentoo/pull/2916
+

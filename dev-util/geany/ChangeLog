@@ -181,3 +181,11 @@
 
   Package-Manager: portage-2.3.2
 
+*geany-1.29-r1 (01 Dec 2016)
+
+  01 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -geany-1.29.ebuild,
+  +geany-1.29-r1.ebuild:
+  use x11-libs/vte:2.91 instead of 2.90 (bug #601336).
+
+  Package-Manager: portage-2.3.2
+

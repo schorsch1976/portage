@@ -86,3 +86,10 @@
 
   Package-Manager: portage-2.3.0
 
+*latexmk-448 (01 Dec 2016)
+
+  01 Dec 2016; Alexis Ballier <aballier@gentoo.org> +latexmk-448.ebuild:
+  bump to 448
+
+  Package-Manager: portage-2.3.2
+

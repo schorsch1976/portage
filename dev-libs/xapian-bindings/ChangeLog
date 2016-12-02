@@ -359,3 +359,18 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  30 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  xapian-bindings-1.4.1.ebuild:
+  convert to python-r1 and enable python3
+
+  This change configures/builds/installs the bindings once for each python
+  implementation.
+
+  Bug: https://bugs.gentoo.org/589642
+
+  30 Nov 2016; Anthony G. Basile <blueness@gentoo.org>
+  xapian-bindings-1.4.1.ebuild:
+  prevent python-related sandbox failure
+
+  Bug: https://bugs.gentoo.org/589642#c16
+

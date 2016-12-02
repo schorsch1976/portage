@@ -18,3 +18,16 @@
 
   Package-Manager: portage-2.3.2
 
+*markup-0.7.3 (01 Dec 2016)
+
+  01 Dec 2016; Alexis Ballier <aballier@gentoo.org> +markup-0.7.3.ebuild:
+  bump to 0.7.3
+
+  Package-Manager: portage-2.3.2
+
+  01 Dec 2016; Alexis Ballier <aballier@gentoo.org> -files/test.patch,
+  -files/uutf.patch, -markup-0.7.2-r1.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+

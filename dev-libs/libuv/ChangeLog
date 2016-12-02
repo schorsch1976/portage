@@ -197,3 +197,6 @@
 
   Gentoo-Bug: 599668
 
+  01 Dec 2016; Michael Palimaka <kensington@gentoo.org> libuv-1.10.0.ebuild:
+  add ~amd64-fbsd, ~x86-fbsd KEYWORDS
+

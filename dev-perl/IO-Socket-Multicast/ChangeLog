@@ -1,0 +1,12 @@
+# ChangeLog for dev-perl/IO-Socket-Multicast
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*IO-Socket-Multicast-1.120.0 (01 Dec 2016)
+
+  01 Dec 2016; Andreas K. Huettel <dilfridge@gentoo.org>
+  +IO-Socket-Multicast-1.120.0.ebuild, +metadata.xml:
+  New package, needed for www-misc/zoneminder
+
+  Package-Manager: portage-2.3.2
+

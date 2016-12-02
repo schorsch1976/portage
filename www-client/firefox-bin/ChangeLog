@@ -411,3 +411,22 @@
   +firefox-bin-50.0.1.ebuild:
   www-client/firefox : 50.0.1 security bump, bug #601142
 
+*firefox-bin-50.0.2 (01 Dec 2016)
+*firefox-bin-45.5.1 (01 Dec 2016)
+
+  01 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +firefox-bin-45.5.1.ebuild, -firefox-bin-50.0.1.ebuild,
+  +firefox-bin-50.0.2.ebuild:
+  Sec bump to versions 45.5.1 and 50.0.2 (bug #601320).
+
+  Package-Manager: portage-2.3.2
+
+  01 Dec 2016; Ian Stakenvicius <axs@gentoo.org> -firefox-bin-45.5.0.ebuild,
+  firefox-bin-45.5.1.ebuild:
+  stabilize 45.5.1, drop 45.5.0
+
+  amd64 stable
+  x86 stable
+
+  Package-Manager: portage-2.3.0
+

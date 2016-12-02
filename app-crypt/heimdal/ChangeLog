@@ -97,3 +97,13 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> heimdal-1.5.3-r2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*heimdal-7.0.1 (01 Dec 2016)
+
+  01 Dec 2016; Eray Aslan <eras@gentoo.org> +heimdal-7.0.1.ebuild:
+  version bump to heimdal-7.0.1
+
+  Upstream version numbering change:  heimdal-7.0.1 is release candidate
+  for heimdal-7.1 and is therefore p.masked
+
+  Package-Manager: portage-2.3.2
+

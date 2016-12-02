@@ -100,3 +100,8 @@
 
   Package-Manager: portage-2.3.0
 
+  01 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> qtox-9999.ebuild:
+  update dependencies and links in live ebuild
+
+  Package-Manager: portage-2.3.0
+

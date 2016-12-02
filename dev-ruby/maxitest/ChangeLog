@@ -119,3 +119,16 @@
 
   Package-Manager: portage-2.3.2
 
+  01 Dec 2016; Hans de Graaff <graaff@gentoo.org> -maxitest-1.5.7.ebuild,
+  -maxitest-2.0.2.ebuild, -maxitest-2.1.0.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+
+*maxitest-2.3.0 (01 Dec 2016)
+
+  01 Dec 2016; Hans de Graaff <graaff@gentoo.org> +maxitest-2.3.0.ebuild:
+  add 2.3.0
+
+  Package-Manager: portage-2.3.0
+

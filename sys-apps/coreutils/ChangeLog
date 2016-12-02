@@ -179,3 +179,15 @@
 
   Package-Manager: portage-2.3.2
 
+*coreutils-8.26 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +coreutils-8.26.ebuild:
+  Bump to version 8.26
+
+  Package-Manager: portage-2.3.2
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> -coreutils-8.24.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

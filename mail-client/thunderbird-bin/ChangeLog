@@ -305,3 +305,11 @@
 
   Package-Manager: portage-2.3.0
 
+*thunderbird-bin-45.5.1 (01 Dec 2016)
+
+  01 Dec 2016; Ian Stakenvicius <axs@gentoo.org>
+  -thunderbird-bin-45.5.0.ebuild, +thunderbird-bin-45.5.1.ebuild:
+  bump for security bug 601320
+
+  Package-Manager: portage-2.3.0
+

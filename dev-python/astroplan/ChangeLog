@@ -1,0 +1,12 @@
+# ChangeLog for dev-python/astroplan
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*astroplan-0.2 (30 Nov 2016)
+
+  30 Nov 2016; Sébastien Fabbro <bicatali@gentoo.org> +astroplan-0.2.ebuild,
+  +files/astroplan-0.2-ephem-import.patch, +metadata.xml:
+  initial import
+
+  Package-Manager: portage-2.3.2
+

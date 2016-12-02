@@ -208,3 +208,16 @@
   kdevelop-4.7.3.ebuild:
   kde-base/libkworkspace -> kde-plasma/libkworkspace
 
+*kdevelop-5.0.3 (01 Dec 2016)
+
+  01 Dec 2016; Johannes Huber <johu@gentoo.org> +kdevelop-5.0.3.ebuild:
+  Version bump 5.0.3
+
+  Package-Manager: portage-2.3.2
+
+  01 Dec 2016; Johannes Huber <johu@gentoo.org>
+  -files/kdevelop-5.0.2-github-crash.patch, -kdevelop-5.0.2.ebuild:
+  Remove 5.0.2
+
+  Package-Manager: portage-2.3.2
+

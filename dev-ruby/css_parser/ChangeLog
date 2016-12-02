@@ -136,3 +136,16 @@
 
   Package-Manager: portage-2.3.0
 
+  01 Dec 2016; Hans de Graaff <graaff@gentoo.org> -css_parser-1.4.4.ebuild,
+  -css_parser-1.4.5.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+
+*css_parser-1.4.7 (01 Dec 2016)
+
+  01 Dec 2016; Hans de Graaff <graaff@gentoo.org> +css_parser-1.4.7.ebuild:
+  add 1.4.7
+
+  Package-Manager: portage-2.3.0
+

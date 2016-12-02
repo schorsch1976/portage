@@ -222,3 +222,28 @@
   18 Nov 2016; Mike Frysinger <vapier@gentoo.org> vim-core-7.4.769.ebuild:
   mark 7.4.769 m68k/s390/sh stable
 
+  01 Dec 2016; Tim Harder <radhermit@gentoo.org> files/vimrc-r5:
+  disregard user mappings when restoring cursor position
+
+  This fixes bug #598726.
+
+*vim-core-8.0.0106 (01 Dec 2016)
+
+  01 Dec 2016; Tim Harder <radhermit@gentoo.org> +vim-core-8.0.0106.ebuild,
+  vim-core-9999.ebuild:
+  version bump to 8.0.0106
+
+  01 Dec 2016; Agostino Sarubbo <ago@gentoo.org> vim-core-8.0.0106.ebuild:
+  amd64 stable wrt bug #600650
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  01 Dec 2016; Agostino Sarubbo <ago@gentoo.org> vim-core-8.0.0106.ebuild:
+  x86 stable wrt bug #600650
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

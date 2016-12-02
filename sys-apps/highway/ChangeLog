@@ -1,0 +1,16 @@
+# ChangeLog for sys-apps/highway
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*highway-1.1.0 (01 Dec 2016)
+
+  01 Dec 2016; Alice Ferrazzi <alicef@gentoo.org> +highway-1.1.0.ebuild,
+  +metadata.xml:
+  init commit
+
+  bug: 600620
+
+  ebuild-by: <otakuto.gentoo@gmail.com>
+
+  Package-Manager: portage-2.3.0
+

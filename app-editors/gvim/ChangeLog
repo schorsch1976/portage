@@ -210,3 +210,22 @@
 
   configure.in was renamed to configure.ac (bug #599992).
 
+*gvim-8.0.0106 (01 Dec 2016)
+
+  01 Dec 2016; Tim Harder <radhermit@gentoo.org> +gvim-8.0.0106.ebuild:
+  version bump to 8.0.0106
+
+  01 Dec 2016; Agostino Sarubbo <ago@gentoo.org> gvim-8.0.0106.ebuild:
+  amd64 stable wrt bug #600650
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  01 Dec 2016; Agostino Sarubbo <ago@gentoo.org> gvim-8.0.0106.ebuild:
+  x86 stable wrt bug #600650
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

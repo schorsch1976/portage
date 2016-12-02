@@ -1075,3 +1075,17 @@
   +firefox-50.0.1.ebuild:
   50.0.1 security bump, bug #601142
 
+*firefox-50.0.2 (01 Dec 2016)
+*firefox-45.5.1 (01 Dec 2016)
+
+  01 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +firefox-45.5.1.ebuild,
+  -firefox-50.0.1.ebuild, +firefox-50.0.2.ebuild:
+  Sec bump to versions 45.5.1 and 50.0.2 (bug #601320).
+
+  Package-Manager: portage-2.3.2
+
+  01 Dec 2016; Ian Stakenvicius <axs@gentoo.org> firefox-45.5.1.ebuild:
+  45.5.1: stable for amd64, security bug 601320
+
+  Package-Manager: portage-2.3.0
+

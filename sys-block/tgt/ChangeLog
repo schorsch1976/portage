@@ -204,3 +204,15 @@
 
   Also drop old unused init.d scripts.
 
+  01 Dec 2016; Matthew Thode <prometheanfire@gentoo.org> tgt-1.0.69.ebuild:
+  1.0.69 stable amd64 and x86
+
+  Package-Manager: portage-2.3.0
+
+  01 Dec 2016; Matthew Thode <prometheanfire@gentoo.org> -tgt-1.0.60.ebuild,
+  -tgt-1.0.63.ebuild, -tgt-1.0.64.ebuild, -tgt-1.0.65.ebuild,
+  -tgt-1.0.66.ebuild:
+  1.0.60-66 cleanup
+
+  Package-Manager: portage-2.3.0
+
