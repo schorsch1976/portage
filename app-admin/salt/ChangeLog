@@ -376,3 +376,18 @@
 
   Package-Manager: portage-2.3.2
 
+*salt-2016.11.0 (02 Dec 2016)
+
+  02 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  +files/salt-2016.11.0-broken-tests.patch,
+  +files/salt-2016.11.0-remove-file-tree-test.patch,
+  +files/salt-2016.11.0-tmpdir.patch, +salt-2016.11.0.ebuild:
+  Version bump to 2016.11.0
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Patrick McLean <chutzpah@gentoo.org> salt-9999.ebuild:
+  Sync 9999 ebuild to latest version
+
+  Package-Manager: portage-2.3.2
+

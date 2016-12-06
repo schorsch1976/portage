@@ -61,3 +61,14 @@
 
   Package-Manager: portage-2.3.2
 
+*JSON-Parse-0.490.0 (04 Dec 2016)
+
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> +JSON-Parse-0.490.0.ebuild:
+  Bump to version 0.490.0
+
+  Upstream:
+  - Input texts being undef or all whitespace now cause a fatal
+    error, for conformance with JSON Parsing Test Suite
+
+  Package-Manager: portage-2.3.2
+

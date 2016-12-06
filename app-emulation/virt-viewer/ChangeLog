@@ -132,3 +132,11 @@
 
   Package-Manager: portage-2.3.0
 
+  03 Dec 2016; Yixun Lan <dlan@gentoo.org> virt-viewer-5.0.ebuild:
+  fix 5.0 minimum spice-gtk dependency
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2989
+
+  Signed-off-by: Yixun Lan <dlan@gentoo.org>
+

@@ -92,3 +92,14 @@
 
   Package-Manager: portage-2.3.2
 
+*Contextual-Return-0.4.10 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +Contextual-Return-0.4.10.ebuild:
+  Bump to version 0.4.10
+
+  Upstream:
+  - Fix DUMP behaviour when passed a non-CRV as argument
+
+  Package-Manager: portage-2.3.2
+

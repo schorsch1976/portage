@@ -2064,3 +2064,32 @@
 
   Package-Manager: portage-2.3.2
 
+*php-7.1.0 (03 Dec 2016)
+
+  03 Dec 2016; Michael Orlitzky <mjo@gentoo.org> +php-7.1.0.ebuild:
+  add php-7.1.0 in the new "7.1" slot.
+
+  This is a new upstream release and the ebuild incorporates a few fixes
+  facilitated by upstream changes:
+
+    1. We use app-text/tidy-html5 instead of the abandoned app-text/htmltidy.
+
+    2. Upstream now detects heimdal correctly so our workaround has been
+       removed.
+
+    3. The custom Gentoo branding that required us to rebuild all of the
+       autotools files has been removed. A few build dependencies were
+       eliminated as a result, and the autotools and libtool eclasses were
+       dropped.
+
+  The changes above have associated Gentoo bugs. In addition, the hack
+  for bug 343481 was removed, since it had no effect on the configure
+  script for v7.1.0. I do not know if the fix is simply no longer
+  needed, or if it should be forward-ported.
+
+  Gentoo-Bug: 585474
+  Gentoo-Bug: 597448
+  Gentoo-Bug: 597450
+
+  Package-Manager: portage-2.3.0
+

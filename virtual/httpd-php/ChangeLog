@@ -88,3 +88,12 @@
 
   Package-Manager: portage-2.3.2
 
+*httpd-php-7.1 (05 Dec 2016)
+
+  05 Dec 2016; Michael Orlitzky <mjo@gentoo.org> +httpd-php-7.1.ebuild:
+  add version 7.1
+
+  Package-Manager: portage-2.3.2
+
+  Signed-off-by: Michael Orlitzky <mjo@gentoo.org>
+

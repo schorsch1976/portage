@@ -108,3 +108,9 @@
   particular bug assignment/CC to ensure that the requested assignee
   always goes first, in order to match the bug wrangling policies.
 
+  05 Dec 2016; Alexis Ballier <aballier@gentoo.org> ffdiaporama-2.1-r1.ebuild,
+  +files/ffdiaporama-2.1-ffmpeg-3.0.patch:
+  fix build with ffmpeg-3. Patch by charlot in bug #575058.
+
+  Package-Manager: portage-2.3.2
+

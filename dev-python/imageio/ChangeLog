@@ -13,3 +13,11 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+*imageio-1.6 (04 Dec 2016)
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +imageio-1.6.ebuild:
+  version bump to 1.6.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2986
+

@@ -884,3 +884,8 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  04 Dec 2016; Tobias Klausmann <klausman@gentoo.org> samba-4.2.11.ebuild:
+  4.2.11-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 591304
+

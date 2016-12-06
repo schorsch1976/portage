@@ -38,3 +38,7 @@
 
   Package-Manager: portage-2.3.2
 
+  03 Dec 2016; Johannes Huber <johu@gentoo.org>
+  kdepim-apps-libs-16.08.3.ebuild:
+  media-libs/prison -> kde-frameworks/prison
+

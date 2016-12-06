@@ -111,3 +111,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> c-ares-1.12.0.ebuild:
+  1.12.0-r0: stable on alpha
+
+  Gentoo-Bug: 595536
+

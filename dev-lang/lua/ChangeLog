@@ -143,3 +143,16 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> lua-5.1.5-r4.ebuild:
+  5.1.5-r4: stable on alpha
+
+  Gentoo-Bug: 520480
+
+*lua-5.3.3 (04 Dec 2016)
+
+  04 Dec 2016; Rafael Martins <rafaelmartins@gentoo.org>
+  +files/lua-5.3-make-r1.patch, +lua-5.3.3.ebuild:
+  added 5.3.3, masked for testing (bug #541042)
+
+  Package-Manager: portage-2.2.28
+

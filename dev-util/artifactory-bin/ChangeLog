@@ -162,3 +162,23 @@
 
   Package-Manager: portage-2.3.2
 
+*artifactory-bin-4.14.1 (02 Dec 2016)
+
+  02 Dec 2016; Austin English <wizardedit@gentoo.org>
+  +artifactory-bin-4.14.1.ebuild:
+  version bump 4.14.1
+
+      [RTFACT-12717] - Distribution repo tree structure is incompatible with
+  Bintray
+      [RTFACT-12727] - Yum metadata calculation doesn't remove old index files
+
+  Package-Manager: portage-2.3.2
+
+*artifactory-bin-4.14.2 (02 Dec 2016)
+
+  02 Dec 2016; Austin English <wizardedit@gentoo.org>
+  +artifactory-bin-4.14.2.ebuild:
+  dev-util/artifactory-bin: version bump - 4.14.2
+
+  Package-Manager: portage-2.3.2
+

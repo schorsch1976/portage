@@ -269,3 +269,44 @@
   Closes: https://github.com/gentoo/gentoo/pull/2486
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*haproxy-1.6.10 (05 Dec 2016)
+
+  05 Dec 2016; Robin H. Johnson <robbat2@gentoo.org> +haproxy-1.6.10.ebuild:
+  bump.
+
+  Package-Manager: portage-2.3.2
+
+*haproxy-1.6.9999 (05 Dec 2016)
+
+  05 Dec 2016; Robin H. Johnson <robbat2@gentoo.org> +haproxy-1.6.9999.ebuild,
+  -haproxy-9999.ebuild:
+  prepare for split 9999 on different major versions
+
+  Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
+
+*haproxy-1.7.9999 (05 Dec 2016)
+
+  05 Dec 2016; Robin H. Johnson <robbat2@gentoo.org>
+  +files/haproxy-1.7-contrib.patch, haproxy-1.6.9999.ebuild,
+  +haproxy-1.7.9999.ebuild, metadata.xml:
+  9999-style builds for current major versions.
+
+  Package-Manager: portage-2.3.2
+
+*haproxy-1.6.10-r1 (05 Dec 2016)
+
+  05 Dec 2016; Robin H. Johnson <robbat2@gentoo.org>
+  +haproxy-1.6.10-r1.ebuild:
+  update 1.6 series to current ebuild.
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
+
+*haproxy-1.7.0 (05 Dec 2016)
+
+  05 Dec 2016; Robin H. Johnson <robbat2@gentoo.org> +haproxy-1.7.0.ebuild:
+  bump, new major version.
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
+

@@ -10,3 +10,10 @@
 
   Package-Manager: portage-2.2.27
 
+  05 Dec 2016; Robin H. Johnson <robbat2@gentoo.org>
+  q-text-as-data-1.5.0.ebuild:
+  Require Python w/ SQLite.
+
+  (cherry picked from commit 017a176f1ade171b93dc6052a2835b5251a922fb)
+  Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
+

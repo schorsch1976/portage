@@ -149,3 +149,9 @@
   zsh-9999.ebuild:
   drop unused eclasses
 
+  04 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> zsh-5.0.5.ebuild,
+  zsh-5.2.ebuild, zsh-5.2-r1.ebuild, zsh-9999.ebuild:
+  Added sub-slot dependency for sys-libs/ncurses.
+
+  Package-Manager: portage-2.3.2
+

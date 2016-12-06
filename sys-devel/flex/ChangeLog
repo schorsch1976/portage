@@ -150,3 +150,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> flex-2.6.1.ebuild:
+  2.6.1-r0: stable on alpha
+
+  Gentoo-Bug: 589820
+

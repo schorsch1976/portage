@@ -27,3 +27,14 @@
 
   Package-Manager: portage-2.3.2
 
+*Time-Moment-0.400.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Time-Moment-0.400.0.ebuild:
+  Bump to version 0.400.0
+
+  Upstream:
+  - Fix problem with thread-perl compilation with
+    forward-function declaration
+
+  Package-Manager: portage-2.3.2
+

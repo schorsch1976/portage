@@ -109,3 +109,16 @@
 
   Package-Manager: portage-2.3.0
 
+*geierlein-0.9.6 (02 Dec 2016)
+
+  02 Dec 2016; Hanno <hanno@gentoo.org> +geierlein-0.9.6.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Hanno <hanno@gentoo.org> -geierlein-0.8.0.ebuild,
+  -geierlein-0.9.1.ebuild, -geierlein-0.9.4.ebuild:
+  remove old versions
+
+  Package-Manager: portage-2.3.2
+

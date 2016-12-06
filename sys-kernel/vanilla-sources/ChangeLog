@@ -1324,3 +1324,11 @@
 
   Package-Manager: portage-2.3.0
 
+*vanilla-sources-4.8.12 (02 Dec 2016)
+
+  02 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  -vanilla-sources-4.8.11.ebuild, +vanilla-sources-4.8.12.ebuild:
+  Linux patch 4.8.12
+
+  Package-Manager: portage-2.3.0
+

@@ -93,3 +93,17 @@
 
   Package-Manager: portage-2.3.0
 
+*CryptX-0.44.0 (04 Dec 2016)
+
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> +CryptX-0.44.0.ebuild:
+  Bump to version 0.44.0
+
+  Upstream:
+  - Fix  Math::BigInt::LTM compat with newer and older Math::BigInts
+  - RSA now supports insecure "none" padding in sign/verify
+  - RC2 now supports lower (insecure) minimum keylenghts (40bit)
+  - Fixed memory leak in ECC
+  - DSA Properly handles FIPS 186-4
+
+  Package-Manager: portage-2.3.2
+

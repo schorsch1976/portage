@@ -23,3 +23,15 @@
 
   Package-Manager: portage-2.3.0
 
+  03 Dec 2016; Justin Lecher <jlec@gentoo.org> ovs-2.6.0.ebuild:
+  Block file collision
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+
+  03 Dec 2016; Justin Lecher <jlec@gentoo.org> ovs-2.6.0.ebuild:
+  Refine file collision blocker
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

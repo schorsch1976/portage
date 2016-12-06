@@ -126,3 +126,9 @@
 
   Gentoo-Bug: 599550
 
+  04 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  B-Hooks-EndOfScope-0.200.0.ebuild:
+  add ~x86-fbsd KEYWORDS
+
+  https://bugs.gentoo.org/show_bug.cgi?id=599552
+

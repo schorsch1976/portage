@@ -405,3 +405,39 @@
 
   Package-Manager: portage-2.3.2
 
+  03 Dec 2016; Patrick McLean <chutzpah@gentoo.org> metadata.xml:
+  Add myself as co-maintainer
+
+  Package-Manager: portage-2.3.2
+
+*openvpn-2.4_rc1 (03 Dec 2016)
+
+  03 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  +files/openvpn-external-cmocka.patch, metadata.xml, +openvpn-2.4_rc1.ebuild:
+  Version bump to 2.4_rc1
+
+  Package-Manager: portage-2.3.2
+
+  03 Dec 2016; Patrick McLean <chutzpah@gentoo.org> openvpn-9999.ebuild:
+  Sync 9999 ebuild with 2.4 changes
+
+  Package-Manager: portage-2.3.2
+
+*openvpn-2.4_rc1-r1 (04 Dec 2016)
+
+  04 Dec 2016; Patrick McLean <chutzpah@gentoo.org> -openvpn-2.4_rc1.ebuild,
+  +openvpn-2.4_rc1-r1.ebuild, openvpn-9999.ebuild:
+  Revision bump to 2.4_rc1-r1 fix lzo dependnecy
+
+  Gentoo-Bug: 601568
+
+  Package-Manager: portage-2.3.2
+
+  04 Dec 2016; Patrick McLean <chutzpah@gentoo.org> openvpn-2.4_rc1-r1.ebuild,
+  openvpn-9999.ebuild:
+  Add REQUIRED_USE to force plugins on if inotify is on
+
+  Gentoo-Bug: 601524
+
+  Package-Manager: portage-2.3.2
+

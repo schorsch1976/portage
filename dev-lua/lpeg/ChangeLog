@@ -115,3 +115,8 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  02 Dec 2016; Benda Xu <heroxbd@gentoo.org> lpeg-1.0.0-r1.ebuild:
+  support Prefix.
+
+  Package-Manager: portage-2.3.2
+

@@ -161,3 +161,19 @@
   +files/x11vnc-0.9.14-libvncserver-defines-2.patch, +x11vnc-0.9.14-r1.ebuild:
   add upstream fixes for -unixpw handling #567612
 
+*x11vnc-0.9.14_p20161013 (05 Dec 2016)
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> +x11vnc-0.9.14_p20161013.ebuild:
+  Version bump by Alex Xu (Hello71) fixing bugs #526796, #584788 and others.
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  -files/x11vnc-0.9.14-libvncserver-defines-1.patch,
+  -files/x11vnc-0.9.14-libvncserver-defines-2.patch,
+  -x11vnc-0.9.13_p20150111-r1.ebuild, -x11vnc-0.9.13_p20150627.ebuild,
+  -x11vnc-0.9.14.ebuild, -x11vnc-0.9.14-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

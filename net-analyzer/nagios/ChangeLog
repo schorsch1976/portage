@@ -105,3 +105,18 @@
 
   Package-Manager: portage-2.3.0
 
+*nagios-4.2.3 (04 Dec 2016)
+
+  04 Dec 2016; Michael Orlitzky <mjo@gentoo.org> -nagios-4.2.2.ebuild,
+  +nagios-4.2.3.ebuild:
+  core}: new version 4.2.3 to fix CVE-2016-8641.
+
+  Gentoo-Bug: 600864
+
+  Package-Manager: portage-2.3.0
+
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org> nagios-4.2.3.ebuild:
+  4.2.3-r0: stable on alpha
+
+  Gentoo-Bug: 600864
+

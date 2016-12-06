@@ -1,0 +1,18 @@
+# ChangeLog for dev-java/jackcess
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*jackcess-1.2.14.3 (05 Dec 2016)
+
+  05 Dec 2016; Thomas Deutschmann <whissi@gentoo.org>
+  +jackcess-1.2.14.3.ebuild, +metadata.xml:
+  New package
+
+  Jackcess is a pure Java library for reading and writing MS Access
+  databases. It provides a robust, cross-platform backend API allowing other
+  developers to integrate MS Access support into their Java applications.
+
+  This package is needed for >=sci-libs/gdal-2.0.3[mdb].
+
+  Package-Manager: portage-2.3.2
+

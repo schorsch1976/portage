@@ -97,3 +97,10 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  02 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org> wmix-3.2.ebuild:
+  x11-plugins: update dockapps homepage
+
+  SRC_URI was not updated as tarballs may be different
+
+  Package-Manager: portage-2.3.2
+

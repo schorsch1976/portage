@@ -657,3 +657,10 @@
 
   Package-Manager: portage-2.3.0
 
+  03 Dec 2016; Justin Lecher <jlec@gentoo.org> nova-13.1.2.ebuild,
+  nova-14.0.2.ebuild, nova-2016.1.9999.ebuild, nova-2016.2.9999.ebuild:
+  Drop version restriction for openvswitch
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

@@ -84,3 +84,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  04 Dec 2016; Jeroen Roovers <jer@gentoo.org> fakeroot-1.20.2.ebuild:
+  Stable for PPC64 too.
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --ignore-arches
+

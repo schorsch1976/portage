@@ -105,3 +105,8 @@
 
   Package-Manager: portage-2.2.26
 
+  02 Dec 2016; Hans de Graaff <graaff@gentoo.org> rqrcode-0.10.1.ebuild:
+  add ruby23
+
+  Package-Manager: portage-2.3.0
+

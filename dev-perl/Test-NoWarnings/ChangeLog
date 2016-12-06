@@ -100,3 +100,9 @@
   RepoMan-Options: --include-arches="alpha amd64 amd64-fbsd arm arm64 hppa
   ia64 m68k mips nios2 ppc ppc64 riscv s390 sh sparc sparc-fbsd x86 x86-fbsd"
 
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  Test-NoWarnings-1.40.0-r3.ebuild:
+  add ~amd64-fbsd KEYWORDS.
+
+  Closes: https://github.com/gentoo/gentoo/pull/2992
+

@@ -117,3 +117,14 @@
 
   Package-Manager: portage-2.3.2
 
+*Test-MockObject-1.201.612.20 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +Test-MockObject-1.201.612.20.ebuild:
+  Bump to version 1.201.612.20
+
+  - EAPI6
+  - README fixed upstream
+
+  Package-Manager: portage-2.3.2
+

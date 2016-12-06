@@ -181,3 +181,22 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> irc-11.0.1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*irc-15.0.5 (02 Dec 2016)
+
+  02 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +irc-15.0.5.ebuild,
+  metadata.xml:
+  version bump to 15.0.5.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2970
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+
+  02 Dec 2016; Patrice Clement <monsieurp@gentoo.org> -irc-14.2.2.ebuild:
+  remove old.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2970
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

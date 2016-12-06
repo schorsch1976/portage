@@ -108,3 +108,8 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> dump-0.4.46.ebuild:
+  0.4.46-r0: stable on alpha
+
+  Gentoo-Bug: 515274
+

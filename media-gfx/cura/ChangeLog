@@ -58,3 +58,11 @@
 
   Package-Manager: portage-2.2.28
 
+*cura-2.3.1 (05 Dec 2016)
+
+  05 Dec 2016; Alexey Shvetsov <alexxy@gentoo.org> +cura-2.3.1.ebuild,
+  +files/cura-2.3.1-fix-install-paths.patch:
+  Version bump to 2.3.1
+
+  Package-Manager: portage-2.3.2
+

@@ -340,3 +340,18 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*DBD-mysql-4.41.0 (04 Dec 2016)
+
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> +DBD-mysql-4.41.0.ebuild:
+  Bump to version 4.41.0 re bug #601144
+
+  Upstream:
+  - Fixed use-after-free with repeated fetchrow_arrayref under
+    mysql_server_prepare=1 (CVE-2016-1251)
+  - auto_reconnect now properly reconnects when receiving
+    CR_SERVER_LOST instead of only CR_SERVER_GONE
+
+  Bug: https://bugs.gentoo.org/601144
+
+  Package-Manager: portage-2.3.2
+

@@ -66,3 +66,7 @@
 
   Package-Manager: portage-2.2.28
 
+  03 Dec 2016; Rafael Martins <rafaelmartins@gentoo.org>
+  distpatch-0.1.2.ebuild:
+  update HOMEPAGE, #587168
+

@@ -171,3 +171,9 @@
   +kvirc-5.0_pre20161004153257.ebuild:
   Version bump (5.0_pre20161004153257).
 
+*kvirc-5.0_pre20161201011150 (01 Dec 2016)
+
+  01 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  +kvirc-5.0_pre20161201011150.ebuild:
+  Version bump (5.0_pre20161201011150).
+

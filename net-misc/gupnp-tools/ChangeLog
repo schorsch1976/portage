@@ -137,3 +137,15 @@
 
   Package-Manager: portage-2.3.2
 
+*gupnp-tools-0.8.13 (05 Dec 2016)
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> +gupnp-tools-0.8.13.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -gupnp-tools-0.8.11.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

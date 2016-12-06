@@ -121,3 +121,11 @@
   texlive-core-2015.ebuild:
   fix texlive guide link
 
+*texlive-core-2015-r1 (05 Dec 2016)
+
+  05 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +texlive-core-2015-r1.ebuild:
+  apply debian patch to fix unsafe /tmp usage. Bug #432144.
+
+  Package-Manager: portage-2.3.3
+

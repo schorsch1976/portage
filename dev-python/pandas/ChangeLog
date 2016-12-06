@@ -119,3 +119,17 @@
   pandas-0.17.0.ebuild, pandas-0.17.1.ebuild, pandas-9999.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*pandas-0.19.1 (03 Dec 2016)
+
+  03 Dec 2016; Justin Lecher <jlec@gentoo.org>
+  +files/pandas-0.19.1-gapi.patch, +files/pandas-0.19.1-seqf.patch,
+  +pandas-0.19.1.ebuild, pandas-9999.ebuild:
+  Version Bump
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=585184
+
+  Move to modern virtualx.eclass usage
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

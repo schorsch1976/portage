@@ -25,3 +25,17 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  -rust-vim-1_beta20150411.ebuild:
+  drop old 1_beta20150411.
+
+  Closes: https://github.com/gentoo/gentoo/pull/3005
+
+*rust-vim-1_pre20161204 (04 Dec 2016)
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  +rust-vim-1_pre20161204.ebuild:
+  version bump to 1_pre20161204.
+
+  Closes: https://github.com/gentoo/gentoo/pull/3005
+

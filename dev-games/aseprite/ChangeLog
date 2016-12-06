@@ -205,3 +205,20 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org> aseprite-1.1.6.ebuild:
+  stable for x86.
+
+  Gentoo-Bug: https://bugs.gentoo.org/590976
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2950
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  -aseprite-0.9.5-r1.ebuild, metadata.xml:
+  remove old.
+
+  Removed old 0.9.5-r1 as linked to Google Code.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2950
+

@@ -57,3 +57,16 @@
 
   Package-Manager: portage-2.3.2
 
+*YAML-1.200.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org> +YAML-1.200.0.ebuild:
+  Bump to version 1.200.0
+
+  Upstream:
+  - Fix errors in parsing YAML with quoted whitespace in map keys
+  - Correctly delay loading of B::Deparse at runtime
+  - Add new feature $YAML::Preserve that creates order-preserving
+    tied hashes instead of plain random-ordered hashes.
+
+  Package-Manager: portage-2.3.2
+

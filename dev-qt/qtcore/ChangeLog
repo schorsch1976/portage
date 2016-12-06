@@ -291,3 +291,10 @@
 
   Package-Manager: portage-2.3.2
 
+  04 Dec 2016; Davide Pesavento <pesa@gentoo.org>
+  -files/qtcore-5.5.1-libsystemd.patch,
+  -files/qtcore-5.5.1-qatomic_ia64.h.patch, -qtcore-5.5.1-r1.ebuild:
+  dev-qt: remove Qt 5.5.1
+
+  Package-Manager: portage-2.3.2
+

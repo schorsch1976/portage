@@ -361,3 +361,28 @@
 
   Package-Manager: portage-2.3.2
 
+  03 Dec 2016; Markos Chandras <hwoarang@gentoo.org> qmmp-0.9.2.ebuild,
+  qmmp-0.9.8.ebuild, qmmp-0.9.10.ebuild, qmmp-0.10.4.ebuild,
+  qmmp-0.10.5.ebuild:
+  Update SVN repository for old ebuilds
+
+  Gentoo-Bug: 582064
+
+  Package-Manager: portage-2.3.2
+
+*qmmp-1.0.10-r1 (04 Dec 2016)
+
+  04 Dec 2016; Markos Chandras <hwoarang@gentoo.org> -qmmp-1.0.10.ebuild,
+  +qmmp-1.0.10-r1.ebuild, qmmp-9999.ebuild:
+  Capitalize cmake options
+
+  Gentoo-Bug: 576592, 601526
+
+  Package-Manager: portage-2.3.2
+
+  04 Dec 2016; Markos Chandras <hwoarang@gentoo.org> -qmmp-0.9.8.ebuild,
+  -qmmp-0.9.10.ebuild, -qmmp-0.10.4.ebuild, -qmmp-1.1.4.ebuild:
+  Remove old ebuilds
+
+  Package-Manager: portage-2.3.2
+

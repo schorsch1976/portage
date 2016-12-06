@@ -216,3 +216,11 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*libav-12 (03 Dec 2016)
+
+  03 Dec 2016; Luca Barbato <lu_zero@gentoo.org> -libav-12_beta1.ebuild,
+  +libav-12.ebuild:
+  New major version
+
+  Package-Manager: portage-2.3.2
+

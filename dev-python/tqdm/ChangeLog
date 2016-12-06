@@ -30,3 +30,13 @@
 
   Package-Manager: portage-2.3.0
 
+*tqdm-4.10.0 (02 Dec 2016)
+
+  02 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +tqdm-4.10.0.ebuild:
+  version bump to 4.10.0.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2987
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

@@ -216,3 +216,8 @@
   OTR is a plugin not managed within Portage. It is installed via Gajim
   plugin installer.
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> gajim-0.16.6.ebuild:
+  Use zeroconf instead of avahi USE flag (again)
+
+  Package-Manager: portage-2.3.2
+

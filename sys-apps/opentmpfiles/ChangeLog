@@ -15,3 +15,18 @@
 
   Package-Manager: portage-2.3.0
 
+  01 Dec 2016; William Hubbs <williamh@gentoo.org> opentmpfiles-9999.ebuild:
+  install service scripts and block older openrc versions
+
+  Package-Manager: portage-2.3.0
+
+*opentmpfiles-0.1 (01 Dec 2016)
+
+  01 Dec 2016; William Hubbs <williamh@gentoo.org> +opentmpfiles-0.1.ebuild:
+  0.1 version bump (initial release)
+
+  This code is taken from OpenRC, so I have added the appropriate ~arch
+  keywords.
+
+  Package-Manager: portage-2.3.0
+

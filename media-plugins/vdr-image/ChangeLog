@@ -66,3 +66,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  05 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +files/vdr-image-0.4.0-ffmpeg3.patch, vdr-image-0.4.0.ebuild:
+  fix build with ffmpeg3, bug #575280
+
+  Package-Manager: portage-2.3.2
+

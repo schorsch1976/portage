@@ -67,3 +67,8 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  04 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org> ooo-0.ebuild:
+  Bump EAPI
+
+  Package-Manager: portage-2.3.2
+

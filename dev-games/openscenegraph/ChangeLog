@@ -151,3 +151,19 @@
 
   Package-Manager: portage-2.3.2
 
+*openscenegraph-3.5.1-r1 (04 Dec 2016)
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  +openscenegraph-3.5.1-r1.ebuild:
+  Drop USE=qt4, bump to EAPI 6.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2681
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  -openscenegraph-3.5.1.ebuild:
+  Drop old.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2681
+

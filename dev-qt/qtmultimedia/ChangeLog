@@ -250,3 +250,10 @@
 
   Package-Manager: portage-2.3.1
 
+  04 Dec 2016; Davide Pesavento <pesa@gentoo.org>
+  -files/qtmultimedia-5.5.1-Relax-ALSA-version-checks-for-1.1.x.patch,
+  -qtmultimedia-5.5.1-r2.ebuild:
+  dev-qt: remove Qt 5.5.1
+
+  Package-Manager: portage-2.3.2
+

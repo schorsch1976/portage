@@ -231,3 +231,12 @@
 
   Package-Manager: portage-2.3.2
 
+*xen-pvgrub-4.7.1-r1 (03 Dec 2016)
+
+  03 Dec 2016; Yixun Lan <dlan@gentoo.org> +xen-pvgrub-4.7.1-r1.ebuild:
+  fix boot certain guest kernel
+
+  Gentoo-Bug: 601488
+
+  Package-Manager: portage-2.3.2
+

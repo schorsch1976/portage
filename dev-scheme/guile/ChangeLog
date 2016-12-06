@@ -323,3 +323,16 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*guile-2.0.13-r1 (04 Dec 2016)
+
+  04 Dec 2016; Pacho Ramos <pacho@gentoo.org> +guile-2.0.13-r1.ebuild:
+  Drop texmacs hack from guile-2 as it's not wanted (and neither needed for
+  guile2 as texmacs is not using it), see bug #597184
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -guile-2.0.13.ebuild:
+  Drop old version that was messing with GUILE env.d vars
+
+  Package-Manager: portage-2.3.2
+

@@ -91,3 +91,13 @@
 
   Package-Manager: portage-2.2.28
 
+*fuse-zip-0.4.2 (03 Dec 2016)
+
+  03 Dec 2016; Markos Chandras <hwoarang@gentoo.org> -fuse-zip-0.3.0.ebuild,
+  -fuse-zip-0.4.0.ebuild, +fuse-zip-0.4.2.ebuild:
+  Version bump. Remove old
+
+  Gentoo-Bug: 601066
+
+  Package-Manager: portage-2.3.2
+

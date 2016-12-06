@@ -24,3 +24,14 @@
 
   Package-Manager: portage-2.3.2
 
+*fedmsg-0.18.1 (04 Dec 2016)
+
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> +fedmsg-0.18.1.ebuild:
+  Bump to version 0.18.1
+
+  Upstream:
+  - Handle STOMP message manging inside validation after JSON
+    decoding.
+
+  Package-Manager: portage-2.3.2
+

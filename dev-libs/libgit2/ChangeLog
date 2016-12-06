@@ -271,3 +271,16 @@
 
   Package-Manager: portage-2.3.2
 
+  05 Dec 2016; Aaron Bauman <bman@gentoo.org> -libgit2-0.22.3.ebuild,
+  -libgit2-0.23.4.ebuild:
+  cleanup vulnerable versions wrt security bug #596758
+
+*libgit2-0.23.4 (05 Dec 2016)
+*libgit2-0.22.3 (05 Dec 2016)
+
+  05 Dec 2016; Aaron Bauman <bman@gentoo.org> +libgit2-0.22.3.ebuild,
+  +libgit2-0.23.4.ebuild:
+  revert cleanup wrt security bug #596758
+
+  This reverts commit 9b64de1489263019495731928a65665e3ab3daba.
+

@@ -78,3 +78,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Acme-Damn-0.80.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Acme-Damn-0.80.0.ebuild,
+  +files/Acme-Damn-0.08-respect-cflags.patch:
+  Bump to version 0.80.0
+
+  - EAPI6
+  - Redo patch
+  - Parallel Tests
+
+  Upstream:
+  - Perl 5.18+ Compat fixes
+
+  Package-Manager: portage-2.3.2
+

@@ -136,3 +136,16 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  02 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  -libdockapp-0.6.4.ebuild, -libdockapp-0.7.0.ebuild,
+  -libdockapp-0.7.1.ebuild:
+  drop some old ~arch versions
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  libdockapp-0.7.2.ebuild:
+  update homepage to new dockapps.net
+
+  Package-Manager: portage-2.3.2
+

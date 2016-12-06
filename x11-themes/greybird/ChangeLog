@@ -128,3 +128,8 @@
 
   Package-Manager: portage-2.3.0
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> greybird-3.20.1-r2.ebuild:
+  x86 stable, bug #596908
+
+  Package-Manager: portage-2.3.2
+

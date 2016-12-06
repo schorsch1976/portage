@@ -175,3 +175,9 @@
 
   Package-Manager: portage-2.3.0
 
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  ntfs3g-2016.2.22-r1.ebuild:
+  2016.2.22-r1: stable on alpha
+
+  Gentoo-Bug: 550970
+

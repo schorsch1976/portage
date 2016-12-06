@@ -98,3 +98,13 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --ignore-arches
 
+*Moo-2.2.5 (04 Dec 2016)
+
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Moo-2.2.5.ebuild,
+  metadata.xml:
+  Bump to version 2.2.5
+
+  - EAPI6
+
+  Package-Manager: portage-2.3.2
+

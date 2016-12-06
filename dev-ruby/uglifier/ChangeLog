@@ -136,3 +136,10 @@
 
   Package-Manager: portage-2.3.2
 
+*uglifier-3.0.4 (04 Dec 2016)
+
+  04 Dec 2016; Hans de Graaff <graaff@gentoo.org> +uglifier-3.0.4.ebuild:
+  add 3.0.4
+
+  Package-Manager: portage-2.3.0
+

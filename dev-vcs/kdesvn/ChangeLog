@@ -106,3 +106,15 @@
 
   Package-Manager: portage-2.3.2
 
+*kdesvn-2.0.0 (05 Dec 2016)
+
+  05 Dec 2016; Johannes Huber <johu@gentoo.org>
+  +files/kdesvn-2.0.0-desktop.patch, +kdesvn-2.0.0.ebuild, metadata.xml:
+  Version bump 2.0.0
+
+  Closes #3012
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+

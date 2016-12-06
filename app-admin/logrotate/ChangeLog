@@ -324,3 +324,19 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> logrotate-3.10.0.ebuild:
+  making the ebuild less ugly.
+
+  Package-Manager: portage-2.3.2
+
+*logrotate-3.11.0 (02 Dec 2016)
+
+  02 Dec 2016; Chema Alonso Josa <nimiux@gentoo.org>
+  +files/logrotate-3.11.0-Werror.patch, +files/logrotate-3.11.0-fbsd.patch,
+  +files/logrotate-3.11.0-ignore-hidden.patch,
+  +files/logrotate-3.11.0-lfs.patch, +files/logrotate-3.11.0-noasprintf.patch,
+  +logrotate-3.11.0.ebuild:
+  Bumps version to 3.11.0
+
+  Package-Manager: portage-2.3.0
+

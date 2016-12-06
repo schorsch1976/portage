@@ -141,3 +141,22 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*easytag-2.4.3 (05 Dec 2016)
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> +easytag-2.4.3.ebuild:
+  Version bump, rekeyword on ppc and sparc now that deps were keyworded
+  finally
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -easytag-2.2.6.ebuild,
+  -easytag-2.4.1.ebuild, -easytag-2.4.2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> metadata.xml:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

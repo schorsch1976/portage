@@ -10,3 +10,8 @@
 
   Package-Manager: portage-2.3.0
 
+  03 Dec 2016; Mike Gilbert <floppym@gentoo.org> geoalchemy2-0.3.ebuild:
+  depend on sci-libs/Shapely
+
+  Package-Manager: portage-2.3.2_p12_p314532
+

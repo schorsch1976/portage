@@ -96,3 +96,20 @@
 
   Gentoo-Bug: 600634
 
+*djbdns-1.05-r32 (03 Dec 2016)
+
+  03 Dec 2016; Thomas Deutschmann <whissi@gentoo.org> +djbdns-1.05-r32.ebuild,
+  +files/CVE2012-1191_0001-ghost-domain-attack.patch:
+  Sec rev bump to v1.05-r32 (bug #404959)
+
+  CVE-2012-1191
+
+  Closes: https://github.com/gentoo/gentoo/pull/2988
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org> djbdns-1.05-r32.ebuild:
+  1.05-r32: stable on alpha
+
+  Gentoo-Bug: 404959
+

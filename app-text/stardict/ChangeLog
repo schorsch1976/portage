@@ -152,3 +152,126 @@
 
   Package-Manager: portage-2.2.28
 
+  02 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> metadata.xml:
+  take an orphan
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  02 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> metadata.xml:
+  fix bug 600718
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+*stardict-3.0.6-r3 (03 Dec 2016)
+
+  03 Dec 2016; Andrew Savchenko <bircoph@gentoo.org>
+  +stardict-3.0.6-r3.ebuild:
+  update to EAPI 6
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  03 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> metadata.xml,
+  stardict-3.0.6-r3.ebuild:
+  handle stardict plugins using USE flags
+
+  Previously many stardict plugins were unconditionally enabled or
+  disabled, they are controllable now, except for festival, where
+  app-accessibility/festival should be updated first, and plugins for
+  unsupported interfaces, like maemo or gpe.
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  03 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> stardict-3.0.6-r3.ebuild:
+  documentation fixes
+
+  - install all docs, but omit zero or dummy files;
+  - install tools docs on demand;
+  - install examples on demand.
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  03 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> stardict-3.0.6-r3.ebuild:
+  fix tools installation
+
+  - install perl tools on demand;
+  - do not rename tools with names already stared with "stardict";
+  - install tools-related examples.
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  03 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> stardict-3.0.6-r3.ebuild:
+  provide python tools as well
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  03 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> stardict-3.0.6-r3.ebuild:
+  add omitted perl rdep
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+*stardict-4.0.0_pre20160518 (05 Dec 2016)
+
+  05 Dec 2016; Andrew Savchenko <bircoph@gentoo.org>
+  +stardict-4.0.0_pre20160518.ebuild:
+  version bump
+
+  Use latest git snapshot.
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  05 Dec 2016; Andrew Savchenko <bircoph@gentoo.org>
+  stardict-4.0.0_pre20160518.ebuild:
+  install wiki docs
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  05 Dec 2016; Andrew Savchenko <bircoph@gentoo.org>
+  stardict-4.0.0_pre20160518.ebuild:
+  tools: add new and update dependencies
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  05 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> metadata.xml,
+  stardict-3.0.6-r3.ebuild:
+  fix missed man configure flag
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  05 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> metadata.xml,
+  stardict-4.0.0_pre20160518.ebuild:
+  add support for new plugins
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  05 Dec 2016; Andrew Savchenko <bircoph@gentoo.org>
+  stardict-4.0.0_pre20160518.ebuild:
+  update gtk/glib deps
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+
+  05 Dec 2016; Andrew Savchenko <bircoph@gentoo.org>
+  +files/stardict-4.0.0_pre20160518-tabfile.patch,
+  stardict-4.0.0_pre20160518.ebuild:
+  fix whitespace handling in tabfile tool
+
+  Patch by Nikolay Korotkiy <sikmir@gmail.com>,
+  git commit adb01aafd94b6bd5b5cc49889f4f09d483ee5ac4 from
+  https://github.com/sikmir/stardict-3.git repository.
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+

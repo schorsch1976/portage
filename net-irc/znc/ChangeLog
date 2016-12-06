@@ -207,3 +207,26 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  02 Dec 2016; Michał Górny <mgorny@gentoo.org> metadata.xml,
+  znc-1.6.3.ebuild:
+  fix googlecode URI, minor fixes
+
+  - use github URI for googletest, use tar.gz instead of zip
+  - add missing quotes around systemd_get_systemunitdir
+
+  Package-Manager: portage-2.3.2
+
+*znc-1.6.3-r1 (02 Dec 2016)
+
+  02 Dec 2016; Michał Górny <mgorny@gentoo.org> -znc-1.6.3.ebuild,
+  +znc-1.6.3-r1.ebuild:
+  add a sub-slot operator for perl and libressl
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Michał Górny <mgorny@gentoo.org> -znc-1.6.1-r1.ebuild:
+  remove old
+
+  Closes: https://github.com/gentoo/gentoo/pull/2977
+  Package-Manager: portage-2.3.2
+

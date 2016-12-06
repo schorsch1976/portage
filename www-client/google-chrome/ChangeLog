@@ -505,3 +505,11 @@
 
   Package-Manager: portage-2.3.2_p5
 
+*google-chrome-55.0.2883.75 (02 Dec 2016)
+
+  02 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -google-chrome-54.0.2840.100.ebuild, +google-chrome-55.0.2883.75.ebuild:
+  automated update (55.0.2883.75)
+
+  Package-Manager: portage-2.3.2_p12_p250343
+

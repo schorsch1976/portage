@@ -80,3 +80,11 @@
   portpeek-2.1.20-r1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*portpeek-2.1.21 (04 Dec 2016)
+
+  04 Dec 2016; Mike Pagano <mpagano@gentoo.org> +portpeek-2.1.21.ebuild:
+  Handle unreadable files. Work on bug when parsing package.use files. Bug
+  #601446
+
+  Package-Manager: portage-2.3.0
+

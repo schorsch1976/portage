@@ -100,3 +100,16 @@
 
   Package-Manager: portage-2.3.1
 
+  04 Dec 2016; Pacho Ramos <pacho@gentoo.org> minitube-2.5.2-r1.ebuild:
+  amd64/x86 stable, bug #601198
+
+  Package-Manager: portage-2.3.2
+
+  04 Dec 2016; Pacho Ramos <pacho@gentoo.org> -files/minitube-1.9-gcc47.patch,
+  -files/minitube-2.0-disable-updates.patch,
+  -files/minitube-2.4-disable-updates.patch, -minitube-2.0.ebuild,
+  -minitube-2.4.ebuild, -minitube-2.5.2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

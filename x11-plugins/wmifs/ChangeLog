@@ -101,3 +101,26 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  02 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org> wmifs-1.4.ebuild,
+  wmifs-1.5.ebuild, wmifs-1.6.ebuild:
+  x11-plugins: update dockapps homepage
+
+  SRC_URI was not updated as tarballs may be different
+
+  Package-Manager: portage-2.3.2
+
+*wmifs-1.8 (02 Dec 2016)
+
+  02 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org> +wmifs-1.8.ebuild:
+  version bump to 1.8
+
+  Rewrite ebuild (EAPI, autotools), restore ~arm keyword
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org> -wmifs-1.4.ebuild,
+  -wmifs-1.5.ebuild, -wmifs-1.6.ebuild:
+  drop old ~arch versions
+
+  Package-Manager: portage-2.3.2
+

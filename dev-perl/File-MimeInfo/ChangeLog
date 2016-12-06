@@ -104,3 +104,18 @@
   RepoMan-Options: --include-arches="alpha amd64 amd64-fbsd arm arm64 hppa
   ia64 m68k mips nios2 ppc ppc64 riscv s390 sh sparc sparc-fbsd x86 x86-fbsd"
 
+*File-MimeInfo-0.280.0 (04 Dec 2016)
+
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> +File-MimeInfo-0.280.0.ebuild:
+  Bump to version 0.280.0
+
+  - EAPI6
+
+  Upstream:
+  - Now supports reading from XDG_CONFIG_HOME/mimeapps.list
+    in preference to XDG_DATA_HOME/applications/defaults.list
+  - Default write destination changed to
+    XDG_CONFIG_HOME/mimeapps.list
+
+  Package-Manager: portage-2.3.2
+

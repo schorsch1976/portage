@@ -129,3 +129,17 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*Text-CSV_XS-1.260.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Text-CSV_XS-1.260.0.ebuild:
+  Bump to version 1.260.0
+
+  Upstream:
+  - turn on autowrap by default with embedded newlines in csv2xls
+  - Add csv2xlsx example
+  - Add support for coderefs as value for header attribute
+  - Add special-value literals 'uc','lc' as arguments for header
+    attribute
+
+  Package-Manager: portage-2.3.2
+

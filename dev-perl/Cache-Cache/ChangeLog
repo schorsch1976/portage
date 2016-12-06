@@ -71,3 +71,12 @@
 
   Package-Manager: portage-2.2.27
 
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> Cache-Cache-1.80.0.ebuild:
+  Disable parallel testing
+
+  Parallel testing causes tests to fail on a regular basis.
+
+  Bug: https://rt.cpan.org/Ticket/Display.html?id=92600
+
+  Package-Manager: portage-2.3.2
+

@@ -130,3 +130,15 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="x86"
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -libosinfo-0.3.0.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+
+*libosinfo-1.0.0 (05 Dec 2016)
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> +libosinfo-1.0.0.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+

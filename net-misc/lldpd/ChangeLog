@@ -127,3 +127,19 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*lldpd-0.9.5 (02 Dec 2016)
+
+  02 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  +files/lldpd-0.9.5-seccomp-add-mprotect.patch, +lldpd-0.9.5.ebuild:
+  Version bump to 0.9.5
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  -files/lldpd-0.7.11-bash-completion-dir.patch, -files/lldpd-initd-4,
+  -lldpd-0.7.11-r3.ebuild, -lldpd-0.7.13.ebuild, -lldpd-0.9.1.ebuild,
+  metadata.xml:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

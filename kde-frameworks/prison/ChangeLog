@@ -1,0 +1,15 @@
+# ChangeLog for kde-frameworks/prison
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*prison-1.1.1 (03 Dec 2016)
+
+  03 Dec 2016; Johannes Huber <johu@gentoo.org> +metadata.xml,
+  +prison-1.1.1.ebuild:
+  media-libs/prison -> kde-frameworks/prison
+
+  03 Dec 2016; Johannes Huber <johu@gentoo.org> prison-1.1.1.ebuild:
+  Update HOMEPAGE
+
+  Package-Manager: portage-2.3.2
+

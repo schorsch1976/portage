@@ -148,3 +148,22 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*xosview-1.19 (03 Dec 2016)
+
+  03 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +xosview-1.19.ebuild:
+  Bump to version 1.19
+
+  Package-Manager: portage-2.3.2
+
+  03 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> xosview-1.18.ebuild:
+  Stable for x86 (bug #595638).
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="x86"
+
+  03 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> xosview-1.18.ebuild:
+  Stable for amd64 (bug #595638).
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="amd64"
+

@@ -87,3 +87,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org> FCGI-0.770.0.ebuild:
+  add ~amd64-fbsd, ~x86-fbsd KEYWORDS.
+
+  Gentoo-Bug: https://bugs.gentoo.org/600256
+
+  Closes: https://github.com/gentoo/gentoo/pull/2992
+

@@ -2526,3 +2526,18 @@
 
   Package-Manager: portage-2.3.0
 
+*gentoo-sources-4.4.36 (02 Dec 2016)
+
+  02 Dec 2016; Mike Pagano <mpagano@gentoo.org> +gentoo-sources-4.4.36.ebuild:
+  Linux patch 4.4.36
+
+  Package-Manager: portage-2.3.0
+
+*gentoo-sources-4.8.12 (02 Dec 2016)
+
+  02 Dec 2016; Alice Ferrazzi <alicef@gentoo.org>
+  +gentoo-sources-4.8.12.ebuild:
+  Linux patch 4.8.12
+
+  Package-Manager: portage-2.3.2
+

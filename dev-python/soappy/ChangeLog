@@ -94,3 +94,22 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  02 Dec 2016; Agostino Sarubbo <ago@gentoo.org> soappy-0.12.22.ebuild:
+  amd64 stable wrt bug #534546
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  02 Dec 2016; Agostino Sarubbo <ago@gentoo.org> soappy-0.12.22.ebuild:
+  x86 stable wrt bug #534546
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> soappy-0.12.22.ebuild:
+  0.12.22-r0: stable on alpha
+
+  Gentoo-Bug: 534546
+

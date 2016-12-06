@@ -192,3 +192,8 @@
 
   Revert until we can drop all keywords for ia64 and sparc
 
+  03 Dec 2016; Hans de Graaff <graaff@gentoo.org> bundler-1.8.9.ebuild:
+  add ruby21
+
+  Package-Manager: portage-2.3.0
+

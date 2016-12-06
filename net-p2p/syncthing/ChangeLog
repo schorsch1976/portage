@@ -436,3 +436,19 @@
   Package-Manager: portage-2.3.2
   Closes: https://github.com/gentoo/gentoo/pull/2913
 
+*syncthing-0.14.13 (04 Dec 2016)
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  +syncthing-0.14.13.ebuild:
+  version bump to 0.14.13.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2979
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  -syncthing-0.14.6.ebuild, -syncthing-0.14.9.ebuild:
+  remove old.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2979
+

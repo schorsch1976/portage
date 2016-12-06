@@ -68,3 +68,36 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*jsr250-1.2 (02 Dec 2016)
+
+  02 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +jsr250-1.2.ebuild:
+  dev-java/jar250: version bump to 1.2.
+
+  Closes: https://github.com/gentoo/gentoo/pull/2976
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+
+  02 Dec 2016; Patrice Clement <monsieurp@gentoo.org> -jsr250-1.2.ebuild:
+  revert c0c955924a02ab94b7677a8ddb51599e398992e1.
+
+  Package-Manager: portage-2.3.0
+
+*jsr250-1.2 (04 Dec 2016)
+
+  04 Dec 2016; James Le Cuirot <chewi@gentoo.org> +jsr250-1.2.ebuild:
+  dev-java/jar250 : version bump to 1.2
+
+  Closes: https://github.com/gentoo/gentoo/pull/2976
+
+  04 Dec 2016; James Le Cuirot <chewi@gentoo.org> jsr250-1.2.ebuild:
+  update jdk/jre dep to at least 1.7
+
+  compilation was tested with java7 and java8
+  Closes: https://github.com/gentoo/gentoo/pull/2976
+
+  04 Dec 2016; James Le Cuirot <chewi@gentoo.org> jsr250-1.2.ebuild:
+  readded ppc64 keyword
+
+  The keyword was in the older version and repoman was complaining.
+  Closes: https://github.com/gentoo/gentoo/pull/2976
+

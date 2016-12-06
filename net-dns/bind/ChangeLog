@@ -421,3 +421,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> bind-9.10.4_p4.ebuild:
+  9.10.4_p4-r0: stable on alpha
+
+  Gentoo-Bug: 598750
+

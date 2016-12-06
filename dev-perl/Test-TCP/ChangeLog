@@ -93,3 +93,13 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*Test-TCP-2.170.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Test-TCP-2.170.0.ebuild:
+  Bump to version 2.170.0
+
+  Upstream:
+  - check_port() can take a "host" argument
+
+  Package-Manager: portage-2.3.2
+

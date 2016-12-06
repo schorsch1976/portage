@@ -111,3 +111,11 @@
 
   Package-Manager: portage-2.3.0
 
+  02 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org> wmcliphist-2.1.ebuild,
+  wmcliphist-2.1-r1.ebuild, wmcliphist-2.1-r2.ebuild:
+  x11-plugins: update dockapps homepage
+
+  SRC_URI was not updated as tarballs may be different
+
+  Package-Manager: portage-2.3.2
+

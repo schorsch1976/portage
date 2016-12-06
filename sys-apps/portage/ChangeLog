@@ -491,3 +491,18 @@
   12 Nov 2016; Mike Frysinger <vapier@gentoo.org> portage-2.3.0.ebuild:
   mark 2.3.0 arm64/ia64/m68k/ppc/s390/sh/sparc stable #589822
 
+*portage-2.3.3 (05 Dec 2016)
+
+  05 Dec 2016; Brian Dolbec <dolsen@gentoo.org> +portage-2.3.3.ebuild:
+  Version bump
+
+  Fixes bugs 597752, 599060, 599240, 600346, 600128, 600660, 600804, 601466,
+  554070, 598116.
+
+  Package-Manager: portage-2.3.3
+
+  05 Dec 2016; Patrick Lauer <patrick@gentoo.org> portage-2.3.3.ebuild:
+  Fix typo in ewarn
+
+  Package-Manager: portage-2.3.2
+

@@ -113,3 +113,9 @@
   squashfs-tools-4.3-r2.ebuild, squashfs-tools-9999.ebuild:
   add USE=debug support for internal tool tracing
 
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  squashfs-tools-4.3-r2.ebuild:
+  4.3-r2: stable on alpha
+
+  Gentoo-Bug: 552484
+

@@ -231,3 +231,9 @@
 
   Gentoo-Bug: 599550
 
+  04 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  DateTime-1.360.0.ebuild:
+  add ~x86-fbsd KEYWORDS
+
+  https://bugs.gentoo.org/show_bug.cgi?id=599552
+

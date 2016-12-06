@@ -74,3 +74,24 @@
 
   Package-Manager: portage-2.3.0
 
+  04 Dec 2016; Pacho Ramos <pacho@gentoo.org> hylafaxplus-5.5.5.ebuild:
+  We always need mgetty not to be built with fax USE (#430784 by Toralf
+  Förster).
+
+  Package-Manager: portage-2.3.2
+
+  04 Dec 2016; Pacho Ramos <pacho@gentoo.org> hylafaxplus-5.5.5.ebuild:
+  Make repoman more happy
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> hylafaxplus-5.5.5.ebuild:
+  amd64/x86 stable
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -hylafaxplus-5.5.4-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

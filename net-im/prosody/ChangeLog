@@ -151,3 +151,8 @@
   05 Nov 2016; Tobias Klausmann <klausman@gentoo.org> prosody-0.9.10.ebuild:
   0.9.10: Restrict luasec to <0.6
 
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org> prosody-0.9.11.ebuild:
+  0.9.11-r0: stable on amd64
+
+  Gentoo-Bug: 598998
+

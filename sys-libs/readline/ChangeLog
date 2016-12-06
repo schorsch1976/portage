@@ -212,3 +212,24 @@
 
   Package-Manager: portage-2.3.2
 
+  04 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> readline-4.3_p5.ebuild,
+  readline-5.2_p14.ebuild:
+  Added sub-slot dependency for sys-libs/ncurses.
+
+  Package-Manager: portage-2.3.2
+
+*readline-6.3_p8-r3 (05 Dec 2016)
+*readline-6.2_p5-r2 (05 Dec 2016)
+
+  05 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -readline-6.2_p5-r1.ebuild, +readline-6.2_p5-r2.ebuild,
+  -readline-6.3_p8-r2.ebuild, +readline-6.3_p8-r3.ebuild:
+  Revbumped remaining EAPI-4 ebuilds to EAPI-5.
+
+  This is necessary to add sub-slot dependency for sys-libs/ncurses.
+  Bumped straight to stable.
+
+  Fixes Gentoo bug #601650.
+
+  Package-Manager: portage-2.3.2
+

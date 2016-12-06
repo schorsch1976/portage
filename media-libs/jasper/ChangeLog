@@ -251,3 +251,12 @@
 
   Package-Manager: portage-2.3.2
 
+  03 Dec 2016; Justin Lecher <jlec@gentoo.org>
+  +files/jasper-2.0.0-add_libm.patch, jasper-2.0.0.ebuild:
+  Fix underlinking detected using ld.gold
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=601070
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

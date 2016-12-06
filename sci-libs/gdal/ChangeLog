@@ -223,3 +223,40 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+  03 Dec 2016; Amy Winston <amynka@gentoo.org>
+  +files/gdal-2.0.2-jasper2.patch, gdal-2.0.2-r3.ebuild:
+  add jasper patch bug #599626
+
+  Package-Manager: portage-2.3.0
+
+*gdal-2.0.3 (05 Dec 2016)
+
+  05 Dec 2016; Thomas Deutschmann <whissi@gentoo.org>
+  +files/gdal-1.5.0-soname-r1.patch,
+  +files/gdal-2.0.3-add-dlopen-support-for-jvm.patch,
+  +files/gdal-2.0.3-install_name.patch, +gdal-2.0.3.ebuild:
+  Bump to v2.0.3
+
+   - Version bump to new upstream release v2.0.3.
+
+   - Bumped to EAPI=6.
+
+   - Enabled python3_5 support.
+
+   - "oracle" USE flag added (Fixes Gentoo-Bug #585156).
+
+   - Fixes a build issue when using "java" USE flag and you have a JRE
+     installed (patch for gdal provided by James Le Cuirot, thanks!).
+
+   - MDB driver now uses new dev-java/jackcess pack (patch for gdal provided
+     by James Le Cuirot, thanks!)
+
+   - Switched JPEG-2000 provider from media-libs/jasper to
+     media-libs/openjpeg:2 because JasPer is unmaintained and vulnerable.
+
+  Gentoo-Bug: https://bugs.gentoo.org/585156
+
+  Closes: https://github.com/gentoo/gentoo/pull/2106
+
+  Package-Manager: portage-2.3.2
+

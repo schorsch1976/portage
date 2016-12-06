@@ -335,3 +335,11 @@
 
   Package-Manager: portage-2.3.2
 
+*kwallet-5.28.0-r1 (04 Dec 2016)
+
+  04 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  +kwallet-5.28.0-r1.ebuild:
+  Add gpgme[cxx]-enabled version
+
+  Package-Manager: portage-2.3.0
+

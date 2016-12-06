@@ -368,3 +368,17 @@
 
   Package-Manager: portage-2.3.2
 
+  01 Dec 2016; Sergei Trofimovich <slyfox@gentoo.org>
+  +files/mono-4.8.0.371-x86_32.patch, mono-4.8.0.371.ebuild:
+  fix ABI_X86=32 build case for amd64 host, bug #600664
+
+  The patch passes flags to adjust target ABI
+  of a multiarch assembler and linker.
+
+  Reported-by: Ivan Dorna
+  Reported-by: Toralf Förster
+  Bug: https://github.com/gentoo/dotnet/issues/270
+  Bug: https://bugs.gentoo.org/600664
+
+  Package-Manager: portage-2.3.2
+

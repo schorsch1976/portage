@@ -396,3 +396,13 @@
 
   Package-Manager: portage-2.3.2
 
+*sqlite-3.15.2 (01 Dec 2016)
+
+  01 Dec 2016; Mike Gilbert <floppym@gentoo.org> +sqlite-3.15.2.ebuild:
+  Version bump (3.15.2).
+
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> sqlite-3.15.2.ebuild:
+  Prefer eapply over epatch in EAPI-6 ebuilds.
+
+  Package-Manager: portage-2.3.2
+

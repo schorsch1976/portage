@@ -250,3 +250,8 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> mpd-0.19.19.ebuild:
+  0.19.19-r0: stable on alpha
+
+  Gentoo-Bug: 584742
+

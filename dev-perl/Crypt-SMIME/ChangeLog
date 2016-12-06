@@ -112,3 +112,15 @@
 
   Package-Manager: portage-2.3.0
 
+*Crypt-SMIME-0.190.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Crypt-SMIME-0.190.0.ebuild:
+  Bump to version 0.190.0
+
+  Upstream:
+  - use RFC-5652 CMS instead of PKCS#7 for compat/interop reasons.
+  - use AES-128-CBC instead of DES-EDE3-CBC for encryption
+  - Fix compat with OpenSSL >= 1.1
+
+  Package-Manager: portage-2.3.2
+

@@ -343,3 +343,10 @@
   ncurses-6.0-r1.ebuild:
   mark 6.0 & 6.0-r1 arm64/ia64/m68k/ppc/s390/sh/sparc stable #594338
 
+  04 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> ncurses-6.0.ebuild,
+  ncurses-6.0-r1.ebuild:
+  Stable for amd64 and x86 (bug #594338).
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="amd64,x86"
+

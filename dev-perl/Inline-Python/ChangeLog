@@ -74,3 +74,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Inline-Python-0.520.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Inline-Python-0.520.0.ebuild:
+  Bump to version 0.520.0
+
+  - EAPI6
+  - Parallel Tests
+
+  Upstream:
+  - Fix memory corruption after passing python dicts with non-string
+    keys to Perl
+  - Fix memory leaks passing python dicts with unicode keys to Perl
+
+  Package-Manager: portage-2.3.2
+

@@ -1525,3 +1525,24 @@
 
   Package-Manager: portage-2.3.2_p11
 
+*chrome-binary-plugins-55.0.2883.75_beta (02 Dec 2016)
+
+  02 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -chrome-binary-plugins-55.0.2883.59_beta.ebuild,
+  +chrome-binary-plugins-55.0.2883.75_beta.ebuild:
+  automated update (55.0.2883.75)
+
+  Package-Manager: portage-2.3.2_p11
+
+*chrome-binary-plugins-56.0.2924.14_alpha (02 Dec 2016)
+*chrome-binary-plugins-55.0.2883.75 (02 Dec 2016)
+
+  02 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -chrome-binary-plugins-54.0.2840.100.ebuild,
+  +chrome-binary-plugins-55.0.2883.75.ebuild,
+  -chrome-binary-plugins-56.0.2924.10_alpha.ebuild,
+  +chrome-binary-plugins-56.0.2924.14_alpha.ebuild:
+  automated update (55.0.2883.75, 56.0.2924.14)
+
+  Package-Manager: portage-2.3.2_p12_p250388
+

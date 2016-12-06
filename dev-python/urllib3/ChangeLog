@@ -306,3 +306,18 @@
   30 Nov 2016; Michał Górny <mgorny@gentoo.org> urllib3-1.19.ebuild:
   Enable pypy3
 
+*urllib3-1.19.1 (05 Dec 2016)
+
+  05 Dec 2016; Mike Gilbert <floppym@gentoo.org> +urllib3-1.19.1.ebuild:
+  bump to 1.19.1
+
+  Tests disabled for now due to errors.
+
+  Package-Manager: portage-2.3.2_p13
+
+  05 Dec 2016; Mike Gilbert <floppym@gentoo.org> -urllib3-1.10.4.ebuild,
+  -urllib3-1.13.1-r1.ebuild, -urllib3-1.14.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2_p13
+

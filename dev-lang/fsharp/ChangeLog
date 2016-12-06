@@ -123,3 +123,11 @@
 
   Package-Manager: portage-2.3.1
 
+*fsharp-4.0.1.20 (02 Dec 2016)
+
+  02 Dec 2016; Mikhail Pukhlikov <cynede@gentoo.org> -fsharp-4.0.1.15.ebuild,
+  +fsharp-4.0.1.20.ebuild:
+  bump
+
+  Package-Manager: portage-2.3.2
+

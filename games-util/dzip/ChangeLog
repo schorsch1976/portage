@@ -73,3 +73,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  03 Dec 2016; James Le Cuirot <chewi@gentoo.org>
+  -files/dzip-2.9-system-zlib.patch:
+  remove unused patch
+
+  Closes: https://github.com/gentoo/gentoo/pull/2920
+

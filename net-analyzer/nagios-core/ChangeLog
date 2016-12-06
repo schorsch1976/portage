@@ -164,3 +164,55 @@
 
   Package-Manager: portage-2.3.0
 
+*nagios-core-4.2.3 (04 Dec 2016)
+
+  04 Dec 2016; Michael Orlitzky <mjo@gentoo.org> -nagios-core-4.2.2.ebuild,
+  +nagios-core-4.2.3.ebuild:
+  net-analyzer/nagios{,-core}: new version 4.2.3 to fix CVE-2016-8641.
+
+  Gentoo-Bug: 600864
+
+  Package-Manager: portage-2.3.0
+
+*nagios-core-4.2.3-r1 (04 Dec 2016)
+
+  04 Dec 2016; Michael Orlitzky <mjo@gentoo.org> +files/nagios4-r1,
+  -nagios-core-4.2.3.ebuild, +nagios-core-4.2.3-r1.ebuild:
+  new revision and init script to fix CVE-2016-8641.
+
+  The new version 4.2.3 was added to fix CVE-2016-8641 in commit
+  c9f880e. However, the root privilege exploit results from the use of
+  "chown" in the init script. We don't use upstream's init script, so a
+  proper fix requires an update to our init script as well.
+
+  The following changes were made to the init script:
+
+    * We no longer attempt to delete the external command file before
+      starting or stopping the daemon. It's not clear why this was done,
+      and that file should not exist unless the user intentionally
+      creates it.
+
+    * We do not create or change ownership of /var/nagios/nagios.log or
+      /var/nagios/status.sav when starting the daemon. The log file path
+      is defined in the config file, so the hard-coded path in the init
+      script might not have referred to the true location of the log file.
+
+      And when the nagios daemon creates these files on its own, they
+      should already have the correct permissions and ownership. By
+      removing the "chown", we have actually fixed the root privilege
+      exploit in CVE-2016-8641.
+
+    * The two files /var/nagios/status.log and /var/nagios/nagios.tmp are
+      not deleted after the daemon has shut down. I can come up with no
+      compelling argument to do so.
+
+  Gentoo-Bug: 600864
+
+  Package-Manager: portage-2.3.0
+
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  nagios-core-4.2.3-r1.ebuild:
+  4.2.3-r1: stable on alpha
+
+  Gentoo-Bug: 600864
+

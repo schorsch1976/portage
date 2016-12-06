@@ -25,3 +25,15 @@
 
   Package-Manager: portage-2.3.2
 
+*worklog-assistant-bin-2.1.3580 (04 Dec 2016)
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  -files/worklog-assistant-bin-2.1.3577-fix-desktop.patch,
+  +files/worklog-assistant-bin-2.1.3580-fix-desktop.patch,
+  -worklog-assistant-bin-2.1.3577.ebuild,
+  +worklog-assistant-bin-2.1.3580.ebuild:
+  version bump to 2.1.3580.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/2957
+

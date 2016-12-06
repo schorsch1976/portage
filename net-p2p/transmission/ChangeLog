@@ -284,3 +284,8 @@
 
   Package-Manager: portage-2.3.2_p11
 
+  01 Dec 2016; Mike Gilbert <floppym@gentoo.org> transmission-9999.ebuild:
+  RESTRICT="!test? ( test )"
+
+  Package-Manager: portage-2.3.2_p11
+

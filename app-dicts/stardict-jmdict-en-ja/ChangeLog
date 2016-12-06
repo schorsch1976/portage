@@ -111,3 +111,9 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+  02 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> metadata.xml:
+  add myselft to maintainers
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+

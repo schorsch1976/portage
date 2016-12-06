@@ -112,3 +112,31 @@
 
   Package-Manager: portage-2.2.28
 
+*w3m-0.5.3-r9 (03 Dec 2016)
+
+  03 Dec 2016; Yixun Lan <dlan@gentoo.org> +w3m-0.5.3-r9.ebuild:
+  version bump, fix various security issue
+
+  1) tracking new repo source from github
+     https://github.com/tats/w3m
+  2) fix various security issue, see bug 600176
+  3) drop USE=vanilla, since all patches accepted by upstream
+
+  Gentoo-Bug: 576514, 600176
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Yixun Lan <dlan@gentoo.org>
+
+  04 Dec 2016; Yixun Lan <dlan@gentoo.org>
+  +files/w3m-0.5.3-fix-missing-time.patch, w3m-0.5.3-r9.ebuild:
+  fix USE="-ssl" err, missing <time.h>
+
+  Gentoo-Bug: 601498
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org> w3m-0.5.3-r9.ebuild:
+  0.5.3-r9: stable on alpha
+
+  Gentoo-Bug: 600176
+

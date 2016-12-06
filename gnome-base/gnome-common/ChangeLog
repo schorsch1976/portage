@@ -135,3 +135,11 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="ppc"
 
+*gnome-common-3.18.0-r1 (04 Dec 2016)
+
+  04 Dec 2016; Pacho Ramos <pacho@gentoo.org> +gnome-common-3.18.0-r1.ebuild:
+  People must DEPEND directly on sys-devel/autoconf-archive for the macros
+  when needed instead of relying on dead/obsolete gnome-common ones (#594084)
+
+  Package-Manager: portage-2.3.2
+

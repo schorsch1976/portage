@@ -138,3 +138,15 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="x86"
 
+*libdmapsharing-2.9.37 (05 Dec 2016)
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> +libdmapsharing-2.9.37.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -libdmapsharing-2.9.35.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

@@ -90,3 +90,11 @@
 
   Package-Manager: portage-2.2.28
 
+*baikal-0.4.6 (05 Dec 2016)
+
+  05 Dec 2016; Fabian Groffen <grobian@gentoo.org> -baikal-0.2.4.ebuild,
+  +baikal-0.4.6.ebuild:
+  version bump to v0.4.6, bug #601168
+
+  Package-Manager: portage-2.3.0
+

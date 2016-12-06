@@ -157,3 +157,13 @@
 
   Package-Manager: portage-2.3.0_p16
 
+  04 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  freerdp-1.1.0_beta1_p20130710-r2.ebuild,
+  freerdp-1.2.1_pre20150326-r1.ebuild, freerdp-2.0.0_pre20160722.ebuild,
+  freerdp-9999.ebuild:
+  fix ffmpeg dependency
+
+  virtual/ffmpeg is only for tools usage.
+
+  Package-Manager: portage-2.3.2_p13
+

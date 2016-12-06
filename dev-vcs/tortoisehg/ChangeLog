@@ -330,3 +330,14 @@
 
   Package-Manager: portage-2.3.2
 
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> tortoisehg-3.8.4.ebuild:
+  version 3.8.4 stable for amd64 and x86.
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -tortoisehg-3.7.3.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

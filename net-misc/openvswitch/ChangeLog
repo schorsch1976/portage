@@ -189,3 +189,21 @@
 
   Package-Manager: portage-2.3.0
 
+  03 Dec 2016; Justin Lecher <jlec@gentoo.org> metadata.xml,
+  openvswitch-2.6.0-r1.ebuild:
+  Fix python shebangs
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=599368
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+
+*openvswitch-2.6.0-r2 (03 Dec 2016)
+
+  03 Dec 2016; Justin Lecher <jlec@gentoo.org> -openvswitch-2.6.0-r1.ebuild,
+  +openvswitch-2.6.0-r2.ebuild:
+  Use external python package
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

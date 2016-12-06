@@ -60,3 +60,15 @@
 
   Package-Manager: portage-2.3.2
 
+*Date-Manip-6.570.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Date-Manip-6.570.0.ebuild:
+  Bump to version 6.57
+
+  - Test patches upstreamed
+
+  Upstream:
+  - Update to tzdata 2016j
+
+  Package-Manager: portage-2.3.2
+

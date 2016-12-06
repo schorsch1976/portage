@@ -201,3 +201,15 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="x86"
 
+*modemmanager-1.6.4 (05 Dec 2016)
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> +modemmanager-1.6.4.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -modemmanager-1.6.2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

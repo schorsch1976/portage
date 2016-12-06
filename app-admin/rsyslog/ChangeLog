@@ -435,3 +435,21 @@
 
   Package-Manager: portage-2.3.2
 
+  05 Dec 2016; Mike Frysinger <vapier@gentoo.org> metadata.xml,
+  rsyslog-8.19.0.ebuild, rsyslog-8.22.0.ebuild, rsyslog-8.23.0.ebuild:
+  handle implicit libuuid dep via USE=uuid
+
+  URL: https://crbug.com/670567
+  Reported-by: Daniel Kurtz <djkurtz@chromium.org>
+
+  05 Dec 2016; Thomas Deutschmann <whissi@gentoo.org> rsyslog-8.19.0.ebuild,
+  rsyslog-8.22.0.ebuild, rsyslog-8.23.0.ebuild:
+  Enable "uuid" USE flag per default
+
+  - Upstream's default is with UUID support
+
+  - util-linux is a default package on Gentoo; "UUID" use flag was only added
+    to help Gentoo-forks, see 774c00968f47061f80aa26db4d3d563fca9f16da
+
+  Package-Manager: portage-2.3.2
+

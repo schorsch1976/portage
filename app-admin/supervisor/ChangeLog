@@ -110,3 +110,22 @@
   29 Oct 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Remove Python team from maintainers
 
+  02 Dec 2016; Patrice Clement <monsieurp@gentoo.org> metadata.xml:
+  add myself as maintainer, add upstream to metadata.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2978
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+
+*supervisor-3.3.1-r1 (02 Dec 2016)
+
+  02 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  +supervisor-3.3.1-r1.ebuild:
+  EAPI=6, fix deps, remove obsolete comments.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2978
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

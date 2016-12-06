@@ -100,3 +100,9 @@
 
   Package-Manager: portage-2.3.1
 
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  Apache-Test-1.400.0-r1.ebuild:
+  1.400.0-r1: stable on alpha
+
+  Gentoo-Bug: 597824
+

@@ -105,3 +105,11 @@
 
   Package-Manager: portage-2.3.1
 
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  tagtool-0.12.3-r1.ebuild:
+  update SRC_URI and HOMEPAGE.
+
+  Gentoo-Bug: https://bugs.gentoo.org/509202
+
+  Closes: https://github.com/gentoo/gentoo/pull/2961
+

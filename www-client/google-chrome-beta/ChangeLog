@@ -731,3 +731,12 @@
 
   Package-Manager: portage-2.3.2_p8
 
+*google-chrome-beta-55.0.2883.75 (02 Dec 2016)
+
+  02 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -google-chrome-beta-55.0.2883.59.ebuild,
+  +google-chrome-beta-55.0.2883.75.ebuild:
+  automated update (55.0.2883.75)
+
+  Package-Manager: portage-2.3.2_p11
+

@@ -73,3 +73,8 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> Text-WikiFormat-0.810.0.ebuild:
+  x86 stable, bug #585622
+
+  Package-Manager: portage-2.3.2
+

@@ -66,3 +66,11 @@
 
   Bug: 575810
 
+*ec2-ami-tools-1.5.6-r1 (03 Dec 2016)
+
+  03 Dec 2016; Hans de Graaff <graaff@gentoo.org> -ec2-ami-tools-1.5.6.ebuild,
+  +ec2-ami-tools-1.5.6-r1.ebuild:
+  use ruby21 with ruby-single eclass
+
+  Package-Manager: portage-2.3.0
+

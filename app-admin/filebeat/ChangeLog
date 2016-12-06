@@ -25,3 +25,10 @@
   +files/filebeat.confd-r1, +files/filebeat.initd-r1:
   version bump to 5.0.0
 
+*filebeat-5.0.2 (03 Dec 2016)
+
+  03 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> +filebeat-5.0.2.ebuild:
+  version bump to 5.0.2
+
+  Package-Manager: portage-2.3.1
+

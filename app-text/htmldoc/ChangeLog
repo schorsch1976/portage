@@ -120,3 +120,8 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> htmldoc-1.8.29.ebuild:
+  1.8.29-r0: stable on alpha
+
+  Gentoo-Bug: 554262
+

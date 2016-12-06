@@ -298,3 +298,9 @@
 
   Package-Manager: portage-2.3.1
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -tvheadend-3.4.27.ebuild,
+  -tvheadend-4.0.6.ebuild, -tvheadend-4.0.8.ebuild:
+  Drop old ebuilds using obsolete avahi USE flag naming
+
+  Package-Manager: portage-2.3.2
+

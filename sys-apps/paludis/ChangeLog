@@ -142,3 +142,17 @@
 
   Package-Manager: portage-2.3.0
 
+*paludis-2.4.0-r1 (04 Dec 2016)
+
+  04 Dec 2016; Hans de Graaff <graaff@gentoo.org> paludis-2.4.0.ebuild,
+  +paludis-2.4.0-r1.ebuild:
+  add revision with ruby 2.1 for bug 576034
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --force
+
+  04 Dec 2016; Hans de Graaff <graaff@gentoo.org> -paludis-2.4.0.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+

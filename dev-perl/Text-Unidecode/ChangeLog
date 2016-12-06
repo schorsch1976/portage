@@ -105,3 +105,17 @@
 
   Package-Manager: portage-2.3.0
 
+*Text-Unidecode-1.300.0 (05 Dec 2016)
+
+  05 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +Text-Unidecode-1.300.0.ebuild:
+  Bump to version 1.300.0
+
+  - EAPI6
+  - Tests enabled
+
+  Upstream:
+  - Fixed forty-odd tables lacking final character
+
+  Package-Manager: portage-2.3.2
+

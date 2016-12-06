@@ -176,3 +176,11 @@
 
   Package-Manager: portage-2.3.2
 
+*firejail-0.9.44 (01 Dec 2016)
+
+  01 Dec 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  +files/firejail-0.9.44-sysmacros.patch, +firejail-0.9.44.ebuild:
+  Bump version
+
+  Package-Manager: portage-2.3.2
+

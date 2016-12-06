@@ -1986,3 +1986,56 @@
 
   Package-Manager: portage-2.3.2_p11
 
+*chromium-55.0.2883.75 (03 Dec 2016)
+
+  03 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -chromium-55.0.2883.52.ebuild, -chromium-55.0.2883.59.ebuild,
+  +chromium-55.0.2883.75.ebuild:
+  stable channel bump (55.0.2883.75)
+
+  Package-Manager: portage-2.3.2_p12_p266412
+
+  03 Dec 2016; Agostino Sarubbo <ago@gentoo.org> chromium-55.0.2883.75.ebuild:
+  amd64 stable wrt bug #601486
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  03 Dec 2016; Agostino Sarubbo <ago@gentoo.org> chromium-55.0.2883.75.ebuild:
+  x86 stable wrt bug #601486
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+*chromium-56.0.2924.14 (04 Dec 2016)
+
+  04 Dec 2016; Mike Gilbert <floppym@gentoo.org> -chromium-56.0.2924.3.ebuild,
+  +chromium-56.0.2924.14.ebuild:
+  dev channel bump (56.0.2924.14)
+
+  Depends on >=media-video/ffmpeg-3.
+
+  Bug: https://bugs.gentoo.org/601604
+  Package-Manager: portage-2.3.2_p13
+
+  04 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -chromium-54.0.2840.100.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2_p13
+
+  04 Dec 2016; Mike Gilbert <floppym@gentoo.org> -files/chromium-gn-r8.patch,
+  -files/chromium-gn-r9.patch, -files/chromium-launcher-r2.sh,
+  -files/chromium-system-ffmpeg-r3.patch,
+  -files/chromium-system-jinja-r13.patch, -files/dot-gclient:
+  remove unused files
+
+  Package-Manager: portage-2.3.2_p13
+
+  05 Dec 2016; Mike Gilbert <floppym@gentoo.org> chromium-56.0.2924.14.ebuild:
+  drop ffmpeg2compat patch
+
+  Package-Manager: portage-2.3.2_p13
+

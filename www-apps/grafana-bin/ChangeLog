@@ -121,3 +121,13 @@
 
   This _actually_ reverts grafana 4.0.0 to 4.0.0_beta2
 
+*grafana-bin-4.0.1 (02 Dec 2016)
+
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  -grafana-bin-3.1.0-r1.ebuild, +grafana-bin-4.0.1.ebuild:
+  Add 4.0.1, hopefully without FD leaks
+
+  Also remove one older version.
+
+  Package-Manager: portage-2.3.2
+

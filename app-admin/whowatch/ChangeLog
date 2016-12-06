@@ -66,3 +66,8 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  04 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> whowatch-1.8.5.ebuild:
+  Added sub-slot dependency for sys-libs/ncurses.
+
+  Package-Manager: portage-2.3.2
+

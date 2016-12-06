@@ -64,3 +64,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  pmount-gui-0_pre20130806.ebuild:
+  update HOMEPAGE.
+
+  Gentoo-Bug: https://bugs.gentoo.org/572052
+
+  Closes: https://github.com/gentoo/gentoo/pull/2993
+

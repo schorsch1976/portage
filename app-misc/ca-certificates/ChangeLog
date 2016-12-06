@@ -359,3 +359,36 @@
   ca-certificates-20160104.3.27.1-r2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*ca-certificates-20161102.3.27.2 (02 Dec 2016)
+
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +ca-certificates-20161102.3.27.2.ebuild:
+  Bump to version 20161102.3.27.2
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -ca-certificates-20160104.3.23.ebuild,
+  -ca-certificates-20160104.3.27.1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+
+*ca-certificates-20161102.3.27.2-r1 (02 Dec 2016)
+
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -ca-certificates-20161102.3.27.2.ebuild,
+  +ca-certificates-20161102.3.27.2-r1.ebuild:
+  Revbump to add new certs.
+
+  Package-Manager: portage-2.3.2
+
+*ca-certificates-20161102.3.27.2-r2 (03 Dec 2016)
+
+  03 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -ca-certificates-20161102.3.27.2-r1.ebuild,
+  +ca-certificates-20161102.3.27.2-r2.ebuild:
+  Another revbump to get rid of outdated certs patch.
+
+  Package-Manager: portage-2.3.2
+

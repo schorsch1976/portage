@@ -331,3 +331,10 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*libdrm-2.4.74 (04 Dec 2016)
+
+  04 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +libdrm-2.4.74.ebuild:
+  Version bump to 2.4.74
+
+  Package-Manager: portage-2.3.2
+

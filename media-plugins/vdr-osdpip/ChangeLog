@@ -73,3 +73,14 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  05 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +files/vdr-osdpip-0.1.2-ffmpeg3.patch, vdr-osdpip-0.1.2-r1.ebuild:
+  apply freebsd patch to build with ffmpeg3, bug #575100
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -vdr-osdpip-0.1.2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

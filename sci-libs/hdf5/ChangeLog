@@ -109,3 +109,17 @@
 
   Package-Manager: portage-2.3.1
 
+*hdf5-1.8.18 (03 Dec 2016)
+
+  03 Dec 2016; Kacper Kowalik <xarthisius@gentoo.org> +hdf5-1.8.18.ebuild:
+  version bump
+
+  Fixes security bugs: #601404, #601408, #601414, #601420
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org> hdf5-1.8.18.ebuild:
+  1.8.18-r0: stable on alpha
+
+  Gentoo-Bug: 601404
+

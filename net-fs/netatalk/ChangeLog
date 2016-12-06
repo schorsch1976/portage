@@ -145,3 +145,16 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> netatalk-3.1.8.ebuild:
+  amd64/x86 stable, bug #595662
+
+  Package-Manager: portage-2.3.2
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  -files/netatalk-3.1.6-gentoo.patch,
+  -files/netatalk-3.1.7-zeroconf-prefer-native-Avahi-support.patch,
+  -netatalk-3.1.6.ebuild, -netatalk-3.1.7-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

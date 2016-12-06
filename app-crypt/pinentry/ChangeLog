@@ -283,3 +283,9 @@
 
   Package-Manager: portage-2.3.2
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  pinentry-0.9.7-r1.ebuild:
+  0.9.7-r1: stable on alpha
+
+  Gentoo-Bug: 601364
+

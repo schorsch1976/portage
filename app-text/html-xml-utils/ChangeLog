@@ -99,3 +99,11 @@
 
   Package-Manager: portage-2.2.26
 
+*html-xml-utils-7.1 (04 Dec 2016)
+
+  04 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  +html-xml-utils-7.1.ebuild:
+  version bump.
+
+  Package-Manager: portage-2.3.0
+

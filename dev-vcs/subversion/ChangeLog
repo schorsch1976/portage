@@ -407,3 +407,14 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  subversion-1.8.17.ebuild:
+  1.8.17-r0: stable on alpha
+
+  Gentoo-Bug: 600468
+
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org> subversion-1.9.5.ebuild:
+  1.9.5-r0: stable on alpha
+
+  Gentoo-Bug: 600468
+

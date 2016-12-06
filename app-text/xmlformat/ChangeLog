@@ -66,3 +66,8 @@
 
   Bug: 575810
 
+  03 Dec 2016; Hans de Graaff <graaff@gentoo.org> xmlformat-1.04.ebuild:
+  use ruby-single to manage ruby dependency
+
+  Package-Manager: portage-2.3.0
+

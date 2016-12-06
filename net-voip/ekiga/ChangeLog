@@ -168,3 +168,8 @@
 
   Package-Manager: portage-2.3.2
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> ekiga-4.0.1-r1.ebuild:
+  Add upstream bug reference
+
+  Package-Manager: portage-2.3.2
+

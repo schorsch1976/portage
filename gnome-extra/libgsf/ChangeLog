@@ -235,3 +235,15 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> -libgsf-1.14.39.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+
+*libgsf-1.14.41 (05 Dec 2016)
+
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> +libgsf-1.14.41.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+

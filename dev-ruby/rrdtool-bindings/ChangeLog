@@ -163,3 +163,9 @@
 
   Gentoo-Bug: 597174
 
+  03 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  rrdtool-bindings-1.4.8.ebuild:
+  add ruby21
+
+  Package-Manager: portage-2.3.0
+

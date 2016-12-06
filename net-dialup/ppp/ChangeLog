@@ -116,3 +116,8 @@
 
   Package-Manager: portage-2.3.2
 
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org> ppp-2.4.7-r3.ebuild:
+  2.4.7-r3: stable on alpha
+
+  Gentoo-Bug: 546554
+

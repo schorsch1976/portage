@@ -398,3 +398,13 @@
 
   Package-Manager: portage-2.3.2
 
+  04 Dec 2016; Pacho Ramos <pacho@gentoo.org> bluez-5.43.ebuild:
+  Add missing MULTILIB_USEDEP dependency for glib (#601522 by Toralf Förster)
+
+  Package-Manager: portage-2.3.2
+
+  04 Dec 2016; Pacho Ramos <pacho@gentoo.org> bluez-5.43.ebuild:
+  amd64/x86 stable, bug #597486
+
+  Package-Manager: portage-2.3.2
+

@@ -108,3 +108,10 @@
   the_silver_searcher-0.33.0.ebuild:
   stabilize 0.33.0
 
+*the_silver_searcher-1.0.1 (04 Dec 2016)
+
+  04 Dec 2016; Tim Harder <radhermit@gentoo.org>
+  +files/the_silver_searcher-1.0.1-tests.patch,
+  +the_silver_searcher-1.0.1.ebuild:
+  version bump to 1.0.1
+

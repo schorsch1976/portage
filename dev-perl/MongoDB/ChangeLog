@@ -93,3 +93,24 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*MongoDB-1.6.0 (04 Dec 2016)
+
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> +MongoDB-1.6.0.ebuild,
+  metadata.xml:
+  Bump to version 1.6.0
+
+  Upstream:
+  - MongoDB::GridFS{,::FIle} deprecated
+  - Add support for maxTimeMS in parallel_scan
+  - Add MongoDB::GridFSBucket for new GridFS API
+  - Database->collection_names takes a filter parameter
+  - Add support for custom file_id values for GridFS files
+  - Add support for maxStalenessSeconds
+  - Add support for Decimal128 BSON
+  - Add support for sending write concern for all allowable
+    database commands
+  - Add support for collations with CRUD/Indexing
+  - Report client information to server during handshake
+
+  Package-Manager: portage-2.3.2
+

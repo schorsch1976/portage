@@ -194,3 +194,9 @@
 
   Package-Manager: portage-2.3.2
 
+  04 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  uid_wrapper-1.2.1.ebuild:
+  1.2.1-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 591304
+

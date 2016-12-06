@@ -247,3 +247,13 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*lxc-2.0.6 (03 Dec 2016)
+
+  03 Dec 2016; Yixun Lan <dlan@gentoo.org>
+  +files/lxc-2.0.6-bash-completion.patch, +lxc-2.0.6.ebuild:
+  version bump
+
+  rework bashcomp patch to make 2.0.6 happy
+
+  Package-Manager: portage-2.3.2
+

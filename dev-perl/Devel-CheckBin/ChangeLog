@@ -24,3 +24,9 @@
   25 May 2016; Matt Turner <mattst88@gentoo.org> Devel-CheckBin-0.40.0.ebuild:
   added ~alpha, bug 579720.
 
+  04 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  Devel-CheckBin-0.40.0.ebuild:
+  add ~x86-fbsd KEYWORDS
+
+  https://bugs.gentoo.org/show_bug.cgi?id=579720
+

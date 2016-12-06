@@ -49,3 +49,11 @@
 
   Package-Manager: portage-2.2.28
 
+*uranium-2.3.1 (05 Dec 2016)
+
+  05 Dec 2016; Alexey Shvetsov <alexxy@gentoo.org>
+  +files/uranium-2.3.1-fix-install-paths.patch, +uranium-2.3.1.ebuild:
+  Version bump to 2.3.1
+
+  Package-Manager: portage-2.3.2
+

@@ -199,3 +199,15 @@
 
   Package-Manager: portage-2.3.0
 
+*guake-0.8.8 (03 Dec 2016)
+
+  03 Dec 2016; Jeroen Roovers <jer@gentoo.org> +guake-0.8.8.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.2
+
+  03 Dec 2016; Jeroen Roovers <jer@gentoo.org> -guake-0.8.5.ebuild:
+  Old.
+
+  Package-Manager: portage-2.3.2
+

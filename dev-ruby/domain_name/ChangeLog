@@ -175,3 +175,11 @@
 
   Package-Manager: portage-2.3.0
 
+*domain_name-0.5.20161129 (05 Dec 2016)
+
+  05 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  +domain_name-0.5.20161129.ebuild:
+  add 0.5.20161129
+
+  Package-Manager: portage-2.3.0
+

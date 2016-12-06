@@ -88,3 +88,8 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  05 Dec 2016; Pacho Ramos <pacho@gentoo.org> Tie-Simple-1.40.0.ebuild:
+  hppa/x86 stable, bug #588026
+
+  Package-Manager: portage-2.3.2
+

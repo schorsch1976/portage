@@ -159,3 +159,9 @@
 
   Package-Manager: portage-2.3.2
 
+  03 Dec 2016; James Le Cuirot <chewi@gentoo.org>
+  -files/openttd-1.5.3-cflags.patch:
+  remove unused patch
+
+  Closes: https://github.com/gentoo/gentoo/pull/2920
+

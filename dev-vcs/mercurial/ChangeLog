@@ -396,3 +396,16 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*mercurial-4.0.1 (02 Dec 2016)
+
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +mercurial-4.0.1.ebuild:
+  Bump to version 4.0.1
+
+  Package-Manager: portage-2.3.2
+
+  02 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -mercurial-3.7.3.ebuild,
+  -mercurial-3.9.1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+

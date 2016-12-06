@@ -109,3 +109,31 @@
   files/teamspeak-server-bin-init-r1:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+*teamspeak-server-bin-3.0.13.6 (03 Dec 2016)
+
+  03 Dec 2016; Thomas Deutschmann <whissi@gentoo.org>
+  +files/systemd/teamspeak3-r1.service, +teamspeak-server-bin-3.0.13.6.ebuild:
+  Bump to v3.0.13.6
+
+  Ebuild changes:
+  ===============
+   - Migrated to EAPI=6; eutils eclass dropped
+
+   - systemd unit renamed to "teamspeak3-server.service" to use the same
+     name across all init systems
+
+   - systemd unit now uses the correct command path (bug #591054)
+
+  Gentoo-Bug: https://bugs.gentoo.org/591054
+  Gentoo-Bug: https://bugs.gentoo.org/589064
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Thomas Deutschmann <whissi@gentoo.org>
+
+  03 Dec 2016; Thomas Deutschmann <whissi@gentoo.org>
+  -files/systemd/teamspeak3.service, -teamspeak-server-bin-3.0.11.4.ebuild,
+  -teamspeak-server-bin-3.0.12.2.ebuild,
+  -teamspeak-server-bin-3.0.12.3.ebuild:
+  Security cleanup (bug #589064)
+
+  Package-Manager: portage-2.3.2
+

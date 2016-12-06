@@ -486,3 +486,28 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  02 Dec 2016; Aaron Bauman <bman@gentoo.org> -nodejs-0.12.6.ebuild:
+  clean vulnerable version wrt security bug #574418
+
+  02 Dec 2016; Michał Górny <mgorny@gentoo.org> metadata.xml,
+  nodejs-7.2.0.ebuild:
+  add optional support for dtrace-based tracing
+
+  NodeJS supports dtrace-based tracing, that can be used by
+  dev-util/systemtap and, more recently, dev-util/bcc. This support is
+  forcibly disabled in nodejs ebuilds.
+
+  This commit adds a systemtap USE flag to be able to turn on this
+  support conditionally. The name of this flag matches the choice done
+  for other ebuilds, like dev-db/mysql or app-emulation/qemu. Despite
+  what has been done in those ebuilds, however, a dependency on
+  dev-util/systemtap is not added: this is because, as of late,
+  systemtap is not the only consumer of those traces anymore.
+
+  Closes: https://github.com/gentoo/gentoo/pull/2803
+
+  03 Dec 2016; Michał Górny <mgorny@gentoo.org> nodejs-7.2.0.ebuild:
+  Add a missing dep on systemtap, #601474
+
+  Patch-by: Marco Leogrande <dark.knight.ita@gmail.com>
+
