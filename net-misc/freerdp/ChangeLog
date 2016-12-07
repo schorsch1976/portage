@@ -167,3 +167,9 @@
 
   Package-Manager: portage-2.3.2_p13
 
+  06 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  freerdp-2.0.0_pre20160722.ebuild:
+  2.0.0_pre20160722-r0: stable on alpha
+
+  Gentoo-Bug: 601720
+

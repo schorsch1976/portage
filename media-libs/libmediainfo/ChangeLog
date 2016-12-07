@@ -153,3 +153,14 @@
   -libmediainfo-0.7.87.ebuild, -libmediainfo-0.7.88.ebuild:
   remove old
 
+*libmediainfo-0.7.91 (06 Dec 2016)
+
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> +libmediainfo-0.7.91.ebuild:
+  version bump to 0.7.91
+
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> libmediainfo-0.7.90.ebuild:
+  stabilize 0.7.90
+
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> -libmediainfo-0.7.89.ebuild:
+  remove old
+

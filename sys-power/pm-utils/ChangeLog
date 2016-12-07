@@ -111,3 +111,9 @@
   * x11-misc/driconf-0.9.1-r1
   * x11-misc/xdg-utils-1.1.0_rc2-r1
 
+  06 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  pm-utils-1.4.1-r7.ebuild:
+  1.4.1-r7: stable on alpha
+
+  Gentoo-Bug: 601708
+

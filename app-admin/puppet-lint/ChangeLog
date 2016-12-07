@@ -108,3 +108,6 @@
 
   Package-Manager: portage-2.3.2
 
+  05 Dec 2016; Michał Górny <mgorny@gentoo.org> puppet-lint-2.0.2.ebuild:
+  Add ruby23, tests pass
+

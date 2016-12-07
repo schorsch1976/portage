@@ -14,3 +14,8 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> libpreludedb-3.0.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*libpreludedb-3.1.0 (06 Dec 2016)
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> +libpreludedb-3.1.0.ebuild:
+  Bump version 3.1.0
+

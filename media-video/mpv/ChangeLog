@@ -1509,3 +1509,14 @@
   Closes: https://github.com/gentoo/gentoo/pull/2880
   Package-Manager: portage-2.3.2
 
+*mpv-0.22.0-r1 (05 Dec 2016)
+
+  05 Dec 2016; Patrice Clement <monsieurp@gentoo.org> metadata.xml,
+  +mpv-0.22.0-r1.ebuild, mpv-9999.ebuild:
+  optionally install extra tools.
+
+  Gentoo-Bug: https://bugs.gentoo.org/601210
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/3015
+

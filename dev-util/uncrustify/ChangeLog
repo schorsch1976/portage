@@ -85,3 +85,17 @@
 
   Package-Manager: portage-2.3.0
 
+  06 Dec 2016; Fabian Groffen <grobian@gentoo.org> uncrustify-9999.ebuild:
+  upstream switched to cmake, patch by Eugene Shalygin, bug #596448
+
+  Package-Manager: portage-2.3.0
+
+*uncrustify-0.64 (06 Dec 2016)
+
+  06 Dec 2016; Fabian Groffen <grobian@gentoo.org> -uncrustify-0.61.ebuild,
+  -uncrustify-0.61-r1.ebuild, -uncrustify-0.62.ebuild,
+  -uncrustify-0.63.ebuild, +uncrustify-0.64.ebuild:
+  version bump to 0.64
+
+  Package-Manager: portage-2.3.0
+

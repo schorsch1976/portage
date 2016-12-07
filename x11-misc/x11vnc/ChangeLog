@@ -177,3 +177,9 @@
 
   Package-Manager: portage-2.3.2
 
+  06 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  x11vnc-0.9.14_p20161013.ebuild:
+  0.9.14_p20161013-r0: stable on alpha
+
+  Gentoo-Bug: 601684
+

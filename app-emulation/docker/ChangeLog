@@ -516,3 +516,23 @@
 
   Package-Manager: portage-2.3.2
 
+*docker-1.13.0_rc3 (06 Dec 2016)
+
+  06 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +docker-1.13.0_rc3.ebuild:
+  Version bump to 1.13.0_rc3
+
+  Package-Manager: portage-2.3.3
+
+  06 Dec 2016; Manuel Rüger <mrueg@gentoo.org> -docker-1.13.0_rc1-r1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.3
+
+*docker-1.13.0_rc3-r1 (06 Dec 2016)
+
+  06 Dec 2016; Manuel Rüger <mrueg@gentoo.org> -docker-1.13.0_rc3.ebuild,
+  +docker-1.13.0_rc3-r1.ebuild:
+  Fix docker sha, remove old
+
+  Package-Manager: portage-2.3.3
+

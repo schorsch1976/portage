@@ -218,3 +218,10 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+*minitest-5.10.1 (06 Dec 2016)
+
+  06 Dec 2016; Hans de Graaff <graaff@gentoo.org> +minitest-5.10.1.ebuild:
+  add 5.10.1
+
+  Package-Manager: portage-2.3.0
+

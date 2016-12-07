@@ -140,3 +140,17 @@
 
   Gentoo-Bug: 600176
 
+  06 Dec 2016; Agostino Sarubbo <ago@gentoo.org> w3m-0.5.3-r9.ebuild:
+  amd64 stable wrt bug #600176
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  06 Dec 2016; Agostino Sarubbo <ago@gentoo.org> w3m-0.5.3-r9.ebuild:
+  x86 stable wrt bug #600176
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

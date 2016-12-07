@@ -158,3 +158,13 @@
 
   Package-Manager: portage-2.3.2
 
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org> netifrc-0.5.1.ebuild:
+  0.5.1-r0: stable on alpha
+
+  Gentoo-Bug: 591826
+
+  06 Dec 2016; Thomas Deutschmann <whissi@gentoo.org> netifrc-0.5.1.ebuild:
+  amd64/x86 stable, bug #591826
+
+  Package-Manager: portage-2.3.2
+

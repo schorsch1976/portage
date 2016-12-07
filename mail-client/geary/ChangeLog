@@ -154,3 +154,10 @@
 
   Package-Manager: portage-2.3.2
 
+  06 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  +files/geary-0.11.2-vala-0.34.patch, geary-0.11.2.ebuild:
+  Fix warnings with vala-0.34 (#601778 by Toralf Förster), don't make warnings
+  fatal.
+
+  Package-Manager: portage-2.3.2
+

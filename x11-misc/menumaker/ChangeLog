@@ -66,3 +66,15 @@
   29 Oct 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Remove Python team from maintainers
 
+*menumaker-0.99.9 (05 Dec 2016)
+
+  05 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> +menumaker-0.99.9.ebuild:
+  bump to 0.99.9
+
+  Package-Manager: portage-2.3.0
+
+  05 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> metadata.xml:
+  add a proxied maintainer
+
+  Package-Manager: portage-2.3.0
+

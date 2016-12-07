@@ -96,3 +96,8 @@
   chardet-2.3.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  06 Dec 2016; Tobias Klausmann <klausman@gentoo.org> chardet-2.3.0.ebuild:
+  2.3.0-r0: stable on alpha
+
+  Gentoo-Bug: 589564
+

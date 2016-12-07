@@ -241,3 +241,9 @@
 
   Package-Manager: portage-2.3.0
 
+  06 Dec 2016; Markus Meier <maekke@gentoo.org> gnome-keyring-3.20.0.ebuild:
+  arm stable, bug #587010
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

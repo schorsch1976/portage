@@ -214,3 +214,8 @@
 
   Package-Manager: portage-2.3.2
 
+  06 Dec 2016; Jason A. Donenfeld <zx2c4@gentoo.org> wireguard-9999.ebuild:
+  use dkms target for source-only install
+
+  Package-Manager: portage-2.3.2
+

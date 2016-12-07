@@ -352,3 +352,12 @@
 
   Package-Manager: portage-2.3.0
 
+*tor-0.2.9.6_rc (05 Dec 2016)
+*tor-0.2.8.10 (05 Dec 2016)
+
+  05 Dec 2016; Anthony G. Basile <blueness@gentoo.org> +tor-0.2.8.10.ebuild,
+  +tor-0.2.9.6_rc.ebuild:
+  version bumps to 0.2.8.10 and 0.2.9.6_rc
+
+  Package-Manager: portage-2.3.0
+

@@ -118,3 +118,19 @@
 
   Package-Manager: portage-2.3.0
 
+  06 Dec 2016; Agostino Sarubbo <ago@gentoo.org>
+  x264-encoder-0.0.20160712.ebuild:
+  amd64 stable wrt bug #579642
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  06 Dec 2016; Agostino Sarubbo <ago@gentoo.org>
+  x264-encoder-0.0.20160712.ebuild:
+  x86 stable wrt bug #579642
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

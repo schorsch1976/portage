@@ -79,3 +79,10 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+  06 Dec 2016; Markus Meier <maekke@gentoo.org>
+  snowball-stemmer-0.20140325.ebuild:
+  arm stable, bug #587010
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

@@ -302,3 +302,10 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*dovecot-2.2.27 (06 Dec 2016)
+
+  06 Dec 2016; Eray Aslan <eras@gentoo.org> +dovecot-2.2.27.ebuild:
+  security bump to dovecot-2.2.27 - bug 601452
+
+  Package-Manager: portage-2.3.3
+

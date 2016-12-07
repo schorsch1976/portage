@@ -85,3 +85,15 @@
   libzen-0.4.31.ebuild:
   sourceforge: switch to https:// URIs
 
+*libzen-0.4.34 (06 Dec 2016)
+
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> +libzen-0.4.34.ebuild:
+  version bump to 0.4.34
+
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> libzen-0.4.33.ebuild:
+  stabilize 0.4.33
+
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> -libzen-0.4.30.ebuild,
+  -libzen-0.4.31.ebuild, -libzen-0.4.32.ebuild:
+  remove old
+

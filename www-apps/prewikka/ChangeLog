@@ -19,3 +19,8 @@
 
   Package-Manager: portage-2.2.28
 
+*prewikka-3.1.0 (06 Dec 2016)
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> +prewikka-3.1.0.ebuild:
+  Bump version 3.1.0
+

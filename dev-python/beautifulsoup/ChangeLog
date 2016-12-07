@@ -137,3 +137,9 @@
   beautifulsoup-4.5.1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  06 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  beautifulsoup-4.5.1.ebuild:
+  4.5.1-r0: stable on alpha
+
+  Gentoo-Bug: 589576
+

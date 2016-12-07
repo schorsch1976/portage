@@ -169,3 +169,6 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  05 Dec 2016; Mike Frysinger <vapier@gentoo.org> debianutils-4.7.ebuild:
+  mark 4.7 arm64/ia64/m68k/s390/sh/sparc stable #583944
+

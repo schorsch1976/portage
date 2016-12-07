@@ -75,3 +75,15 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-ps-1.3.7-r1 (06 Dec 2016)
+
+  06 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-ps-1.3.7-r1.ebuild:
+  Revbump to drop support for php 5.4 and 5.5
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Brian Evans <grknight@gentoo.org> -pecl-ps-1.3.7.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

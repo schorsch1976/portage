@@ -90,3 +90,10 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> tinycss-0.3.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*tinycss-0.4 (05 Dec 2016)
+
+  05 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +tinycss-0.4.ebuild:
+  version bump.
+
+  Package-Manager: portage-2.3.0
+

@@ -86,3 +86,43 @@
 
   Package-Manager: portage-2.2.28
 
+*cgdb-9999 (06 Dec 2016)
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> +cgdb-9999.ebuild:
+  add 9999
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> cgdb-0.6.8.ebuild:
+  bump to 0.6.8
+
+  The ebuild was simplified and is a copy of the live version. The
+  distfile was changed from zip to tgz
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> metadata.xml:
+  add a proxied maintainer #601620
+
+  Package-Manager: portage-2.3.0
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> metadata.xml:
+  fix the proxied-maintainer information
+
+  Package-Manager: portage-2.3.0
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> metadata.xml:
+  update the maintainer <name/> and upstream <remote-id/>
+
+  Package-Manager: portage-2.3.0
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> cgdb-9999.ebuild:
+  add test feature to live ebuild
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> cgdb-0.6.8.ebuild:
+  add test feature to 0.6.8
+
+  Package-Manager: portage-2.3.2
+

@@ -232,3 +232,12 @@
 
   Package-Manager: portage-2.3.1
 
+  05 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> root-5.34.26.ebuild,
+  root-5.34.32.ebuild, root-5.34.36.ebuild:
+  rename USE flag avahi -> zeroconf
+
+  As suggested by pacho in bug 601682.
+
+  Package-Manager: portage-2.3.3
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+

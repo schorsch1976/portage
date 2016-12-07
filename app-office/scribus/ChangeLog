@@ -292,3 +292,10 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Justin Lecher <jlec@gentoo.org>
 
+  06 Dec 2016; Miroslav Šulc <fordfrog@gentoo.org>
+  +files/scribus-9999-docdir.patch, scribus-9999.ebuild:
+  9999: fixed patching the sources (ajdusted docdir patch and not using fpic
+  patch as it is already applied)
+
+  Package-Manager: portage-2.3.3
+

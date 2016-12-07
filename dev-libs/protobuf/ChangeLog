@@ -151,3 +151,6 @@
   26 Nov 2016; Mike Frysinger <vapier@gentoo.org> protobuf-2.6.1-r3.ebuild:
   mark 2.6.1-r3 amd64/arm64/sh/x86 stable
 
+  06 Dec 2016; Mike Frysinger <vapier@gentoo.org> protobuf-2.6.1-r3.ebuild:
+  fix typo in SRC_URI #600972
+

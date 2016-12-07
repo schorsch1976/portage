@@ -120,3 +120,83 @@
 
   Package-Manager: portage-2.3.2
 
+*perl-Parse-CPAN-Meta-1.441.400.100_rc (06 Dec 2016)
+
+  06 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-Parse-CPAN-Meta-1.441.400.100_rc.ebuild:
+  virtual/perl-*: Add new virtual versions for 5.22.3
+
+  virtual/perl-bignum: Add 0.390.100_rc for 5.22.3*
+  virtual/perl-ExtUtils-Command: Add 1.200.100_rc for 5.22.3+
+  virtual/perl-ExtUtils-MakeMaker: Add 7.40.200 for 5.22.3+
+  virtual/perl-File-Spec: add 3.560.200 for 5.22.3
+  virtual/perl-HTTP-Tiny: Add 0.54.10 for 5.22.3
+  virtual/perl-IO: Add 1.360.100 for 5.22.3
+  virtual/perl-IO-Compress: Add 2.68.1 for 5.22.3
+  virtual/perl-libnet: Add 3.50.100 for 5.22.3
+  virtual/perl-Module-CoreList: Add 5.201.610.192.200 for 5.22.3
+  virtual/perl-Parse-CPAN-Meta: Add 1.441.700.100 for 5.22.3
+  virtual/perl-Storable: Add 2.530.200 for 5.22.3
+  virtual/perl-Test: Add 1.260.100 for 5.22.3
+  virtual/perl-Test-Harness: Add 3.350.100 for 5.22.3
+  virtual/perl-XSLoader: Add 0.200.100 for 5.22.3
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Parse-CPAN-Meta-1.441.400-r2.ebuild:
+  virtual/perl-*: Restrict existing virtuals to not map to 5.22.3
+
+  virtual/perl-Archive-Tar: 2.40.0 not in 5.22.3+
+  virtual/perl-bignum: 0.390.0 not in 5.22.3+
+  virtual/perl-CPAN: 2.110.0 not in 5.22.3+
+  virtual/perl-Digest: 1.170.0 not in 5.22.3+
+  virtual/perl-Digest-SHA: 5.950.0 not in 5.22.3+
+  virtual/perl-ExtUtils-Command: 1.200.0 not in 5.22.3+
+  virtual/perl-ExtUtils-MakeMaker: 7.40.100 not in 5.22.3+
+  virtual/perl-HTTP-Tiny: 0.54.0 not in 5.22.3+
+  virtual/perl-IO: 1.350.0 not in 5.22.3+
+  virtual/perl-IO-Compress: 2.68.0 not in 5.22.3+
+  virtual/perl-IPC-Cmd: 0.920.0 not in 5.22.3+
+  virtual/perl-JSON-PP: 2.273.0 not in 5.22.3+
+  virtual/perl-libnet: 3.50.0 not in 5.22.3+
+  virtual/perl-Locale-Maketext: 1.260.0 not in 5.22.3+
+  virtual/perl-Locale-Maketext-Simple: 0.210.0 not in 5.22.3+
+  virtual/perl-Memoize: 1.30.0 not in 5.22.3+
+  virtual/perl-Net-Ping: 2.430.0 not in 5.22.3+
+  virtual/perl-Parse-CPAN-Meta: 1.441.700 not in 5.22.3+
+  virtual/perl-Sys-Syslog: 0.330.0 not in 5.22.3+
+  virtual/perl-Test: 1.260.0 not in 5.22.3+
+  virtual/perl-Test-Harness: 3.350.0 not in 5.22.3+
+  virtual/perl-XSLoader: 0.200.0 not in 5.22.3+
+
+*perl-Parse-CPAN-Meta-1.441.400-r3 (06 Dec 2016)
+
+  06 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  -perl-Parse-CPAN-Meta-1.441.400-r2.ebuild,
+  +perl-Parse-CPAN-Meta-1.441.400-r3.ebuild:
+  virtual/perl-*: -r bump all changed virtuals for propagation
+
+  virtual/perl-Archive-Tar: -r1 bump
+  virtual/perl-bignum: -r1 bump
+  virtual/perl-CPAN: -r bump
+  virtual/perl-Digest: -r bump
+  virtual/perl-Digest-SHA: -r bump
+  virtual/perl-ExtUtils-Command: -r bump
+  virtual/perl-ExtUtils-MakeMaker: -r bump
+  virtual/perl-HTTP-Tiny: -r bump
+  virtual/perl-IO:  -r bump
+  virtual/perl-IO-Compress: -r bump
+  virtual/perl-IPC-Cmd: -r bump
+  virtual/perl-JSON-PP: -r bump
+  virtual/perl-libnet: -r bump
+  virtual/perl-Locale-Maketext: -r bump
+  virtual/perl-Locale-Maketext-Simple: -r bump
+  virtual/perl-Memoize: -r bump
+  virtual/perl-Net-Ping: -r bump
+  virtual/perl-Parse-CPAN-Meta: -r bump
+  virtual/perl-Sys-Syslog: -r bump
+  virtual/perl-Test: -r bump
+  virtual/perl-Test-Harness: -r bump
+  virtual/perl-XSLoader: -r bump
+

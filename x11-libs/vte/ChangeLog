@@ -395,3 +395,9 @@
 
   Signed-off-by: Gilles Dartiguelongue <eva@gentoo.org>
 
+  06 Dec 2016; Markus Meier <maekke@gentoo.org> vte-0.44.2.ebuild:
+  arm stable, bug #587010
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

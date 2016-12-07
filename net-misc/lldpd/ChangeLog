@@ -143,3 +143,12 @@
 
   Package-Manager: portage-2.3.2
 
+*lldpd-0.9.5-r1 (06 Dec 2016)
+
+  06 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  +files/lldpd-0.9.5-seccomp-add-socket-ops.patch, -lldpd-0.9.5.ebuild,
+  +lldpd-0.9.5-r1.ebuild:
+  Revision bump, add sendmmsg and recvfrom to seccomp filter
+
+  Package-Manager: portage-2.3.2
+

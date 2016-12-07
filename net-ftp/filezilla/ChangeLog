@@ -396,3 +396,25 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*filezilla-3.23.0.1 (06 Dec 2016)
+
+  06 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +filezilla-3.23.0.1.ebuild:
+  Bump to version 3.23.0.1
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -filezilla-3.22.1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.2
+
+*filezilla-3.23.0.2 (06 Dec 2016)
+
+  06 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -filezilla-3.23.0.1.ebuild, +filezilla-3.23.0.2.ebuild:
+  Bump to version 3.23.0.2. Removed old.
+
+  Package-Manager: portage-2.3.3
+

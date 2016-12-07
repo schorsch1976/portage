@@ -125,3 +125,13 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-redis-2.2.8 (06 Dec 2016)
+
+  06 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-redis-2.2.8.ebuild:
+  Version bump
+
+  Include php7-0 as a "fake" target so upgrading to the new slot does
+  not throw a REQUIRED_USE error
+
+  Package-Manager: portage-2.3.2
+

@@ -252,3 +252,11 @@
   30 Nov 2016; Tim Harder <radhermit@gentoo.org> +exiftool-10.36.ebuild:
   version bump to 10.36
 
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> exiftool-10.31.ebuild:
+  stabilize 10.31
+
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> -exiftool-10.25.ebuild,
+  -exiftool-10.27.ebuild, -exiftool-10.28.ebuild, -exiftool-10.33.ebuild,
+  -exiftool-10.35.ebuild:
+  remove old
+

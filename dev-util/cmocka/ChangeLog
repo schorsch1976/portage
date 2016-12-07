@@ -125,3 +125,14 @@
 
   Package-Manager: portage-2.3.1
 
+  06 Dec 2016; Johannes Huber <johu@gentoo.org> -cmocka-0.3.1.ebuild,
+  -cmocka-0.3.1-r1.ebuild, -files/cmocka-automagicness.patch:
+  Remove 0.3.1
+
+  Package-Manager: portage-2.3.3
+
+  06 Dec 2016; Johannes Huber <johu@gentoo.org> cmocka-1.1.0.ebuild:
+  EAPI 6
+
+  Package-Manager: portage-2.3.3
+

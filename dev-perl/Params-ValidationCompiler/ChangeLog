@@ -58,3 +58,21 @@
 
   Package-Manager: portage-2.3.2
 
+*Params-ValidationCompiler-0.200.0 (06 Dec 2016)
+
+  06 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +Params-ValidationCompiler-0.200.0.ebuild:
+  Bump to version 0.200.0 (masked)
+
+  Upstream:
+  - Unknown keys now cause exceptions while validating parameter
+    specifications
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  -Params-ValidationCompiler-0.190.0.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.2
+

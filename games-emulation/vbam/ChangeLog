@@ -146,3 +146,8 @@
   26 Aug 2016; Tim Harder <radhermit@gentoo.org> metadata.xml:
   add github upstream metadata
 
+  06 Dec 2016; Pacho Ramos <pacho@gentoo.org> vbam-2.0.0_pre1507.ebuild:
+  Fix compat with ffmpeg-3 (#574894 by Lars Wendler (Polynomial-C)).
+
+  Package-Manager: portage-2.3.2
+

@@ -271,3 +271,9 @@
 
   Package-Manager: portage-2.3.2
 
+  06 Dec 2016; Markus Meier <maekke@gentoo.org> glibmm-2.48.1.ebuild:
+  arm stable, bug #587010
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

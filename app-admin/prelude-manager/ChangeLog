@@ -21,3 +21,10 @@
 
   Package-Manager: portage-2.3.0
 
+*prelude-manager-3.1.0 (06 Dec 2016)
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org>
+  +files/prelude-manager-3.1.0-run.patch, files/prelude-manager.initd,
+  +prelude-manager-3.1.0.ebuild:
+  Bump version 3.1.0
+

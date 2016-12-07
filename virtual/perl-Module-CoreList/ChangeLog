@@ -228,3 +228,26 @@
 
   Package-Manager: portage-2.3.2
 
+*perl-Module-CoreList-5.201.610.192.200_rc (06 Dec 2016)
+
+  06 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +perl-Module-CoreList-5.201.610.192.200_rc.ebuild:
+  virtual/perl-*: Add new virtual versions for 5.22.3
+
+  virtual/perl-bignum: Add 0.390.100_rc for 5.22.3*
+  virtual/perl-ExtUtils-Command: Add 1.200.100_rc for 5.22.3+
+  virtual/perl-ExtUtils-MakeMaker: Add 7.40.200 for 5.22.3+
+  virtual/perl-File-Spec: add 3.560.200 for 5.22.3
+  virtual/perl-HTTP-Tiny: Add 0.54.10 for 5.22.3
+  virtual/perl-IO: Add 1.360.100 for 5.22.3
+  virtual/perl-IO-Compress: Add 2.68.1 for 5.22.3
+  virtual/perl-libnet: Add 3.50.100 for 5.22.3
+  virtual/perl-Module-CoreList: Add 5.201.610.192.200 for 5.22.3
+  virtual/perl-Parse-CPAN-Meta: Add 1.441.700.100 for 5.22.3
+  virtual/perl-Storable: Add 2.530.200 for 5.22.3
+  virtual/perl-Test: Add 1.260.100 for 5.22.3
+  virtual/perl-Test-Harness: Add 3.350.100 for 5.22.3
+  virtual/perl-XSLoader: Add 0.200.100 for 5.22.3
+
+  Package-Manager: portage-2.3.2
+

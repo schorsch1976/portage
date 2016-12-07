@@ -499,3 +499,10 @@
 
   Package-Manager: portage-2.3.0
 
+*go-1.7.4 (05 Dec 2016)
+
+  05 Dec 2016; William Hubbs <williamh@gentoo.org> +go-1.7.4.ebuild:
+  1.7.4 version bump
+
+  Package-Manager: portage-2.3.0
+

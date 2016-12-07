@@ -207,3 +207,20 @@
 
   Package-Manager: portage-2.3.0
 
+  06 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -ardour-2.8.14-r1.ebuild, -ardour-4.0-r2.ebuild, -ardour-4.1.ebuild,
+  -ardour-4.2-r1.ebuild, -ardour-4.4.ebuild, -ardour-4.6.ebuild,
+  -ardour-5.0.ebuild, -files/ardour-3.0-syslibs.patch,
+  -files/ardour-3.2-syslibs.patch, -files/ardour-3.5-syslibs.patch,
+  -files/ardour-3.5.403-sse.patch, -files/ardour-3.5.7-syslibs.patch,
+  -files/ardour-4.0-revision-naming.patch:
+  Removed old.
+
+  Package-Manager: portage-2.3.3
+
+  06 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> ardour-5.5.ebuild,
+  ardour-9999.ebuild:
+  Fixed SRC_URI and replaced epatch with eapply.
+
+  Package-Manager: portage-2.3.3
+

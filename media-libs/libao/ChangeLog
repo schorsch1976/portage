@@ -65,3 +65,7 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  06 Dec 2016; Tim Harder <radhermit@gentoo.org> -libao-1.1.0-r1.ebuild,
+  -libao-1.1.0-r2.ebuild:
+  remove old
+

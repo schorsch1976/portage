@@ -148,3 +148,9 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="x86"
 
+  06 Dec 2016; Markus Meier <maekke@gentoo.org> libwnck-3.20.1.ebuild:
+  arm stable, bug #587010
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

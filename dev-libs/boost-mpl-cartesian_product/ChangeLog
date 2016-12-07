@@ -1,0 +1,18 @@
+# ChangeLog for dev-libs/boost-mpl-cartesian_product
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*boost-mpl-cartesian_product-20161205 (05 Dec 2016)
+
+  05 Dec 2016; Christoph Junghans <junghans@gentoo.org>
+  +boost-mpl-cartesian_product-20161205.ebuild, +metadata.xml:
+  initial commit
+
+  Package-Manager: portage-2.3.0
+
+  05 Dec 2016; Christoph Junghans <junghans@gentoo.org>
+  boost-mpl-cartesian_product-20161205.ebuild:
+  install readme
+
+  Package-Manager: portage-2.3.0
+

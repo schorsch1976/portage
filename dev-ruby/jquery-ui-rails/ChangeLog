@@ -100,3 +100,11 @@
 
   Package-Manager: portage-2.3.0
 
+*jquery-ui-rails-6.0.1 (06 Dec 2016)
+
+  06 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  +jquery-ui-rails-6.0.1.ebuild:
+  add 6.0.1
+
+  Package-Manager: portage-2.3.0
+

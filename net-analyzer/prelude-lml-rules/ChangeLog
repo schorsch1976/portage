@@ -10,3 +10,9 @@
 
   Rules for Prelude LML contributed by the community.
 
+*prelude-lml-rules-3.1.0 (06 Dec 2016)
+
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org>
+  +prelude-lml-rules-3.1.0.ebuild:
+  Bump version 3.1.0
+

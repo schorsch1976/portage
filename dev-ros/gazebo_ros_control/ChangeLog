@@ -119,3 +119,17 @@
 
   Package-Manager: portage-2.3.1
 
+*gazebo_ros_control-2.6.1 (06 Dec 2016)
+
+  06 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +gazebo_ros_control-2.6.1.ebuild:
+  Bump to 2.6.1.
+
+  Package-Manager: portage-2.3.3
+
+  06 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  gazebo_ros_control-2.6.1.ebuild:
+  forward port urdfdom1 patch.
+
+  Package-Manager: portage-2.3.3
+

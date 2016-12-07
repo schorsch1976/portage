@@ -89,3 +89,9 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Matthias Maier <tamiko@gentoo.org>
 
+  05 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  qalculate-gtk-0.9.9.ebuild:
+  0.9.9-r0: stable on alpha
+
+  Gentoo-Bug: 596672
+

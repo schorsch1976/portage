@@ -105,3 +105,13 @@
   Gentoo-bug: 581410
   Package-Manager: portage-2.2.28
 
+  06 Dec 2016; Sam Jorna <wraeth@gentoo.org> inputlircd-0.0.1_pre11.ebuild,
+  inputlircd-0.0.1_pre11-r2.ebuild, inputlircd-0.0.1_pre15-r1.ebuild,
+  inputlircd-0.0.1_pre15-r2.ebuild:
+  update HOMEPAGE
+
+  Original HOMEPAGE appears dead and upstream moved to Github.
+
+  Reported-by: awilfox
+  Package-Manager: portage-2.3.3
+

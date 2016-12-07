@@ -612,3 +612,15 @@
 
   Package-Manager: portage-2.3.2
 
+  06 Dec 2016; Markus Meier <maekke@gentoo.org> gtk+-3.20.9.ebuild:
+  arm stable, bug #587010
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+
+  06 Dec 2016; Markus Meier <maekke@gentoo.org> gtk+-2.24.31.ebuild:
+  arm stable, bug #587010
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

@@ -113,3 +113,17 @@
 
   Gentoo-Bug: 404959
 
+  06 Dec 2016; Agostino Sarubbo <ago@gentoo.org> djbdns-1.05-r32.ebuild:
+  amd64 stable wrt bug #404959
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  06 Dec 2016; Agostino Sarubbo <ago@gentoo.org> djbdns-1.05-r32.ebuild:
+  x86 stable wrt bug #404959
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

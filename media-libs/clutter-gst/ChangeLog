@@ -207,3 +207,16 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="x86"
 
+*clutter-gst-3.0.22 (06 Dec 2016)
+
+  06 Dec 2016; Pacho Ramos <pacho@gentoo.org> +clutter-gst-3.0.22.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Pacho Ramos <pacho@gentoo.org> -clutter-gst-2.0.16.ebuild,
+  -clutter-gst-3.0.16.ebuild, -clutter-gst-3.0.18.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

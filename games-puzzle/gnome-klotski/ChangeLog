@@ -164,3 +164,9 @@
 
   Signed-off-by: Gilles Dartiguelongue <eva@gentoo.org>
 
+  06 Dec 2016; Pacho Ramos <pacho@gentoo.org> -gnome-klotski-3.18.2.ebuild,
+  -gnome-klotski-3.22.0.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

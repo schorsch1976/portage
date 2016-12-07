@@ -135,3 +135,11 @@
 
   Package-Manager: portage-2.3.0
 
+*uclibc-ng-1.0.20 (05 Dec 2016)
+
+  05 Dec 2016; Anthony G. Basile <blueness@gentoo.org>
+  +uclibc-ng-1.0.20.ebuild:
+  version bump to 1.0.20
+
+  Package-Manager: portage-2.3.0
+

@@ -77,3 +77,19 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  06 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  files/latencytop-0.5-03-clean-up-build-system.patch:
+  Fix build with recent ncurses
+
+  ...because the `tinfow` was not getting linked:
+
+    x86_64-pc-linux-gnu-gcc -O2 -pipe -march=native -ggdb
+    -Wno-sign-compare -Wl,-O1 -Wl,--as-needed latencytop.o text_display.o
+    translate.o fsync.o -o latencytop `x86_64-pc-linux-gnu-pkg-config
+    --libs glib-2.0` -lncursesw
+    /usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/../../../../x86_64-pc-linux-
+  gnu/bin/ld:
+    text_display.o: undefined reference to symbol 'curs_set'
+    /lib64/libtinfow.so.6: error adding symbols: DSO missing from command line
+  Closes: https://github.com/gentoo/gentoo/pull/3028
+

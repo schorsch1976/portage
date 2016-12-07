@@ -78,3 +78,8 @@
   18 May 2016; Austin English <wizardedit@gentoo.org> files/isapnp.rc:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+  06 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> isapnptools-1.27.ebuild:
+  update HOMEPAGE, #533772
+
+  Closes: https://github.com/gentoo/gentoo/pull/3017
+
