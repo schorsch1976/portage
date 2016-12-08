@@ -93,3 +93,30 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pecl-xdiff-1.5.2-r4 (07 Dec 2016)
+
+  07 Dec 2016; Michael Orlitzky <mjo@gentoo.org> -pecl-xdiff-1.5.2-r3.ebuild,
+  +pecl-xdiff-1.5.2-r4.ebuild:
+  Drop PHP 5.4 & 5.5 support
+
+  * EAPI=6 bump
+  * Bump Bump php-ext-pecl
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Michael Orlitzky <mjo@gentoo.org>
+
+*pecl-xdiff-2.0.1 (07 Dec 2016)
+
+  07 Dec 2016; Michael Orlitzky <mjo@gentoo.org> -pecl-xdiff-2.0.0.ebuild,
+  +pecl-xdiff-2.0.1.ebuild:
+  Version bump 2.0.1
+
+  * EAPI=6
+  * Enable for PHP 7.1
+  * Bump php-ext-pecl
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Michael Orlitzky <mjo@gentoo.org>
+

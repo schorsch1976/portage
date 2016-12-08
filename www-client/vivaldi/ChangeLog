@@ -1128,3 +1128,22 @@
 
   Package-Manager: portage-2.3.2
 
+*vivaldi-1.6.687.3_p1 (07 Dec 2016)
+
+  07 Dec 2016; Jeroen Roovers <jer@gentoo.org> +vivaldi-1.6.687.3_p1.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.2
+
+  07 Dec 2016; Jeroen Roovers <jer@gentoo.org> vivaldi-1.5.658.44_p1.ebuild:
+  Stable for AMD64 x86 too.
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --ignore-arches
+
+  07 Dec 2016; Jeroen Roovers <jer@gentoo.org> -vivaldi-1.4.589.29_p1.ebuild,
+  -vivaldi-1.5.676.6_p1-r1.ebuild:
+  Old.
+
+  Package-Manager: portage-2.3.2
+

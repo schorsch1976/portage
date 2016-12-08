@@ -188,3 +188,11 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*exfat-utils-1.2.5 (07 Dec 2016)
+
+  07 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +exfat-utils-1.2.5.ebuild:
+  Bump to version 1.2.5
+
+  Package-Manager: portage-2.3.3
+

@@ -209,3 +209,10 @@
 
   Package-Manager: portage-2.2.28
 
+*magit-2.9.0 (07 Dec 2016)
+
+  07 Dec 2016; Hans de Graaff <graaff@gentoo.org> +magit-2.9.0.ebuild:
+  add 2.9.0; also fix version status, bug 601260
+
+  Package-Manager: portage-2.3.0
+

@@ -292,3 +292,11 @@
 
   Closes: https://github.com/gentoo/gentoo/pull/2903
 
+*kodi-17.0_beta6 (07 Dec 2016)
+
+  07 Dec 2016; David Seifert <soap@gentoo.org> -kodi-17.0_beta5.ebuild,
+  +kodi-17.0_beta6.ebuild, kodi-9999.ebuild:
+  bump to 17.0b6
+
+  Closes: https://github.com/gentoo/gentoo/pull/2962
+

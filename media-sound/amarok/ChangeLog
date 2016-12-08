@@ -175,3 +175,9 @@
 
   Package-Manager: portage-2.2.28
 
+  07 Dec 2016; Alexis Ballier <aballier@gentoo.org> amarok-2.8.90-r2.ebuild,
+  +files/amarok-2.8.90-ffmpeg3.patch:
+  fix build with ffmpeg 3, bug #601800
+
+  Package-Manager: portage-2.3.3
+

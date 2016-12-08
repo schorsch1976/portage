@@ -78,3 +78,8 @@
 
   Bug: 575810
 
+  07 Dec 2016; Jason Zaman <perfinion@gentoo.org> conspy-1.10.ebuild:
+  add ncurses subslot dep
+
+  Package-Manager: portage-2.3.0
+

@@ -11,3 +11,18 @@
 
   Package-Manager: portage-2.3.3
 
+*docker_auth-1.1-r1 (07 Dec 2016)
+
+  07 Dec 2016; Manuel Rüger <mrueg@gentoo.org> docker_auth-1.1.ebuild,
+  +docker_auth-1.1-r1.ebuild:
+  Add missed dependencies, install initscript
+
+  Gentoo-Bug: 601884 601882
+
+  Package-Manager: portage-2.3.3
+
+  07 Dec 2016; Manuel Rüger <mrueg@gentoo.org> -docker_auth-1.1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.3
+

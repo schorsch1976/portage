@@ -98,3 +98,22 @@
 
   Package-Manager: portage-2.3.2
 
+  06 Dec 2016; David Seifert <soap@gentoo.org> devil-1.7.8-r2.ebuild,
+  files/devil-1.7.8-CVE-2009-3994.patch, files/devil-1.7.8-ILUT.patch,
+  files/devil-1.7.8-fix-test.patch, files/devil-1.7.8-nvtt-glut.patch:
+  Port to EAPI 6
+
+  Gentoo-bug: 600188
+  * Make PATCHES -p1 compliant
+  * Delete .la files unconditionally
+
+  Package-Manager: portage-2.3.3
+
+  06 Dec 2016; David Seifert <soap@gentoo.org> devil-1.7.8-r2.ebuild,
+  +files/devil-1.7.8-jasper-remove-uchar.patch:
+  Remove use of 'uchar' from jasper
+
+  Gentoo-bug: 600188
+
+  Package-Manager: portage-2.3.3
+

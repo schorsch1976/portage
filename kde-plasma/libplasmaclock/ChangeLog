@@ -8,3 +8,10 @@
   +libplasmaclock-4.11.22.ebuild, +metadata.xml:
   kde-base/libplasmaclock -> kde-plasma/libplasmaclock
 
+  07 Dec 2016; Johannes Huber <johu@gentoo.org> libplasmaclock-4.11.22.ebuild,
+  metadata.xml:
+  Rename USE flag kdepim -> pim
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+  Closes: 2755
+

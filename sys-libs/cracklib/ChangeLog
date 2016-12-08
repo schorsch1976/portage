@@ -204,3 +204,10 @@
   RepoMan-Options: --include-arches="ia64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> cracklib-2.9.6-r1.ebuild:
+  mark 2.9.6-r1 arm64/m68k/s390/sh stable #591456
+
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> -cracklib-2.9.1-r1.ebuild,
+  -cracklib-2.9.4.ebuild, -cracklib-2.9.5.ebuild, -cracklib-2.9.6.ebuild:
+  drop old <2.9.6-r1 versions
+

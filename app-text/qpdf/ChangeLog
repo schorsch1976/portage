@@ -81,3 +81,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*qpdf-6.0.0-r1 (06 Dec 2016)
+*qpdf-5.1.3-r1 (06 Dec 2016)
+*qpdf-5.1.2-r1 (06 Dec 2016)
+*qpdf-5.1.1-r1 (06 Dec 2016)
+
+  06 Dec 2016; Mike Frysinger <vapier@gentoo.org> metadata.xml,
+  -qpdf-5.1.1.ebuild, +qpdf-5.1.1-r1.ebuild, -qpdf-5.1.2.ebuild,
+  +qpdf-5.1.2-r1.ebuild, -qpdf-5.1.3.ebuild, +qpdf-5.1.3-r1.ebuild,
+  -qpdf-6.0.0.ebuild, +qpdf-6.0.0-r1.ebuild:
+  add USE=perl to control the perl/fix-qdf dep
+
+  The only reason we depend on perl is for the fix-qdf helper script
+  written in perl.  That's a heavy dep when all you want is the libqdf
+  library.  Add USE=perl to control it.
+

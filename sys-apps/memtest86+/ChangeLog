@@ -132,3 +132,7 @@
   files/memtest86+-5.01-reboot-def.patch:
   add links to patches sent upstream
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/memtest86+-5.01-test-random-cflags.patch, memtest86+-5.01-r2.ebuild:
+  fix missing ssp flags on test/random objects #590974
+

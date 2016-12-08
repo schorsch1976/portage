@@ -319,3 +319,6 @@
 
   Package-Manager: portage-2.3.2
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> sudo-1.8.16.ebuild:
+  mark 1.8.16 arm64/ia64/m68k/ppc/s390/sh/sparc/x86 stable #587794
+

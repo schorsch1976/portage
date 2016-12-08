@@ -119,3 +119,15 @@
 
   Package-Manager: portage-2.3.2
 
+*pecl-ssh2-0.13-r1 (07 Dec 2016)
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-ssh2-0.13-r1.ebuild:
+  Drop 5.5 support on 0.13 and allow easier 7.0 transition
+
+  Package-Manager: portage-2.3.2
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org> -pecl-ssh2-0.13.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

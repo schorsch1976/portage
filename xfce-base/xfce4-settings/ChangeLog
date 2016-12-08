@@ -138,3 +138,11 @@
 
   Package-Manager: portage-2.3.0
 
+  07 Dec 2016; Jason Zaman <perfinion@gentoo.org>
+  xfce4-settings-4.13.0.ebuild:
+  update dep for build failure with too-old exo
+
+  Gentoo-bug: https://bugs.gentoo.org/601904
+
+  Package-Manager: portage-2.3.0
+

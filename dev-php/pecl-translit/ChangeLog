@@ -70,3 +70,17 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*pecl-translit-0.6.2-r1 (07 Dec 2016)
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org>
+  +pecl-translit-0.6.2-r1.ebuild:
+  Revbump to drop php 5.5 support
+
+  Package-Manager: portage-2.3.2
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org>
+  -pecl-translit-0.6.1-r1.ebuild, -pecl-translit-0.6.2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

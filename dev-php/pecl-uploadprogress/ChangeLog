@@ -79,3 +79,20 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-uploadprogress-1.0.3.1-r3 (07 Dec 2016)
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org> +files/1.0.3.1-php7.patch,
+  +pecl-uploadprogress-1.0.3.1-r3.ebuild:
+  Revbump to drop php 5.4 and 5.5 adding 7.0
+
+  Upstream patch included to make this extension compile on 7.0
+  Also add small fprintf fix to eliminate format warnings
+
+  Package-Manager: portage-2.3.2
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org>
+  -pecl-uploadprogress-1.0.3.1-r2.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

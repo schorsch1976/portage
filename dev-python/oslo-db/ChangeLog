@@ -158,3 +158,11 @@
 
   Package-Manager: portage-2.3.0
 
+*oslo-db-4.13.4 (07 Dec 2016)
+
+  07 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +oslo-db-4.13.4.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+

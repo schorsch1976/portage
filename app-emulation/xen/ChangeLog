@@ -597,3 +597,14 @@
 
   Package-Manager: portage-2.3.2
 
+*xen-4.7.1-r2 (07 Dec 2016)
+*xen-4.6.4-r2 (07 Dec 2016)
+
+  07 Dec 2016; Yixun Lan <dlan@gentoo.org> +xen-4.6.4-r2.ebuild,
+  +xen-4.7.1-r2.ebuild:
+  fix XSA-201
+
+  Gentoo-Bug: 601250
+
+  Package-Manager: portage-2.3.2
+

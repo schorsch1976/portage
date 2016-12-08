@@ -446,3 +446,9 @@
 
   Gentoo-Bug: 600142
 
+  06 Dec 2016; Markus Meier <maekke@gentoo.org> gst-plugins-bad-1.8.3.ebuild:
+  arm stable, bug #587010
+
+  Package-Manager: portage-2.3.2
+  RepoMan-Options: --include-arches="arm"
+

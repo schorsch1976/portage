@@ -144,3 +144,8 @@
 
   Package-Manager: portage-2.3.0
 
+  07 Dec 2016; Hans de Graaff <graaff@gentoo.org> hiera-2.0.0.ebuild:
+  add ruby23
+
+  Package-Manager: portage-2.3.0
+

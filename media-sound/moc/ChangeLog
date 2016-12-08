@@ -114,3 +114,14 @@
   +moc-2.6_alpha3.ebuild:
   version bumps to 2.5.2 and 2.6_alpha3
 
+  07 Dec 2016; Jason Zaman <perfinion@gentoo.org> moc-2.5.0.ebuild:
+  Add subslot deps for ncurses and db
+
+  Package-Manager: portage-2.3.0
+
+  07 Dec 2016; Jason Zaman <perfinion@gentoo.org> -moc-2.5.1.ebuild,
+  -moc-2.6_alpha1.ebuild, -moc-2.6_alpha1-r1.ebuild, -moc-2.6_alpha2.ebuild:
+  drop old
+
+  Package-Manager: portage-2.3.0
+

@@ -200,3 +200,6 @@
   -bugzilla-5.0.2.ebuild:
   cleanup vulnerable versions per security bug #583236
 
+  06 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> metadata.xml:
+  remove myself as maintainer
+

@@ -133,3 +133,21 @@
 
   Package-Manager: portage-2.3.2
 
+  07 Dec 2016; Alexis Ballier <aballier@gentoo.org> -files/tyxml.patch,
+  -ocsigenserver-2.7-r1.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.3
+
+  07 Dec 2016; Alexis Ballier <aballier@gentoo.org> ocsigenserver-2.8.ebuild,
+  ocsigenserver-9999.ebuild:
+  require camlp4 on lwt.
+
+  Package-Manager: portage-2.3.3
+
+  07 Dec 2016; Alexis Ballier <aballier@gentoo.org> ocsigenserver-2.8.ebuild,
+  ocsigenserver-9999.ebuild:
+  add missing camlp4 usedep on pgocaml
+
+  Package-Manager: portage-2.3.3
+

@@ -78,3 +78,9 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  07 Dec 2016; Jason Zaman <perfinion@gentoo.org>
+  libcaca-0.99_beta18-r2.ebuild, libcaca-0.99_beta19.ebuild:
+  add ncurses subslot dep
+
+  Package-Manager: portage-2.3.0
+

@@ -282,3 +282,7 @@
 
   Package-Manager: portage-2.3.2
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> criu-2.8.ebuild,
+  +files/criu-2.8-sysmacros.patch:
+  fix build w/newer glibc #580454
+

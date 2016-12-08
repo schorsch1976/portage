@@ -427,3 +427,19 @@
 
   Package-Manager: portage-2.3.0
 
+  07 Dec 2016; Jason Zaman <perfinion@gentoo.org> mutt-1.5.23-r7.ebuild,
+  mutt-1.5.24-r2.ebuild, mutt-1.7.2.ebuild:
+  add subslot deps for ncurses and ssl
+
+  Package-Manager: portage-2.3.0
+
+  07 Dec 2016; Fabian Groffen <grobian@gentoo.org> mutt-1.7.2.ebuild:
+  add back keywords after masking USE=notmuch, bug #587560
+
+  Package-Manager: portage-2.3.0
+
+  07 Dec 2016; Fabian Groffen <grobian@gentoo.org> mutt-1.7.2.ebuild:
+  add back ~x86-fbsd keyword after masking USE=notmuch, bug #587560
+
+  Package-Manager: portage-2.3.0
+

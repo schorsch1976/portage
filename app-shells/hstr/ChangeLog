@@ -98,3 +98,8 @@
 
   Package-Manager: portage-2.3.0
 
+  06 Dec 2016; Patrice Clement <monsieurp@gentoo.org> hstr-1.21.ebuild:
+  stable for amd64.
+
+  Package-Manager: portage-2.3.0
+

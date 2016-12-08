@@ -94,3 +94,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  07 Dec 2016; Johannes Huber <johu@gentoo.org> metadata.xml,
+  simon-0.4.1.ebuild:
+  Rename USE flag kdepim -> pim
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+  Closes: 2755
+

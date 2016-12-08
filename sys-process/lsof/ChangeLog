@@ -101,3 +101,11 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*lsof-4.89-r1 (07 Dec 2016)
+
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> +lsof-4.89-r1.ebuild:
+  handle combined header file tests #601432
+
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> lsof-4.89.ebuild:
+  mark 4.89 amd64/arm64/ia64/m68k/ppc/s390/sh/sparc/x86 stable #596186
+

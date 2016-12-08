@@ -170,3 +170,6 @@
 
   Package-Manager: portage-2.3.0
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> links-2.12-r2.ebuild:
+  mark 2.12-r2 ia64/ppc/ppc64/s390/sh/sparc stable #591910
+

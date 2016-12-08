@@ -61,3 +61,17 @@
   18 May 2016; Austin English <wizardedit@gentoo.org> files/famd:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> fam-2.7.0-r7.ebuild:
+  mark 2.7.0-r7 s390/sh stable
+
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> -fam-2.7.0-r6.ebuild:
+  drop old 2.7.0-r6 version
+
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> fam-2.7.0-r7.ebuild,
+  +files/fam-2.7.0-sysmacros.patch:
+  fix build w/newer glibc #580702
+
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> fam-2.7.0-r7.ebuild,
+  +files/fam-2.7.0-out-of-tree.patch:
+  make out of tree builds work to avoid pointless source tree copies
+

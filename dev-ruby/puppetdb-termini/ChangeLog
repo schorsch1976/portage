@@ -109,3 +109,11 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*puppetdb-termini-4.3.0 (07 Dec 2016)
+
+  07 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +puppetdb-termini-4.3.0.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+

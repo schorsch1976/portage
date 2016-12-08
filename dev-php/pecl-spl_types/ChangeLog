@@ -71,3 +71,22 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pecl-spl_types-0.4.0-r2 (06 Dec 2016)
+
+  06 Dec 2016; Brian Evans <grknight@gentoo.org>
+  +pecl-spl_types-0.4.0-r2.ebuild:
+  Revbump to remove php 5.4 and 5.5 support
+
+  No PHP 7 support exists officially.
+  A fork at https://github.com/esminis/php_pecl_spl_types seems to have ported
+  to 7,
+  but testing is needed.
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Brian Evans <grknight@gentoo.org>
+  -pecl-spl_types-0.4.0-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

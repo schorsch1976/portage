@@ -211,3 +211,23 @@
 
   Package-Manager: portage-2.3.2
 
+*marble-16.08.3-r1 (07 Dec 2016)
+
+  07 Dec 2016; Johannes Huber <johu@gentoo.org>
+  +files/marble-16.08.3-deps.patch, +marble-16.08.3-r1.ebuild:
+  Drop unused DEPEND
+
+  Upstream commit 670a24a87adab6d7b76de60ce67c8eef8433c24c
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+
+  07 Dec 2016; Johannes Huber <johu@gentoo.org> -marble-16.08.3.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.0
+  Closes: #3049
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+

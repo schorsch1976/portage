@@ -109,3 +109,7 @@
 
   Package-Manager: portage-2.3.2_p1
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> dash-0.5.9.1-r1.ebuild,
+  metadata.xml:
+  change USE=dumb-echo to USE=vanilla #590696
+

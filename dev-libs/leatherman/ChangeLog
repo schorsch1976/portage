@@ -208,3 +208,18 @@
 
   Package-Manager: portage-2.3.0
 
+*leatherman-0.10.1 (07 Dec 2016)
+
+  07 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +leatherman-0.10.1.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+
+  07 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -leatherman-0.9.1.ebuild, -leatherman-0.9.3.ebuild,
+  -leatherman-0.10.0.ebuild:
+  some cleanup
+
+  Package-Manager: portage-2.3.0
+

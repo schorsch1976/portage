@@ -818,3 +818,13 @@
 
   Package-Manager: portage-2.3.0
 
+*libvirt-2.4.0-r1 (07 Dec 2016)
+
+  07 Dec 2016; Yixun Lan <dlan@gentoo.org> +libvirt-2.4.0-r1.ebuild,
+  libvirt-9999.ebuild, metadata.xml:
+  add USE=zfs to support zfs storage backend
+
+  Gentoo-Bug: 601864
+
+  Package-Manager: portage-2.3.3
+

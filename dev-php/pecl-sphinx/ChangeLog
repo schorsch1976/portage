@@ -79,3 +79,20 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pecl-sphinx-1.3.3-r1 (06 Dec 2016)
+
+  06 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-sphinx-1.3.3-r1.ebuild:
+  Revbump removing php 5.4 and 5.5 support
+
+  This package does not currently support PHP 7+, though there is some
+  activity upstream to port it to PHP 7. A prerelease may be wise if
+  upstream does not produce a new version in due time
+  and we have requests for it.
+
+  Package-Manager: portage-2.3.2
+
+  06 Dec 2016; Brian Evans <grknight@gentoo.org> -pecl-sphinx-1.3.3.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

@@ -118,3 +118,28 @@
 
   Package-Manager: portage-2.2.26
 
+  06 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  bashdb-4.3.0.91-r2.ebuild:
+  stable for amd64. mark stable for the remaining arches using the ALLARCHES
+  policy.
+
+  Package-Manager: portage-2.3.0
+
+  06 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  -bashdb-4.3.0.91-r1.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> bashdb-4.3.0.91-r2.ebuild:
+  hardcode path to debugger main #591994
+
+  This isn't a great solution, but considering bash hasn't changed its path
+  in decades, it shouldn't be a big deal.  It's better than relying on the
+  output of `strings` on the /bin/bash binary.
+
+*bashdb-4.4.0.92 (07 Dec 2016)
+
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> +bashdb-4.4.0.92.ebuild:
+  version bump to 4.4.0.92
+

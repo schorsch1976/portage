@@ -527,3 +527,10 @@
 
   Package-Manager: portage-2.3.2
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/xf86-video-intel-2.99.917-config-header.patch,
+  xf86-video-intel-2.99.917_p20160621-r1.ebuild,
+  xf86-video-intel-2.99.917_p20161110.ebuild,
+  xf86-video-intel-2.99.917_p20161118.ebuild:
+  add missing config.h header to fix build w/newer glibc #575970
+

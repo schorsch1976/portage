@@ -64,3 +64,21 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pecl-uuid-1.0.4-r1 (07 Dec 2016)
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-uuid-1.0.4-r1.ebuild:
+  Drop support for php 5.5 in revbump
+
+  Package-Manager: portage-2.3.2
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org> metadata.xml:
+  Add PHP project to metadata
+
+  Package-Manager: portage-2.3.2
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org> -pecl-uuid-1.0.3-r2.ebuild,
+  -pecl-uuid-1.0.4.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

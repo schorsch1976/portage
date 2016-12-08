@@ -110,3 +110,6 @@
 
   Gentoo-Bug: 588162
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> sed-4.2.2.ebuild:
+  mark 4.2.2 amd64/arm64/ia64/m68k/ppc/s390/sh/sparc/x86 stable #588162
+

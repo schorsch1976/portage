@@ -241,3 +241,9 @@
   Package-Manager: portage-2.3.3
   Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
 
+  07 Dec 2016; Andrew Savchenko <bircoph@gentoo.org> -root-5.34.32.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.3
+  Signed-off-by: Andrew Savchenko <bircoph@gentoo.org>
+

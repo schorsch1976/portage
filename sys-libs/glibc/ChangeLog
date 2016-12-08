@@ -463,3 +463,12 @@
   The ABI should not be changed by Gentoo patchsets, so allow people to
   move between -r# versions.
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org>
+  files/eblits/src_configure.eblit:
+  hack initial mips cross headers for 2.21+
+
+  The mips preconfigure script has changed (again), so update the hacks
+  for the early cross-compile glibc headers phase.
+
+  URL: https://crbug.com/647033
+

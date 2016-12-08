@@ -182,3 +182,15 @@
   15 Nov 2016; Mike Frysinger <vapier@gentoo.org> grep-2.25.ebuild:
   mark 2.25 arm64/ia64/m68k/s390/sh/sparc stable #583968
 
+*grep-2.27 (07 Dec 2016)
+
+  07 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +grep-2.27.ebuild:
+  Bump to version 2.27
+
+  Package-Manager: portage-2.3.3
+
+  07 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -grep-2.21-r1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.3
+
