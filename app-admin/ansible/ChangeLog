@@ -331,3 +331,19 @@
 
   Package-Manager: portage-2.3.0
 
+  08 Dec 2016; Denis Dupeyron <calchan@gentoo.org> metadata.xml:
+  add calchan@gentoo.org to maintainers
+
+  Package-Manager: portage-2.3.3
+
+*ansible-2.2.1.0_rc1 (08 Dec 2016)
+
+  08 Dec 2016; Denis Dupeyron <calchan@gentoo.org>
+  +ansible-2.2.1.0_rc1.ebuild:
+  add 2.2.1.0_rc1 for testing
+
+  Add release candidate for testing of upstream bug:
+  https://github.com/ansible/ansible/issues/18656
+
+  Package-Manager: portage-2.3.3
+

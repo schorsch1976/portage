@@ -872,3 +872,12 @@
 
   Package-Manager: portage-2.3.2_p12_p250379
 
+*google-chrome-unstable-56.0.2924.18 (08 Dec 2016)
+
+  08 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -google-chrome-unstable-56.0.2924.14.ebuild,
+  +google-chrome-unstable-56.0.2924.18.ebuild:
+  automated update (56.0.2924.18)
+
+  Package-Manager: portage-2.3.2_p13
+

@@ -103,3 +103,20 @@
 
   Package-Manager: portage-2.3.2
 
+  07 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-AutoLoader-5.740.0-r3.ebuild:
+  virtual/perl-*: Extend applicable stable keywords from dev-lang/perl
+
+  virtuals are by design an extension of Perl itself, so it rarely
+  makes sense for a virtual not to have a given keyword when Perl
+  has one.
+
+  Similarly, stabilization for Perl Itself should be communicated
+  out to all its virtuals.
+
+  However, in the past, the lack of keywords for certain arches has
+  resulted in those arches silently failing to stabilize these
+  virtuals, and the hope is this will make that problem go away.
+
+  Package-Manager: portage-2.3.3
+

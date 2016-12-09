@@ -63,3 +63,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*vimoutliner-0.3.6 (07 Dec 2016)
+
+  07 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  +vimoutliner-0.3.6.ebuild:
+  version bump and EAPI bump.
+
+  Package-Manager: portage-2.3.0
+

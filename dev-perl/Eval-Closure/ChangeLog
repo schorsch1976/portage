@@ -112,3 +112,16 @@
 
   Gentoo-Bug: 599550
 
+*Eval-Closure-0.140.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Eval-Closure-0.140.0.ebuild:
+  Bump to version 0.140.0
+
+  - EAPI6
+  - Parallel Tests
+
+  Upstream:
+  - Slightly iptimised internals
+
+  Package-Manager: portage-2.3.3
+

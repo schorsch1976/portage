@@ -101,3 +101,15 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*Email-Valid-1.202.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Email-Valid-1.202.0.ebuild:
+  Bump to version 1.202.0
+
+  Upstream:
+  - Fixes for "no MX found"
+  - Treat RFC Restricted/Reserved TLDs as invalid
+  - mx check restores support for A records
+
+  Package-Manager: portage-2.3.3
+

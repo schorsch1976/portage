@@ -103,3 +103,15 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-event-2.2.1 (08 Dec 2016)
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-event-2.2.1.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.3
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org> -pecl-event-2.1.0.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.3
+

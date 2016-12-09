@@ -86,3 +86,22 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Email-Sender-1.300.30 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Email-Sender-1.300.30.ebuild:
+  Bump to version 1.300.30
+
+  - EAPI6
+  - Restore previously broken test
+  - Enable parallel testing
+
+  Upstream:
+  - Fix bug with double-encoding
+  - avoid unitialised warning when delivering to maildir
+  - Include port and host in SMTP failure errors
+  - SMTP Transport now uses Net::SMTP for SSL and StartTLS
+  - Email::Sender::Util->easy_transport made public
+  - localpart quoting made closer to RFC 821
+
+  Package-Manager: portage-2.3.3
+

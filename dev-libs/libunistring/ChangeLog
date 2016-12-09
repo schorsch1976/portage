@@ -93,3 +93,20 @@
   10 Aug 2016; Mike Frysinger <vapier@gentoo.org> libunistring-0.9.6.ebuild:
   keyword for everyone #590520
 
+*libunistring-0.9.7 (08 Dec 2016)
+
+  08 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +libunistring-0.9.7.ebuild:
+  Bump to version 0.9.7
+
+  - Bumped to EAPI-6
+  - Added multilib support
+
+  Package-Manager: portage-2.3.3
+
+  08 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  libunistring-0.9.6.ebuild:
+  Re-added $Id$ header line.
+
+  Package-Manager: portage-2.3.3
+

@@ -34,3 +34,9 @@
 
   Package-Manager: portage-2.3.2
 
+  08 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  kcalcore-16.08.3.ebuild:
+  stabilise 16.08.3 on amd64/x86
+
+  Package-Manager: portage-2.3.3
+

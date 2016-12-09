@@ -132,3 +132,14 @@
 
   Package-Manager: portage-2.3.0
 
+*teamviewer-12.0.71510 (08 Dec 2016)
+*teamviewer-10.0.46203 (08 Dec 2016)
+
+  08 Dec 2016; Wolfram Schlich <wschlich@gentoo.org>
+  -teamviewer-10.0.41499-r1.ebuild, +teamviewer-10.0.46203.ebuild,
+  -teamviewer-11.0.57095-r1.ebuild, -teamviewer-12.0.69753.ebuild,
+  +teamviewer-12.0.71510.ebuild:
+  version bumps, removed old versions
+
+  Package-Manager: portage-2.3.0
+

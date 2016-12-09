@@ -64,3 +64,15 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pecl-crack-0.4-r5 (08 Dec 2016)
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org>
+  files/fix-php-5-4-support.patch, +pecl-crack-0.4-r5.ebuild:
+  Revbump to drop php 5.4 and 5.5 dependencies
+
+  This package has not been ported and fails with PHP 7.0.
+  Patches are welcome, but this package is in danger of being dropped
+  when PHP 5.6 becomes obsolete.
+
+  Package-Manager: portage-2.3.2
+

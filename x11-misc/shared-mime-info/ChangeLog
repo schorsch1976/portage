@@ -122,3 +122,12 @@
 
   Package-Manager: portage-2.3.0
 
+*shared-mime-info-1.8 (08 Dec 2016)
+
+  08 Dec 2016; Justin Lecher <jlec@gentoo.org> metadata.xml,
+  +shared-mime-info-1.8.ebuild:
+  Version Bump
+
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

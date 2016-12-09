@@ -154,3 +154,13 @@
   06 Dec 2016; Mike Frysinger <vapier@gentoo.org> protobuf-2.6.1-r3.ebuild:
   fix typo in SRC_URI #600972
 
+*protobuf-3.1.0 (08 Dec 2016)
+*protobuf-3.0.2 (08 Dec 2016)
+
+  08 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +protobuf-3.0.2.ebuild,
+  +protobuf-3.1.0.ebuild:
+  version bump to 3.0.2 and 3.1.0.
+
+  Gentoo-Bug: https://bugs.gentoo.org/591072
+  Closes: https://github.com/gentoo/gentoo/pull/3043
+

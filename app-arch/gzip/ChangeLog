@@ -150,3 +150,6 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> gzip-1.8.ebuild:
+  mark 1.8 arm64/ia64/m68k/ppc/s390/sh/sparc stable #587592
+

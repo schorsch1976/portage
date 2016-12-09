@@ -96,3 +96,24 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+*translate-toolkit-2.0.0_beta7-r1 (08 Dec 2016)
+
+  08 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  +translate-toolkit-2.0.0_beta7-r1.ebuild:
+  Block dev-python/pydiff, file collision
+
+  Gentoo-bug: 597782
+
+  dev-python/pydiff only seems to have one reverse-dep and was last released
+  > 3 years ago, so maybe over time this will solve itself. File has existed
+  in translate-toolkit 3 years prior to pydiff.
+
+  Package-Manager: portage-2.3.0
+
+  08 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  -translate-toolkit-2.0.0_beta7.ebuild:
+  Drop old
+
+  Closes: https://github.com/gentoo/gentoo/pull/3051
+  Package-Manager: portage-2.3.0
+

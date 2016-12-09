@@ -81,3 +81,7 @@
   livestreamer-1.12.1.ebuild, livestreamer-1.12.2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  08 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> livestreamer-1.11.1.ebuild,
+  livestreamer-1.12.1.ebuild, livestreamer-1.12.2.ebuild:
+  update HOMEPAGE, #600456
+

@@ -219,3 +219,26 @@
   Signed-off-by: Johannes Huber <johu@gentoo.org>
   Closes: 2755
 
+  08 Dec 2016; Johannes Huber <johu@gentoo.org> calligra-2.9.11.ebuild:
+  add SLOT to media-libs/glew dependency
+
+  This fixes a repoman warning.
+
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+
+*calligra-2.9.11-r1 (08 Dec 2016)
+
+  08 Dec 2016; Johannes Huber <johu@gentoo.org> +calligra-2.9.11-r1.ebuild,
+  +files/calligra-2.9.1-no-arch-detection.patch:
+  Fix bug 584118
+
+  Prevent calligra from adding CPU flags automatically.
+
+  Reported-by: Alec Ari
+  Gentoo-bug: 584118
+  Closes: https://github.com/gentoo/gentoo/pull/3050
+
+  Package-Manager: portage-2.3.3
+  Signed-off-by: Guilherme Amadio <amadio@gentoo.org>
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+

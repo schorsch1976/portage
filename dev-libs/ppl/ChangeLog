@@ -116,3 +116,8 @@
 
   Package-Manager: portage-2.2.27
 
+*ppl-1.2 (08 Dec 2016)
+
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> +ppl-1.2.ebuild:
+  version bump to 1.2 #601156
+

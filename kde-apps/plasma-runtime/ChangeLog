@@ -245,3 +245,6 @@
   -plasma-runtime-15.12.3.ebuild:
   kde-apps: remove 15.12.3
 
+  08 Dec 2016; Johannes Huber <johu@gentoo.org> plasma-runtime-16.04.3.ebuild:
+  kde-base/kactivities -> kde-frameworks/kactivities
+

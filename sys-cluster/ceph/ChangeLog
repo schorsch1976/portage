@@ -444,3 +444,10 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*ceph-10.2.4 (08 Dec 2016)
+
+  08 Dec 2016; Yixun Lan <dlan@gentoo.org> +ceph-10.2.4.ebuild:
+  version bump
+
+  Package-Manager: portage-2.3.3
+

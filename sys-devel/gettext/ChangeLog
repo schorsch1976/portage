@@ -250,3 +250,23 @@
   gettext-0.19.8.1.ebuild:
   make sure libintl building is disabled #564168
 
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> gettext-0.19.8.1.ebuild:
+  change $D to $ED for prefix #594958
+
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> -gettext-0.19.4.ebuild,
+  -gettext-0.19.6-r1.ebuild:
+  drop old <0.19.7 versions
+
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> gettext-0.19.7.ebuild,
+  gettext-0.19.8.1.ebuild:
+  force a recent version of libxml2 #596918
+
+  Gettext, via gnulib, bundles libxml2.  If it detects the system version
+  of libxml2 is too old, it will automatically fall back to that.  Pass
+  configure flags to disable that logic, but also add a min version to
+  the libxml2 dep to match the versions that are included.
+
+  Both of these include libxml2-2.9.3, so that's what we force.  We'll
+  have to remember to check the version of the bundled copy from time
+  to time in case we need to update the dependency.
+

@@ -209,3 +209,11 @@
 
   Package-Manager: portage-2.3.0
 
+*icingaweb2-2.3.4-r2 (08 Dec 2016)
+
+  08 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +icingaweb2-2.3.4-r2.ebuild, icingaweb2-9999.ebuild:
+  adding php-7.1 support bug 601668
+
+  Package-Manager: portage-2.3.0
+

@@ -145,3 +145,11 @@
 
   Package-Manager: portage-2.3.1
 
+*python-caja-1.16.0 (08 Dec 2016)
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +python-caja-1.16.0.ebuild:
+  version bump to 1.16.0
+
+  Package-Manager: portage-2.3.1
+

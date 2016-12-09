@@ -135,3 +135,6 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> gawk-4.1.3.ebuild:
+  mark 4.1.3 arm64/ia64/m68k/s390/sh/sparc stable #583700
+

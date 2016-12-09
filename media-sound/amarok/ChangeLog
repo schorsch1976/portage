@@ -181,3 +181,9 @@
 
   Package-Manager: portage-2.3.3
 
+  08 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  files/amarok-2.8.90-ffmpeg3.patch:
+  add link to reviewboard in ffmpeg3 patch.
+
+  Package-Manager: portage-2.3.3
+

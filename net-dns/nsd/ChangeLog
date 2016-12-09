@@ -210,3 +210,15 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*nsd-4.1.14 (08 Dec 2016)
+
+  08 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +nsd-4.1.14.ebuild:
+  Bump to version 4.1.14
+
+  Package-Manager: portage-2.3.3
+
+  08 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -nsd-4.1.12.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.3
+

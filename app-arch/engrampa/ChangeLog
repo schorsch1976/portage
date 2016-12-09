@@ -172,3 +172,10 @@
 
   Package-Manager: portage-2.3.1
 
+*engrampa-1.16.0 (08 Dec 2016)
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org> +engrampa-1.16.0.ebuild:
+  version bump to 1.16.0, gtk3 only
+
+  Package-Manager: portage-2.3.1
+

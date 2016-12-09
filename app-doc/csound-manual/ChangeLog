@@ -107,3 +107,8 @@
   -csound-manual-6.05.ebuild:
   remove old
 
+*csound-manual-6.08 (08 Dec 2016)
+
+  08 Dec 2016; Tim Harder <radhermit@gentoo.org> +csound-manual-6.08.ebuild:
+  version bump to 6.08
+

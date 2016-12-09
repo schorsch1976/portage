@@ -408,3 +408,12 @@
 
   Package-Manager: portage-2.3.2
 
+*bluez-5.43-r1 (08 Dec 2016)
+
+  08 Dec 2016; Pacho Ramos <pacho@gentoo.org> +bluez-5.43-r1.ebuild,
+  metadata.xml:
+  We need to ensure obexd can be spawned automatically by systemd when user-
+  session is enabled in dbus (#577842)
+
+  Package-Manager: portage-2.3.2
+

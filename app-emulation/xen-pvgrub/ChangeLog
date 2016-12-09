@@ -240,3 +240,11 @@
 
   Package-Manager: portage-2.3.2
 
+*xen-pvgrub-4.8.0 (08 Dec 2016)
+
+  08 Dec 2016; Yixun Lan <dlan@gentoo.org>
+  +files/xen-pvgrub-4.8-jserver.patch, +xen-pvgrub-4.8.0.ebuild:
+  version bump
+
+  Package-Manager: portage-2.3.3
+

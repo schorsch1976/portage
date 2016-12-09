@@ -257,3 +257,13 @@
 
   Package-Manager: portage-2.3.2
 
+*lxc-2.0.6-r1 (08 Dec 2016)
+
+  08 Dec 2016; Yixun Lan <dlan@gentoo.org> -lxc-2.0.6.ebuild,
+  +lxc-2.0.6-r1.ebuild:
+  fix bashcomp collision with app-emulation/lxd
+
+  Gentoo-Bug: 601602
+
+  Package-Manager: portage-2.3.3
+

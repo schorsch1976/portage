@@ -119,3 +119,13 @@
 
   Package-Manager: portage-2.3.1
 
+*libmatekbd-1.16.0 (08 Dec 2016)
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +libmatekbd-1.16.0.ebuild:
+  version bump to 1.16.0
+
+  * require libxklavier 5.2 and add introspection
+
+  Package-Manager: portage-2.3.1
+

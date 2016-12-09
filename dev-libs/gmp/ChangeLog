@@ -226,3 +226,11 @@
   +files/gmp-6.1.0-tune-printf.patch, gmp-6.1.0.ebuild, gmp-6.1.1.ebuild:
   fix USE=pgo builds for some systems #568320
 
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> gmp-6.0.0a.ebuild,
+  gmp-6.1.0.ebuild, gmp-6.1.1.ebuild:
+  make sure configure stays +x
+
+  Depending on the version of patch used, updates to the configure script
+  might have lost the +x bit.  Since we already chmod the main script, add
+  the wrapped one to the list too to workaround patch misbehavior.
+

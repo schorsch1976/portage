@@ -76,3 +76,16 @@
 
   Package-Manager: portage-2.3.2
 
+*pecl-yaz-1.2.1 (07 Dec 2016)
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-yaz-1.2.1.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  07 Dec 2016; Brian Evans <grknight@gentoo.org> -pecl-yaz-1.1.9.ebuild,
+  -pecl-yaz-1.2.0.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

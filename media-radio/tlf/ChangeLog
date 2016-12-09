@@ -127,3 +127,10 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*tlf-1.2.4.5 (08 Dec 2016)
+
+  08 Dec 2016; Thomas Beierlein <tomjbe@gentoo.org> +tlf-1.2.4.5.ebuild:
+  Bugfix release
+
+  Package-Manager: portage-2.3.2
+

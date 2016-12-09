@@ -136,3 +136,20 @@
 
   Package-Manager: portage-2.3.1
 
+*caja-1.16.1 (08 Dec 2016)
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org> +caja-1.16.1.ebuild,
+  metadata.xml:
+  version bump to 1.16.1
+
+  * updating mate-desktop minimum required version
+
+  Package-Manager: portage-2.3.1
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org> metadata.xml:
+  cleanup metadata
+
+  * unique flag is from live ebuild, will be available in next releases
+
+  Package-Manager: portage-2.3.1
+

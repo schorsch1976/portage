@@ -97,3 +97,18 @@
   RepoMan-Options: --include-arches="alpha amd64 amd64-fbsd arm arm64 hppa
   ia64 m68k mips nios2 ppc ppc64 riscv s390 sh sparc sparc-fbsd x86 x86-fbsd"
 
+*Email-Simple-2.211.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Email-Simple-2.211.0.ebuild:
+  Bump to version 2.2110.0
+
+  Upstream:
+  - avoid possible problem with pathological backtracking when
+    seeing malformed messages
+  - Don't treat "0" as an empty string
+  - Fix header and header_names not to have a fencepost error which
+    causes suplus `undef`'s being returned and yeilding associated
+    warnings.
+
+  Package-Manager: portage-2.3.3
+

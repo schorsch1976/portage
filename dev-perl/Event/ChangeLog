@@ -120,3 +120,15 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*Event-1.260.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Event-1.260.0.ebuild:
+  Bump to version 1.260.0
+
+  - EAPI6
+
+  Upstream:
+  - Fix syntax error in Watcher.pm
+
+  Package-Manager: portage-2.3.3
+

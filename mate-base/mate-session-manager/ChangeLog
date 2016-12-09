@@ -146,3 +146,13 @@
 
   Package-Manager: portage-2.3.1
 
+*mate-session-manager-1.16.0 (08 Dec 2016)
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +mate-session-manager-1.16.0.ebuild:
+  version bump to 1.16.0
+
+  * drop gtk3 useflag, now it is gtk3 only
+
+  Package-Manager: portage-2.3.1
+

@@ -164,3 +164,10 @@
   -R-3.3.0.ebuild:
   remove 3.2.5 and 3.3.0
 
+*R-3.3.2 (08 Dec 2016)
+
+  08 Dec 2016; Denis Dupeyron <calchan@gentoo.org> +R-3.3.2.ebuild:
+  bump to 3.3.2, thanks to Neil Shephard (bug #598834)
+
+  Package-Manager: portage-2.3.3
+

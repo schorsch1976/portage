@@ -184,3 +184,24 @@
 
   Package-Manager: portage-2.3.2
 
+*firejail-0.9.44.2 (08 Dec 2016)
+
+  08 Dec 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  -files/firejail-0.9.44-sysmacros.patch,
+  +files/firejail-0.9.44.2-sysmacros.patch, -firejail-0.9.44.ebuild,
+  +firejail-0.9.44.2.ebuild:
+  Bump version
+
+  0.9.44.2 is a maintenance and security release for version 0.9.44.
+
+  Gentoo-Bug: 601994
+
+  Package-Manager: portage-2.3.2
+
+  08 Dec 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  -files/firejail-0.9.42-libstdc++.patch,
+  -files/firejail-0.9.42-sysmacros.patch, -firejail-0.9.42-r1.ebuild:
+  Remove the vulnerable version
+
+  Package-Manager: portage-2.3.2
+

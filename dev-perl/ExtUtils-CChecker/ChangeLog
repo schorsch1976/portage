@@ -63,3 +63,17 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*ExtUtils-CChecker-0.100.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +ExtUtils-CChecker-0.100.0.ebuild:
+  Bump to version 0.100.0
+
+  - EAPI6
+  - Parallel tests
+
+  Upstream:
+  - Add "config"  passthrough constructor for ExtUtils::CBuilder
+
+  Package-Manager: portage-2.3.3
+

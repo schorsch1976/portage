@@ -125,3 +125,17 @@
 
   Package-Manager: portage-2.3.2
 
+*xdebug-client-2.5.0 (08 Dec 2016)
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org> +xdebug-client-2.5.0.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org> -xdebug-client-2.2.7.ebuild,
+  -xdebug-client-2.3.1.ebuild, -xdebug-client-2.3.3.ebuild,
+  -xdebug-client-2.4.0.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

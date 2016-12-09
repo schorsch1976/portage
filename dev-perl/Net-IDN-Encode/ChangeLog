@@ -104,3 +104,14 @@
 
   Package-Manager: portage-2.3.2
 
+*Net-IDN-Encode-2.302.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +Net-IDN-Encode-2.302.0.ebuild, metadata.xml:
+  Bump to version 2.302.0
+
+  Upstream:
+  - Fix memory leak
+
+  Package-Manager: portage-2.3.3
+

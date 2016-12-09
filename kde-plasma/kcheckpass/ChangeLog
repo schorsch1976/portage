@@ -9,3 +9,6 @@
   +kcheckpass-4.11.22-r1.ebuild, +metadata.xml:
   kde-base/kcheckpass -> kde-plasma/kcheckpass
 
+  08 Dec 2016; Johannes Huber <johu@gentoo.org> kcheckpass-4.11.22-r1.ebuild:
+  kde-base/kdebase-pam -> kde-plasma/kdebase-pam
+

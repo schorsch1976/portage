@@ -138,3 +138,15 @@
 
   Package-Manager: portage-2.3.1
 
+*mate-terminal-1.16.1 (08 Dec 2016)
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +mate-terminal-1.16.1.ebuild:
+  version bump to 1.16.1
+
+  * gtk3 only
+  * drop mate-desktop dependency
+  * add dconf as dep
+
+  Package-Manager: portage-2.3.1
+

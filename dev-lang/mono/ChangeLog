@@ -382,3 +382,11 @@
 
   Package-Manager: portage-2.3.2
 
+*mono-4.8.0.374 (08 Dec 2016)
+
+  08 Dec 2016; Mikhail Pukhlikov <cynede@gentoo.org> -mono-4.8.0.371.ebuild,
+  +mono-4.8.0.374.ebuild:
+  bump
+
+  Package-Manager: portage-2.3.3
+

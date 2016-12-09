@@ -86,3 +86,20 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*ExtUtils-F77-1.200.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +ExtUtils-F77-1.200.0.ebuild:
+  Bump to version 1.200.0
+
+  Upstream:
+  - Freebsd fixes
+  - Fix support for GCC 5.x+
+
+  Package-Manager: portage-2.3.3
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> ExtUtils-F77-1.190.0.ebuild,
+  ExtUtils-F77-1.200.0.ebuild:
+  Spread ppc64 keywording from 1.180.0 stable
+
+  Package-Manager: portage-2.3.3
+

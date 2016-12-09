@@ -1,0 +1,14 @@
+# ChangeLog for dev-perl/Sereal
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Sereal-3.15.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Sereal-3.15.0.ebuild,
+  +metadata.xml:
+  Add w/ version 3.15.0
+
+  Required by dev-perl/Event-RPC
+
+  Package-Manager: portage-2.3.3
+

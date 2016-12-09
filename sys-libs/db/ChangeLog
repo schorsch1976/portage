@@ -193,3 +193,10 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> db-4.2.52_p5-r1.ebuild,
+  db-4.3.29_p1-r1.ebuild, db-4.4.20_p4-r1.ebuild, db-4.5.20_p2-r1.ebuild,
+  db-4.6.21_p4.ebuild, db-4.7.25_p4.ebuild, db-4.8.30-r2.ebuild,
+  db-5.1.29-r1.ebuild, db-5.3.28-r2.ebuild, db-6.0.35.ebuild,
+  db-6.1.29.ebuild, db-6.2.23.ebuild:
+  pass EPREFIX to --with-tcl path to fix prefix builds #592672
+

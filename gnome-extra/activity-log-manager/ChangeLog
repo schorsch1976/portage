@@ -104,3 +104,8 @@
 
   Package-Manager: portage-2.2.27
 
+  08 Dec 2016; Pacho Ramos <pacho@gentoo.org> -files/config.vapi:
+  remove unused file
+
+  Signed-off-by: Pacho Ramos <pacho@gentoo.org>
+

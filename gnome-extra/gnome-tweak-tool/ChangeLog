@@ -184,3 +184,10 @@
 
   Package-Manager: portage-2.3.2
 
+  08 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  -files/gnome-tweak-tool-3.18.1-libsoup.patch,
+  -files/gnome-tweak-tool-3.8.1-wm-preferences.patch:
+  remove unused patches
+
+  Signed-off-by: Pacho Ramos <pacho@gentoo.org>
+

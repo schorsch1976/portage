@@ -229,3 +229,19 @@
 
   Package-Manager: portage-2.3.0
 
+  07 Dec 2016; Yixun Lan <dlan@gentoo.org> ibus-1.5.5.ebuild,
+  ibus-1.5.8-r1.ebuild, ibus-1.5.9-r1.ebuild:
+  fix failing pkg_postrm issue
+
+  Don't call gnome2_schemas_savelist() from pkg_postrm
+
+  See also bug #566956, which fixed this for newer ebuilds,
+  but 1.5.5 is latest stable on ia64 and sparc.
+
+  Gentoo-Bug: 600426, 566956
+  Closes: https://github.com/gentoo/gentoo/pull/2902
+
+  Package-Manager: portage-2.3.2
+
+  Signed-off-by: Yixun Lan <dlan@gentoo.org>
+

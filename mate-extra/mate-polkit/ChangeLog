@@ -127,3 +127,13 @@
 
   Package-Manager: portage-2.3.1
 
+*mate-polkit-1.16.0 (08 Dec 2016)
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org>
+  +mate-polkit-1.16.0.ebuild:
+  version bump to 1.16.0
+
+  * now is gtk3 only, dropping gtk3 useflag
+
+  Package-Manager: portage-2.3.1
+

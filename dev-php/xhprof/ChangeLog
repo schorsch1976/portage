@@ -87,3 +87,21 @@
 
   Package-Manager: portage-2.3.0
 
+*xhprof-0.9.4_p20150226-r1 (08 Dec 2016)
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org>
+  +xhprof-0.9.4_p20150226-r1.ebuild:
+  Revbump to drop php 5.5 dependencies
+
+  This package has not been ported and fails with PHP 7.0.
+  Patches are welcome, but this package is in danger of being dropped
+  when PHP 5.6 becomes obsolete.
+
+  Package-Manager: portage-2.3.2
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org>
+  -xhprof-0.9.4_p20150226.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

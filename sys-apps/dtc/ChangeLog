@@ -87,3 +87,7 @@
 
   Package-Manager: portage-2.3.0
 
+  07 Dec 2016; Mike Frysinger <vapier@gentoo.org> dtc-1.4.2.ebuild,
+  dtc-9999.ebuild:
+  update HOMEPAGE
+

@@ -163,3 +163,8 @@
   binutils-9999.ebuild:
   sys-libs/binutils-libs: version bump to 2.27 #595148
 
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> -binutils-2.21.1-r1.ebuild,
+  -binutils-2.22-r1.ebuild, -binutils-2.23.2.ebuild, -binutils-2.24-r3.ebuild,
+  -binutils-2.25.ebuild, -binutils-2.25-r1.ebuild:
+  move older versions to the toolchain overlay
+

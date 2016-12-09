@@ -130,3 +130,12 @@
 
   Package-Manager: portage-2.3.2
 
+*rar-5.4.0 (08 Dec 2016)
+
+  08 Dec 2016; Sam Jorna <wraeth@gentoo.org> +rar-5.4.0.ebuild:
+  bump to 5.4.0
+
+  Gentoo-bug: 592224
+
+  Package-Manager: portage-2.3.3
+

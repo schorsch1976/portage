@@ -2541,3 +2541,39 @@
 
   Package-Manager: portage-2.3.2
 
+*gentoo-sources-4.8.12-r1 (07 Dec 2016)
+
+  07 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  +gentoo-sources-4.8.12-r1.ebuild:
+   Fix race condition in packet_set_ring. CVE-2016-8655. Bug #601926.
+
+  Package-Manager: portage-2.3.0
+
+  07 Dec 2016; Mike Pagano <mpagano@gentoo.org> -gentoo-sources-4.8.3.ebuild,
+  -gentoo-sources-4.8.4.ebuild, -gentoo-sources-4.8.5.ebuild,
+  -gentoo-sources-4.8.6.ebuild, -gentoo-sources-4.8.7.ebuild,
+  -gentoo-sources-4.8.8.ebuild, -gentoo-sources-4.8.9.ebuild,
+  -gentoo-sources-4.8.10.ebuild, -gentoo-sources-4.8.11.ebuild,
+  -gentoo-sources-4.8.12.ebuild:
+  Remove old, security vulnerable versions.
+
+  Package-Manager: portage-2.3.0
+
+*gentoo-sources-4.4.36-r1 (08 Dec 2016)
+
+  08 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  +gentoo-sources-4.4.36-r1.ebuild:
+  For the Linux 4.4.X series fix race condition in packet_set_ring.
+  CVE-2016-8655. Bug #601926.
+
+  Package-Manager: portage-2.3.0
+
+*gentoo-sources-4.1.36-r1 (08 Dec 2016)
+
+  08 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  +gentoo-sources-4.1.36-r1.ebuild:
+  For the Linux 4.1.X series fix race condition in packet_set_ring.
+  CVE-2016-8655. Bug #601926.
+
+  Package-Manager: portage-2.3.0
+

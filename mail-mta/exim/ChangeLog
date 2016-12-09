@@ -396,3 +396,11 @@
 
   Package-Manager: portage-2.3.0
 
+*exim-4.88_rc6 (08 Dec 2016)
+
+  08 Dec 2016; Fabian Groffen <grobian@gentoo.org> -exim-4.88_rc5.ebuild,
+  +exim-4.88_rc6.ebuild:
+  bump to 4.88 RC6
+
+  Package-Manager: portage-2.3.0
+

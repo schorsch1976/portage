@@ -119,3 +119,8 @@
   07 Aug 2016; Tim Harder <radhermit@gentoo.org> csound-6.07.0.ebuild:
   always define csound_ac interfaces for cmake
 
+*csound-6.08.0 (08 Dec 2016)
+
+  08 Dec 2016; Tim Harder <radhermit@gentoo.org> +csound-6.08.0.ebuild:
+  version bump to 6.08
+

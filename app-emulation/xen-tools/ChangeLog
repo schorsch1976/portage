@@ -682,3 +682,23 @@
 
   Package-Manager: portage-2.3.2
 
+*xen-tools-4.8.0 (08 Dec 2016)
+
+  08 Dec 2016; Yixun Lan <dlan@gentoo.org> files/gentoo-patches.conf,
+  +xen-tools-4.8.0.ebuild:
+  version bump
+
+  1) bump gentoo patches set
+  2) update seabios to 1.10.0
+
+  Package-Manager: portage-2.3.3
+
+  08 Dec 2016; Yixun Lan <dlan@gentoo.org> xen-tools-4.8.0.ebuild:
+  remove hardcoded gcrypt support
+
+  for now, we let build script auto detect the settings
+  for future, we could introduce USE=gnutls,gcrypt,nettle
+  to better control this ..
+
+  Package-Manager: portage-2.3.3
+

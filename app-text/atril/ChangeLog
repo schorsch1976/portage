@@ -173,3 +173,10 @@
 
   Package-Manager: portage-2.3.1
 
+*atril-1.16.1 (08 Dec 2016)
+
+  08 Dec 2016; Ettore Di Giacinto <mudler@gentoo.org> +atril-1.16.1.ebuild:
+  version bump to 1.16.1
+
+  Package-Manager: portage-2.3.1
+

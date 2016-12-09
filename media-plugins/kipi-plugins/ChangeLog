@@ -201,3 +201,20 @@
 
   Package-Manager: portage-2.3.0
 
+  08 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  kipi-plugins-5.3.0.ebuild:
+  raise kde-apps/libkipi dependency
+
+  This resolves a build failure caused by eariler versions (see
+  1b14ac478300a2b2bb2bb29f131e336ced13cb35).
+
+  Package-Manager: portage-2.3.3
+
+  08 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  kipi-plugins-5.3.0.ebuild:
+  stabilise 5.3.0 on amd64/x86
+
+  Gentoo-bug: 566918
+
+  Package-Manager: portage-2.3.3
+

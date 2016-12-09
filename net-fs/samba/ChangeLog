@@ -889,3 +889,17 @@
 
   Gentoo-Bug: 591304
 
+*samba-4.5.2 (08 Dec 2016)
+*samba-4.3.12 (08 Dec 2016)
+
+  08 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -samba-4.3.11.ebuild,
+  +samba-4.3.12.ebuild, -samba-4.5.0-r1.ebuild, +samba-4.5.2.ebuild:
+  Bump to versions 4.3.12 and 4.5.2. Removed old.
+
+  Package-Manager: portage-2.3.3
+
+  08 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -samba-4.4.6.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.3
+

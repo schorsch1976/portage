@@ -63,3 +63,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*enum-1.110.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +enum-1.110.0.ebuild:
+  Bump to version 1.110.0
+
+  - EAPI6
+  - Parallel tests
+
+  Upstream:
+  - Improved test suite
+  - Constant definitions fixed to retain inlining on perl 5.19.3+
+  - Documentation enhancements
+
+  Package-Manager: portage-2.3.3
+

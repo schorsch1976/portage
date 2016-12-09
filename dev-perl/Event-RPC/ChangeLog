@@ -76,3 +76,28 @@
 
   Package-Manager: portage-2.2.28
 
+*Event-RPC-1.80.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Event-RPC-1.80.0.ebuild,
+  metadata.xml:
+  Bump to version 1.80.0
+
+  - EAPI6
+  - Reinstated tests
+  - Add USE="examples"
+
+  Keywording:
+  - Dropped ia64 and sparc as they're not supported by any of
+    dev-perl/{Sereal,{JSON,CBOR}-XS}
+
+  Upstream:
+  - New "ssl_opts" attribute
+  - Fix tests failing due to IO::Socket::SSL hostname verification
+    strictness.
+  - New method return type '_singleton'
+  - Support for serializer backends other than (insecure) storable
+  - Better exception handling between server/client
+  - Fixed source encoding issues
+
+  Package-Manager: portage-2.3.3
+

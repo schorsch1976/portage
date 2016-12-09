@@ -147,3 +147,8 @@
   +files/numactl-2.0.11-sysmacros.patch, numactl-2.0.11.ebuild:
   fix build w/newer glibc #580098
 
+*numactl-2.0.11-r1 (08 Dec 2016)
+
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> +numactl-2.0.11-r1.ebuild:
+  add USE=static-libs support #593756
+
