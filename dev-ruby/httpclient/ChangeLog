@@ -195,3 +195,8 @@
 
   Gentoo-Bug: 592756
 
+  09 Dec 2016; Hans de Graaff <graaff@gentoo.org> -httpclient-2.6.0.1.ebuild:
+  cleanup; drop stable ppc64 keyword, bug 580892
+
+  Package-Manager: portage-2.3.0
+

@@ -104,3 +104,8 @@
   26 Aug 2016; Tim Harder <radhermit@gentoo.org> -picocom-1.7.ebuild:
   remove old
 
+*picocom-2.2 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +picocom-2.2.ebuild:
+  version bump to 2.2
+

@@ -149,3 +149,7 @@
   qutebrowser-9999.ebuild:
   version bump to 0.8.4
 
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -qutebrowser-0.6.2.ebuild,
+  -qutebrowser-0.7.0.ebuild, -qutebrowser-0.8.2.ebuild:
+  remove old
+

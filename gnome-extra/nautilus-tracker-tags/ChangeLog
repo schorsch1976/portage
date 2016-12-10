@@ -204,3 +204,17 @@
 
   Package-Manager: portage-2.3.2
 
+*nautilus-tracker-tags-1.8.1 (09 Dec 2016)
+
+  09 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  +nautilus-tracker-tags-1.8.1.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.2
+
+  09 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  nautilus-tracker-tags-1.8.1.ebuild:
+  Sync keywords with tracker
+
+  Package-Manager: portage-2.3.2
+

@@ -87,3 +87,12 @@
 
   Package-Manager: portage-2.3.2
 
+*ming-php-0.4.7 (09 Dec 2016)
+
+  09 Dec 2016; Brian Evans <grknight@gentoo.org> +ming-php-0.4.7.ebuild:
+  Version bump to match upstream
+
+  The code has not been modified from 0.4.5 (and in fact for several years)
+
+  Package-Manager: portage-2.3.3
+

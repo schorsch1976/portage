@@ -70,3 +70,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> srecord-1.64.ebuild:
+  bump 1.64 to EAPI 6
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -srecord-1.59.ebuild,
+  -srecord-1.60.ebuild, -srecord-1.61.ebuild, -srecord-1.62.ebuild,
+  -srecord-1.63.ebuild:
+  remove old
+

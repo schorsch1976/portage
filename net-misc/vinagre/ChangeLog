@@ -158,3 +158,14 @@
 
   Package-Manager: portage-2.3.2
 
+  09 Dec 2016; Pacho Ramos <pacho@gentoo.org> vinagre-3.20.2-r1.ebuild:
+  amd64/x86 stable, bug #590166
+
+  Package-Manager: portage-2.3.2
+
+  09 Dec 2016; Pacho Ramos <pacho@gentoo.org> -vinagre-3.20.2.ebuild,
+  -vinagre-3.22.0.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.2
+

@@ -167,3 +167,7 @@
 
   Multiple eclass inherit lines have always worked.
 
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> libbluray-0.9.3.ebuild,
+  libbluray-9999.ebuild:
+  bump to EAPI 6
+

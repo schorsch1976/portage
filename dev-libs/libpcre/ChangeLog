@@ -270,3 +270,9 @@
   10 Nov 2016; Mike Frysinger <vapier@gentoo.org> libpcre-8.38-r1.ebuild:
   mark 8.38-r1 arm64/m68k/s390/sh stable
 
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> libpcre-8.39.ebuild:
+  Stable for amd64 and x86 (bug #592034).
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="amd64,x86"
+

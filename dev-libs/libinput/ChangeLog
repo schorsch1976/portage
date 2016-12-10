@@ -506,3 +506,15 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*libinput-1.5.3 (09 Dec 2016)
+
+  09 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +libinput-1.5.3.ebuild:
+  Version bump to 1.5.3
+
+  Package-Manager: portage-2.3.3
+
+  09 Dec 2016; Manuel Rüger <mrueg@gentoo.org> -libinput-1.5.1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.3
+

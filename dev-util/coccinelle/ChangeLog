@@ -123,3 +123,8 @@
   -coccinelle-1.0.4.ebuild, -files/coccinelle-1.0.0_rc16-findtool.patch:
   Remove old, #586930
 
+*coccinelle-1.0.6 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +coccinelle-1.0.6.ebuild:
+  version bump to 1.0.6
+

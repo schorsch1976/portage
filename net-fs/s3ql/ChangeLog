@@ -22,3 +22,8 @@
   s3ql-2.17.1.ebuild, s3ql-2.20.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*s3ql-2.21 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +s3ql-2.21.ebuild:
+  version bump to 2.21
+

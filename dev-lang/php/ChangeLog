@@ -2093,3 +2093,90 @@
 
   Package-Manager: portage-2.3.0
 
+*php-7.1.0-r1 (09 Dec 2016)
+*php-7.0.13-r1 (09 Dec 2016)
+*php-5.6.28-r1 (09 Dec 2016)
+
+  09 Dec 2016; Michael Orlitzky <mjo@gentoo.org> +php-5.6.28-r1.ebuild,
+  -php-7.0.13.ebuild, +php-7.0.13-r1.ebuild, -php-7.1.0.ebuild,
+  +php-7.1.0-r1.ebuild:
+  three new revisions adding ACL support for php-fpm.
+
+  The php-fpm backend can be used to host multiple applications with
+  different settings and permissions. Traditionally, permissions on its
+  UNIX socket are granted to the "listen.owner" and "listen.group"
+  defined in php-fpm.conf. However, php-fpm can be compiled with POSIX
+  ACL support, after which the more-powerful "listen.acl_users" and
+  "listen.acl_groups" can be used.
+
+  This commit adds three new revisions -- one for each supported branch
+  of PHP. To each new revision, the "acl" USE flag has been added. When
+  USE=acl is set, sys-apps/acl gets pulled in as a dependency, and
+  "--with-fpm-acl" is passed to the configure script.
+
+  Gentoo-Bug: 601634
+
+  Package-Manager: portage-2.3.0
+
+*php-7.1.0-r2 (09 Dec 2016)
+
+  09 Dec 2016; Michael Orlitzky <mjo@gentoo.org> -php-7.1.0-r1.ebuild,
+  +php-7.1.0-r2.ebuild:
+  allow app-text/htmltidy in php:7.1.
+
+  To help phase out the abandoned and buggy app-text/htmltidy, I tried
+  to make the new php:7.1 depend on app-text/tidy-html5
+  instead. However, since older versions of PHP do not support
+  tidy-html5, that causes a problem: php:7.1 cannot be installed
+  alongside the older versions when USE=tidy is set for both of them.
+
+  This solution is somewhat of a cop out, allowing htmltidy to be used
+  in php:7.1 as a last resort. The alternative would have been to
+  backport the tidy-html5 support to (both) older versions of PHP. That
+  may eventually become necessary if it looks like htmltidy will be
+  masked for removal; however, for now, this is the path of least
+  resistance.
+
+  Gentoo-Bug: 601614
+
+  Package-Manager: portage-2.3.0
+
+*php-7.0.14 (09 Dec 2016)
+
+  09 Dec 2016; Michael Orlitzky <mjo@gentoo.org> -php-7.0.13-r1.ebuild,
+  +php-7.0.14.ebuild:
+  new version 7.0.14 replacing 7.0.13.
+
+  Package-Manager: portage-2.3.0
+
+*php-7.1.0-r3 (09 Dec 2016)
+*php-7.0.14-r1 (09 Dec 2016)
+*php-5.6.28-r2 (09 Dec 2016)
+
+  09 Dec 2016; Michael Orlitzky <mjo@gentoo.org> metadata.xml,
+  -php-5.6.28-r1.ebuild, +php-5.6.28-r2.ebuild, -php-7.0.14.ebuild,
+  +php-7.0.14-r1.ebuild, -php-7.1.0-r2.ebuild, +php-7.1.0-r3.ebuild:
+  add "coverage" USE flag to build with --enable-gcov.
+
+  We add three new revisions, one for each supported branch of PHP. The
+  new revisions have a "coverage" flag, which was chosen because a few
+  other packages in ::gentoo have decided on the same flag name. When
+  enabled, USE=coverage will pull in dev-util/lcov from the Linux Test
+  Project, and PHP will be built with --enable-gcov.
+
+  Since users won't be running code coverage reports on the PHP source
+  tree itself (at least not the one used by their package manager), this
+  is probably only useful for extension developers who would like to run
+  code coverage reports on the test suites for their extensions. It also
+  requires GCC to work, since lcov wraps GCC's gcov. Both of those
+  caveats have been mentioned in the USE flag description.
+
+  Gentoo-Bug: 542178
+
+  Package-Manager: portage-2.3.0
+
+  09 Dec 2016; Michael Orlitzky <mjo@gentoo.org> metadata.xml:
+  whitespace cleanup in metadata.xml.
+
+  Package-Manager: portage-2.3.0
+

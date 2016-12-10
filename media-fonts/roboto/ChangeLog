@@ -78,3 +78,14 @@
   roboto-2.134.ebuild:
   add upstream github metadata
 
+*roboto-2.135 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +roboto-2.135.ebuild:
+  version bump to 2.135
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> roboto-2.134.ebuild:
+  stabilize 2.134
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -roboto-1.2.ebuild:
+  remove old
+

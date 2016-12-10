@@ -134,3 +134,13 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> DirectFB-1.4.9-r1.ebuild,
+  DirectFB-1.7.6.ebuild:
+  update homepage to .net
+
+  Looks like they let their .org domain registration lapse.
+
+  08 Dec 2016; Mike Frysinger <vapier@gentoo.org> DirectFB-1.7.6.ebuild,
+  +files/DirectFB-1.7.6-tslib.patch:
+  fix tslib detection #567294
+

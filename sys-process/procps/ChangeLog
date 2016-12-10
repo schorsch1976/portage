@@ -305,3 +305,15 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +files/procps-3.3.12-strtod_nol_err.patch, procps-3.3.12.ebuild:
+  Fix strtod_nol_err check for x86.
+
+  Package-Manager: portage-2.3.3
+
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> procps-3.3.12.ebuild:
+  Stable for amd64 and x86 (bug #593054).
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="amd64,x86"
+

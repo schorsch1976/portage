@@ -112,3 +112,18 @@
 
   Package-Manager: portage-2.2.27
 
+*sqldeveloper-4.1.5.21.78 (09 Dec 2016)
+
+  09 Dec 2016; Wolfram Schlich <wschlich@gentoo.org>
+  +sqldeveloper-4.1.5.21.78.ebuild:
+  version bump (bug #601966)
+
+  Package-Manager: portage-2.3.0
+
+  09 Dec 2016; Wolfram Schlich <wschlich@gentoo.org>
+  -sqldeveloper-3.2.20.09.87.ebuild, -sqldeveloper-4.1.1.19.59.ebuild,
+  -sqldeveloper-4.1.3.20.78.ebuild:
+  removed old versions
+
+  Package-Manager: portage-2.3.0
+

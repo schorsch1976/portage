@@ -401,3 +401,23 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*vte-0.28.2-r208 (09 Dec 2016)
+
+  09 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  +files/vte-0.28.2-repaint-after-change-scroll-region.patch,
+  +vte-0.28.2-r208.ebuild:
+  backport upstream repainting patch
+
+  If you are using gnome-terminal or xfce4-terminal, you may have hit a
+  bug in vte3.  A fix is around since at least 2010, which found its way
+  into some (but not all) distribution packages, and even into upstream
+  (3 years later, but unchanged).
+
+  Bug: https://bugzilla.gnome.org/show_bug.cgi?=542087
+  Bug: https://github.com/mobile-shell/mosh/issues/660
+  Closes: https://github.com/gentoo/gentoo/pull/2444
+  Commit: https://git.gnome.org/browse/vte/commit/?id=88e8e89560a62d0981ce2b18
+  974a230d0a07dbdd
+  Source: https://github.com/pld-
+  linux/vte0/commit/1e8dce16b239e5d378b02e4d04a60e823df36257
+

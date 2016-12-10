@@ -88,3 +88,6 @@
   06 Sep 2016; Tim Harder <radhermit@gentoo.org> +rar2fs-1.23.1.ebuild:
   version bump to 1.23.1
 
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -rar2fs-1.22.0.ebuild:
+  remove old
+

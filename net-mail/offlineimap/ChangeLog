@@ -138,3 +138,13 @@
   29 Nov 2016; Tim Harder <radhermit@gentoo.org> +offlineimap-7.0.10.ebuild:
   version bump to 7.0.10
 
+*offlineimap-7.0.12 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +offlineimap-7.0.12.ebuild:
+  version bump to 7.0.12
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -offlineimap-7.0.6.ebuild,
+  -offlineimap-7.0.7.ebuild, -offlineimap-7.0.8.ebuild,
+  -offlineimap-7.0.9.ebuild:
+  remove old
+

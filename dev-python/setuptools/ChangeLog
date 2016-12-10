@@ -564,3 +564,8 @@
   11 Nov 2016; Tim Harder <radhermit@gentoo.org> +setuptools-28.8.0.ebuild:
   version bump to 28.8.0
 
+*setuptools-30.3.0 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +setuptools-30.3.0.ebuild:
+  version bump to 30.3.0
+

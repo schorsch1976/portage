@@ -103,3 +103,7 @@
   26 Oct 2016; Tim Harder <radhermit@gentoo.org> +bfg-1.12.14.ebuild:
   version bump to 1.12.14
 
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -bfg-1.12.12.ebuild,
+  -bfg-1.12.13.ebuild:
+  remove old
+

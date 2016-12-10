@@ -220,3 +220,33 @@
   Bug: https://bugs.gentoo.org/590078
   Bug: https://bugs.gentoo.org/596342
 
+  09 Dec 2016; Matt Turner <mattst88@gentoo.org>
+  -broadcom-sta-6.30.223.30-r2.ebuild, -broadcom-sta-6.30.223.141-r2.ebuild,
+  -broadcom-sta-6.30.223.248-r4.ebuild, -broadcom-sta-6.30.223.248-r5.ebuild,
+  -broadcom-sta-6.30.223.271-r2.ebuild, -broadcom-sta-6.30.223.271-r3.ebuild,
+  -files/broadcom-sta-6.30.223.141-license.patch,
+  -files/broadcom-sta-6.30.223.141-linux-3.10.0.patch,
+  -files/broadcom-sta-6.30.223.141-linux-3.15.patch,
+  -files/broadcom-sta-6.30.223.141-linux-recent.patch,
+  -files/broadcom-sta-6.30.223.248-linux-3.17.patch,
+  -files/broadcom-sta-6.30.223.248-linux-3.18.patch,
+  -files/broadcom-sta-6.30.223.248-r3-linux-3.15-3.18.patch,
+  -files/broadcom-sta-6.30.223.248-r3-linux-4.0.patch,
+  -files/broadcom-sta-6.30.223.248-r4-linux-4.2.patch,
+  -files/broadcom-sta-6.30.223.271-r2-linux-4.3.patch,
+  -files/broadcom-sta-6.30.223.271-r3-linux-4.7.patch,
+  -files/broadcom-sta-6.30.223.30-linux-3.10.0.patch,
+  -files/broadcom-sta-6.30.223.30-linux-3.9.0.patch,
+  -files/broadcom-sta-6.30.223.30-makefile.patch:
+  Drop old versions.
+
+  All of the upstream download links have changed, and I since I doubt
+  anyone uses any of these old versions, throw them out instead of fixing
+  them.
+
+  09 Dec 2016; Matt Turner <mattst88@gentoo.org>
+  broadcom-sta-6.30.223.271-r4.ebuild:
+  Fix download links.
+
+  Strangely the README file's contents have changed.
+

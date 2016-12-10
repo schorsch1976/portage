@@ -203,3 +203,8 @@
   cython-0.24.1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*cython-0.25.2 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +cython-0.25.2.ebuild:
+  version bump to 0.25.2
+

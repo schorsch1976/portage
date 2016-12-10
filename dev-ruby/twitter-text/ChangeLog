@@ -114,3 +114,10 @@
 
   Package-Manager: portage-2.3.0
 
+*twitter-text-1.14.2 (09 Dec 2016)
+
+  09 Dec 2016; Hans de Graaff <graaff@gentoo.org> +twitter-text-1.14.2.ebuild:
+  add 1.14.2
+
+  Package-Manager: portage-2.3.0
+

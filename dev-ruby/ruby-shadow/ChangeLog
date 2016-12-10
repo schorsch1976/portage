@@ -142,3 +142,8 @@
 
   Package-Manager: portage-2.3.2
 
+  09 Dec 2016; Hans de Graaff <graaff@gentoo.org> -ruby-shadow-2.4.1.ebuild:
+  cleanup; drop stable sparc, bug 579296
+
+  Package-Manager: portage-2.3.0
+

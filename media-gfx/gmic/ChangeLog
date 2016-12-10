@@ -108,3 +108,8 @@
   +gmic-1.7.9.ebuild:
   version bump to 1.7.9
 
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org>
+  -files/gmic-1.6.5.0-makefile.patch, -files/gmic-1.6.5.1-makefile.patch,
+  -gmic-1.6.5.0.ebuild, -gmic-1.6.5.1.ebuild:
+  remove old
+

@@ -99,3 +99,8 @@
   -byobu-5.111.ebuild:
   remove old
 
+*byobu-5.113 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +byobu-5.113.ebuild:
+  version bump to 5.113
+

@@ -764,3 +764,19 @@
   plasma-workspace-5.8.3-r4.ebuild, plasma-workspace-5.8.4.ebuild:
   kde-base/krunner -> kde-plasma/krunner
 
+  09 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  plasma-workspace-5.8.3-r4.ebuild:
+  kde-plasma: stabilise 5.8.3 on amd64/x86
+
+  Gentoo-bug: 598128
+
+  Package-Manager: portage-2.3.3
+
+  09 Dec 2016; Johannes Huber <johu@gentoo.org>
+  -files/plasma-workspace-5.7.3-unused-dep.patch,
+  -files/plasma-workspace-5.7.5-klipper-autostart.patch,
+  -plasma-workspace-5.7.5.ebuild:
+  kde-plasma: Remove KDE Plasma 5.7.5
+
+  Package-Manager: portage-2.3.3
+

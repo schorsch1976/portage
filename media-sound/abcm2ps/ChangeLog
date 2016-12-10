@@ -112,3 +112,15 @@
   -abcm2ps-8.12.1.ebuild:
   remove old
 
+*abcm2ps-8.13.0 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +abcm2ps-8.13.0.ebuild:
+  version bump to 8.13.0
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> abcm2ps-8.12.9.ebuild:
+  stabilize 8.12.9
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -abcm2ps-8.12.3.ebuild,
+  -abcm2ps-8.12.4.ebuild:
+  remove old
+

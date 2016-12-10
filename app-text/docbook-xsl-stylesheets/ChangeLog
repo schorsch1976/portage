@@ -186,3 +186,7 @@
 
   Package-Manager: portage-2.3.0
 
+  09 Dec 2016; Mike Frysinger <vapier@gentoo.org>
+  docbook-xsl-stylesheets-1.79.0.ebuild:
+  mark 1.79.0 m68k/s390/sh stable
+

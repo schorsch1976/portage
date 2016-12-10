@@ -81,3 +81,8 @@
   25 Jul 2016; Tim Harder <radhermit@gentoo.org> +lbdb-0.41.ebuild:
   version bump to 0.41
 
+*lbdb-0.42 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +lbdb-0.42.ebuild:
+  version bump to 0.42
+

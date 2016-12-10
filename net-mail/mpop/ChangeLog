@@ -93,3 +93,8 @@
   25 Jul 2016; Tim Harder <radhermit@gentoo.org> -mpop-1.2.2.ebuild:
   remove old
 
+*mpop-1.2.6 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +mpop-1.2.6.ebuild:
+  version bump to 1.2.6
+

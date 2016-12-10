@@ -71,3 +71,8 @@
   pyqtgraph-0.9.10.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*pyqtgraph-0.10.0 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +pyqtgraph-0.10.0.ebuild:
+  version bump to 0.10.0
+

@@ -1,0 +1,13 @@
+# ChangeLog for sys-apps/yarn
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*yarn-9999 (09 Dec 2016)
+*yarn-0.18.0 (09 Dec 2016)
+
+  09 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> +metadata.xml,
+  +yarn-0.18.0.ebuild, +yarn-9999.ebuild:
+  initial commit with versions 0.18.0 and live
+
+  Yarn is a fast, reliable, and secure dependency management software.
+

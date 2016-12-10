@@ -206,3 +206,11 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Justin Lecher <jlec@gentoo.org>
 
+*rebase-1612 (09 Dec 2016)
+
+  09 Dec 2016; Justin Lecher <jlec@gentoo.org> +rebase-1612.ebuild:
+  Version Bump
+
+  Package-Manager: portage-2.3.3
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

@@ -134,3 +134,12 @@
   12 Nov 2016; Tim Harder <radhermit@gentoo.org> +fuse-3.0.0_rc2.ebuild:
   version bump to 3.0.0_rc2
 
+*fuse-3.0.0_rc3 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +fuse-3.0.0_rc3.ebuild:
+  version bump to 3.0.0_rc3
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -fuse-2.9.5.ebuild,
+  -fuse-2.9.6.ebuild, -fuse-3.0.0_rc1.ebuild, -fuse-3.0.0_rc2.ebuild:
+  remove old
+

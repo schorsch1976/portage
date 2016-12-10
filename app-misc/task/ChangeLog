@@ -78,3 +78,10 @@
   -task-2.5.0.ebuild:
   remove old
 
+*task-2.5.1-r1 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org>
+  +files/0001-TW-1778-Unicode-strings-are-truncated-in-task-descri.patch,
+  metadata.xml, +task-2.5.1-r1.ebuild:
+  fix unicode issue (bug #601948) and rename gnutls use flag to sync
+

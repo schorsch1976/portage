@@ -84,3 +84,9 @@
   04 Oct 2016; Tim Harder <radhermit@gentoo.org> -newsbeuter-2.9-r1.ebuild:
   remove old
 
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> newsbeuter-2.9-r2.ebuild:
+  stabilize 2.9-r2
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -newsbeuter-2.9.ebuild:
+  remove old
+

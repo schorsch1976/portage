@@ -101,3 +101,9 @@
   groff-1.22.3.ebuild:
   rework mom-pdf.pdf clean up again #454196 #516732
 
+  09 Dec 2016; Mike Frysinger <vapier@gentoo.org> groff-1.22.2.ebuild,
+  groff-1.22.3.ebuild:
+  handle missing pdf examples #602020
+
+  If ghostscript isn't available, groff won't build its pdf examples.
+

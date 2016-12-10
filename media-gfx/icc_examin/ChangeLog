@@ -76,3 +76,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -files/icc_examin-0.54-fix-xcm-test.patch, -icc_examin-0.54.ebuild,
+  -icc_examin-0.55.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.3
+

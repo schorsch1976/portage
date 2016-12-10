@@ -168,3 +168,8 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> mixxx-2.0.0-r3.ebuild:
+  Added sub-slot dep for dev-libs/protobuf.
+
+  Package-Manager: portage-2.3.3
+

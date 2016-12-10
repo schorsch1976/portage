@@ -120,3 +120,10 @@
 
   Package-Manager: portage-2.3.2
 
+  09 Dec 2016; Benda Xu <heroxbd@gentoo.org> lpeg-1.0.0-r1.ebuild:
+  fix typo.
+
+  Credit: Aric Belsito
+
+  Package-Manager: portage-2.3.2
+

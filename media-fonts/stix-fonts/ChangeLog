@@ -64,3 +64,14 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*stix-fonts-2.0.0 (09 Dec 2016)
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> +stix-fonts-2.0.0.ebuild:
+  version bump to 2.0.0
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> stix-fonts-1.1.1.ebuild:
+  stabilize 1.1.1
+
+  09 Dec 2016; Tim Harder <radhermit@gentoo.org> -stix-fonts-1.0.0-r1.ebuild:
+  remove old
+

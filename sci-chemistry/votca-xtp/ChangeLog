@@ -24,3 +24,9 @@
 
   Package-Manager: portage-2.3.0
 
+  09 Dec 2016; Christoph Junghans <junghans@gentoo.org> votca-xtp-1.4.ebuild,
+  votca-xtp-9999.ebuild:
+  fix deps (bug #602174)
+
+  Package-Manager: portage-2.3.0
+

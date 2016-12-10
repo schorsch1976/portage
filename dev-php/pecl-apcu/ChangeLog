@@ -120,3 +120,17 @@
 
   Package-Manager: portage-2.3.0
 
+*pecl-apcu-5.1.7 (08 Dec 2016)
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-apcu-5.1.7.ebuild:
+  Version bump wrt bug 601644
+
+  Package-Manager: portage-2.3.3
+
+*pecl-apcu-4.0.11 (08 Dec 2016)
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org> +pecl-apcu-4.0.11.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.3
+

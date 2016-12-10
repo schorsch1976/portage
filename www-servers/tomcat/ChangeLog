@@ -649,3 +649,17 @@
 
   Package-Manager: portage-2.3.2
 
+*tomcat-9.0.0_alpha15 (09 Dec 2016)
+*tomcat-8.5.9 (09 Dec 2016)
+*tomcat-7.0.73 (09 Dec 2016)
+
+  09 Dec 2016; Miroslav Šulc <fordfrog@gentoo.org>
+  +files/tomcat-7.0.73-build.xml.patch, +files/tomcat-8.5.9-build.xml.patch,
+  -files/tomcat-9.0.0_alpha13-build.xml.patch,
+  +files/tomcat-9.0.0_alpha15-build.xml.patch, +tomcat-7.0.73.ebuild,
+  +tomcat-8.5.9.ebuild, -tomcat-9.0.0_alpha13.ebuild,
+  +tomcat-9.0.0_alpha15.ebuild:
+  version bumps for version 7.0, 8.5 and 9.0
+
+  Package-Manager: portage-2.3.3
+

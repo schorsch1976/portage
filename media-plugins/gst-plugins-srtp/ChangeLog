@@ -10,3 +10,11 @@
 
   Package-Manager: portage-2.3.0
 
+*gst-plugins-srtp-1.8.3-r1 (09 Dec 2016)
+
+  09 Dec 2016; Pacho Ramos <pacho@gentoo.org> -gst-plugins-srtp-1.8.3.ebuild,
+  +gst-plugins-srtp-1.8.3-r1.ebuild:
+  Needs slot 0, bug #600884 by Toralf Förster and Johan Ymerson.
+
+  Package-Manager: portage-2.3.2
+

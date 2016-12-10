@@ -200,3 +200,10 @@
   sys-libs/e2fsprogs-libs & sys-fs/e2fsprogs: mark 1.43.3
   arm64/ia64/m68k/ppc/s390/sh/sparc stable #596788
 
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  e2fsprogs-1.43.3-r1.ebuild:
+  Stable for amd64 and x86 (bug #596788).
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="amd64,x86"
+

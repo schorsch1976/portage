@@ -69,3 +69,17 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*libgnomeprintui-2.18.6-r2 (09 Dec 2016)
+
+  09 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  +files/libgnomeprintui-2.18.6-adwaita-icon-theme.patch,
+  +files/libgnomeprintui-2.18.6-intl.patch,
+  +files/libgnomeprintui-2.18.6-orientation-for-preview.patch,
+  +files/libgnomeprintui-2.18.6-system-config-printer.patch,
+  +libgnomeprintui-2.18.6-r2.ebuild:
+  Apply Magia patches for fixing multiple bugs, also use system-config-printer
+  optionally if it's present instead of silently dying, use adwaita-icon-theme
+  and other fixes.
+
+  Package-Manager: portage-2.3.2
+

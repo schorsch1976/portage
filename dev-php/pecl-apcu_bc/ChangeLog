@@ -55,3 +55,16 @@
 
   Package-Manager: portage-2.2.27
 
+*pecl-apcu_bc-1.0.3-r1 (08 Dec 2016)
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org>
+  +pecl-apcu_bc-1.0.3-r1.ebuild:
+  Revision bump for EAPI and php 7.1
+
+  Package-Manager: portage-2.3.3
+
+  08 Dec 2016; Brian Evans <grknight@gentoo.org> -pecl-apcu_bc-1.0.3.ebuild:
+  Drop old revision
+
+  Package-Manager: portage-2.3.3
+

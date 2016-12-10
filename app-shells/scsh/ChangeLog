@@ -76,3 +76,12 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*scsh-0.6.7-r2 (08 Dec 2016)
+
+  08 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  files/0.6.7-Makefile.in-LDFLAGS.patch,
+  files/0.6.7-Makefile.in-doc-dir-gentoo.patch, +scsh-0.6.7-r2.ebuild:
+  EAPI 6 bump and clean up.
+
+  Package-Manager: portage-2.3.0
+

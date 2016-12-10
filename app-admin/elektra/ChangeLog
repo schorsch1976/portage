@@ -158,3 +158,13 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -elektra-0.7.1-r5.ebuild, -elektra-0.8.12.ebuild,
+  -files/elektra-0.7.1-automake-1.12.patch, -files/elektra-0.7.1-ltdl.patch,
+  -files/elektra-0.7.1-remove-ddefault-link.patch,
+  -files/elektra-0.7.1-test.patch,
+  -files/elektra-0.8.11-conditional-glob-tests.patch, metadata.xml:
+  Removed old.
+
+  Package-Manager: portage-2.3.3
+

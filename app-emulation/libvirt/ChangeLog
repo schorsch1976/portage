@@ -828,3 +828,15 @@
 
   Package-Manager: portage-2.3.3
 
+  08 Dec 2016; Yixun Lan <dlan@gentoo.org> libvirt-2.4.0-r1.ebuild:
+  fix automagic dependency on xen-tools
+
+  Gentoo-Bug: 602004
+
+  Package-Manager: portage-2.3.3
+
+  09 Dec 2016; Matthias Maier <tamiko@gentoo.org> metadata.xml:
+  fix typo, bug #601864
+
+  Package-Manager: portage-2.3.0
+

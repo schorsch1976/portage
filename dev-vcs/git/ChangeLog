@@ -878,3 +878,8 @@
 
   Package-Manager: portage-2.3.2
 
+  09 Dec 2016; Tobias Klausmann <klausman@gentoo.org> git-2.10.2.ebuild:
+  2.10.2-r0: stable on alpha
+
+  Gentoo-Bug: 601984
+
