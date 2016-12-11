@@ -105,3 +105,8 @@
 
   Package-Manager: portage-2.2.27
 
+  10 Dec 2016; Kent Fredric <kentnl@gentoo.org> gnome2-perl-1.45.0.ebuild:
+  Fix dep on dev-perl/ExtUtils-PkgConfig
+
+  Package-Manager: portage-2.3.3
+

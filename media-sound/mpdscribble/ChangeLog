@@ -79,3 +79,8 @@
 
   Closes: https://github.com/gentoo/gentoo/pull/2786
 
+  10 Dec 2016; Michał Górny <mgorny@gentoo.org> mpdscribble-9999.ebuild:
+  added missing autotools inherit to -9999
+
+  Closes: https://github.com/gentoo/gentoo/pull/3063
+

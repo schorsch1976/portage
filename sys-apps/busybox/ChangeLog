@@ -284,3 +284,7 @@
 
   Package-Manager: portage-2.3.0
 
+  09 Dec 2016; Mike Frysinger <vapier@gentoo.org> busybox-1.25.1.ebuild,
+  +files/busybox-1.25.1-setfiles.patch:
+  fix build with USE=selinux #600106
+

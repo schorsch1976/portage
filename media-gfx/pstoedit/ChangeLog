@@ -78,3 +78,6 @@
   pstoedit-3.62.ebuild, pstoedit-3.70.ebuild, pstoedit-3.70-r1.ebuild:
   sourceforge: switch to https:// URIs
 
+  10 Dec 2016; Tim Harder <radhermit@gentoo.org> pstoedit-3.70-r1.ebuild:
+  update to EAPI 6
+

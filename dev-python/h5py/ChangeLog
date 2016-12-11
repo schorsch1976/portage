@@ -98,3 +98,11 @@
   h5py-2.4.0.ebuild, h5py-2.5.0.ebuild, h5py-2.6.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  10 Dec 2016; Benda Xu <heroxbd@gentoo.org> h5py-2.3.1.ebuild,
+  h5py-2.4.0.ebuild, h5py-2.5.0.ebuild, h5py-2.6.0.ebuild:
+  Fix dependecy on hdf5[hl] (PR #3061).
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Benda Xu <heroxbd@gentoo.org>
+

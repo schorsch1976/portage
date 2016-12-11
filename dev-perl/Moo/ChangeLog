@@ -108,3 +108,21 @@
 
   Package-Manager: portage-2.3.2
 
+*Moo-2.3.0 (10 Dec 2016)
+
+  10 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Moo-2.3.0.ebuild,
+  metadata.xml:
+  Bump to version 2.3.0
+
+  Upstream:
+  - fix create_class_with_roles being used multiple times with the same
+  packages
+  - fix edge case with @ISA assignment on perl 5.10.0
+  - fix handles on oddly named attributes
+  - Split Sub::Quote and Sub::Defer into Sub-Quote
+
+  Keywording:
+  - New dependency, dropped arm hppa ppc
+
+  Package-Manager: portage-2.3.3
+

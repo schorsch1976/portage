@@ -67,3 +67,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  10 Dec 2016; Tim Harder <radhermit@gentoo.org>
+  -files/sox-14.4.0-avcodec54.patch, -files/sox-14.4.0-ffmpeg.patch,
+  -files/sox-14.4.0-libav-9.patch, -files/sox-14.4.1-ffmpeg2.patch,
+  -files/sox-14.4.1-ffmpeg24.patch, -files/sox-14.4.1-uclibc.patch,
+  -sox-14.4.1.ebuild:
+  remove old
+

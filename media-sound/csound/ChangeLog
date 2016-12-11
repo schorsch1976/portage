@@ -124,3 +124,12 @@
   08 Dec 2016; Tim Harder <radhermit@gentoo.org> +csound-6.08.0.ebuild:
   version bump to 6.08
 
+*csound-9999 (10 Dec 2016)
+
+  10 Dec 2016; Tim Harder <radhermit@gentoo.org> +csound-9999.ebuild:
+  add live ebuild
+
+  10 Dec 2016; Tim Harder <radhermit@gentoo.org> -csound-6.06.0.ebuild,
+  -csound-6.07.0.ebuild, -files/csound-6.07.0-fltk-headers.patch:
+  remove old
+

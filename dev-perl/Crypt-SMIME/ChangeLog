@@ -124,3 +124,10 @@
 
   Package-Manager: portage-2.3.2
 
+  10 Dec 2016; Kent Fredric <kentnl@gentoo.org> Crypt-SMIME-0.150.0-r1.ebuild,
+  Crypt-SMIME-0.160.0-r1.ebuild, Crypt-SMIME-0.170.0.ebuild,
+  Crypt-SMIME-0.190.0.ebuild:
+  Fix dep on dev-perl/ExtUtils-PkgConfig
+
+  Package-Manager: portage-2.3.3
+

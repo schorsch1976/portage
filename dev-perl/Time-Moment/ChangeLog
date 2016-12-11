@@ -38,3 +38,14 @@
 
   Package-Manager: portage-2.3.2
 
+*Time-Moment-0.410.0 (10 Dec 2016)
+
+  10 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Time-Moment-0.410.0.ebuild:
+  Bump to version 0.410.0
+
+  Upstream:
+  - Documentation fixes
+  - NearestMinuteInterval maximum increased from 1439 to 1440
+
+  Package-Manager: portage-2.3.3
+

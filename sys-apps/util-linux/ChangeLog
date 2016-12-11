@@ -344,3 +344,6 @@
 
   Package-Manager: portage-2.3.2
 
+  10 Dec 2016; Mike Frysinger <vapier@gentoo.org> util-linux-2.29.ebuild:
+  fix ncurses detection to use pkg-config #601530
+

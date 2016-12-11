@@ -79,3 +79,6 @@
   28 Nov 2016; Johannes Huber <johu@gentoo.org> homerun-1.2.5.ebuild:
   kde-base/libkworkspace -> kde-plasma/libkworkspace
 
+  10 Dec 2016; Johannes Huber <johu@gentoo.org> homerun-1.2.5.ebuild:
+  kde-base/plasma-workspace -> kde-plasma/plasma-workspace
+

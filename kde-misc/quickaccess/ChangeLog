@@ -63,3 +63,6 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  10 Dec 2016; Johannes Huber <johu@gentoo.org> quickaccess-0.8.2-r1.ebuild:
+  kde-base/plasma-workspace -> kde-plasma/plasma-workspace
+

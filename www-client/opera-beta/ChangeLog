@@ -608,3 +608,17 @@
 
   Package-Manager: portage-2.3.2
 
+*opera-beta-42.0.2393.78 (10 Dec 2016)
+
+  10 Dec 2016; Jeroen Roovers <jer@gentoo.org>
+  +opera-beta-42.0.2393.78.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.3
+
+  10 Dec 2016; Jeroen Roovers <jer@gentoo.org>
+  -opera-beta-42.0.2393.38.ebuild:
+  Old.
+
+  Package-Manager: portage-2.3.3
+

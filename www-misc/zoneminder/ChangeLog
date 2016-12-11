@@ -89,3 +89,20 @@
 
   Package-Manager: portage-2.3.2
 
+*zoneminder-1.30.0 (10 Dec 2016)
+
+  10 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +files/zoneminder-1.28.1-mysql_include_path.patch,
+  +files/zoneminder.service, +zoneminder-1.30.0.ebuild:
+  Version bump, fixing bug 546842, bug 564278, and bug 574006
+
+  In addition a lot of QA cleanup and an EAPI bump has been done.
+
+  Thanks to
+  * Russell Knighton <russell@annunaki2k2.co.uk>
+  * Jason Oliveira <jason.oliveira@medicalcannab.is>
+  * Aaron Burnett <awol.lordofthepants@gmail.com>
+  for their contributions.
+
+  Package-Manager: portage-2.3.2
+

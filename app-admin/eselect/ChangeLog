@@ -193,3 +193,17 @@
 
   Package-Manager: portage-2.3.2
 
+*eselect-1.4.8 (10 Dec 2016)
+
+  10 Dec 2016; Ulrich Müller <ulm@gentoo.org> +eselect-1.4.8.ebuild:
+  Version bump.
+
+  Fixes bugs 304011 and 601506.
+
+  Package-Manager: portage-2.3.3
+
+  10 Dec 2016; Ulrich Müller <ulm@gentoo.org> -eselect-1.4.6.ebuild:
+  Remove old.
+
+  Package-Manager: portage-2.3.3
+

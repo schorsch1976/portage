@@ -577,3 +577,12 @@
 
   Package-Manager: portage-2.3.2
 
+*virtualbox-5.1.10-r1 (09 Dec 2016)
+
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +files/virtualbox-5.1.10-sas_timeouts.patch, -virtualbox-5.1.10.ebuild,
+  +virtualbox-5.1.10-r1.ebuild:
+  Upstream patch to fix some SAS timeouts.
+
+  Package-Manager: portage-2.3.3
+

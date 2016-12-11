@@ -132,3 +132,9 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  10 Dec 2016; Kent Fredric <kentnl@gentoo.org> Pango-1.224.0-r1.ebuild,
+  Pango-1.227.0.ebuild:
+  Fix dep on dev-perl/ExtUtils-PkgConfig
+
+  Package-Manager: portage-2.3.3
+

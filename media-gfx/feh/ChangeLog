@@ -96,3 +96,6 @@
   -feh-2.14.ebuild, -feh-2.16.2.ebuild:
   remove old
 
+  10 Dec 2016; Tim Harder <radhermit@gentoo.org> feh-2.18.ebuild:
+  stabilize for amd64/x86
+

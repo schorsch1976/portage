@@ -134,3 +134,9 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --ignore-arches
 
+  10 Dec 2016; Kent Fredric <kentnl@gentoo.org> gtk2-perl-1.247.0.ebuild,
+  gtk2-perl-1.249.500.ebuild, gtk2-perl-1.249.700.ebuild:
+  Fix dep on dev-perl/ExtUtils-PkgConfig
+
+  Package-Manager: portage-2.3.3
+

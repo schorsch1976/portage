@@ -269,3 +269,15 @@
 
   Package-Manager: portage-2.3.2
 
+  10 Dec 2016; Johannes Huber <johu@gentoo.org> metadata.xml,
+  xscreensaver-5.34.ebuild, xscreensaver-5.35-r2.ebuild:
+  kde-base/kdm -> kde-plasma/kdm
+
+  10 Dec 2016; Johannes Huber <johu@gentoo.org> metadata.xml,
+  xscreensaver-5.34.ebuild, xscreensaver-5.35-r2.ebuild:
+  Drop deprecated kdm
+
+  Gentoo-bug: 597552
+
+  Package-Manager: portage-2.3.3
+

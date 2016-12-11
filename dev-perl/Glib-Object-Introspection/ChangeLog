@@ -21,3 +21,9 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+  10 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  Glib-Object-Introspection-0.40.0.ebuild:
+  Fix dep on dev-perl/ExtUtils-PkgConfig
+
+  Package-Manager: portage-2.3.3
+

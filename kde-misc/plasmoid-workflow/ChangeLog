@@ -71,3 +71,7 @@
   plasmoid-workflow-0.4.1.ebuild:
   kde-base/kactivities -> kde-frameworks/kactivities
 
+  10 Dec 2016; Johannes Huber <johu@gentoo.org>
+  plasmoid-workflow-0.4.1.ebuild:
+  kde-base/plasma-workspace -> kde-plasma/plasma-workspace
+

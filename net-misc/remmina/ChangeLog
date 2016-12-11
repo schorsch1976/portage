@@ -224,3 +224,9 @@
 
   Package-Manager: portage-2.3.2
 
+  10 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  -files/remmina-external_tools.patch, -remmina-9999.ebuild:
+  Drop live ebuild (#602134) and unused patch.
+
+  Package-Manager: portage-2.3.2
+

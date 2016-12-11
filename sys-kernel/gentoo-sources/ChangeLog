@@ -2611,3 +2611,21 @@
 
   Package-Manager: portage-2.3.2
 
+*gentoo-sources-3.10.104-r1 (09 Dec 2016)
+
+  09 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  +gentoo-sources-3.10.104-r1.ebuild:
+  sys-kernel/getono-sources: For linux version 3.10.X fix race condition in
+  packet_set_ring. CVE-2016-8655. Bug #601926.
+
+  Package-Manager: portage-2.3.0
+
+*gentoo-sources-3.4.113-r1 (10 Dec 2016)
+
+  10 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  +gentoo-sources-3.4.113-r1.ebuild:
+  For Linux 3.4.X, fix race condition in packet_set_ring. CVE-2016-8655. Bug
+  #601926.
+
+  Package-Manager: portage-2.3.0
+

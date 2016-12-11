@@ -245,3 +245,10 @@
 
   Package-Manager: portage-2.2.28
 
+*xpra-0.17.6 (10 Dec 2016)
+
+  10 Dec 2016; Michael Weber <xmw@gentoo.org> +xpra-0.17.6.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.2.28
+

@@ -79,3 +79,13 @@
 
   Package-Manager: portage-2.3.0
 
+  10 Dec 2016; Michał Górny <mgorny@gentoo.org> colm-0.13.0.4.ebuild:
+  KEYWORD ~arm, correct HOMEPAGE and HTTPS SRC_URI
+
+  * ~arm tested on armv7a RK3288
+  * HOMEPAGE was out of date
+  * SRC_URI is available over HTTPS
+
+  Closes: https://github.com/gentoo/gentoo/pull/3059
+  Package-Manager: portage-2.3.0
+

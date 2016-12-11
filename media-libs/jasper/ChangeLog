@@ -282,3 +282,15 @@
 
   Package-Manager: portage-2.3.3
 
+  10 Dec 2016; David Seifert <soap@gentoo.org> jasper-2.0.5.ebuild:
+  Fix automagic logic
+
+  Gentoo-bug: 602186
+
+  Package-Manager: portage-2.3.3
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> jasper-2.0.5.ebuild:
+  Install docs using relative path
+
+  Package-Manager: portage-2.3.3
+

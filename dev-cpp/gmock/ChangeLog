@@ -98,3 +98,8 @@
 
   Package-Manager: portage-2.3.2
 
+  09 Dec 2016; Mike Frysinger <vapier@gentoo.org>
+  -files/gmock-1.4.0-gcc-4.7.patch, -files/gmock-1.4.0-more-gcc-4.7.patch,
+  -gmock-1.4.0.ebuild, -gmock-1.5.0.ebuild, -gmock-1.7.0.ebuild:
+  drop old <1.7.0-r1 versions
+

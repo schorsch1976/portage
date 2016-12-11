@@ -105,3 +105,11 @@
 
   Package-Manager: portage-2.3.0
 
+  09 Dec 2016; Mike Frysinger <vapier@gentoo.org> glew-1.6.0-r100.ebuild,
+  glew-1.10.0-r2.ebuild, glew-1.10.0-r100.ebuild, glew-1.13.0.ebuild,
+  glew-2.0.0.ebuild:
+  set SYSTEM based on CHOST #595280
+
+  This avoids running the local (and old) copy of config.guess,
+  and it fixes cross-compiling selection in a number of cases.
+

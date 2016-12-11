@@ -93,3 +93,8 @@
   07 Aug 2016; Tim Harder <radhermit@gentoo.org> +lynx-2.8.9_pre9.ebuild:
   version bump to 2.8.9_pre9
 
+*lynx-2.8.9_pre11 (10 Dec 2016)
+
+  10 Dec 2016; Tim Harder <radhermit@gentoo.org> +lynx-2.8.9_pre11.ebuild:
+  version bump to 2.8.9_pre11
+

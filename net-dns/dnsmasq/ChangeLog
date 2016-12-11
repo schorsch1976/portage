@@ -228,3 +228,15 @@
   27 Nov 2016; Mike Frysinger <vapier@gentoo.org> dnsmasq-2.76.ebuild:
   use correct pkg-config tool
 
+*dnsmasq-2.76-r1 (10 Dec 2016)
+
+  10 Dec 2016; Patrick McLean <chutzpah@gentoo.org> +dnsmasq-2.76-r1.ebuild,
+  +files/dnsmasq-2.76-handle-binding-upstream-servers-to-an-interface.patch:
+  Revision bump, add patch to fix caching of bound sockets
+
+  This also adds gentoo prefix support.
+
+  Gentoo-Bug: 601920
+
+  Package-Manager: portage-2.3.3
+

@@ -108,3 +108,15 @@
 
   Package-Manager: portage-2.3.2
 
+*scummvm-1.9.0 (09 Dec 2016)
+
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +scummvm-1.9.0.ebuild:
+  Bumped to version 1.9.0
+
+  Package-Manager: portage-2.3.3
+
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -scummvm-1.8.1.ebuild:
+  Removed old.
+
+  Package-Manager: portage-2.3.3
+

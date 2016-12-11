@@ -199,3 +199,25 @@
 
   Package-Manager: portage-2.3.2
 
+*zeromq-4.2.0 (10 Dec 2016)
+
+  10 Dec 2016; Thomas Deutschmann <whissi@gentoo.org> metadata.xml,
+  +zeromq-4.2.0.ebuild:
+  Bump to v4.2.0
+
+  Package-Manager: portage-2.3.2
+
+  10 Dec 2016; Thomas Deutschmann <whissi@gentoo.org> -zeromq-4.1.5-r1.ebuild:
+  Cleanup old
+
+  Package-Manager: portage-2.3.2
+
+  10 Dec 2016; Justin Lecher <jlec@gentoo.org>
+  +files/zeromq-4.2.0-dl-backport.patch, zeromq-4.2.0.ebuild:
+  Backport fix for underlinking
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=602230
+
+  Package-Manager: portage-2.3.3
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

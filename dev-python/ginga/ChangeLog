@@ -1,0 +1,12 @@
+# ChangeLog for dev-python/ginga
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*ginga-2.6.0 (10 Dec 2016)
+
+  10 Dec 2016; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/ginga-no-roboto.patch, +ginga-2.6.0.ebuild, +metadata.xml:
+  initial import
+
+  Package-Manager: portage-2.3.3
+

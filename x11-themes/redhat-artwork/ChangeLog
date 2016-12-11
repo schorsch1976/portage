@@ -76,3 +76,6 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  10 Dec 2016; Johannes Huber <johu@gentoo.org> metadata.xml:
+  kde-base/kdm -> kde-plasma/kdm
+

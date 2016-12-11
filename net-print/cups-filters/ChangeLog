@@ -529,3 +529,11 @@
 
   Package-Manager: portage-2.3.2
 
+*cups-filters-1.13.0 (09 Dec 2016)
+
+  09 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +cups-filters-1.13.0.ebuild:
+  BUmp to version 1.13.0
+
+  Package-Manager: portage-2.3.3
+
