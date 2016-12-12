@@ -115,3 +115,15 @@
 
   Package-Manager: portage-2.3.3
 
+*Net-IDN-Encode-2.303.0 (11 Dec 2016)
+
+  11 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +Net-IDN-Encode-2.303.0.ebuild:
+  Bump to version 2.303.0
+
+  Upstream:
+  - Fix compiler warning
+  - Update to UNICODE 9.0
+
+  Package-Manager: portage-2.3.3
+

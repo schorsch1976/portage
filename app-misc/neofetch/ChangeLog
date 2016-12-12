@@ -55,3 +55,12 @@
   Package-Manager: portage-2.3.0
   Closes: https://github.com/gentoo/gentoo/pull/2981
 
+*neofetch-2.0.2 (11 Dec 2016)
+
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org> -neofetch-2.0.ebuild,
+  +neofetch-2.0.2.ebuild:
+  version bump to 2.0.2
+
+  Closes: https://github.com/gentoo/gentoo/pull/3046
+  Package-Manager: portage-2.3.0
+

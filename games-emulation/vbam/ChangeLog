@@ -151,3 +151,46 @@
 
   Package-Manager: portage-2.3.2
 
+*vbam-2.0.0_beta2_pre1507 (11 Dec 2016)
+
+  11 Dec 2016; David Seifert <soap@gentoo.org>
+  +vbam-2.0.0_beta2_pre1507.ebuild, -vbam-2.0.0_pre1507.ebuild:
+  rename vbam-2.0.0_pre1507.ebuild
+
+  Rename vbam-2.0.0_pre1507.ebuild to vbam-2.0.0_beta2_pre1507.ebuild.
+  This ensures the new version (vbam-2.0.0_beta2_pre20161211.ebuild)
+  to be favored over the older pre version.
+
+  Package-Manager: portage-2.3.3
+  Closes: https://github.com/gentoo/gentoo/pull/3076
+
+*vbam-2.0.0_beta2_pre20161211 (11 Dec 2016)
+
+  11 Dec 2016; David Seifert <soap@gentoo.org>
+  +files/vbam-2.0.0_beta2-fix-install-path-bin.patch,
+  +files/vbam-2.0.0_beta2-fix-zlib-macros.patch,
+  +files/vbam-2.0.0_beta2-remove-hardcoded-flags.patch,
+  files/vbam-2.0.0_pre1507-man.patch, +vbam-2.0.0_beta2_pre20161211.ebuild:
+  Add new snapshot
+
+  Gentoo-bug: 568802, 592098, 601838
+  * [QA] Remove games.eclass
+  * EAPI=6
+  * Respect user flags
+
+  Package-Manager: portage-2.2.26
+  Closes: https://github.com/gentoo/gentoo/pull/3076
+
+*vbam-2.0.0_beta2_p20161211 (11 Dec 2016)
+
+  11 Dec 2016; David Seifert <soap@gentoo.org>
+  -vbam-2.0.0_beta2_pre20161211.ebuild, +vbam-2.0.0_beta2_p20161211.ebuild:
+  Correct Vbam ebuild name
+
+  Rename vbam-2.0.0_beta2_pre20161211.tar.gz to
+  vbam-2.0.0_beta2_p20161211.tar.gz.  The ebuild points to a version that
+  came out after v2.0.0_beta2.
+
+  Package-Manager: portage-2.3.3
+  Closes: https://github.com/gentoo/gentoo/pull/3088
+

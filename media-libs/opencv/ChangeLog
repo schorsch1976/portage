@@ -434,3 +434,38 @@
 
   Package-Manager: portage-2.3.2
 
+*opencv-3.1.0-r7 (10 Dec 2016)
+
+  10 Dec 2016; Michał Górny <mgorny@gentoo.org> +opencv-3.1.0-r7.ebuild:
+  Kill unnecessary Gentoo hack-patch for Python
+
+  Kill the unnecessary, outdated custom Gentoo CMake module used to force
+  specific version of Python in favor of hacking the upstream module
+  appropriately. Rely on the standard CMake -DPYTHON_INTERPRETER to
+  (indirectly) disable Python for the base build, and on python-r1 +
+  upstream -DPYTHON3_INTERPRETER to control the implementation used for
+  Python module build.
+
+  This removes a lot of unnecessary hackery from the ebuild, such as
+  passing all the Python implementation specifics (include paths, library
+  names) in favor of using the CMake autodetection code. It also restores
+  some missing bits that were omitted because of the Gentoo module
+  deficiency.
+
+  To keep things simple, all versions of Python are treated as 'python2'
+  upstream since the code used to build both python2 & python3 modules is
+  identical (i.e. works for all versions).
+
+  10 Dec 2016; Michał Górny <mgorny@gentoo.org> opencv-3.1.0-r7.ebuild:
+  Kill redundant 'emake clean' - fix ninja, #602232
+
+  Kill the call to 'emake clean' for Python build directory which
+  obviously does not work when Ninja is used instead of Makefiles. It is
+  completely redundant since it is followed by 'rm -rf' of the whole
+  directory (tested with Makefiles and Ninja).
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> opencv-3.1.0-r7.ebuild:
+  QA] Minor fixes
+
+  Package-Manager: portage-2.3.3
+

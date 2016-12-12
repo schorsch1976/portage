@@ -21,3 +21,10 @@
   lumina-9999.ebuild:
   fixes for bug #57320.
 
+*lumina-1.1.0 (11 Dec 2016)
+
+  11 Dec 2016; Andrey Grozin <grozin@gentoo.org> +lumina-1.1.0.ebuild:
+  bump to 1.1.0
+
+  Package-Manager: portage-2.3.0
+

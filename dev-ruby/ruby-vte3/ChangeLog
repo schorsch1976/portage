@@ -130,3 +130,9 @@
 
   Package-Manager: portage-2.3.0
 
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org> -ruby-vte3-3.0.7.ebuild,
+  -ruby-vte3-3.0.8.ebuild:
+  cleanup ebuilds depending on wrong vte version, bug 601348
+
+  Package-Manager: portage-2.3.0
+

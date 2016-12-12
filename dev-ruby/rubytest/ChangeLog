@@ -75,3 +75,8 @@
 
   Package-Manager: portage-2.2.28
 
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org> rubytest-0.8.1.ebuild:
+  add ruby23
+
+  Package-Manager: portage-2.3.0
+

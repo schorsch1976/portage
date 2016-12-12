@@ -441,3 +441,15 @@
 
   Package-Manager: portage-2.3.2
 
+*openvpn-2.4_rc1-r2 (10 Dec 2016)
+
+  10 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  +files/openvpn-2.4_rc1-arm-inotify-only-in-server-mode.patch,
+  +files/openvpn-2.4_rc1-fix-async-push.patch, -openvpn-2.4_rc1-r1.ebuild,
+  +openvpn-2.4_rc1-r2.ebuild:
+  Revision bump, pull in upstrea patches to fix 100% cpu issue
+
+  Gentoo-Bug: 601646
+
+  Package-Manager: portage-2.3.3
+

@@ -114,3 +114,13 @@
   greenlet-0.4.10.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*greenlet-0.4.11 (11 Dec 2016)
+
+  11 Dec 2016; Tim Harder <radhermit@gentoo.org> +greenlet-0.4.11.ebuild:
+  version bump to 0.4.11
+
+  11 Dec 2016; Tim Harder <radhermit@gentoo.org> -greenlet-0.4.2.ebuild,
+  -greenlet-0.4.3.ebuild, -greenlet-0.4.4.ebuild, -greenlet-0.4.6.ebuild,
+  -greenlet-0.4.7.ebuild, -greenlet-0.4.9.ebuild:
+  remove old
+

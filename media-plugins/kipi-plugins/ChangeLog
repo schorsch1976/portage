@@ -218,3 +218,12 @@
 
   Package-Manager: portage-2.3.3
 
+  11 Dec 2016; Johannes Huber <johu@gentoo.org>
+  -files/kipi-plugins-3.0.0-options.patch,
+  -files/kipi-plugins-4.10.0-jpeg.patch,
+  -files/kipi-plugins-4.6.0-options.patch, -kipi-plugins-4.4.0.ebuild,
+  -kipi-plugins-4.14.0.ebuild, metadata.xml:
+  Drop slot 4
+
+  Package-Manager: portage-2.3.3
+

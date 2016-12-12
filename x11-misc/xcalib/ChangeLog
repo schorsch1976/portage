@@ -66,3 +66,22 @@
 
   Bug: 575810
 
+*xcalib-0.9.0_p20161210 (10 Dec 2016)
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> metadata.xml,
+  +xcalib-0.9.0_p20161210.ebuild:
+  0.9.0 version bump, switch to cmake, EAPI 6
+
+  Actually fetch from Github snapshot, release tarball from sourceforge
+  does not work and there have been a few fixes since release.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/3069
+
+  10 Dec 2016; David Seifert <soap@gentoo.org>
+  -files/xcalib-0.8-ldflags.patch, -xcalib-0.8.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/3069
+

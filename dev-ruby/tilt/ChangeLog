@@ -121,3 +121,22 @@
 
   Package-Manager: portage-2.3.0
 
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org> -tilt-2.0.4.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org> tilt-2.0.5.ebuild:
+  drop optional test dependencies
+
+  These dependencies (radius and haml) are optional, but both
+  carry a very large dependency tree which blocks stabling
+  tilt versions.
+
+  Package-Manager: portage-2.3.0
+
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org> tilt-2.0.5.ebuild:
+  amd64 stable
+
+  Package-Manager: portage-2.3.0
+

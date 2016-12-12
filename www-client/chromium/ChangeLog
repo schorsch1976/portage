@@ -2047,3 +2047,27 @@
 
   Package-Manager: portage-2.3.2_p13
 
+*chromium-56.0.2924.21 (10 Dec 2016)
+
+  10 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -chromium-56.0.2924.14.ebuild, +chromium-56.0.2924.21.ebuild:
+  beta channel bump (56.0.2924.21)
+
+  Package-Manager: portage-2.3.2_p13
+
+*chromium-57.0.2946.0 (11 Dec 2016)
+
+  11 Dec 2016; Mike Gilbert <floppym@gentoo.org> +chromium-57.0.2946.0.ebuild,
+  +files/chromium-gn-r10.patch:
+  dev channel bump (57.0.2946.0)
+
+  Package-Manager: portage-2.3.2_p13
+
+  11 Dec 2016; Mike Gilbert <floppym@gentoo.org> chromium-57.0.2946.0.ebuild:
+  clean up src_install
+
+  Remove CHROMIUM_SUFFIX.
+  Remove extraneous || die.
+
+  Package-Manager: portage-2.3.2_p13
+

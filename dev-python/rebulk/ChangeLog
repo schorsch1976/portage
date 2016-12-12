@@ -85,3 +85,20 @@
 
   Package-Manager: portage-2.3.2
 
+*rebulk-0.8.2 (10 Dec 2016)
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> +rebulk-0.8.2.ebuild:
+  verbump to 0.8.2
+
+  Package-Manager: portage-2.3.3
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> -rebulk-0.7.6.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.3
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> rebulk-9999.ebuild:
+  support both https and git repo URIs in 9999
+
+  Package-Manager: portage-2.3.3
+

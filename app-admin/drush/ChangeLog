@@ -111,3 +111,10 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*drush-6.7.0-r1 (11 Dec 2016)
+
+  11 Dec 2016; Michael Orlitzky <mjo@gentoo.org> +drush-6.7.0-r1.ebuild:
+  new EAPI=6 revision.
+
+  Package-Manager: portage-2.3.0
+

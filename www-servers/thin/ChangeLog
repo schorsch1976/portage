@@ -126,3 +126,8 @@
 
   Package-Manager: portage-2.3.2
 
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org> thin-1.7.0-r1.ebuild:
+  add back ~x86 keyword
+
+  Package-Manager: portage-2.3.0
+

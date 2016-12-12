@@ -70,3 +70,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  xf86-video-vmware-13.1.0.ebuild:
+  add ~amd64-fbsd, #477604
+
+  Keyword ~amd64-fbsd and adjust the dependencies accordingly.
+

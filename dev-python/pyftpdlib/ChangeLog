@@ -116,3 +116,17 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> pyftpdlib-1.4.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  11 Dec 2016; David Seifert <soap@gentoo.org> metadata.xml:
+  add bugs-to to metadata, remove googlecode
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/3057
+
+*pyftpdlib-1.5.1 (11 Dec 2016)
+
+  11 Dec 2016; David Seifert <soap@gentoo.org> +pyftpdlib-1.5.1.ebuild:
+  bump to 1.5.1, drop amd64-fbsd, fix deps, add py3.5
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/3057
+

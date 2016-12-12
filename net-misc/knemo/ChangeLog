@@ -125,3 +125,11 @@
   06 Nov 2016; Johannes Huber <johu@gentoo.org> knemo-0.7.7.ebuild:
   kde-base/systemsettings -> kde-plasma/systemsettings
 
+*knemo-0.8.0_pre20161211 (11 Dec 2016)
+
+  11 Dec 2016; Johannes Huber <johu@gentoo.org>
+  +knemo-0.8.0_pre20161211.ebuild:
+  Add KF5 snapshot
+
+  Package-Manager: portage-2.3.3
+

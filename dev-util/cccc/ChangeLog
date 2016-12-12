@@ -90,3 +90,10 @@
 
   Package-Manager: portage-2.2.27
 
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  -files/cccc-3.1.4-unbundle-pccts.patch,
+  -files/cccc-3.1.4-whitespace-and-unqualified-lookup.patch:
+  remove unused patches
+
+  Closes: https://github.com/gentoo/gentoo/pull/2783
+

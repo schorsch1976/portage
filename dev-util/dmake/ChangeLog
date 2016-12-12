@@ -73,3 +73,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  -files/4.12-fix-overlapping-stcpys.patch, -files/dmake-4.1-r1.diff:
+  remove unused patches
+
+  Closes: https://github.com/gentoo/gentoo/pull/2817
+

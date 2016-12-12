@@ -87,3 +87,28 @@
   seaborn-0.6.0.ebuild, seaborn-0.7.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*seaborn-0.7.1 (10 Dec 2016)
+
+  10 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +seaborn-0.7.1.ebuild:
+  version bump.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/3020
+
+  10 Dec 2016; Patrice Clement <monsieurp@gentoo.org> metadata.xml:
+  add additional maintainer.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/3020
+
+  10 Dec 2016; Patrice Clement <monsieurp@gentoo.org> seaborn-0.7.1.ebuild:
+  added die calls where appropriate.
+
+  Package-Manager: portage-2.3.3
+  Closes: https://github.com/gentoo/gentoo/pull/3020
+
+  10 Dec 2016; Patrice Clement <monsieurp@gentoo.org> metadata.xml:
+  add proxy-maint to metadata.xml.
+
+  Package-Manager: portage-2.3.0
+

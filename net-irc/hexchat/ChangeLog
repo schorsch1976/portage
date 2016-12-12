@@ -173,3 +173,20 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> hexchat-2.10.2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*hexchat-2.12.4 (11 Dec 2016)
+
+  11 Dec 2016; David Seifert <soap@gentoo.org> -hexchat-2.12.3.ebuild,
+  +hexchat-2.12.4.ebuild, hexchat-9999.ebuild:
+  version bump 2.12.4
+
+  * Also syncronize live ebuild
+  * Remove doat plugin (removed upstream)
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/3077
+
+  11 Dec 2016; David Seifert <soap@gentoo.org> hexchat-9999.ebuild:
+  Update live ebuild
+
+  Package-Manager: portage-2.3.3
+

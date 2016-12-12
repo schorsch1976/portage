@@ -172,3 +172,22 @@
 
   Package-Manager: portage-2.3.2
 
+  11 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  +files/kphotoalbum-5.0.1-buildbackports.patch, kphotoalbum-5.0.1.ebuild:
+  backport misc build fixes from upstream
+
+  Package-Manager: portage-2.3.3
+
+  11 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  kphotoalbum-5.0.1.ebuild:
+  stabilise 5.0.1 on amd64/x86
+
+  Package-Manager: portage-2.3.3
+
+  11 Dec 2016; Johannes Huber <johu@gentoo.org>
+  -files/kphotoalbum-4.7.1-nokipi.patch, -kphotoalbum-4.5.ebuild,
+  -kphotoalbum-4.7.2.ebuild, metadata.xml:
+  Drop slot 4
+
+  Package-Manager: portage-2.3.3
+

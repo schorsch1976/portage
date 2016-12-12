@@ -237,3 +237,19 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*rb_libtorrent-1.1.1 (10 Dec 2016)
+
+  10 Dec 2016; Markos Chandras <hwoarang@gentoo.org>
+  +rb_libtorrent-1.1.1.ebuild:
+  Version bump
+
+  Gentoo-Bug: 580760
+
+  Package-Manager: portage-2.3.3
+
+  11 Dec 2016; Markos Chandras <hwoarang@gentoo.org>
+  rb_libtorrent-1.1.1.ebuild:
+  Bump subslot
+
+  Package-Manager: portage-2.3.3
+

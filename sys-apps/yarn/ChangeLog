@@ -11,3 +11,9 @@
 
   Yarn is a fast, reliable, and secure dependency management software.
 
+  11 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> yarn-0.18.0.ebuild,
+  yarn-9999.ebuild:
+  added rdepend blocker to avoid collision with dev-util/cmdtest
+
+  Gentoo-Bug: https://bugs.gentoo.org/602168
+

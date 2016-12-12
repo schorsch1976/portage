@@ -105,3 +105,11 @@
 
   Package-Manager: portage-2.3.0
 
+  11 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> qtox-1.5.0.ebuild,
+  qtox-1.6.0.ebuild, qtox-9999.ebuild:
+  depend on slotted net-libs/tox
+
+  To make sure that it's compiling against the right API version.
+
+  Package-Manager: portage-2.3.0
+

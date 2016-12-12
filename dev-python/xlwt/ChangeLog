@@ -111,3 +111,11 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> xlwt-1.0.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*xlwt-1.1.2 (11 Dec 2016)
+
+  11 Dec 2016; Justin Lecher <jlec@gentoo.org> +xlwt-1.1.2.ebuild:
+  Version Bump
+
+  Package-Manager: portage-2.3.3
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+

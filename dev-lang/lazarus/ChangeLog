@@ -98,3 +98,12 @@
 
   Package-Manager: portage-2.2.26
 
+*lazarus-1.6.2 (11 Dec 2016)
+
+  11 Dec 2016; Amy Winston <amynka@gentoo.org> +lazarus-1.6.2.ebuild:
+  version bump 1.6.2
+
+  Closes: #3066
+
+  Package-Manager: portage-2.3.3
+

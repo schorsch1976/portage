@@ -73,3 +73,8 @@
 
   Package-Manager: portage-2.2.26
 
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org> sigar-0.7.3.ebuild:
+  fix building with gcc 5.x, bug 570970
+
+  Package-Manager: portage-2.3.0
+

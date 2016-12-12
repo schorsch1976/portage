@@ -88,3 +88,11 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*dwarves-1.10_p20160630 (11 Dec 2016)
+
+  11 Dec 2016; Matthias Schwarzott <zzam@gentoo.org>
+  +dwarves-1.10_p20160630.ebuild:
+  Version bumped, bug 600170
+
+  Package-Manager: portage-2.3.3
+

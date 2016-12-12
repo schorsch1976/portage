@@ -112,3 +112,16 @@
 
   Package-Manager: portage-2.3.2
 
+*DateTime-Format-Strptime-1.700.0 (11 Dec 2016)
+
+  11 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +DateTime-Format-Strptime-1.700.0.ebuild:
+  Bump to version 1.700.0
+
+  Upstream:
+  - Fix boundary check for parsing dd-mm-yy so it doesn't accidentally
+    match yy[yy-mm-dd] as yy[dd-mm-yy] or match [dd-mm-yy]yy
+  - Extend %z specifier to accept HH and HH:MM in addition to HHMM
+
+  Package-Manager: portage-2.3.3
+

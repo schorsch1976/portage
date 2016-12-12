@@ -230,3 +230,11 @@
   Closes: https://github.com/gentoo/gentoo/pull/2977
   Package-Manager: portage-2.3.2
 
+*znc-1.6.4 (11 Dec 2016)
+
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org> +znc-1.6.4.ebuild:
+  bump to 1.6.4
+
+  Closes: https://github.com/gentoo/gentoo/pull/3086
+  Package-Manager: portage-2.3.2
+

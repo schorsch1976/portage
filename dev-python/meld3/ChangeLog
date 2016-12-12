@@ -74,3 +74,12 @@
   meld3-1.0.2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*meld3-1.0.2-r1 (11 Dec 2016)
+
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org> -meld3-1.0.2.ebuild,
+  +meld3-1.0.2-r1.ebuild, metadata.xml:
+  add py3.5, EAPI=6, fix license, deps and tests
+
+  Closes: https://github.com/gentoo/gentoo/pull/3074
+  Package-Manager: portage-2.3.2
+

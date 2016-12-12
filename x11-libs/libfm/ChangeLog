@@ -118,3 +118,10 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*libfm-1.2.5 (11 Dec 2016)
+
+  11 Dec 2016; Markos Chandras <hwoarang@gentoo.org> +libfm-1.2.5.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.3
+

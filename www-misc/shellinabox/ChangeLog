@@ -105,3 +105,8 @@
 
   Package-Manager: portage-2.3.0
 
+  10 Dec 2016; Patrice Clement <monsieurp@gentoo.org> files/shellinaboxd.init:
+  reduce scope of a couple of variables in init script.
+
+  Package-Manager: portage-2.3.0
+

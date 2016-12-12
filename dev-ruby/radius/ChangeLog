@@ -92,3 +92,10 @@
 
   Package-Manager: portage-2.2.28
 
+*radius-0.7.4-r3 (11 Dec 2016)
+
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org> +radius-0.7.4-r3.ebuild:
+  add ruby22 revision; drop arm, bug 553928
+
+  Package-Manager: portage-2.3.0
+

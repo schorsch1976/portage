@@ -269,3 +269,41 @@
   selinux-irqbalance-2.20161023-r1.ebuild:
   sec-policy: Stabilize selinux policy 2.20161023-r1
 
+*selinux-irqbalance-2.20161023-r2 (11 Dec 2016)
+
+  11 Dec 2016; Jason Zaman <perfinion@gentoo.org>
+  +selinux-irqbalance-2.20161023-r2.ebuild:
+  sec-policy: Release of SELinux policies 2.20161023-r2
+
+  Package-Manager: portage-2.3.0
+
+*selinux-irqbalance-2.20161023-r3 (11 Dec 2016)
+
+  11 Dec 2016; Jason Zaman <perfinion@gentoo.org>
+  +selinux-irqbalance-2.20161023-r3.ebuild:
+  sec-policy: Release of SELinux policies 2.20161023-r3
+
+  Package-Manager: portage-2.3.0
+
+  11 Dec 2016; Jason Zaman <perfinion@gentoo.org>
+  -selinux-irqbalance-2.20161023-r2.ebuild:
+  sec-policy: Drop 2.20161023-r2, broken patch doesnt apply
+
+  Package-Manager: portage-2.3.0
+
+  11 Dec 2016; Jason Zaman <perfinion@gentoo.org>
+  -selinux-irqbalance-2.20141203-r10.ebuild,
+  -selinux-irqbalance-2.20151208-r1.ebuild,
+  -selinux-irqbalance-2.20151208-r2.ebuild,
+  -selinux-irqbalance-2.20151208-r3.ebuild,
+  -selinux-irqbalance-2.20151208-r5.ebuild:
+  sec-policy: Drop older than 2.20151208-r4
+
+  2.20151208-r4 was released more than 6 months ago so drop all before
+  that.
+  2.20151208-r5 and -r6 were stabilized together so both are
+  not needed.
+  remove some forgotten FILESDIR too
+
+  Package-Manager: portage-2.3.0
+

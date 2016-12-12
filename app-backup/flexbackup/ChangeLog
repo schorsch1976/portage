@@ -66,3 +66,19 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*flexbackup-1.2.1-r13 (11 Dec 2016)
+
+  11 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  files/flexbackup-1.2.1-perl-5.16-deprecation-warning.patch,
+  +files/flexbackup-1.2.1-tar-1.29.patch, +flexbackup-1.2.1-r13.ebuild:
+  EAPI=6 (bug 600140) and tar compatibility (bug 601368)
+
+  Convert ebuild to EAPI 6. Use eapply and proper phases.
+  Use einstalldocs and drop unneeded eutils class.
+
+  Add patch to ensure compatibility with tar 1.29 and later.
+  Thanks for John R. Graham in bug 601368 and Princess Nell
+  in the forums.
+
+  Package-Manager: portage-2.3.0
+

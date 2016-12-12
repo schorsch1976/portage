@@ -246,3 +246,23 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> guessit-1.0.3-r1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*guessit-2.1.1 (10 Dec 2016)
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> +guessit-2.1.1.ebuild:
+  verbump to 2.1.1
+
+  Package-Manager: portage-2.3.3
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> -guessit-2.1.0.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.3
+
+  10 Dec 2016; David Seifert <soap@gentoo.org> guessit-9999.ebuild:
+  update deps in live ebuild
+
+  Also support both https and git repo URIs.
+
+  Closes: https://github.com/gentoo/gentoo/pull/3054
+  Package-Manager: portage-2.3.3
+
