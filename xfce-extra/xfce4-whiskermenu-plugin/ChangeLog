@@ -192,3 +192,21 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+*xfce4-whiskermenu-plugin-2.0.3 (11 Dec 2016)
+*xfce4-whiskermenu-plugin-1.6.2 (11 Dec 2016)
+
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  +xfce4-whiskermenu-plugin-1.6.2.ebuild,
+  +xfce4-whiskermenu-plugin-2.0.3.ebuild:
+  Bump to versions 1.6.2 and 2.0.3
+
+  Package-Manager: portage-2.3.0
+
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  -xfce4-whiskermenu-plugin-1.6.1.ebuild,
+  -xfce4-whiskermenu-plugin-2.0.2.ebuild:
+  Remove old
+
+  Closes: https://github.com/gentoo/gentoo/pull/3073
+  Package-Manager: portage-2.3.0
+

@@ -188,3 +188,8 @@
 
   Package-Manager: portage-2.3.0
 
+  12 Dec 2016; Jason Zaman <perfinion@gentoo.org> libsemanage-2.6.ebuild:
+  stabilize userland 2.6
+
+  Package-Manager: portage-2.3.0
+

@@ -178,3 +178,11 @@
 
   Closes: https://github.com/gentoo/gentoo/pull/2920
 
+*warzone2100-3.2.2 (12 Dec 2016)
+
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +warzone2100-3.2.2.ebuild:
+  Bump to version 3.2.2
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -64,3 +64,12 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*aap-1.091-r3 (11 Dec 2016)
+
+  11 Dec 2016; Tim Harder <radhermit@gentoo.org> +aap-1.091-r3.ebuild,
+  +files/aap-1.091-module-install.patch:
+  install like a normal python module
+
+  11 Dec 2016; Tim Harder <radhermit@gentoo.org> aap-1.091-r3.ebuild:
+  add RDEPEND to DEPEND for tests
+

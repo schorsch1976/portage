@@ -105,3 +105,10 @@
 
   Package-Manager: portage-2.3.2
 
+*igbinary-2.0.0-r1 (12 Dec 2016)
+
+  12 Dec 2016; Brian Evans <grknight@gentoo.org> +igbinary-2.0.0-r1.ebuild:
+  Revbump to add PHP 7.1 support flag
+
+  Package-Manager: portage-2.3.3
+

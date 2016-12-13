@@ -75,3 +75,11 @@
 
   Package-Manager: portage-2.3.2
 
+*transmission_interface-0.11.3 (12 Dec 2016)
+
+  12 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +transmission_interface-0.11.3.ebuild:
+  Bump to 0.11.3.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

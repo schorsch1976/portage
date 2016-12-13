@@ -250,3 +250,9 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*nano-2.7.2 (12 Dec 2016)
+
+  12 Dec 2016; Mike Frysinger <vapier@gentoo.org> -nano-2.7.0.ebuild,
+  -nano-2.7.1.ebuild, +nano-2.7.2.ebuild:
+  version bump to 2.7.2
+

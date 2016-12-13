@@ -2645,3 +2645,23 @@
 
   Package-Manager: portage-2.3.2
 
+*gentoo-sources-3.14.79-r1 (11 Dec 2016)
+
+  11 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  +gentoo-sources-3.14.79-r1.ebuild:
+  For Linux 3.14.X, fix race condition in packet_set_ring. CVE-2016-8655. Bug
+  #601926.
+
+  Package-Manager: portage-2.3.0
+
+*gentoo-sources-4.9.0 (11 Dec 2016)
+
+  11 Dec 2016; Mike Pagano <mpagano@gentoo.org> +gentoo-sources-4.9.0.ebuild:
+  Linux patch 4.9.0. Gentoo Linux support config settings and defaults. Patch
+  to add support for namespace user.pax.* on tmpfs. Patch to enable link
+  security restrictions by default. Patch to ensure that /dev/root doesn't
+  appear in /proc/mounts when bootint without an initramfs. Patch to enable
+  control of the unaligned access control policy from sysctl.
+
+  Package-Manager: portage-2.3.0
+

@@ -74,3 +74,6 @@
   -tintii-2.8.2.ebuild:
   remove old
 
+  12 Dec 2016; Tim Harder <radhermit@gentoo.org> -tintii-2.9.0.ebuild:
+  remove old
+

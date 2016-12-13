@@ -118,3 +118,8 @@
 
   Package-Manager: portage-2.3.0
 
+*fonttools-3.3.0 (11 Dec 2016)
+
+  11 Dec 2016; Tim Harder <radhermit@gentoo.org> +fonttools-3.3.0.ebuild:
+  version bump to 3.3.0
+

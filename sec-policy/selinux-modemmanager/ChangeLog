@@ -309,3 +309,9 @@
 
   Package-Manager: portage-2.3.0
 
+  11 Dec 2016; Jason Zaman <perfinion@gentoo.org>
+  selinux-modemmanager-9999.ebuild:
+  sec-policy: update live ebuilds to EAPI6
+
+  Package-Manager: portage-2.3.0
+

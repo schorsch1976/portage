@@ -81,3 +81,17 @@
 
   Package-Manager: portage-2.3.0
 
+  12 Dec 2016; David Seifert <soap@gentoo.org>
+  +files/sirius-0.8.0-fix-build-system.patch,
+  +files/sirius-0.8.0-fix-desktop-file.patch, files/sirius-0.8.0-format.patch,
+  sirius-0.8.0-r1.ebuild:
+  Fix underlinking
+
+  Gentoo-bug: 592414
+  * Turn sed's into PATCHES
+  * Fix configure.ac
+  * Include a check for sqrt() in libm
+  * Simplify ebuild
+
+  Package-Manager: portage-2.3.3
+

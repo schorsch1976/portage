@@ -293,3 +293,31 @@
 
   Package-Manager: portage-2.3.2
 
+*hplip-3.16.11-r1 (12 Dec 2016)
+
+  12 Dec 2016; Daniel Pielmeier <billie@gentoo.org> +hplip-3.16.11-r1.ebuild:
+  Rework USE logic, fix python deps
+
+  Gentoo-bug: 594532, 586256
+
+  - Added missing PyQt5[widgets] USE dependency.
+  - Fix pygobject slotdep
+  - Build system gives no indication why not both qt4 and qt5 could be
+    installed but retain existing behaviour anyway by turning qt4 into !qt5.
+  - USE=!minimal now means some kind of GUI is installed, be it Qt4 or Qt5.
+    It means sys-apps/dbus becomes conditional only to USE=minimal as well.
+  - USE=fax depends on python2
+  - Dropped eutils.eclass
+  - eapply -> PATCHES array, D -> ED
+  - Cleaned up some ancient version deps
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Daniel Pielmeier <billie@gentoo.org>
+
+  12 Dec 2016; Daniel Pielmeier <billie@gentoo.org> -hplip-3.16.9-r1.ebuild,
+  -hplip-3.16.10.ebuild:
+  Remove old.
+
+  Package-Manager: portage-2.3.0
+

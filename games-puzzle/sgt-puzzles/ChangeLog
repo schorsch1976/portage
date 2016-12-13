@@ -98,3 +98,20 @@
 
   Package-Manager: portage-2.2.28
 
+*sgt-puzzles-20161207 (12 Dec 2016)
+
+  12 Dec 2016; NP-Hardass <NP-Hardass@gentoo.org>
+  +files/sgt-puzzles-20161207-builtin-help.patch,
+  +files/sgt-puzzles.directory, +files/sgt-puzzles.menu,
+  +sgt-puzzles-20161207.ebuild, sgt-puzzles-99999999.ebuild:
+  Large changeset, fixes #593480
+
+  Drop games eclass support
+  Bump to EAPI=6
+  Rename binaries to avoid filename collisions
+  Sort xdg menu entries
+  In app help options
+  Various ebuild improvements
+
+  Package-Manager: portage-2.3.0
+

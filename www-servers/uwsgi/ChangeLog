@@ -188,3 +188,21 @@
   uwsgi-2.0.14.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  12 Dec 2016; Mike Gilbert <floppym@gentoo.org> uwsgi-2.0.14.ebuild:
+  drop unused distutils-r1
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+
+  12 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  +files/2.0.14-php-plugin.patch, uwsgi-2.0.14.ebuild:
+  fix build with php5.6
+
+  Bug: https://bugs.gentoo.org/598730
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+
+  12 Dec 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml:
+  drop python from metadata
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

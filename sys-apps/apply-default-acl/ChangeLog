@@ -79,3 +79,25 @@
 
   Package-Manager: portage-2.3.0
 
+  12 Dec 2016; Michael Orlitzky <mjo@gentoo.org>
+  apply-default-acl-0.0.6.ebuild:
+  stabilize v0.0.6 on x86 and amd64.
+
+  Maintainer stabilization: the stabilization request for this was only
+  filed about a month ago, but the new version contains an important fix
+  to symlink handling that should go stable as soon as possible. (Contrary
+  to the documentation, symlinks *were* followed in v0.0.4.)
+
+  I regularly use this package on both x86 and amd64, and it passes the
+  test suite on both architectures.
+
+  Gentoo-Bug: 599172
+
+  Package-Manager: portage-2.3.0
+
+  12 Dec 2016; Michael Orlitzky <mjo@gentoo.org>
+  -apply-default-acl-0.0.4.ebuild:
+  remove old v0.0.4.
+
+  Package-Manager: portage-2.3.0
+

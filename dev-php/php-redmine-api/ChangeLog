@@ -86,3 +86,22 @@
   RepoMan-Options: --include-arches="amd64"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  12 Dec 2016; Michael Orlitzky <mjo@gentoo.org> php-redmine-api-1.5.9.ebuild:
+  stabilize php-redmine-api-1.5.9 on x86.
+
+  Maintainer stabilization: I have the hardware and am able to test
+  this. It does what it's supposed to, and since the code is pure PHP, I
+  probably should have filed the initial stabilization request with the
+  ALLARCHES keyword. Nevertheless... the stabilization request was opened
+  over three months ago, so I think it's past the "timeout" period.
+
+  Gentoo-Bug: 592262
+
+  Package-Manager: portage-2.3.0
+
+  12 Dec 2016; Michael Orlitzky <mjo@gentoo.org>
+  -php-redmine-api-1.5.2.ebuild:
+  remove old php-redmine-api-1.5.2.ebuild.
+
+  Package-Manager: portage-2.3.0
+

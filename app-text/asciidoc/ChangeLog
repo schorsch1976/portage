@@ -227,3 +227,38 @@
   RepoMan-Options: --include-arches="ppc"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  12 Dec 2016; Michał Górny <mgorny@gentoo.org> asciidoc-8.6.9-r3.ebuild,
+  asciidoc-9999.ebuild:
+  rework to not need "cd tests"
+
+  Package-Manager: portage-2.2.24
+  Signed-off-by: Marc Joliet <marcec@gmx.de>
+
+  12 Dec 2016; Michał Górny <mgorny@gentoo.org> asciidoc-9999.ebuild:
+  9999: switch to new Git repo
+
+  Package-Manager: portage-2.2.24
+  Signed-off-by: Marc Joliet <marcec@gmx.de>
+
+  12 Dec 2016; Michał Górny <mgorny@gentoo.org> asciidoc-9999.ebuild:
+  9999: move to readme.gentoo-r1 eclass
+
+  Package-Manager: portage-2.3.0
+  Signed-off-by: Marc Joliet <marcec@gmx.de>
+
+  12 Dec 2016; Michał Górny <mgorny@gentoo.org> asciidoc-9999.ebuild:
+  9999: switch to EAPI 6
+
+  Package-Manager: portage-2.3.0
+  Signed-off-by: Marc Joliet <marcec@gmx.de>
+
+  12 Dec 2016; Michał Górny <mgorny@gentoo.org> asciidoc-9999.ebuild:
+  9999: remove dep on dev-util/aap
+
+  Remove the dependency on dev-util/aap, which was only used to build three
+  documentation files.  Instead, asciidoc is called directly now.
+
+  Closes: https://github.com/gentoo/gentoo/pull/3082
+  Package-Manager: portage-2.3.0
+  Signed-off-by: Marc Joliet <marcec@gmx.de>
+

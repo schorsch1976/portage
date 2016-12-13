@@ -352,3 +352,15 @@
   08 Dec 2016; Johannes Huber <johu@gentoo.org> +kactivities-4.13.3-r2.ebuild:
   kde-base/kactivities -> kde-frameworks/kactivities
 
+*kactivities-5.29.0 (12 Dec 2016)
+
+  12 Dec 2016; Johannes Huber <johu@gentoo.org> +kactivities-5.29.0.ebuild:
+  kde-frameworks: Version bump KDE Frameworks 5.29.0
+
+  Package-Manager: portage-2.3.3
+
+  12 Dec 2016; Johannes Huber <johu@gentoo.org> -kactivities-5.28.0.ebuild:
+  kde-frameworks: Remove KDE Frameworks 5.28.0
+
+  Package-Manager: portage-2.3.3
+

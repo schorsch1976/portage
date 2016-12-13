@@ -231,3 +231,9 @@
 
   Package-Manager: portage-2.3.2
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  perl-Storable-2.530.200_rc.ebuild:
+  2.530.200_rc-r0: stable on alpha
+
+  Gentoo-Bug: 589680
+

@@ -156,3 +156,8 @@
   docutils-0.12.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*docutils-0.13.1 (12 Dec 2016)
+
+  12 Dec 2016; Tim Harder <radhermit@gentoo.org> +docutils-0.13.1.ebuild:
+  version bump to 0.13.1
+

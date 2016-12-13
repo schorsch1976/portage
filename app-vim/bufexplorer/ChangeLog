@@ -95,3 +95,8 @@
 
   Package-Manager: portage-2.3.0
 
+*bufexplorer-7.4.12 (12 Dec 2016)
+
+  12 Dec 2016; Tim Harder <radhermit@gentoo.org> +bufexplorer-7.4.12.ebuild:
+  version bump to 7.4.12
+

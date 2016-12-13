@@ -169,3 +169,10 @@
 
   Package-Manager: portage-2.3.2
 
+*eliom-6.0.0 (12 Dec 2016)
+
+  12 Dec 2016; Alexis Ballier <aballier@gentoo.org> +eliom-6.0.0.ebuild:
+  bump to 6.0.0
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

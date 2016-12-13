@@ -206,3 +206,11 @@
 
   Package-Manager: portage-2.3.2
 
+*checkbashisms-2.16.12 (12 Dec 2016)
+
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +checkbashisms-2.16.12.ebuild:
+  Bump to version 2.16.12
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -209,3 +209,9 @@
 
   Package-Manager: portage-2.3.3
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  perl-Net-Ping-2.430.100_rc-r1.ebuild:
+  2.430.100_rc-r1: stable on alpha
+
+  Gentoo-Bug: 589680
+

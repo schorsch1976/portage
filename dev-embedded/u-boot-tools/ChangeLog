@@ -107,3 +107,8 @@
   +u-boot-tools-2016.09.01-r1.ebuild:
   install dumpimage, fdtgrep, and mkenvimage tools
 
+*u-boot-tools-2016.11 (12 Dec 2016)
+
+  12 Dec 2016; Tim Harder <radhermit@gentoo.org> +u-boot-tools-2016.11.ebuild:
+  version bump to 2016.11
+

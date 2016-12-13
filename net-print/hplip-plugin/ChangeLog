@@ -140,3 +140,9 @@
 
   Package-Manager: portage-2.3.2
 
+  12 Dec 2016; Daniel Pielmeier <billie@gentoo.org>
+  -hplip-plugin-3.16.9.ebuild, -hplip-plugin-3.16.10.ebuild:
+  Remove old.
+
+  Package-Manager: portage-2.3.0
+

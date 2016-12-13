@@ -250,3 +250,9 @@
 
   Package-Manager: portage-2.3.0
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  nagios-core-4.2.4.ebuild:
+  4.2.4-r0: stable on alpha
+
+  Gentoo-Bug: 602216
+

@@ -288,3 +288,8 @@
   +files/busybox-1.25.1-setfiles.patch:
   fix build with USE=selinux #600106
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org> busybox-1.25.1.ebuild:
+  1.25.1-r0: stable on alpha
+
+  Gentoo-Bug: 590478
+

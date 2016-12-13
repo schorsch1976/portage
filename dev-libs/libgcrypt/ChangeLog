@@ -567,3 +567,10 @@
   10 Nov 2016; Mike Frysinger <vapier@gentoo.org> libgcrypt-1.7.3.ebuild:
   mark arm64/m68k/s390/sh 1.7.3 stable
 
+*libgcrypt-1.7.4 (11 Dec 2016)
+
+  11 Dec 2016; Kristian Fiskerstrand <k_f@gentoo.org> +libgcrypt-1.7.4.ebuild:
+  New upstream version 1.7.4
+
+  Package-Manager: portage-2.3.3
+

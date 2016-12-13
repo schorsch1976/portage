@@ -123,3 +123,14 @@
 
   Package-Manager: portage-2.2.28
 
+  11 Dec 2016; David Seifert <soap@gentoo.org>
+  +files/spice-vdagent-0.17.0-add-missing-stub-function.patch, metadata.xml,
+  spice-vdagent-0.17.0.ebuild:
+  Fix underlinking with GCC 5
+
+  Gentoo-bug: 585994
+  * EAPI=6
+  * Patch by Pat Erley
+
+  Package-Manager: portage-2.3.3
+

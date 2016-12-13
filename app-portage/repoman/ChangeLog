@@ -97,3 +97,20 @@
   sys-apps/repoman: mark 2.3.0-r1 arm64/ia64/m68k/ppc/s390/sh/sparc stable
   #589878
 
+*repoman-2.3.1 (12 Dec 2016)
+
+  12 Dec 2016; Brian Dolbec <dolsen@gentoo.org> +repoman-2.3.1.ebuild,
+  repoman-9999.ebuild:
+  Version bump, fix 9999 deps
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  12 Dec 2016; Michał Górny <mgorny@gentoo.org> repoman-9999.ebuild:
+  Disable pypy on -9999 due to unsatisf dep
+
+  12 Dec 2016; Mike Gilbert <floppym@gentoo.org> repoman-2.3.1.ebuild,
+  repoman-9999.ebuild:
+  sync live ebuild
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

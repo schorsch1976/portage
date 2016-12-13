@@ -93,3 +93,31 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*mlocate-0.26-r2 (12 Dec 2016)
+
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +files/mlocate.cron-r3,
+  +mlocate-0.26-r2.ebuild:
+  Revbump - cleanup temporary files at cron.daily job
+
+  During updating database mlocate creates tmp-file. If daily cron job has
+  failed
+  (for example, after reboot), tmp-files are left in disk.
+
+  Added rm command before updatedb to delete these orphained files.
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/3096
+
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> mlocate-0.26-r2.ebuild:
+  Stable for all arches.
+
+  This is a minor yet important fix.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -files/mlocate.cron-r2,
+  -mlocate-0.26-r1.ebuild:
+  Removed old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

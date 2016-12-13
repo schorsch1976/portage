@@ -264,3 +264,9 @@
 
   Package-Manager: portage-2.3.3
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  perl-HTTP-Tiny-0.54.10_rc.ebuild:
+  0.54.10_rc-r0: stable on alpha
+
+  Gentoo-Bug: 589680
+

@@ -16,3 +16,11 @@
 
   Package-Manager: portage-2.3.2
 
+*ignition-msgs-0.6.1 (12 Dec 2016)
+
+  12 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +ignition-msgs-0.6.1.ebuild:
+  bump to 0.6.1
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

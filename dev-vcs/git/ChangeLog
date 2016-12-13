@@ -883,3 +883,9 @@
 
   Gentoo-Bug: 601984
 
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> git-2.10.2.ebuild:
+  Stable for amd64 and x86 (bug #601984).
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+  RepoMan-Options: --include-arches="amd64,x86"
+

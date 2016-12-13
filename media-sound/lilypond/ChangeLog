@@ -196,3 +196,17 @@
   09 Dec 2016; Tim Harder <radhermit@gentoo.org> +lilypond-2.19.52.ebuild:
   version bump to 2.19.52
 
+*lilypond-2.19.52-r1 (12 Dec 2016)
+*lilypond-2.19.50-r1 (12 Dec 2016)
+*lilypond-2.18.2-r3 (12 Dec 2016)
+
+  12 Dec 2016; Michał Górny <mgorny@gentoo.org> -lilypond-2.18.2-r2.ebuild,
+  +lilypond-2.18.2-r3.ebuild, -lilypond-2.19.49.ebuild,
+  -lilypond-2.19.50.ebuild, +lilypond-2.19.50-r1.ebuild,
+  -lilypond-2.19.52.ebuild, +lilypond-2.19.52-r1.ebuild, lilypond-9999.ebuild,
+  metadata.xml:
+  Fix bug #586592, correct guile deps, remove old
+
+  Closes: https://github.com/gentoo/gentoo/pull/3062
+  Package-Manager: portage-2.3.3
+

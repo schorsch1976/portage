@@ -67,3 +67,14 @@
 
   Bug: 575810
 
+  11 Dec 2016; David Seifert <soap@gentoo.org> files/htun-0.9.6-glibc.patch,
+  files/htun-0.9.6-makefile.patch, htun-0.9.6.ebuild:
+  Fix multiple symbol definitions
+
+  Gentoo-bug: 571458
+  * EAPI=6
+  * Made PATCHES -p1 compliant
+  * Respect CFLAGS
+
+  Package-Manager: portage-2.3.3
+

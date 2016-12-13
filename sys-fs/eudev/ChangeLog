@@ -309,3 +309,23 @@
 
   Bug: 589796
 
+  12 Dec 2016; Anthony G. Basile <blueness@gentoo.org> eudev-9999.ebuild:
+  extend prefix support to 9999
+
+  Package-Manager: portage-2.3.0
+
+*eudev-3.2.1 (12 Dec 2016)
+
+  12 Dec 2016; Anthony G. Basile <blueness@gentoo.org> +eudev-3.2.1.ebuild:
+  version bump to 3.2.1, fixes bug #580140
+
+  Package-Manager: portage-2.3.0
+
+  12 Dec 2016; Anthony G. Basile <blueness@gentoo.org>
+  -files/eudev-3-rule-generator.patch,
+  -files/eudev-3.1.2-pre-rule-generator.patch,
+  -files/eudev-selinux-timespan.patch:
+  remove unused patches
+
+  Package-Manager: portage-2.3.0
+

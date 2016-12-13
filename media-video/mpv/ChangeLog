@@ -1530,3 +1530,11 @@
   Upstream-commit: https://github.com/mpv-player/mpv/commit/a660e15c9b96bd
   Upstream-commit: https://github.com/mpv-player/mpv/commit/3eceac2eab0b42
 
+  11 Dec 2016; Michał Górny <mgorny@gentoo.org> mpv-9999.ebuild:
+  drop enca and libguess support in 9999 as did upstream
+
+  Closes: https://github.com/gentoo/gentoo/pull/3075
+  Package-Manager: portage-2.3.3
+  Upstream-commit: https://github.com/mpv-
+  player/mpv/commit/0eb87e1baff89e7a979df23f31ca918f9d107e44
+

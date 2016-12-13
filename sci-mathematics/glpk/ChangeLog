@@ -92,3 +92,12 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*glpk-4.60 (12 Dec 2016)
+
+  12 Dec 2016; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/glpk-4.60-debundle-system-libs.patch, +glpk-4.60.ebuild:
+  version bump to 4.60
+  Adapted patch to debundle zlib and suitesparse
+
+  Package-Manager: portage-2.3.3
+

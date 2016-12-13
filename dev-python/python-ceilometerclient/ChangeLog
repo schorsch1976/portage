@@ -106,3 +106,15 @@
 
   Package-Manager: portage-2.3.0
 
+  12 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  python-ceilometerclient-2.6.2.ebuild:
+  2.6.2 stable amd64 and x86
+
+  Package-Manager: portage-2.3.0
+
+  12 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -python-ceilometerclient-2.6.1.ebuild:
+  2.6.1 cleanup
+
+  Package-Manager: portage-2.3.0
+

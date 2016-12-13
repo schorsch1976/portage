@@ -98,3 +98,16 @@
 
   Package-Manager: portage-2.3.0
 
+*puddletag-1.2.0 (12 Dec 2016)
+
+  12 Dec 2016; Daniel Pielmeier <billie@gentoo.org> +puddletag-1.2.0.ebuild:
+  Version bump.
+
+  Package-Manager: portage-2.3.0
+
+  12 Dec 2016; Daniel Pielmeier <billie@gentoo.org>
+  -files/puddletag-1.0.5-pyqt4.11.4.patch:
+  Remove unused patch.
+
+  Package-Manager: portage-2.3.0
+

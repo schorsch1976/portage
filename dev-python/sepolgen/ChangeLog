@@ -129,3 +129,8 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> sepolgen-1.2.3.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  12 Dec 2016; Jason Zaman <perfinion@gentoo.org> sepolgen-2.6.ebuild:
+  stabilize userland 2.6
+
+  Package-Manager: portage-2.3.0
+

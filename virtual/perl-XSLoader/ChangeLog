@@ -251,3 +251,9 @@
   virtual/perl-Test-Harness: -r bump
   virtual/perl-XSLoader: -r bump
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  perl-XSLoader-0.200.100_rc.ebuild:
+  0.200.100_rc-r0: stable on alpha
+
+  Gentoo-Bug: 589680
+

@@ -259,3 +259,9 @@
   virtual/perl-Test-Harness: -r bump
   virtual/perl-XSLoader: -r bump
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  perl-Archive-Tar-2.40.100_rc-r1.ebuild:
+  2.40.100_rc-r1: stable on alpha
+
+  Gentoo-Bug: 589680
+

@@ -116,3 +116,13 @@
   spyder-2.3.5.2.ebuild, spyder-2.3.8.ebuild, spyder-2.3.9.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*spyder-3.0.2 (12 Dec 2016)
+
+  12 Dec 2016; Andrey Grozin <grozin@gentoo.org>
+  +files/spyder-3.0.2-build.patch, +spyder-3.0.2.ebuild:
+  bump to 3.0.2
+
+  Bug: 602242
+
+  Package-Manager: portage-2.3.3
+

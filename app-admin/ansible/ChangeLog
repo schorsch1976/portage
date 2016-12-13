@@ -347,3 +347,10 @@
 
   Package-Manager: portage-2.3.3
 
+  12 Dec 2016; Denis Dupeyron <calchan@gentoo.org> ansible-2.2.1.0_rc1.ebuild:
+  2.2.1.0_rc1: add arrow
+
+  ... in order to avoid having non-unique filename for the tarball
+
+  Package-Manager: portage-2.3.3
+

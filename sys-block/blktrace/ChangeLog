@@ -32,3 +32,10 @@
   RepoMan-Options: --force
   Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
 
+  12 Dec 2016; Robin H. Johnson <robbat2@gentoo.org> blktrace-1.0.3.ebuild,
+  blktrace-1.1.0.ebuild:
+  update HOMEPAGE, #573110
+
+  (cherry picked from commit 0d6e6e463b99ff8e68c2038063d8918d9dcb3f34)
+  Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
+

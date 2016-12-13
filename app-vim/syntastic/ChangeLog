@@ -86,3 +86,9 @@
   syntastic-9999.ebuild:
   version bump to 3.8.0
 
+  12 Dec 2016; Tim Harder <radhermit@gentoo.org> syntastic-3.8.0.ebuild:
+  stabilize 3.8.0
+
+  12 Dec 2016; Tim Harder <radhermit@gentoo.org> -syntastic-3.7.0.ebuild:
+  remove old
+

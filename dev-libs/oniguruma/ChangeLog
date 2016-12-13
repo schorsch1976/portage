@@ -91,3 +91,8 @@
 
   Package-Manager: portage-2.3.0
 
+*oniguruma-5.9.6_p1 (12 Dec 2016)
+
+  12 Dec 2016; Tim Harder <radhermit@gentoo.org> +oniguruma-5.9.6_p1.ebuild:
+  version bump to 5.9.6_p1
+

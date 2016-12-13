@@ -980,3 +980,27 @@
 
   Package-Manager: portage-2.2.28
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  postgresql-9.1.24.ebuild:
+  9.1.24-r0: stable on alpha
+
+  Gentoo-Bug: 602130
+
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  postgresql-9.2.19.ebuild:
+  9.2.19-r0: stable on alpha
+
+  Gentoo-Bug: 602130
+
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  postgresql-9.3.15.ebuild:
+  9.3.15-r0: stable on alpha
+
+  Gentoo-Bug: 602130
+
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  postgresql-9.4.10.ebuild:
+  9.4.10-r0: stable on alpha
+
+  Gentoo-Bug: 602130
+

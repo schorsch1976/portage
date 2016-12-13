@@ -125,3 +125,15 @@
   18 May 2016; Austin English <wizardedit@gentoo.org> files/anacron.rc6:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+*anacron-2.3-r4 (11 Dec 2016)
+
+  11 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +anacron-2.3-r4.ebuild:
+  EAPI 6 bump and ebuild refresh.
+
+  Package-Manager: portage-2.3.0
+
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> anacron-2.3-r4.ebuild:
+  Fixed incomplete EAPI-6 conversion (bug #602416).
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

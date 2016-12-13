@@ -69,3 +69,19 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  12 Dec 2016; Mike Frysinger <vapier@gentoo.org> hercules-3.10.ebuild:
+  mark 3.10 stable for all
+
+  12 Dec 2016; Mike Frysinger <vapier@gentoo.org>
+  -files/hercules-3.06-build.patch, -files/hercules-3.06-gcc44.patch,
+  -hercules-3.06.ebuild, -hercules-3.08.ebuild, -hercules-3.09.ebuild:
+  drop old <3.10 versions
+
+  12 Dec 2016; Mike Frysinger <vapier@gentoo.org> hercules-3.10.ebuild:
+  fix parallel install errors #488126
+
+*hercules-3.12 (12 Dec 2016)
+
+  12 Dec 2016; Mike Frysinger <vapier@gentoo.org> +hercules-3.12.ebuild:
+  version bump to 3.12
+

@@ -355,3 +355,8 @@
 
   Package-Manager: portage-2.3.2
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org> DBD-mysql-4.41.0.ebuild:
+  4.41.0-r0: stable on alpha
+
+  Gentoo-Bug: 601144
+

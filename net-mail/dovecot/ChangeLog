@@ -309,3 +309,8 @@
 
   Package-Manager: portage-2.3.3
 
+  12 Dec 2016; Tobias Klausmann <klausman@gentoo.org> dovecot-2.2.27.ebuild:
+  2.2.27-r0: stable on alpha
+
+  Gentoo-Bug: 601452
+
