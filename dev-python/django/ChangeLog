@@ -334,3 +334,8 @@
   django-9999.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  13 Dec 2016; Mike Gilbert <floppym@gentoo.org> -django-9999.ebuild:
+  remove live ebuild
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

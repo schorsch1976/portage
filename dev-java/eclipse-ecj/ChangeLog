@@ -101,3 +101,17 @@
 
   Package-Manager: portage-2.2.27
 
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> eclipse-ecj-4.5.1.ebuild:
+  amd64 stable wrt bug #598324
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> eclipse-ecj-4.5.1.ebuild:
+  x86 stable wrt bug #598324
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

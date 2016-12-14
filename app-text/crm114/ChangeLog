@@ -76,3 +76,16 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*crm114-20100106-r1 (13 Dec 2016)
+
+  13 Dec 2016; David Seifert <soap@gentoo.org> -crm114-20100106.ebuild,
+  +crm114-20100106-r1.ebuild, +files/crm114-20100106-fix-makefile.patch:
+  Fix building with GCC 5
+
+  Gentoo-bug: 571062
+  * EAPI=6
+  * Respect user CPPFLAGS
+  * Introduce USE=examples
+
+  Package-Manager: portage-2.3.3
+

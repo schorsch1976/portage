@@ -56,3 +56,25 @@
 
   Package-Manager: portage-2.3.1
 
+*nextcloud-10.0.2 (13 Dec 2016)
+*nextcloud-9.0.55 (13 Dec 2016)
+
+  13 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  +nextcloud-9.0.55.ebuild, +nextcloud-10.0.2.ebuild:
+  9.0.55/10.0.2 version bumps
+
+  These releases include "security improvements", details not available for
+  now
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Bernard Cafarelli <voyageur@gentoo.org>
+  -nextcloud-9.0.53.ebuild, -nextcloud-9.0.54.ebuild,
+  -nextcloud-10.0.0.ebuild, -nextcloud-10.0.1.ebuild:
+  drop old versions
+
+  Upstream recommends upgrading to current versions that include "security
+  improvements"
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

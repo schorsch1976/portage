@@ -190,3 +190,23 @@
 
   Package-Manager: portage-2.3.3
 
+*hexchat-2.12.4-r1 (13 Dec 2016)
+
+  13 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  +files/hexchat-2.12.4-libressl.patch, +hexchat-2.12.4-r1.ebuild:
+  Fix libreSSL and missing dep.
+
+  Adds preprocessor libreSSL check to Fix libreSSL compile-time.
+  Adds autconf-archive as a bdep.
+
+  Gentoo-bug: 602372
+  Gentoo-bug: 602438
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+  Closes: https://github.com/gentoo/gentoo/pull/3109
+
+  13 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -hexchat-2.12.4.ebuild:
+  Removed old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

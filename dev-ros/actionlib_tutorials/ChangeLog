@@ -34,3 +34,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*actionlib_tutorials-0.1.10 (13 Dec 2016)
+
+  13 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +actionlib_tutorials-0.1.10.ebuild:
+  Bump to 0.1.10.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

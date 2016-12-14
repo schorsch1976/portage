@@ -82,3 +82,15 @@
 
   Package-Manager: portage-2.3.0
 
+*itex2mml-1.5.5 (12 Dec 2016)
+
+  12 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +itex2mml-1.5.5.ebuild:
+  Version bump to 1.5.5
+
+  Package-Manager: portage-2.3.3
+
+  12 Dec 2016; Manuel Rüger <mrueg@gentoo.org> -itex2mml-1.5.3.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.3
+

@@ -615,3 +615,34 @@
 
   Package-Manager: portage-2.3.3
 
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> xen-4.6.4-r2.ebuild:
+  amd64 stable wrt bug #602238
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+*xen-4.7.1-r3 (13 Dec 2016)
+*xen-4.6.4-r3 (13 Dec 2016)
+
+  13 Dec 2016; Yixun Lan <dlan@gentoo.org> +xen-4.6.4-r3.ebuild,
+  +xen-4.7.1-r3.ebuild:
+  security bump, fix XSA-200
+
+  Gentoo-Bug: 601248
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Yixun Lan <dlan@gentoo.org> xen-4.6.4-r3.ebuild:
+  security stable, XSA-200
+
+  Gentoo-Bug: 601248
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Yixun Lan <dlan@gentoo.org> -xen-4.6.4-r1.ebuild,
+  -xen-4.6.4-r2.ebuild, -xen-4.7.1-r1.ebuild, -xen-4.7.1-r2.ebuild:
+  cleanup, drop old vulnerables
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

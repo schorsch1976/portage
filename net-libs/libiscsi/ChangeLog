@@ -99,3 +99,16 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*libiscsi-1.18.0 (13 Dec 2016)
+
+  13 Dec 2016; David Seifert <soap@gentoo.org> +libiscsi-1.18.0.ebuild,
+  libiscsi-9999.ebuild:
+  1.18.0 version bump
+
+  Builds fine with GCC-5.4.0.
+
+  Gentoo-bug: 561722
+
+  Package-Manager: portage-2.3.0
+  Closes: https://github.com/gentoo/gentoo/pull/3026
+

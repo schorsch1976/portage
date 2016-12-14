@@ -122,3 +122,31 @@
 
   Package-Manager: portage-2.3.0
 
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> mcabber-1.0.4.ebuild:
+  amd64 stable wrt bug #602238
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> mcabber-1.0.4.ebuild:
+  x86 stable wrt bug #602238
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 Dec 2016; Wolfram Schlich <wschlich@gentoo.org>
+  -files/mcabber-0.10.2_p20131025-vim-ftdetect.patch,
+  -files/mcabber-0.10.3-vim-ftdetect.patch,
+  +files/mcabber-1.0.4-vim-ftdetect.patch, -mcabber-0.10.2_p20131025.ebuild,
+  mcabber-1.0.4.ebuild:
+  removed old insecure version, renamed a patch to match the current version
+
+  Package-Manager: portage-2.3.0
+
+  13 Dec 2016; Wolfram Schlich <wschlich@gentoo.org> mcabber-9999.ebuild:
+  fix renamed patch file name
+
+  Package-Manager: portage-2.3.0
+

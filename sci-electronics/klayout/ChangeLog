@@ -71,3 +71,11 @@
 
   Package-Manager: portage-2.3.0
 
+*klayout-0.24.9 (13 Dec 2016)
+
+  13 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +klayout-0.24.9.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.3
+

@@ -240,3 +240,12 @@
 
   Package-Manager: portage-2.3.3
 
+  12 Dec 2016; Patrick McLean <chutzpah@gentoo.org> -dnsmasq-2.76-r1.ebuild,
+  -files/dnsmasq-2.76-handle-binding-upstream-servers-to-an-interface.patch:
+  Revert "net-dns/dnsmasq: Revision bump, add patch to fix caching of bound
+  sockets"
+
+  This reverts commit b833afd6410c2e7dde0cae40ac20d218a5ae425e.
+
+  Gentoo-Bug: 602254
+

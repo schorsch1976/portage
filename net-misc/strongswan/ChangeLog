@@ -159,3 +159,11 @@
 
   Package-Manager: portage-2.3.0
 
+*strongswan-5.5.1 (13 Dec 2016)
+
+  13 Dec 2016; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -strongswan-5.5.0.ebuild, +strongswan-5.5.1.ebuild:
+  Bumping to 5.5.1, fixing bug #602456
+
+  Package-Manager: portage-2.3.2
+

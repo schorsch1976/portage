@@ -356,3 +356,10 @@
   mit-krb5-1.14.3.ebuild, mit-krb5-1.14.4.ebuild:
   fix clang build due to ttyname redecl
 
+*mit-krb5-1.15 (13 Dec 2016)
+
+  13 Dec 2016; Eray Aslan <eras@gentoo.org> +mit-krb5-1.15.ebuild:
+  version bump to 1.15
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

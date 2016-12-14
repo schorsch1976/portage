@@ -217,3 +217,11 @@
 
   Package-Manager: portage-2.3.0
 
+*icingaweb2-2.4.0 (13 Dec 2016)
+
+  13 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +icingaweb2-2.4.0.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+

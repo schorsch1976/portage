@@ -306,3 +306,11 @@
 
   Package-Manager: portage-2.3.2
 
+*xf86-input-libinput-0.23.0 (12 Dec 2016)
+
+  12 Dec 2016; Manuel Rüger <mrueg@gentoo.org>
+  +xf86-input-libinput-0.23.0.ebuild:
+  Version bump to 0.23.0
+
+  Package-Manager: portage-2.3.3
+

@@ -95,3 +95,17 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  12 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  linux-gpib-3.2.21-r1.ebuild, linux-gpib-4.0.2.ebuild:
+  correctly use REPLACING_VERSIONS, bug 589512
+
+  Package-Manager: portage-2.3.3
+
+*linux-gpib-4.0.3 (12 Dec 2016)
+
+  12 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +files/linux-gpib-4.0.3-reallydie.patch, +linux-gpib-4.0.3.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.3
+

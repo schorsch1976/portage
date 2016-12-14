@@ -414,3 +414,16 @@
 
   Package-Manager: portage-2.3.2
 
+*opera-42.0.2393.85 (13 Dec 2016)
+
+  13 Dec 2016; Jeroen Roovers <jer@gentoo.org> +opera-42.0.2393.85.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Jeroen Roovers <jer@gentoo.org> -opera-41.0.2353.56.ebuild,
+  -opera-41.0.2353.69.ebuild:
+  Old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

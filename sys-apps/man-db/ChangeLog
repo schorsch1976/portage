@@ -264,3 +264,21 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> man-db-2.7.6.1.ebuild:
+  Adjust cache dir permissions as preferred by upstream.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> man-db-2.7.6.1.ebuild:
+  Another permissions tweak.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+*man-db-2.7.6.1-r1 (12 Dec 2016)
+
+  12 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -man-db-2.7.6.1.ebuild,
+  +man-db-2.7.6.1-r1.ebuild:
+  Revbump so everbody gets the permission changes.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

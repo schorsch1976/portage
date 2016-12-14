@@ -69,3 +69,10 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*pstreams-1.0.0 (12 Dec 2016)
+
+  12 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +pstreams-1.0.0.ebuild:
+  Version bump to 1.0.0
+
+  Package-Manager: portage-2.3.3
+

@@ -677,3 +677,15 @@
 
   Package-Manager: portage-2.3.2
 
+*adobe-flash-24.0.0.186 (13 Dec 2016)
+
+  13 Dec 2016; Jeroen Roovers <jer@gentoo.org> +adobe-flash-24.0.0.186.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Jeroen Roovers <jer@gentoo.org> -adobe-flash-24.0.0.170.ebuild:
+  Old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

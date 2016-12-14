@@ -154,3 +154,17 @@
 
   Package-Manager: portage-2.3.0
 
+  13 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  -ocaml-cstruct-2.1.0.ebuild, -ocaml-cstruct-2.2.0.ebuild:
+  remove old
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+*ocaml-cstruct-2.3.1 (13 Dec 2016)
+
+  13 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +ocaml-cstruct-2.3.1.ebuild:
+  bump to 2.3.1
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

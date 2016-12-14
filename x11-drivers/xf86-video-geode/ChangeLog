@@ -79,3 +79,11 @@
   Package-Manager: portage-2.3.0
   RepoMan-Options: --include-arches="x86"
 
+*xf86-video-geode-2.11.19 (13 Dec 2016)
+
+  13 Dec 2016; Matt Turner <mattst88@gentoo.org>
+  +xf86-video-geode-2.11.19.ebuild:
+  Version bump to 2.11.19.
+
+  Straight to stable.
+

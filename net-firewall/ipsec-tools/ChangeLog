@@ -140,3 +140,21 @@
 
   Package-Manager: portage-2.3.0
 
+  13 Dec 2016; Anthony G. Basile <blueness@gentoo.org>
+  ipsec-tools-0.8.2-r5.ebuild:
+  stable on arm, bug #550118
+
+  Package-Manager: portage-2.3.0
+
+  13 Dec 2016; Anthony G. Basile <blueness@gentoo.org>
+  -ipsec-tools-0.8.2.ebuild, -ipsec-tools-0.8.2-r4.ebuild:
+  remove vulnerable versions, bug #550118
+
+  Package-Manager: portage-2.3.0
+
+  13 Dec 2016; Anthony G. Basile <blueness@gentoo.org>
+  -files/racoon.conf.d-r1, -files/racoon.init.d-r2:
+  cleanup unused files
+
+  Package-Manager: portage-2.3.0
+

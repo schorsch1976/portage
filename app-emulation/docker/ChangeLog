@@ -536,3 +536,12 @@
 
   Package-Manager: portage-2.3.3
 
+*docker-1.12.4 (13 Dec 2016)
+
+  13 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +docker-1.12.4.ebuild:
+  Version bump to 1.12.4
+
+  Include changes from 1.13.x where suitable
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

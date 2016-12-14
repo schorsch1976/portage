@@ -178,3 +178,17 @@
 
   Gentoo-Bug: 591010
 
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> links-2.14.ebuild:
+  amd64 stable wrt bug #591010
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> links-2.14.ebuild:
+  x86 stable wrt bug #591010
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

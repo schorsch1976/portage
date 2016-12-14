@@ -58,3 +58,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*spyview-20150124 (12 Dec 2016)
+
+  12 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +spyview-20150124.ebuild:
+  Version bump without keywords (doesnt build yet)
+

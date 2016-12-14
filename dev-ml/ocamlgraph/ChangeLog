@@ -87,3 +87,10 @@
 
   Package-Manager: portage-2.2.28
 
+  13 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  -files/ocamlgraph-1.8.5-installfindlib.patch, -ocamlgraph-1.8.5.ebuild,
+  -ocamlgraph-1.8.6.ebuild:
+  remove old
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

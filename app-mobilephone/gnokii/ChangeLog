@@ -123,3 +123,21 @@
 
   Bug: 575810
 
+*gnokii-0.6.31-r1 (12 Dec 2016)
+
+  12 Dec 2016; David Seifert <soap@gentoo.org>
+  +files/gnokii-0.6.31-gcc5.patch, +gnokii-0.6.31-r1.ebuild:
+  Fix building with GCC 5
+
+  Gentoo-bug: 571080
+  * EAPI=6
+
+  Package-Manager: portage-2.3.3
+
+  12 Dec 2016; David Seifert <soap@gentoo.org> gnokii-9999.ebuild:
+  Update live ebuild
+
+  * EAPI=6
+
+  Package-Manager: portage-2.3.3
+

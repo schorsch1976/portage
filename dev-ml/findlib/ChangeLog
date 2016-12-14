@@ -168,3 +168,11 @@
 
   Package-Manager: portage-2.3.2
 
+  13 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  -files/externalmeta2.patch, -files/externalmeta3.patch,
+  -files/quoting.patch, -findlib-1.6.1.ebuild, -findlib-1.6.1-r1.ebuild,
+  -findlib-1.6.2.ebuild, -findlib-1.6.3.ebuild:
+  remove old
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

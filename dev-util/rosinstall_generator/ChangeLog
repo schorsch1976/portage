@@ -38,3 +38,11 @@
   rosinstall_generator-9999.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*rosinstall_generator-0.1.13 (13 Dec 2016)
+
+  13 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +rosinstall_generator-0.1.13.ebuild, rosinstall_generator-9999.ebuild:
+  bump to 0.1.13
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

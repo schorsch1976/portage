@@ -1159,3 +1159,27 @@
 
   Package-Manager: portage-2.3.3
 
+*vivaldi-1.6.689.29_p1 (13 Dec 2016)
+
+  13 Dec 2016; Jeroen Roovers <jer@gentoo.org> +vivaldi-1.6.689.29_p1.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Jeroen Roovers <jer@gentoo.org> -vivaldi-1.6.687.3_p1.ebuild:
+  Old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+*vivaldi-1.6.689.32_p1 (13 Dec 2016)
+
+  13 Dec 2016; Jeroen Roovers <jer@gentoo.org> +vivaldi-1.6.689.32_p1.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Jeroen Roovers <jer@gentoo.org> -vivaldi-1.6.689.13_p1.ebuild:
+  Old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

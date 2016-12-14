@@ -539,3 +539,28 @@
 
   Package-Manager: portage-2.3.3
 
+  13 Dec 2016; Miroslav Šulc <fordfrog@gentoo.org>
+  -tomcat-servlet-api-7.0.69.ebuild, -tomcat-servlet-api-7.0.70.ebuild,
+  -tomcat-servlet-api-8.0.33.ebuild, -tomcat-servlet-api-8.0.35.ebuild,
+  -tomcat-servlet-api-8.0.37.ebuild, -tomcat-servlet-api-8.0.38.ebuild,
+  -tomcat-servlet-api-8.5.3.ebuild, -tomcat-servlet-api-8.5.4.ebuild,
+  -tomcat-servlet-api-8.5.5.ebuild, -tomcat-servlet-api-8.5.6.ebuild,
+  -tomcat-servlet-api-8.5.8.ebuild:
+  removed obsolete ebuilds (also affected by various security issues)
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Miroslav Šulc <fordfrog@gentoo.org>
+  -tomcat-servlet-api-7.0.67.ebuild, -tomcat-servlet-api-7.0.68.ebuild,
+  -tomcat-servlet-api-8.0.32.ebuild, -tomcat-servlet-api-8.0.36.ebuild:
+  removed old stable versions
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  13 Dec 2016; Miroslav Šulc <fordfrog@gentoo.org>
+  tomcat-servlet-api-7.0.73.ebuild, tomcat-servlet-api-8.0.39.ebuild:
+  stabilizing 7.0.73 and 8.0.39 as these should have been stabilized along
+  with corresponding tomcat versions
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

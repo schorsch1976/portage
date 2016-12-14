@@ -286,3 +286,17 @@
 
   Package-Manager: portage-2.3.3
 
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> zabbix-2.2.16.ebuild:
+  amd64 stable wrt bug #598762
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> zabbix-2.2.16.ebuild:
+  x86 stable wrt bug #598762
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

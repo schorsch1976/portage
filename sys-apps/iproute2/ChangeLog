@@ -305,3 +305,10 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+*iproute2-4.9.0 (13 Dec 2016)
+
+  13 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +iproute2-4.9.0.ebuild:
+  Bump to version 4.9.0
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

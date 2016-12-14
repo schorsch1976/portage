@@ -1004,3 +1004,21 @@
 
   Gentoo-Bug: 602130
 
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> postgresql-9.1.24.ebuild,
+  postgresql-9.2.19.ebuild, postgresql-9.3.15.ebuild,
+  postgresql-9.4.10.ebuild, postgresql-9.5.5.ebuild:
+  amd64 stable wrt bug #602130
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org> postgresql-9.1.24.ebuild,
+  postgresql-9.2.19.ebuild, postgresql-9.3.15.ebuild,
+  postgresql-9.4.10.ebuild, postgresql-9.5.5.ebuild:
+  x86 stable wrt bug #602130
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

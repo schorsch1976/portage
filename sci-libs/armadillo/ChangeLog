@@ -126,3 +126,24 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  13 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  armadillo-3.4.4.ebuild, armadillo-3.6.2.ebuild:
+  Drop ppc keywords, bug 555896
+
+  Package-Manager: portage-2.3.3
+
+  13 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  -armadillo-4.650.4.ebuild, -armadillo-5.600.2.ebuild,
+  -armadillo-6.100.1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.3
+
+*armadillo-7.500.2 (13 Dec 2016)
+
+  13 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +armadillo-7.500.2.ebuild:
+  Version bump
+
+  Package-Manager: portage-2.3.3
+

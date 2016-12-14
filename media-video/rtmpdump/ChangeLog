@@ -154,3 +154,19 @@
 
   Package-Manager: portage-2.3.3
 
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org>
+  rtmpdump-2.4_p20161210.ebuild:
+  amd64 stable wrt bug #570242
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  13 Dec 2016; Agostino Sarubbo <ago@gentoo.org>
+  rtmpdump-2.4_p20161210.ebuild:
+  x86 stable wrt bug #570242
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
