@@ -81,3 +81,8 @@
   10 Dec 2016; Tim Harder <radhermit@gentoo.org> pstoedit-3.70-r1.ebuild:
   update to EAPI 6
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> pstoedit-3.70-r1.ebuild:
+  3.70-r1: stable on alpha
+
+  Gentoo-Bug: 602284
+

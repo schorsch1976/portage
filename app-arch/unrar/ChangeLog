@@ -262,3 +262,8 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> unrar-5.4.5.ebuild:
+  5.4.5-r0: stable on alpha
+
+  Gentoo-Bug: 602090
+

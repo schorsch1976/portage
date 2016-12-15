@@ -316,3 +316,14 @@
 
   Package-Manager: portage-2.3.0
 
+*idea-ultimate-2016.3.1.163.9166.29 (14 Dec 2016)
+
+  14 Dec 2016; Alice Ferrazzi <alicef@gentoo.org>
+  +idea-ultimate-2016.3.1.163.9166.29.ebuild:
+  bump to 2016.3.1.163.9166.29
+
+  custom-jre use is now making the idea-ultimate jre/bin/
+  folder executable.
+
+  Package-Manager: portage-2.3.0
+

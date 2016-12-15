@@ -208,3 +208,8 @@
   09 Dec 2016; Tim Harder <radhermit@gentoo.org> +cython-0.25.2.ebuild:
   version bump to 0.25.2
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> cython-0.24.1.ebuild:
+  0.24.1-r0: stable on alpha
+
+  Gentoo-Bug: 602062
+

@@ -530,3 +530,13 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  14 Dec 2016; David Seifert <soap@gentoo.org> glib-2.50.2.ebuild:
+  libmount support + multilib dependency on util-linux (bug #599586)
+
+  Starting with 2.50, libmount support is enabled by default on Linux
+  systems. This commit brings that logic to the ebuild and updates the
+  dependency on util-linux to a multilib one.
+
+  Package-Manager: portage-2.3.2
+  Closes: https://github.com/gentoo/gentoo/pull/2862
+

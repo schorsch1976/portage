@@ -358,3 +358,8 @@
   12 Nov 2016; Mike Frysinger <vapier@gentoo.org> lxml-3.6.0.ebuild:
   mark 3.6.0 arm64/ia64/ppc/s390/sh/sparc stable #591088
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> lxml-3.6.4-r1.ebuild:
+  3.6.4-r1: stable on alpha
+
+  Gentoo-Bug: 602060
+

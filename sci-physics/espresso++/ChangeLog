@@ -101,3 +101,17 @@
 
   Package-Manager: portage-2.3.0
 
+*espresso++-1.9.4 (14 Dec 2016)
+
+  14 Dec 2016; Christoph Junghans <junghans@gentoo.org>
+  +espresso++-1.9.4.ebuild:
+  version bump
+
+  Package-Manager: Portage-2.3.0, Repoman-2.3.1
+
+  14 Dec 2016; Christoph Junghans <junghans@gentoo.org>
+  -espresso++-1.9.3.ebuild:
+  remove old
+
+  Package-Manager: Portage-2.3.0, Repoman-2.3.1
+

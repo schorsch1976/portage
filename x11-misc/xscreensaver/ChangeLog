@@ -281,3 +281,9 @@
 
   Package-Manager: portage-2.3.3
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  xscreensaver-5.36.ebuild:
+  5.36-r0: stable on alpha
+
+  Gentoo-Bug: 602220
+

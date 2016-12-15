@@ -84,3 +84,8 @@
 
   Package-Manager: portage-2.2.28
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> multi_test-0.1.2.ebuild:
+  0.1.2-r0: stable on alpha
+
+  Gentoo-Bug: 602364
+

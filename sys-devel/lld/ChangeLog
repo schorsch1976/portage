@@ -1,0 +1,10 @@
+# ChangeLog for sys-devel/lld
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*lld-9999 (14 Dec 2016)
+
+  14 Dec 2016; Michał Górny <mgorny@gentoo.org> +lld-9999.ebuild,
+  +metadata.xml:
+  Introduce an initial testing ebuild
+

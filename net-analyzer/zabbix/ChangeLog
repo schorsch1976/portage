@@ -300,3 +300,7 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  14 Dec 2016; Aaron Bauman <bman@gentoo.org> -zabbix-2.2.15.ebuild,
+  -zabbix-3.0.5.ebuild, -zabbix-3.2.0.ebuild, -zabbix-3.2.1-r2.ebuild:
+  cleanup vulnerable versions wrt bug #598762
+

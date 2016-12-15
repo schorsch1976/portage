@@ -63,3 +63,23 @@
 
   Package-Manager: portage-2.3.0
 
+  14 Dec 2016; David Seifert <soap@gentoo.org> metadata.xml:
+  add maint-needed comment
+
+  Signed-off-by: Henning Schild <henning@hennsch.de>
+  Closes: https://github.com/gentoo/gentoo/pull/3040
+
+  14 Dec 2016; David Seifert <soap@gentoo.org> sl-3.03-r3.ebuild:
+  fix ncurses[tinfo] build
+
+  Signed-off-by: Henning Schild <henning@hennsch.de>
+  Closes: https://github.com/gentoo/gentoo/pull/3040
+
+*sl-5.02 (14 Dec 2016)
+
+  14 Dec 2016; David Seifert <soap@gentoo.org> +sl-5.02.ebuild:
+  version bump to 5.02
+
+  Signed-off-by: Henning Schild <henning@hennsch.de>
+  Closes: https://github.com/gentoo/gentoo/pull/3040
+

@@ -56,3 +56,8 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> zope-event-4.2.0.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> zope-event-4.2.0.ebuild:
+  4.2.0-r0: stable on alpha
+
+  Gentoo-Bug: 602406
+

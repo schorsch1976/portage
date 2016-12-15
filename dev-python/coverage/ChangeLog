@@ -180,3 +180,8 @@
   coverage-4.0.3.ebuild, coverage-4.1.ebuild, coverage-4.2.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> coverage-4.2.ebuild:
+  4.2-r0: stable on alpha
+
+  Gentoo-Bug: 602450
+

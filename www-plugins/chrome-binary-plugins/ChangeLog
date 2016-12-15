@@ -1573,3 +1573,12 @@
 
   Package-Manager: portage-2.3.2_p13
 
+*chrome-binary-plugins-55.0.2883.87 (13 Dec 2016)
+
+  13 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -chrome-binary-plugins-55.0.2883.75.ebuild,
+  +chrome-binary-plugins-55.0.2883.87.ebuild:
+  automated update (55.0.2883.87)
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

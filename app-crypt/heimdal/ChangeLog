@@ -107,3 +107,11 @@
 
   Package-Manager: portage-2.3.2
 
+*heimdal-7.0.1-r1 (14 Dec 2016)
+
+  14 Dec 2016; Eray Aslan <eras@gentoo.org> -heimdal-7.0.1.ebuild,
+  +heimdal-7.0.1-r1.ebuild:
+  client rename: su to ksu - bug 602256
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

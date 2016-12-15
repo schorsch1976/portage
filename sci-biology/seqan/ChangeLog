@@ -110,3 +110,13 @@
 
   Package-Manager: portage-2.3.0
 
+*seqan-2.2.0-r1 (14 Dec 2016)
+
+  14 Dec 2016; David Seifert <soap@gentoo.org> -seqan-2.2.0.ebuild,
+  +seqan-2.2.0-r1.ebuild:
+  Add blocker for older SLOTs
+
+  Gentoo-bug: 602508
+
+  Package-Manager: portage-2.3.3
+

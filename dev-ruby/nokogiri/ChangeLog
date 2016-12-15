@@ -226,3 +226,8 @@
 
   Package-Manager: portage-2.3.0
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> nokogiri-1.6.8.1.ebuild:
+  1.6.8.1-r0: stable on alpha
+
+  Gentoo-Bug: 602510
+

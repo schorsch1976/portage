@@ -100,3 +100,8 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> abook-0.6.1.ebuild:
+  0.6.1-r0: stable on alpha
+
+  Gentoo-Bug: 602076
+

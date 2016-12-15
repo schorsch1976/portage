@@ -80,3 +80,9 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  13 Dec 2016; Patrice Clement <monsieurp@gentoo.org> chronic-0.10.2.ebuild:
+  stable for amd64. mark stable for the remaining arches using the ALLARCHES
+  policy.
+
+  Package-Manager: portage-2.3.0
+

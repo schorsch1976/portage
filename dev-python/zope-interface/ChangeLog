@@ -111,3 +111,9 @@
   zope-interface-4.2.0.ebuild, zope-interface-4.3.1.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  zope-interface-4.3.2.ebuild:
+  4.3.2-r0: stable on alpha
+
+  Gentoo-Bug: 602406
+

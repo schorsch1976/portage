@@ -88,3 +88,9 @@
 
   Package-Manager: portage-2.3.0
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  Dist-CheckConflicts-0.110.0.ebuild:
+  0.110.0-r0: stable on alpha
+
+  Gentoo-Bug: 601820
+

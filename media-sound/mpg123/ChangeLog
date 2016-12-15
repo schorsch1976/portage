@@ -202,3 +202,8 @@
   Package-Manager: portage-2.3.1
   Signed-off-by: Lars Wendler <polynomial-c@gentoo.org>
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> mpg123-1.23.8.ebuild:
+  1.23.8-r0: stable on alpha
+
+  Gentoo-Bug: 602084
+

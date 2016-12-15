@@ -124,3 +124,9 @@
   -files/portletapi-1.0-build.xml:
   remove unused file
 
+  14 Dec 2016; Miroslav Šulc <fordfrog@gentoo.org> portletapi-1.0-r1.ebuild,
+  portletapi-2.0-r1.ebuild:
+  dropped ppc64 keyword
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

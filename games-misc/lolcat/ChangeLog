@@ -86,3 +86,14 @@
 
   Package-Manager: portage-2.2.28
 
+  13 Dec 2016; Patrice Clement <monsieurp@gentoo.org> lolcat-42.1.43.ebuild:
+  stable for amd64. mark stable for the remaining arches using the ALLARCHES
+  policy.
+
+  Package-Manager: portage-2.3.0
+
+  13 Dec 2016; Patrice Clement <monsieurp@gentoo.org> lolcat-42.1.43.ebuild:
+  mark unstable again to avoid breaking the tree.
+
+  Package-Manager: portage-2.3.0
+

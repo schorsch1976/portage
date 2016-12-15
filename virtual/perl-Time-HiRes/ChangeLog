@@ -92,3 +92,12 @@
 
   Package-Manager: portage-2.3.2
 
+  14 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Time-HiRes-1.972.600-r3.ebuild, perl-Time-HiRes-1.973.300-r1.ebuild:
+  Extend missing keywords from dev-lang/perl
+
+  This commit extends all legal keywords from dev-lang/perl, as
+  virtuals are meant to reflect their underrling dependencies
+
+  Package-Manager: portage-2.3.3
+

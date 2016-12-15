@@ -209,3 +209,8 @@
 
   Gentoo-Bug: https://bugs.gentoo.org/590994
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> dos2unix-7.3.4.ebuild:
+  7.3.4-r0: stable on alpha
+
+  Gentoo-Bug: 602080
+

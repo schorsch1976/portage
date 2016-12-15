@@ -192,3 +192,12 @@
 
   Gentoo-Bug: 589680
 
+  14 Dec 2016; Kent Fredric <kentnl@gentoo.org> perl-Test-1.260.100_rc.ebuild,
+  perl-Test-1.280.0-r1.ebuild, perl-Test-1.280.100_rc.ebuild:
+  Extend missing keywords from dev-lang/perl
+
+  Updating virtuals to transparently reflect what their underlying
+  perl supports.
+
+  Package-Manager: portage-2.3.3
+

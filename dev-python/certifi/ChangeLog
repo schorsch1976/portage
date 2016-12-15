@@ -231,3 +231,9 @@
 
   Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  certifi-2016.9.26.ebuild:
+  2016.9.26-r0: stable on alpha
+
+  Gentoo-Bug: 602054
+

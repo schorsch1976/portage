@@ -277,3 +277,15 @@
   -kdebase-kioslaves-15.12.3.ebuild:
   kde-apps: remove 15.12.3
 
+*kdebase-kioslaves-16.04.3-r2 (14 Dec 2016)
+
+  14 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  -kdebase-kioslaves-16.04.3-r1.ebuild, +kdebase-kioslaves-16.04.3-r2.ebuild:
+  allow all slots of kde-apps/kdialog
+
+  kde-apps/kdialog provides just a binary and dbus interface so both SLOT 4
+  and 5
+  should be compatible.
+
+  Package-Manager: portage-2.3.3
+

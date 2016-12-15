@@ -112,3 +112,8 @@
   02 Nov 2016; Tim Harder <radhermit@gentoo.org> ctags-20161028.ebuild:
   fix building man page (bug #598635)
 
+  14 Dec 2016; Tobias Klausmann <klausman@gentoo.org> ctags-20161028.ebuild:
+  20161028-r0: stable on alpha
+
+  Gentoo-Bug: 602278
+

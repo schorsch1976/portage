@@ -128,3 +128,14 @@
 
   Package-Manager: portage-2.3.2
 
+  14 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  perl-Unicode-Normalize-1.250.0-r2.ebuild:
+  Extend all applicable keywords from dev-lang/perl-5.24*
+
+  This should have been done at commit
+  53a7f0047295e9943aaee5c36301de836f8e379d
+
+  as this commit opens the virtual subgraph to support more arches.
+
+  Package-Manager: portage-2.3.3
+
