@@ -93,3 +93,13 @@
 
   Package-Manager: portage-2.3.3
 
+  15 Dec 2016; Kent Fredric <kentnl@gentoo.org> File-BaseDir-0.70.0.ebuild:
+  Disable parallel tests re bug #602774
+
+  Some tests rely on the exit state of other tests or they fail.
+
+  Bug: https://bugs.gentoo.org/602774
+  Bug: https://rt.cpan.org/Ticket/Display.html?id=119256
+
+  Package-Manager: portage-2.3.3
+

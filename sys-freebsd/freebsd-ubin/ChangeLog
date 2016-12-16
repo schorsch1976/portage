@@ -155,3 +155,11 @@
   -freebsd-ubin-10.3-r1.ebuild, +freebsd-ubin-10.3-r2.ebuild:
   fix FreeBSD-SA-16:29.bspatch
 
+*freebsd-ubin-11.0-r1 (15 Dec 2016)
+
+  15 Dec 2016; Michał Górny <mgorny@gentoo.org> -freebsd-ubin-11.0.ebuild,
+  +freebsd-ubin-11.0-r1.ebuild:
+  Fix eratta, FreeBSD-EN-16:21.localedef
+
+  Closes: https://github.com/gentoo/gentoo/pull/3047
+

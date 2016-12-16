@@ -189,3 +189,12 @@
 
   Package-Manager: portage-2.3.2
 
+  15 Dec 2016; Sergey Popov <pinkbyte@gentoo.org> retroshare-0.6.1.ebuild,
+  retroshare-0.6.9999.ebuild:
+  restore accidentally deleted dependency on dev-qt/designer
+
+  Reported-by: Amadeusz Żołnowski <aidecoe@gentoo.org>
+  Gentoo-Bug: 602566
+
+  Package-Manager: portage-2.3.2
+

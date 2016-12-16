@@ -469,3 +469,10 @@
 
   Package-Manager: portage-2.3.3
 
+*opencv-2.4.13 (14 Dec 2016)
+
+  14 Dec 2016; Amy Winston <amynka@gentoo.org> +opencv-2.4.13.ebuild:
+  version bump 2.4.13 bug #601810
+
+  Package-Manager: portage-2.3.0
+

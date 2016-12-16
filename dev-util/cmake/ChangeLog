@@ -553,3 +553,26 @@
 
   Package-Manager: portage-2.3.2
 
+  15 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -cmake-2.8.12.2-r1.ebuild, -files/cmake-2.6.3-fix_broken_lfs_on_aix.patch,
+  -files/cmake-2.6.3-no-duplicates-in-rpath.patch,
+  -files/cmake-2.8.10-darwin-isysroot.patch,
+  -files/cmake-2.8.10-desktop.patch,
+  -files/cmake-2.8.10.2-FindPythonInterp.patch,
+  -files/cmake-2.8.11-FindBLAS.patch,
+  -files/cmake-2.8.11-more-no_host_paths.patch,
+  -files/cmake-2.8.12.1-FindFreetype.patch,
+  -files/cmake-2.8.12.2-FindBoost-python.patch,
+  -files/cmake-2.8.12.2-FindCurses.patch,
+  -files/cmake-2.8.12.2-hppa-bootstrap.patch,
+  -files/cmake-2.8.7-FindLAPACK.patch, -files/cmake-2.8.8-FindPkgConfig.patch:
+  Removed last remaining 2.x version.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  15 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> cmake-3.6.3.ebuild,
+  cmake-3.7.0-r1.ebuild, cmake-3.7.1.ebuild:
+  Disabled Qt5Autogen check (breaks for unknown reason).
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

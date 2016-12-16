@@ -205,3 +205,10 @@
 
   Package-Manager: portage-2.2.28
 
+*mbedtls-2.4.1 (15 Dec 2016)
+
+  15 Dec 2016; Anthony G. Basile <blueness@gentoo.org> +mbedtls-2.4.1.ebuild:
+  version bump to 2.4.1
+
+  Package-Manager: portage-2.3.0
+

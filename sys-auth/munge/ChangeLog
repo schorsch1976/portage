@@ -91,3 +91,13 @@
 
   Package-Manager: portage-2.3.0
 
+*munge-0.5.11-r1 (15 Dec 2016)
+*munge-0.5.10-r2 (15 Dec 2016)
+
+  15 Dec 2016; Jason A. Donenfeld <zx2c4@gentoo.org> files/munged.initd,
+  -munge-0.5.10-r1.ebuild, +munge-0.5.10-r2.ebuild, -munge-0.5.11.ebuild,
+  +munge-0.5.11-r1.ebuild:
+  fix lpe, bug 602596
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

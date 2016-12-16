@@ -221,3 +221,27 @@
 
   Signed-off-by: David Seifert <soap@gentoo.org>
 
+*murmur-1.2.18 (15 Dec 2016)
+
+  15 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> +murmur-1.2.18.ebuild:
+  Bump to version 1.2.18
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  15 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -murmur-1.2.16-r1.ebuild:
+  Removed old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  15 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> murmur-1.2.17.ebuild:
+  Stable for amd64 and x86 (bug #590644).
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+  RepoMan-Options: --include-arches="amd64,x86"
+
+  15 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> -murmur-1.2.5.ebuild:
+  Removed old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

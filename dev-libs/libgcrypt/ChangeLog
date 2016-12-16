@@ -574,3 +574,19 @@
 
   Package-Manager: portage-2.3.3
 
+*libgcrypt-1.7.5 (15 Dec 2016)
+
+  15 Dec 2016; Kristian Fiskerstrand <k_f@gentoo.org> +libgcrypt-1.7.5.ebuild:
+  New upstream version 1.7.5
+
+  Fixes regression on secure memory response introduced in 1.7.4
+
+  Gentoo-Bug: 602502
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  15 Dec 2016; Kristian Fiskerstrand <k_f@gentoo.org> -libgcrypt-1.7.4.ebuild:
+  Clean up 1.7.4
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

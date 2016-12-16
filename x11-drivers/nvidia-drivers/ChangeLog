@@ -883,3 +883,15 @@
 
   Package-Manager: portage-2.3.2
 
+*nvidia-drivers-375.26 (15 Dec 2016)
+*nvidia-drivers-340.101 (15 Dec 2016)
+*nvidia-drivers-304.134 (15 Dec 2016)
+
+  15 Dec 2016; Jeroen Roovers <jer@gentoo.org>
+  +files/nvidia-drivers-375.26-profiles-rc.patch,
+  +nvidia-drivers-304.134.ebuild, +nvidia-drivers-340.101.ebuild,
+  +nvidia-drivers-375.26.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

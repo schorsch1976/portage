@@ -257,3 +257,10 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> libnl-3.2.27.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+*libnl-3.2.29_rc1 (15 Dec 2016)
+
+  15 Dec 2016; Jeroen Roovers <jer@gentoo.org> +libnl-3.2.29_rc1.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

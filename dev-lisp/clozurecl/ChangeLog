@@ -118,3 +118,14 @@
 
   Package-Manager: portage-2.2.28
 
+  15 Dec 2016; Andrey Grozin <grozin@gentoo.org> clozurecl-1.11-r1.ebuild:
+  replaced PATCHES= by epatch
+
+  PATCHES=( "${FILESDIR}"/ccl-format.patch ) used to work but now produces
+  /var/tmp/portage/dev-lisp/clozurecl-1.11-r1/temp/environment: line 461:
+  /var/lib/layman/lisp/dev-lisp/clozurecl/files/ccl-format.patch: No such file
+  or directory
+  Why /var/lib/layman/lisp/dev-lisp/clozurecl/files/ ??
+
+  Package-Manager: portage-2.3.3
+

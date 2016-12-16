@@ -44,3 +44,17 @@
 
   Package-Manager: portage-2.3.3
 
+*drone-0.5.0_pre20161214 (15 Dec 2016)
+
+  15 Dec 2016; Manuel Rüger <mrueg@gentoo.org>
+  +drone-0.5.0_pre20161214.ebuild:
+  Update snapshot
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  15 Dec 2016; Manuel Rüger <mrueg@gentoo.org>
+  -drone-0.5.0_pre20161128.ebuild:
+  Remove old
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -227,3 +227,11 @@
   +files/freebsd-lib-11.0-workaround.patch, +freebsd-lib-11.0.ebuild:
   sys-freebsd: bump to 11.0
 
+*freebsd-lib-11.0-r1 (15 Dec 2016)
+*freebsd-lib-10.3-r3 (15 Dec 2016)
+
+  15 Dec 2016; Michał Górny <mgorny@gentoo.org> -freebsd-lib-10.3-r2.ebuild,
+  +freebsd-lib-10.3-r3.ebuild, -freebsd-lib-11.0.ebuild,
+  +freebsd-lib-11.0-r1.ebuild:
+  Fix SA-16:37.libc and SA-16:38.bhyve
+

@@ -141,3 +141,8 @@
 
   Package-Manager: portage-2.3.3
 
+  15 Dec 2016; Davide Pesavento <pesa@gentoo.org> qtwebengine-5.6.2.ebuild:
+  fix typo in comment
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

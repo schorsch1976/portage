@@ -250,3 +250,32 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+*quagga-1.1.0 (15 Dec 2016)
+
+  15 Dec 2016; Sergey Popov <pinkbyte@gentoo.org> metadata.xml,
+  +quagga-1.1.0.ebuild:
+  version bump
+
+  Package-Manager: portage-2.3.2
+
+  15 Dec 2016; Sergey Popov <pinkbyte@gentoo.org>
+  -quagga-1.0.20160315-r3.ebuild, quagga-1.0.20160315-r4.ebuild:
+  security stabilizing
+
+  Transfer stable keywords from 1.0.20160315-r3 to 1.0.20160315-r3.
+  Drop old vulnerable revision.
+
+  Gentoo-Bug: 597410
+
+  Package-Manager: portage-2.3.2
+
+*quagga-1.1.0-r1 (15 Dec 2016)
+
+  15 Dec 2016; Sergey Popov <pinkbyte@gentoo.org>
+  +files/quagga-1.1.0-supress-dev-build-logs.patch, +quagga-1.1.0-r1.ebuild:
+  revision bump
+
+  Supress excessive warning logs, useful only for developers
+
+  Package-Manager: portage-2.3.2
+

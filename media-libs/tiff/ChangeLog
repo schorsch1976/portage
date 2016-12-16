@@ -211,3 +211,6 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  15 Dec 2016; Mike Frysinger <vapier@gentoo.org> metadata.xml:
+  add CPE names
+

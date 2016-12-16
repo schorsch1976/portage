@@ -541,3 +541,11 @@
   Package-Manager: portage-2.3.3
   Signed-off-by: Justin Lecher <jlec@gentoo.org>
 
+*xf86-video-intel-2.99.917_p20161206 (15 Dec 2016)
+
+  15 Dec 2016; Manuel Rüger <mrueg@gentoo.org>
+  +xf86-video-intel-2.99.917_p20161206.ebuild:
+  Update snapshot
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

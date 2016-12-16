@@ -88,3 +88,23 @@
 
   Package-Manager: portage-2.3.2
 
+*suricata-3.2 (15 Dec 2016)
+
+  15 Dec 2016; Slawomir Lis <slis@gentoo.org> +files/suricata-3.2-conf,
+  +files/suricata-3.2-init, +suricata-3.2.ebuild:
+  Version bump to 3.2
+
+  Reported in bug 602590.
+
+  Reported-By: Vieri <rentorbuy@yahoo.com>
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  15 Dec 2016; Slawomir Lis <slis@gentoo.org> -suricata-3.1.ebuild,
+  -suricata-3.1.2.ebuild:
+  Drop old version
+
+  Dropped versions: 3.1 and 3.1.2
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -282,3 +282,9 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+  15 Dec 2016; Mike Frysinger <vapier@gentoo.org> man-db-2.7.6.1-r1.ebuild:
+  move /var cache dir creation to runtime #520464
+
+  The rework in pkg_preinst is just about moving the path into a var.
+  Otherwise, we just add some -d/mkdir testing logic to the end.
+

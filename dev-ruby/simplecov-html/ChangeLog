@@ -83,3 +83,9 @@
 
   Package-Manager: portage-2.2.27
 
+  15 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  simplecov-html-0.10.0.ebuild:
+  add ruby23
+
+  Package-Manager: portage-2.3.0
+

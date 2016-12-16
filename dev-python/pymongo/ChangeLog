@@ -186,3 +186,10 @@
 
   Package-Manager: portage-2.3.0
 
+*pymongo-3.4.0 (15 Dec 2016)
+
+  15 Dec 2016; Zac Medico <zmedico@gentoo.org> +pymongo-3.4.0.ebuild:
+  version bump to 3.4.0
+
+  Package-Manager: portage-2.3.3
+

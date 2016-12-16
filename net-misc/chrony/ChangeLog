@@ -404,3 +404,10 @@
 
   Gentoo-Bug: 599048
 
+*chrony-3.0_pre1 (15 Dec 2016)
+
+  15 Dec 2016; Jeroen Roovers <jer@gentoo.org> +chrony-3.0_pre1.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

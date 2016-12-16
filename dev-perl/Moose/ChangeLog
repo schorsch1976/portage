@@ -123,3 +123,25 @@
 
   Package-Manager: portage-2.2.28
 
+*Moose-2.180.600 (15 Dec 2016)
+
+  15 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Moose-2.180.600.ebuild,
+  metadata.xml:
+  Bump to version 2.180.600
+
+  Upstream:
+  - List::MoreUtils replaced by inlining or List::Util equivalents
+  - Moose::Exception now has boolean overloads
+  - Moose::Exception messages can now be any stringifiable value
+  - Fix method cache regeneration with classes and blessed subs
+  - Compiler sanity checking now done with bundled
+    ExtUtils::HasCompiler
+  - In-Memory generated roles can now be used as Traits
+  - init_arg and attribute name both shown in exceptions when their
+    names differ during missing-attribute exceptions
+  - unimport() now supports `into` and `into_level` etc.
+  - Moose::Meta::Attribute objects reference their creating
+    ::Role::Attribute
+
+  Package-Manager: portage-2.3.3
+

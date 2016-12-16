@@ -135,3 +135,9 @@
 
   Package-Manager: portage-2.3.0
 
+  15 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> pam-1.2.1.ebuild,
+  pam-1.2.1-r1.ebuild:
+  Added sub-slot dep for sys-libs/db.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

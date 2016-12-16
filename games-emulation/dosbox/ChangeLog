@@ -178,3 +178,11 @@
 
   Package-Manager: portage-2.2.28
 
+*dosbox-0.74_p20160629-r1 (14 Dec 2016)
+
+  14 Dec 2016; James Le Cuirot <chewi@gentoo.org>
+  +dosbox-0.74_p20160629-r1.ebuild, dosbox-9999.ebuild, metadata.xml:
+  Add Glide emulation, closes bug #593686
+
+  Package-Manager: portage-2.3.3
+

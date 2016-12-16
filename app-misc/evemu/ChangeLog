@@ -119,3 +119,8 @@
   -evemu-2.2.0.ebuild, -files/evemu-1.2.0-install-man.patch:
   remove old
 
+*evemu-2.6.0 (15 Dec 2016)
+
+  15 Dec 2016; Tim Harder <radhermit@gentoo.org> +evemu-2.6.0.ebuild:
+  version bump to 2.6.0
+

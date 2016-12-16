@@ -115,3 +115,11 @@
 
   Package-Manager: portage-2.3.0
 
+*ruby-gnome2-3.0.8-r1 (15 Dec 2016)
+
+  15 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  +ruby-gnome2-3.0.8-r1.ebuild:
+  drop obsolete webkit versions, bug 573094
+
+  Package-Manager: portage-2.3.0
+

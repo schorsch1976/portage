@@ -74,3 +74,10 @@
 
   Bug: 575810
 
+*wmii-3.9.2-r5 (14 Dec 2016)
+
+  14 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +wmii-3.9.2-r5.ebuild:
+  EAPI 6 bump.
+
+  Package-Manager: portage-2.3.0
+

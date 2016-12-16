@@ -689,3 +689,16 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+  15 Dec 2016; Jeroen Roovers <jer@gentoo.org> adobe-flash-24.0.0.186.ebuild:
+  Stable for AMD64 x86 too.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+  RepoMan-Options: --ignore-arches
+
+  15 Dec 2016; Jeroen Roovers <jer@gentoo.org>
+  -adobe-flash-11.2.202.644.ebuild, -adobe-flash-23.0.0.207.ebuild,
+  -files/flashplugin-lahf-fix.c:
+  Old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -64,3 +64,11 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*xf86-video-dummy-0.3.8 (14 Dec 2016)
+
+  14 Dec 2016; Matt Turner <mattst88@gentoo.org>
+  +xf86-video-dummy-0.3.8.ebuild:
+  Version bump to 0.3.8.
+
+  Straight to stable.
+

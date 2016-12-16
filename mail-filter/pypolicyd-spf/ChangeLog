@@ -146,3 +146,11 @@
 
   Package-Manager: portage-2.3.0
 
+*pypolicyd-spf-2.0.1 (15 Dec 2016)
+
+  15 Dec 2016; Michael Orlitzky <mjo@gentoo.org> -pypolicyd-spf-2.0.0.ebuild,
+  +pypolicyd-spf-2.0.1.ebuild:
+  replace v2.0.0 with v2.0.1.
+
+  Package-Manager: portage-2.3.0
+

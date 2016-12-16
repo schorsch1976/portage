@@ -173,3 +173,14 @@
 
   Gentoo-Bug: 601720
 
+  15 Dec 2016; Lars Wendler <polynomial-c@gentoo.org>
+  -files/freerdp-1.1-CVE-2014-0250.patch, -files/freerdp-1.1-cmake-3.1.patch,
+  -files/freerdp-1.1.0_beta1-avx.patch,
+  -files/freerdp-1.1.0_beta1_p20130710-cmake.patch,
+  -files/freerdp-1.1.0_beta1_p20130710-ffmpeg.patch,
+  -files/freerdp-1.1.0_beta1_p20130710-uclibc.patch,
+  -files/freerdp-cmake-3.1.patch, -freerdp-1.1.0_beta1_p20130710-r2.ebuild:
+  Removed old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
