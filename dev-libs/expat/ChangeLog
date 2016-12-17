@@ -267,3 +267,8 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  16 Dec 2016; Fabian Groffen <grobian@gentoo.org> expat-2.2.0-r1.ebuild:
+  add Prefix keywords
+
+  Package-Manager: portage-2.3.0
+

@@ -91,3 +91,11 @@
 
   Package-Manager: portage-2.3.0
 
+  16 Dec 2016; David Seifert <soap@gentoo.org>
+  +files/xboxdrv-0.8.8-fix-c++14.patch, xboxdrv-0.8.8.ebuild:
+  Fix building with GCC 6
+
+  Gentoo-bug: 594674
+
+  Package-Manager: portage-2.3.3
+

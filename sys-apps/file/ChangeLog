@@ -220,3 +220,8 @@
   file-5.25.ebuild, file-5.28.ebuild, file-5.29.ebuild, file-9999.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  16 Dec 2016; Fabian Groffen <grobian@gentoo.org> file-5.29.ebuild:
+  add Prefix keywords
+
+  Package-Manager: portage-2.3.0
+

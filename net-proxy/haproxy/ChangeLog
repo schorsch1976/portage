@@ -310,3 +310,10 @@
   Package-Manager: portage-2.3.2
   Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
 
+*haproxy-1.7.1 (15 Dec 2016)
+
+  15 Dec 2016; Robin H. Johnson <robbat2@gentoo.org> +haproxy-1.7.1.ebuild:
+  bump, fixes #601726.
+
+  Package-Manager: portage-2.3.2
+

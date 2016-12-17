@@ -79,3 +79,17 @@
 
   Package-Manager: portage-2.2.28
 
+*Server-Starter-0.330.0 (16 Dec 2016)
+
+  16 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +Server-Starter-0.330.0.ebuild, metadata.xml:
+  Bump to version 0.330.0
+
+  - EAPI6
+
+  Upstream:
+  - Kill old workers less eagerly
+  - Allow --enable-auto-restart without argument
+
+  Package-Manager: portage-2.3.3
+

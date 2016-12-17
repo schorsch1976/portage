@@ -57,3 +57,23 @@
 
   Package-Manager: portage-2.3.1
 
+  16 Dec 2016; Mike Frysinger <vapier@gentoo.org> nvme-cli-0.9.ebuild:
+  fix stripping of upstream compiler flags (like -Werror)
+
+  16 Dec 2016; Mike Frysinger <vapier@gentoo.org> nvme-cli-0.9.ebuild:
+  rework setting of PREFIX in build
+
+  This way we only define configure and utilize the default compile/install.
+
+  16 Dec 2016; Mike Frysinger <vapier@gentoo.org> nvme-cli-0.9.ebuild:
+  add USE=udev to control automagic dep
+
+*nvme-cli-1.0 (16 Dec 2016)
+
+  16 Dec 2016; Mike Frysinger <vapier@gentoo.org> +nvme-cli-1.0.ebuild:
+  version bump to 1.0
+
+  16 Dec 2016; Mike Frysinger <vapier@gentoo.org> -nvme-cli-0.6.ebuild,
+  -nvme-cli-0.8.ebuild:
+  drop old <0.9 versions
+

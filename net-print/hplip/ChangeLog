@@ -321,3 +321,35 @@
 
   Package-Manager: portage-2.3.0
 
+*hplip-3.16.11-r2 (16 Dec 2016)
+
+  16 Dec 2016; Daniel Pielmeier <billie@gentoo.org> +hplip-3.16.11-r2.ebuild:
+  Fix deps w/ USE=fax,scanner; add USE=libressl
+
+  Gentoo-bug: 602328, 602478
+
+  USE=fax,scanner reported-by: tman
+  USE=libressl reviewed-by: Michelangelo Scopelliti
+
+  Raising reportlab3 dependency to >=3.2 as suggested by scan.py
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Daniel Pielmeier <billie@gentoo.org>
+
+  16 Dec 2016; Daniel Pielmeier <billie@gentoo.org> -hplip-3.16.11-r1.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Daniel Pielmeier <billie@gentoo.org>
+
+  16 Dec 2016; Daniel Pielmeier <billie@gentoo.org> hplip-3.16.11-r2.ebuild:
+  Disable Qt4, USE=!qt5 now means no GUI
+
+  Gentoo-bug: 602506
+
+  Package-Manager: portage-2.3.0
+
+  Signed-off-by: Daniel Pielmeier <billie@gentoo.org>
+

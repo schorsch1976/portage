@@ -199,3 +199,12 @@
 
   Package-Manager: portage-2.3.3
 
+*libkface-16.12.0 (16 Dec 2016)
+
+  16 Dec 2016; Johannes Huber <johu@gentoo.org>
+  +files/libkface-16.11.80-opencv3.2-gentoo-3.1.patch,
+  +libkface-16.12.0.ebuild:
+  kde-apps: Version bump KDE Applications 16.12.0
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

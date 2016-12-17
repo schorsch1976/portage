@@ -228,3 +228,11 @@
 
   Package-Manager: portage-2.3.3
 
+*wireguard-0.0.20161216 (16 Dec 2016)
+
+  16 Dec 2016; Jason A. Donenfeld <zx2c4@gentoo.org>
+  -wireguard-0.0.20161209.ebuild, +wireguard-0.0.20161216.ebuild:
+  version bump
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

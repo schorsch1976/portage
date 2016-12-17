@@ -645,3 +645,6 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  15 Dec 2016; Mike Frysinger <vapier@gentoo.org> bash-4.3_p48-r1.ebuild:
+  mark arm/arm64/hppa/ia64/m68k/ppc/ppc64/s390/sh/sparc stable #600174
+

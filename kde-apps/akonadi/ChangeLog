@@ -48,3 +48,17 @@
 
   Package-Manager: portage-2.3.2
 
+*akonadi-16.12.0 (16 Dec 2016)
+
+  16 Dec 2016; Johannes Huber <johu@gentoo.org> +akonadi-16.12.0.ebuild,
+  +files/akonadi-16.12.0-mysql56-crash.patch:
+  kde-apps: Version bump KDE Applications 16.12.0
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  16 Dec 2016; Johannes Huber <johu@gentoo.org> -akonadi-16.08.3.ebuild,
+  -files/akonadi-16.07.80-mysql56-crash.patch:
+  kde-apps: Remove KDE PIM 16.08.3
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

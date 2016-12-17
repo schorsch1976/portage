@@ -102,3 +102,11 @@
 
   Package-Manager: portage-2.3.0
 
+*kjots-5.0.1 (16 Dec 2016)
+
+  16 Dec 2016; Johannes Huber <johu@gentoo.org>
+  +files/kjots-5.0.1-fix-startup.patch, +kjots-5.0.1.ebuild:
+  Version bump 5.0.1
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -545,3 +545,10 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+*docker-1.12.5 (16 Dec 2016)
+
+  16 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +docker-1.12.5.ebuild:
+  Version bump to 1.12.5
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -99,3 +99,15 @@
 
   Package-Manager: portage-2.2.28
 
+*Starlet-0.310.0 (16 Dec 2016)
+
+  16 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Starlet-0.310.0.ebuild:
+  Bump to version 0.310.0
+
+  Upstream:
+  - add child_exit hook
+  - add new callback psgi.informational
+  - Send 100 continue responses immediately
+
+  Package-Manager: portage-2.3.3
+

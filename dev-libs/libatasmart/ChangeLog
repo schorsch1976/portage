@@ -90,3 +90,8 @@
 
   Package-Manager: portage-2.3.2
 
+  16 Dec 2016; Fabian Groffen <grobian@gentoo.org> libatasmart-0.19-r2.ebuild:
+  fix Prefix installation by Jens Lindenmeier, bug #602574
+
+  Package-Manager: portage-2.3.0
+

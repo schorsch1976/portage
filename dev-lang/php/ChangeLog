@@ -2180,3 +2180,13 @@
 
   Package-Manager: portage-2.3.0
 
+*php-5.6.29 (15 Dec 2016)
+
+  15 Dec 2016; Michael Orlitzky <mjo@gentoo.org> -php-5.6.28-r2.ebuild,
+  +php-5.6.29.ebuild:
+  new version 5.6.29 (replaces the unstable 5.6.28-r2).
+
+  Gentoo-Bug: 602738
+
+  Package-Manager: portage-2.3.0
+

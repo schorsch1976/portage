@@ -31,3 +31,11 @@
   compiler-rt-sanitizers-9999.ebuild:
   Allow alternative MIT license
 
+  16 Dec 2016; Michał Górny <mgorny@gentoo.org>
+  compiler-rt-sanitizers-9999.ebuild:
+  Include LLVMgold in test compiler
+
+  Symlink the LLVMgold.so plugin in the test compiler tree since some of
+  the tests use LTO support if available, and clang uses plugin path
+  relative to the executable.
+

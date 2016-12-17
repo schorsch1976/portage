@@ -220,3 +220,14 @@
 
   Package-Manager: portage-2.3.3
 
+*firejail-0.9.38.4-r1 (15 Dec 2016)
+
+  15 Dec 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  +files/firejail-0.9.38.4-0001-etc-resolv.conf-overwrite.patch,
+  -firejail-0.9.38.4.ebuild, +firejail-0.9.38.4-r1.ebuild:
+  Backport security fix to 0.9.38.4
+
+  Gentoo-Bug: 601994
+
+  Package-Manager: portage-2.3.3
+

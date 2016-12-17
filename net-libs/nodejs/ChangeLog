@@ -532,3 +532,13 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  16 Dec 2016; Robin H. Johnson <robbat2@gentoo.org> nodejs-0.12.10.ebuild,
+  nodejs-0.12.17.ebuild:
+  Fix http-parser dep.
+
+  Needed to compile stable 0.12.1[07].
+
+  X-Gentoo-Bug: 580700
+  Package-Manager: portage-2.3.2
+  Signed-off-by: Robin H. Johnson <robbat2@gentoo.org>
+

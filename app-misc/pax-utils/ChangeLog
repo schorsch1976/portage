@@ -224,3 +224,9 @@
   12 Nov 2016; Mike Frysinger <vapier@gentoo.org> +pax-utils-1.1.7.ebuild:
   version bump to 1.1.7
 
+  16 Dec 2016; Fabian Groffen <grobian@gentoo.org> pax-utils-1.1.6-r1.ebuild,
+  pax-utils-1.1.7.ebuild:
+  add Prefix keywords
+
+  Package-Manager: portage-2.3.0
+

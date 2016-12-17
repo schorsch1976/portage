@@ -134,3 +134,17 @@
 
   Package-Manager: portage-2.3.2
 
+  16 Dec 2016; Thomas Beierlein <tomjbe@gentoo.org> -tlf-1.2.3.ebuild,
+  -tlf-1.2.4.3.ebuild:
+  Drop old
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  16 Dec 2016; Thomas Beierlein <tomjbe@gentoo.org>
+  +files/ncurses_tinfo.patch, tlf-1.2.4.1.ebuild, tlf-1.2.4.5.ebuild:
+  backport new AX_WITH_CURSES macro
+
+  Fixes compile error with ncurses[tinfo].
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

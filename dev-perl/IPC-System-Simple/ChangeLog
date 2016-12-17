@@ -78,3 +78,9 @@
 
   Package-Manager: portage-2.2.27
 
+  16 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  IPC-System-Simple-1.250.0.ebuild:
+  1.250.0-r0: keyworded for ~alpha
+
+  Gentoo-Bug: 602602
+

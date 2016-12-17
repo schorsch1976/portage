@@ -257,3 +257,11 @@
   08 Dec 2016; Johannes Huber <johu@gentoo.org> konqueror-16.04.3-r1.ebuild:
   kde-base/kactivities -> kde-frameworks/kactivities
 
+*konqueror-16.12.0 (16 Dec 2016)
+
+  16 Dec 2016; Johannes Huber <johu@gentoo.org> +konqueror-16.12.0.ebuild,
+  metadata.xml:
+  kde-apps: Version bump KDE Applications 16.12.0
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -2665,3 +2665,22 @@
 
   Package-Manager: portage-2.3.0
 
+*gentoo-sources-4.8.15 (16 Dec 2016)
+
+  16 Dec 2016; Mike Pagano <mpagano@gentoo.org> +gentoo-sources-4.8.15.ebuild:
+  Linux patch 4.8.15
+
+  Package-Manager: portage-2.3.0
+
+  16 Dec 2016; Mike Pagano <mpagano@gentoo.org> metadata.xml:
+  Remove kdbus use-flag from metadata.xml
+
+  Package-Manager: portage-2.3.0
+
+*gentoo-sources-4.4.39 (16 Dec 2016)
+
+  16 Dec 2016; Mike Pagano <mpagano@gentoo.org> +gentoo-sources-4.4.39.ebuild:
+  Linux patch 4.4.39
+
+  Package-Manager: portage-2.3.0
+

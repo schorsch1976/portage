@@ -1358,3 +1358,14 @@
 
   Package-Manager: portage-2.3.0
 
+*vanilla-sources-4.8.15 (16 Dec 2016)
+*vanilla-sources-4.4.39 (16 Dec 2016)
+
+  16 Dec 2016; Agostino Sarubbo <ago@gentoo.org>
+  -vanilla-sources-4.4.38.ebuild, +vanilla-sources-4.4.39.ebuild,
+  -vanilla-sources-4.8.14.ebuild, +vanilla-sources-4.8.15.ebuild:
+  Automated version bump to {4.4.39,4.8.15} - remove old.
+
+  Package-Manager: portage-2.3.0
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
