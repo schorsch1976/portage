@@ -75,3 +75,8 @@
 
   Package-Manager: portage-2.2.26
 
+  17 Dec 2016; Hans de Graaff <graaff@gentoo.org> -tokyocabinet-1.29.1.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+

@@ -84,3 +84,13 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  16 Dec 2016; Hans de Graaff <graaff@gentoo.org> ruby-ssl-8.ebuild:
+  mark latest version stable on all arches
+
+  Package-Manager: portage-2.3.0
+
+  16 Dec 2016; Hans de Graaff <graaff@gentoo.org> -ruby-ssl-7.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+

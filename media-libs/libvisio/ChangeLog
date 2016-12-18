@@ -180,3 +180,9 @@
 
   Package-Manager: portage-2.3.2
 
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org> libvisio-0.1.5.ebuild,
+  libvisio-9999.ebuild:
+  Drop eutils.eclass
+
+  Package-Manager: portage-2.3.0
+

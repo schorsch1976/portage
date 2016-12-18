@@ -263,3 +263,11 @@
 
   Package-Manager: portage-2.3.2
 
+*darktable-2.2.0_rc3 (17 Dec 2016)
+
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> -darktable-2.2.0_rc2.ebuild,
+  +darktable-2.2.0_rc3.ebuild:
+  media-gfx/dartable: version bump
+
+  Package-Manager: portage-2.3.3
+

@@ -85,3 +85,11 @@
 
   Package-Manager: portage-2.2.28
 
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  libodfgen-0.1.6.ebuild, libodfgen-9999.ebuild:
+  with-sharedptr=c++11, drop eutils.eclass
+
+  No more boost dependency with std sharedptr
+
+  Package-Manager: portage-2.3.0
+

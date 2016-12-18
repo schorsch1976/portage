@@ -103,3 +103,9 @@
 
   Package-Manager: portage-2.3.2
 
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  libebook-0.1.2-r1.ebuild, metadata.xml:
+  Add USE=tools, drop eutils.eclass
+
+  Package-Manager: portage-2.3.0
+

@@ -807,3 +807,32 @@
 
   Package-Manager: portage-2.3.2
 
+*libreoffice-5.3.9999 (17 Dec 2016)
+
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +libreoffice-5.3.9999.ebuild, libreoffice-9999.ebuild:
+  Add 5.3 stable branch
+
+  Package-Manager: portage-2.3.0
+
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  libreoffice-9999.ebuild:
+  Fix DEPENDs, drop --enable-graphite
+
+  Option turned mandatory. Upstream commits:
+  67936ee7ed717eb385b608d7eedcefa61fe13295
+  b9fe5dc791f56df55495d171ae901a246907c68b
+
+  glew -> epoxy
+  Upstream commit 482d7ce61b423600b41b459eb26a2cc221cd0acf
+
+  Package-Manager: portage-2.3.0
+
+*libreoffice-5.2.4.2 (17 Dec 2016)
+
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +libreoffice-5.2.4.2.ebuild:
+  5.2.4.2 version bump
+
+  Package-Manager: portage-2.3.0
+

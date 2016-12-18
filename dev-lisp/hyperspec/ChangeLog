@@ -71,3 +71,8 @@
 
   Package-Manager: portage-2.3.3
 
+  17 Dec 2016; Chema Alonso Josa <nimiux@gentoo.org> hyperspec-7.0-r1.ebuild:
+  Bumps EAPI version. Fixes missing quotes
+
+  Package-Manager: portage-2.3.0
+

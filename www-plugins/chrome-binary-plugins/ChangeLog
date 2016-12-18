@@ -1582,3 +1582,15 @@
 
   Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
 
+*chrome-binary-plugins-57.0.2950.4_alpha (16 Dec 2016)
+*chrome-binary-plugins-56.0.2924.28_beta (16 Dec 2016)
+
+  16 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -chrome-binary-plugins-56.0.2924.21_beta.ebuild,
+  +chrome-binary-plugins-56.0.2924.28_beta.ebuild,
+  -chrome-binary-plugins-57.0.2946.0_alpha.ebuild,
+  +chrome-binary-plugins-57.0.2950.4_alpha.ebuild:
+  automated update (57.0.2950.4, 56.0.2924.28)
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

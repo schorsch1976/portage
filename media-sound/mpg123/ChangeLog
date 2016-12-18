@@ -207,3 +207,6 @@
 
   Gentoo-Bug: 602084
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> mpg123-1.23.8.ebuild:
+  amd64 stable wrt bug #602084
+

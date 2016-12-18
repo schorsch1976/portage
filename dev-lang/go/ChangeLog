@@ -506,3 +506,8 @@
 
   Package-Manager: portage-2.3.0
 
+  16 Dec 2016; William Hubbs <williamh@gentoo.org> go-1.7.4.ebuild:
+  stabilize 1.7.4 on amd64 for #602766
+
+  Package-Manager: portage-2.3.0
+

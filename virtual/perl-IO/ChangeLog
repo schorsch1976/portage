@@ -253,3 +253,12 @@
 
   Gentoo-Bug: 589680
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> perl-IO-1.350.100_rc.ebuild:
+  arm stable, bug #589680
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> perl-IO-1.350.100_rc.ebuild:
+  amd64 stable wrt bug #589680
+

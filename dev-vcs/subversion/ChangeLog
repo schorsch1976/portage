@@ -418,3 +418,15 @@
 
   Gentoo-Bug: 600468
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> subversion-1.8.17.ebuild:
+  arm stable, bug #600468
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> subversion-1.9.5.ebuild:
+  arm stable, bug #600468
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

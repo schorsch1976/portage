@@ -110,3 +110,11 @@
   files/minissdpd.initd-r2:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+*minissdpd-1.5.20161216 (17 Dec 2016)
+
+  17 Dec 2016; Anthony G. Basile <blueness@gentoo.org>
+  +minissdpd-1.5.20161216.ebuild:
+  version bump to 1.5.20161216
+
+  Package-Manager: portage-2.3.0
+

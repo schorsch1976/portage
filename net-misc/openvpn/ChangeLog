@@ -453,3 +453,18 @@
 
   Package-Manager: portage-2.3.3
 
+*openvpn-2.4_rc2 (16 Dec 2016)
+
+  16 Dec 2016; Patrick McLean <chutzpah@gentoo.org>
+  -openvpn-2.4_rc1-r2.ebuild, +openvpn-2.4_rc2.ebuild, openvpn-9999.ebuild:
+  Version bump to 2.4_rc2
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+*openvpn-2.3.14 (16 Dec 2016)
+
+  16 Dec 2016; Patrick McLean <chutzpah@gentoo.org> +openvpn-2.3.14.ebuild:
+  Version bump to 2.3.14
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

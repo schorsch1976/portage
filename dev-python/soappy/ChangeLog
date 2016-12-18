@@ -113,3 +113,9 @@
 
   Gentoo-Bug: 534546
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> soappy-0.12.22.ebuild:
+  arm stable, bug #534546
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

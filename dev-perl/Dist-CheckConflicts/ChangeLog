@@ -94,3 +94,7 @@
 
   Gentoo-Bug: 601820
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org>
+  Dist-CheckConflicts-0.110.0.ebuild:
+  alpha went stable. ALLARCHES policy applied.
+

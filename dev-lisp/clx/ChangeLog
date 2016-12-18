@@ -62,3 +62,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  17 Dec 2016; Chema Alonso Josa <nimiux@gentoo.org> clx-0.7.4.ebuild,
+  clx-9999.ebuild:
+  Syncs with lisp overlay
+
+  Package-Manager: portage-2.3.0
+

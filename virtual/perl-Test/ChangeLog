@@ -201,3 +201,12 @@
 
   Package-Manager: portage-2.3.3
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> perl-Test-1.260.100_rc.ebuild:
+  arm stable, bug #589680
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> perl-Test-1.260.100_rc.ebuild:
+  amd64 stable wrt bug #589680
+

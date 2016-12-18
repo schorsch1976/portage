@@ -90,3 +90,6 @@
   nss-pam-ldapd-0.8.14-r2.ebuild, nss-pam-ldapd-0.9.7.ebuild:
   we actually need pam now
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> nss-pam-ldapd-0.9.7.ebuild:
+  stable for amd64
+

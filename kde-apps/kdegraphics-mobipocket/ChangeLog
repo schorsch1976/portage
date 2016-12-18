@@ -275,3 +275,9 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+  17 Dec 2016; Michael Palimaka <kensington@gentoo.org>
+  kdegraphics-mobipocket-16.12.0.ebuild:
+  SLOTs 4 and 5 collide
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

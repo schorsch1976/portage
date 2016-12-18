@@ -142,3 +142,7 @@
 
   Gentoo-Bug: 600248
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org>
+  lm_sensors-3.4.0_p20160725.ebuild:
+  amd64 stable wrt bug #600248
+

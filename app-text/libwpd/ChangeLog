@@ -94,3 +94,11 @@
 
   Package-Manager: portage-2.3.2
 
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org> libwpd-0.10.1.ebuild,
+  metadata.xml:
+  EAPI 6, drop eutils.eclass, improve metadata
+
+  Gentoo-bug: 600716
+
+  Package-Manager: portage-2.3.0
+

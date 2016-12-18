@@ -222,3 +222,14 @@
 
   Gentoo-Bug: 589680
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org>
+  perl-File-Spec-3.560.200_rc.ebuild:
+  arm stable, bug #589680
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org>
+  perl-File-Spec-3.560.200_rc.ebuild:
+  amd64 stable wrt bug #589680
+

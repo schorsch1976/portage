@@ -155,3 +155,18 @@
 
   Package-Manager: portage-2.3.1
 
+  17 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  -ocaml-sqlite3-4.0.3.ebuild, -ocaml-sqlite3-4.0.4.ebuild,
+  -ocaml-sqlite3-4.0.5.ebuild:
+  remove old
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+*ocaml-sqlite3-4.1.0 (17 Dec 2016)
+
+  17 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +ocaml-sqlite3-4.1.0.ebuild:
+  bump to 4.1.0
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

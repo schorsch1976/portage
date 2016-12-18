@@ -8,3 +8,9 @@
   +cdfplayer-10.4.0.ebuild, +metadata.xml:
   New application, fetch-restricted
 
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  cdfplayer-10.4.0.ebuild:
+  Add missing dependency
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

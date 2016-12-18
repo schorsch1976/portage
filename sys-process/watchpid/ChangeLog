@@ -81,3 +81,13 @@
 
   Package-Manager: portage-2.2.26
 
+  16 Dec 2016; Patrice Clement <monsieurp@gentoo.org> watchpid-0.1-r2.ebuild:
+  stable for amd64+x86+ppc.
+
+  Package-Manager: portage-2.3.0
+
+  16 Dec 2016; Patrice Clement <monsieurp@gentoo.org> -watchpid-0.1-r1.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+

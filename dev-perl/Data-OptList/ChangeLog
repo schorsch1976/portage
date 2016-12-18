@@ -100,3 +100,6 @@
 
   Gentoo-Bug: 601818
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> Data-OptList-0.110.0.ebuild:
+  alpha went stable. ALLARCHES policy applied
+

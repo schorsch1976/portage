@@ -162,3 +162,6 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> scons-2.4.1.ebuild:
+  amd64 stable wrt #598902
+

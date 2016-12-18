@@ -185,3 +185,12 @@
 
   Package-Manager: portage-2.3.2
 
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  liborcus-0.11.2.ebuild, liborcus-0.12.1.ebuild, liborcus-9999.ebuild,
+  metadata.xml:
+  Drop eutils.eclass, cleanup, improve metadata
+
+  Gentoo-bug: 600732
+
+  Package-Manager: portage-2.3.0
+

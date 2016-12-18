@@ -262,3 +262,9 @@
 
   Package-Manager: portage-2.3.2
 
+  17 Dec 2016; Pacho Ramos <pacho@gentoo.org>
+  gnome-control-center-3.22.1.ebuild:
+  sys-devel/autoconf-archive needed for eautoreconf (#602746 by d-7)
+
+  Package-Manager: portage-2.3.2
+

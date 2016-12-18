@@ -86,3 +86,12 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org> libgltf-9999.ebuild:
+  Fix DEPENDs, drop eutils.eclass
+
+  glew -> epoxy
+
+  Upstream commit: a8d6b188e1d02c211a6deec4470dc0b8f0507b79
+
+  Package-Manager: portage-2.3.0
+

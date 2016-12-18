@@ -326,3 +326,6 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> tmux-2.2.ebuild:
+  amd64 stable wrt bug #595620
+

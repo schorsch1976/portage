@@ -117,3 +117,6 @@
 
   Gentoo-Bug: 601708
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> pm-utils-1.4.1-r7.ebuild:
+  amd64 stable
+

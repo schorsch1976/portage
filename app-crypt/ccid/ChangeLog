@@ -130,3 +130,6 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> ccid-1.4.24.ebuild:
+  amd64 stable
+

@@ -113,3 +113,10 @@
 
   Package-Manager: portage-2.3.3
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org>
+  perl-Tie-RefHash-1.390.0-r6.ebuild:
+  arm stable, bug #589680
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

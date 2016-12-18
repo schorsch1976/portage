@@ -113,3 +113,9 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  python-ironicclient-1.7.1.ebuild:
+  1.7.1 stable amd64 and x86
+
+  Package-Manager: portage-2.3.0
+

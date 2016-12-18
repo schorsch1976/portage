@@ -135,3 +135,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> ppp-2.4.7-r3.ebuild:
+  arm stable, bug #546554
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

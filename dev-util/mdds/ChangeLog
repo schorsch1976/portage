@@ -149,3 +149,9 @@
 
   Package-Manager: portage-2.3.2
 
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org> mdds-1.2.2.ebuild,
+  mdds-9999.ebuild:
+  Drop eutils.eclass, more EAPI 6 polish
+
+  Package-Manager: portage-2.3.0
+

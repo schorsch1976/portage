@@ -195,3 +195,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> ntfs3g-2016.2.22-r1.ebuild:
+  arm stable, bug #550970
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

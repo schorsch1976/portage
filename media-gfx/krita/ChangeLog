@@ -30,3 +30,25 @@
 
   Package-Manager: portage-2.3.0
 
+*krita-3.1.1 (17 Dec 2016)
+
+  17 Dec 2016; Johannes Huber <johu@gentoo.org> +krita-3.1.1.ebuild:
+  Version bump 3.1.1
+
+  Gentoo-bug: 602648
+  Thanks-to: rx80 <rokfaith@gmail.com>
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  17 Dec 2016; Johannes Huber <johu@gentoo.org> -krita-3.0.ebuild:
+  Remove 3.0
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  17 Dec 2016; Johannes Huber <johu@gentoo.org>
+  -files/krita-3.0.1-breeze-collisions.patch,
+  -files/krita-3.0.1-vc-cxxflags.patch, -krita-3.0.1.ebuild:
+  Remove 3.0.1
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

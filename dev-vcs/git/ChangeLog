@@ -889,3 +889,9 @@
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
   RepoMan-Options: --include-arches="amd64,x86"
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> git-2.10.2.ebuild:
+  arm stable, bug #601984
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

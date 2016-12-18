@@ -243,3 +243,9 @@
 
   Gentoo-Bug: 600650
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> vim-8.0.0106.ebuild:
+  arm stable, bug #600650
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

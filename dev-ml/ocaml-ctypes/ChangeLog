@@ -225,3 +225,11 @@
 
   Package-Manager: portage-2.3.2
 
+*ocaml-ctypes-0.11.2 (17 Dec 2016)
+
+  17 Dec 2016; Alexis Ballier <aballier@gentoo.org>
+  +ocaml-ctypes-0.11.2.ebuild:
+  bump to 0.11.2
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

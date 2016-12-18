@@ -214,3 +214,6 @@
 
   Gentoo-Bug: 602080
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> dos2unix-7.3.4.ebuild:
+  amd64 stable wrt bug #602080
+

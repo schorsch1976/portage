@@ -162,3 +162,9 @@
 
   Package-Manager: portage-2.3.3
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> perl-threads-2.10.0-r1.ebuild:
+  arm stable, bug #589680
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

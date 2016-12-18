@@ -112,3 +112,8 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+*dateutils-0.4.1 (17 Dec 2016)
+
+  17 Dec 2016; Tim Harder <radhermit@gentoo.org> +dateutils-0.4.1.ebuild:
+  version bump to 0.4.1
+

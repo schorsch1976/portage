@@ -423,3 +423,15 @@
 
   Gentoo-Bug: 589226
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> apache-2.2.31-r1.ebuild:
+  arm stable, bug #589226
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> apache-2.4.23-r2.ebuild:
+  arm stable, bug #589226
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

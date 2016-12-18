@@ -749,3 +749,12 @@
 
   Package-Manager: portage-2.3.2_p13
 
+*google-chrome-beta-56.0.2924.28 (16 Dec 2016)
+
+  16 Dec 2016; Mike Gilbert <floppym@gentoo.org>
+  -google-chrome-beta-56.0.2924.21.ebuild,
+  +google-chrome-beta-56.0.2924.28.ebuild:
+  automated update (56.0.2924.28)
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

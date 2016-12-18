@@ -328,3 +328,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> dovecot-2.2.27.ebuild:
+  arm stable, bug #601452
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

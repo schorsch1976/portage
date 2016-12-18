@@ -179,3 +179,10 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+  17 Dec 2016; Davide Pesavento <pesa@gentoo.org> qt-docs-5.7.1_p0.ebuild:
+  remove Makefile accidentally left in the archive by upstream
+
+  Gentoo-Bug: 602750
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

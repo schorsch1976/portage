@@ -135,3 +135,6 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> baselayout-2.3.ebuild:
+  amd64 stable wrt bug #596104
+

@@ -157,3 +157,14 @@
 
   Package-Manager: portage-2.3.0
 
+*trojita-0.7-r2 (16 Dec 2016)
+
+  16 Dec 2016; Johannes Huber <johu@gentoo.org>
+  +files/trojita-0.7-gpgme.patch, +trojita-0.7-r2.ebuild:
+  Port from kde-apps/gpgmepp to app-crypt/gpgme[qt5]
+
+  Package-Manager: portage-2.3.0
+
+  Closes: https://github.com/gentoo/gentoo/pull/3137
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+

@@ -82,3 +82,11 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Dec 2016; David Seifert <soap@gentoo.org>
+  +files/warmux-11.04.1-fix-c++14.patch, warmux-11.04.1-r1.ebuild:
+  Fix building with GCC 6
+
+  Gentoo-bug: 598639
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

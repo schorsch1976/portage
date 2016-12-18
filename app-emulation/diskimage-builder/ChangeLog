@@ -68,3 +68,11 @@
 
   Package-Manager: portage-2.3.0
 
+*diskimage-builder-1.25.1 (17 Dec 2016)
+
+  17 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -diskimage-builder-1.25.0.ebuild, +diskimage-builder-1.25.1.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+

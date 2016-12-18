@@ -185,3 +185,6 @@
   16 Dec 2016; Mike Frysinger <vapier@gentoo.org> +strace-4.15.ebuild:
   version bump to 4.15
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> strace-4.13.ebuild:
+  amd64 stable wrt bug #596200
+

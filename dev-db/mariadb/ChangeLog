@@ -810,3 +810,15 @@
 
   Gentoo-Bug: 598704
 
+*mariadb-10.1.20 (16 Dec 2016)
+
+  16 Dec 2016; Brian Evans <grknight@gentoo.org> +mariadb-10.1.20.ebuild:
+  Version bump for 10.1 series
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  16 Dec 2016; Brian Evans <grknight@gentoo.org> -mariadb-10.1.19.ebuild:
+  Remove revision with bad configure options
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

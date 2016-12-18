@@ -76,3 +76,19 @@
   RepoMan-Options: --include-arches="alpha amd64 amd64-fbsd arm arm64 hppa
   ia64 m68k mips nios2 ppc ppc64 riscv s390 sh sparc sparc-fbsd x86 x86-fbsd"
 
+*File-DesktopEntry-0.220.0 (17 Dec 2016)
+
+  17 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +File-DesktopEntry-0.220.0.ebuild:
+  Bump to version 0.220.0
+
+  - EAPI6
+  - Parallel Tests
+
+  Upstream:
+  - Switch to EUMM
+  - Exclude newlines whitespace on either side of '='
+  - Fix opening files with special characters
+
+  Package-Manager: portage-2.3.3
+

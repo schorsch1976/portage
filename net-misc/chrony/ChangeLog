@@ -411,3 +411,10 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+*chrony-3.0_pre2 (17 Dec 2016)
+
+  17 Dec 2016; Jeroen Roovers <jer@gentoo.org> +chrony-3.0_pre2.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

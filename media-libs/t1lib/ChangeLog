@@ -113,3 +113,9 @@
 
   Gentoo-Bug: 358667
 
+  17 Dec 2016; Markus Meier <maekke@gentoo.org> t1lib-5.1.2-r1.ebuild:
+  arm stable, bug #358667
+
+  Package-Manager: portage-2.3.3
+  RepoMan-Options: --include-arches="arm"
+

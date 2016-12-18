@@ -175,3 +175,8 @@
 
   Package-Manager: portage-2.3.2
 
+  17 Dec 2016; Pacho Ramos <pacho@gentoo.org> vinagre-3.20.2-r1.ebuild:
+  app-text/yelp-tools is needed at build time (#602752 by James Bates)
+
+  Package-Manager: portage-2.3.2
+

@@ -267,3 +267,6 @@
 
   Gentoo-Bug: 602090
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> unrar-5.4.5.ebuild:
+  amd64 stable wrt bug #602090
+

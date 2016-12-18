@@ -581,3 +581,12 @@
 
   Gentoo-Bug: 602772
 
+  17 Dec 2016; Johannes Huber <johu@gentoo.org> -cmake-3.7.0-r1.ebuild,
+  -files/cmake-2.8.10-libform.patch:
+  Remove 3.7.0 (r1)
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org> cmake-3.6.3.ebuild:
+  amd64 stable wrt bug #602772
+

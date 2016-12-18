@@ -107,3 +107,8 @@
   01 Nov 2016; Michał Górny <mgorny@gentoo.org> roxterm-3.1.5.ebuild:
   global: Drop dead implementations from PYTHON_COMPAT
 
+  17 Dec 2016; Pacho Ramos <pacho@gentoo.org> roxterm-2.9.3-r1.ebuild:
+  amd64/x86 stable, bug #593578
+
+  Package-Manager: portage-2.3.2
+

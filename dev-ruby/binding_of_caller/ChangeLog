@@ -63,3 +63,9 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+  17 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  binding_of_caller-0.7.2.ebuild:
+  add 0.7.2
+
+  Package-Manager: portage-2.3.0
+

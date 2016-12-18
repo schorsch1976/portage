@@ -147,3 +147,11 @@
 
   Package-Manager: portage-2.3.3
 
+*armadillo-7.500.2-r1 (17 Dec 2016)
+
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  -armadillo-7.500.2.ebuild, +armadillo-7.500.2-r1.ebuild:
+  Revision bump with corrected subslot
+
+  Package-Manager: portage-2.3.3
+

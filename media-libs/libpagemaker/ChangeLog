@@ -87,3 +87,19 @@
 
   Package-Manager: portage-2.3.2
 
+*libpagemaker-0.0.3-r1 (17 Dec 2016)
+
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  +libpagemaker-0.0.3-r1.ebuild, libpagemaker-9999.ebuild:
+  Cleanup, delete .la files
+
+  Gentoo-bug: 600724
+
+  Package-Manager: portage-2.3.0
+
+  17 Dec 2016; Andreas K. Hüttel <dilfridge@gentoo.org>
+  -libpagemaker-0.0.3.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.0
+

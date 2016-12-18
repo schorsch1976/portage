@@ -2684,3 +2684,23 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Dec 2016; Aaron Bauman <bman@gentoo.org>
+  gentoo-sources-3.10.104-r1.ebuild, gentoo-sources-3.12.66.ebuild,
+  gentoo-sources-3.18.44.ebuild:
+  amd64 stable
+
+  17 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  -gentoo-sources-3.4.112.ebuild, -gentoo-sources-3.10.101.ebuild,
+  -gentoo-sources-3.10.102.ebuild, -gentoo-sources-3.10.103.ebuild,
+  -gentoo-sources-3.12.63.ebuild, -gentoo-sources-3.12.67.ebuild,
+  -gentoo-sources-3.12.68.ebuild, -gentoo-sources-3.14.79.ebuild,
+  -gentoo-sources-3.18.42.ebuild, -gentoo-sources-3.18.43.ebuild,
+  -gentoo-sources-3.18.45.ebuild, -gentoo-sources-4.1.36.ebuild,
+  -gentoo-sources-4.4.34.ebuild, -gentoo-sources-4.4.35.ebuild,
+  -gentoo-sources-4.4.36.ebuild, -gentoo-sources-4.4.36-r1.ebuild,
+  -gentoo-sources-4.4.37.ebuild, -gentoo-sources-4.4.38.ebuild,
+  -gentoo-sources-4.8.12-r1.ebuild, -gentoo-sources-4.8.13.ebuild:
+  Clean-up old and insecure kernels.
+
+  Package-Manager: portage-2.3.0
+
