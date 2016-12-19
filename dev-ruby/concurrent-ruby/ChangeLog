@@ -86,3 +86,17 @@
 
   Package-Manager: portage-2.3.2
 
+  18 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  -concurrent-ruby-1.0.0.ebuild, -concurrent-ruby-1.0.1.ebuild:
+  cleanup
+
+  Package-Manager: portage-2.3.0
+
+*concurrent-ruby-1.0.3 (18 Dec 2016)
+
+  18 Dec 2016; Hans de Graaff <graaff@gentoo.org>
+  +concurrent-ruby-1.0.3.ebuild:
+  add 1.0.3
+
+  Package-Manager: portage-2.3.0
+

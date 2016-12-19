@@ -430,3 +430,17 @@
   Package-Manager: portage-2.3.3
   RepoMan-Options: --include-arches="arm"
 
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> subversion-1.9.5.ebuild:
+  amd64 stable wrt bug #600468
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> subversion-1.9.5.ebuild:
+  x86 stable wrt bug #600468
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

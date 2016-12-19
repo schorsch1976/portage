@@ -294,3 +294,15 @@
 
   Package-Manager: portage-2.3.2_p13
 
+  18 Dec 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml,
+  transmission-9999.ebuild:
+  add optional PolarSSL support
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+
+  18 Dec 2016; Mike Gilbert <floppym@gentoo.org> metadata.xml,
+  transmission-9999.ebuild:
+  PolarSSL is dead; use mbed TLS instead
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

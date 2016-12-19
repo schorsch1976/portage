@@ -88,3 +88,10 @@
   17 Dec 2016; Aaron Bauman <bman@gentoo.org> httping-2.5.ebuild:
   amd64 stable wrt bug #602888
 
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> httping-2.5.ebuild:
+  x86 stable wrt bug #602888
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

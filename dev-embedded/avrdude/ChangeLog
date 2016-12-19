@@ -104,3 +104,17 @@
   09 Dec 2016; Tim Harder <radhermit@gentoo.org> avrdude-6.3.ebuild:
   bump 6.3 to EAPI 6
 
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> avrdude-6.3.ebuild:
+  amd64 stable wrt bug #602100
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> avrdude-6.3.ebuild:
+  x86 stable wrt bug #602100
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

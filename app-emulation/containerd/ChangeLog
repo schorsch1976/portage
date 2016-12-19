@@ -131,3 +131,9 @@
 
   Package-Manager: portage-2.3.3
 
+  18 Dec 2016; Manuel Rüger <mrueg@gentoo.org> -containerd-0.2.2.ebuild,
+  -containerd-0.2.3.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.3
+

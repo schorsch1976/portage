@@ -75,3 +75,18 @@
 
   Package-Manager: portage-2.2.28
 
+  18 Dec 2016; Patrice Clement <monsieurp@gentoo.org> rl-0.2.7-r1.ebuild:
+  move documentation generation from dodoc to DOCS array.
+
+  Package-Manager: portage-2.3.0
+
+  18 Dec 2016; Patrice Clement <monsieurp@gentoo.org> rl-0.2.7-r1.ebuild:
+  Mark stable using the ALLARCHES policy.
+
+  Package-Manager: portage-2.3.0
+
+  18 Dec 2016; Patrice Clement <monsieurp@gentoo.org> -rl-0.2.7.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+

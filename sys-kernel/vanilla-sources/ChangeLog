@@ -1369,3 +1369,11 @@
   Package-Manager: portage-2.3.0
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+*vanilla-sources-3.12.69 (18 Dec 2016)
+
+  18 Dec 2016; Mike Pagano <mpagano@gentoo.org>
+  -vanilla-sources-3.12.68.ebuild, +vanilla-sources-3.12.69.ebuild:
+  Linux patch 3.12.69
+
+  Package-Manager: portage-2.3.0
+

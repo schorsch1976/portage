@@ -237,3 +237,17 @@
 
   Gentoo-Bug: 602054
 
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> certifi-2016.9.26.ebuild:
+  amd64 stable wrt bug #602054
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> certifi-2016.9.26.ebuild:
+  x86 stable wrt bug #602054
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

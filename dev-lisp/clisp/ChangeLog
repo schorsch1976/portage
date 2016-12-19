@@ -93,3 +93,11 @@
 
   Package-Manager: portage-2.3.1
 
+*clisp-2.49-r100 (18 Dec 2016)
+
+  18 Dec 2016; Andrey Grozin <grozin@gentoo.org> -clisp-2.49-r9.ebuild,
+  +clisp-2.49-r100.ebuild:
+  add -falign-functions=4 on x86
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

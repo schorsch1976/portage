@@ -115,3 +115,19 @@
   Gentoo-bug: 601114
   Closes: https://github.com/gentoo/gentoo/pull/2949
 
+*skypeforlinux-1.14.0.5 (18 Dec 2016)
+
+  18 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org>
+  +skypeforlinux-1.14.0.5.ebuild:
+  Version bump to 1.14.0.5
+
+  Gentoo-bug: 602928
+
+  Package-Manager: portage-2.3.0
+
+  18 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org>
+  -skypeforlinux-1.13.0.3.ebuild:
+  remove old version 1.13.0.3
+
+  Package-Manager: portage-2.3.0
+

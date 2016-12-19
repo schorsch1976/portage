@@ -394,3 +394,9 @@
   Package-Manager: portage-2.3.2
   RepoMan-Options: --include-arches="arm"
 
+  18 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> ntp-4.2.8_p8.ebuild,
+  ntp-4.2.8_p9.ebuild:
+  Added sub-slot dependency for dev-libs/libevent.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

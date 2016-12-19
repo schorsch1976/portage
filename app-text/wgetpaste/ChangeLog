@@ -126,3 +126,16 @@
   Package-Manager: portage-2.3.1
   RepoMan-Options: --ignore-arches
 
+*wgetpaste-2.28-r1 (17 Dec 2016)
+
+  17 Dec 2016; Nicholas Vinson <nvinson234@gmail.com>
+  +wgetpaste-2.28-r1.ebuild:
+  Add wget SSL support
+
+  Many of the paste bins wgetpaste supports require SSL.  This includes
+  the current default paste bin.  Without wget SSL support, these paste
+  bins are not accessible.  This change allows wgetpaste to depend on
+  ssl-enabled wget.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

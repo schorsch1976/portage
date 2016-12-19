@@ -159,3 +159,9 @@
   09 Dec 2016; Michał Górny <mgorny@gentoo.org> paludis-9999.ebuild:
   Update 9999 for CMake, bump to ruby 2.3
 
+  18 Dec 2016; Michał Górny <mgorny@gentoo.org> paludis-9999.ebuild:
+  Switch to proper git:// transport
+
+  Switch to git:// since https:// is using the dumb transport,
+  and therefore is not full-featured.
+

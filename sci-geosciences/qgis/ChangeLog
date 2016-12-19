@@ -164,3 +164,13 @@
 
   Package-Manager: portage-2.3.0
 
+*qgis-2.18.2 (18 Dec 2016)
+
+  18 Dec 2016; Amy Winston <amynka@gentoo.org> metadata.xml,
+  +qgis-2.18.2.ebuild:
+  Version bump 2.18.2
+
+  Closes: #3136
+
+  Package-Manager: portage-2.3.3
+

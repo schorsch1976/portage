@@ -231,3 +231,39 @@
 
   Package-Manager: portage-2.3.3
 
+*firejail-0.9.38.6 (18 Dec 2016)
+
+  18 Dec 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  +files/firejail-0.9.38.6-sysmacros.patch, +firejail-0.9.38.6.ebuild:
+  Bump LTS version
+
+  It includes security bug fix back-ported to 0.9.38.4.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  18 Dec 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  -files/firejail-0.9.38.4-0001-etc-resolv.conf-overwrite.patch,
+  -files/firejail-0.9.38.4-sysmacros.patch, -firejail-0.9.38.4-r1.ebuild:
+  Remove older LTS version
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  18 Dec 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  -files/firejail-0.9.38.6-sysmacros.patch, -firejail-0.9.38.6.ebuild,
+  firejail-0.9.44.2.ebuild, metadata.xml:
+  lts: Move LTS version to separate package
+
+  Having it in a separate package makes it easier for users to follow LTS
+  branch of firejail. Before that users had to mask older versions to test
+  LTS. It's better than having it slotted because portage by default picks
+  up latest version from any slot and user would have to explicitly
+  install particular slot.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+
+  18 Dec 2016; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  firejail-0.9.44.2.ebuild:
+  Block firejail-lts rather than itself
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

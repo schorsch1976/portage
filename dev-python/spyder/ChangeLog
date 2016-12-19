@@ -126,3 +126,10 @@
 
   Package-Manager: portage-2.3.3
 
+*spyder-3.0.2-r1 (18 Dec 2016)
+
+  18 Dec 2016; Andrey Grozin <grozin@gentoo.org> +spyder-3.0.2-r1.ebuild:
+  install spyder2 and spyder3
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

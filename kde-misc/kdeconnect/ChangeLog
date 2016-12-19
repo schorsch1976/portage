@@ -224,3 +224,19 @@
 
   Signed-off-by: Johannes Huber <johu@gentoo.org>
 
+*kdeconnect-1.0.3 (18 Dec 2016)
+
+  18 Dec 2016; Johannes Huber <johu@gentoo.org> +kdeconnect-1.0.3.ebuild:
+  1.0.3 version bump
+
+  Package-Manager: portage-2.3.0
+
+  Closes: https://github.com/gentoo/gentoo/pull/3144
+  Signed-off-by: Johannes Huber <johu@gentoo.org>
+
+  18 Dec 2016; Johannes Huber <johu@gentoo.org> -kdeconnect-1.0.2-r1.ebuild,
+  metadata.xml:
+  Remove 1.0.2 (r1)
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

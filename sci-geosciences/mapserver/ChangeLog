@@ -135,3 +135,15 @@
 
   Package-Manager: portage-2.3.0
 
+*mapserver-7.0.3 (17 Dec 2016)
+
+  17 Dec 2016; Sam Jorna <wraeth@gentoo.org> -mapserver-7.0.1-r1.ebuild,
+  +mapserver-7.0.3.ebuild:
+  bump to 7.0.3 #602616
+
+  Version bump to 7.0.3. Resolves information leakage from OGR driver.
+  Remove PHP5.5.
+
+  Gentoo-bug: 602616
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -287,3 +287,17 @@
 
   Gentoo-Bug: 602220
 
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> xscreensaver-5.36.ebuild:
+  amd64 stable wrt bug #602220
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> xscreensaver-5.36.ebuild:
+  x86 stable wrt bug #602220
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

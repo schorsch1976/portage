@@ -66,3 +66,15 @@
 
   Package-Manager: portage-2.3.0
 
+  18 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  Gentoo-App-Pram-0.4.0.ebuild:
+  stable for amd64+x86.
+
+  Package-Manager: portage-2.3.0
+
+  18 Dec 2016; Patrice Clement <monsieurp@gentoo.org>
+  -Gentoo-App-Pram-0.3.0.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+

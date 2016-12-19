@@ -211,3 +211,12 @@
 
   Gentoo-Bug: 598613
 
+  18 Dec 2016; Aaron Bauman <bman@gentoo.org> linux-headers-4.4.ebuild:
+  amd64 stable wrt bug #598613
+
+  18 Dec 2016; Jeroen Roovers <jer@gentoo.org> linux-headers-4.4.ebuild:
+  Stable for HPPA (bug #598613).
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+  RepoMan-Options: --ignore-arches
+

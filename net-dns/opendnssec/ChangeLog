@@ -144,3 +144,28 @@
 
   Package-Manager: portage-2.3.0
 
+*opendnssec-2.0.1-r1 (18 Dec 2016)
+
+  18 Dec 2016; Marc Schiffbauer <mschiff@gentoo.org>
+  opendnssec-1.3.18-r1.ebuild, opendnssec-1.4.8.2.ebuild,
+  -opendnssec-2.0.1.ebuild, +opendnssec-2.0.1-r1.ebuild:
+  remove base inherit
+
+  18 Dec 2016; Marc Schiffbauer <mschiff@gentoo.org>
+  opendnssec-1.3.18-r1.ebuild, opendnssec-1.4.8.2.ebuild,
+  opendnssec-1.4.10.ebuild, opendnssec-2.0.1-r1.ebuild:
+  fix softhsm dependency (add slot)
+
+  18 Dec 2016; Marc Schiffbauer <mschiff@gentoo.org>
+  opendnssec-2.0.1-r1.ebuild:
+  fix sed calls, fixes #601310
+
+  Thanks to Kévin Beaubestre for the patch!
+
+*opendnssec-2.0.3 (18 Dec 2016)
+
+  18 Dec 2016; Marc Schiffbauer <mschiff@gentoo.org> +opendnssec-2.0.3.ebuild:
+  bump version
+
+  Package-Manager: portage-2.3.2
+

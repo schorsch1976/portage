@@ -83,3 +83,6 @@
 
   Gentoo-Bug: 601760
 
+  18 Dec 2016; Aaron Bauman <bman@gentoo.org> libvorbis-1.3.5.ebuild:
+  amd64 stable wrt bug #601760
+

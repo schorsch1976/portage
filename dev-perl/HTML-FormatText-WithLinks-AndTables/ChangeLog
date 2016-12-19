@@ -71,3 +71,16 @@
 
   Package-Manager: portage-2.2.27
 
+*HTML-FormatText-WithLinks-AndTables-0.70.0 (18 Dec 2016)
+
+  18 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +HTML-FormatText-WithLinks-AndTables-0.70.0.ebuild, +files/README-INC.patch:
+  Bump to version 0.70.0
+
+  - EAPI6
+
+  Upstream:
+  - Strip \240 characters emitted by HTML::Formatter when it translates &nbsp;
+
+  Package-Manager: portage-2.3.3
+

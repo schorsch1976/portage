@@ -67,3 +67,20 @@
   File-ShareDir-1.30.0-r1.ebuild:
   added ~alpha, bug 576058.
 
+*File-ShareDir-1.102.0 (18 Dec 2016)
+
+  18 Dec 2016; Kent Fredric <kentnl@gentoo.org> +File-ShareDir-1.102.0.ebuild:
+  Bump to version 1.102.0
+
+  - EAPI6
+  - Parallel Tests
+
+  Upstream:
+  - Switch to EUMM
+  - Documentation fixes
+
+  Keywording:
+  - Dropped hppa due to new dependency File-ShareDir-Install
+
+  Package-Manager: portage-2.3.3
+

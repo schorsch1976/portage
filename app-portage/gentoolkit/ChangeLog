@@ -195,3 +195,8 @@
   17 Dec 2016; Aaron Bauman <bman@gentoo.org> gentoolkit-0.3.2-r1.ebuild:
   amd64 stable wrt bug #590170
 
+  18 Dec 2016; Zac Medico <zmedico@gentoo.org> gentoolkit-0.3.0.8-r2.ebuild,
+  gentoolkit-0.3.0.9-r2.ebuild, gentoolkit-0.3.1.1.ebuild,
+  gentoolkit-0.3.2.ebuild, gentoolkit-0.3.2-r1.ebuild, gentoolkit-9999.ebuild:
+  update postinst guide url, #534470
+

@@ -255,3 +255,10 @@
 
   Gentoo-Bug: 584742
 
+*mpd-0.19.21 (18 Dec 2016)
+
+  18 Dec 2016; Jeroen Roovers <jer@gentoo.org> +mpd-0.19.21.ebuild:
+  Version bump.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

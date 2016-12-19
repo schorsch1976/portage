@@ -75,3 +75,16 @@
 
   Package-Manager: portage-2.3.0
 
+*File-ShareDir-Install-0.110.0 (18 Dec 2016)
+
+  18 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +File-ShareDir-Install-0.110.0.ebuild, metadata.xml:
+  Bump to version 0.110.0
+
+  - EAPI6
+
+  Upstream:
+  - Fix recursive installation of dotfiles.
+
+  Package-Manager: portage-2.3.3
+

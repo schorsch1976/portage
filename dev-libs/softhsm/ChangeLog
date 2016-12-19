@@ -88,3 +88,32 @@
 
   Package-Manager: portage-2.2.27
 
+*softhsm-2.0.0-r1 (18 Dec 2016)
+
+  18 Dec 2016; Marc Schiffbauer <mschiff@gentoo.org> metadata.xml,
+  -softhsm-2.0.0.ebuild, +softhsm-2.0.0-r1.ebuild:
+  revbump new slot and new USE flag (fix #601314)
+
+  SLOT this version so it can be installed together with
+  1.x version
+  add use flag 'migration-tool' which will build the
+  db migration tool (enabled by default)
+
+  Thanks to Kévin Beaubestre for reporting
+
+  Fixes bug #601314
+
+  Package-Manager: portage-2.3.2
+
+*softhsm-2.2.0 (18 Dec 2016)
+
+  18 Dec 2016; Marc Schiffbauer <mschiff@gentoo.org> +softhsm-2.2.0.ebuild:
+  bump version
+
+  Package-Manager: portage-2.3.2
+
+  18 Dec 2016; Marc Schiffbauer <mschiff@gentoo.org> softhsm-2.2.0.ebuild:
+  add blocker to 2.0.0:0
+
+  Package-Manager: portage-2.3.2
+

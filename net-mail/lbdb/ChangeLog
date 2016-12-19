@@ -86,3 +86,17 @@
   09 Dec 2016; Tim Harder <radhermit@gentoo.org> +lbdb-0.42.ebuild:
   version bump to 0.42
 
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> lbdb-0.41.ebuild:
+  amd64 stable wrt bug #602068
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> lbdb-0.41.ebuild:
+  x86 stable wrt bug #602068
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

@@ -262,3 +262,10 @@
 
   Package-Manager: portage-2.3.2
 
+  18 Dec 2016; Davide Pesavento <pesa@gentoo.org> qt-creator-4.1.0.ebuild:
+  restrict dep on qbs
+
+  Build fails against the newly released qbs-1.7.0
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

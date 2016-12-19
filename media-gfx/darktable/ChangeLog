@@ -271,3 +271,9 @@
 
   Package-Manager: portage-2.3.3
 
+  18 Dec 2016; Markus Meier <maekke@gentoo.org> darktable-2.0.6.ebuild,
+  darktable-2.0.7.ebuild, darktable-2.2.0_rc3.ebuild:
+  bump usermanual
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

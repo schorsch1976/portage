@@ -646,3 +646,9 @@
 
   Package-Manager: portage-2.3.2_p13
 
+  18 Dec 2016; Mike Gilbert <floppym@gentoo.org> systemd-9999.ebuild:
+  depend on >=sys-apps/dbus-1.9.8
+
+  Ref: https://github.com/systemd/systemd/pull/4892
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

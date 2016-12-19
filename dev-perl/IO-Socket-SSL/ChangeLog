@@ -178,3 +178,15 @@
 
   Package-Manager: portage-2.3.2
 
+*IO-Socket-SSL-2.40.0 (18 Dec 2016)
+
+  18 Dec 2016; Kent Fredric <kentnl@gentoo.org> +IO-Socket-SSL-2.40.0.ebuild:
+  Bump to version 2.40.0
+
+  Upstream:
+  - Better handling of default CA path with OpenSSL 1.1x
+  - Utils::CERT_asHash now includes signature algorithm used
+  - Utils::CERT_asHash now supports large serial numbers
+
+  Package-Manager: portage-2.3.3
+

@@ -66,3 +66,13 @@
   18 May 2016; Austin English <wizardedit@gentoo.org> files/clamsmtpd.init:
   use #!/sbin/openrc-run instead of #!/sbin/runscript
 
+  17 Dec 2016; Patrice Clement <monsieurp@gentoo.org> clamsmtp-1.10.ebuild,
+  metadata.xml:
+  update SRC_URI and HOMEPAGE.
+
+  Gentoo-Bug: https://bugs.gentoo.org/586738
+
+  Closes: https://github.com/gentoo/gentoo/pull/3118
+
+  Signed-off-by: Patrice Clement <monsieurp@gentoo.org>
+

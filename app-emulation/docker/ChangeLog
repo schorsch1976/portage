@@ -552,3 +552,16 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+*docker-1.13.0_rc4 (18 Dec 2016)
+
+  18 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +docker-1.13.0_rc4.ebuild:
+  Version bump to 1.13.0_rc4
+
+  Package-Manager: portage-2.3.3
+
+  18 Dec 2016; Manuel Rüger <mrueg@gentoo.org> -docker-1.12.4.ebuild,
+  -docker-1.13.0_rc2.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.3
+

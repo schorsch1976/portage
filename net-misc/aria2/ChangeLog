@@ -151,3 +151,8 @@
   22 Nov 2016; Michał Górny <mgorny@gentoo.org> +aria2-1.29.0.ebuild:
   Bump to 1.29.0, fix respecting USE=ssh, minor cleanup
 
+*aria2-1.30.0 (18 Dec 2016)
+
+  18 Dec 2016; Michał Górny <mgorny@gentoo.org> +aria2-1.30.0.ebuild:
+  Bump to 1.30.0
+

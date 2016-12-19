@@ -71,3 +71,18 @@
   24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
   Set appropriate maintainer types in metadata.xml (GLEP 67)
 
+*File-Scan-ClamAV-1.950.0 (18 Dec 2016)
+
+  18 Dec 2016; Kent Fredric <kentnl@gentoo.org>
+  +File-Scan-ClamAV-1.950.0.ebuild:
+  Bump to version 1.950.0
+
+  - Extend testing implementation to make clearer to arch-testers
+    that tests can be turned on, and by all means is encouraged and
+    expected to work *if* ClamAV is configured.
+
+  Upstream:
+  - Stream scanners now use INSTREAM
+
+  Package-Manager: portage-2.3.3
+

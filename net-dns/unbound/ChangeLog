@@ -139,3 +139,8 @@
   17 Dec 2016; Aaron Bauman <bman@gentoo.org> unbound-1.5.10.ebuild:
   amd64 stable
 
+  18 Dec 2016; Mike Gilbert <floppym@gentoo.org> unbound-1.5.10.ebuild:
+  add slot-operator to libevent dep
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

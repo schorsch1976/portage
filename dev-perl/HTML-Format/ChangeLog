@@ -103,3 +103,14 @@
 
   Package-Manager: portage-2.2.27
 
+  18 Dec 2016; Kent Fredric <kentnl@gentoo.org> HTML-Format-2.140.0.ebuild:
+  Fix bad author tests
+
+  Lots of these tests declare dependencies which never get used,
+  and aren't used by us, but another test checks for them being installed
+  and subsequently fails.
+
+  This patches out those superfluous dependencies.
+
+  Package-Manager: portage-2.3.3
+

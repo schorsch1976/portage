@@ -68,3 +68,8 @@
 
   Package-Manager: portage-2.2.28
 
+  18 Dec 2016; Hans de Graaff <graaff@gentoo.org> state_machine-1.2.0.ebuild:
+  add ruby23
+
+  Package-Manager: portage-2.3.0
+

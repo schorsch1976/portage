@@ -64,3 +64,11 @@
 
   Package-Manager: portage-2.2.28
 
+  18 Dec 2016; Amy Winston <amynka@gentoo.org>
+  files/slic3r-9999-adjust_var_path.patch:
+  fix patch lines bug #602976
+
+  Suggested-by: Philippe Trottier (tchiwam@gmail.com)
+
+  Package-Manager: portage-2.3.0
+

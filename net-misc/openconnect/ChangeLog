@@ -286,3 +286,10 @@
 
   Package-Manager: portage-2.3.2_p8
 
+*openconnect-7.08 (18 Dec 2016)
+
+  18 Dec 2016; Mike Gilbert <floppym@gentoo.org> +openconnect-7.08.ebuild:
+  bump to 7.08
+
+  Package-Manager: Portage-2.3.3_p7, Repoman-2.3.1
+

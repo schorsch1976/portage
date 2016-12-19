@@ -103,3 +103,21 @@
 
   Package-Manager: portage-2.3.0
 
+  17 Dec 2016; Patrice Clement <monsieurp@gentoo.org> hstr-1.21.ebuild:
+  mark stable for the remaining arches using the ALLARCHES policy.
+
+  Package-Manager: portage-2.3.0
+
+  17 Dec 2016; Patrice Clement <monsieurp@gentoo.org> -hstr-1.19.ebuild:
+  clean up old.
+
+  Package-Manager: portage-2.3.0
+
+*hstr-1.21-r1 (18 Dec 2016)
+
+  18 Dec 2016; Patrice Clement <monsieurp@gentoo.org> +hstr-1.21-r1.ebuild:
+  EAPI 6 bump. Convert ebuild away from autotools-utils.eclass and to
+  {autotools,multilib-minimal}.eclass.
+
+  Package-Manager: portage-2.3.0
+

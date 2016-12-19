@@ -88,3 +88,24 @@
 
   Signed-off-by: Doug Goldstein <cardoe@gentoo.org>
 
+  18 Dec 2016; Doug Goldstein <cardoe@gentoo.org> cargo-0.13.0-r1.ebuild,
+  cargo-0.14.0.ebuild:
+  fix wrong dependencies
+
+  When these packages were added the wrong crate dependencies were used
+  and as a result the package relies on reaching out to the internet
+  during the compile phase to build properly. This fails for users using
+  FEATURE="network-sandbox". The dependencies are generated using
+  https://crates.io/crates/cargo-ebuild
+
+  Signed-off-by: Doug Goldstein <cardoe@gentoo.org>
+
+  18 Dec 2016; Doug Goldstein <cardoe@gentoo.org> cargo-0.13.0-r1.ebuild,
+  cargo-0.14.0.ebuild:
+  use a newer snapshot to build
+
+  Use a newer snapshot of Cargo to build Cargo so that we can drop the
+  special casing in the ebuild.
+
+  Signed-off-by: Doug Goldstein <cardoe@gentoo.org>
+

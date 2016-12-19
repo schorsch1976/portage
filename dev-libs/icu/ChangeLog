@@ -214,3 +214,9 @@
 
   Gentoo-Bug: 594494
 
+  18 Dec 2016; Markus Meier <maekke@gentoo.org> icu-58.1-r1.ebuild:
+  arm stable, bug #594494
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+  RepoMan-Options: --include-arches="arm"
+

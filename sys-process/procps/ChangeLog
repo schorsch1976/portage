@@ -317,3 +317,7 @@
   Package-Manager: portage-2.3.3
   RepoMan-Options: --include-arches="amd64,x86"
 
+  18 Dec 2016; Mike Frysinger <vapier@gentoo.org>
+  +files/procps-3.3.12-proc-tests.patch, procps-3.3.12.ebuild:
+  fix test failures under some kernel configs #583036
+

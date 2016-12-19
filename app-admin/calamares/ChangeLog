@@ -252,3 +252,8 @@
 
   Package-Manager: portage-2.3.2
 
+  18 Dec 2016; Johannes Huber <johu@gentoo.org> calamares-2.4.5.ebuild:
+  Restrict sys-libs/kpmcore highest version
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

@@ -312,3 +312,28 @@
 
   Package-Manager: Portage-2.3.3, Repoman-2.3.1
 
+  18 Dec 2016; Mike Frysinger <vapier@gentoo.org> iproute2-4.4.0.ebuild:
+  mark 4.4.0 arm64/m68k/s390/sh stable
+
+  18 Dec 2016; Mike Frysinger <vapier@gentoo.org>
+  -files/iproute2-2.6.26-ldflags.patch, -files/iproute2-2.6.29.1-flush.patch,
+  -files/iproute2-2.6.29.1-hfsc.patch,
+  -files/iproute2-2.6.35-cached-routes.patch,
+  -files/iproute2-2.6.35-no-iptables.patch,
+  -files/iproute2-2.6.35-no-ipv6.patch, -files/iproute2-2.6.35-xtables.patch,
+  -files/iproute2-2.6.38-parallel-build.patch,
+  -files/iproute2-3.1.0-no-ipv6.patch, -files/iproute2-3.10.0-no-ipv6.patch,
+  -files/iproute2-3.6.0-pkg-config.patch, -files/iproute2-3.7.0-clang.patch,
+  -files/iproute2-3.7.0-man7.patch,
+  -files/iproute2-3.8.0-old-mount-libc.patch,
+  -files/iproute2-4.0.0-tc-show-buffer-overflow.patch,
+  -iproute2-2.6.38.ebuild, -iproute2-3.3.0.ebuild, -iproute2-3.8.0.ebuild,
+  -iproute2-3.17.0.ebuild, -iproute2-3.19.0.ebuild, -iproute2-4.0.0-r2.ebuild,
+  -iproute2-4.1.1.ebuild, -iproute2-4.2.0.ebuild, -iproute2-4.3.0.ebuild:
+  drop old <4.4.0 versions
+
+  18 Dec 2016; Mike Frysinger <vapier@gentoo.org> iproute2-4.4.0.ebuild,
+  iproute2-4.5.0.ebuild, iproute2-4.6.0.ebuild, iproute2-4.7.0.ebuild,
+  iproute2-4.8.0.ebuild, iproute2-4.9.0.ebuild, iproute2-9999.ebuild:
+  improve configure tests #602960
+

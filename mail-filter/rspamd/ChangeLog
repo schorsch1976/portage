@@ -274,3 +274,14 @@
 
   Package-Manager: portage-2.3.0
 
+*rspamd-1.4.1 (18 Dec 2016)
+
+  18 Dec 2016; Dirkjan Ochtman <djc@gentoo.org> +files/rspamd.init-r3,
+  +rspamd-1.4.1.ebuild:
+  version bump to 1.4.1 (fixes bug 602980)
+
+  Package-Manager: portage-2.3.0
+
+  18 Dec 2016; Dirkjan Ochtman <djc@gentoo.org> -files/rspamd.init-r1:
+  remove unused init file
+

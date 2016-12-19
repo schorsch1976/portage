@@ -198,3 +198,25 @@
 
   Package-Manager: portage-2.3.3
 
+  17 Dec 2016; James Le Cuirot <chewi@gentoo.org> +files/makemkv-flags.patch,
+  makemkv-1.10.3.ebuild:
+  Fix building against Qt 5.7, closes bug #599228
+
+  The -std=c++11 flag is needed for building against Qt 5.7. Trouble is
+  that upstream builds with CC rather than CXX. This only exhibits a
+  warning but if you try to force CXX, it fails to build the C parts,
+  which probably explains why upstream did this in the first place. I
+  thought -x none might work but it breaks unless you put it before
+  every C file. Possibly a GCC bug? Ideally upstream would just use
+  automake and avoid this whole mess. The easiest way out is to only
+  apply CXX and -std=c++11 to the makemkv binary, which doesn't have any
+  C sources.
+
+  The new patch also respects LDFLAGS. CFLAGS (not CXXFLAGS) is already
+  respected by upstream now so src_compile is no longer needed.
+
+  Some of the src_install stuff has also been dropped in favour of
+  default as we now want upstream behaviour.
+
+  Package-Manager: portage-2.3.3
+

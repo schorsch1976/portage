@@ -189,3 +189,11 @@
   27 Jul 2016; Mike Frysinger <vapier@gentoo.org> metadata.xml:
   sourceforge: switch to https:// URIs
 
+*keepass-2.34-r1 (18 Dec 2016)
+
+  18 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +keepass-2.34-r1.ebuild:
+  fixing bug 592130
+
+  Package-Manager: portage-2.3.0
+

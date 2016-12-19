@@ -329,3 +329,9 @@
   17 Dec 2016; Aaron Bauman <bman@gentoo.org> tmux-2.2.ebuild:
   amd64 stable wrt bug #595620
 
+  18 Dec 2016; Lars Wendler <polynomial-c@gentoo.org> tmux-2.1.ebuild,
+  tmux-2.2.ebuild, tmux-2.3.ebuild, tmux-9999.ebuild:
+  Added sub-slot dependency for dev-libs/libevent.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

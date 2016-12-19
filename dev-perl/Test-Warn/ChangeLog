@@ -149,3 +149,19 @@
   RepoMan-Options: --include-arches="alpha amd64 amd64-fbsd arm arm64 hppa
   ia64 m68k mips nios2 ppc ppc64 riscv s390 sh sparc sparc-fbsd x86 x86-fbsd"
 
+*Test-Warn-0.310.0 (18 Dec 2016)
+
+  18 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Test-Warn-0.310.0.ebuild,
+  metadata.xml:
+  Bump to version 0.310.0
+
+  - EAPI6
+  - Parallel tests
+
+  Upstream:
+  - Add experimental support for matching warnigs that have a
+    trailing "\n", which were previously overlooked due to the
+    missing "at file <> line ... " component.
+
+  Package-Manager: portage-2.3.3
+

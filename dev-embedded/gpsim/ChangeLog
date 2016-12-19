@@ -72,3 +72,17 @@
   +files/gpsim-0.29.0-gui.patch, +gpsim-0.29.0.ebuild:
   version bump to 0.29.0
 
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> gpsim-0.29.0.ebuild:
+  amd64 stable wrt bug #602094
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> gpsim-0.29.0.ebuild:
+  x86 stable wrt bug #602094
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+

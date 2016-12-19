@@ -183,3 +183,8 @@
 
   Gentoo-Bug: 601684
 
+  18 Dec 2016; Göktürk Yüksek <gokturk@gentoo.org> metadata.xml:
+  reorder maintainers and remove obsolete description
+
+  Package-Manager: portage-2.3.0
+

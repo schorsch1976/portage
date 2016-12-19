@@ -89,3 +89,9 @@
   RepoMan-Options: --include-arches="x86"
   Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
 
+  18 Dec 2016; Markus Meier <maekke@gentoo.org> libXpm-3.5.12.ebuild:
+  arm stable, bug #602782
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+  RepoMan-Options: --include-arches="arm"
+

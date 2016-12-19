@@ -168,3 +168,7 @@
 
   Package-Manager: portage-2.3.0
 
+  18 Dec 2016; Dirkjan Ochtman <djc@gentoo.org>
+  -files/1.8.4-optional-memcached.patch:
+  remove unused patch
+

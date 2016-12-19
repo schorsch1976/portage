@@ -83,3 +83,23 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> unetbootin-625.ebuild:
+  amd64 stable wrt bug #596594
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  18 Dec 2016; Agostino Sarubbo <ago@gentoo.org> unetbootin-625.ebuild:
+  x86 stable wrt bug #596594
+
+  Package-Manager: portage-2.3.0
+  RepoMan-Options: --include-arches="x86"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
+  18 Dec 2016; Jeroen Roovers <jer@gentoo.org> -unetbootin-608.ebuild,
+  -unetbootin-619.ebuild:
+  Old.
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

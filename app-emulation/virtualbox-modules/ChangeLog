@@ -461,3 +461,13 @@
 
   Package-Manager: portage-2.3.2
 
+  18 Dec 2016; Justin Lecher <jlec@gentoo.org>
+  +files/virtualbox-modules-5.1.10-ALIGN-backport.patch, metadata.xml,
+  virtualbox-modules-5.1.10.ebuild:
+  Backport fix for compatibility with linux-4.9
+
+  Gentoo-Bug: https://bugs.gentoo.org/show_bug.cgi?id=602942
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+
