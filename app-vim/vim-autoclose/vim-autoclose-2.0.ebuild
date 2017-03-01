@@ -1,7 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id: f3f5770eb2e11cf29b207c70718549f497b5c6f9 $
-
 EAPI=6
 
 inherit vim-plugin
@@ -11,9 +9,6 @@ HOMEPAGE="https://github.com/Townk/vim-autoclose"
 SRC_URI="https://dev.gentoo.org/~monsieurp/packages/${P}.tar.gz"
 LICENSE="vim"
 KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
-
-DEPEND="app-arch/unzip"
-RDEPEND="${DEPEND}"
 
 src_unpack() {
 	default

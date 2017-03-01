@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id: dbd27e52bd0eeec444e6f5ebd361ebd39953aedf $
 
 EAPI=6
 
@@ -9,7 +8,7 @@ HOMEPAGE="http://www.nagios.org/"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ppc ppc64 ~sparc ~x86"
+KEYWORDS="alpha ~amd64 ~arm ~arm64 ~hppa ppc ppc64 ~sparc ~x86"
 IUSE=""
 
 RDEPEND="~net-analyzer/nagios-core-${PV}

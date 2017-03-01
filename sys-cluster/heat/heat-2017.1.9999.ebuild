@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id: a6439ca25b031f213658839e52aad1ecf070df7a $
 
 EAPI=6
 PYTHON_COMPAT=( python2_7 python3_4 )
@@ -9,6 +8,7 @@ inherit distutils-r1 eutils git-r3 linux-info user
 
 DESCRIPTION="A CloudFormation-compatible openstack-native cloud orchistration engine."
 HOMEPAGE="https://launchpad.net/heat"
+SRC_URI="https://dev.gentoo.org/~prometheanfire/dist/openstack/heat/heat.conf.sample.ocata -> heat.conf.sample-${PV}"
 EGIT_REPO_URI="https://github.com/openstack/heat.git"
 EGIT_BRANCH="stable/ocata"
 
@@ -72,7 +72,7 @@ RDEPEND="
 	>=dev-python/python-monascaclient-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/python-neutronclient-5.1.0[${PYTHON_USEDEP}]
 	>=dev-python/python-novaclient-6.0.0[${PYTHON_USEDEP}]
-	!~dev-python/python-novaclient-7.1.0[${PYTHON_USEDEP}]
+	!~dev-python/python-novaclient-7.0.0[${PYTHON_USEDEP}]
 	>=dev-python/python-openstackclient-3.3.0[${PYTHON_USEDEP}]
 	>=dev-python/python-saharaclient-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/python-senlinclient-1.1.0[${PYTHON_USEDEP}]
@@ -136,7 +136,7 @@ python_install_all() {
 
 	insinto /etc/heat
 	insopts -m0640 -o heat -g heat
-	newins "${FILESDIR}/ocata-heat.conf.sample" "heat.conf.sample"
+	newins "${DISTDIR}/heat.conf.sample-${PV}" "heat.conf.sample"
 	doins "etc/heat/api-paste.ini"
 	doins "etc/heat/policy.json"
 	insinto /etc/heat/templates
