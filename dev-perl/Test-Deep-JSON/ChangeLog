@@ -1,0 +1,18 @@
+# ChangeLog for dev-perl/Test-Deep-JSON
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Test-Deep-JSON-0.30.0 (22 Nov 2016)
+
+  22 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Test-Deep-JSON-0.30.0.ebuild,
+  +metadata.xml:
+  Add w/ version 0.30.0
+
+  Required for app-admin/rex via VCS
+  via dev-perl/Dist-Zilla-Plugin-OSPrereqs
+
+  Previously maintained in ::perl-experimental since Apr 2014
+  by Kent Fredric
+
+  Package-Manager: portage-2.3.2
+

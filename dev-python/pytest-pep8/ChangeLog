@@ -1,0 +1,12 @@
+# ChangeLog for dev-python/pytest-pep8
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*pytest-pep8-1.0.6 (30 Nov 2016)
+
+  30 Nov 2016; Lars Wendler <polynomial-c@gentoo.org> +metadata.xml,
+  +pytest-pep8-1.0.6.ebuild:
+  Initial commit.
+
+  Package-Manager: portage-2.3.2
+

@@ -1,0 +1,20 @@
+# ChangeLog for media-plugins/gst-plugins-srtp
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*gst-plugins-srtp-1.8.3 (18 Sep 2016)
+
+  18 Sep 2016; Gilles Dartiguelongue <eva@gentoo.org>
+  +gst-plugins-srtp-1.8.3.ebuild, +metadata.xml:
+  initial ebuild, bug #592192
+
+  Package-Manager: portage-2.3.0
+
+*gst-plugins-srtp-1.8.3-r1 (09 Dec 2016)
+
+  09 Dec 2016; Pacho Ramos <pacho@gentoo.org> -gst-plugins-srtp-1.8.3.ebuild,
+  +gst-plugins-srtp-1.8.3-r1.ebuild:
+  Needs slot 0, bug #600884 by Toralf Förster and Johan Ymerson.
+
+  Package-Manager: portage-2.3.2
+

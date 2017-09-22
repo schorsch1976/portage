@@ -1,0 +1,19 @@
+# ChangeLog for media-libs/vulkan-loader
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*vulkan-loader-1.0.30.0 (15 Nov 2016)
+
+  15 Nov 2016; Matt Turner <mattst88@gentoo.org> +metadata.xml,
+  +vulkan-loader-1.0.30.0.ebuild:
+  New package.
+
+  15 Nov 2016; Matt Turner <mattst88@gentoo.org>
+  vulkan-loader-1.0.30.0.ebuild:
+  Disable validation layers.
+
+  Even though I want these to be enabled, I intended for them to be
+  disabled in the initial commit due to build system complexities.
+
+  Bug: https://bugs.gentoo.org/599754
+

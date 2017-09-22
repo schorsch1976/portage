@@ -1,0 +1,21 @@
+# ChangeLog for dev-perl/String-Errf
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*String-Errf-0.8.0 (21 Nov 2016)
+
+  21 Nov 2016; Kent Fredric <kentnl@gentoo.org> +String-Errf-0.8.0.ebuild,
+  +metadata.xml:
+  Add w/ version 0.8.0
+
+  Required by dev-perl/Dist-Zilla:
+        dev-perl/Dist-Zilla ->
+         dev-perl/Config-MVP ->
+          dev-perl/Role-HasMessage ->
+           dev-perl/String-Errf
+
+  Previously maintained by myself and Torsten Veller in ::perl-experimental
+  since Feb 2011
+
+  Package-Manager: portage-2.3.2
+

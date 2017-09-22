@@ -1,0 +1,133 @@
+# ChangeLog for www-apps/grafana-bin
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*grafana-bin-3.0.4 (22 Jun 2016)
+
+  22 Jun 2016; Patrick Lauer <patrick@gentoo.org> +files/grafana.confd,
+  +files/grafana.initd, +grafana-bin-3.0.4.ebuild, +metadata.xml:
+  Initial import, ebuild borrowed from Adjust overlay
+
+  Package-Manager: portage-2.3.0_rc1
+
+*grafana-bin-3.1.0_beta1 (28 Jun 2016)
+
+  28 Jun 2016; Patrick Lauer <patrick@gentoo.org>
+  +grafana-bin-3.1.0_beta1.ebuild:
+  Bump to 3.1_beta
+
+  Package-Manager: portage-2.3.0
+
+*grafana-bin-3.1.0 (18 Jul 2016)
+
+  18 Jul 2016; Patrick Lauer <patrick@gentoo.org>
+  -grafana-bin-3.1.0_beta1.ebuild, +grafana-bin-3.1.0.ebuild:
+  Bump
+
+  Package-Manager: portage-2.3.0
+
+*grafana-bin-3.1.0-r1 (18 Jul 2016)
+
+  18 Jul 2016; Patrick Lauer <patrick@gentoo.org> +files/grafana.initd.2,
+  -grafana-bin-3.1.0.ebuild, +grafana-bin-3.1.0-r1.ebuild:
+  Fix pidfile handling
+
+  Package-Manager: portage-2.3.0
+
+  24 Aug 2016; Pacho Ramos <pacho@gentoo.org> -files/grafana.initd,
+  -grafana-bin-3.0.4.ebuild:
+  Drop old
+
+  Package-Manager: portage-2.3.0
+
+  24 Aug 2016; Pacho Ramos <pacho@gentoo.org> files/grafana.initd.2:
+  use #!/sbin/openrc-run instead of #!/sbin/runscript
+
+  Package-Manager: portage-2.3.0
+
+*grafana-bin-3.1.1 (18 Nov 2016)
+
+  18 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  +grafana-bin-3.1.1.ebuild:
+  version bump to v3.1.1
+
+  Package-Manager: portage-2.3.2
+
+*grafana-bin-4.0_beta2 (27 Nov 2016)
+
+  27 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  +grafana-bin-4.0_beta2.ebuild:
+  Add 4.0_beta2
+
+  Package-Manager: portage-2.3.2
+
+  28 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  grafana-bin-4.0_beta2.ebuild:
+  Fix fat-fingered SRC_URI
+
+  Package-Manager: portage-2.3.2
+
+*grafana-bin-4.0.0_beta2 (28 Nov 2016)
+
+  28 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  -grafana-bin-4.0_beta2.ebuild, +grafana-bin-4.0.0_beta2.ebuild:
+  Fix wandering SRC checksum and version number
+
+  Package-Manager: portage-2.3.2
+
+*grafana-bin-4.0.0 (30 Nov 2016)
+
+  30 Nov 2016; Tobias Klausmann <klausman@gentoo.org>
+  -grafana-bin-3.1.0-r1.ebuild, -grafana-bin-4.0.0_beta2.ebuild,
+  +grafana-bin-4.0.0.ebuild:
+  Add v4.0.0 and clean up old
+
+  Package-Manager: portage-2.3.2
+
+*grafana-bin-4.0.0-r1 (01 Dec 2016)
+
+  01 Dec 2016; Tobias Klausmann <klausman@gentoo.org> files/grafana.confd,
+  -grafana-bin-4.0.0.ebuild, +grafana-bin-4.0.0-r1.ebuild:
+  Add info about higher FD ulimit for 4.x
+
+  Package-Manager: portage-2.3.2
+
+*grafana-bin-4.0.0 (01 Dec 2016)
+
+  01 Dec 2016; Tobias Klausmann <klausman@gentoo.org> files/grafana.confd,
+  +grafana-bin-4.0.0.ebuild, -grafana-bin-4.0.0-r1.ebuild:
+  Revert "www-apps/grafana-bin: Add info about higher FD ulimit for 4.x"
+
+  This reverts commit 620deff506d5d7ae1260fb2fa3f5e6188ad50af6.
+
+  Grafana 4.0.0 has a massive FD leak problem (needing a restart every ten
+  minutes, depending on the amount of dashboard users and metrics).
+
+  Upstream is aware:
+
+  https://github.com/grafana/grafana/issues/6759
+
+  Still, we'll roll back 4.0.0 to beta2 until 4.0.1 is out.
+
+*grafana-bin-4.0.0_beta2 (01 Dec 2016)
+*grafana-bin-3.1.0-r1 (01 Dec 2016)
+
+  01 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  +grafana-bin-3.1.0-r1.ebuild, +grafana-bin-4.0.0_beta2.ebuild,
+  -grafana-bin-4.0.0.ebuild:
+  Revert "www-apps/grafana-bin: Add v4.0.0 and clean up old"
+
+  This reverts commit 3ddd8eb7d18e7f74826d3bc04963786dd7f9b65b.
+
+  This _actually_ reverts grafana 4.0.0 to 4.0.0_beta2
+
+*grafana-bin-4.0.1 (02 Dec 2016)
+
+  02 Dec 2016; Tobias Klausmann <klausman@gentoo.org>
+  -grafana-bin-3.1.0-r1.ebuild, +grafana-bin-4.0.1.ebuild:
+  Add 4.0.1, hopefully without FD leaks
+
+  Also remove one older version.
+
+  Package-Manager: portage-2.3.2
+

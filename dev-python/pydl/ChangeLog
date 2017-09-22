@@ -1,0 +1,20 @@
+# ChangeLog for dev-python/pydl
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*pydl-0.5.2 (06 Sep 2016)
+
+  06 Sep 2016; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +pydl-0.5.2.ebuild:
+  initial import
+
+  Package-Manager: portage-2.3.0
+
+*pydl-0.5.3 (05 Dec 2016)
+
+  05 Dec 2016; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/pydl-ignore_entry_points.patch, +pydl-0.5.3.ebuild:
+  version bump
+
+  Package-Manager: portage-2.3.2
+

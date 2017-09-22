@@ -1,0 +1,21 @@
+# ChangeLog for dev-perl/Devel-FindPerl
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Devel-FindPerl-0.14.0 (21 Nov 2016)
+
+  21 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Devel-FindPerl-0.14.0.ebuild,
+  +metadata.xml:
+  Add w/ version 0.14.0
+
+  Required for dev-perl/Dist-Zilla via:
+        dev-perl/Dist-Zilla ->
+         dev-perl/Perl-PrereqScanner ->
+          dev-perl/Module-Path ->
+           dev-perl/Devel-FindPerl
+
+  Previously maintained in ::perl-experimental by myself since
+  October 2013
+
+  Package-Manager: portage-2.3.2
+

@@ -1,0 +1,40 @@
+# ChangeLog for dev-ml/markup
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*markup-0.7.2 (24 May 2016)
+
+  24 May 2016; Alexis Ballier <aballier@gentoo.org> +markup-0.7.2.ebuild,
+  +metadata.xml:
+  initial import; ebuild by me
+
+  Package-Manager: portage-2.3.0_rc1
+
+*markup-0.7.2-r1 (28 Nov 2016)
+
+  28 Nov 2016; Alexis Ballier <aballier@gentoo.org> +files/test.patch,
+  +files/uutf.patch, -markup-0.7.2.ebuild, +markup-0.7.2-r1.ebuild:
+  fix build with uutf 1.0
+
+  Package-Manager: portage-2.3.2
+
+*markup-0.7.3 (01 Dec 2016)
+
+  01 Dec 2016; Alexis Ballier <aballier@gentoo.org> +markup-0.7.3.ebuild:
+  bump to 0.7.3
+
+  Package-Manager: portage-2.3.2
+
+  01 Dec 2016; Alexis Ballier <aballier@gentoo.org> -files/test.patch,
+  -files/uutf.patch, -markup-0.7.2-r1.ebuild:
+  remove old
+
+  Package-Manager: portage-2.3.2
+
+*markup-0.7.4 (13 Dec 2016)
+
+  13 Dec 2016; Alexis Ballier <aballier@gentoo.org> +markup-0.7.4.ebuild:
+  bump to 0.7.4
+
+  Package-Manager: Portage-2.3.3, Repoman-2.3.1
+

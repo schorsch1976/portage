@@ -1,0 +1,15 @@
+# ChangeLog for x11-misc/xiccd
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*xiccd-0.2.3 (29 Nov 2016)
+
+  29 Nov 2016; Marek Szuba <marecki@gentoo.org> +metadata.xml,
+  +xiccd-0.2.3.ebuild:
+  new package
+
+  A desktop environment-free equivalent of the gnome-settings-daemon colord
+  plug-in, colord-kde and so on.
+
+  Package-Manager: portage-2.3.2
+

@@ -1,0 +1,28 @@
+# ChangeLog for x11-libs/xapps
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*xapps-1.0.2 (27 Nov 2016)
+
+  27 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> +metadata.xml,
+  +xapps-1.0.2.ebuild:
+  New package
+
+  Needed by gnome-extras/cinnamon
+  Gentoo-Bug: 600552
+
+  Package-Manager: portage-2.3.2
+
+*xapps-1.0.2-r1 (27 Nov 2016)
+
+  27 Nov 2016; Kristian Fiskerstrand <k_f@gentoo.org> -xapps-1.0.2.ebuild,
+  +xapps-1.0.2-r1.ebuild:
+  Fixes to previous addition
+
+  Package-Manager: portage-2.3.2
+
+  27 Nov 2016; David Seifert <soap@gentoo.org> xapps-1.0.2-r1.ebuild:
+  QA] Various fixes
+
+  Package-Manager: portage-2.3.2
+

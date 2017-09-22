@@ -1,0 +1,14 @@
+# ChangeLog for dev-perl/Sereal-Decoder
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Sereal-Decoder-3.15.0 (08 Dec 2016)
+
+  08 Dec 2016; Kent Fredric <kentnl@gentoo.org> +Sereal-Decoder-3.15.0.ebuild,
+  +metadata.xml:
+  Add w/ version 3.15.0
+
+  required by dev-perl/Sereal and in turn, dev-perl/Event-RPC
+
+  Package-Manager: portage-2.3.3
+

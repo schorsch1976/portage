@@ -1,0 +1,12 @@
+# ChangeLog for dev-perl/DateTime-Format-Human-Duration
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*DateTime-Format-Human-Duration-0.640.0 (16 Nov 2016)
+
+  16 Nov 2016; Göktürk Yüksek <gokturk@gentoo.org>
+  +DateTime-Format-Human-Duration-0.640.0.ebuild, +metadata.xml:
+  Initial ebuild
+
+  Required dependency for >=www-apps/webdavcgi-0.8.5
+

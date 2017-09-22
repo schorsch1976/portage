@@ -1,0 +1,12 @@
+# ChangeLog for dev-python/python-redmine
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*python-redmine-1.5.1 (15 Nov 2016)
+
+  15 Nov 2016; Michael Orlitzky <mjo@gentoo.org> +metadata.xml,
+  +python-redmine-1.5.1.ebuild:
+  new python interface to the redmine API.
+
+  Package-Manager: portage-2.3.0
+

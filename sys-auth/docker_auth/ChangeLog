@@ -1,0 +1,28 @@
+# ChangeLog for sys-auth/docker_auth
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*docker_auth-1.1 (06 Dec 2016)
+
+  06 Dec 2016; Manuel Rüger <mrueg@gentoo.org> +docker_auth-1.1.ebuild,
+  +files/docker_auth.confd, +files/docker_auth.initd,
+  +files/docker_auth.logrotated, +files/version.go, +metadata.xml:
+  Initial version
+
+  Package-Manager: portage-2.3.3
+
+*docker_auth-1.1-r1 (07 Dec 2016)
+
+  07 Dec 2016; Manuel Rüger <mrueg@gentoo.org> docker_auth-1.1.ebuild,
+  +docker_auth-1.1-r1.ebuild:
+  Add missed dependencies, install initscript
+
+  Gentoo-Bug: 601884 601882
+
+  Package-Manager: portage-2.3.3
+
+  07 Dec 2016; Manuel Rüger <mrueg@gentoo.org> -docker_auth-1.1.ebuild:
+  Remove old
+
+  Package-Manager: portage-2.3.3
+

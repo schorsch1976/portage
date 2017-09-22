@@ -1,0 +1,78 @@
+# ChangeLog for app-emulation/diskimage-builder
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*diskimage-builder-1.15.0 (01 May 2016)
+
+  01 May 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +diskimage-builder-1.15.0.ebuild, +metadata.xml:
+  adding for use and robbat :D
+
+  Package-Manager: portage-2.2.26
+
+*diskimage-builder-1.21.0 (11 Oct 2016)
+
+  11 Oct 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +diskimage-builder-1.21.0.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+
+*diskimage-builder-1.22.0 (18 Nov 2016)
+
+  18 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +diskimage-builder-1.22.0.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+
+*diskimage-builder-1.22.1 (21 Nov 2016)
+
+  21 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +diskimage-builder-1.22.1.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+
+*diskimage-builder-1.22.2 (26 Nov 2016)
+
+  26 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +diskimage-builder-1.22.2.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+
+*diskimage-builder-1.23.0 (30 Nov 2016)
+
+  30 Nov 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -diskimage-builder-1.15.0.ebuild, -diskimage-builder-1.21.0.ebuild,
+  -diskimage-builder-1.22.0.ebuild, -diskimage-builder-1.22.1.ebuild,
+  -diskimage-builder-1.22.2.ebuild, +diskimage-builder-1.23.0.ebuild:
+  bup and cleanup
+
+  Package-Manager: portage-2.3.0
+
+*diskimage-builder-1.24.0 (01 Dec 2016)
+
+  01 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +diskimage-builder-1.24.0.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+
+*diskimage-builder-1.25.0 (16 Dec 2016)
+
+  16 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  +diskimage-builder-1.25.0.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+
+*diskimage-builder-1.25.1 (17 Dec 2016)
+
+  17 Dec 2016; Matthew Thode <prometheanfire@gentoo.org>
+  -diskimage-builder-1.25.0.ebuild, +diskimage-builder-1.25.1.ebuild:
+  bup
+
+  Package-Manager: portage-2.3.0
+

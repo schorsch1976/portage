@@ -1,0 +1,53 @@
+# ChangeLog for sci-geosciences/liblas
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*liblas-1.8.0 (23 Oct 2015)
+
+  23 Oct 2015; Amy Winston <amynka@gentoo.org>
+  +files/liblas-1.8.0_remove-std-c++98.patch, +liblas-1.8.0.ebuild,
+  +metadata.xml:
+  new ebuild
+
+  New ebuild initially written by SoapZaNet and committed
+  under proxy-maintainers herd with wraeth as maintainer.
+
+  Package-Manager: portage-2.2.20.1
+
+  30 Oct 2015; Jeroen Roovers <jer@gentoo.org> liblas-1.8.0.ebuild:
+  Mark ~ppc64 (bug #563378).
+
+  Package-Manager: portage-2.2.23
+  RepoMan-Options: --ignore-arches
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Replace all herds with appropriate projects (GLEP 67)
+
+  Replace all uses of herd with appropriate project maintainers, or no
+  maintainers in case of herds requested to be disbanded.
+
+  24 Jan 2016; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Set appropriate maintainer types in metadata.xml (GLEP 67)
+
+  14 Mar 2016; Sam Jorna <wraeth@gentoo.org> metadata.xml:
+  update metadata
+
+  Package-Manager: portage-2.2.28
+
+*liblas-1.8.1 (25 Nov 2016)
+
+  25 Nov 2016; Sam Jorna <wraeth@gentoo.org> +liblas-1.8.1.ebuild:
+  bump to 1.8.1
+
+  Version bumped to 1.8.1. Multilib removed as builds were failing due to
+  non-multilib deps and nothing appears to depend on this being multilib.
+  Tests restricted as they were loading the installed version (if there,
+  otherwise nothing) rather than the built version. EAPI bumped to 6.
+
+  Package-Manager: portage-2.3.2
+
+  29 Nov 2016; Pacho Ramos <pacho@gentoo.org> liblas-1.8.0.ebuild:
+  amd64/x86 stable, bug #598844
+
+  Package-Manager: portage-2.3.2
+

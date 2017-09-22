@@ -1,0 +1,17 @@
+# ChangeLog for dev-perl/Data-Section
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*Data-Section-0.200.6 (21 Nov 2016)
+
+  21 Nov 2016; Kent Fredric <kentnl@gentoo.org> +Data-Section-0.200.6.ebuild,
+  +metadata.xml:
+  Add w/ version 0.200.6
+
+  Required for dev-perl/Dist-Zilla
+
+  Previously maintained in ::perl-experimental since May 2009 by
+  Torsten Veller and myself
+
+  Package-Manager: portage-2.3.2
+

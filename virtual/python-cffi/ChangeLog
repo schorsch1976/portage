@@ -1,0 +1,28 @@
+# ChangeLog for virtual/python-cffi
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*python-cffi-0 (20 Nov 2015)
+
+  20 Nov 2015; Justin Lecher <jlec@gentoo.org> +metadata.xml,
+  +python-cffi-0.ebuild:
+  New virtual
+
+  Package-Manager: portage-2.2.25
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+
+  20 Nov 2015; Justin Lecher <jlec@gentoo.org> -metadata.xml,
+  -python-cffi-0.ebuild:
+  Drop virtual
+
+  cffi virtual doesn't work, as packages need to rebuilt on bump of
+  dev-python/cffi
+
+  Signed-off-by: Justin Lecher <jlec@gentoo.org>
+
+*python-cffi-0 (30 Nov 2016)
+
+  30 Nov 2016; Michał Górny <mgorny@gentoo.org> +metadata.xml,
+  +python-cffi-0.ebuild:
+  Introduce a virtual for cffi package
+

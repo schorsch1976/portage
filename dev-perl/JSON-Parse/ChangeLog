@@ -1,0 +1,74 @@
+# ChangeLog for dev-perl/JSON-Parse
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*JSON-Parse-0.420.0 (05 Nov 2016)
+
+  05 Nov 2016; Kent Fredric <kentnl@gentoo.org> +JSON-Parse-0.420.0.ebuild,
+  +metadata.xml:
+  Added at version 0.420.0
+
+  Required by newer Google-Ads-Adwords-Client
+
+  Package-Manager: portage-2.3.2
+
+*JSON-Parse-0.430.0 (06 Nov 2016)
+
+  06 Nov 2016; Kent Fredric <kentnl@gentoo.org> +JSON-Parse-0.430.0.ebuild:
+  Bump to 0.430.0
+
+  Upstream:
+  - Remove dependency on Path::Tiny
+  - Update unicode decoding logic
+  - Increase clarity of validation
+
+  Package-Manager: portage-2.3.2
+
+*JSON-Parse-0.460.0 (17 Nov 2016)
+
+  17 Nov 2016; Kent Fredric <kentnl@gentoo.org> +JSON-Parse-0.460.0.ebuild,
+  metadata.xml:
+  Bump to version 0.460.0
+
+  - Add USE="examples"
+
+  Upstream:
+  - remove $json_diagnostics
+  - add method diagnostics_hash
+  - Improved warnings for parse_json_safe
+  - Remove JSON::Whitespace
+  - Add JSON::Tokenize interface
+
+  Package-Manager: portage-2.3.2
+
+*JSON-Parse-0.470.0 (19 Nov 2016)
+
+  19 Nov 2016; Kent Fredric <kentnl@gentoo.org> +JSON-Parse-0.470.0.ebuild:
+  Bump to version 0.470.0
+
+  Upstream:
+  - Inactivate diagnostics_hash function on Perl <5.14
+
+  Package-Manager: portage-2.3.2
+
+*JSON-Parse-0.480.0 (20 Nov 2016)
+
+  20 Nov 2016; Kent Fredric <kentnl@gentoo.org> +JSON-Parse-0.480.0.ebuild:
+  Bump to version 0.480.0
+
+  Upstream:
+  - Add "check" method
+
+  Package-Manager: portage-2.3.2
+
+*JSON-Parse-0.490.0 (04 Dec 2016)
+
+  04 Dec 2016; Kent Fredric <kentnl@gentoo.org> +JSON-Parse-0.490.0.ebuild:
+  Bump to version 0.490.0
+
+  Upstream:
+  - Input texts being undef or all whitespace now cause a fatal
+    error, for conformance with JSON Parsing Test Suite
+
+  Package-Manager: portage-2.3.2
+
