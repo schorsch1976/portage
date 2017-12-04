@@ -29,15 +29,42 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas Sturmlechner <asturm@gentoo.org> (03 Dec 2017)
+# Dead upstreams, depending on dead qt3support/qt4.
+# Masked for removal in 30 days. Bug #631788
+games-board/capicity
+games-board/kcheckers
+games-board/qgo
+games-board/holdingnuts
+games-board/qcheckers
+games-emulation/virtualjaguar
+games-emulation/dboxfe
+games-kids/cubetest
+games-kids/crayon-physics
+games-misc/ggencoder
+games-misc/qlife
+games-puzzle/bubble-chains
+games-puzzle/jag
+
+# Andreas Sturmlechner <asturm@gentoo.org> (03 Dec 2017)
+# Dead upstream, depends on dead qt4.
+# Masked for removal in 30 days. Bug #639254
+x11-misc/qtnotifydaemon
+
+# Andreas Sturmlechner <asturm@gentoo.org> (03 Dec 2017)
+# Dead upstream, depends on dead qt4.
+# Masked for removal in 30 days. Bug #637098
+app-office/qchartdiary
+
+# Andreas Sturmlechner <asturm@gentoo.org> (03 Dec 2017)
+# Dead upstream, depends on dead qt4.
+# Masked for removal in 30 days. Bug #638688
+x11-plugins/qled
+
 # Michael Palimaka <kensington@gentoo.org> (02 Dec 2017)
 # Depends on dead Qt 4. Dead upstream.
 # Masked for removal in 30 days. Bug #639252.
 dev-vcs/qsvn
-
-# Ulrich Müller <ulm@gentoo.org> (01 Dec 2017)
-# Major breakage (network access in upstream configure), bug #639438.
-dev-db/qt5-sqlcipher
-=net-im/openmittsu-0.9.9.48
 
 # Alexey Shvetsov <alexxy@gentoo.org> (01 Dec 2017)
 # Mask beta gromacs version
