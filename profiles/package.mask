@@ -29,6 +29,17 @@
 
 #--- END OF EXAMPLES ---
 
+# Patrice Clement <monsieurp@gentoo.org> (19 Dec 2017)
+# A slightly better syntax file for PAM configuration files is shipped with Vim
+# since version 8.0. The one we package is old and out of date.
+# Masked for removal in 30 days. See bug 578278.
+app-vim/pam-syntax
+
+# Andreas Sturmlechner <asturm@gentoo.org> (19 Dec 2017)
+# Dead upstream, depends on dead qt3support/qt4.
+# Bug #639246. Masked for removal in 30 days.
+app-i18n/kimera
+
 # James Le Cuirot <chewi@gentoo.org> (17 Dec 2017)
 # Java 9 is not yet fully supported on Gentoo. Packages cannot depend
 # on it so these virtuals are not yet required. If you wish to use
@@ -743,12 +754,6 @@ net-wireless/cpyrit-cuda
 # Drop mask after migration of existing wxGTK:3.0 users
 # and wxGTK-3.0.3 bump in tree
 >=net-ftp/filezilla-3.25.2-r1
-
-# Zac Medico <zmedico@gentoo.org> (01 May 2017)
-# Possible API incompatibilities, bug #617174.
-# http://aiohttp.readthedocs.io/en/latest/migration.html
->=dev-python/aiohttp-2
->=dev-python/yarl-0.10
 
 # Rick Farina <zerochaos@gentoo.org> (17 Apr 2017)
 # Masking old versions because upstream changed versioning
