@@ -333,9 +333,9 @@ app-crypt/rhash:openssl - Add support for hashes from dev-libs/openssl
 app-crypt/seahorse:ldap - Enable seahorse to manipulate GPG keys on a LDAP server.
 app-crypt/tpm-tools:pkcs11 - Build Token data management utilities based on OpenCryptoki's (dev-libs/opencryptoki) PKCS#11 implementation.
 app-crypt/veracrypt:asm - Enable assembly for optimization
-app-crypt/zuluCrypt:gnome - Enable support for the freedesktop.org Secret Service API via app-crypt/libsecret
-app-crypt/zuluCrypt:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
-app-crypt/zuluCrypt:udev - Whether udev will be consulted when deciding if a volume is system or not
+app-crypt/zulucrypt:gnome - Enable support for the freedesktop.org Secret Service API via app-crypt/libsecret
+app-crypt/zulucrypt:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
+app-crypt/zulucrypt:udev - Whether udev will be consulted when deciding if a volume is system or not
 app-dicts/aspell-be:classic - Support classic spelling by default
 app-dicts/gwaei:hunspell - Enable app-text/hunspell spellchecking and morphological analysis
 app-dicts/gwaei:mecab - Enable app-text/mecab support
@@ -6362,6 +6362,14 @@ net-misc/electrum:qrcode - Enable QR code scanning with media-gfx/zbar
 net-misc/electrum:sync - Enable plugin to sync wallet metadata across multiple Electrum clients
 net-misc/electrum:trustedcoin_com - Enable plugin to use two-factor service by TrustedCoin.com
 net-misc/electrum:vkb - Enable plugin for virtual keyboard
+net-misc/electrum-ltc:audio_modem - Enable plugin to support Audio Modem
+net-misc/electrum-ltc:cli - Enables the CLI interface
+net-misc/electrum-ltc:cosign - Enable plugin to support multisig wallets between multiple Electrum clients
+net-misc/electrum-ltc:digitalbitbox - Enable plugin to support Digital Bitbox hardware wallet
+net-misc/electrum-ltc:email - Enable plugin to support emailing invoices
+net-misc/electrum-ltc:qrcode - Enable QR code scanning with media-gfx/zbar
+net-misc/electrum-ltc:sync - Enable plugin to sync wallet metadata across multiple Electrum clients
+net-misc/electrum-ltc:vkb - Enable plugin for virtual keyboard
 net-misc/eventd:libcanberra - Enable plugin for sounds via media-libs/libcanberra
 net-misc/eventd:libnotify - Enable plugin to relay events to notification daemon (Note: not required for local notifications via net-misc/eventd)
 net-misc/eventd:notification - Enable plugin to display on-screen notifications
@@ -6703,7 +6711,7 @@ net-p2p/eiskaltdcpp:json - Enable JSON for cli and daemon
 net-p2p/eiskaltdcpp:libcanberra - Enable sound notifications support over libcanberra in EiskaltDC++ Gtk
 net-p2p/eiskaltdcpp:minimal - Don't install headers
 net-p2p/fms:frost - Add support for frost boards
-net-p2p/go-ethereum:evm - Build Ethereum Virtual Machine (EVM)
+net-p2p/go-ethereum:devtools - Build Ethereum development tools (evm, abigen, puppeth, ...)
 net-p2p/go-ethereum:opencl - Add OpenCL GPU mining support
 net-p2p/go-ipfs-bin:fuse - Enable runtime support for sys-fs/fuse
 net-p2p/ktorrent:bwscheduler - Schedule upload and download limits over a period of a week

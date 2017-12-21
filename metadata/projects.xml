@@ -729,6 +729,10 @@
     <url>https://wiki.gentoo.org/wiki/Project:Cron</url>
     <description>The Gentoo Cron Project maintains cron-related packages.</description>
     <member>
+      <email>blueness@gentoo.org</email>
+      <name>Anthony G. Basile</name>
+    </member>
+    <member>
       <email>vapier@gentoo.org</email>
       <name>Mike Frysinger</name>
     </member>
@@ -738,6 +742,10 @@
     <name>Gentoo Crossdev maintainers</name>
     <url>https://wiki.gentoo.org/wiki/Project:Crossdev</url>
     <description>Subproject of toolchain for advanced wizards</description>
+    <member>
+      <email>slyfox@gentoo.org</email>
+      <name>Sergei Trofimovich</name>
+    </member>
     <member>
       <email>vapier@gentoo.org</email>
       <name>Mike Frysinger</name>
@@ -2906,6 +2914,11 @@ developers and volunteer mentors.</description>
     <member>
       <email>asturm@gentoo.org</email>
       <name>Andreas Sturmlechner</name>
+      <role>Member</role>
+    </member>
+    <member>
+      <email>candrews@gentoo.org</email>
+      <name>Craig Andrews</name>
       <role>Member</role>
     </member>
     <member>
