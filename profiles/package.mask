@@ -29,6 +29,16 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas Sturmlechner <asturm@gentoo.org> (21 Dec 2017)
+# Dead upstream, depends on dead Qt4.
+# Bug #629032. Masked for removal in 30 days.
+media-gfx/wally
+
+# Andreas Sturmlechner <asturm@gentoo.org> (21 Dec 2017)
+# Dead upstream, depends on dead Qt4.
+# Bug #637108. Masked for removal in 30 days.
+app-cdr/qpxtool
+
 # Patrice Clement <monsieurp@gentoo.org> (19 Dec 2017)
 # A slightly better syntax file for PAM configuration files is shipped with Vim
 # since version 8.0. The one we package is old and out of date.
@@ -549,10 +559,6 @@ sys-kernel/tuxonice-sources
 # Patrice Clement <monsieurp@gentoo.org> (01 Oct 2017)
 # Mask Atom betas for testing.
 app-editors/atom:beta
-
-# Andreas Sturmlechner <asturm@gentoo.org> (16 Sep 2017)
-# Unfortunately broken esp. with USE=python. Bugs #623780, #631064
-=sci-geosciences/qgis-2.18.12-r100
 
 # Patrice Clement <monsieurp@gentoo.org> (09 Sep 2017)
 # Python 3 port is almost complete with version 0.6.0. Users might run into
