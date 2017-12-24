@@ -29,6 +29,25 @@
 
 #--- END OF EXAMPLES ---
 
+# Thomas Beierlein <tomjbe@gentoo.org> (23 Dec 2017)
+# To adapt to changed version naming by upstream 
+# (pcb-yyyymmdd to pcb-x.y.z) we move the ebuild to
+# pcb-0_pyyyymmdd and mask >=pcb-20000000.
+# Do not remove the mask until newer version gets stable
+>=sci-electronics/pcb-20000000
+
+# Mike Gilbert <floppym@gentoo.org> (23 Dec 2017)
+# Fails to build without glibc rpc support, bug 630670.
+# Use net-nds/rpcbind instead.
+# Removal in 30 days.
+net-nds/portmap
+
+# Mike Gilbert <floppym@gentoo.org> (23 Dec 2017)
+# Fails to build without glibc rpc support, bug 641154.
+# Dead upstream.
+# Removal in 30 days.
+mail-client/drac
+
 # Thomas Beierlein <tomjbe@gentoo.org> (22 Dec 2017)
 # Development moved to another naming scheme.
 # Use media-radio/tucnak instead.
@@ -80,6 +99,13 @@ media-gfx/wally
 # Dead upstream, depends on dead Qt4.
 # Bug #637108. Masked for removal in 30 days.
 app-cdr/qpxtool
+
+# Charles Nérot <charles@nerot.com> (20 Dec 2017)
+# alpha version of xdebug for php 7.2
+# have crash bug inside (https://xdebug.org/index.php)
+# Bug 640256 dev-php/xdebug-2.6.0_alpha: Version bump
+=dev-php/xdebug-2.6.0_alpha1
+=dev-php/xdebug-client-2.6.0_alpha1
 
 # Patrice Clement <monsieurp@gentoo.org> (19 Dec 2017)
 # A slightly better syntax file for PAM configuration files is shipped with Vim
@@ -438,15 +464,6 @@ net-analyzer/aimsniff
 # Long deprecated upstream in favour of dev-perl/Mail-SPF
 # Masked for removal in 30 days. Bug #638432
 dev-perl/Mail-SPF-Query
-
-# Alice Ferrazzi <alicef@gentoo.org> (21 Nov 2017)
-# A regression in kernel 4.14.0
-# Data corruption issue that affects at minimum bcache. 
-# The hope is that this patch will make it to 4.14.1 Bug #638206
-=sys-kernel/vanilla-sources-4.14.1
-=sys-kernel/vanilla-sources-4.14.0
-=sys-kernel/gentoo-sources-4.14.0
-=sys-kernel/ck-sources-4.14.0
 
 # Andreas Sturmlechner <asturm@gentoo.org> (16 Nov 2017)
 # Qt4WebKit is ancient and full of security holes.

@@ -4302,6 +4302,7 @@ media-libs/opus:custom-modes - Build with custom-modes.
 media-libs/opusfile:fixed-point - Enable fixed-point arithmetic operations
 media-libs/opusfile:float - Enable floating point arithmetic operations
 media-libs/opusfile:http - Enable http connections
+media-libs/osl:partio - Use media-libs/partio
 media-libs/phonon:designer - Install plugin for dev-qt/designer
 media-libs/phonon:vlc - Install VLC Phonon backend
 media-libs/phonon-gstreamer:network - Enable network streaming support via libsoup
@@ -6180,10 +6181,8 @@ net-mail/notmuch:valgrind - Depend on dev-util/vagrind for test suite
 net-mail/offlineimap:sqlite - Enable runtime support for sqlite mail status backend.
 net-mail/qmailadmin:maildrop - Filter spam using maildrop
 net-mail/qpopper:apop - Enables the pop.auth file in /etc/pop.auth
-net-mail/qpopper:drac - Enables DRAC support
 net-mail/qpopper:mailbox - Enables mail spool file is in home directory ~/Mailbox
 net-mail/tpop3d:authexternal - Enable authentication by an external program
-net-mail/tpop3d:drac - Enable dynamic relay support in the tpop3d pop3 server
 net-mail/tpop3d:flatfile - Enable authentication against /etc/passwd-style flat files
 net-mail/tpop3d:passwd - Enable /etc/passwd authentication
 net-mail/tpop3d:sha1 - Use OpenSSL for sha1 encrypted passwords.
@@ -6353,6 +6352,14 @@ net-misc/dropbear:bsdpty - Add support for legacy BSD pty's rather than dynamic 
 net-misc/dropbear:multicall - Build all the programs as one little binary (to save space)
 net-misc/dropbear:shadow - Enable shadow password support
 net-misc/dropbox:librsync-bundled - Use bundled librsync library
+net-misc/electron-cash:audio_modem - Enable plugin to support Audio Modem
+net-misc/electron-cash:cli - Enables the CLI interface
+net-misc/electron-cash:cosign - Enable plugin to support multisig wallets between multiple Electrum clients
+net-misc/electron-cash:digitalbitbox - Enable plugin to support Digital Bitbox hardware wallet
+net-misc/electron-cash:email - Enable plugin to support emailing invoices
+net-misc/electron-cash:qrcode - Enable QR code scanning with media-gfx/zbar
+net-misc/electron-cash:sync - Enable plugin to sync wallet metadata across multiple Electrum clients
+net-misc/electron-cash:vkb - Enable plugin for virtual keyboard
 net-misc/electrum:audio_modem - Enable plugin to support Audio Modem
 net-misc/electrum:cli - Enables the CLI interface
 net-misc/electrum:cosign - Enable plugin to support multisig wallets between multiple Electrum clients
@@ -6754,6 +6761,11 @@ net-p2p/transmission:mbedtls - Use mbed TLS instead of OpenSSL
 net-p2p/transmission:xfs - Enable XFS filesystem capabilities by using sys-fs/xfsprogs headers (in building of fdlimit(.c))
 net-p2p/transmission-remote-gtk:libproxy - Use net-libs/libproxy for getting the HTTP/HTTPS/SOCKS proxy configuration.
 net-p2p/tribler:vlc - Enable vlc support.
+net-p2p/xmr-stak:cuda - Enable NVIDIA CUDA toolkit support
+net-p2p/xmr-stak:devfee - Enable payment of devfee to the developer
+net-p2p/xmr-stak:hwloc - Enable CPU affinity support via hwloc
+net-p2p/xmr-stak:opencl - Enable OpenCL support
+net-p2p/xmr-stak:webserver - Enable internal webserver
 net-print/cups:java - Add support for the Java interpeter in the web server CGIs.
 net-print/cups:lprng-compat - Do not install lp... binaries so cups and lprng can coexist.
 net-print/cups:python - Add support for the Python interpeter in the web server CGIs.
