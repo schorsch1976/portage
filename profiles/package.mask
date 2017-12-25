@@ -100,13 +100,6 @@ media-gfx/wally
 # Bug #637108. Masked for removal in 30 days.
 app-cdr/qpxtool
 
-# Charles Nérot <charles@nerot.com> (20 Dec 2017)
-# alpha version of xdebug for php 7.2
-# have crash bug inside (https://xdebug.org/index.php)
-# Bug 640256 dev-php/xdebug-2.6.0_alpha: Version bump
-=dev-php/xdebug-2.6.0_alpha1
-=dev-php/xdebug-client-2.6.0_alpha1
-
 # Patrice Clement <monsieurp@gentoo.org> (19 Dec 2017)
 # A slightly better syntax file for PAM configuration files is shipped with Vim
 # since version 8.0. The one we package is old and out of date.
@@ -515,15 +508,6 @@ sci-geosciences/gmapcatcher
 dev-java/icedtea-bin:7
 virtual/jdk:1.7
 virtual/jre:1.7
-
-# Andreas K. Hüttel <dilfridge@gentoo.org> (04 Nov 2017)
-# Many, many, many open bugs. Blocks gcc-6 stabilization.
-# Removal of the old versions in 30 days; please upgrade to
-# Audacious 3.9 (may require manual keywording since not
-# marked stable anymore).
-<media-sound/audacious-3.9
-<media-plugins/audacious-plugins-3.9
-<x11-themes/audacious-themes-0.0.4-r1
 
 # Marc Schiffbauer <mschiff@gentoo.org> (01 Nov 2017)
 # Upstream abandoned obnam as of the end of the year
