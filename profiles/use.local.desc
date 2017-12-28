@@ -1079,6 +1079,7 @@ app-portage/gemato:blake2 - Install dependencies needed for BLAKE2 hash function
 app-portage/gemato:gpg - Install dependencies needed for OpenPGP signature verification support
 app-portage/gemato:portage-postsync - Install a Portage hook to verify the repository after fetching via rsync
 app-portage/gemato:sha3 - Install dependencies needed for SHA3 hash functions
+app-portage/grs:server - Install all the tools building systems
 app-portage/layman:bazaar - Support dev-vcs/bzr based overlays
 app-portage/layman:cvs - Support dev-vcs/cvs based overlays
 app-portage/layman:darcs - Support dev-vcs/darcs based overlays
@@ -4801,7 +4802,6 @@ media-tv/mythtv:bluray - Pulls in libbluray for BluRay support.
 media-tv/mythtv:cec - Allows you to control CEC enabled TVs via HDMI. Currently requires a USB based CEC -> HDMI injector between your TV and video card since no graphics drivers support CEC natively.
 media-tv/mythtv:crystalhd - Allows you to utilize a Broadcom CrystalHD hardware based video decoder to improve the performance of video decode.
 media-tv/mythtv:debug - Instructs Qt to use the 'debug' target instead of 'release' target. If your MythTV is crashing or you need a backtrace, you need to compile it with this option otherwise the debugging data is useless.
-media-tv/mythtv:dvb - Enables support for Linux DVB cards. These include all cards that work with digital signals such as ATSC, DVB-T, DVB-C, and DVB-S, QAM-64, and QAM-256.
 media-tv/mythtv:egl - Support EGL video output.
 media-tv/mythtv:fftw - Support visualizations via sci-libs/fftw
 media-tv/mythtv:hls - HTTP Live Streaming support
