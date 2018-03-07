@@ -29,6 +29,61 @@
 
 #--- END OF EXAMPLES ---
 
+# Brian Evans <grknight@gentoo.org> (06 Mar 2018)
+# MariaDB MaxScale 1.x depends on the deprecated libmysqld
+# Newer versions bundle software that require git access
+# and modify system libraries for their own purposes making
+# it exteremely difficult to package.
+# Bug 649764 Removal in 30 days.
+dev-db/maxscale
+
+# Lars Wendler <polynomial-c@gentoo.org> (06 Mar 2018)
+# Masked as it breaks x2go
+=net-misc/nx-3.5.99.14
+=net-misc/x2goserver-4.1.0.0-r1
+
+# Andreas Sturmlechner <asturm@gentoo.org> (06 Mar 2018)
+# Maintainer not responding, depends on deprecated Qt4.
+# Masked for removal in 30 days. Bug 598651, 635192, 644396
+media-gfx/photivo
+
+# Patrice Clement <monsieurp@gentoo.org> (05 Mar 2018)
+# Package name change from msgpack-python to msgpack breaks dependencies.
+>=dev-python/msgpack-0.5.6
+>=dev-python/neovim-python-client-0.2.1
+
+# Andreas Sturmlechner <asturm@gentoo.org> (05 Mar 2018)
+# Dead upstream, depends on deprecated Qt4.
+# Masked for removal in 30 days. Bug 644404
+net-fs/smbtatools
+
+# Mike Gilbert <floppym@gentoo.org> (04 Mar 2018)
+# Dev channel releases are only for people who are developers or want more
+# experimental features and accept a more unstable release.
+>=www-client/chromium-66
+
+# Andreas Sturmlechner <asturm@gentoo.org> (04 Mar 2018)
+# Dead upstream, depends on deprecated Qt4. media-sound/cantata
+# is an actively developed alternative based on Qt5.
+# Masked for removal in 30 days. Bug 644412
+media-sound/qmpdclient
+
+# Andreas Sturmlechner <asturm@gentoo.org> (04 Mar 2018)
+# Dead upstream, depends on deprecated Qt4.
+# Masked for removal in 30 days. Bug 645436
+sci-chemistry/massxpert
+
+# Andreas Sturmlechner <asturm@gentoo.org> (04 Mar 2018)
+# Dead upstream, depends on deprecated Qt4.
+# Masked for removal in 30 days. Bug 514438, 644522
+sci-chemistry/gsim
+
+# Andreas Sturmlechner <asturm@gentoo.org> (04 Mar 2018)
+# Depends on deprecated dev-python/pyqwt, blocks Qt4 removal.
+# Masked for removal in 30 days unless someone bumps to 5.2.2.
+# Bug 645218, 649094
+sci-chemistry/PyMca
+
 # Andreas K. Hüttel <dilfridge@gentoo.org> (03 Mar 2018)
 # Fails to build without rpc support in glibc (bug 631044);
 # no maintainer, requires obsolete hardware. Removal in
@@ -144,11 +199,6 @@ media-sound/moodbar
 # Masked for removal in 30 days. Bug #648468.
 dev-libs/libgames-support
 
-# Thomas Deutschmann <whissi@gentoo.org> (22 Feb 2018)
-# Upstream's release tarball doesn't match Git content.
-# Masked until clarified.
-=app-admin/rsyslog-8.33.0
-
 # Ulrich Müller <ulm@gentoo.org> (21 Feb 2018)
 # Homepage is dead. Apparently the last release was in 2012
 # and it does not work with Emacs 25 and later.
@@ -231,16 +281,6 @@ x11-proto/xf86rushproto
 # Unmaintained, replaced by newsboat fork.
 # Masked for removal in 30 days.
 net-news/newsbeuter
-
-# Andreas Sturmlechner <asturm@gentoo.org> (03 Feb 2018)
-# Dead upstream, depends on deprecated Qt4.
-# Masked for removal in 30 days. Bug #644370
-media-libs/hupnp-ng
-
-# Andreas Sturmlechner <asturm@gentoo.org> (03 Feb 2018)
-# Depends on deprecated Qt4, unmaintained, no one bothers to bump.
-# Masked for removal in 30 days. Bug #464658
-sys-apps/ultracopier
 
 # Patrice Clement <monsieurp@gentoo.org> (26 Jan 2018)
 # Has different symbols. Known to cause issues with i3bar/swaybar.
@@ -469,11 +509,6 @@ app-vim/pam-syntax
 virtual/jdk:9
 virtual/jre:9
 
-# Mike Gilbert <floppym@gentoo.org> (16 Dec 2017)
-# Dev channel releases are only for people who are developers or want more
-# experimental features and accept a more unstable release.
->=www-client/chromium-65
-
 # Patrice Clement <monsieurp@gentoo.org> (12 Dec 2017)
 # Masked due to a hard dependency on an ancient versions of dev-libs/msgpack
 # (<0.6) that have been punted from the tree.
@@ -500,6 +535,7 @@ games-kids/crayon-physics
 >=xfce-base/thunar-1.7
 >=xfce-extra/thunar-archive-plugin-0.4.0
 >=xfce-extra/thunar-media-tags-plugin-0.3.0
+>=xfce-extra/thunar-shares-plugin-0.3.0
 
 # Andreas Sturmlechner <asturm@gentoo.org> (16 Nov 2017)
 # Depends on dead Qt4WebKit. Masked for removal in 30 days. Bug #620702
