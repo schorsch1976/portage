@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} pypy)
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} pypy)
 
 inherit distutils-r1
 
@@ -20,7 +20,6 @@ RDEPEND=""
 DEPEND="${RDEPEND}
 	test? (
 		>=dev-python/pytest-2.9.2[${PYTHON_USEDEP}]
-		>=dev-python/pytest-xdist-1.14.0[${PYTHON_USEDEP}]
 		>=dev-python/hypothesis-3.4.2[${PYTHON_USEDEP}]
 		!!dev-python/pytest-relaxed[${PYTHON_USEDEP}]
 	)

@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} )
 PYTHON_REQ_USE="threads(+)"
 
 FORTRAN_NEEDED=lapack
@@ -36,6 +36,8 @@ DEPEND="${RDEPEND}
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-1.14.5-no-hardcode-blas.patch
+	# backport a fix for py3.7 test failures
+	"${FILESDIR}"/numpy-1.14.5-py37.patch
 )
 
 src_unpack() {
