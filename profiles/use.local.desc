@@ -7984,6 +7984,7 @@ sys-auth/consolekit:pm-utils - Adds support for suspend/resume using sys-power/p
 sys-auth/consolekit:policykit - Use the PolicyKit framework (sys-auth/polkit) to get authorization for suspend/shutdown.
 sys-auth/consolekit:systemd-units - Install systemd unit files to replace the modern functionality of logind in sys-apps/systemd. Not recommended.
 sys-auth/fingerprint-gui:upekbsapi - Add UPEK BSAPI drivers for identify functions on some readers
+sys-auth/google-authenticator-libpam-hardened:qrcode - Display QRcode after setup to accomodate automatic setup of OTP client apps.
 sys-auth/keystone:memcached - Installs dependencies needed for using memcached as a backend
 sys-auth/keystone:mongo - Installs dependencies needed for using mongo as a backend
 sys-auth/munge:gcrypt - Use libgcrypt instead of openssl
