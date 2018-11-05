@@ -5,7 +5,7 @@ EAPI=6
 
 VALA_MIN_API_VERSION=0.36
 
-inherit cmake-utils eapi7-ver gnome2-utils vala xdg-utils
+inherit cmake-utils eapi7-ver eutils gnome2-utils vala xdg-utils
 
 MY_P=${PN}-v${PV}
 DESCRIPTION="A lightweight web browser based on WebKitGTK+"
@@ -24,7 +24,7 @@ RDEPEND="
 	dev-libs/libpeas[gtk]
 	dev-libs/libxml2
 	>=net-libs/libsoup-2.38:2.4[vala]
-	>=net-libs/webkit-gtk-2.16.6:4[jit=,opengl]
+	>=net-libs/webkit-gtk-2.16.6:4[introspection,jit=,opengl]
 	>=x11-libs/libnotify-0.7
 	>=x11-libs/gtk+-3.12.0:3
 "
@@ -44,6 +44,7 @@ src_prepare() {
 }
 
 src_configure() {
+	strip-linguas -i po/
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_DOCDIR=/usr/share/doc/${PF}
 		-DVALA_EXECUTABLE="${VALAC}"
