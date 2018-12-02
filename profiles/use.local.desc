@@ -414,6 +414,7 @@ app-editors/fe:sendmail - Send mail after editor abend
 app-editors/gedit-plugins:charmap - Insert special characters just by clicking on them
 app-editors/gedit-plugins:git - Shows document changes related to git's HEAD
 app-editors/gedit-plugins:terminal - Embed a terminal in the bottom pane
+app-editors/gvim:cscope - Enable cscope interface
 app-editors/gvim:gtk3 - Enable GTK+3 interface
 app-editors/gvim:netbeans - Include netbeans external editor integration support
 app-editors/gvim:racket - Enable support for Scheme using dev-scheme/racket
@@ -438,6 +439,7 @@ app-editors/tea:aspell - Enable spellchecking using app-text/aspell
 app-editors/tea:hunspell - Enable spellchecking using app-text/hunspell
 app-editors/tea:qml - Enable support for plugins using QML
 app-editors/vim:X - Link console vim against X11 libraries to enable title and clipboard features in xterm
+app-editors/vim:cscope - Enable cscope interface
 app-editors/vim:racket - Enable support for Scheme using dev-scheme/racket
 app-editors/vim:terminal - Enable terminal emulation support
 app-editors/vim:vim-pager - Install vimpager and vimmanpager links
@@ -445,6 +447,7 @@ app-editors/vis:tre - more memory efficient regex search using dev-libs/tre
 app-editors/xemacs:athena - Chooses the MIT Athena widget set
 app-editors/xemacs:dnd - Enables support for the x11-libs/dnd drag-n-drop library
 app-editors/xemacs:eolconv - Support detection and translation of newline conventions
+app-editors/xemacs:mule - Add multi-language support to XEmacs
 app-editors/xemacs:pop - Support POP for mail retrieval
 app-editors/xemacs:xim - Enable X11 XiM input method
 app-editors/zile:valgrind - Enable usage of dev-util/valgrind in tests
@@ -497,6 +500,7 @@ app-emulation/fuse:backend-X - Use X11 rendering backend
 app-emulation/fuse:backend-fbcon - Use framebuffer rendering backend
 app-emulation/fuse:backend-sdl - Use SDL rendering backend
 app-emulation/fuse:backend-svga - Use svgalib rendering backend
+app-emulation/fuse:memlimit - Add compile-time memory usage limiting
 app-emulation/fuse-utils:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/ganeti:drbd - Enable DRBD support
 app-emulation/ganeti:experimental - Enable experimental patches. Warning! This will break RPC within major versions if the patches applied differ!
@@ -1029,6 +1033,9 @@ app-misc/note:text - Add support for text backend
 app-misc/openastro:jpeg - Enable exporting Astrological Charts to jpeg
 app-misc/openastro:png - Enable exporting Astrological Charts to png
 app-misc/pax-utils:python - Install a more powerful/faster version of lddtree
+app-misc/pip3line:distorm - Compile the Distorm plugin
+app-misc/pip3line:qscintilla - Use QScintilla for more efficient text display
+app-misc/pip3line:ssl - Compile the plugin adding miscellaneous hashes from OpenSSL
 app-misc/recoll:camelcase - Enable indexing for camelCase sentences and words
 app-misc/recoll:inotify - Use the Linux Kernel notification subsystem for monitoring file alterations in realtime
 app-misc/recoll:session - Stop monitoring file alterations when X11 session terminates
@@ -1346,6 +1353,7 @@ app-text/zathura:synctex - Use libsynctex to get latex codeline from pdf
 app-text/zathura-meta:cb - Install plug-in for ComicBook support
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
 app-vim/youcompleteme:clang - Enable semantic support for C-family languages using sys-devel/clang
+app-xemacs/xemacs-packages-all:mule - Add multi-language support to XEmacs
 dev-ada/asis:gnat_2016 - Compile with dev-lang/gnat-gpl-2016
 dev-ada/asis:gnat_2017 - Compile with dev-lang/gnat-gpl-2017
 dev-ada/asis:gnat_2018 - Compile with dev-lang/gnat-gpl-2018
@@ -2526,8 +2534,10 @@ dev-libs/sway:gdk-pixbuf - Enable additional image format support via the x11-li
 dev-libs/sway:swaybar - Install 'swaybar': sway's status bar component
 dev-libs/sway:swaybg - Install 'swaybg': allows to set a desktop background image
 dev-libs/sway:swaygrab - Install 'swaygrab': allows taking screenshots or screencasts
+dev-libs/sway:swayidle - Install 'swayidle': idle manager to run commands when user is inactive
 dev-libs/sway:swaylock - Install 'swaylock': sway's screen locker
 dev-libs/sway:swaymsg - Install 'swaymsg': tool for communicating with a running sway instance
+dev-libs/sway:swaynag - Install 'swaynag': shows a message with buttons
 dev-libs/sway:tray - Enable support for StatusNotifierItem tray specification
 dev-libs/sway:wallpapers - Install sway's default wallpaper image
 dev-libs/tinyxml:stl - Compile with TIXML_USE_STL support
@@ -3178,7 +3188,9 @@ dev-util/nvidia-cuda-sdk:opencl - Build OpenCL binaries
 dev-util/nvidia-cuda-toolkit:debugger - Installs the CUDA debugger
 dev-util/nvidia-cuda-toolkit:eclipse - Install plugins for eclipse
 dev-util/nvidia-cuda-toolkit:profiler - Installs the NVIDIA CUDA visual profiler
+dev-util/ostree:archive - Use libarchive
 dev-util/ostree:grub - Enable grub configuration generator
+dev-util/ostree:libmount - Use libmount
 dev-util/ostree:soup - Use libsoup for networking
 dev-util/perf:demangle - Enable C++ symbol name demangling, using libbfd from sys-devel/binutils. When this flag is enabled, the package will have to be rebuilt after every version bump of binutils.
 dev-util/perf:doc - Build documentation and man pages. With this USE flag disabled, the --help parameter for perf and its sub-tools will not be available. This is optional because it depends on a few documentation handling tools that are not always welcome on user systems.
@@ -3783,6 +3795,7 @@ kde-misc/kimtoy:scim - Enable Smart Common Input Method support
 kde-misc/kio-gdrive:kaccounts - Use kde-apps/kaccounts-integration backend (default) instead of dev-libs/qtkeychain
 kde-misc/kmarkdownwebview:webkit - Use dev-qt/qtwebkit instead of dev-qt/qtwebengine
 kde-misc/tellico:discid - Add support for reading disc IDs from audio CDs
+kde-misc/tellico:yaz - Add support for searching Z39.50 databases
 kde-plasma/kde-cli-tools:kdesu - Build graphical frontend for kde-frameworks/kdesu
 kde-plasma/kdeplasma-addons:share - Enable applet for quickly sharing data to a variety of sources
 kde-plasma/kdeplasma-addons:webengine - Enable dictionary and web browser applets using dev-qt/qtwebengine
@@ -3791,7 +3804,6 @@ kde-plasma/kinfocenter:pci - Show advanced PCI information
 kde-plasma/kmenuedit:hotkeys - Enable support for hotkey editing
 kde-plasma/kwin:gles2 - Use OpenGL ES 2 instead of full GL
 kde-plasma/kwin:multimedia - Enable effect video button in desktop effects KCM
-kde-plasma/libksysguard:detailedmemory - Enable display of detailed memory information using dev-qt/qtwebkit.
 kde-plasma/libksysguard:webkit - Enable display of detailed memory information using dev-qt/qtwebkit.
 kde-plasma/plasma-desktop:appstream - Enable AppStream software metadata support
 kde-plasma/plasma-desktop:ibus - Use ibus input method via app-i18n/ibus
@@ -3821,7 +3833,6 @@ kde-plasma/plasma-workspace:geolocation - Enables dataengine providing location 
 kde-plasma/plasma-workspace:prison - Enable support for barcodes/QRcodes
 kde-plasma/plasma-workspace:qalculate - Enable Qalculate runner using sci-libs/libqalculate
 kde-plasma/powerdevil:brightness-control - Enable screen brightness control using app-misc/ddcutil
-kde-plasma/powerdevil:consolekit - Enable sys-auth/consolekit support instead of logind session tracking
 kde-plasma/powerdevil:wireless - Enable wireless energy saving actions via kde-frameworks/bluez-qt and kde-frameworks/networkmanager-qt
 kde-plasma/systemsettings:classic - Enable classic mode plugin, requires kde-frameworks/khtml
 lxde-base/lxdm:consolekit - Enables support for authorization using consolekit
@@ -3957,8 +3968,6 @@ mail-filter/amavisd-new:razor - Add support for mail-filter/razor
 mail-filter/amavisd-new:spamassassin - Add support for mail-filter/spamassassin
 mail-filter/amavisd-new:zmq - Add support for zeromq sockets
 mail-filter/ask:procmail - Adds support for mail-filter/procmail
-mail-filter/assp:spf - Adds support for Sender Policy Framework
-mail-filter/assp:srs - Adds support for Sender Rewriting Scheme
 mail-filter/bogofilter:tokyocabinet - Enable Tokyo Cabinet database support
 mail-filter/clamassassin:clamd - Use the app-antivirus/clamav daemon for virus checking
 mail-filter/clamassassin:subject-rewrite - Adds support for subject rewriting
@@ -4282,7 +4291,6 @@ media-gfx/qiv:magic - Use libmagic to determine mimetypes
 media-gfx/sigal:s3 - Enables support for the Amazon S3 service.
 media-gfx/simple-scan:colord - Support color management using x11-misc/colord
 media-gfx/slic3r:gui - Enable GUI
-media-gfx/splashutils:fbcondecor - Support for the fbcondecor kernel patch.
 media-gfx/ufraw:contrast - enable contrast setting option
 media-gfx/ufraw:fits - Enable support for the FITS image format through sci-libs/cfitsio
 media-gfx/ufraw:timezone - enable DST correction for file timestamps
@@ -4444,7 +4452,6 @@ media-libs/mediastreamer:ortp - Enable usage of net-libs/ortp
 media-libs/mediastreamer:pcap - Enable usage of net-libs/libpcap
 media-libs/mediastreamer:silk - Use silk (skype protocol) codec plugin
 media-libs/mediastreamer:video - Enable video support
-media-libs/mesa:bindist - Disable patent-encumbered ARB_texture_float, EXT_texture_shared_exponent, and EXT_packed_float extensions.
 media-libs/mesa:classic - Build drivers based on the classic architecture.
 media-libs/mesa:d3d9 - Enable Direct 3D9 API through Nine state tracker. Can be used together with patched wine.
 media-libs/mesa:dri3 - Enable DRI3 support.
@@ -4455,7 +4462,6 @@ media-libs/mesa:gles1 - Enable GLESv1 support.
 media-libs/mesa:gles2 - Enable GLESv2 support.
 media-libs/mesa:llvm - Enable LLVM backend for Gallium3D.
 media-libs/mesa:opencl - Enable the Clover Gallium OpenCL state tracker.
-media-libs/mesa:openmax - Enable OpenMAX video decode/encode acceleration for Gallium3D.
 media-libs/mesa:osmesa - Build the Mesa library for off-screen rendering.
 media-libs/mesa:pax_kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
 media-libs/mesa:pic - disable optimized assembly code that is not PIC friendly
@@ -4915,6 +4921,7 @@ media-sound/qtractor:rubberband - Enable support for in-place audio clip pitch-s
 media-sound/rhythmbox:daap - Build the local network music sharing plugin which uses the DAAP protocol using net-libs/libdmapsharing
 media-sound/shntool:alac - Add support for Apple Lossless Audio Codec files
 media-sound/shntool:mac - Add support for Monkey's Audio files
+media-sound/shntool:shorten - Add support for the shorten audio compressor
 media-sound/snapcast:client - Build and install Snapcast client component
 media-sound/snapcast:server - Build and install Snapcast server component
 media-sound/snapcast:tremor - Build with TREMOR version of vorbis
@@ -5464,7 +5471,6 @@ net-analyzer/nagios-plugins:nagios-ping - Install net-analyzer/fping required fo
 net-analyzer/nagios-plugins:snmp - Install dev-perl/Net-SNMP required for monitoring SNMP values. Disabling the flag does not remove any plugin file.
 net-analyzer/nagios-plugins:ssh - Install net-misc/openssh required for monitoring SSH servers. Disabling the flag does not remove any plugin file.
 net-analyzer/nagios-plugins-flameeyes:smart - Install sys-apps/smartmontools required for S.M.A.R.T. disk monitoring. Disabling the flag removes the plugin file. This plugin also requires the sudo flag to be enable.
-net-analyzer/nagvis:automap - Enable automated map generation using media-gfx/graphviz
 net-analyzer/net-snmp:elf - Enable the use of elf utils to check uptime on some systems
 net-analyzer/net-snmp:mfd-rewrites - Use MFD rewrites of mib modules where available
 net-analyzer/net-snmp:netlink - Use dev-libs/libnl to fetch TCP statistics instead of using /proc/net/tcp (Linux only).
@@ -6333,6 +6339,7 @@ net-mail/gnubiff:password - Enable save passwords to connect mail servers in use
 net-mail/hotwayd:smtp - Build SMTP proxy (hotsmtpd)
 net-mail/isync:compat - Enable legacy utilities
 net-mail/lbdb:abook - Enables app-misc/abook support
+net-mail/lbdb:evo - Add support for mail-client/evolution
 net-mail/lbdb:finger - Enables finger support
 net-mail/libpst:dii - enable dii support
 net-mail/mailutils:clients - Build client programs - frm maidag mail sieve messages readmsg dotlock movemail mimeview mh
@@ -7302,6 +7309,7 @@ sci-chemistry/chemtool:emf - EMF export support
 sci-chemistry/cns:aria - Support patch for sci-chemistry/aria
 sci-chemistry/eden:double-precision - More precise calculations at the expense of speed
 sci-chemistry/ghemical:openbabel - Use sci-chemistry/openbabel for file conversions
+sci-chemistry/ghemical:seamonkey - Add support for the Seamonkey web-browser
 sci-chemistry/gromacs:boost - Enable external boost library
 sci-chemistry/gromacs:cuda - Enable cuda non-bonded kernels
 sci-chemistry/gromacs:double-precision - More precise calculations at the expense of speed
@@ -7416,6 +7424,7 @@ sci-libs/atlas:generic - Build atlas assuming a fairly generic architecture (sse
 sci-libs/avogadrolibs:archive - Enable archive support using app-arch/libarchive
 sci-libs/avogadrolibs:static-plugins - Build all plugins statically into main plugin modules
 sci-libs/avogadrolibs:vtk - Enable sci-libs/vtk support
+sci-libs/cantera:cti - Install CTI tools (ck2cti, ctml_writer) for conversion of Chemkin files to Cantera format
 sci-libs/cddlib:tools - Add a few executables and tests for cddlib
 sci-libs/ceres-solver:c++11 - Build ceres-solver using the C++11 standard
 sci-libs/ceres-solver:cxsparse - Enable simple support for sparse matrix algebra from sci-libs/cxsparse with no LAPACK dependencies
@@ -7784,6 +7793,7 @@ sys-apps/dbus:user-session - Enable user-session semantics for session bus under
 sys-apps/dbus-broker:launcher - dbus-daemon compatibility launcher
 sys-apps/debianutils:installkernel - Install /sbin/installkernel script (for Linux)
 sys-apps/dstat:wifi - Enable wireless network functions
+sys-apps/dtc:valgrind - Use dev-util/valgrind in test phase
 sys-apps/duc:X - Use X11 for the GUI instead of OpenGL. This is the recommended option
 sys-apps/duc:cairo - Build support for exporting to PNG and PDF with x11-libs/cairo
 sys-apps/duc:gui - Build support for a graphical client
@@ -8072,6 +8082,7 @@ sys-boot/grub:fonts - Build and install fonts for the gfxterm module
 sys-boot/grub:libzfs - Enable support for sys-fs/zfs
 sys-boot/grub:mount - Build and install the grub-mount utility
 sys-boot/grub:multislot - Allow concurrent installation of sys-boot/grub SLOT 0 and sys-boot/grub SLOT 2 by renaming all programs.
+sys-boot/grub:netboot - Enable network booting
 sys-boot/grub:themes - Build and install GRUB themes (starfield)
 sys-boot/grub:truetype - Build and install grub-mkfont conversion utility
 sys-boot/lilo:device-mapper - Enable support for device-mapper from sys-fs/lvm2
@@ -8686,6 +8697,7 @@ www-apps/viewvc:cvsgraph - Add dev-vcs/cvsgraph support to show graphical views 
 www-apps/viewvc:mod_wsgi - Add www-apache/mod_wsgi support
 www-apps/viewvc:pygments - Add dev-python/pygments support for syntax highlighting
 www-apps/webdavcgi:rcs - Adds support for a revision controlled backend with RCS (dev-vcs/rcs)
+www-apps/websvn:enscript - Add enscript support to colorize code stored in the repository
 www-apps/wordpress:akismet - Installs Akismet comment spam plug-in
 www-apps/wordpress:themes - Installs themes (including default theme)
 www-client/chromium:component-build - Split build into more shared libraries to speed up linking. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
@@ -8730,6 +8742,7 @@ www-client/firefox:system-sqlite - Use the system-wide dev-db/sqlite installatio
 www-client/google-chrome:plugins - Add system plugins path to launcher
 www-client/google-chrome-beta:plugins - Add system plugins path to launcher
 www-client/google-chrome-unstable:plugins - Add system plugins path to launcher
+www-client/jd:migemo - Enable migemo support for Japanese
 www-client/jd:oniguruma - Use dev-libs/oniguruma for regular expression
 www-client/links:libevent - Enable dev-libs/libevent support
 www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the default library for HTTPS support).
