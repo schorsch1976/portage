@@ -31,6 +31,14 @@
 # https://github.com/LuaJIT/LuaJIT/issues/26
 luajit
 
+# Michał Górny <mgorny@gentoo.org> (16 Jul 2018)
+# Python 3.7 support requires fresh versions of packages which are stuck
+# at keywordreqs.
+# bug #661306: dev-python/pytest
+# bug #661320: dev-python/twisted
+python_targets_python3_7
+python_single_target_python3_7
+
 # Michał Górny <mgorny@gentoo.org> (09 Jul 2018)
 # No OpenCL provider is available on arm64.
 opencl
@@ -38,10 +46,6 @@ opencl
 # Brian Evans <grknight@gentoo.org> (02 Mar 2018)
 # dev-db/qdbm is net yet keyworded
 qdbm
-
-# Michał Górny <mgorny@gentoo.org> (17 Feb 2018)
-# net-dialup/freeradius{,-client} not keyworded.
-radius
 
 # Mart Raudsepp <leio@gentoo.org> (13 Feb 2018)
 # net-libs/libsmi not tested on arm64 yet
