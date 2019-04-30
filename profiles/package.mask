@@ -29,6 +29,10 @@
 
 #--- END OF EXAMPLES ---
 
+# Fabian Groffen <grobian@gentoo.org> (29 Apr 2019)
+# Fails to upgrade, serves 500's on some requests
+=www-apps/baikal-0.5.2
+
 # Mart Raudsepp <leio@gentoo.org> (27 Apr 2019)
 # Old gstreamer 0.10 versions. Use gstreamer:1.0 and co instead.
 # Masked for removal in 30 days. Bug #550648
@@ -855,11 +859,6 @@ sys-devel/automake:1.8
 # Gilles Dartiguelongue <eva@gentoo.org> (04 Sep 2017)
 # Incompatible changes in API in Enchant 2. Bug #629838.
 >=app-text/enchant-2
-
-# Sébastien Fabbro <bicatali@gentoo.org> (19 Aug 2017)
-# ipython-6 is python-3 only and causes circular dependencies
-# Unset python_targets_python2_7 for ipykernel and ipyparallel if needed.
->=dev-python/ipython-6
 
 # Kent Fredric <kentnl@gentoo.org> (21 Jul 2017)
 # Masked due to serious regression that introduces widespread data
