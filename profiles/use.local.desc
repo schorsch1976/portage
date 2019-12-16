@@ -287,6 +287,7 @@ app-backup/tsm:tsm_hw - Difference snapshot support for NetApp and N-Series file
 app-backup/zbackup:tartool - Install tartool utility
 app-benchmarks/filebench:auto-completion - Enable command-line autocompletion using dev-libs/libtecla
 app-benchmarks/httperf:idleconn - Build with the idleconn program
+app-benchmarks/ioping:netdata - Add support for netdata
 app-benchmarks/ramspeed:pic - Force shared libraries to be built as PIC (this is slower)
 app-benchmarks/sysbench:aio - Enable libaio support
 app-cdr/brasero:libburn - Enable dev-libs/libburn backend
@@ -475,6 +476,12 @@ app-emacs/slime:xref - Install xref.lisp cross-referencing tool
 app-emacs/vm:bbdb - Include support for app-emacs/bbdb
 app-emacs/wanderlust:bbdb - Include support for app-emacs/bbdb
 app-emacs/wikipedia-mode:outline-magic - Enable support for outline-mode extensions (app-emacs/outline-magic)
+app-emulation/aranym:clipboard - Enable bidirectional clipboard transfer between the host and FreeMiNT
+app-emulation/aranym:jit - Build Just-In-Time compiler variant with increased performance
+app-emulation/aranym:lilo - Enable support for directly booting kernels such as Linux
+app-emulation/aranym:osmesa - Allow images to be rendered in memory using the host CPU
+app-emulation/aranym:pmmu - Build full PMMU variant, required for running mainline Linux
+app-emulation/aranym:standard - Build standard (no JIT or PMMU) variant
 app-emulation/bochs:3dnow - Enable support for emulating 3DNow! instructions (incomplete)
 app-emulation/bochs:avx - Enable support for emulating Advanced Vector Extensions (AVX)
 app-emulation/bochs:debugger - Enable debugger (slows down emulation)
@@ -607,6 +614,7 @@ app-emulation/qemu:ncurses - Enable the ncurses-based console
 app-emulation/qemu:nfs - Enable NFS support
 app-emulation/qemu:numa - Enable NUMA support
 app-emulation/qemu:pin-upstream-blobs - Pin the versions of BIOS firmware to the version included in the upstream release. This is needed to sanely support migration/suspend/resume/snapshotting/etc... of instances. When the blobs are different, random corruption/bugs/crashes/etc... may be observed.
+app-emulation/qemu:plugins - Enable qemu plugin API via shared library loading.
 app-emulation/qemu:png - Enable png image support for the VNC console server
 app-emulation/qemu:pulseaudio - Enable pulseaudio output for sound emulation
 app-emulation/qemu:rbd - Enable rados block device backend support, see http://ceph.newdream.net/wiki/QEMU-RBD
@@ -621,6 +629,7 @@ app-emulation/qemu:usb - Enable USB passthrough via dev-libs/libusb
 app-emulation/qemu:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
 app-emulation/qemu:vde - Enable VDE-based networking
 app-emulation/qemu:vhost-net - Enable accelerated networking using vhost-net, see http://www.linux-kvm.org/page/VhostNet
+app-emulation/qemu:vhost-user-fs - Enable shared file system access using the FUSE protocol carried over virtio.
 app-emulation/qemu:virgl - Enable experimental Virgil 3d (virtual software GPU)
 app-emulation/qemu:virtfs - Enable VirtFS via virtio-9p-pci / fsdev. See http://wiki.qemu.org/Documentation/9psetup
 app-emulation/qemu:vte - Enable terminal support (x11-libs/vte) in the GTK+ interface
@@ -945,7 +954,6 @@ app-misc/kryoflux-dtc:gui - Install the Kryoflux GUI
 app-misc/lcd4linux:apm - Enable the APM plugin.
 app-misc/lcd4linux:asterisk - Enable the Asterisk plugin.
 app-misc/lcd4linux:button-exec - Enable the Button plugin, to execute something on keypress.
-app-misc/lcd4linux:button_exec - Enable the Button plugin, to execute something on keypress.
 app-misc/lcd4linux:cpuinfo - Enable the cpuinfo plugin.
 app-misc/lcd4linux:dbus - Enable the dbus plugin.
 app-misc/lcd4linux:diskstats - Enable the diskstats plugin.
@@ -959,7 +967,6 @@ app-misc/lcd4linux:gps - Enable the gps plugin, for reading gps coordinates.
 app-misc/lcd4linux:hddtemp - Enable the hddtemp plugin, to read from the hddtemp daemon.
 app-misc/lcd4linux:huawei - Enable the huawei plugin, to read from a huawei device.
 app-misc/lcd4linux:i2c-sensors - Enable the i2c_sensors plugin, to read sensor data.
-app-misc/lcd4linux:i2c_sensors - Enable the i2c_sensors plugin, to read sensor data.
 app-misc/lcd4linux:iconv - Enable the iconv plugin, to convert between encodings.
 app-misc/lcd4linux:isdn - Enable the isdn plugin, to get information about ISDN.
 app-misc/lcd4linux:kvv - Enable the kvv plugin, to get realtime train schedule from the Karlsruher Verkehrsverbund.
@@ -967,14 +974,12 @@ app-misc/lcd4linux:loadavg - Enable the loadavg plugin, to get stats load
 app-misc/lcd4linux:meminfo - Enable the meminfo plugin, to get memory statistics.
 app-misc/lcd4linux:mpd - Enable the mpd plugin, to read from the Music Player Daemon.
 app-misc/lcd4linux:mpris-dbus - Enable the mpris plugin, to read data via dbus for mpris.
-app-misc/lcd4linux:mpris_dbus - Enable the mpris plugin, to read data via dbus for mpris.
 app-misc/lcd4linux:mysql - Enable the mysql plugin, to get mysql database information.
 app-misc/lcd4linux:netdev - Enable the netdev plugin, to get interface statistics.
 app-misc/lcd4linux:netinfo - Enable the netinfo plugin, to get more interface statistic.
 app-misc/lcd4linux:outb - Enable raw i/o access.
 app-misc/lcd4linux:pop3 - Enable the pop3 plugin, to get notified about new mails.
 app-misc/lcd4linux:proc-stat - Enable the proc_stat plugin, to read data from the proc file system.
-app-misc/lcd4linux:proc_stat - Enable the proc_stat plugin, to read data from the proc file system.
 app-misc/lcd4linux:python - Enable support for dev-lang/python and enable the python plugin, to execute own python scripts.
 app-misc/lcd4linux:qnaplog - Enable the qnaplog plugin, to read a log from a QNAP device.
 app-misc/lcd4linux:raspi - Enable the raspi plugin, to read sensor data from a Raspberry Pi.
@@ -3002,7 +3007,6 @@ dev-util/google-perftools:optimisememory - To build libtcmalloc with smaller int
 dev-util/gtk-doc:highlight - Enable source code highlighting
 dev-util/gtk-doc:vim - Enable source code highlighting through app-editors/vim
 dev-util/heaptrack:gui - Install Qt5-based analyzer tool
-dev-util/idea-community:custom-jdk - Install and use IntelliJ's custom JRE.
 dev-util/idea-community:jbr11 - Install and use the Java 11 based version of JetBrains Runtime.
 dev-util/idea-community:jbr8 - Install and use the Java 8 based version of JetBrains Runtime.
 dev-util/intel-ocl-sdk:android - Install android related files
@@ -3556,6 +3560,7 @@ gui-wm/sway:swaynag - Install 'swaynag': shows a message with buttons
 gui-wm/sway:tray - Enable support for StatusNotifierItem tray specification
 gui-wm/sway:wallpapers - Install sway's default wallpaper image
 kde-apps/akonadi:designer - Install plugin for dev-qt/designer
+kde-apps/akonadi:kaccounts - Enable support for system-wide defined KAccounts
 kde-apps/akonadi:tools - Install tools for developers and testing
 kde-apps/analitza:eigen - Enable dev-cpp/eigen mathematical templates support
 kde-apps/ark:zip - Enable ZIP archive support via dev-libs/libzip
@@ -3577,6 +3582,12 @@ kde-apps/kalzium:solver - Enable the equation solver
 kde-apps/kanagram:speech - Enable text-to-speech support
 kde-apps/kate:activities - Enable Plasma Activities support via kde-frameworks/kactivities
 kde-apps/kate:addons - Build and install additional plugins
+kde-apps/kate:filebrowser - Enable File System browser tool view
+kde-apps/kate:lspclient - Enable LSP (Language Server Protocol) client plugin
+kde-apps/kate:plasma - Enable Session Applet addon for KDE Plasma
+kde-apps/kate:projects - Enable Project plugin for executing queries on SQL DBs
+kde-apps/kate:snippets - Enable Snippets Tool View plugin to manage or download code snippets
+kde-apps/kate:sql - Enable SQL plugin for executing queries on SQL DBs
 kde-apps/kde-apps-meta:pim - Pull in KDE PIM suite
 kde-apps/kde-apps-meta:sdk - Pull in developer-specific meta-packages
 kde-apps/kdeadmin-meta:cron - Installs KDE application for virtual/cron configuration
@@ -3606,6 +3617,7 @@ kde-apps/kdeutils-meta:floppy - Install kde-apps/kfloppy to format and create DO
 kde-apps/kdeutils-meta:gpg - Install kde-apps/kgpg which depends on kde-apps/akonadi
 kde-apps/kdeutils-meta:lrz - Install app-arch/lrzip for LRZ archive support in kde-apps/ark
 kde-apps/kdeutils-meta:rar - Install one of app-arch/rar, app-arch/unrar or app-arch/unar for RAR archive support in kde-apps/ark
+kde-apps/kdeutils-meta:webengine - Enable kde-apps/kimagemapeditor, requiring dev-qt/qtwebengine
 kde-apps/keditbookmarks:man - Build and install man pages
 kde-apps/kget:bittorrent - Enable bittorrent transfer plugin through net-libs/libktorrent
 kde-apps/kget:gpg - Enable signature verification by GpgME++ via app-crypt/gpgme
@@ -3655,6 +3667,7 @@ kde-apps/ktp-common-internals:otr - Enable support for encrypted conversations u
 kde-apps/ktp-common-internals:sso - Enable support for Single sign-on through KAccounts
 kde-apps/ktp-text-ui:speech - Enable incoming messages to be read out using text-to-speech
 kde-apps/kwave:qtmedia - Enable playback via Qt5Multimedia
+kde-apps/kwrite:activities - Enable Plasma Activities support via kde-frameworks/kactivities
 kde-apps/libkdepim:designer - Build plugins for dev-qt/designer
 kde-apps/libkleo:fancyviewer - Use kde-apps/kpimtextedit for an improved audit log viewer
 kde-apps/libksane:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
@@ -3693,6 +3706,7 @@ kde-frameworks/kinit:caps - Capabilities support for improved security and bette
 kde-frameworks/kinit:man - Build and install man pages
 kde-frameworks/kio:designer - Build plugins for dev-qt/designer
 kde-frameworks/kio:kwallet - Enable permanent storage of passwords for kpasswdserver with kde-frameworks/kwallet
+kde-frameworks/kitemmodels:qml - Enable QML support via dev-qt/qtdeclarative
 kde-frameworks/kitemviews:designer - Build plugins for dev-qt/designer
 kde-frameworks/knotifications:phonon - Play notification sounds via media-libs/phonon instead of media-libs/libcanberra
 kde-frameworks/knotifications:speech - Enable text-to-speech notification support
@@ -3946,9 +3960,7 @@ mail-filter/postfwd:tools - Install additional tools for testing postfwd
 mail-filter/postgrey:targrey - Enables the targrey patch
 mail-filter/rmilter:dkim - Enable support for DomainKeys Identified Mail
 mail-filter/rmilter:memcached - Enable support for memcached
-mail-filter/rspamd:fann - Enable neural network plugin (requires sci-mathematics/fann).
 mail-filter/rspamd:pcre2 - Use dev-libs/libpcre2
-mail-filter/rspamd:torch - Enable torch support. This is required for the neural module
 mail-filter/spamassassin:cron - Install a cron job to update SpamAssassin's rules daily.
 mail-filter/spamassassin:qmail - Build qmail functionality and docs
 mail-filter/spamdyke:ssl - Enables TLS protocol for spamdyke
@@ -4690,6 +4702,7 @@ media-sound/elisa:mpris - Enable MPRIS support
 media-sound/elisa:vlc - Use media-video/vlc for output rather than dev-qt/qtmultimedia
 media-sound/exaile:scrobbler - Enable audioscrobbler/last.fm support
 media-sound/fapg:xspf - Enable support for saving XSPF playlists.
+media-sound/fluidsynth:network - enable network support (requires BSD sockets)
 media-sound/gimmix:cover - Enable cover art fetching
 media-sound/gimmix:lyrics - Enable lyric fetching
 media-sound/gmpc:unique - Enable single instance support using dev-libs/libunique
@@ -5211,6 +5224,7 @@ media-video/vdr:bidi - fribidi support, for languages, written from right to lef
 media-video/vdr:graphtft - support for vdr-graphtft plugin up from version 0.1.7
 media-video/vdr:html - Install HTML documentation
 media-video/vdr:kbd - enable keyboard support as remote device
+media-video/vdr:keyboard - enable keyboard support as remote device
 media-video/vdr:mainmenuhooks - Allows to replace main menu entries by some special plugins (like epgsearch, extrecmenu, ...)
 media-video/vdr:menuorg - Enables support for the media-plugins/vdr-menuorg
 media-video/vdr:menuselection - adds support for menu hotkeys of double digits
@@ -6091,7 +6105,6 @@ net-libs/axtls:static - Statically build axhttpd server
 net-libs/c-client:chappa - Enable Eduardo Chappa's patches for use with mail-client/alpine (mainly adds support for maildir)
 net-libs/c-client:doc - Install RFCs related to IMAP
 net-libs/c-client:topal - Enable support for net-mail/topal for use with mail-client/alpine
-net-libs/courier-authlib:vpopmail - Enable vpopmail support
 net-libs/cvm:vpopmail - Enable vpopmail support
 net-libs/daq:afpacket - Build the AFPacket data acquisition module. Functions similar to the PCAP module but with better performance. Snort can run unprivileged when using this module. AFpacket supports both inline and passive modes.
 net-libs/daq:dump - Build the Dump data acquisition module. The dump DAQ allows you to test the various inline mode features available in 2.9 Snort like injection and normalization.
@@ -7227,8 +7240,6 @@ sci-biology/clustalw-mpi:static_pairalign - Use static (as opposed to dynamic) s
 sci-biology/exonerate:utils - Install all utilities
 sci-biology/fasttree:double-precision - use double precision instead of single-precision floating point (2x memroy required)
 sci-biology/mcl:blast - Add support for NCBI BLAST data
-sci-biology/plink:R - add support R language
-sci-biology/plink:webcheck - add support for online update checking every time the program starts
 sci-biology/seqan:tools - Build and install SeqAn commandline tools, such as the Yara aligner
 sci-biology/ucsc-genome-browser:server - Install genome browser Web application. If this flag is off, only libraries and utilities from the suite are installed.
 sci-biology/yass:dmalloc - Enable debugging with the dmalloc library
@@ -8011,6 +8022,7 @@ sys-apps/usb_modeswitch:jimtcl - Use dev-lang/jimtcl instead of dev-lang/tcl for
 sys-apps/usermode-utilities:fuse - Build tools (currently umlmount) needing fuse
 sys-apps/util-linux:caps - build setpriv helper (run programs with diff capabilities)
 sys-apps/util-linux:cramfs - build mkfs/fsck helpers for cramfs filesystems
+sys-apps/util-linux:cryptsetup - Use sys-fs/cryptsetup to have built-in dm-verity in libmount
 sys-apps/util-linux:fdformat - build fdformat (floppy disk format)
 sys-apps/util-linux:hardlink - build hardlink program
 sys-apps/util-linux:kill - build the kill program
@@ -8139,6 +8151,7 @@ sys-cluster/ceph:nss - Use dev-libs/nss for cryptography
 sys-cluster/ceph:numa - Use sys-process/numactl for numa support in rocksdb
 sys-cluster/ceph:rabbitmq - Use rabbitmq-c to build rgw amqp push endpoint
 sys-cluster/ceph:radosgw - Add radosgw support
+sys-cluster/ceph:spdk - Enable SPDK user-mode storage driver toolkit
 sys-cluster/ceph:system-boost - Use system dev-libs/boost instead of the bundled one
 sys-cluster/ceph:xfs - Add xfs support
 sys-cluster/ceph:zfs - Add zfs support
@@ -8189,6 +8202,11 @@ sys-cluster/keepalived:json - compile with signal to dump configuration and stat
 sys-cluster/keepalived:regex - compile with support for regex in health checks
 sys-cluster/legion:gasnet - Enable GASNet lib support
 sys-cluster/legion:hwloc - Enable HWLoc lib support
+sys-cluster/lustre:client - Enable kernel client modules
+sys-cluster/lustre:dlc - Enable Dynamic LNET Configuration
+sys-cluster/lustre:server - Enable kernels server modules
+sys-cluster/lustre:tests - Enable installation of tests
+sys-cluster/lustre:utils - Enable lustre utils
 sys-cluster/maui:pbs - Enable pbs integration
 sys-cluster/maui:slurm - Enable slurm integration
 sys-cluster/minikube:libvirt - Build plugin for kvm
@@ -8460,7 +8478,6 @@ sys-fs/zfs-kmod:rootfs - Install zfs-shutdown script to support exporting a pool
 sys-kernel/aufs-sources:experimental - Apply experimental patches; for more information, see "https://wiki.gentoo.org/wiki/Project:Kernel/Experimental".
 sys-kernel/aufs-sources:module - Patch kernel to allow aufs being build as a module.
 sys-kernel/aufs-sources:vanilla - Use vanilla kernel sources without applying genpatches. WARNING: This flag will drop all support from the Gentoo Kernel Security team
-sys-kernel/ck-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/ck-sources:experimental - Apply experimental patches; for more information, see "https://wiki.gentoo.org/wiki/Project:Kernel/Experimental".
 sys-kernel/dracut:debug - Module installing additional tools like strace, file editor, ssh and more
 sys-kernel/genkernel:cryptsetup - Enable support for Luks disk encryption using sys-fs/cryptsetup
@@ -8485,6 +8502,7 @@ sys-kernel/mips-sources:ip27 - Enables additional support for SGI Origin (IP27)
 sys-kernel/mips-sources:ip28 - Enables additional support for SGI Indigo2 Impact R10000 (IP28)
 sys-kernel/mips-sources:ip30 - Enables support for SGI Octane (IP30, 'Speedracer')
 sys-kernel/rt-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
+sys-kernel/vanilla-kernel:initramfs - Build initramfs along with the kernel.
 sys-kernel/xnu-headers:man - Install the manpages
 sys-libs/binutils-libs:64-bit-bfd - Support 64-bit targets even on 32-bit hosts (is ignored on 64-bit hosts)
 sys-libs/binutils-libs:multitarget - Enable all possible targets in libbfd

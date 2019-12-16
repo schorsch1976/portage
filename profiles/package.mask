@@ -32,6 +32,241 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2019-12-15)
+# Live ebuild only.  Not touched since 2012.  Unsurprisingly,
+# the included patch no longer applies.
+# Removal in 14 days.  Bug #703040.
+sys-fs/yaffs2-utils
+
+# Michał Górny <mgorny@gentoo.org> (2019-12-15)
+# Repo gone in 2014.  Never had a release ebuild.  Apparently was broken
+# before anyway (bug #508924).
+# Removal in 14 days.  Bug #533052.
+net-analyzer/gsm-receiver
+
+# Michał Górny <mgorny@gentoo.org> (2019-12-15)
+# Unmaintained.  Most of those packages haven't been bumped since 2013,
+# few have been updated in 2015.
+# Removal in 30 days.  Bug #703032.
+dev-util/obs-service-cpanspec
+dev-util/obs-service-download_files
+dev-util/obs-service-download_src_package
+dev-util/obs-service-download_url
+dev-util/obs-service-extract_file
+dev-util/obs-service-format_spec_file
+dev-util/obs-service-generator_driver_update_disk
+dev-util/obs-service-github_tarballs
+dev-util/obs-service-git_tarballs
+dev-util/obs-service-meta
+dev-util/obs-service-rearchive
+dev-util/obs-service-recompress
+dev-util/obs-service-set_version
+dev-util/obs-service-source_validator
+dev-util/obs-service-tar_scm
+dev-util/obs-service-update_source
+dev-util/obs-service-verify_file
+dev-util/osc
+dev-util/suse-build
+
+# Joerg Bornkessel <hd_brummy@gentoo.org> (2019-12-15)
+#media-plugins/vdr-console failed after glibc update.
+#see wrt bug 692334
+#The project is given up by upstream years ago.
+#There is no HOMAPAGE and SRC_URI available.
+#Package will be removed on ~15 Jan 2020.
+media-plugins/vdr-console
+
+# Ben Kohler <bkohler@gentoo.org> (2010-12-14)
+# Needs snapshot of freerdp later than 2019-05-08 for commit
+# 93bf37568636a1543f43b3f509e80a788236e2af
+~net-misc/remmina-1.3.7
+
+# Aaron Bauman <bman@gentoo.org> (2019-12-13)
+# These are (mostly) leaf packages with only py2.7
+# Please review commit msg. Removal in 30 days
+dev-python/python-daap
+dev-python/dbutils
+dev-python/pychecker
+dev-python/pyosd
+dev-python/python-digest
+dev-python/ed2551911
+dev-python/quixote
+dev-python/shm
+dev-python/fpconst
+dev-python/pysctp
+dev-python/pyamazon
+dev-python/rackspace-monitoring-cli
+dev-python/pyptlib
+dev-python/librharris
+dev-python/simples3
+dev-python/pyxenstore
+dev-python/yolk
+dev-python/yolk-portage
+dev-python/reconfigure
+dev-python/flask-evolution
+dev-python/carrot
+dev-python/python-biggles
+dev-python/py-xmlrpc
+dev-python/sampy
+dev-python/pychart
+dev-python/bjoern
+dev-python/arrayterator
+dev-python/mocker
+dev-python/cfgparse
+dev-python/pyutmp
+dev-python/dingus
+dev-python/functest
+
+# Aaron Bauman <bman@gentoo.org> (2019-12-13)
+# Dead upstream. Fork is available as sci-electronics/drahnr-oregano
+# Removal in 30 days
+sci-electronics/oregano
+
+# Michał Górny <mgorny@gentoo.org> (2019-12-13)
+# The first part of cleanup post the dead ML project.  Those packages
+# have no reverse dependencies (except one another, in some cases).
+# Due to lack of interest, we are limiting the Gentoo ML packages
+# to those that are needed by programs packages for Gentoo.
+# Many of those packages are outdated and/or buggy.
+# Removal in 30 days.  Bug #695782.
+dev-ml/ANSITerminal
+dev-ml/OCaml-ImageMagick
+dev-ml/angstrom
+dev-ml/angstrom-async
+dev-ml/angstrom-lwt-unix
+dev-ml/angstrom-unix
+dev-ml/async_js
+dev-ml/atd
+dev-ml/atdgen
+dev-ml/bignum
+dev-ml/bolt
+dev-ml/bson
+dev-ml/camlimages
+dev-ml/capnp-ocaml
+dev-ml/core_bench
+dev-ml/core_profiler
+dev-ml/dns-async
+dev-ml/dns-lwt
+dev-ml/dns-lwt-unix
+dev-ml/enumerate
+dev-ml/flow_parser
+dev-ml/fort
+dev-ml/gd4o
+dev-ml/gen_js_api
+dev-ml/herelib
+dev-ml/incremental
+dev-ml/incremental_kernel
+dev-ml/io-page
+dev-ml/js-build-tools
+dev-ml/kaputt
+dev-ml/lambda-term
+dev-ml/lwt_glib
+dev-ml/mccs
+dev-ml/merlin
+dev-ml/mirage-profile
+dev-ml/mongo
+dev-ml/ocaml-bigstring
+dev-ml/ocaml-cairo
+dev-ml/ocaml-containers
+dev-ml/ocamldap
+dev-ml/ocamldsort
+dev-ml/ocaml-extunix
+dev-ml/ocaml-make
+dev-ml/ocaml-mysql
+dev-ml/ocamlpam
+dev-ml/ocaml-pcap
+dev-ml/ocaml-redis
+dev-ml/ocaml-redis-lwt
+dev-ml/ocaml-redis-sync
+dev-ml/ocaml-safepass
+dev-ml/ocaml-sha
+dev-ml/ocaml-snappy
+dev-ml/ocaml-stdint
+dev-ml/ocaml-text
+dev-ml/ocaml-uint
+dev-ml/ocaml-webmachine
+dev-ml/ocaml-websocket
+dev-ml/ocsigen-i18n
+dev-ml/ocsigen-start
+dev-ml/ocsigen-toolkit
+dev-ml/odns
+dev-ml/ojquery
+dev-ml/onanomsg
+dev-ml/opam-file-format
+dev-ml/pa_bench
+dev-ml/pa_ounit
+dev-ml/pa_sexp_conv
+dev-ml/pa_structural_sexp
+dev-ml/pipebang
+dev-ml/pomap
+dev-ml/postgresql-ocaml
+dev-ml/ppx_deriving_yojson
+dev-ml/ppx_import
+dev-ml/pxp
+dev-ml/reason
+dev-ml/reason-parser
+dev-ml/res
+dev-ml/sedlex
+dev-ml/sequence
+dev-ml/typerep_extended
+dev-ml/ulex
+dev-ml/utop
+dev-ml/uuidm
+dev-ml/xmlm
+dev-ml/xstr
+dev-ml/zed
+
+# Aaron Bauman <bman@gentoo.org> (2019-12-12)
+# EAPI 4, new versions upstream, not bumped
+# Removal in 30 days
+dev-lang/opendylan
+dev-lang/opendylan-bin
+dev-libs/mps
+
+# Aaron Bauman <bman@gentoo.org> (2019-12-12)
+# Multiple QA issues and docs no longer build
+# Removal in 30 days
+dev-util/cmt
+
+# Ulrich Müller <ulm@gentoo.org> (2019-12-11)
+# No license. HOMEPAGE and SRC_URI are dead.
+# Last visible upstream activity in 2000.
+# The package contains only 7 man pages in total.
+# Masked for removal in 30 days. Bug #702468
+app-i18n/man-pages-da
+
+# Aaron Bauman <bman@gentoo.org> (2019-12-10)
+# EAPI=4, dead upstream/srcurl/homepage. cannot find new home
+# Compression has come along way. Removal in 30 days
+media-gfx/tic98
+
+# Lars Wendler <polynomial-c@gentoo.org> (2019-12-10)
+# Dead upstream, no homepage, requires grub-0 which is gone
+# Also no UEFI support!
+# Masked for removal in 30 days (bug #702416)
+app-admin/grubconfig
+
+# Aaron Bauman <bman@gentoo.org> (2019-12-10)
+# EAPI=4, dead upstream, can't locate new home
+# Removal in 30 days
+dev-util/kelbt
+
+# Aaron Bauman <bman@gentoo.org> (2019-12-10)
+# EAPI=4, fails to build
+# Removal in 30 days
+dev-util/idutils
+
+# David Seifert <soap@gentoo.org> (2019-12-10)
+# Never keyworded, only worked with specific versions of boost that are
+# gone, integrated into boost as dev-libs/boost[python,numpy] nowadays.
+# Removal in 7 days.
+dev-libs/boost-numpy
+
+# David Seifert <soap@gentoo.org> (2019-12-10)
+# Abandoned upstream, broken ncurses linking, last release 8 years ago.
+# Bug #677742, #696228. Removal in 30 days.
+media-sound/vitunes
+
 # Aaron Bauman <bman@gentoo.org> (2019-12-09)
 # EAPI=4, unmaintained upstream, rdep as well
 # Removal in 30 days. Open bugs #552934
@@ -136,7 +371,6 @@ net-wireless/ndiswrapper
 dev-python/inotifyx
 dev-python/disqus-python
 dev-python/figleaf
-dev-python/pysvg
 dev-python/sphinxcontrib-ditaa
 dev-python/pyrax
 dev-python/tgmochikit
@@ -171,8 +405,6 @@ dev-python/python-cdb
 dev-python/foolscap
 net-fs/tahoe-lafs
 dev-python/pyvtk
-<dev-python/pycdio-2.1.0
-media-sound/whipper
 dev-python/hachoir-regex
 app-misc/hachoir-subfile
 dev-python/numdisplay
@@ -277,17 +509,13 @@ app-misc/rq
 # Multiple unmaintained Go packages with incorrect license information.
 # No reverse dependencies.
 #
-# app-admin/docker-bench: #694704
 # app-admin/linux-bench: #699274
-# app-emulation/{cadvisor,cri-tools,reg}: #694892
 # dev-go/glide: #694384
 # dev-util/drone{,-cli}: #695240  // TODO: promu?
 # net-misc/istioctl: #695288
-# sys-auth/docker_auth: #695298
 #
 # Removal in 30 days.
 app-admin/linux-bench
-app-emulation/cri-tools
 dev-go/glide
 net-misc/istioctl
 
@@ -337,11 +565,6 @@ www-apps/hiawatha-monitor
 # mid-2018.
 # Removal in 30 days.  Bug #686428.
 net-analyzer/suricata
-
-# Michał Górny <mgorny@gentoo.org> (2019-12-01)
-# Unresolved license issues.  No reply from maintainer.
-# Removal in 30 days.  Bug #694262.
-dev-util/idea-community
 
 # Michał Górny <mgorny@gentoo.org> (2019-12-01)
 # Unmaintained.  Last release in 2012.  Buggy ebuild.
@@ -511,11 +734,6 @@ virtual/pam
 # Depends on apache-2.2
 dev-libs/OpenSRF
 
-# Lars Wendler <polynomial-c@gentoo.org> (2019-10-16)
-# Masked for removal (bug #692088)
-=app-admin/apache-tools-2.2*
-=www-servers/apache-2.2*
-
 # Miroslav Šulc <fordfrog@gentoo.org> (2019-10-16)
 # Depends on >=virtual/{jdk,jre}-11 which is masked
 =www-servers/tomcat-9.0.27
@@ -582,7 +800,7 @@ dev-php/magickwand
 dev-php/pecl-bbcode
 dev-php/pecl-cairo
 dev-php/pecl-dbx
-dev-php/haru
+dev-php/pecl-haru
 dev-php/pecl-htscanner
 dev-php/pecl-libevent
 dev-php/pecl-memcache
