@@ -2417,11 +2417,8 @@ dev-ml/ocaml-cohttp:lwt - Enables support for the dev-ml/lwt cooperative light-w
 dev-ml/ocaml-cstruct:async - Support for asynchronous execution
 dev-ml/ocaml-cstruct:lwt - Enable threads via lwt
 dev-ml/ocaml-cstruct:ppx - Enable the ppx syntax extension
-dev-ml/ocaml-websocket:async - Enables support for the dev-ml/async asynchronous execution library.
-dev-ml/ocaml-websocket:lwt - Enables support for the dev-ml/lwt cooperative light-weight thread library.
 dev-ml/ocamlnet:httpd - Enables net-httpd web server component
 dev-ml/ocamlnet:zip - Enables netzip support to read/write gzip data using object channels
-dev-ml/onanomsg:lwt - Enables lwt support.
 dev-ml/pgocaml:camlp4 - Enable PG'Ocaml syntax extension.
 dev-ml/tyxml:camlp4 - Enables the camlp4 syntax extension (deprecated)
 dev-ml/tyxml:ppx - Enables the ppx syntax extension (preferred)
@@ -3033,7 +3030,6 @@ dev-util/spirv-llvm-translator:tools - Install the command-line translator llvm-
 dev-util/strace:aio - Enable dev-libs/libaio support for tracing Asynchronous I/O operations
 dev-util/strace:elfutils - Enable stack backtraces (-k flag) via dev-libs/elfutils
 dev-util/strace:unwind - Enable stack backtraces (-k flag) via sys-libs/libunwind
-dev-util/suse-build:symlink - Provide compatibility symlinks with original openSUSE package (might clash with other packages)
 dev-util/sysdig:modules - Build kernel modules needed for tracing local events. Disable this only if you intend to use sysdig purely to work with dumpfiles.
 dev-util/sysprof:elogind - Build the sysprofd daemon service, required to run the UI without root permissions. Relies on sys-auth/elogind for sd-bus API.
 dev-util/sysprof:systemd - Build the sysprofd daemon service, required to run the UI without root permissions. Relies on sys-apps/systemd for sd-bus API.
@@ -5586,7 +5582,10 @@ net-dns/bind-tools:gssapi - Enable gssapi support
 net-dns/ddclient:examples - Install various example files, like for cron.
 net-dns/ddclient:iproute2 - Use sys-apps/iproute2 instead of sys-apps/net-tools for interaction.
 net-dns/dnsdist:dnscrypt - Enable the ability to act as a DNSCrypt server
+net-dns/dnsdist:dnstap - Enable support for dnstap
+net-dns/dnsdist:doh - Enable support for dns over http via www-servers/h2o
 net-dns/dnsdist:fstrm - Enable support for fstrm via dev-libs/fstrm
+net-dns/dnsdist:lmdb - Enable support for lmdb
 net-dns/dnsdist:regex - Enable support for regular expression matching via dev-libs/re2
 net-dns/dnsdist:remote-logging - Enable support for remote logging via dev-libs/protobuf
 net-dns/dnsdist:ssl - Enable support for and encrypted client-server communication via dev-libs/libsodium
@@ -7838,6 +7837,7 @@ sys-apps/flashrom:rayer-spi - RayeR SPIPGM hardware support
 sys-apps/flashrom:satamv - Enable programmer for Marvell SATA controllers
 sys-apps/flashrom:satasii - Enable programmer for SiI SATA controllers
 sys-apps/flashrom:serprog - Enable Serial Flasher programmer
+sys-apps/flashrom:stlinkv3-spi - Enable SPI programmer using STLINK-V3
 sys-apps/flashrom:tools - Install additional tools
 sys-apps/flashrom:usbblaster-spi - Enable support for Altera USB-Blaster dongles
 sys-apps/flashrom:wiki - Enable wiki informations, like supported devices etc.
@@ -8895,7 +8895,7 @@ x11-drivers/xf86-video-intel:xvmc - Enables X-Video Motion Compensation support
 x11-drivers/xf86-video-openchrome:viaregtool - Install registers dumper tool
 x11-drivers/xf86-video-qxl:xspice - Build the xspice driver
 x11-libs/agg:gpc - Enable gpc polygon clipper library
-x11-libs/cairo:gles2 - Build the OpenGL ES 2 backend
+x11-libs/cairo:gles2-only - Build the OpenGL ES 2 backend
 x11-libs/cairo:glib - Compile with GLib Object System support
 x11-libs/cairo:opengl - Build the OpenGL backend
 x11-libs/cairo:utils - Build support for Cairo script and trace utilities
