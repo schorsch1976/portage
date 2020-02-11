@@ -492,6 +492,7 @@ app-emulation/docker-credential-helpers:pass - Build pass helper for the pass ut
 app-emulation/docker-runc:ambient - Enable support for ambient capability
 app-emulation/docker-runc:apparmor - Enable AppArmor support
 app-emulation/dosemu:fluidsynth - use media-sound/fluidsynth for MIDI emulation
+app-emulation/faudio:dumpvoices - FAudio dumps buffer data to individual files with RIFF/XWMA headers, usable with players like ffplay/testxwma.
 app-emulation/faudio:ffmpeg - FAudio has optional support for decoding xWMA resources using FFmpeg, requiring: media-video/ffmpeg (note: this feature is not supported by media-video/libav).
 app-emulation/faudio:test - Build and run faudio testsuite.
 app-emulation/faudio:utils - Build all faudio utilities.
@@ -3689,6 +3690,7 @@ kde-plasma/kinfocenter:gles2 - Show OpenGL ES information in kinfocenter
 kde-plasma/kinfocenter:pci - Show advanced PCI information
 kde-plasma/kmenuedit:hotkeys - Enable support for hotkey editing
 kde-plasma/kscreenlocker:consolekit - Support for killing the screenlocker when sys-auth/consolekit is the session tracker
+kde-plasma/ksysguard:pcap - Enable per-process network statistic collection using net-libs/libpcap
 kde-plasma/kwin:gles2 - Use OpenGL ES 2 instead of full GL
 kde-plasma/kwin:multimedia - Enable effect video button in desktop effects KCM
 kde-plasma/libksysguard:webengine - Enable display of detailed memory information using dev-qt/qtwebengine.
@@ -4305,6 +4307,7 @@ media-libs/libsdl2:sound - Control audio support (disable at your own risk)
 media-libs/libsdl2:tslib - Build with tslib support for touchscreen devices
 media-libs/libsdl2:video - Control video support (disable at your own risk)
 media-libs/libsdl2:vulkan - Enable Vulkan support
+media-libs/libtgvoip:dsp - Enable signal processing (echo cancellation, noise suppression, and automatic gain control)
 media-libs/libvisio:tools - Build conversion tools
 media-libs/libvpx:highbitdepth - Enable 10 and 12 bit support for VP9.
 media-libs/libvpx:postproc - Enable additional post processing filters
@@ -4587,7 +4590,6 @@ media-sound/clementine:seafile - Enable support for seafile: a file sync service
 media-sound/clementine:skydrive - Enable Skydrive support
 media-sound/clementine:wiimote - Enable support for Wii remote
 media-sound/cmus:cdio - Use libcdio for CD support
-media-sound/cmus:cue - Enable CUE sheet parsing
 media-sound/cmus:discid - Enable reading the ID of the inserted CD
 media-sound/cmus:elogind - Enable MPRIS support via sys-auth/elogind
 media-sound/cmus:pidgin - Install support script for net-im/pidgin
@@ -6255,7 +6257,6 @@ net-mail/mailutils:clients - Build client programs - frm maidag mail sieve messa
 net-mail/mailutils:kyotocabinet - Enable Kyoto Cabinet database support
 net-mail/mailutils:servers - Build server programs - imap4d pop3d comsatd
 net-mail/mailutils:tokyocabinet - Enable Tokyo Cabinet database support
-net-mail/mairix:gnus - Add support for the marks propagation feature in GNUS (provided by app-editors/emacs or app-xemacs/gnus for XEmacs users)
 net-mail/mu:emacs - Install the mu4e mail client
 net-mail/mu:mug - Install the mug toy client, not for normal use
 net-mail/notmuch:crypt - Support decryption and verification of PGP/MIME messages and in Emacs UI - encryption; support also S/MIME signature verification since version 0.22
@@ -7265,7 +7266,6 @@ sci-electronics/pcb:nelma - NELMA file export
 sci-electronics/pcb:png - PNG graphics export
 sci-electronics/pcb:tk - Build tcl/tk graphical QFP footprint generator
 sci-electronics/pcb:toporouter - Build toporouter
-sci-electronics/pcb:xrender - Translucent PCB display for Motif/Lesstif GUI
 sci-electronics/pulseview:decode - Enable decoding of protocols while capturing
 sci-electronics/sigrok-cli:decode - Enable decoding of protocols while capturing
 sci-electronics/splat:hires - Builds additional high resolution application 'rfsplat-hd'
@@ -7731,7 +7731,6 @@ sci-visualization/paraview:development - Install development files including hea
 sci-visualization/paraview:nvcontrol - Add NVCONTROL support for OpenGL options
 sci-visualization/paraview:offscreen - Offscreen rendering through OSMesa
 sci-visualization/paraview:plugins - Build and install additional plugins
-sci-visualization/veusz:fits - Add FITS format via dev-python/astropy
 sci-visualization/veusz:minuit - Use Minuit during fitting viadev-python/pyminuit
 sci-visualization/yt:hub - Connect to the yt hub with dev-python/girder-client
 sec-policy/selinux-base:open_perms - Enable the open permissions for file object classes (SELinux policy capability).
@@ -8694,6 +8693,7 @@ www-client/chromium:system-icu - Use system icu instead of the bundled one
 www-client/chromium:system-libvpx - Use system libvpx instead of the bundled one
 www-client/chromium:tcmalloc - Use bundled tcmalloc instead of system malloc
 www-client/chromium:widevine - Unsupported closed-source DRM capability (required by Netflix VOD)
+www-client/dillo:xembed - Enable X11 XEmbed support
 www-client/elinks:bittorrent - Enable support for the BitTorrent protocol
 www-client/elinks:brotli - Enable support for brotli compression
 www-client/elinks:finger - Enable support for the finger protocol
@@ -9060,6 +9060,8 @@ x11-themes/gentoo-artwork:grub - Install extra sys-boot/grub themes
 x11-themes/gentoo-artwork:icons - Install icons
 x11-themes/gentoo-artwork:lilo - Install extra sys-boot/lilo themes
 x11-themes/gentoo-artwork:pixmaps - Install pixmaps
+x11-themes/greybird:gtk2 - Install theme for GTK+-2.0
+x11-themes/greybird:gtk3 - Install theme for GTK+-3.0
 x11-themes/greybird:xfce - Install theme for xfce-base/xfwm4
 x11-themes/gtk-engines-murrine:animation-rtl - Progressbar animation from right to left
 x11-themes/gtk-engines-murrine:themes - Pull in themes via x11-themes/murrine-themes
