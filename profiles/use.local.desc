@@ -14,6 +14,7 @@ app-accessibility/brltty:pcm - support for sound card digital audio
 app-accessibility/brltty:speech - speech support
 app-accessibility/eflite:16k_voice - Use a higher-quality voice.
 app-accessibility/emacspeak:espeak - Adds support for the espeak tts engine
+app-accessibility/flite:voices - Install synthetic voices
 app-accessibility/freetts:jsapi - build Java Speech API (JSAPI)
 app-accessibility/freetts:mbrola - Adds support for mbrola voices
 app-accessibility/orca:braille - Enable braille support
@@ -893,12 +894,6 @@ app-misc/gcstar:stats - Enable statistics reporting
 app-misc/gcstar:tellico - Enable support for kde-misc/tellico files
 app-misc/geoclue:modemmanager - Enable geolocation through 3G or GPS enabled hardware through net-misc/modemmanager.
 app-misc/geoclue:zeroconf - Enable retrieval of GPS location from Android devices with https://wiki.gnome.org/Apps/GeoclueShare
-app-misc/gourmet:i18n - Enable support for i18n through elib.intl
-app-misc/gourmet:ipython - Enable support for the interactive Python console plugin
-app-misc/gourmet:pdf - Enable export to PDF
-app-misc/gourmet:print - Enable pretty Python printing
-app-misc/gourmet:spell - Enable support for the spell check plugin
-app-misc/gourmet:web - Enable support for the web import plugin
 app-misc/gramps:geo - Enable rendering of geographical data using sci-geosciences/osm-gps-map
 app-misc/gramps:rcs - Adds support for family tree archives via dev-vcs/rcs
 app-misc/gramps:reports - All external software that is needed for graphical reports will be installed
@@ -2086,6 +2081,8 @@ dev-libs/boost:tools - Build and install the boost tools (bcp, quickbook, inspec
 dev-libs/botan:boost - use dev-libs/boost
 dev-libs/check:subunit - Enable support for the subunit unit test protocol
 dev-libs/crypto++:asm - Support assembly hand optimized crypto functions (i.e. faster run time)
+dev-libs/cudnn:cuda10-1 - On nVidia CUDA 10.1.
+dev-libs/cudnn:cuda10-2 - On nVidia CUDA 10.2.
 dev-libs/cyberjack:tools - Build and install optional management tools.
 dev-libs/cyberjack:usb - Enable support for usb based chipcard reader.
 dev-libs/cyrus-sasl:authdaemond - Add Courier-IMAP authdaemond unix socket support (net-mail/courier-imap, mail-mta/courier)
@@ -2851,9 +2848,6 @@ dev-util/anjuta:devhelp - Enable devhelp integration
 dev-util/anjuta:glade - Build glade plugin for anjuta
 dev-util/anjuta:packagekit - Use packagekit to search for missing tools
 dev-util/anjuta:terminal - Enable terminal plugin based on x11-libs/vte
-dev-util/apitrace:cli - Enable command line interface
-dev-util/apitrace:egl - Enable EGL support
-dev-util/apitrace:system-snappy - Link dynamic against app-arch/snappy
 dev-util/bazel:tools - Install extra bazel tools to build from sources
 dev-util/bitcoin-tx:knots - Build enhanced Bitcoin Knots version, rather than Bitcoin Core
 dev-util/buildbot:docker - Add support for worker docker command steps
@@ -5209,7 +5203,6 @@ media-video/vlc:matroska - Enable matroska support using reference libraries (fa
 media-video/vlc:mpeg - Add libmpeg2 support for mpeg-1 and mpeg-2 video streams
 media-video/vlc:nfs - Enable support for nfs protocol via net-fs/libnfs
 media-video/vlc:omxil - Enable OpenMAX Integration Layer codec module
-media-video/vlc:opencv - Enable OpenCV (computer vision) filter module
 media-video/vlc:optimisememory - Enable optimisation for memory rather than performance
 media-video/vlc:postproc - Enable image post-processing via libpostproc (part of FFmpeg)
 media-video/vlc:projectm - Enable the projectM visualization plugin
@@ -5393,7 +5386,6 @@ net-analyzer/ossec-hids:agent - Build "agent" installation target (see package d
 net-analyzer/ossec-hids:hybrid - Build "hybrid" installation target
 net-analyzer/ossec-hids:local - Build "local" installation target
 net-analyzer/ossec-hids:server - Build "server" installation target
-net-analyzer/pchar:pcap - Use the net-libs/libpcap library
 net-analyzer/pinger:gtk2 - Install the gtkpinger GUI utility based on x11-libs/gtk+:2
 net-analyzer/pinger:gtk3 - Install the gtkpinger GUI utility based on x11-libs/gtk+:3
 net-analyzer/pmacct:64bit - Use 64bit counters instead of 32bit ones
@@ -6664,6 +6656,7 @@ net-misc/remmina:telepathy - Enable telepathy support
 net-misc/rsync:stunnel - Provide helper scripts for using rsync via >=net-misc/stunnel-4
 net-misc/rygel:tracker - Install dependencies for the tracker plugin
 net-misc/rygel:transcode - Install dependencies for transcoding support
+net-misc/scponly:chroot - Enables adding and configuring an 'scponlyc' chrooted user
 net-misc/scponly:gftp - Enables gFTP compatibility
 net-misc/scponly:logging - Enables SFTP logging compatibility
 net-misc/scponly:passwd - Enables passwd compatibility
@@ -7209,8 +7202,6 @@ sci-chemistry/avogadro2:rpc - Enable RPC server
 sci-chemistry/avogadro2:vtk - include vtk support
 sci-chemistry/chemtool:emf - EMF export support
 sci-chemistry/eden:double-precision - More precise calculations at the expense of speed
-sci-chemistry/ghemical:openbabel - Use sci-chemistry/openbabel for file conversions
-sci-chemistry/ghemical:seamonkey - Add support for the Seamonkey web-browser
 sci-chemistry/gromacs:cuda - Enable cuda non-bonded kernels
 sci-chemistry/gromacs:double-precision - More precise calculations at the expense of speed
 sci-chemistry/gromacs:gmxapi - Add support for gmxapi library
