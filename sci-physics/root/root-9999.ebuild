@@ -99,7 +99,7 @@ CDEPEND="
 	pythia8? ( sci-physics/pythia:8 )
 	python? ( ${PYTHON_DEPS} )
 	R? ( dev-lang/R )
-	shadow? ( virtual/shadow )
+	shadow? ( sys-apps/shadow )
 	sqlite? ( dev-db/sqlite:3 )
 	ssl? ( dev-libs/openssl:0= )
 	tbb? ( >=dev-cpp/tbb-2018 )
@@ -226,7 +226,9 @@ src_configure() {
 		-Dpgsql=$(usex postgres)
 		-Dpythia6=$(usex pythia6)
 		-Dpythia8=$(usex pythia8)
-		-Dpython=$(usex python)
+		-Dpyroot=$(usex python) # python was renamed to pyroot
+		-Dpython=$(usex python) # kept for backward compatibility
+		-Dpyroot_experimental=OFF # use standard PyROOT for now
 		-Dqt5web=$(usex qt5)
 		-Droofit=$(usex roofit)
 		-Droot7=$(usex root7)

@@ -2343,7 +2343,6 @@ dev-libs/weston:rdp - Enable Remote Desktop Protocol compositor support
 dev-libs/weston:remoting - Enable plugin to stream output to remote hosts using media-libs/gstreamer
 dev-libs/weston:resize-optimization - Increase performance, allocate more RAM. Recommended to disable on Raspberry Pi
 dev-libs/weston:screen-sharing - Enable screen-sharing through RDP
-dev-libs/weston:unwind - Enable libunwind usage for backtraces
 dev-libs/weston:wayland-compositor - Enable Wayland compositor support
 dev-libs/weston:xwayland - Enable ability support native X11 applications
 dev-libs/xapian:brass - Enabled brass backend db support
@@ -2589,10 +2588,6 @@ dev-python/python-mpd:twisted - Enable twisted support
 dev-python/python-stdnum:vies - Enable VIES
 dev-python/pyudev:qt5 - Install PyQt5 bindings
 dev-python/pyyaml:libyaml - enable support for C implementation using libyaml
-dev-python/pyzor:gdbm - Enables the Gdbm back-end database engine for pyzord
-dev-python/pyzor:gevent - Use dev-python/gevent to enable asynchronous operation
-dev-python/pyzor:pyzord - Enable the pyzord server daemon
-dev-python/pyzor:redis - Enables the redis back-end database engine for pyzord through dev-python/redis-py
 dev-python/rarfile:compressed - Enables the module to support compressed v3 archives by calling the app-arch/unrar.
 dev-python/rdflib:redland - enable support for Redland triplestore
 dev-python/restkit:cli - Install the restcli command line interface/tool, based on dev-python/ipython
@@ -3759,6 +3754,7 @@ lxqt-base/lxqt-panel:tray - Build tray plugin
 lxqt-base/lxqt-panel:volume - Build volume plugin
 lxqt-base/lxqt-panel:worldclock - Build worldclock plugin
 lxqt-base/lxqt-session:themes - Install LXQt themes and graphics
+mail-client/aerc:notmuch - Enable support for net-mail/notmuch
 mail-client/alot:doc - Install user manual and API documentation
 mail-client/alpine:onlyalpine - installs only the alpine binary, so it does not collied with pico and/or pine
 mail-client/alpine:passfile - Adds support for caching passwords into a file between sessions
@@ -3892,6 +3888,10 @@ mail-filter/opendmarc:reports - Install the reports binaries: expire, import, re
 mail-filter/opendmarc:spf - Use the mail-filter/libspf2 for Sender Policy Framework checking
 mail-filter/postfwd:tools - Install additional tools for testing postfwd
 mail-filter/postgrey:targrey - Enables the targrey patch
+mail-filter/pyzor:gdbm - Enables the Gdbm back-end database engine for pyzord
+mail-filter/pyzor:gevent - Use dev-python/gevent to enable asynchronous operation
+mail-filter/pyzor:pyzord - Enable the pyzord server daemon
+mail-filter/pyzor:redis - Enables the redis back-end database engine for pyzord through dev-python/redis-py
 mail-filter/rmilter:dkim - Enable support for DomainKeys Identified Mail
 mail-filter/rmilter:memcached - Enable support for memcached
 mail-filter/rspamd:pcre2 - Use dev-libs/libpcre2
@@ -4360,6 +4360,7 @@ media-libs/opencv:features2d - Enable features2d module
 media-libs/opencv:gdal - Enable support for sci-libs/gdal library
 media-libs/opencv:gflags - Use Google's C++ argument parsing library
 media-libs/opencv:glog - Use Google's C++ loggin library
+media-libs/opencv:gtk3 - Enable x11-libs/gtk+:3 support
 media-libs/opencv:opencl - Add support for OpenCL
 media-libs/opencv:opencvapps - Enable compilation with opencvapps
 media-libs/opencv:tesseract - Use Google's OCR Engine
@@ -6724,6 +6725,12 @@ net-misc/wget:cookie_check - Enable cookie checks via net-libs/libpsl
 net-misc/wget:metalink - Enable support for media-libs/libmetalink
 net-misc/wget:ntlm - Enable support for NTLM (Windows-based) authorization
 net-misc/wget:uuid - Generate UUIDs for the WARC (Web ARChive file format) using libuuid; otherwise use a simple RNG (random number generator)
+net-misc/wget2:brotli - Enable support for brotli compression
+net-misc/wget2:gpgme - Build gpgme backend
+net-misc/wget2:http2 - Enable HTTP/2.0 support
+net-misc/wget2:openssl - Enable crypto support via dev-libs/openssl
+net-misc/wget2:psl - Use public suffix list via media-libs/libnspsl
+net-misc/wget2:valgrind - Depend on dev-util/vagrind for test suite
 net-misc/wicd:ambiance - Install icons from Ubuntu's ambiance theme
 net-misc/wicd:gnome-shell - Install gnome-shell extension
 net-misc/wicd:gtk - Installs a gtk UI. This is enabled by default because it is intended behavior. Requires dev-python/pygtk
@@ -6732,7 +6739,8 @@ net-misc/wicd:mac4lin - Change default icons to mac4lin icon set
 net-misc/wicd:ncurses - Installs a ncurses UI
 net-misc/wicd:pm-utils - Installs the pm-utils hooks for suspend/resume and requires sys-power/pm-utils
 net-misc/x2goserver:fuse - Use net-fs/sshfs to allow shared folders
-net-misc/youtube-viewer:gtk - Install the gtk GUI, called gtk-youtube-viewer
+net-misc/youtube-viewer:gtk - Install the gtk3 GUI
+net-misc/youtube-viewer:gtk2 - Use the old gtk2 GUI instead of the gtk3 one
 net-misc/zerotier:clang - Use Clang compiler instead of GCC
 net-misc/zerotier:neon - Enable ARM32 neon-salsa2012-asm code
 net-nds/389-ds-base:auto-dn-suffix - Enable auto bind with auto dn suffix over unix domain socket (LDAPI) support
@@ -6776,7 +6784,6 @@ net-p2p/amule:stats - Enable statistic reporting
 net-p2p/bitcoin-cli:knots - Build enhanced Bitcoin Knots version, rather than Bitcoin Core
 net-p2p/bitcoin-qt:asm - Enable assembly for optimization
 net-p2p/bitcoin-qt:bip70 - Enable support for the BIP70 payment protocol
-net-p2p/bitcoin-qt:bitcoin_policy_rbf - Replace By Fee policy: Your node will preferentially mine and relay transactions paying the highest fee, regardless of receive order
 net-p2p/bitcoin-qt:knots - Build enhanced Bitcoin Knots version, rather than Bitcoin Core
 net-p2p/bitcoin-qt:libevent - Use dev-libs/libevent (needed for JSON-RPC, REST, and Tor auto-configuration
 net-p2p/bitcoin-qt:qrcode - Enable generation of QR Codes for receiving payments
@@ -6785,7 +6792,6 @@ net-p2p/bitcoin-qt:upnp - Enable Universal Plug and Play
 net-p2p/bitcoin-qt:wallet - Enable wallet support
 net-p2p/bitcoin-qt:zeromq - Report blocks and transactions via zeromq
 net-p2p/bitcoind:asm - Enable assembly for optimization
-net-p2p/bitcoind:bitcoin_policy_rbf - Replace By Fee policy: Your node will preferentially mine and relay transactions paying the highest fee, regardless of receive order
 net-p2p/bitcoind:knots - Build enhanced Bitcoin Knots version, rather than Bitcoin Core
 net-p2p/bitcoind:system-leveldb - Use the system-wide dev-libs/leveldb instead of bundled
 net-p2p/bitcoind:upnp - Enable Universal Plug and Play
@@ -7376,6 +7382,9 @@ sci-libs/dlib:cuda - Enable support for CUDA for Deep Neural Networks (cuDNN) on
 sci-libs/dlib:mkl - Enable support for Intel FFT sci-libs/mkl
 sci-libs/dlib:python - Enable support for Python API bindings
 sci-libs/dmlc-core:s3 - Support for the Amazon Simple Storage Service
+sci-libs/eccodes:defs - Install full set of definition files.
+sci-libs/eccodes:extra-test - Install full set of test data (large).
+sci-libs/eccodes:memfs - Enable memory based access to definition/sample files (conflicts with tests).
 sci-libs/fftw:float - Link default library to single precision instead of double (symlinks only and fftw-2.1)
 sci-libs/fftw:quad - Build quadruple precision lib
 sci-libs/fftw:zbus - Adds support for ZBus cycle-counter of mips
@@ -7400,11 +7409,13 @@ sci-libs/gmsh:petsc - Enable sci-mathematics/petsc support
 sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version
 sci-libs/gsl:deprecated - Enable deprecated functions
 sci-libs/hdf5:hl - Enable high level API (https://support.hdfgroup.org/HDF5/doc/HL/index.html)
+sci-libs/hdf5:unsupported - Enable unsupported combinations of configuration options
 sci-libs/hypre:fei - Build the internal Finite Element Interface routines
 sci-libs/hypre:int64 - Build the 64 bits integer library
 sci-libs/indilib:websocket - Enable support for WebSocket protocol
 sci-libs/ipopt:hsl - hsl
 sci-libs/ipopt:mumps - Enable sci-libs/mumps support
+sci-libs/lapack:deprecated - Also build deprecated functions
 sci-libs/lapack:eselect-ldso - Enable runtime library switching by eselect and ld.so.
 sci-libs/lapack:lapacke - Build LAPACKE
 sci-libs/lapack-reference:deprecated - Build deprecated routines
@@ -7725,6 +7736,7 @@ sci-visualization/paraview:development - Install development files including hea
 sci-visualization/paraview:nvcontrol - Add NVCONTROL support for OpenGL options
 sci-visualization/paraview:offscreen - Offscreen rendering through OSMesa
 sci-visualization/paraview:plugins - Build and install additional plugins
+sci-visualization/paraview:webengine - Add support for dev-qt/qtwebengine
 sci-visualization/veusz:minuit - Use Minuit during fitting viadev-python/pyminuit
 sci-visualization/yt:hub - Connect to the yt hub with dev-python/girder-client
 sec-policy/selinux-base:open_perms - Enable the open permissions for file object classes (SELinux policy capability).
@@ -8300,8 +8312,8 @@ sys-devel/parity:vc7_0 - Enable support for Visual Studio 2002
 sys-devel/parity:vc7_1 - Enable support for Visual Studio 2003
 sys-devel/parity:vc8_0 - Enable support for Visual Studio 2005
 sys-devel/parity:vc9_0 - Enable support for Visual Studio 2008
-sys-devel/parity:vc_x64 - Enable support for 64bit Visual Studio compilers
-sys-devel/parity:vc_x86 - Enable support for 32bit Visual Studio compilers
+sys-devel/parity:vcx64 - Enable support for 64bit Visual Studio compilers
+sys-devel/parity:vcx86 - Enable support for 32bit Visual Studio compilers
 sys-devel/sparse:gtk - Build the test-inspect utility (requires x11-libs/gtk+ version 2)
 sys-devel/sparse:llvm - Build the sparse-llvm utility
 sys-devel/sparse:xml - Build the c2xml utility (requires dev-libs/libxml2)
