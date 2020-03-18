@@ -32,6 +32,23 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2020-03-17)
+# Abandoned.  Python 2 only.  Upstream recommends dev-python/suds
+# instead.
+# Removal in 30 days.  Bug #713056.
+dev-python/soappy
+
+# Marc Schiffbauer <mschiff@gentoo.org> (2020-03-17)
+# No py3 support, replaced by its successor automx2
+# Removal in 30 days. Bug #708410
+net-mail/automx
+
+# Michał Górny <mgorny@gentoo.org> (2020-03-17)
+# Unmaintained.  Current Gentoo version is from 2015, last upstream
+# release in 2017.  Python 2 only.
+# Removal in 30 days.  Bug #712950.
+mail-filter/spambayes
+
 # Andreas Sturmlechner <asturm@gentoo.org> (2020-03-14)
 # Breaks at least dev-games/simgear right now, bug #709878.
 ~dev-games/openscenegraph-3.6.5
@@ -169,7 +186,6 @@ dev-python/httreplay
 dev-python/husl
 dev-python/hvac
 dev-python/influxdb
-dev-python/intelhex
 dev-python/into
 dev-python/ipcalc
 dev-python/iso3166
@@ -255,7 +271,6 @@ dev-python/slackclient
 dev-python/spark-parser
 dev-python/sphinx-better-theme
 dev-python/sphinxcontrib-googleanalytics
-dev-python/sphinxcontrib-programoutput
 dev-python/tempest-lib
 dev-python/testify
 dev-python/tlslite
@@ -475,11 +490,6 @@ net-analyzer/zabbix
 # Removal in 30 days.  Bug #691044.
 dev-python/tlslite
 
-# Matthew Thode <prometheanfire@gentoo.org> (2020-02-17)
-# Discontinued upstream.  Bug #709998
-net-analyzer/icinga
-net-analyzer/icinga-web
-
 # Michał Górny <mgorny@gentoo.org> (2020-02-17)
 # Unmaintained.  Last bumped in 2018.  Blocks dev-qt/qtwebkit removal.
 # Removal in 30 days.  Bug #709850.
@@ -587,11 +597,6 @@ net-misc/gnome-remote-desktop
 # are developers or want more experimental features
 # and accept a more unstable release.
 >=www-client/chromium-82
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2020-02-16)
-# No more revdeps, abandoned upstream, depends on deprecated dev-qt/qtwebkit.
-# Masked for removal in 30 days.
-kde-misc/kwebkitpart
 
 # Mart Raudsepp <leio@gentoo.org> (2020-02-12)
 # GNOME 3.35 development release packages
@@ -779,10 +784,6 @@ x11-drivers/xf86-video-tga
 x11-drivers/xf86-video-trident
 x11-drivers/xf86-video-tseng
 x11-drivers/xf86-video-voodoo
-
-# Eray Aslan <eras@gentoo.org> (2019-03-01)
-# Mask experimental software
-=mail-mta/postfix-3.5*
 
 # Miroslav Šulc <fordfrog@gentoo.org> (2019-01-23)
 # Depends on >=virtual/{jdk,jre}-11 which is masked

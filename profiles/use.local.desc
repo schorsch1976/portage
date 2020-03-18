@@ -5281,13 +5281,6 @@ net-analyzer/hydra:gcrypt - Enable radmin2 support through dev-libs/libgcrypt
 net-analyzer/hydra:libssh - Enable SSH support through net-libs/libssh
 net-analyzer/hydra:mongodb - MongoDB support through dev-libs/mongo-c-driver
 net-analyzer/hydra:ncp - NCP protocol (NetWare) support through net-fs/ncpfs
-net-analyzer/icinga:contrib - additional scripts
-net-analyzer/icinga:eventhandler - Adds support for running custom scripts whenever a host or service state change occurs
-net-analyzer/icinga:idoutils - Adds DB support
-net-analyzer/icinga:lighttpd - Adds Lighttpd support
-net-analyzer/icinga:plugins - Adds support for nagios plugins
-net-analyzer/icinga:web - Adds generic web interface support
-net-analyzer/icinga-web:pnp - Enables pnp4nagios integration
 net-analyzer/icinga2:console - Adds support for line-editing in the console
 net-analyzer/icinga2:lto - Adds support for link time optimization
 net-analyzer/icinga2:mail - Allows for mailing of alerts
@@ -5403,7 +5396,7 @@ net-analyzer/pmacct:rabbitmq - Enable support for RabbitMQ through net-libs/rabb
 net-analyzer/pmacct:st-bins - Link Streaming Telemetry daemon binaries
 net-analyzer/pmacct:traffic-bins - Link IPv4/IPv6 traffic accounting binaries
 net-analyzer/pmacct:zmq - Enable support for ZeroMQ through net-libs/zeromq
-net-analyzer/pnp4nagios:icinga - Build against net-analyzer/icinga2 or net-analyzer/icinga instead of net-analyzer/nagios-core
+net-analyzer/pnp4nagios:icinga - Build against net-analyzer/icinga2 instead of net-analyzer/nagios-core
 net-analyzer/pnp4nagios:nagios - Build against net-analyzer/nagios-core (the default)
 net-analyzer/prelude-lml:tls - Enables Prelude LML support Syslog through TLS using net-libs/gnutls.
 net-analyzer/rrdcollect:exec - Enable exec:/// support
@@ -5649,6 +5642,8 @@ net-firewall/conntrack-tools:cttimeout - Use net-libs/libnetfilter_cttimeout for
 net-firewall/conntrack-tools:libtirpc - Use net-libs/libtirpc for RPC support
 net-firewall/ebtables:perl - Install the ebtables-save script which uses perl
 net-firewall/firehol:ipset - Use net-firewall/ipset.
+net-firewall/firewalld:iptables - Add support for net-firewall/nftables as firewall backend
+net-firewall/firewalld:nftables - Add support for net-firewall/nftables as firewall backend
 net-firewall/fwknop:client - Build fwknop client
 net-firewall/fwknop:extras - Install utility scripts and AppArmor policy for fwknopd
 net-firewall/fwknop:firewalld - Use net-firewall/firewalld as the default server backend
@@ -5860,17 +5855,18 @@ net-im/prosody:libevent - Use libevent for event handling
 net-im/prosody:zlib - Support for compressing XMPP streams with mod_compression
 net-im/psi:aspell - Enable spellchecking using app-text/aspell
 net-im/psi:enchant - Enable spellchecking using app-text/enchant
-net-im/psi:extras - Enable Psi+ patcheset
+net-im/psi:extras - Enable Psi+ patchset
 net-im/psi:hunspell - Enable spellchecking using app-text/hunspell
-net-im/psi:iconsets - Install additional iconsets, some of them has not clear licensing
-net-im/psi:sql - Enable psi-new-history extras patch
-net-im/psi:webengine - Use dev-qt/qtwebengine instead of dev-qt/qtwebkit
-net-im/psi:webkit - Enable themed, html-based chatlogs
+net-im/psi:iconsets - Install additional iconsets, some of them have no clear licensing
+net-im/psi:keyring - Enable storing password in system keyring manager
+net-im/psi:webengine - Enable themed, html-based chatlogs using dev-qt/qtwebengine
+net-im/psi:webkit - Enable themed, html-based chatlogs using dev-qt/qtwebkit
 net-im/psi:whiteboarding - Enable experimental interactive SVG drawing
+net-im/psi:xscreensaver - Use X screensaver protocol extension to monitor idle/active status based on mouse/keyboard events
+net-im/psimedia:extras - Enable Psi+ mode (required when built for Psi+)
 net-im/pyicq-t:webinterface - Install dependencies needed for the web interface
 net-im/qtox:X - Adds support for X11
 net-im/qtox:notification - Adds support for GTK Status Notifier tray backends
-net-im/skypeforlinux:pax_kernel - Triggers a paxmarking of the main skype binary
 net-im/spectrum2:frotz - Enables the Z-Engine backend.
 net-im/spectrum2:irc - Enables the IRC backend, based on net-im/libcommuni.
 net-im/spectrum2:purple - Enables the libpurple backend, based on net-im/pidgin.
@@ -7664,8 +7660,12 @@ sci-physics/espresso:cuda - Enable cuda support
 sci-physics/espresso:examples - Installs the examples
 sci-physics/fastjet:cgal - Use sci-mathematics/cgal instead of bundled algorithms
 sci-physics/fastjet:plugins - Build all standard and C++ plugins
+sci-physics/geant:c++11 - Build using the C++11 standard
+sci-physics/geant:c++14 - Build using the C++14 standard
+sci-physics/geant:c++17 - Build using the C++17 standard
 sci-physics/geant:data - Add a lot of standard physics data files for geant4
 sci-physics/geant:dawn - Add support for media-gfx/dawn (3D postscript rendering)
+sci-physics/geant:freetype - Add support for media-libs/freetype
 sci-physics/geant:gdml - Enable geometry markup language for xml
 sci-physics/geant:geant3 - Add compatibility for geant321 to geant4
 sci-physics/geant:inventor - Add support for Open Inventor SGI toolkit via Coin3D
