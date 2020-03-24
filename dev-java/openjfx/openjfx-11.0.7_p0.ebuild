@@ -7,7 +7,7 @@ MY_PV="${PV/_p/+}"
 SLOT="${MY_PV%%[.+]*}"
 EGRADLE_VER="4.8"
 
-inherit java-pkg-2 multiprocessing
+inherit flag-o-matic java-pkg-2 multiprocessing
 
 DESCRIPTION="Java OpenJFX client application platform"
 HOMEPAGE="https://openjfx.io"
@@ -73,6 +73,7 @@ PATCHES=(
 	"${FILESDIR}"/11/glibc-compatibility.patch
 	"${FILESDIR}"/11/respect-user-cflags.patch
 	"${FILESDIR}"/11/use-system-swt-jar.patch
+	"${FILESDIR}"/11/wno-error.patch
 )
 
 S="${WORKDIR}/rt-${MY_PV}"
@@ -167,6 +168,8 @@ src_prepare() {
 }
 
 src_configure() {
+	append-flags -Wno-error
+
 	#FIXME: still calls gcc, pkg-config etc by name without chost prefix
 	#FIXME: should we enable webkit? doubt so
 
