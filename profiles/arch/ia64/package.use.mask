@@ -1,6 +1,10 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Michał Górny <mgorny@gentoo.org> (2020-04-13)
+# Requires unsupported dev-python/gevent.
+dev-python/socketpool gevent
+
 # # Sergei Trofimovich <slyfox@gentoo.org> (2020-04-12)
 # ruby-2.7 dropped ia64 support, mask dependencies requiring ruby.
 # These pull in:
@@ -18,10 +22,6 @@ gnome-base/nautilus previewer
 # - gnome-base/gnome-shell: depends on gnome-extra/evolution-data-server
 gnome-base/gnome-control-center flickr
 gnome-base/gvfs google
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2020-04-11)
-# git useflag requires dev-libs/libgit2
-dev-util/geany-plugins git
 
 # Thomas Deutschmann <whissi@gentoo.org> (2020-03-15)
 # Mask USE=libtesseract, app-text/tesseract is not keyworded
