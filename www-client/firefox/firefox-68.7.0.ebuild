@@ -6,7 +6,7 @@ VIRTUALX_REQUIRED="pgo"
 WANT_AUTOCONF="2.1"
 MOZ_ESR="1"
 
-PYTHON_COMPAT=( python3_{6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 PYTHON_REQ_USE='ncurses,sqlite,ssl,threads(+)'
 
 # This list can be updated with scripts/get_langs.sh from the mozilla overlay
@@ -280,6 +280,10 @@ pkg_setup() {
 
 	# Workaround for #627726
 	if has ccache ${FEATURES} ; then
+		if use clang && use pgo ; then
+			die "Using FEATURES=ccache with USE=clang and USE=pgo is currently known to be broken (bug #718632)."
+		fi
+
 		einfo "Fixing PATH for FEATURES=ccache ..."
 		PATH=$(fix_path 'ccache/bin')
 	elif has distcc ${FEATURES} ; then
