@@ -2242,6 +2242,10 @@ dev-libs/libsodium:urandom - Use /dev/urandom instead of /dev/random
 dev-libs/libspt:libtirpc - Build against net-libs/libtirpc for RPC support
 dev-libs/libtasn1:valgrind - Enable usage of dev-util/valgrind in debug
 dev-libs/libtermkey:demos - Install demos, which pulls in dev-libs/glib
+dev-libs/libucl:regex - Enable regex support
+dev-libs/libucl:sign - Enable signatures check
+dev-libs/libucl:urls - Enable URLs fetch
+dev-libs/libucl:utils - Install utils for checking other configs
 dev-libs/libunibreak:doc - Install html API documentation.
 dev-libs/libunibreak:man - Generate man pages with doxygen.
 dev-libs/libverto:glib - Support event loops using dev-libs/glib
@@ -2253,6 +2257,7 @@ dev-libs/libvoikko:hfst - Enable HFST morphology backend
 dev-libs/libxmlb:stemmer - Enable language stemming support
 dev-libs/libzia:ftdi - Enable support for FTDI USB chips
 dev-libs/libzip:mbedtls - Use net-libs/mbedtls as TLS provider
+dev-libs/libzip:tools - Install binary tools to compare, modify and merge zip files
 dev-libs/link-grammar:aspell - Adds support for app-text/aspell spell checker
 dev-libs/link-grammar:hunspell - Adds support for app-text/hunspell spell checker
 dev-libs/log4cplus:iconv - Use inconv for wchar_t <-> char conversions. See also log4cplus's unicode.txt documentation
@@ -3457,6 +3462,7 @@ gnustep-base/libobjc2:boehm-gc - Enable Hans Boehm's garbage collector (dev-libs
 gui-apps/grim:jpeg - Enable JPEG support.
 gui-apps/grim:man - Generate and install man pages.
 gui-apps/kanshi:man - build and install man pages
+gui-apps/lavalauncher:man - Build and install man pages
 gui-apps/mako:icons - Enable support for icons
 gui-apps/slurp:man - Generate and install man pages.
 gui-apps/swaybg:man - Build and install man pages
@@ -3476,6 +3482,9 @@ gui-libs/wlroots:X - Enable support for X11 applications (XWayland)
 gui-libs/wlroots:elogind - Enable support for rootless session via elogind
 gui-libs/wlroots:icccm - Use xcb-icccm (from x11-libs/xcb-util-wm) util library for improved Xwayland introspection
 gui-libs/wlroots:x11-backend - Enable support for handling input/output devices through x11-libs/libxcb
+gui-wm/hikari:gamma - add gamma control for redshift
+gui-wm/hikari:layershell - add support for wayland apps using layer shell
+gui-wm/hikari:screencopy - add support for screen grabbing
 gui-wm/sway:X - Enable support for X11 applications (XWayland)
 gui-wm/sway:elogind - Enable support for rootless session via elogind
 gui-wm/sway:fish-completion - Enable fish completion support
@@ -3488,8 +3497,7 @@ gui-wm/sway:swaymsg - Install 'swaymsg': tool for communicating with a running s
 gui-wm/sway:swaynag - Install 'swaynag': shows a message with buttons
 gui-wm/sway:tray - Enable support for StatusNotifierItem tray specification
 gui-wm/sway:wallpapers - Install sway's default wallpaper image
-gui-wm/wayfire:debug - add debugging symbols for error reporting. DISABLE ALL SYSTEM USE FLAGS BEFORE REPORTING BUGS.
-gui-wm/wayfire:gles2 - use libglvnd to do animations more efficiently
+gui-wm/wayfire:gles - use libglvnd to do animations more efficiently
 gui-wm/wayfire:system-wfconfig - use the system-wide wf-config, else build it as a submodule. DO NOT DISABLE UNLESS YOU KNOW WHAT YOU ARE DOING.
 gui-wm/wayfire:system-wlroots - use the system wide wlroots, else build it as a submodule. DO NOT DISABLE UNLESS YOU KNOW WHAT YOU ARE DOING.
 kde-apps/akonadi:designer - Install plugin for dev-qt/designer
