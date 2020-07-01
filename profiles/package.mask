@@ -67,8 +67,6 @@ sci-chemistry/pymol-plugins-dssp
 sci-chemistry/pymol-plugins-promol
 sci-chemistry/relax
 sci-chemistry/sparky
-sci-chemistry/vmd
-www-apps/roundup
 www-apps/viewvc
 x11-misc/nts
 
@@ -114,7 +112,6 @@ net-mail/archivemail
 net-mail/getmail
 net-wireless/airpwn
 sci-chemistry/bkchem
-sci-chemistry/propka
 sci-chemistry/pymol-plugins-bni-tools
 sci-chemistry/pymol-plugins-emovie
 sci-chemistry/viewmol
