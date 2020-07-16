@@ -32,6 +32,89 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas Sturmlechner <asturm@gentoo.org> (2020-07-15)
+# Broken by scons-python3 for >1 year, depends on dead gnome-base/libgnomeui,
+# bugs #685576, #726818, no reverse dependencies. Removal in 30 days.
+app-text/glosung
+
+# Kent Fredric <kentnl@gentoo.org> (2020-07-15)
+# No LICENSE declaration by upstream, and no response from upstream
+# since at least 2013 as to what license to use (bug #732710)
+# Removal in 30 days.
+dev-perl/Data-Diver
+
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2020-07-15)
+# In preparation; do not use yet.
+=dev-lang/perl-5.32*
+
+# Christoph Junghans <junghans@gentoo.org> (2020-07-14)
+# Unmaintained upstream and does not support systemd or firewalld. 
+# Please use net-analyzer/fail2ban instead. (bug #732076)
+# Removal in 30 days.
+app-admin/denyhosts
+
+# Matt Turner <mattst88@gentoo.org> (2019-09-01)
+# Icons look funny. E.g., the X (close) icon is wrong. I suspect files are
+# installed incorrectly
+>=x11-themes/adwaita-icon-theme-3.36
+
+# William Hubbs <williamh@gentoo.org> (2020-07-14)
+# The kubernetes split packages are old versions with known security
+# issues.
+#
+#If you haven't already, please upgrade and migrate to sys-cluster/kubernetes:
+#
+# https://www.gentoo.org/support/news-items/2020-04-03-kubernetes-moving-to-single-package.html
+#
+# Removal in 60 days. Bug #731804
+sys-cluster/kubeadm
+sys-cluster/kube-apiserver
+sys-cluster/kube-controller-manager
+sys-cluster/kubectl
+sys-cluster/kubelet
+sys-cluster/kube-proxy
+sys-cluster/kube-scheduler
+
+# Michał Górny <mgorny@gentoo.org> (2020-07-13)
+# Python 2 dev-python/pillow revdeps with extended removal time.
+# Removal in 90 days.  Bug #729672.
+<net-wireless/gnuradio-3.8
+<net-wireless/gr-iio-0.3_p20191219-r1
+<net-wireless/gr-paint-0.0_p20200517
+<net-analyzer/gr-fosphor-0.0_p20200131
+<net-wireless/gr-ieee802154-0.0_p20191006
+<net-wireless/gr-iqbal-0.38.1
+<net-wireless/gr-osmosdr-0.2.0
+
+# Michał Górny <mgorny@gentoo.org> (2020-07-13)
+# These packages are mid-profile Python 2-only dependencies
+# of dev-python/pillow.  Since the last Pillow version to support
+# Python 2 contains a number of unresolved vulnerabilities, these
+# packages and old package versions are queued for removal.
+#
+# In more detail:
+# - pyxplot has been last released in 2012
+# - pkpgcounter has been last released in 2007, and has seen only a few
+#   commits since 2009
+# - scipy has removed py2 support in 1.4 (py2 target in the old version
+#   is masked in profiles/base/package.use.mask)
+#
+# This list does not include two high-profile packages:
+# - app-office/scribus whose py3 version is being currently stabilized
+# - media-tv/kodi which has no py3 version at the moment
+#
+# Removal in 30 days.  Bug #729672.
+<media-plugins/mythplugins-31
+net-print/pkpgcounter
+<sci-chemistry/chemex-2018
+sci-libs/scipy-python2
+sci-visualization/pyxplot
+
+# Michał Górny <mgorny@gentoo.org> (2020-07-13)
+# Unmaintained.  Last release from 2018, still does not support py3.
+# Removal in 30 days.  Bug #732352.
+app-mobilephone/wammu
+
 # Andreas K. Hüttel <dilfridge@gentoo.org> (2020-07-11)
 # Fails to build with recent glibc, bug 719968
 # Removal in 30 days
@@ -175,7 +258,6 @@ dev-util/unrpyc
 games-engines/gemrb
 media-sound/lilycomp
 media-video/tovid
-net-irc/irker
 net-mail/archivemail
 net-mail/getmail
 net-wireless/airpwn
@@ -361,33 +443,12 @@ games-board/sirius
 # Masked for removal in 30 days.
 dev-embedded/gnome-avrdude
 
-# Michał Górny <mgorny@gentoo.org> (2020-06-14)
-# Maintainer unresponsive.  Stuck on py3.6.  Pending version bump.
-# Failing tests.
-# Removal in 30 days.  Bug #718990.
-dev-python/hglib
-
-# Michał Górny <mgorny@gentoo.org> (2020-06-14)
-# Unmaintained since at least 2014.  The current release is 1.5 dev
-# branch from 2010.  Upstream had a few stable 1.4 releases since
-# but 1.5 seems to be dead.  Multiple build failures reported,
-# and an ebuild vulnerability.
-# Removal in 30 days.  Bug #728186.
-app-mobilephone/kannel
-app-mobilephone/kannel-sqlbox
-
 # Hans de Graaff <graaff@gentoo.org> (2020-06-14)
 # Ruby 2.4 is no longer supported by upstream and no longer gets
 # security updates since the 2.4.10 release. Use ruby 2.5 or later
 # instead.
 dev-lang/ruby:2.4
 dev-ruby/did_you_mean:2.4
-
-# Mikle Kolyada <zlogene@gentoo.org> (2020-06-13)
-# multiple forks.
-# Merged into the app-text/texlive-core package
-# Removal in 30 days.
-app-text/xindy
 
 # Jonas Stein <jstein@gentoo.org> (2020-06-07)
 # Last rite unusable package.
@@ -400,55 +461,15 @@ app-misc/ifp-line
 # regarding runstatedir (not using /run).
 =net-misc/networkmanager-1.22.10-r11
 
-# Michał Górny <mgorny@gentoo.org> (2020-06-05)
-# Replaced by dev-util/ydiff, after upstream rename.
-# Removal in 30 days.  Bug #710538.
-dev-util/cdiff
-
-# Sam James <sam@gentoo.org> (2020-06-04)
-# Multiple vulnerabilities (Bug #655176, Bug #701812)
-# Misc. other bugs, out of date, no maintainer.
-# Masked for removal in 30 days.
-net-nds/389-ds-base
-dev-libs/389-adminutil
-dev-libs/svrcore
-
 # Stefan Strogin <steils@gentoo.org> (2020-06-03)
 # Masked for testing
 >=dev-libs/libressl-3.2.0
-
-# Michał Górny <mgorny@gentoo.org> (2020-06-03)
-# Very bad quality (upstream) package.  Stuck on py3.6.  No revdeps.
-# Removal in 30 days.  Bug #718762.
-dev-python/dnslib
-
-# Aaron Bauman <bman@gentoo.org> (2020-06-02)
-# py2 only. dead upstream. m-n.
-# Masked for removal in 30 days
-app-misc/webcomics-collector
-net-misc/pytvshows
-net-news/rawdog
 
 # Jonas Stein <jstein@gentoo.org> (2020-06-01)
 # Last rite package due to missing/unclear license.
 # Removal after 2020-08-01
 # Bug 687664
 app-dicts/stardict-quick-eng-fra
-
-# Michał Górny <mgorny@gentoo.org> (2020-06-01)
-# Effectively unmaintained, Python 2 only game and its dependencies.
-# Removal in 30 days.
-games-action/slune
-dev-python/editobj
-dev-python/py2play
-dev-python/pyopenal
-dev-python/soya
-
-# Hans de Graaff <graaff@gentoo.org> (2020-05-24)
-# No releases since 2011, upstream is gone, fails tests,
-# no reverse dependencies.
-# Masked for removal in 30 days.
-dev-ruby/rack-mount
 
 # Aaron W. Swenson <titanofold@gentoo.org> (2020-05-15)
 # PostgreSQL 9.4 series is EOL. Migrate your database cluster to a more recent
