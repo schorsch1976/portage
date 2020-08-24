@@ -32,6 +32,21 @@
 
 #--- END OF EXAMPLES ---
 
+# Alfredo Tupone <tupone@gentoo.org> (2020-08-23)
+# Ported to py3 but not yet released
+# Masked to allow py2.7 removal
+dev-lang/spark
+
+# Jack Todaro <solpeth@posteo.org> (2020-08-23)
+# Its only reverse dependency is app-emacs/ghc-mod,
+# which is masked and dead upstream.
+dev-haskell/cabal-helper
+
+# Jack Todaro <solpeth@posteo.org> (2020-08-23)
+# Unmaintained package, does not build with modern
+# versions of GHC.
+app-emacs/ghc-mod
+
 # Sergei Trofimovich <slyfox@gentoo.org> (2020-08-22)
 # Obsolete package without reverse dependencies.
 # Use dev-haskell/mustache instead.
@@ -86,7 +101,6 @@ dev-python/jplephem
 dev-python/natgrid
 dev-python/pcapy
 dev-python/promises
-dev-python/pycuda
 dev-python/pydotplus
 dev-python/pyds9
 dev-python/pyflann
