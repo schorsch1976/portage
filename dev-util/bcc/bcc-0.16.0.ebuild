@@ -10,7 +10,7 @@ inherit cmake linux-info llvm python-r1
 DESCRIPTION="Tools for BPF-based Linux IO analysis, networking, monitoring, and more"
 HOMEPAGE="https://iovisor.github.io/bcc/"
 
-SRC_URI="https://github.com/iovisor/bcc/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/iovisor/bcc/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -41,7 +41,6 @@ BDEPEND="
 	dev-util/cmake
 	virtual/pkgconfig
 "
-
 
 PATCHES=(
 	"${FILESDIR}/bcc-0.9.0-no-luajit-automagic-dep.patch"
