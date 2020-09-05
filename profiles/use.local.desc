@@ -4149,7 +4149,6 @@ media-gfx/inkscape:visio - Enable support for Microsoft Visio diagrams via media
 media-gfx/inkscape:wpg - Enable support for WordPerfect graphics via app-text/libwpg
 media-gfx/iscan-plugin-gt-f500:minimal - Install the firmware only, and not the plugin.
 media-gfx/jpeg2ps:metric - Default to A4 paper size
-media-gfx/kphotoalbum:kipi - Support for the KDE Image Plugin Interface
 media-gfx/kphotoalbum:map - Enable map display support using kde-apps/marble
 media-gfx/kphotoalbum:share - Enable support for a share menu using kde-frameworks/purpose
 media-gfx/krita:color-management - Enable color management via media-libs/opencolorio
@@ -6886,6 +6885,7 @@ net-print/hplip:parport - Enable parallel port for devices which require it
 net-print/hplip:scanner - Enable scanner on multifunction devices which support it
 net-print/hplip:snmp - Add support for net-analyzer/net-snmp which enables this driver to work over networks (both for server and client)
 net-print/hplip:static-ppds - Use statically-generated PPDs instead of Dynamic PPDs. Although this is deprecated some printers may still need it to work properly. Use this flag if hp-setup fails to find/create a valid PPD file
+net-print/hplip-plugin:orblite - Install the ORBlite scanner plugin
 net-print/kyocera-1x2x-mfp-driver:rastertokpsl-fix - Use custom wrapper script to sanitize arguments before passing to 'rastertokpsl' filter program
 net-proxy/haproxy:51degrees - Device Detection using 51 Degrees
 net-proxy/haproxy:device-atlas - Use dev-libs/device-atlas-api-c library
@@ -6962,7 +6962,6 @@ net-vpn/badvpn:tun2socks - Build tun2socks, a program which implements a TUN dev
 net-vpn/badvpn:udpgw - Build udpgw, a small daemon which allows tun2socks to forward UDP traffic.
 net-vpn/i2p:nls - Adds Native Language Support using GNU gettext.
 net-vpn/i2pd:i2p-hardening - Compile with hardening on vanilla compilers/linkers
-net-vpn/i2pd:websocket - Enable websocket server
 net-vpn/ipsec-tools:hybrid - Makes available both mode-cfg and xauth support
 net-vpn/ipsec-tools:idea - Enable support for the IDEA algorithm
 net-vpn/ipsec-tools:nat - Enable NAT-Traversal
