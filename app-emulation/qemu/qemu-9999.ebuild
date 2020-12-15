@@ -69,6 +69,7 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}
 	qemu_softmmu_targets_riscv64? ( fdt )
 	static? ( static-user !alsa !gtk !jack !opengl !pulseaudio !plugins !rbd !snappy )
 	static-user? ( !plugins )
+	vhost-user-fs? ( caps seccomp )
 	virtfs? ( caps xattr )
 	vte? ( gtk )
 	plugins? ( !static !static-user )
@@ -170,13 +171,13 @@ SOFTMMU_TOOLS_DEPEND="
 X86_FIRMWARE_DEPEND="
 	pin-upstream-blobs? (
 		~sys-firmware/edk2-ovmf-201905[binary]
-		~sys-firmware/ipxe-1.0.0_p20190728[binary]
+		~sys-firmware/ipxe-1.0.0_p20190728[binary,qemu]
 		~sys-firmware/seabios-1.12.0[binary,seavgabios]
 		~sys-firmware/sgabios-0.1_pre8[binary]
 	)
 	!pin-upstream-blobs? (
 		sys-firmware/edk2-ovmf
-		sys-firmware/ipxe
+		sys-firmware/ipxe[qemu]
 		>=sys-firmware/seabios-1.10.2[seavgabios]
 		sys-firmware/sgabios
 	)"
@@ -223,6 +224,7 @@ RDEPEND="${CDEPEND}
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-2.11.1-capstone_include_path.patch
+	"${FILESDIR}"/${PN}-5.2.0-strings.patch
 )
 
 QA_PREBUILT="
@@ -357,7 +359,7 @@ src_prepare() {
 	default
 
 	# Use correct toolchain to fix cross-compiling
-	tc-export AR AS LD NM OBJCOPY PKG_CONFIG RANLIB
+	tc-export AR AS LD NM OBJCOPY PKG_CONFIG RANLIB STRINGS
 	export WINDRES=${CHOST}-windres
 
 	# Verbose builds
@@ -437,6 +439,14 @@ qemu_src_configure() {
 			echo "--disable-${2:-$1}"
 		fi
 	}
+	# Enable option only for tools build, but not 'user' or 'softmmu'
+	conf_tools() {
+		if [[ ${buildtype} == "tools" ]] ; then
+			use_enable "$@"
+		else
+			echo "--disable-${2:-$1}"
+		fi
+	}
 	conf_opts+=(
 		$(conf_notuser accessibility brlapi)
 		$(conf_notuser aio linux-aio)
@@ -478,6 +488,7 @@ qemu_src_configure() {
 		$(conf_notuser vde)
 		$(conf_notuser vhost-net)
 		$(conf_notuser vhost-user-fs)
+		$(conf_tools vhost-user-fs virtiofsd)
 		$(conf_notuser virgl virglrenderer)
 		$(conf_notuser virtfs)
 		$(conf_notuser vnc)
