@@ -202,13 +202,6 @@ app-crypt/acme-client
 # Removal in 30 days, bug #444470
 dev-libs/ilbc-rfc3951
 
-# Sam James <sam@gentoo.org> (2021-01-01)
-# UnrealIRCd 4.x is EOL. Please upgrade to 5.x.
-# To be removed shortly.
-# https://www.unrealircd.org/docs/UnrealIRCd_4_EOL
-# bug 762715
-<net-irc/unrealircd-5.0.0
-
 # Sergei Trofimovich <slyfox@gentoo.org> (2020-12-20)
 # Needs a port to haskell-src-exts compatible with ghc-8.8.
 # https://github.com/ndmitchell/derive/pull/37
@@ -277,16 +270,6 @@ kde-apps/kdebase-meta:5
 # which breaks the OpenRC init script. Bug #746227.
 >=net-misc/tigervnc-1.11.0
 
-# Michał Górny <mgorny@gentoo.org> (2020-09-25)
-# PyPy3.7 alpha.  Known to break a few packages.  Masked until it
-# matures more.
-=dev-python/pypy3-7.3.2_p37*
-=dev-python/pypy3-exe-7.3.2_p37*
-=dev-python/pypy3-exe-bin-7.3.2_p37*
-=dev-python/pypy3-7.3.3_p37*
-=dev-python/pypy3-exe-7.3.3_p37*
-=dev-python/pypy3-exe-bin-7.3.3_p37*
-
 # Arfrever Frehtes Taifersar Arahesis <arfrever.fta@gmail.com> (2020-09-01)
 # Mismatched version (bug #695022). Masked to force upgrade to 2.0.4_pre20200306162733.
 # (Mask should remain after ebuilds are deleted, until 2021-03-01 or
@@ -338,10 +321,10 @@ net-libs/nDPI
 
 # Miroslav Šulc <fordfrog@gentoo.org> (2020-02-27)
 # >=dev-java/ant-eclipse-ecj-4.10 depends on masked >=virtual/{jdk,jre}-11
-# www-servers/tomcat:9 depends on masked dev-java/eclipse-ecj
+# www-servers/tomcat >= 9 depends on masked dev-java/eclipse-ecj
 >=dev-java/ant-eclipse-ecj-4.10
 >=dev-java/eclipse-ecj-4.10
-www-servers/tomcat:9
+>=www-servers/tomcat-9
 
 # Mart Raudsepp <leio@gentoo.org> (2020-02-16)
 # Fails to automatically launch pipewire for me. Help welcome figuring it out.
