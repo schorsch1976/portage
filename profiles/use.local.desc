@@ -721,13 +721,6 @@ app-forensics/honggfuzz:clang - Enable clang support (pull sys-libs/blocksruntim
 app-forensics/libewf:bfio - Enables libbfio for chaining file in file handling
 app-forensics/libewf:fuse - Enable fuse support for ewfmount
 app-forensics/libewf:uuid - Enable UUID support in the ewftools
-app-forensics/quickfuzz:archs - support archive formats
-app-forensics/quickfuzz:codes - support cource code formats
-app-forensics/quickfuzz:docs - support document formats
-app-forensics/quickfuzz:imgs - support image formats
-app-forensics/quickfuzz:media - support media formats
-app-forensics/quickfuzz:net - support networking formats
-app-forensics/quickfuzz:pki - support PKI formats
 app-forensics/sleuthkit:aff - Enable extra aff formats
 app-forensics/sleuthkit:ewf - Enable libewf support
 app-i18n/anthy:canna-2ch - Enable support for app-dicts/canna-2ch
@@ -1311,7 +1304,6 @@ dev-db/percona-server:tokudb-backup-plugin - Builds the TokuDB backup plugin
 dev-db/pgbouncer:c-ares - Use c-ares as the DNS backend instead of evdns (libevent).
 dev-db/pgbouncer:udns - Use udns as the DNS backend instead of evdns (libevent). Supports IPv4 only.
 dev-db/pgpool2:memcached - Use memcached for query caching.
-dev-db/pgrouting:html - Install HTML formatted documentation
 dev-db/phpmyadmin:setup - Installs the phpMyAdmin setup utility. Users who don't use the utility should disable this USE flag for security reasons as the setup tool was the target of various exploits in the past.
 dev-db/postgis:address-standardizer - Normalize US and CA postal addresses
 dev-db/postgis:gtk - Build graphical interface for shp2pgsql (shp2pgsql-gui)
@@ -1330,6 +1322,7 @@ dev-db/sqldeveloper:sybase - Add support for the Sybase SQL Database Server
 dev-db/sqlite:secure-delete - Enable overwriting of deleted content with zeros by default (http://sqlite.org/pragma.html#pragma_secure_delete), causing some performance penalty
 dev-db/sqlite:tools - Install additional tools
 dev-db/sqlitestudio:cli - Build CLI interface
+dev-db/timescaledb:proprietary-extensions - Enable proprietary features/extensions licensed under the TimeScale License
 dev-db/unixODBC:minimal - Disable bundled drivers and extra libraries (most users don't need these)
 dev-db/unixODBC:odbcmanual - Administrator, Internal Structure, Programmer and User documentation
 dev-embedded/avrdude:ftdi - Enable support for USB FTDI chips via dev-embedded/libftdi
@@ -3134,7 +3127,6 @@ games-fps/eduke32:voidsw - Enable support for Shadow Warrior (Classic) through V
 games-fps/eduke32:voxels - Install the Duke Nukem 3D Voxels Pack.
 games-fps/eduke32:vpx - Enable support for media-libs/libvpx.
 games-fps/eduke32:xmp - Enable support for media-libs/exempi.
-games-fps/gzdoom:gtk2 - Enable support for GTK+2 instead of GTK+3
 games-fps/gzdoom:non-free - Enable non-free components
 games-fps/nexuiz:maps - Install the community map pack
 games-fps/prboom-plus:dumb - Enable support for various tracker-style music formats via media-libs/dumb
@@ -4575,7 +4567,6 @@ media-sound/jack-audio-connection-kit:pam - Add basic realtime configuration via
 media-sound/jack2:classic - Enable building of jackd
 media-sound/jack2:metadata - Enable metadata API
 media-sound/jack2:pam - Add basic realtime configuration via sys-auth/realtime-base
-media-sound/jalv:gtk2 - Adds support for GTK+2 in addition to GTK+3 controlled by the gtk useflag.
 media-sound/jalv:gtkmm - Adds support for dev-cpp/gtkmm: C++ interface for GTK+2
 media-sound/kid3:acoustid - Build acoustic fingerprinting plugin using media-libs/chromaprint
 media-sound/kid3:mpris - Enable support for MPRIS2 interface using dev-qt/qtdbus
@@ -4659,7 +4650,6 @@ media-sound/ncmpcpp:clock - Enable clock screen
 media-sound/ncmpcpp:outputs - Enable outputs screen
 media-sound/ncmpcpp:visualizer - Enable visualizer screen with sound wave/frequency spectrum modes
 media-sound/patchage:jack-dbus - Use Jack via D-Bus instead of libjack
-media-sound/patchage:session - Include experimental Jack session management (save/restore) support
 media-sound/picard:discid - Enable reading the ID of the inserted CD
 media-sound/picard:fingerprints - Enable calculation and lookup of AcoustID fingerprints
 media-sound/pithos:keybinder - Use keybinder to enable global key bindings
@@ -6123,7 +6113,6 @@ net-mail/dovecot:rpc - Add support for NFS quotas
 net-mail/dovecot:sieve - Add sieve support
 net-mail/dovecot:solr - Add solr full text search (FTS) support
 net-mail/dovecot:textcat - Add libtextcat language guessing support for full text search (FTS)
-net-mail/dovecot:vpopmail - Add vpopmail support
 net-mail/dovecot:zstd - Add support for zstd (de)compression
 net-mail/fetchmail:socks - Enable support for socks proxy
 net-mail/fetchmail:tk - Enable support for Tk GUI toolkit, in particular it installs fetchmailconf
@@ -6282,9 +6271,13 @@ net-misc/cgminer:modminer - Enable support for mining with ModMiner FPGAs
 net-misc/cgminer:sp10 - Enable support for Spondoolies SP10
 net-misc/cgminer:sp30 - Enable support for Spondoolies SP30
 net-misc/chrony:cmdmon - Support for command and monitoring
+net-misc/chrony:debug - Get DEBUG_LOG output from chronyd when passing -dd parameter
 net-misc/chrony:html - Install HTML documentation
-net-misc/chrony:nettle - Use dev-libs/nettle for hash functions
+net-misc/chrony:libtomcrypt - Support different hashes via dev-libs/libtomcrypt
+net-misc/chrony:nettle - Use dev-libs/nettle for hash functions or nts
+net-misc/chrony:nss - Use dev-libs/nss for hash functions
 net-misc/chrony:ntp - Support for the Network Time Protocol (NTP)
+net-misc/chrony:nts - Support for Network Time Security (NTS). Uses net-libs/gnutls
 net-misc/chrony:phc - Support for the PTP (Precision Time Protocol) Hardware Clock (PHC) interface
 net-misc/chrony:pps - Support for the Linux Pulse Per Second (PPS) interface
 net-misc/chrony:refclock - Support for reference clocks
@@ -6325,6 +6318,7 @@ net-misc/curl:rtmp - Enable RTMP Streaming Media support
 net-misc/curl:smtp - Enable Simple Mail Transfer Protocol support
 net-misc/curl:ssh - Enable SSH urls in curl using libssh2
 net-misc/curl:ssl - Enable crypto engine support (via openssl if USE='-gnutls -nss')
+net-misc/curl:sslv3 - Support for the old/insecure SSLv3 protocol
 net-misc/curl:telnet - Enable Telnet protocol support
 net-misc/curl:tftp - Enable TFTP support
 net-misc/curl:winssl - Enable winssl ssl backend
@@ -6406,6 +6400,7 @@ net-misc/iputils:rdisc - Build and install rdisc -- server for the client side o
 net-misc/iputils:tftpd - Build and install tftpd -- server for the Trivial File Transfer Protocol (see also net-ftp/tftp-hpa)
 net-misc/iputils:tracepath - Build and install tracepath -- tool for tracing network paths for discovering MTU values
 net-misc/iputils:traceroute6 - Build and install deprecated traceroute6 tool. It's recommended to use net-analyzer/traceroute instead.
+net-misc/kafka-bin:connect - Install init for Kafka Connect Distributed mode
 net-misc/kafka-bin:internal-zookeeper - Use bundled local zookeeper instance
 net-misc/kafkacat:avro - Enable avro serialization/deserialization support
 net-misc/kafkacat:json - Enable json support
@@ -7827,6 +7822,7 @@ sys-apps/texinfo:standalone - Build standalone version that survives all Portage
 sys-apps/timer_entropyd:debug - Enable printf debugging and logging to the syslog at DEBUG level
 sys-apps/ucspi-ssl:bindist - Disable EC/RC5 algorithms in OpenSSL for patent reasons.
 sys-apps/usb_modeswitch:jimtcl - Use dev-lang/jimtcl instead of dev-lang/tcl for smaller memory footprint
+sys-apps/usbguard:umockdev - Enables support for dev-util/umockdev
 sys-apps/usermode-utilities:fuse - Build tools (currently umlmount) needing fuse
 sys-apps/util-linux:audit - Use sys-process/audit to emit audit messages about system changes
 sys-apps/util-linux:caps - build setpriv helper (run programs with diff capabilities)
@@ -8144,7 +8140,6 @@ sys-devel/gcc-apple:objc++ - Build support for the Objective C++ language
 sys-devel/gcc-config:cc-wrappers - Install and manage 'cc' and 'f77' wrappers in /usr/bin. Otherwise ignore them.
 sys-devel/gcc-config:native-symlinks - Install native symlinks like 'gcc' or 'g++' to /usr/bin. Otherwise keep only ${CTARGET}-gcc and friends.
 sys-devel/gdb:cet - Enable Intel Control-flow Enforcement Technology.
-sys-devel/gdb:client - Install the main "gdb" program (most people want this)
 sys-devel/gdb:lzma - Support lzma compression in ELF debug info
 sys-devel/gdb:multitarget - Support all known targets in one gdb binary
 sys-devel/gdb:python - Enable support for the new internal scripting language, as well as extended pretty printers
@@ -8801,6 +8796,7 @@ x11-misc/polybar:mpd - Add support for Music Player Daemon
 x11-misc/polybar:network - Enable network support
 x11-misc/primus:libglvnd - Use media-libs/libglvnd for dispatch
 x11-misc/py3status:gevent - Install extra requirement dev-python/gevent to enable green threads.
+x11-misc/py3status:minimal - Don't depend on x11-misc/i3status if you don't plan to use any of its built-in modules.
 x11-misc/py3status:udev - Install extra requirement dev-python/pyudev to enable udev events monitoring on modules.
 x11-misc/qt5ct:dbus - Enable system tray and global menu support
 x11-misc/qtfm:dbus - Install the qtfm-tray removable device manager
