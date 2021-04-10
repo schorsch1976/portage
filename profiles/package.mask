@@ -32,6 +32,24 @@
 
 #--- END OF EXAMPLES ---
 
+# Sam James <sam@gentoo.org> (2021-04-09)
+# Support package for games.eclass (which is now being last-rited). Please
+# port away from games.eclass and use general ebuild functions/helpers.
+# No specific eclass is needed for general games installation.
+# Removal on 2021-05-09.
+# bug #574082
+games-misc/games-envd
+
+# Lars Wendler <polynomial-c@gentoo.org> (2021-04-08)
+# Masked for testing and until revdeps have been fixed:
+# https://bugs.gentoo.org/781188
+>=dev-libs/icu-69.1
+>=dev-libs/icu-layoutex-69.1
+
+# Lars Wendler <polynomial-c@gentoo.org> (2021-04-08)
+# Masked for testing
+>=app-crypt/gnupg-2.3.0
+
 # Miroslav Šulc <fordfrog@gentoo.org> (2021-04-06)
 # Last release of dev-java/cal10n in 2013, no consumer
 # in the tree except dev-java/slf4j-ext which is not
@@ -156,8 +174,8 @@ app-office/ical
 net-p2p/xmr-stak
 
 # Jonas Stein <jstein@gentoo.org> (2021-03-29)
-# Depends on gtk-2, no release since 2010. 
-# Removal on 2021-05-01.  
+# Depends on gtk-2, no release since 2010.
+# Removal on 2021-05-01.
 # Bug #779148.
 app-editors/beaver
 
