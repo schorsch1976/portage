@@ -1,0 +1,14 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEFINED_PHASES=compile configure install prepare setup
+DEPEND=dev-libs/boost dev-libs/gmp[cxx(+)] doc? ( dev-texlive/texlive-latex dev-tex/latex2html ) virtual/fortran
+DESCRIPTION=Matrix elements (integrals) evaluation over Cartesian Gaussian functions
+EAPI=7
+HOMEPAGE=https://github.com/evaleev/libint
+IUSE=static-libs doc
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=virtual/fortran
+SLOT=2
+SRC_URI=https://github.com/evaleev/libint/archive/v2.6.0.tar.gz -> libint-2.6.0.tar.gz
+_eclasses_=autotools	9e63f92c2a5d867fea55ecb160c7d354	fortran-2	3cec34b0def864e87677d8b2b1c370b8	gnuconfig	9f91b4b0c84e734a87492d4293f03de5	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	f8d35c2432bb32c4f1e779c4287b31ec	toolchain-funcs	e867df3870e8ff04a5b94f925be8b06a
+_md5_=6646af70bbaedf0e52ea2f7d877bdada
