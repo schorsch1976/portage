@@ -32,6 +32,31 @@
 
 #--- END OF EXAMPLES ---
 
+# Georgy Yakovlev <gyakovlev@gentoo.org>
+# severely broken nfs
+# possibly depper problem due to bug in mm/page_alloc
+# https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ff4b2b4014cbffb3d32b22629252f4dc8616b0fe
+# feel free to unmask if required, but be aware of
+# possible silent data corruption
+=sys-kernel/gentoo-sources-5.13.0
+=sys-kernel/vanilla-sources-5.13.0
+
+# Matt Turner <mattst88@gentoo.org> (2021-07-04)
+# Not used by any package. Has not worked for a very long time
+# as far as I can tell.
+# Removal on 2021-08-04
+app-eselect/eselect-xvmc
+
+# Hans de Graaff <graaff@gentoo.org> (2021-07-04)
+# Last release in 2016, failing tests, no dependencies.
+# Masked for removal in 30 days.
+dev-ruby/shotgun
+
+# Hans de Graaff <graaff@gentoo.org> (2021-07-04)
+# Last release in 2012, no working tests, no dependencies.
+# Masked for removal in 30 days.
+dev-ruby/source_map
+
 # Sergei Trofimovich <slyfox@gentoo.org> (2021-07-02)
 # Outdated, not really maintained. Grab it if you like.
 # Masked for removal in 30 days. bug #800097.
@@ -325,11 +350,6 @@ dev-python/csv23
 ~media-plugins/gst-plugins-x265-1.18.4
 ~media-plugins/gst-plugins-ximagesrc-1.18.4
 ~media-plugins/gst-plugins-zbar-1.18.4
-
-# Alfredo Tupone <tupone@gentoo.org> (2021-05-29)
-# Old version masked for removal on 2021-07-01
-# bug #788013
-<net-mail/courier-imap-5
 
 # Andrey Grozin <grozin@gentoo.org> (2021-05-25)
 # DEPENDs on sci-libs/proj-8
