@@ -32,6 +32,47 @@
 
 #--- END OF EXAMPLES ---
 
+# David Seifert <soap@gentoo.org> (2021-07-26)
+# Fails to build with GCC 11, terrible codebase, tests fail with
+# modern ImageMagick, last release over 12 years ago.
+# Bug #725436, #786915, removal in 30 days.
+sci-electronics/drawtiming
+
+# Sam James <sam@gentoo.org> (2021-07-25)
+# No activity upstream since 2014. Fails to build with GCC 11.
+# Only one reverse dependency (media-libs/openexr_ctl) which
+# is uninstallable.
+# Removal on 2021-08-25. bug #789792, bug #715298.
+media-libs/ctl
+media-libs/openexr_ctl
+
+# Michał Górny <mgorny@gentoo.org> (2021-07-25)
+# Conflicts with dev-python/pyxdg.  Upstream is unwilling to resolve
+# this.  The only revdep has been patched to use pyxdg.
+# Removal on 2021-08-24.  Bug #804127.
+dev-python/xdg
+
+# Volkmar W. Pogatzki <gentoo@pogatzki.net> (2021-07-24)
+# API, its only consumer is last-rited
+# removal in 30 days
+dev-java/jsr101
+
+# Michał Górny <mgorny@gentoo.org> (2021-07-23)
+# Abandoned.  All versions are vulnerable to CVE-2021-33909.
+# sys-kernel/gentoo-kernel{,-bin} are the suggested replacements.
+# Removal on 2021-08-06.  Bug #803212.
+sys-kernel/bliss-kernel-bin
+
+# Conrad Kostecki <conikost@gentoo.org> (2021-07-23)
+# Outdated and multiple bugs open.
+# Other alternatives in tree available.
+# Removal in 30 days (2021-08-22)
+www-servers/resin
+
+# Alfredo Tupone <tupone@gentoo.org> (2021-07-23)
+# Requirements conflicts so it is not buildable
+# No revdep. Retire in 30 days (2021-08-22)
+dev-ml/cstruct
 
 # Marek Szuba <marecki@gentoo.org> (2021-07-18)
 # No gtk4 and friends in the tree yet
@@ -65,11 +106,15 @@ perl-core/Dumpvalue
 perl-core/Encode
 perl-core/ExtUtils-Constant
 
-# Andreas K. Hüttel <dilfridge@gentoo.org> (2021-07-17)
-# Obsolete virtual; package was removed from the Perl
-# core distribution. Please depend on dev-perl/Pod-Parser
-# instead. Removal in 30 days.
-virtual/perl-Pod-Parser
+# # Andreas K. Hüttel <dilfridge@gentoo.org> (2021-07-17)
+# # Obsolete virtual; package was removed from the Perl
+# # core distribution. Please depend on dev-perl/Pod-Parser
+# # instead. Removal in 30 days.
+# Commented out since this messes with people's upgrades
+# and now is the wrong time for it (5.34, libxcrypt).
+# Let's restart the clock later again.
+# (dilfridge, 2021-07-24)
+# virtual/perl-Pod-Parser
 
 # Hans de Graaff <graaff@gentoo.org> (2021-07-17)
 # Deprecated upstream, replaced with factory_bot.
@@ -225,13 +270,10 @@ dev-ruby/rash
 # Aaron W. Swenon <titanofold@gentoo.org> (2021-07-05)
 # PostgreSQL 9.5 has reached end of life and will no longer receive any
 # updates -- security or otherwise -- from upstream or Gentoo.
-#
 # You should migrate immediately.
 #     https://wiki.gentoo.org/wiki/PostgreSQL/QuickStart#Post-9.0_Migration
-#
 # For more information about PostgreSQL's versioning policy, see:
-#     https://www.postgresql.org/support/versioning/
-#
+#     https://www.postgresql.org/support/versioning/#
 # Removal after 2021-08-04.
 dev-db/postgresql:9.5
 
@@ -358,7 +400,6 @@ dev-java/jibx-tools
 # Removal on 2021-07-19.  Bug #786279.
 app-misc/rq
 
-
 # Michał Górny <mgorny@gentoo.org> (2021-06-19)
 # Conflicts with app-arch/brotli[python].  Discontinued in favor
 # of dev-python/brotlicffi.  No revdeps remain.
@@ -374,13 +415,6 @@ sys-apps/rescan-scsi-bus
 # Davide Pesavento <pesa@gentoo.org> (2021-06-15)
 # Masked for revdep testing.
 >=dev-python/sip-6
-
-# Sam James <sam@gentoo.org> (2021-06-15)
-# Fails to build with GCC 11. Strange build system that needs more
-# work to function properly (and integrate better). Several open bugs.
-# bug #795999, bug #787902, bug #766033, bug #724674, bug #713206.
-# Removal on 2021-07-15.
-media-sound/sc2mpd
 
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2021-06-14)
 # DeprecatedDep jre-1.3, upstream dead,removal in 30 days
