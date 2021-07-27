@@ -1550,7 +1550,6 @@ dev-haskell/rfc5051:mkunicodedata - build codes generator itself
 dev-haskell/sandi:conduit - Build with conduit
 dev-haskell/semigroupoid-extras:profunctors - You can disable the use of the `profunctors` package using `-f-profunctors`. Disabing this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users.
 dev-haskell/semigroupoids:comonad - You can disable the use of the `comonad` package using `-f-comonad`. Disabling this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users. If disabled we will not supply instances of `Comonad`
-dev-haskell/semigroupoids:containers - You can disable the use of the `containers` package using `-f-containers`. Disabing this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users.
 dev-haskell/semigroupoids:contravariant - You can disable the use of the `contravariant` package using `-f-contravariant`. Disabling this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users. If disabled we will not supply instances of `Contravariant`
 dev-haskell/semigroupoids:distributive - You can disable the use of the `distributive` package using `-f-distributive`. Disabling this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users. If disabled we will not supply instances of `Distributive`
 dev-haskell/semigroupoids:tagged - You can disable the use of the `tagged` package using `-f-tagged`. Disabing this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users.
@@ -2212,7 +2211,6 @@ dev-libs/tinyxml:stl - Compile with TIXML_USE_STL support
 dev-libs/tntnet:server - Enable tntnet server daemon
 dev-libs/totem-pl-parser:archive - Enables ISO detection with app-arch/libarchive
 dev-libs/totem-pl-parser:crypt - Support AmazonAMZ decoding with dev-libs/libgcrypt
-dev-libs/totem-pl-parser:quvi - Use media-libs/libquvi for parsing video links
 dev-libs/totem-pl-parser:uchardet - Enable charset discovery via app-i18n/uchardet
 dev-libs/userspace-rcu:regression-test - Run regression tests (requires FEATURES=test)
 dev-libs/weston:desktop - Enable the desktop shell
@@ -4047,9 +4045,6 @@ media-gfx/pstoedit:pptx - Enable support for generating PowerPoint pptx files
 media-gfx/qimgv:opencv - Enable HQ scaling via media-libs/opencv
 media-gfx/qimgv:video - Add support for gif/webm playback via libmpv
 media-gfx/shotwell:opencv - Enable face detection via media-libs/opencv
-media-gfx/ufraw:contrast - enable contrast setting option
-media-gfx/ufraw:fits - Enable support for the FITS image format through sci-libs/cfitsio
-media-gfx/ufraw:timezone - enable DST correction for file timestamps
 media-gfx/xpaint:pgf - Support for loading PGF images
 media-gfx/xsane:ocr - Enable support for Optical Character Recognition reader
 media-gfx/yafaray:fastmath - Enable mathematic approximations to make code faster
@@ -5993,7 +5988,6 @@ net-libs/ldns:gost - Enable GOST support
 net-libs/libbitcoinconsensus:asm - Enable assembly for optimization
 net-libs/libbitcoinconsensus:knots - Build enhanced Bitcoin Knots version, rather than Bitcoin Core
 net-libs/libbtbb:wireshark-plugins - Build the wireshark plugins for bluetooth baseband sniffing
-net-libs/libesmtp:ntlm - Enable support for NTLM authentication
 net-libs/libetpan:liblockfile - Enable support for liblockfile library
 net-libs/libetpan:lmdb - Use dev-db/lmdb as cache DB
 net-libs/libgsasl:gcrypt - Use dev-libs/libgcrypt for low-level crypto
