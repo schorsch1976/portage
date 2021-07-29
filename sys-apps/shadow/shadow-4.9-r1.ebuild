@@ -11,7 +11,7 @@ SRC_URI="https://github.com/shadow-maint/shadow/releases/download/v${PV}/${P}.ta
 
 LICENSE="BSD GPL-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 IUSE="acl audit bcrypt cracklib nls pam selinux skey split-usr +su xattr"
 # Taken from the man/Makefile.am file.
 LANGS=( cs da de es fi fr hu id it ja ko pl pt_BR ru sv tr zh_CN zh_TW )
@@ -45,7 +45,7 @@ RDEPEND="${COMMON_DEPEND}
 	!=sys-apps/man-pages-5.12-r1
 	nls? (
 		!<app-i18n/man-pages-it-5.06-r1
-		!<app-i18n/man-pages-ja-20171215-r1 !=app-i18n/man-pages-ja-20180315-r0
+		!<app-i18n/man-pages-ja-20180315-r1
 		!<app-i18n/man-pages-ru-5.03.2390.2390.20191017-r1
 	)
 	pam? ( >=sys-auth/pambase-20150213 )
