@@ -4212,6 +4212,7 @@ media-libs/libsdl2:haptic - Enable the haptic (force feedback) subsystem
 media-libs/libsdl2:ibus - Enable support for app-i18n/ibus
 media-libs/libsdl2:joystick - Control joystick support (disable at your own risk)
 media-libs/libsdl2:kms - Build the KMSDRM video driver
+media-libs/libsdl2:pipewire - Enable support for the media-video/pipewire audio backend
 media-libs/libsdl2:sndio - Enable support for the media-sound/sndio backend
 media-libs/libsdl2:sound - Control audio support (disable at your own risk)
 media-libs/libsdl2:video - Control video support (disable at your own risk)
@@ -8190,6 +8191,7 @@ sys-firmware/sigrok-firmware-fx2lafw:binary - Use official upstream pre-built bi
 sys-firmware/vgabios:binary - Use official upstream pre-built binaries (only default and cirrus images)
 sys-fs/android-file-transfer-linux:fuse - Add FUSE mount helper
 sys-fs/android-file-transfer-linux:zune - Enable support for Microsoft Zune
+sys-fs/avfs:lzip - Enable app-arch/lzip support via app-arch/lzlib
 sys-fs/avfs:webdav - Allow mounting WebDAV shares via net-libs/neon
 sys-fs/bees:tools - Build extra tools useful for debugging (fiemap, fiewalk)
 sys-fs/btrfs-progs:convert - Build ext2 conversion utility (btrfs-convert)
