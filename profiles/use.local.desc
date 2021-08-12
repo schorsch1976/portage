@@ -3368,7 +3368,6 @@ gui-wm/hikari:screencopy - add support for screen grabbing
 gui-wm/hikari:virtual-io - enable virtual input/output support, needed for remote I/O in VNC
 gui-wm/sway:X - Enable support for X11 applications (XWayland)
 gui-wm/sway:elogind - Enable support for rootless session via elogind
-gui-wm/sway:fish-completion - Enable fish completion support
 gui-wm/sway:seatd - Enable support for rootless session via sys-auth/seatd
 gui-wm/sway:swaybar - Install 'swaybar': sway's status bar component
 gui-wm/sway:swaybg - Install 'swaybg': allows to set a desktop background image
@@ -3429,7 +3428,6 @@ kde-apps/kdenetwork-meta:dropbox - Enable support for Dropbox in kde-apps/dolphi
 kde-apps/kdenetwork-meta:samba - Enable support for net-fs/samba file sharing plugin from within file properties
 kde-apps/kdenetwork-meta:webengine - Enable support for Plasma Telepathy (instant messaging) integration via kde-apps/plasma-telepathy-meta
 kde-apps/kdenlive:share - Enable support for a share menu using kde-frameworks/purpose
-kde-apps/kdenlive:webengine - Enable freesound.org credentials support via dev-qt/qtwebengine to download files
 kde-apps/kdepim-addons:importwizard - Enable additional import plugins for kde-apps/akonadi-import-wizard
 kde-apps/kdepim-addons:markdown - Enable Markdown support via app-text/discount
 kde-apps/kdepim-meta:bogofilter - Install mail-filter/bogofilter for spam filter support in kde-apps/kmail
@@ -3456,7 +3454,6 @@ kde-apps/kio-extras:nfs - Enable NFS support using net-libs/libtirpc
 kde-apps/kio-extras:phonon - Enable file audio preview plugin using media-libs/phonon
 kde-apps/kio-extras:sftp - Enable SFTP protocol support using net-libs/libssh
 kde-apps/kio-extras:taglib - Enable audio thumbnails via media-libs/taglib
-kde-apps/kipi-plugins:flashexport - Build the flash export plugin
 kde-apps/kipi-plugins:mediawiki - Build the mediawiki export plugin
 kde-apps/kipi-plugins:remotestorage - Build plugin for remote storage using network protocols such as FTP, SSH, SAMBA via kde-frameworks/kio
 kde-apps/kitinerary:barcode - Enable support for PDF417 and Aztec barcode decoding using media-libs/zxing-cpp
@@ -4864,15 +4861,12 @@ media-tv/xmltv:ar - Argentina tv listing grabber
 media-tv/xmltv:ch-search - Grabber for Switzerland
 media-tv/xmltv:dk - Denmark tv listing grabber
 media-tv/xmltv:dtvla - Latin America digital tv listing grabber
-media-tv/xmltv:es-laguiatv - Spain alternative grabber
 media-tv/xmltv:eu-dotmedia - Grabber for Europe (xmltv.se / dotmedia)
-media-tv/xmltv:eu-epg - EPG grabber for some European countries.
 media-tv/xmltv:eu-epgdata - include fanart URLs for some European countries.
 media-tv/xmltv:eu-xmltvse - Grabbber for Europe [replaces eu-dotmedia and se-tvzon]
 media-tv/xmltv:fi - Finland tv listing grabber (0.6.1 add ampparit telsu)
 media-tv/xmltv:fi-sv - Grabber for Finland (Swedish)
 media-tv/xmltv:fr - France tv listing grabber
-media-tv/xmltv:fr-kazer - France (Kazer) tv listing grabber
 media-tv/xmltv:huro - Hungarian tv listing grabber
 media-tv/xmltv:il - Israel tv listing grabber
 media-tv/xmltv:is - Iceland tv listing grabber
@@ -4880,8 +4874,6 @@ media-tv/xmltv:it - Italy tv listing grabber (RUV)
 media-tv/xmltv:na-dd - North America tv listing grabber
 media-tv/xmltv:na-dtv - North America Direct TV grabber
 media-tv/xmltv:na-tvmedia - Grabber for North America (TVMedia)
-media-tv/xmltv:nl - Netherlands tv listing grabber [REMOVED 0.6.1]
-media-tv/xmltv:no-gf - Norway Gfeed tv listing grabber
 media-tv/xmltv:pt-meo - Grabber for Portugal (MEO)
 media-tv/xmltv:pt-vodafone - Grabber for Portugal (Vodafone)
 media-tv/xmltv:se-swedb - Sweden tv listing grabber
@@ -6568,7 +6560,6 @@ net-misc/remmina:gvnc - Enable GVNC plugin using gtk-vnc, suitable for KVM and V
 net-misc/remmina:kwallet - Enable KDE Wallet plugin
 net-misc/remmina:spice - Support connecting to SPICE-enabled virtual machines
 net-misc/remmina:ssh - Enable support for SSH/SFTP protocol
-net-misc/remmina:telepathy - Enable telepathy support
 net-misc/rsync:stunnel - Provide helper scripts for using rsync via >=net-misc/stunnel-4
 net-misc/rsync:system-zlib - Use system zlib instead of bundled one. This is incompatible with older rsync releases!
 net-misc/rsync:xxhash - Enable dev-libs/xxhash support for hashing
