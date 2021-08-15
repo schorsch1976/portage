@@ -1,6 +1,15 @@
 # Copyright 2019-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Marek Szuba <marecki@gentoo.org> (2021-08-14)
+# virtual/mysql & co. round-up:
+#  dev-db/mariadb fails tests here, see Bug #807995
+#  dev-db/mysql and dev-db/percona-server do not support this arch
+#  dev-db/mariadb-galera has been absent from the tree since June 2019
+#  dev-db/mysql-cluster not tested yet, seriously outdated in the tree
+sci-libs/gdal mysql
+sys-cluster/slurm slurmdbd
+
 # Marek Szuba <marecki@gentoo.org> (2021-08-11)
 # dev-ruby/httpclient not keyworded here due to failing tests
 # (Bug #807727). That said, with httpclient-2.8.3 installed manually
@@ -20,9 +29,13 @@ media-gfx/gimp lua unwind
 # dependency on PyQt5[bluetooth].
 dev-python/ipython qt5
 
+# Marek Szuba <marecki@gentoo.org> (2021-08-14)
 # Alex Fan <alexfanqi@yahoo.com> (2021-08-05)
-# pdfannotextractor depends on java, not (sustainably) supported yet
+# These USE flags depend on java, not (sustainably) supported yet
+#  - dev-tex/pdfannotextractor
 app-text/texlive pdfannotextractor
+#  - dev-java/jackcess
+sci-libs/gdal mdb
 
 # Yixun Lan <dlan@gentoo.org> (2021-08-05)
 # Boost.Context can be built on riscv
@@ -60,6 +73,7 @@ sci-libs/hdf5 fortran debug
 # systems fails tests even with the mask above in place), masked for
 # further testing.
 dev-libs/starpu hdf5
+sci-libs/armadillo hdf5
 sci-libs/gdal hdf5
 # (via dev-python/pytables)
 dev-python/pandas doc full-support test
@@ -92,18 +106,12 @@ dev-python/ipython nbconvert notebook
 app-crypt/heimdal afs
 #  - gnome-base/gconf, dev-libs/libotf & dev-libs/m17n-lib
 app-editors/emacs gconf m17n-lib
-#  - media-libs/libcanberra
-app-editors/vim sound
 #  - dev-embedded/libftdi, app-misc/inputlircd
 app-misc/lirc ftdi inputlirc
 #  - app-xemacs/ruby-modes (and by extension xemacs itself)
 dev-lang/ruby xemacs
-#  - media-libs/libcddb
-dev-libs/libcdio cddb
 #  - dev-ruby/asciidoctor
 dev-libs/nanomsg doc
-#  - sci-libs/gdal
-dev-python/networkx extras
 #  - app-text/dblatex & media-gfx/transfig
 dev-util/ragel doc
 #  - Qt5 & KDE
@@ -132,8 +140,8 @@ net-misc/connman iwd ofono
 sys-block/thin-provisioning-tools test
 #  - sys-cluster/knem, sys-fabric/infinipath-psm
 sys-cluster/openmpi openmpi_fabrics_knem openmpi_fabrics_psm
-#  - sys-fabric/ofed, dev-db/mariadb | dev-db/mysql
-sys-cluster/slurm ofed slurmdbd
+#  - sys-fabric/ofed
+sys-cluster/slurm ofed
 
 # Yixun Lan <dlan@gentoo.org> (2021-05-24)
 # Dependencies not keyworded, not tested
@@ -146,7 +154,6 @@ gnome-base/gvfs bluray cdda mtp ios
 sys-power/upower ios
 net-libs/gnome-online-accounts gnome
 net-libs/libproxy kde
-xfce-base/xfce4-settings libcanberra
 xfce-extra/tumbler epub ffmpeg odf pdf raw
 xfce-base/xfce4-meta pulseaudio
 # KDE not tested, so mask
