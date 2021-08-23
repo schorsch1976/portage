@@ -12,7 +12,6 @@ app-accessibility/brltty:louis - Use braille tranlator dev-libs/liblouis
 app-accessibility/brltty:midi - support the musical instrument digital interface
 app-accessibility/brltty:pcm - support for sound card digital audio
 app-accessibility/brltty:speech - speech support
-app-accessibility/eflite:16k_voice - Use a higher-quality voice.
 app-accessibility/emacspeak:espeak - Adds support for the espeak tts engine
 app-accessibility/espeak-ng:async - Enables asynchronous commands
 app-accessibility/espeak-ng:klatt - Enables Klatt formant synthesis and implementation
@@ -249,6 +248,7 @@ app-backup/bareos:rados-striper - Enable use of rados-striper
 app-backup/bareos:scsi-crypto - Enable low level SCSI crypto support
 app-backup/bareos:sql-pooling - Enable SQL pooling support
 app-backup/bareos:storage-daemon - Install storage daemon (bareos-sd)
+app-backup/bareos:vmware - Enable bareos-fd VMware plugin
 app-backup/btrbk:lsbtr - Enable the lsbtr command-line tool
 app-backup/btrbk:mbuffer - Use sys-block/mbuffer to enable progress bar and buffering/limiting functionality
 app-backup/dar:argon2 - Enable password hashing algorithm from app-crypt/argon2
@@ -1248,6 +1248,7 @@ dev-db/mariadb:test - Install upstream testsuites for end use.
 dev-db/mariadb:tokudb - Add support for TokuDB storage engine
 dev-db/mariadb:yassl - Enable SSL connections and crypto functions using the bundled yaSSL
 dev-db/mongodb:lto - Adds support for link time optimization
+dev-db/mongodb:mongosh - Install the MongoDB shell from app-admin/mongosh-bin
 dev-db/mongodb:tools - Install the MongoDB tools (mongoimport, mongodump...) from app-admin/mongo-tools
 dev-db/mycli:ssh - Add support for connection over SSH tunnel
 dev-db/mysql:cjk - Add CJK support for InnoDB fulltext search using app-text/mecab
@@ -2430,8 +2431,6 @@ dev-python/msgpack:native-extensions - Compiles native "C" extensions (speedups,
 dev-python/nbdime:webtools - Install web-based diff and merge tools.
 dev-python/netaddr:cli - Enable netaddr shell with dev-python/ipython
 dev-python/networkx:extras - Provide graph drawing and graph layout algorithms along with shapefile format reading and writing
-dev-python/networkx:pandas - Provides a DataFrame, which is a tabular data structure with labeled axes
-dev-python/networkx:scipy - Enables scipy backend
 dev-python/networkx:yaml - Provides YAML format reading and writing
 dev-python/nltk-data:extra - Install the complete set of data files. Otherwise, only files required by tests are installed.
 dev-python/numexpr:mkl - Enable support for Intel Vector Math Library, part of sci-libs/mkl.
@@ -2810,6 +2809,7 @@ dev-util/google-perftools:minimal - Only build the tcmalloc_minimal library, ign
 dev-util/google-perftools:optimisememory - To build libtcmalloc with smaller internal caches.
 dev-util/heaptrack:gui - Install Qt5-based analyzer tool
 dev-util/hfstospell:clang - Use different logic in ebuild when clang is used
+dev-util/intel-graphics-system-controller:cli - Build CLI tools for flashing manually a firmware upgrade.
 dev-util/intel-ocl-sdk:android - Install android related files
 dev-util/intel-ocl-sdk:system-boost - Use system boost (dev-libs/boost) instead of bundled one
 dev-util/intel-ocl-sdk:system-tbb - Use system Thread Building Blocks (dev-cpp/tbb) instead of bundled one
@@ -3339,6 +3339,7 @@ gui-apps/waybar:mpd - Enable support for the Music Player Daemon
 gui-apps/waybar:network - Enable libnl support for network related features
 gui-apps/waybar:popups - Enable popup support with gtk-layer-shell
 gui-apps/waybar:pulseaudio - Enable support for volume control via PulseAudio
+gui-apps/waybar:sndio - Enable support for volume control via sndio
 gui-apps/waybar:tray - Enable support for tray
 gui-apps/waybar:wifi - Enable support for wifi/rfkill
 gui-apps/waypipe:dmabuf - Use DMABUFs for data exchange and hardware decoding
@@ -3420,7 +3421,7 @@ kde-apps/kdeadmin-meta:cron - Installs KDE application for virtual/cron configur
 kde-apps/kdecore-meta:share - Install kde-frameworks/purpose for share file context menu actions in kde-apps/dolphin
 kde-apps/kdecore-meta:thumbnail - Install kde-apps/ffmpegthumbs and kde-apps/thumbnailers for thumbnail generation in kde-apps/dolphin
 kde-apps/kdecore-meta:webengine - Enable www-client/falkon which depends on dev-qt/qtwebengine
-kde-apps/kdeedu-meta:webengine - Enable kde-apps/kalzium and kde-apps/parley, requiring dev-qt/qtwebengine
+kde-apps/kdeedu-meta:webengine - Enable packages requiring dev-qt/qtwebengine
 kde-apps/kdegraphics-mobipocket:thumbnail - Enables thumbnail generation
 kde-apps/kdemultimedia-meta:cdrom - Include packages for optical discs
 kde-apps/kdenetwork-meta:bittorrent - Pull in net-p2p/ktorrent for BitTorrent protocol support
@@ -3534,7 +3535,7 @@ kde-frameworks/kitemviews:designer - Build plugins for dev-qt/designer
 kde-frameworks/knewstuff:opds - Enable support for the Open Publication Distribution System via kde-frameworks/syndication
 kde-frameworks/knotifications:phonon - Play notification sounds via media-libs/phonon instead of media-libs/libcanberra
 kde-frameworks/knotifications:speech - Enable text-to-speech notification support
-kde-frameworks/knotifyconfig:phonon - Add sound support via media-libs/phonon
+kde-frameworks/knotifyconfig:phonon - Play notification sounds via media-libs/phonon instead of media-libs/libcanberra
 kde-frameworks/kplotting:designer - Build plugins for dev-qt/designer
 kde-frameworks/krunner:activities - Enable search runner for KDE Activities history
 kde-frameworks/ktexteditor:editorconfig - Enable support for EditorConfig configuration files
@@ -4738,6 +4739,7 @@ media-sound/snd:s7 - Enable the s7 extension language (a version of Scheme)
 media-sound/sonic-visualiser:id3tag - Enables ID3 tagging with id3tag library
 media-sound/sox:amr - Enables Adaptive Multi-Rate Audio support
 media-sound/sox:id3tag - Enables ID3 tagging with id3tag library
+media-sound/sox:sndio - Enable support for sndio
 media-sound/sox:twolame - Enables twolame support (MPEG Audio Layer 2 encoder)
 media-sound/split2flac:enca - Try to guess the charset using enca
 media-sound/split2flac:flake - Add support for Flake, alternative FLAC encoder
@@ -4764,16 +4766,18 @@ media-sound/vorbis-tools:kate - Adds support for Ogg Kate subtitles via libkate.
 media-sound/vorbis-tools:ogg123 - Build ogg123 player, needs libao and curl
 media-sound/wildmidi:player - Install the wildmidi player
 media-sound/xmms2:airplay - Support for airplay format
-media-sound/xmms2:asf - Support for Monkey's Audio (APE) format with help of bundled libasf
+media-sound/xmms2:asf - Support for Advanced Systems Format (ASF) by using bundled libasf
 media-sound/xmms2:fluidsynth - Enable fluidsynth support (MIDI)
+media-sound/xmms2:gme - Support for various game audio formats using media-libs/game-music-emu
 media-sound/xmms2:ices - Icecast source output plugin
-media-sound/xmms2:mac - Support for Monkey's Audio (APE) format with help of media-sound/mac
+media-sound/xmms2:mac - Support for Monkey's Audio (APE) format using media-sound/mac
 media-sound/xmms2:mlib-update - Enable building of xmms2-mlib-updater client
 media-sound/xmms2:ofa - Support for Open Fingerprint Architecture (OFA)
 media-sound/xmms2:phonehome - This client sends anonymous usage-statistics to the xmms2
 media-sound/xmms2:server - Build xmms2 player daemon (otherwise only clients are built)
-media-sound/xmms2:sid - Support for C64 SID
-media-sound/xmms2:valgrind - Run unit tests under valgrind.
+media-sound/xmms2:sid - Support for C64 SID using media-libs/libsidplay
+media-sound/xmms2:tremor - Support Vorbis using an alternate fixed-point decoder with media-libs/tremor
+media-sound/xmms2:valgrind - Run unit tests under valgrind
 media-sound/xmms2:vocoder - Phase vocoder effect plugin
 media-sound/xmms2:xml - Enable support for various XML based playlists and sources: RSS, XSPF
 media-sound/xnoise:lastfm - Enable support for lastfm cover art fetching and scrobbling
@@ -6032,9 +6036,9 @@ net-libs/libssh2:gcrypt - Use dev-libs/libgcrypt instead of dev-libs/openssl
 net-libs/libssh2:mbedtls - Use net-libs/mbedtls instead of dev-libs/openssl
 net-libs/libtorrent-rasterbar:dht - Enable DHT (distributed hash table) support
 net-libs/libtrace:numa - Use sys-process/numactl
-net-libs/libupnp:blocking-tcp - Do not use async socket calls.
-net-libs/libupnp:reuseaddr - Allow clean restarts by binding the socket with SO_REUSEADDR.
-net-libs/libupnp:samples - Install sample applications.
+net-libs/libupnp:blocking-tcp - Do not use async socket calls
+net-libs/libupnp:reuseaddr - Allow clean restarts by binding the socket with SO_REUSEADDR
+net-libs/libupnp:samples - Install sample applications
 net-libs/libvncserver:24bpp - Enable 24bpp support
 net-libs/libvncserver:filetransfer - Enable support for TightVNC's file transfer protocol
 net-libs/libvncserver:gcrypt - Use dev-libs/libgcrypt as crypto backend
@@ -6463,20 +6467,24 @@ net-misc/mrouted:rsrr - Enable Routing Support for Resource Reservations, for RS
 net-misc/mulk:checksum - Enable checksum verification for Metalink from dev-libs/openssl
 net-misc/mulk:metalink - Enable support for media-libs/libmetalink
 net-misc/netkit-bootparamd:libtirpc - Build against net-libs/libtirpc for RPC support
+net-misc/networkmanager:concheck - Enable connectivity checking support
 net-misc/networkmanager:connection-sharing - Support connection sharing (uses net-dns/dnsmasq)
 net-misc/networkmanager:dhclient - Use dhclient from net-misc/dhcp for getting an IP via DHCP
 net-misc/networkmanager:dhcpcd - Use net-misc/dhcpcd for getting an IP
 net-misc/networkmanager:elogind - Use sys-auth/elogind for session tracking
 net-misc/networkmanager:iptables - Use net-firewall/iptables for connection sharing
 net-misc/networkmanager:iwd - Use net-wireless/iwd instead of net-wireless/wpa_supplicant for wifi support by default
+net-misc/networkmanager:lto - Build using Link Time Optimizations (LTO)
 net-misc/networkmanager:modemmanager - Enable support for mobile broadband devices using net-misc/modemmanager
 net-misc/networkmanager:nftables - Use net-firewall/nftables for connection sharing
 net-misc/networkmanager:nss - Use dev-libs/nss for cryptography
 net-misc/networkmanager:ofono - Use net-misc/ofono for telephony support.
 net-misc/networkmanager:ovs - Enable OpenVSwitch support
 net-misc/networkmanager:ppp - Enable support for mobile broadband and PPPoE connections using net-dialup/ppp
+net-misc/networkmanager:psl - Use public suffix list via net-libs/libpsl
 net-misc/networkmanager:resolvconf - Use net-dns/openresolv for managing DNS information in /etc/resolv.conf. Generally, a symlink to /run/NetworkManager/resolv.conf is simpler. On systems running systemd-resolved, disable this flag and create a symlink to /run/systemd/resolve/stub-resolv.conf.
 net-misc/networkmanager:teamd - Enable Teamd control support
+net-misc/networkmanager:tools - Build cli tools such as nmcli, nmtui and nm_cloud_setup
 net-misc/networkmanager:wext - Enable support for the deprecated Wext (Wireless Extensions) API; needed for some older drivers (e.g. ipw2200, ndiswrapper)
 net-misc/networkmanager:wifi - Enable support for wifi and 802.1x security
 net-misc/nextcloud-client:dolphin - Install the kde-apps/dolphin extension
@@ -6641,7 +6649,7 @@ net-misc/wget2:brotli - Enable support for brotli compression
 net-misc/wget2:gpgme - Build gpgme backend
 net-misc/wget2:http2 - Enable HTTP/2.0 support
 net-misc/wget2:openssl - Enable crypto support via dev-libs/openssl
-net-misc/wget2:psl - Use public suffix list via media-libs/libnspsl
+net-misc/wget2:psl - Use public suffix list via net-libs/libpsl
 net-misc/wget2:valgrind - Depend on dev-util/vagrind for test suite
 net-misc/whois:xcrypt - Enable crypt through sys-libs/libxcrypt package
 net-misc/x2goserver:fuse - Use net-fs/sshfs to allow shared folders
