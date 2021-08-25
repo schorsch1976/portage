@@ -3202,7 +3202,6 @@ games-simulation/simutrans:pak192-comic - Install comic-like scenario data
 games-simulation/train-valley:gui - Install the GUI for configuring screen resolution and input
 games-sports/speed-dreams:osggraph - Enable the new work-in-progress 3D engine using dev-games/openscenegraph
 games-sports/speed-dreams:webstats - Enable support for sending racing statistics to a web server (experimental)
-games-sports/speed-dreams:xrandr - Enable support for the X xrandr extension
 games-sports/xmoto:double-precision - more precise calculations at the expense of speed
 games-strategy/0ad:editor - Include Atlas scenario editor projects
 games-strategy/0ad:lobby - Enable the use of net-libs/gloox and the multiplayer lobby
@@ -3368,8 +3367,6 @@ gui-wm/hikari:layershell - add support for wayland apps using layer shell
 gui-wm/hikari:screencopy - add support for screen grabbing
 gui-wm/hikari:virtual-io - enable virtual input/output support, needed for remote I/O in VNC
 gui-wm/sway:X - Enable support for X11 applications (XWayland)
-gui-wm/sway:elogind - Enable support for rootless session via elogind
-gui-wm/sway:seatd - Enable support for rootless session via sys-auth/seatd
 gui-wm/sway:swaybar - Install 'swaybar': sway's status bar component
 gui-wm/sway:swaybg - Install 'swaybg': allows to set a desktop background image
 gui-wm/sway:swayidle - Install 'swayidle': idle manager to run commands when user is inactive
@@ -5814,6 +5811,7 @@ net-im/telepathy-connection-managers:yahoo - Enable Yahoo! messaging support.
 net-im/telepathy-connection-managers:zeroconf - Enable Link-Local Messaging via the zeroconf or Bonjour protocol.
 net-im/tkabber:plugins - Enables installation the extra plugins
 net-im/toxic:audio-notify - Enables native sound notifications
+net-im/toxic:games - Enables some small mini-games
 net-im/toxic:llvm - Enables support for LLVM Address Sanitizer
 net-im/toxic:notification - Enables desktop notifications with libnotify, with sound support.
 net-im/toxic:qrcode - Enables QR code support
@@ -6340,6 +6338,7 @@ net-misc/curl:mbedtls - Enable mbedtls ssl backend
 net-misc/curl:metalink - Enable metalink support
 net-misc/curl:nghttp3 - Enable HTTP/3.0 support using net-libs/nghttp3 and net-libs/ngtcp2
 net-misc/curl:nss - Enable nss ssl backend
+net-misc/curl:ntlm - Enable ntlm support
 net-misc/curl:openssl - Enable openssl ssl backend
 net-misc/curl:pop3 - Enable Post Office Protocol 3 support
 net-misc/curl:progress-meter - Enable the progress meter
@@ -6646,11 +6645,11 @@ net-misc/wget:metalink - Enable support for media-libs/libmetalink
 net-misc/wget:ntlm - Enable support for NTLM (Windows-based) authorization
 net-misc/wget:uuid - Generate UUIDs for the WARC (Web ARChive file format) using libuuid; otherwise use a simple RNG (random number generator)
 net-misc/wget2:brotli - Enable support for brotli compression
-net-misc/wget2:gpgme - Build gpgme backend
-net-misc/wget2:http2 - Enable HTTP/2.0 support
+net-misc/wget2:gpgme - Build app-crypt/gpgme backend
+net-misc/wget2:http2 - Enable HTTP/2.0 support via net-libs/nghttp2
 net-misc/wget2:openssl - Enable crypto support via dev-libs/openssl
 net-misc/wget2:psl - Use public suffix list via net-libs/libpsl
-net-misc/wget2:valgrind - Depend on dev-util/vagrind for test suite
+net-misc/wget2:valgrind - Depend on dev-util/valgrind for test suite
 net-misc/whois:xcrypt - Enable crypt through sys-libs/libxcrypt package
 net-misc/x2goserver:fuse - Use net-fs/sshfs to allow shared folders
 net-misc/xmrig:donate - Set the default donation level to 1% instead of 0
@@ -7525,9 +7524,6 @@ sci-misc/h5utils:octave - Build Octave plugins
 sci-misc/nco:dap - Support for remote data access with the NETCDF DAP client
 sci-misc/nco:ncap2 - Build next generation netcdf arithmetic processor (needs dev-java/antlr)
 sci-misc/nco:udunits - Add sci-libs/udunits files support
-sci-misc/tango:dbserver - Enable build of tango dbserver
-sci-misc/tango:mariadb - Use dev-db/mariadb
-sci-misc/tango:zeromq - Allow to use ZeroMQ broker via net-libs/zeromq
 sci-physics/bullet:double-precision - Build libraries in double precision
 sci-physics/bullet:extras - Build the extras
 sci-physics/bullet:tbb - Enable multithreading with the Intel Threads Building Block dev-cpp/tbb
@@ -8272,7 +8268,6 @@ sys-fs/zfs:test-suite - Install regression test suite
 sys-fs/zfs-auto-snapshot:cron - Install /etc/cron.* files
 sys-fs/zfs-auto-snapshot:default-exclude - Only take snapshots of datasets with com.sun:auto-snapshot=true property set
 sys-fs/zfs-kmod:rootfs - Install zfs-shutdown script to support exporting a pool containing rootfs
-sys-kernel/bliss-kernel-bin:initramfs - Build initramfs along with the kernel.
 sys-kernel/genkernel:firmware - Prefer system firmware sys-kernel/linux-firmware over local copy.
 sys-kernel/gentoo-kernel:hardened - Use selection of hardening options recommended by Kernel Self Protection Project
 sys-kernel/gentoo-kernel:initramfs - Build initramfs along with the kernel.
@@ -8645,7 +8640,6 @@ www-servers/nginx-unit:php7-3 - Support for PHP 7.3
 www-servers/nginx-unit:php7-4 - Support for PHP 7.4
 www-servers/pshs:magic - Enable automatic detection of Content-Type using libmagic (sys-apps/file)
 www-servers/pshs:qrcode - Enable generating QRCodes for server URL
-www-servers/resin:admin - Enable Resin admin webapp
 www-servers/sniproxy:dns - Enable DNS resolver via net-libs/udns
 www-servers/sniproxy:largefile - Enable large file support (so we can log more than 2GB)
 www-servers/sniproxy:rfc3339 - Use RFC3339 timestamp format in log.
