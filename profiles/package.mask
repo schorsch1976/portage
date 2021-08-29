@@ -32,6 +32,30 @@
 
 #--- END OF EXAMPLES ---
 
+# Arthur Zamarin <arthurzam@gentoo.org> (2021-08-28)
+# Upstream changed toml to tomli handling, which resulted in a lot of
+# breakage in various packages.
+# Reported upstream in https://github.com/pypa/setuptools_scm/issues/611
+=dev-python/setuptools_scm-6.2.0
+
+# Stephan Hartmann <sultan@gentoo.org> (2021-08-28)
+# Dev channel releases are only for people who
+# are developers or want more experimental features
+# and accept a more unstable release.
+>=www-client/chromium-95
+
+# Michał Górny <mgorny@gentoo.org> (2021-08-28)
+# EOL kernel with known vulnerabilities.  Please move to 5.13 or one
+# of the LTS branches.  Bug #808990.
+=sys-kernel/gentoo-kernel-5.12*
+=sys-kernel/gentoo-kernel-bin-5.12*
+=sys-kernel/vanilla-kernel-5.12*
+=virtual/dist-kernel-5.12*
+
+# Anthony G. Basile <blueness@gentoo.org> (2021-08-27)
+# Masked for removal in 30 days.  Deprecated upstream.
+net-vpn/ipsec-tools
+
 # Bernard Cafarelli <voyageur@gentoo.org> (2021-08-26)
 # Preparing for final 5.0.0 release
 >=app-text/tesseract-5.0.0_beta
@@ -155,11 +179,6 @@ dev-python/bareos
 app-eselect/eselect-audicle
 app-eselect/eselect-miniaudicle
 media-sound/audicle
-
-# Sam James <sam@gentoo.org> (2021-08-04)
-# Fails to build with GCC 11. No activity upstream since 2008.
-# bug #730692, bug #787866. Removal on 2021-09-04.
-dev-scheme/ypsilon
 
 # Sam James <sam@gentoo.org> (2021-08-04)
 # Fails to build with GCC 11. Library with no reverse-dependencies.
@@ -429,11 +448,6 @@ sys-libs/db:5.1
 # bug #729098
 >=sci-libs/proj-8.0.0
 >=sci-geosciences/qmapshack-1.16
-
-# Sam James <sam@gentoo.org> (2021-02-18)
-# 0.9.27 included a regression wrt deletes
-# bug #768948
-=dev-db/lmdb-0.9.27
 
 # Lars Wendler <polynomial-c@gentoo.org> (2021-02-15)
 # Mask development versions now that they were bumped...

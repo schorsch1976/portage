@@ -22,10 +22,14 @@ RDEPEND="
 	sys-apps/file
 	sys-apps/portage
 	sys-apps/util-linux"
-BDEPEND="test? ( ${RDEPEND} )"
+BDEPEND="
+	test? (
+		${RDEPEND}
+		dev-util/libabigail
+	)"
 
 src_configure() {
-	meson_src_configure -Ddocdir=${PF}
+	meson_src_configure -Ddocdir=${PF} $(meson_use test)
 }
 
 pkg_postinst() {
