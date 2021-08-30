@@ -32,10 +32,24 @@
 
 #--- END OF EXAMPLES ---
 
+# David Seifert <soap@gentoo.org> (2021-08-29)
+# Version in tree is over 7 years old with numerous bugs. A modern
+# version 4 is available, but this really requires a dedicated
+# maintainer.
+# Bug #802417, #808669, removal in 30 days.
+sci-chemistry/dssp
+
+# David Seifert <soap@gentoo.org> (2021-08-29)
+# Broken for the past 5 years (#585942), no new upstream release in over
+# 5 years. Same issues as sci-biology/wgs-assembler, use a modern
+# assembler like sci-biology/abyss or canu.
+# Bug #585942, #731880, #808667, removal in 30 days.
+sci-biology/mira
+
 # Arthur Zamarin <arthurzam@gentoo.org> (2021-08-28)
-# Upstream changed toml to tomli handling, which resulted in a lot of
-# breakage in various packages.
-# Reported upstream in https://github.com/pypa/setuptools_scm/issues/611
+# Both versions have several bugs and have been pulled off PyPI
+# Bugs #810808 and #810790.
+=dev-python/setuptools_scm-6.1.0
 =dev-python/setuptools_scm-6.2.0
 
 # Stephan Hartmann <sultan@gentoo.org> (2021-08-28)
