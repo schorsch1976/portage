@@ -1141,10 +1141,7 @@ app-text/tessdata_fast:osd - Enable support orientation and script detection.
 app-text/tessdata_legacy:math - Enable support for recognition of equations.
 app-text/tessdata_legacy:osd - Enable support orientation and script detection.
 app-text/tesseract:float32 - Support float for model training and text recognition (faster, requires less RAM)
-app-text/tesseract:math - Enable support for recognition of equations.
 app-text/tesseract:opencl - Enable opencl support for speedup using GPU computation.
-app-text/tesseract:osd - Enable support orientation and script detection.
-app-text/tesseract:scrollview - Install viewer to debug recognition (ScrollView).
 app-text/tesseract:training - Install training applications to add support for new languages.
 app-text/texlive:context - Add support for the ConTeXt format (dev-texlive/texlive-context)
 app-text/texlive:extra - Add support for extra TeXLive packages
@@ -1350,6 +1347,7 @@ dev-embedded/sdcc:tlcs90 - Add support for TLCS-90
 dev-embedded/sdcc:ucsim - Enable software simulator for microcontrollers
 dev-embedded/sdcc:z180 - Add support for Zilog Z180
 dev-embedded/sdcc:z80 - Add support for Zilog Z80
+dev-embedded/u-boot-tools:envtools - Build only the target-side environment tools
 dev-embedded/urjtag:ftd2xx - Enable support for USB FTDI chips via dev-embedded/libftd2xx
 dev-embedded/urjtag:ftdi - Enable support for USB FTDI chips via dev-embedded/libftdi
 dev-games/aseprite:bundled-libs - Use the upstream provided bundled version of allegro 4.4.2
