@@ -32,6 +32,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Gnome Team <gnome@gentoo.org> (13 Sep 2021)
+# GNOME 41 mask, bug #812986
+>=dev-util/gdbus-codegen-2.69
+>=dev-util/glib-utils-2.69
+>=dev-libs/glib-2.69
+
 # Ionen Wolkens <ionen@gentoo.org> (2021-09-12)
 # No reverse dependencies, stuck on EAPI-5.
 # Replaced by dev-libs/spsdeclib.
@@ -293,14 +299,6 @@ sys-libs/db:5.1
 # New Minecraft server release needs at least Java 16,
 # which is currently not available in Gentoo.
 >=games-server/minecraft-server-1.17
-
-# Davide Pesavento <pesa@gentoo.org> (2021-06-15)
-# Masked for revdep testing.
->=dev-python/sip-6
->=dev-python/PyQt5-5.15.5_pre
->=dev-python/PyQtWebEngine-5.15.5_pre
->=dev-python/qscintilla-python-2.13
->=app-text/calibre-5.25.0
 
 # Sam James <sam@gentoo.org> (2021-06-12)
 # Masked until all reverse dependencies support
