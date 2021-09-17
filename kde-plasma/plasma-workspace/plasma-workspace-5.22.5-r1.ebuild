@@ -15,7 +15,7 @@ DESCRIPTION="KDE Plasma workspace"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS="amd64 ~arm ~arm64 ~ppc64 ~riscv x86"
+KEYWORDS="amd64 ~arm arm64 ~ppc64 ~riscv x86"
 IUSE="appstream +calculator +calendar +fontconfig geolocation gps screencast
 +semantic-desktop systemd telemetry"
 
@@ -118,6 +118,7 @@ COMMON_DEPEND="
 DEPEND="${COMMON_DEPEND}
 	>=dev-libs/plasma-wayland-protocols-1.1.1
 	>=dev-qt/qtconcurrent-${QTMIN}:5
+	>=dev-util/wayland-scanner-1.19.0
 	x11-base/xorg-proto
 	fontconfig? ( x11-libs/libXrender )
 "
