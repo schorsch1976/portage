@@ -7,7 +7,7 @@ EAPI=7
 
 PATCHSET_VERSION="2.9.12-r5-patchset"
 
-PYTHON_COMPAT=( python3_{7,8,9} )
+PYTHON_COMPAT=( python3_{8..10} )
 PYTHON_REQ_USE="xml"
 VERIFY_SIG_OPENPGP_KEY_PATH=${BROOT}/usr/share/openpgp-keys/danielveillard.asc
 inherit autotools flag-o-matic prefix python-r1 multilib-minimal verify-sig
@@ -165,7 +165,7 @@ multilib_src_configure() {
 
 		# Odd build system, also see bug #582130
 		run_in_build_dir libxml2_configure \
-			"--with-python=${EPYTHON}" \
+			"--with-python=${ESYSROOT}/${PYTHON}"
 			"--with-python-install-dir=$(python_get_sitedir)"
 	}
 
