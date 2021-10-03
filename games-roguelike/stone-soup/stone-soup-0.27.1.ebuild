@@ -23,7 +23,7 @@ SRC_URI="
 # Public Domain|CC0: most of tiles
 # MIT: json.cc/json.h, some .js files in webserver/static/scripts/contrib/
 LICENSE="GPL-2 BSD BSD-2 public-domain CC0-1.0 MIT"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="debug ncurses sound +tiles"
 
 RDEPEND="
@@ -167,7 +167,7 @@ pkg_postinst() {
 
 	elog "crawl is a slotted install that supports having"
 	elog "multiple versions installed.  The binary has the"
-	elog "slot appened, e.g. 'crawl-"${SLOT}"'."
+	elog "slot appended, e.g. 'crawl-"${SLOT}"'."
 
 	if use tiles && use ncurses ; then
 		elog

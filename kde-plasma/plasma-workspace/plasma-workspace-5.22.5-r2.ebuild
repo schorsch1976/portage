@@ -15,7 +15,7 @@ DESCRIPTION="KDE Plasma workspace"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
+KEYWORDS="amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
 IUSE="appstream +calculator +calendar +fontconfig geolocation gps screencast
 +semantic-desktop systemd telemetry"
 
@@ -151,6 +151,7 @@ PATCHES=(
 	"${FILESDIR}/${P}-krunner-cwd-at-home.patch" # TODO upstream: KDE-bug 432975, bug 767478
 	"${FILESDIR}/${P}-fix-powermanagement-inhibition.patch" # KDE-bug 433675
 	"${FILESDIR}/${P}-fix-hotplug-notifications.patch" # KDE-bug 438874, bug 814284
+	"${FILESDIR}/${P}-gpsd-3.23.1.patch"
 )
 
 src_prepare() {
