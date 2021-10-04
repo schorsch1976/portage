@@ -805,7 +805,6 @@ app-misc/graphlcd-base:freetype - Add support for media-libs/freetype.
 app-misc/graphlcd-base:graphicsmagick - Add support for media-gfx/graphicsmagick.
 app-misc/graphlcd-base:imagemagick - Add support for media-gfx/imagemagick.
 app-misc/irtrans-irserver:mono - Enable mono support
-app-misc/jp:jp - Install jp which is the official jp CLI for JMESPath
 app-misc/jp:jpp - Install jpp which is an extended superset of the jp CLI for JMESPath
 app-misc/jpipe:jp-symlink - Install a jp symlink that points to jpipe.
 app-misc/jpipe:jpp-symlink - Install a jpp symlink that points to jpipe.
@@ -2010,8 +2009,8 @@ dev-libs/hidapi:fox - Build a x11-libs/fox GUI
 dev-libs/imath:large-stack - Enables code to take advantage of large stack support
 dev-libs/input-pad:eekboard - Enable support for dev-libs/eekboard
 dev-libs/input-pad:xtest - Enable support for x11-libs/libXtst
-dev-libs/intel-neo:l0 - Install the oneAPI Level Zero driver alongside the OpenCL one
-dev-libs/intel-neo:vaapi - Support the sharing of surfaces with Video Acceleration API (OpenCL Extension #36)
+dev-libs/intel-compute-runtime:l0 - Install the oneAPI Level Zero driver alongside the OpenCL one
+dev-libs/intel-compute-runtime:vaapi - Support the sharing of surfaces with Video Acceleration API (OpenCL Extension #36)
 dev-libs/jemalloc:lazy-lock - Enable lazy locking (only lock when multi-threaded)
 dev-libs/jemalloc:prof - Enable allocation profiling
 dev-libs/jemalloc:stats - Enable statistics calculation/reporting
@@ -6061,6 +6060,7 @@ net-libs/libtrace:numa - Use sys-process/numactl
 net-libs/libupnp:blocking-tcp - Do not use async socket calls
 net-libs/libupnp:reuseaddr - Allow clean restarts by binding the socket with SO_REUSEADDR
 net-libs/libupnp:samples - Install sample applications
+net-libs/libupnp:tools - Install additional tools
 net-libs/libvncserver:24bpp - Enable 24bpp support
 net-libs/libvncserver:filetransfer - Enable support for TightVNC's file transfer protocol
 net-libs/libvncserver:gcrypt - Use dev-libs/libgcrypt as crypto backend
