@@ -498,10 +498,10 @@ app-emulation/hyperd:libvirt - Enable support for KVM via libvirt
 app-emulation/hyperd:xen - Enable support for the Xen Hypervisor
 app-emulation/libcacard:passthrough - Enable smartcard passthrough support via sys-apps/pcsc-lite
 app-emulation/libguestfs:erlang - Build Erlang bindings
-app-emulation/libguestfs:fuse - Enable image mount support via fuse
-app-emulation/libguestfs:inspect-icons - Use media-gfx/icoutils for acces icon file in image and inspect it
+app-emulation/libguestfs:fuse - Enable image mount support via sys-fs/fuse
+app-emulation/libguestfs:inspect-icons - Use media-gfx/icoutils for accessing/inspecting icon file within images
 app-emulation/libguestfs:libvirt - Use app-emulation/libvirt to manipulate VMs
-app-emulation/libguestfs:systemtap - Use dev-util/systemtap to inspect VM via "probes" way
+app-emulation/libguestfs:systemtap - Use dev-util/systemtap to inspect VM via "probes"
 app-emulation/libspectrum:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/libvirt:apparmor - Enable AppArmor support
 app-emulation/libvirt:dtrace - Enable dtrace support via dev-util/systemtap
@@ -572,7 +572,7 @@ app-emulation/qemu:pin-upstream-blobs - Pin the versions of BIOS firmware to the
 app-emulation/qemu:plugins - Enable qemu plugin API via shared library loading.
 app-emulation/qemu:png - Enable png image support for the VNC console server
 app-emulation/qemu:pulseaudio - Enable pulseaudio output for sound emulation
-app-emulation/qemu:rbd - Enable rados block device backend support, see http://ceph.newdream.net/wiki/QEMU-RBD
+app-emulation/qemu:rbd - Enable rados block device backend support, see https://docs.ceph.com/en/mimic/rbd/qemu-rbd/
 app-emulation/qemu:sdl - Enable the SDL-based console
 app-emulation/qemu:sdl-image - SDL Image support for icons
 app-emulation/qemu:slirp - Enable TCP/IP in hypervisor via net-libs/libslirp
@@ -584,10 +584,10 @@ app-emulation/qemu:systemtap - Enable SystemTAP/DTrace tracing
 app-emulation/qemu:usb - Enable USB passthrough via dev-libs/libusb
 app-emulation/qemu:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
 app-emulation/qemu:vde - Enable VDE-based networking
-app-emulation/qemu:vhost-net - Enable accelerated networking using vhost-net, see http://www.linux-kvm.org/page/VhostNet
+app-emulation/qemu:vhost-net - Enable accelerated networking using vhost-net, see https://www.linux-kvm.org/page/VhostNet
 app-emulation/qemu:vhost-user-fs - Enable shared file system access using the FUSE protocol carried over virtio.
 app-emulation/qemu:virgl - Enable experimental Virgil 3d (virtual software GPU)
-app-emulation/qemu:virtfs - Enable VirtFS via virtio-9p-pci / fsdev. See http://wiki.qemu.org/Documentation/9psetup
+app-emulation/qemu:virtfs - Enable VirtFS via virtio-9p-pci / fsdev. See https://wiki.qemu.org/Documentation/9psetup
 app-emulation/qemu:vte - Enable terminal support (x11-libs/vte) in the GTK+ interface
 app-emulation/qemu:xattr - Add support for getting and setting POSIX extended attributes, through sys-apps/attr. Requisite for the virtfs backend.
 app-emulation/qemu:xen - Enables support for Xen backends
@@ -1815,7 +1815,7 @@ dev-lang/ruby:systemtap - Enable SystemTAP/DTrace tracing
 dev-lang/rust:clippy - Install clippy, Rust code linter
 dev-lang/rust:miri - Install miri, an interpreter for Rust's mid-level intermediate representation (requires USE=nightly)
 dev-lang/rust:nightly - Enable nightly (UNSTABLE) features
-dev-lang/rust:parallel-compiler - Build a multi-threaded rustc (experimental, unsupported)
+dev-lang/rust:parallel-compiler - Build a multi-threaded rustc (experimental, not tested by upstream)
 dev-lang/rust:rls - Install rls, Rust Language Server (used with IDEs supporting RLS protocol)
 dev-lang/rust:rustfmt - Install rustfmt, Rust code formatter
 dev-lang/rust:system-bootstrap - Bootstrap using installed rust compiler
@@ -4969,6 +4969,10 @@ media-video/ffmpeg:x265 - Enables HEVC encoding with media-libs/x265.
 media-video/ffmpeg:zeromq - Enables net-libs/zeromq support with the zmq/azmq filters.
 media-video/ffmpeg:zimg - Enables media-libs/zimg based scale filter.
 media-video/ffmpeg:zvbi - Enables media-libs/zvbi based teletext decoder.
+media-video/ffmpeg-chromium:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)
+media-video/ffmpeg-chromium:gpl - Build GPL code. Should be enabled unless you require LGPL binaries.
+media-video/ffmpeg-chromium:mmal - Enables Multi-Media Abstraction Layer (MMAL) decoding support: Available e.g. on the Raspberry Pi.
+media-video/ffmpeg-chromium:vulkan - Enables support for the vulkan API for GPU offload.
 media-video/ffmpeg2theora:kate - Adds support for Ogg Kate subtitles via libkate.
 media-video/google2srt:html - Install HTML documentation
 media-video/guvcview:qt5 - Build with Qt5 interface instead Gtk+
