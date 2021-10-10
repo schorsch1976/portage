@@ -18,7 +18,7 @@ DESCRIPTION="A template language aiming to reduce the syntax to the essential pa
 HOMEPAGE="http://slim-lang.com/"
 LICENSE="MIT"
 
-KEYWORDS="~amd64 ~arm64"
+KEYWORDS="~amd64 ~arm64 ~ppc64"
 SLOT="$(ver_cut 1)"
 IUSE="doc"
 
@@ -35,6 +35,9 @@ all_ruby_prepare() {
 
 	# This sinatra code expects tests to be installed but we strip those.
 	sed -i -e "s/require 'sinatra'/require 'bogussinatra'/" Rakefile || die
+
+	# Add missing include, bug 816573
+	sed -i -e "1irequire 'ostruct'" test/core/test_code_evaluation.rb || die
 
 	# Avoid tests for things we don't have. The builder test does not pass with tilt 2.x
 	sed -i -e '/test_wip_render_with_asciidoc/,/^  end/ s:^:#:' \
