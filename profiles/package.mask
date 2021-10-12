@@ -108,6 +108,11 @@ x11-drivers/nvidia-drivers:0/vulkan
 >=gnome-extra/evolution-ews-3.41
 >=gnome-extra/gnome-calendar-41.0
 >=gnome-extra/gnome-contacts-41.0
+>=x11-wm/mutter-41.0
+>=dev-libs/gjs-1.69
+>=gnome-base/gsettings-desktop-schemas-41.0
+>=gnome-base/gnome-shell-41.0
+>=gnome-extra/gnome-shell-extensions-41.0
 
 # Fabian Groffen <grobian@gentoo.org> (2021-10-03)
 # Masked for erratic behaviour
@@ -292,32 +297,6 @@ media-libs/sdl-terminal
 # semi-broken and runtime seems broken even if built.
 # Removal on 2021-10-12. bug #701414, bug #739188.
 games-emulation/nestra
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2021-09-11)
-# No reverse dependencies. Implements ordered set, which was needed
-# for the python 2.6 era, and since python 2.7 isn't needed and is
-# builtin in the language. Upstream isn't active at all.
-# No other distros package it anymore.
-# Removal on 2021-10-11.  Bug #812554
-dev-python/oset
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2021-09-11)
-# No reverse dependencies. Has issues with porting to python 3.10.
-# Has known upstream issues with latest GitHub's markdown parsing.
-# Last year upstream planned to archive the repository, no activity
-# since. No other distros package it anymore.
-# Extra bug: #798195
-# Removal on 2021-10-11.  Bug #812530.
-dev-python/py-gfm
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2021-09-11)
-# Upstream repository was archived. No reverse dependencies (only blocked
-# by one other package). Implements GitHub API in python, while better and
-# maintained packages are in tree. Has non trivial issues with bump to
-# python 3.10. No other distros package it anymore.
-# Extra bugs: #791673, #723542, #802999
-# Removal on 2021-10-11.  Bug #812521.
-dev-python/txgithub
 
 # Anna Vyalkova <cyber+gentoo@sysrq.in> (2021-09-07)
 # Mask backwards-incompatible version to avoid autodeletion of previous one.
