@@ -2890,7 +2890,6 @@ dev-vcs/git:gpg - Pull in gnupg for signing -- without gnupg, attempts at signin
 dev-vcs/git:highlight - GitWeb support for app-text/highlight
 dev-vcs/git:mediawiki - Support pulling and pushing from MediaWiki
 dev-vcs/git:mediawiki-experimental - Add experimental patches for improved MediaWiki support
-dev-vcs/git:pcre-jit - Enable JIT for pcre
 dev-vcs/git:perforce - Add support for Perforce version control system (requires manual installation of Perforce client)
 dev-vcs/git:ppcsha1 - Make use of a bundled routine that is optimized for the PPC arch
 dev-vcs/git:subversion - Include git-svn for dev-vcs/subversion support
@@ -8310,7 +8309,6 @@ sys-libs/compiler-rt-sanitizers:msan - Build Memory Sanitizer runtime.
 sys-libs/compiler-rt-sanitizers:orc - Build ORC runtime.
 sys-libs/compiler-rt-sanitizers:profile - Build profiling runtime.
 sys-libs/compiler-rt-sanitizers:safestack - Build SafeStack runtime.
-sys-libs/compiler-rt-sanitizers:sanitize - Build sanitizer runtimes.
 sys-libs/compiler-rt-sanitizers:scudo - Build Scudo Hardened Allocator.
 sys-libs/compiler-rt-sanitizers:shadowcallstack - Build ShadowCallStack.
 sys-libs/compiler-rt-sanitizers:tsan - Build Thread Sanitizer runtime.
