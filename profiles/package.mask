@@ -33,6 +33,19 @@
 
 #--- END OF EXAMPLES ---
 
+# Jakov Smolić <jsmolic@gentoo.org> (2021-11-09)
+# Uses EAPI 5, no maintainer in Gentoo, no other
+# distro is packaging this.
+# Removal on 2021-12-09. Bug #819312. Bug #819321.
+net-libs/balde
+net-libs/balde-markdown
+
+# Jakov Smolić <jsmolic@gentoo.org> (2021-11-09)
+# Uses EAPI 5, upstream gone, no revdeps,
+# no other distro is packaging this.
+# Removal on 2021-12-09. Bug #819303.
+net-misc/ssh-chain
+
 # Michał Górny <mgorny@gentoo.org> (2021-11-08)
 # Blocked on LLVM 11.  Upstream does not handle adding support for new
 # LLVM or Python versions timely.  No reverse dependencies.
@@ -607,11 +620,6 @@ media-sound/pulseaudio-daemon
 # Mart Raudsepp <leio@gentoo.org> (2021-09-23)
 # Incompatible with c++17 abseil-cpp, no in-tree consumers yet
 media-libs/webrtc-audio-processing:1
-
-# Alfredo Tupone <tupone@gentoo.org> (2021-09-19)
-# Mask gnat-gpl-2018 and gnat-gpl-2019. Please switch
-# to a fresher gnat-gpl branch.
-<dev-lang/gnat-gpl-2019
 
 # Andreas K. Hüttel <dilfridge@gentoo.org> (2021-09-18)
 # sys-devel/automake version 1.11 is EOL and is only useful for testing

@@ -1716,12 +1716,9 @@ dev-lang/ghc:ghcmakebinary - Internal: Build binary friendly for redistribution.
 dev-lang/ghc:gmp - Use dev-libs/gmp for integer operations (works faster, but an external depend).
 dev-lang/ghc:numa - Enable NUMA thread balancing policy using sys-process/numactl.
 dev-lang/gnat-gpl:ada - Build the ADA language (GNAT) frontend
-dev-lang/gnat-gpl:awt - Useful only when building GCJ, this enables Abstract Window Toolkit (AWT) peer support on top of GTK+
 dev-lang/gnat-gpl:bootstrap - Used to bootstrap gnat-gpl
-dev-lang/gnat-gpl:cilk - Support the Cilk Plus language (C/C++ based languages for parallel programming)
 dev-lang/gnat-gpl:d - Enable support for the D programming language
 dev-lang/gnat-gpl:fixed-point - Enable fixed-point arithmetic support for MIPS targets in gcc (Warning: significantly increases compile time!)
-dev-lang/gnat-gpl:gcj - Build the GCJ Java language frontend.
 dev-lang/gnat-gpl:go - Build the GCC Go language frontend.
 dev-lang/gnat-gpl:graphite - Add support for the framework for loop optimizations based on a polyhedral intermediate representation
 dev-lang/gnat-gpl:libssp - Build SSP support into a dedicated library rather than use the code in the C library (DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT IT DOES)
@@ -2405,6 +2402,10 @@ dev-python/QtPy:xml - Pull in QtXml module
 dev-python/QtPy:xmlpatterns - Pull in bindings for the QtXmlPatterns module
 dev-python/autobahn:scram - Add support for WAMP-SCRAM authentication
 dev-python/autobahn:xbr - Add support for XBR decentralized data markets and etherium blockchain
+dev-python/bpython:clipboard - Enable copying to clipboard using dev-python/pyperclip
+dev-python/bpython:jedi - Enable autocompletion using dev-python/jedi
+dev-python/bpython:urwid - Ebable dev-python/urwid-based interface
+dev-python/bpython:watch - Enable watching paths using dev-python/watchdog
 dev-python/ctypescrypto:gost - Build with support for GOST Message Authentication Code
 dev-python/cvxopt:dsdp - Use interior point library sci-libs/dsdp
 dev-python/cvxopt:glpk - Use GNU Linear Programming Kit sci-mathematics/glpk
@@ -5094,7 +5095,6 @@ media-video/simplescreenrecorder:asm - Enable x86 assembly optimisation.
 media-video/simplescreenrecorder:vpx - Enable VP8 codec support via media-libs/libvpx.
 media-video/smplayer:autoshutdown - Enable the option to shutdown your computer after finishing the playlist. This requires dev-qt/qtdbus as dependency.
 media-video/smplayer:mpris - Enable support for MPRIS2 (Media Player Remote Interfacing Specification, version 2), a DBus interface for remote control, which requires dev-qt/qtdbus as dependency.
-media-video/subtitlecomposer:mpv - Build mpv backend support
 media-video/totem:python - Build dev-lang/python using plugins (dbusservice for notifications and MPRIS control, interactive python console and opensubtitles lookup)
 media-video/transcode:mjpeg - Enables mjpegtools support
 media-video/transcode:nuv - NuppelVideo container format demuxing
@@ -8246,7 +8246,7 @@ sys-fs/lessfs:memtrace - Enable leefs to create a report regarding the memory al
 sys-fs/loop-aes:extra-ciphers - Enable extra ciphers
 sys-fs/loop-aes:keyscrub - Protects the encryption key in memory but takes more cpu resources
 sys-fs/lvm2:device-mapper-only - Build only device-mapper and not the rest of LVM2 (UNSUPPORTED)
-sys-fs/lvm2:lvm2create_initrd - Install lvm2create_initrd script and pull in sys-apps/makedev for the /sbin/MAKEDEV command
+sys-fs/lvm2:lvm2create-initrd - Install lvm2create_initrd script and pull in sys-apps/makedev for the /sbin/MAKEDEV command
 sys-fs/lvm2:sanlock - Enable lvmlockd with support for sanlock
 sys-fs/lvm2:thin - Support for thin volumes
 sys-fs/mtpfs:mad - Enable handling of MP3's metadata
