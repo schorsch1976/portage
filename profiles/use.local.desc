@@ -1948,6 +1948,7 @@ dev-libs/check:subunit - Enable support for the subunit unit test protocol
 dev-libs/crypto++:asm - Support assembly hand optimized crypto functions (i.e. faster run time)
 dev-libs/cudnn:cuda10-2 - On Nvidia CUDA 10.2
 dev-libs/cudnn:cuda11-4 - On Nvidia CUDA 11.4
+dev-libs/cudnn:cuda11-5 - On Nvidia CUDA 11.5
 dev-libs/cyberjack:tools - Build and install optional management tools.
 dev-libs/cyrus-sasl:authdaemond - Add Courier-IMAP authdaemond unix socket support (net-mail/courier-imap, mail-mta/courier)
 dev-libs/cyrus-sasl:ldapdb - Enable ldapdb plugin
@@ -7281,6 +7282,7 @@ sci-libs/gsl:deprecated - Enable deprecated functions
 sci-libs/hdf5:hl - Enable high level API (https://support.hdfgroup.org/HDF5/doc/HL/index.html)
 sci-libs/hdf5:ros3 - Enable support for read-only S3 access (https://portal.hdfgroup.org/display/HDF5/Configuration+and+Setup+for+HDF5+Read+Only+S3+VFD)
 sci-libs/hdf5:unsupported - Enable unsupported combinations of configuration options
+sci-libs/hipCUB:benchmark - Build and install benchmark binaries.
 sci-libs/hypre:int64 - Build the 64 bits integer library
 sci-libs/indilib:rtlsdr - Enable support for devices supported by net-wireless/rtl-sdr
 sci-libs/indilib:websocket - Enable support for WebSocket protocol
@@ -7874,6 +7876,7 @@ sys-apps/util-linux:hardlink - build hardlink program
 sys-apps/util-linux:kill - build the kill program
 sys-apps/util-linux:logger - build the logger program
 sys-apps/util-linux:pam - build runuser helper
+sys-apps/util-linux:rtas - Add support for the Run Time Abstraction Services (RTAS)
 sys-apps/util-linux:su - build the su program
 sys-apps/util-linux:suid - install mount/umount as setuid so non-root users may mount/umount devices, and wall/write as setgid so non-root users can notify other users
 sys-apps/util-linux:tty-helpers - install the mesg/wall/write tools for talking to local users
