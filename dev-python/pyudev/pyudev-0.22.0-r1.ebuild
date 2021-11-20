@@ -31,8 +31,6 @@ DEPEND="${RDEPEND}
 DOCS=( CHANGES.rst README.rst )
 
 PATCHES=(
-	"${FILESDIR}/pyudev-0.22-pytest-4.patch"
-	"${FILESDIR}/pyudev-0.22-remove-flaky-tests.patch"
 	"${FILESDIR}/pyudev-0.22-fix-hypothesis.patch"
 )
 
