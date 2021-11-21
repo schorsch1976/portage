@@ -20,7 +20,7 @@ else
 	MY_P=${MY_PN}-${MY_PV}
 	S=${WORKDIR}/${MY_P}
 	SRC_URI="https://github.com/systemd/${MY_PN}/archive/v${MY_PV}/${MY_P}.tar.gz"
-	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
+	KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
 fi
 
 inherit bash-completion-r1 linux-info meson-multilib pam python-any-r1 systemd toolchain-funcs udev usr-ldscript
@@ -177,7 +177,7 @@ pkg_pretend() {
 		fi
 
 		local CONFIG_CHECK="~AUTOFS4_FS ~BLK_DEV_BSG ~CGROUPS
-			~KCMP ~DEVTMPFS ~EPOLL ~FANOTIFY ~FHANDLE
+			~DEVTMPFS ~EPOLL ~FANOTIFY ~FHANDLE
 			~INOTIFY_USER ~IPV6 ~NET ~NET_NS ~PROC_FS ~SIGNALFD ~SYSFS
 			~TIMERFD ~TMPFS_XATTR ~UNIX ~USER_NS
 			~CRYPTO_HMAC ~CRYPTO_SHA256 ~CRYPTO_USER_API_HASH
@@ -189,6 +189,12 @@ pkg_pretend() {
 		kernel_is -lt 3 7 && CONFIG_CHECK+=" ~HOTPLUG"
 		kernel_is -lt 4 7 && CONFIG_CHECK+=" ~DEVPTS_MULTIPLE_INSTANCES"
 		kernel_is -ge 4 10 && CONFIG_CHECK+=" ~CGROUP_BPF"
+
+		if kernel_is -lt 5 10 20; then
+			CONFIG_CHECK+=" ~CHECKPOINT_RESTORE"
+		else
+			CONFIG_CHECK+=" ~KCMP"
+		fi
 
 		if linux_config_exists; then
 			local uevent_helper_path=$(linux_chkconfig_string UEVENT_HELPER_PATH)
