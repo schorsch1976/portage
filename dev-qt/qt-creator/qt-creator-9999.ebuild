@@ -25,11 +25,11 @@ fi
 LICENSE="GPL-3"
 SLOT="0"
 QTC_PLUGINS=(android +autotest autotools:autotoolsprojectmanager baremetal bazaar beautifier boot2qt
-	'+clang:clangcodemodel|clangformat|clangtools' clearcase cmake:cmakeprojectmanager cppcheck
-	ctfvisualizer cvs +designer git glsl:glsleditor +help lsp:languageclient mcu:mcusupport mercurial
-	modeling:modeleditor nim perforce perfprofiler python qbs:qbsprojectmanager +qmldesigner
-	+qmljs:qmljseditor qmlprofiler qnx remotelinux scxml:scxmleditor serialterminal silversearcher
-	subversion valgrind webassembly)
+	'+clang:clangcodemodel|clangformat|clangtools' clearcase cmake:cmakeprojectmanager conan cppcheck
+	ctfvisualizer cvs +designer docker git glsl:glsleditor +help incredibuild lsp:languageclient
+	mcu:mcusupport mercurial meson:mesonprojectmanager modeling:modeleditor nim perforce perfprofiler
+	python qbs:qbsprojectmanager +qmldesigner +qmljs:qmljseditor qmlprofiler qnx remotelinux
+	scxml:scxmleditor serialterminal silversearcher subversion valgrind webassembly)
 IUSE="doc systemd test webengine ${QTC_PLUGINS[@]%:*}"
 RESTRICT="!test? ( test )"
 REQUIRED_USE="
@@ -93,13 +93,10 @@ DEPEND="${CDEPEND}
 "
 RDEPEND="${CDEPEND}
 	sys-devel/gdb[python]
-	autotools? ( sys-devel/autoconf )
-	cmake? ( >=dev-util/cmake-3.14 )
 	cppcheck? ( dev-util/cppcheck )
 	cvs? ( dev-vcs/cvs )
 	git? ( dev-vcs/git )
 	mercurial? ( dev-vcs/mercurial )
-	qbs? ( >=dev-util/qbs-1.18 )
 	qmldesigner? ( >=dev-qt/qtquicktimeline-${QT_PV} )
 	silversearcher? ( sys-apps/the_silver_searcher )
 	subversion? ( dev-vcs/subversion )
