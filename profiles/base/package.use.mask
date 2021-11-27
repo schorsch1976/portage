@@ -6,6 +6,11 @@
 # This file is only for generic masks. For arch-specific masks (i.e.
 # mask everywhere, unmask on arch/*) use arch/base.
 
+# Sam James <sam@gentoo.org> (2021-11-26)
+# Needs unpackaged asciidoctor-pdf for now
+# bug #827290
+>=app-doc/kicad-doc-6.0.0_rc1 pdf
+
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2021-11-23)
 # pdfannotextractor gets masked as it does not support
 # updated dev-java/pdfbox-2.0.24, Bug #803488
@@ -433,7 +438,7 @@ app-emulation/fuse backend-svga
 # Patrick McLean <chutzpah@gentoo.org> (2018-03-06)
 # Andreas K. Hüttel <dilfridge@gentoo.org> (2020-12-25)
 # Requires dev-libs/boost-1.72 that is gone
-sys-cluster/ceph system-boost
+<sys-cluster/ceph-15 system-boost
 
 # Brian Evans <grknight@gentoo.org> (2018-03-05)
 # Mask embedded USE on virtual/mysql and friends to transition it to be obsolete

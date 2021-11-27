@@ -13,18 +13,27 @@ SRC_URI="https://github.com/AdaCore/${PN}/archive/refs/tags/v${PV}.tar.gz
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
+RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/colorama
 	dev-python/stevedore
-	dev-python/distro"
+	dev-python/distro
+	!app-editors/e3"
 DEPEND="${RDEPEND}
 	test? (
 		dev-python/requests-toolbelt
 		dev-python/httpretty
 		dev-vcs/subversion
+		dev-python/tqdm
+		dev-python/tomlkit
+		dev-python/pyyaml
+		dev-python/python-dateutil
+		dev-python/mock
+		dev-python/psutil
 	)"
 BDEPEND=""
+REQUIRED_USE="x86? ( !test )"
 
 PATCHES=(
 	"${FILESDIR}"/${P}-distro.patch
@@ -38,14 +47,8 @@ src_prepare() {
 }
 
 src_compile() {
-	local PLATFORM
-	if use amd64; then
-		PLATFORM=x86_64-linux
-	else
-		PLATFORM=x86-linux
-	fi
-
+	local PLATFORM=x86_64-linux
 	rm src/e3/os/data/rlimit* || die
-	$(tc-getCC) ${CFLAGS} -o src/e3/os/data/rlimit-${PLATFORM} tools/rlimit/rlimit.c
+	$(tc-getCC) ${CFLAGS} -o src/e3/os/data/rlimit-${PLATFORM} tools/rlimit/rlimit.c ${LDFLAGS}
 	distutils-r1_src_compile
 }

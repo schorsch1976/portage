@@ -1197,8 +1197,6 @@ app-text/zathura:synctex - Use libsynctex to get latex codeline from pdf
 app-text/zathura-meta:cb - Install plug-in for ComicBook support
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
 app-xemacs/xemacs-packages-all:mule - Add multi-language support to XEmacs
-dev-ada/gnat_util:shared - Build gnat_util shared library
-dev-ada/gnat_util:static-pic - Build gnat_util static library with pic code
 dev-ada/gnatcoll-bindings:shared - Build shared library
 dev-ada/gnatcoll-bindings:static-pic - Build shared library
 dev-ada/gnatcoll-core:shared - Build shared library
@@ -3510,9 +3508,9 @@ kde-apps/marble:phonon - Enable sound support via media-libs/phonon
 kde-apps/marble:shapefile - Enable support for ESRI shapefiles
 kde-apps/marble:webengine - Use dev-qt/qtwebengine for embedded web browser
 kde-apps/okular:chm - Enable support for Microsoft Compiled HTML Help files
+kde-apps/okular:crypt - Enable support for password-encrypted documents via kde-frameworks/kwallet
 kde-apps/okular:epub - Enable E-Book support via app-text/ebook-tools
 kde-apps/okular:image-backend - Enable image viewing support
-kde-apps/okular:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
 kde-apps/okular:markdown - Enable Markdown support via app-text/discount
 kde-apps/okular:mobi - Enable mobipocket support
 kde-apps/okular:plucker - Enable Plucker E-Book for Palm OS devices support
@@ -7487,6 +7485,7 @@ sci-mathematics/lcalc:double - Use double precision (the upstream default)
 sci-mathematics/lcalc:double-double - Use sci-libs/qdfor double-double precision
 sci-mathematics/lcalc:pari - Use sci-mathematics/pari for elliptic curve L-functions
 sci-mathematics/lcalc:quad-double - Use sci-libs/qdfor quad-double precision
+sci-mathematics/lean:json - Enable JSON support
 sci-mathematics/maxima:clisp - Compile maxima with GNU CLISP (dev-lisp/clisp)
 sci-mathematics/maxima:clozurecl - Compile maxima with 32-bit Clozure Common Lisp (dev-lisp/clozurecl)
 sci-mathematics/maxima:clozurecl64 - Compile maxima with 64-bit Clozure Common Lisp (dev-lisp/clozurecl)
@@ -8898,7 +8897,6 @@ x11-terms/rxvt-unicode:gdk-pixbuf - Enable transparency support using x11-libs/g
 x11-terms/rxvt-unicode:iso14755 - Enable ISO-14755 support
 x11-terms/rxvt-unicode:mousewheel - Enable scrolling via mouse wheel or buttons 4 and 5
 x11-terms/rxvt-unicode:perl - Enable perl script support. You can still disable this at runtime with -pe ""
-x11-terms/rxvt-unicode:sgrmouse - Enable unofficial support for the xterm SGR 1006 mouse-tracking extension. Needed to properly support mouse events for terminals with more than 223 rows or columns, in applications not supporting the urxvt 1015 extension.
 x11-terms/rxvt-unicode:unicode3 - Use 21 instead of 16 bits to represent unicode characters
 x11-terms/rxvt-unicode:utmp - Enable utmp support
 x11-terms/rxvt-unicode:wtmp - Enable wtmp support
