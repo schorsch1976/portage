@@ -32,7 +32,7 @@ SRC_URI="
 "
 
 LICENSE="MIT"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86 ~x64-macos"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv sparc x86 ~x64-macos"
 SLOT="0"
 IUSE="test vanilla"
 RESTRICT="!test? ( test )"
@@ -88,6 +88,12 @@ python_test() {
 		tests/functional/test_install.py::test_install_editable_with_prefix_setup_cfg
 		tests/functional/test_install.py::test_editable_install__local_dir_no_setup_py_with_pyproject
 		tests/functional/test_install.py::test_editable_install__local_dir_setup_requires_with_pyproject
+	)
+
+	local EPYTEST_IGNORE=(
+		# require tomli-w that needs to be keyworded (added in -r1)
+		tests/functional/test_pep517.py
+		tests/functional/test_pep660.py
 	)
 
 	[[ ${EPYTHON} == python3.10 ]] && deselect+=(
