@@ -3534,6 +3534,7 @@ kde-apps/step:qalculate - Enable the libqalculate library for unit conversion
 kde-apps/umbrello:php - Enable PHP import support using dev-util/kdevelop and dev-util/kdevelop-pg-qt
 kde-apps/yakuake:absolute-position - Use kde-frameworks/kwayland for absolute window positioning in KWin
 kde-frameworks/kcompletion:designer - Build plugins for dev-qt/designer
+kde-frameworks/kconfig:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-frameworks/kconfigwidgets:designer - Build plugins for dev-qt/designer
 kde-frameworks/kfilemetadata:epub - Enable support for reading EPUB ebook metadata
 kde-frameworks/kfilemetadata:office - Enable support for reading ODF and OOXML metadata
@@ -7526,6 +7527,12 @@ sci-mathematics/slepc:complex-scalars - Make scalars complex
 sci-mathematics/unuran:prng - Use sci-mathematics/prng library
 sci-mathematics/unuran:rngstreams - Use sci-mathematics/rngstreams library
 sci-mathematics/vampire:z3 - Enable support for sci-mathematics/z3
+sci-mathematics/why3:coq - Add sci-mathematics/coq support
+sci-mathematics/why3:gtk - Build the IDE x11-libs/gtk+
+sci-mathematics/why3:re - Use Re (dev-ml/re) instead of Str for regular expressions
+sci-mathematics/why3:sexp - Add support for outputting S-expressions with dev-ml/ppx_sexp_conv
+sci-mathematics/why3:zarith - Use Zarith (dev-ml/zarith) instead of Nums (dev-ml/num) for computations
+sci-mathematics/why3:zip - Enable compression of session files
 sci-mathematics/why3-for-spark:coq - Add sci-mathematics/coq support
 sci-mathematics/why3-for-spark:html - Build HTML documentation
 sci-mathematics/why3-for-spark:hypothesis-selection - Enable hypothesis selection
@@ -8585,6 +8592,7 @@ www-client/firefox:system-icu - Use the system-wide dev-libs/icu instead of bund
 www-client/firefox:system-jpeg - Use the system-wide media-libs/libjpeg-turbo instead of bundled.
 www-client/firefox:system-libevent - Use the system-wide dev-libs/libevent instead of bundled.
 www-client/firefox:system-libvpx - Use the system-wide media-libs/libvpx instead of bundled.
+www-client/firefox:system-png - Use the system-wide media-libs/libpng instead of bundled (requires APNG patches).
 www-client/firefox:system-webp - Use the system-wide media-libs/libwebp instead of bundled.
 www-client/firefox-bin:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
 www-client/jd:migemo - Enable migemo support for Japanese
