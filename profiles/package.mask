@@ -96,12 +96,6 @@ games-action/multimc
 # Package without consumers. Bug #828740.  Removal in 30 days.
 www-apache/mod_caucho
 
-# Lars Wendler <polynomial-c@gentoo.org> (2021-12-07)
-# Fails to build with recent kernel headers (bug #801688).
-# Upstream is gone for a long time. Masked for removal in 30 days.
-# Users should switch over to net-dns/dnsmasq which provides similar features.
-net-dns/pdnsd
-
 # David Seifert <soap@gentoo.org> (2021-12-06)
 # Ancient release, EAPI 5, downloads random data,
 # latest version uses Gradle.
@@ -370,18 +364,6 @@ dev-java/piccolo2d
 ~sys-kernel/gentoo-kernel-bin-5.14.19
 ~sys-kernel/vanilla-kernel-5.14.19
 ~virtual/dist-kernel-5.14.19
-
-# Jakov Smolić <jsmolic@gentoo.org> (2021-11-16)
-# Outdated java package, uses EAPI 5, no revdeps,
-# no other distro is packaging this.
-# Removal on 2021-12-16. Bug #819420.
-media-video/google2srt
-
-# Uses EAPI 5, multiple bugs reported, fails to compile,
-# no revdeps, upstream doesn't do regular releases,
-# no other distro is packaging this
-# Removal on 2021-12-16. Bug #770610. Bug #813873. Bug #810682.
-net-libs/onion
 
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2021-11-15)
 # bug #771693 (multiple CVEs).
