@@ -17,7 +17,7 @@ SRC_URI="${ADAMIRROR}/${ID}?filename=${MYP}.tar.gz -> ${MYP}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="gmp iconv python readline +shared static-libs static-pic syslog"
 
 RDEPEND="${PYTHON_DEPS}
@@ -31,6 +31,8 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}
 	${ADA_REQUIRED_USE}"
 
 S="${WORKDIR}"/${MYP}
+
+QA_EXECSTACK=usr/lib/gnatcoll_readline.*/libgnatcoll_readline.*
 
 pkg_setup() {
 	python-single-r1_pkg_setup
