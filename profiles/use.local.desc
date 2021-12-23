@@ -306,6 +306,10 @@ app-containers/docker:device-mapper - Enables dependencies for the "devicemapper
 app-containers/docker:overlay - Enables dependencies for the "overlay" graph driver, including necessary kernel flags.
 app-containers/docker-credential-helpers:gnome-keyring - Build secretservice helper which works with gnome-keyring or kwallet using D-Bus.
 app-containers/docker-credential-helpers:pass - Build pass helper for the pass utility.
+app-containers/lxc:apparmor - Enable AppArmor support
+app-containers/lxc:io-uring - Enable io_uring support, and use io_uring instead of epoll
+app-containers/lxc:tools - Build and install additional command line tools
+app-containers/lxd:apparmor - Enable AppArmor support
 app-containers/podman:apparmor - Enable AppArmor support.
 app-containers/podman:btrfs - Enables dependencies for the "btrfs" graph driver, including necessary kernel flags.
 app-containers/podman:fuse - Enables fuse dependencies (fuse-overlayfs is especially useful for rootless mode).
@@ -532,7 +536,7 @@ app-emulation/libvirt:iscsi-direct - Allow using libiscsi for iSCSI storage pool
 app-emulation/libvirt:libssh - Use net-libs/libssh to communicate with remote libvirtd hosts, for example: qemu+libssh://server/system
 app-emulation/libvirt:libvirtd - Builds the libvirtd daemon as well as the client utilities instead of just the client utilities
 app-emulation/libvirt:lvm - Allow using the Logical Volume Manager (sys-fs/lvm2) as pool for disk image storage
-app-emulation/libvirt:lxc - Support management of Linux Containers virtualisation (app-emulation/lxc)
+app-emulation/libvirt:lxc - Support management of Linux Containers virtualisation (app-containers/lxc)
 app-emulation/libvirt:nfs - Allow using Network File System mounts as pool for disk image storage
 app-emulation/libvirt:numa - Use NUMA for memory segmenting via sys-process/numactl and sys-process/numad
 app-emulation/libvirt:openvz - Support management of OpenVZ virtualisation (openvz-sources)
@@ -545,10 +549,6 @@ app-emulation/libvirt:virtualbox - Support management of VirtualBox virtualisati
 app-emulation/libvirt:wireshark-plugins - Build the net-analyzer/wireshark plugin for the Libvirt RPC protocol
 app-emulation/libvirt:xen - Support management of Xen virtualisation (app-emulation/xen)
 app-emulation/libvirt:zfs - Enable ZFS backend storage sys-fs/zfs
-app-emulation/lxc:apparmor - Enable AppArmor support
-app-emulation/lxc:io-uring - Enable io_uring support, and use io_uring instead of epoll
-app-emulation/lxc:tools - Build and install additional command line tools
-app-emulation/lxd:apparmor - Enable AppArmor support
 app-emulation/nemu:network-map - Adds possibility of exporting network map to SVG
 app-emulation/nemu:ovf - Adds support for OVA/OVF import
 app-emulation/nemu:savevm - Adds support for QEMU savevm snapshots (experimental, QEMU must be patched)
@@ -923,7 +923,6 @@ app-misc/wildq:toml - TOML support via pytoml
 app-misc/wildq:xml - XML support via xmltodict
 app-misc/worker:avfs - Enable support for sys-fs/avfs
 app-misc/zygrib:maps - Installs additional GSHHS maps for high resolution coastline data and cities
-app-mobilephone/adb-sync:channel - Install the adb-channel script
 app-mobilephone/gammu:bluetooth - Enables bluetooth support
 app-mobilephone/gammu:curl - Enables curl support
 app-mobilephone/gammu:irda - Enables infrared support
@@ -1055,7 +1054,6 @@ app-text/coolreader:wxwidgets - Use x11-libs/wxGTK instead of Qt5
 app-text/crm114:mew - Add support for using the mewdecode mime decoder (app-emacs/mew)
 app-text/crm114:mimencode - Add support for using the mimencode mime (net-mail/metamail)
 app-text/crm114:normalizemime - Add support for using the normalizemime (mail-filter/normalizemime)
-app-text/dbacl:interactive - Enable the interactive mailinspect ability
 app-text/dblatex:inkscape - Use inkscape to convert SVG. Disable to use gnome-base/librsvg instead.
 app-text/dictd:judy - Build Judy-based (dev-libs/judy) plugin implementing fast "exact" and especially "lev" strategies
 app-text/dictd:minimal - Don't build server but dict client, dictzip and dictfmt only.
@@ -2427,7 +2425,6 @@ dev-python/QtPy:widgets - Pull in bindings for the QtWidgets module
 dev-python/QtPy:x11extras - Pull in bindings for the QtX11Extras module
 dev-python/QtPy:xml - Pull in QtXml module
 dev-python/QtPy:xmlpatterns - Pull in bindings for the QtXmlPatterns module
-dev-python/autobahn:scram - Add support for WAMP-SCRAM authentication
 dev-python/autobahn:xbr - Add support for XBR decentralized data markets and etherium blockchain
 dev-python/bpython:clipboard - Enable copying to clipboard using dev-python/pyperclip
 dev-python/bpython:jedi - Enable autocompletion using dev-python/jedi
@@ -3076,7 +3073,6 @@ games-emulation/ppsspp:system-ffmpeg - Use the system-wide media-video/ffmpeg in
 games-emulation/snes9x:libretro - Build libretro port
 games-emulation/snes9x:netplay - Enable playing ROMs over the network (not recommended)
 games-emulation/vbam:link - Enable GBA linking functionality
-games-emulation/zsnes:debug - Enable the builtin debugger
 games-engines/devilutionx:lto - Build with link time optimization enabled
 games-engines/exult:fluidsynth - Compile with support for FluidSynth
 games-engines/exult:sdl2 - Use libsdl2 instead of libsdl
@@ -3575,7 +3571,6 @@ kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking bac
 kde-frameworks/sonnet:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-misc/kdeconnect:X - Enable remote input mousepad plugin using x11-libs/libfakekey
 kde-misc/kdeconnect:pulseaudio - Enable system volume control plugin using media-sound/pulseaudio
-kde-misc/kimtoy:scim - Enable Smart Common Input Method support
 kde-misc/kio-gdrive:kaccounts - Use kde-apps/kaccounts-integration backend (default) instead of dev-libs/qtkeychain
 kde-misc/kio-gdrive:share - Enable support for a share menu using kde-frameworks/purpose
 kde-misc/tellico:bibtex - Add support for bibtex importing using btparse from dev-perl/Text-BibTeX
@@ -6586,15 +6581,6 @@ net-misc/ptpd:statistics - Enable compution of statistics
 net-misc/putty:gssapi - Enable support for GSSAPI (virtual/krb5)
 net-misc/putty:gtk - Build the PuTTY client which requires x11-libs/gtk+. If disabled only the CLI tools puttygen, plink, pscp and psftp will be built
 net-misc/putty:gtk2 - Build the PuTTY client with x11-libs/gtk+:2 instead of x11-libs/gtk+:3
-net-misc/quagga:bgpclassless - Apply unofficial patch to enable classless prefixes for BGP. Patch and information to be found at http://hasso.linux.ee/doku.php/english:network:quagga
-net-misc/quagga:fpm - Enable Forwarding Plane Manager support
-net-misc/quagga:multipath - Enable multipath routes support for any number of routes
-net-misc/quagga:nhrpd - Build Next Hop Resolution Protocol daemon
-net-misc/quagga:ospfapi - Enable OSPFAPI support for client applications accessing the OSPF link state database
-net-misc/quagga:pam - Add support for PAM (via sys-libs/pam) to the Quagga Virtual Terminal Interface Shell (vtysh); if the readline USE flag is disabled, this flag is ignored
-net-misc/quagga:protobuf - Enable support for dev-libs/protobuf
-net-misc/quagga:readline - Enable support for sys-libs/readline to provide the Quagga Virtual Terminal Interface Shell (vtysh)
-net-misc/quagga:tcp-zebra - Enable TCP zserv interface on port 2600 for Zebra/protocol-daemon communication. Unix domain sockets are chosen otherwise
 net-misc/r8168:use-firmware - Enable support for automatic firmware loading
 net-misc/rdesktop:kerberos - Enable CredSPP support + Kerberos authentication
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
@@ -6666,6 +6652,7 @@ net-misc/xmrig:hwloc - Use sys-apps/hwloc for CPU affinity support
 net-misc/xmrig:opencl - Enable OpenCL support
 net-misc/youtube-viewer:gtk - Install the gtk3 GUI
 net-misc/youtube-viewer:gtk2 - Use the old gtk2 GUI instead of the gtk3 one
+net-misc/ytfzf:minimal - Skip app-shells/fzf and media-video/mpv dependencies (requires custom settings)
 net-misc/zerotier:clang - Use Clang compiler instead of GCC
 net-nds/389-ds-base:accountpolicy - Enable account policy plugin - automatically lock an account after a certain amount of time has elapsed
 net-nds/389-ds-base:auto-dn-suffix - Enable auto bind with auto dn suffix over unix domain socket (LDAPI) support
@@ -7298,6 +7285,7 @@ sci-libs/gdal:opencl - Enable OpenCL support
 sci-libs/gdal:spatialite - Enable Spatial DBMS over sqlite dev-db/spatialite
 sci-libs/gdal:xls - Add the dev-libs/freexl library for xls import support
 sci-libs/ginkgo:cuda - Add support for cuda assimp (dev-util/nvidia-cuda-sdk)
+sci-libs/ginkgo:hwloc - Add support for hwloc (sys-apps/hwloc)
 sci-libs/gmsh:cgns - Enables cgns output support
 sci-libs/gmsh:med - Enables med support
 sci-libs/gmsh:metis - Enables metis support
@@ -8742,7 +8730,6 @@ x11-base/xorg-server:xnest - Build the Xnest server
 x11-base/xorg-server:xorg - Build the Xorg X server (HIGHLY RECOMMENDED)
 x11-base/xorg-server:xvfb - Build the Xvfb server
 x11-base/xorg-x11:fonts - Install fonts from X.Org
-x11-base/xwayland:rpc - Enable secure rpc
 x11-base/xwayland:unwind - Enable libunwind usage for backtraces
 x11-base/xwayland:xcsecurity - Build Security extension
 x11-drivers/nvidia-drivers:driver - Install kernel driver modules

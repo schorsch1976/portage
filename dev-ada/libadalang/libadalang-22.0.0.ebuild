@@ -25,12 +25,13 @@ RESTRICT="!test? ( test )"
 RDEPEND="dev-python/pyyaml
 	dev-ada/gnatcoll-bindings[${ADA_USEDEP},gmp,iconv,shared?,static-libs?,static-pic?]
 	${ADA_DEPS}
-	${PYTHON_DEPS}"
-DEPEND="${RDEPEND}
-	dev-ada/gprbuild[${ADA_USEDEP}]
+	${PYTHON_DEPS}
+	dev-ada/langkit[${ADA_USEDEP},shared?,static-libs?,static-pic?]
 	$(python_gen_cond_dep '
 		dev-ada/langkit[${PYTHON_USEDEP}]
-	')
+	')"
+DEPEND="${RDEPEND}
+	dev-ada/gprbuild[${ADA_USEDEP}]
 "
 BDEPEND="test? (
 		dev-ml/dune
@@ -61,6 +62,7 @@ src_configure() {
 
 src_compile() {
 	${EPYTHON} manage.py build -v \
+		--build-mode "prod" \
 		--gargs "-cargs:C ${CFLAGS} -cargs:Ada ${ADAFLAGS}" \
 		--library-types=${libType} || die
 }
