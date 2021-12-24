@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python3_{7,8,9} )
 ADA_COMPAT=( gnat_202{0,1} )
 
-inherit ada python-single-r1
+inherit ada python-single-r1 multiprocessing
 
 DESCRIPTION="high performance semantic engine for the Ada programming language"
 HOMEPAGE="https://libre.adacore.com/"
@@ -38,6 +38,7 @@ BDEPEND="test? (
 		dev-ml/zarith
 		dev-ml/camomile
 		dev-ml/ocaml-ctypes
+		dev-ada/e3-testsuite
 	)"
 
 pkg_setup() {
@@ -63,13 +64,13 @@ src_configure() {
 src_compile() {
 	${EPYTHON} manage.py build -v \
 		--build-mode "prod" \
+		-j$(makeopts_jobs) \
 		--gargs "-cargs:C ${CFLAGS} -cargs:Ada ${ADAFLAGS}" \
 		--library-types=${libType} || die
 }
 
 src_test() {
-	#eval $(${EPYTHON} ./manage.py setenv)
-	${EPYTHON} manage.py test --restricted-env -j 1 |& > /dev/null
+	${EPYTHON} manage.py test --restricted-env -j 1
 	${EPYTHON} manage.py test --restricted-env -j 1 |& tee libadalang.testOut
 	grep -qw FAIL libadalang.testOut && die
 }
@@ -77,6 +78,7 @@ src_test() {
 src_install() {
 	${EPYTHON} manage.py \
 		install "${D}"/usr \
+		--build-mode "prod" \
 		--library-types=${libType} || die
 	rm -r "${D}"/usr/python || die
 	python_domodule build/python/libadalang

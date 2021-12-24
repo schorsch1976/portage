@@ -4034,6 +4034,7 @@ media-gfx/kphotoalbum:map - Enable map display support using kde-apps/marble
 media-gfx/kphotoalbum:share - Enable support for a share menu using kde-frameworks/purpose
 media-gfx/krita:color-management - Enable color management via media-libs/opencolorio
 media-gfx/krita:heif - Enable support for ISO/IEC 23008-12:2017 HEIF/HEIC image format using media-libs/libheif
+media-gfx/krita:mypaint-brush-engine - Enable MyPaint brush engine support media-libs/libmypaint
 media-gfx/krita:qtmedia - Enable sound support for animations via dev-qt/qtmultimedia
 media-gfx/krita:vc - Enable support for dev-libs/vc, could be a significant speed boost
 media-gfx/librecad:tools - Build additional tool programs: tff2lff
@@ -8305,7 +8306,7 @@ sys-fs/zfs:rootfs - Enable dependencies required for booting off a pool containi
 sys-fs/zfs:test-suite - Install regression test suite
 sys-fs/zfs-auto-snapshot:cron - Install /etc/cron.* files
 sys-fs/zfs-auto-snapshot:default-exclude - Only take snapshots of datasets with com.sun:auto-snapshot=true property set
-sys-fs/zfs-kmod:rootfs - Install zfs-shutdown script to support exporting a pool containing rootfs
+sys-fs/zfs-kmod:rootfs - Pull dependencies and check kernel options required for root-on-zfs
 sys-kernel/genkernel:firmware - Prefer system firmware sys-kernel/linux-firmware over local copy.
 sys-kernel/gentoo-kernel:hardened - Use selection of hardening options recommended by Kernel Self Protection Project
 sys-kernel/gentoo-kernel:initramfs - Build initramfs along with the kernel.
