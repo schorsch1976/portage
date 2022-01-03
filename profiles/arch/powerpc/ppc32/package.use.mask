@@ -1,6 +1,11 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Sam James <sam@gentoo.org> (2021-12-31)
+# dev-lang/julia not keyworded here
+# sci-mathematics/polymake not keyworded here
+sci-mathematics/singular julia polymake
+
 # Sam James <sam@gentoo.org> (2021-12-08)
 # Masks involving webkit-gtk; webkit-gtk was dekeyworded on ppc for a while.
 # We haven't (yet?) restored keywords for all the bits we had to drop, so
@@ -30,10 +35,6 @@ app-i18n/uim kde
 # Sam James <sam@gentoo.org> (2021-10-17)
 # media-libs/libheif not keyworded here
 sci-libs/gdal heif
-
-# Marek Szuba <marecki@gentoo.org> (2021-08-11)
-# dev-ruby/tty-editor not keyworded here yet (Bug #807685)
-app-text/htmltidy test
 
 # Matt Turner <mattst88@gentoo.org> (07-25-2021)
 # gdm requires gnome-shell requires rustified librsvg.
