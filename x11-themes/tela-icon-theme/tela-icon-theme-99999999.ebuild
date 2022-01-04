@@ -26,7 +26,7 @@ fi
 
 LICENSE="GPL-3+"
 SLOT="0"
-IUSE="+${MY_COLOR_VARIANTS[*]} +hardlink" # this is why standard comes first
+IUSE="+${MY_COLOR_VARIANTS[*]} +hardlink kde" # this is why standard comes first
 
 REQUIRED_USE="|| ( ${MY_COLOR_VARIANTS[*]} )"
 
@@ -47,6 +47,7 @@ src_prepare() {
 
 src_install() {
 	local v variants=(
+		$(usev kde '-c')
 		$(for v in ${MY_COLOR_VARIANTS[@]}; do
 			usev ${v}
 		done)
@@ -58,6 +59,10 @@ src_install() {
 		einfo "Linking duplicate icons... (may take a long time)"
 		hardlink -pot "${ED}/usr/share/icons" || die "hardlink failed"
 	fi
+
+	# installs broken symlink (by design, but we remove it due to QA warnings)
+	# https://bugs.gentoo.org/830467
+	find "${ED}" -xtype l -name uav.svg -delete || die "removing broken symlinks failed"
 
 	einstalldocs
 }

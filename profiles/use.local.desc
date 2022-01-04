@@ -2453,7 +2453,6 @@ dev-python/mpmath:matplotlib - Add support for dev-python/matplotlib
 dev-python/msgpack:native-extensions - Compiles native "C" extensions (speedups, instead of using python fallback code).
 dev-python/nbdime:webtools - Install web-based diff and merge tools.
 dev-python/nltk-data:extra - Install the complete set of data files. Otherwise, only files required by tests are installed.
-dev-python/numexpr:mkl - Enable support for Intel Vector Math Library, part of sci-libs/mkl.
 dev-python/pandas:full-support - Pull all packages to give pandas full support
 dev-python/paramiko:server - Enable server feature
 dev-python/pillow:imagequant - Build with Image Quantization Library support
@@ -3903,6 +3902,7 @@ media-gfx/apngasm:zopfli - Enable support for Zopfli compression
 media-gfx/asymptote:boehm-gc - Enables using the Boehm-Demers-Weiser conservative garbage collector
 media-gfx/asymptote:context - Enables support for ConTeXt format (dev-texlive/texlive-context)
 media-gfx/asymptote:curl - Enables running remote programs via net-misc/curl
+media-gfx/asymptote:lsp - Enables Language Server Protocol
 media-gfx/asymptote:offscreen - Enables off-screen rendering
 media-gfx/asymptote:sigsegv - Enables using dev-libs/libsigsegv
 media-gfx/blender:alembic - Add support for Alembic through media-gfx/alembic.
@@ -7060,6 +7060,7 @@ sci-astronomy/stellarium:deep-sky - Install extra deep sky objects catalog (may 
 sci-astronomy/stellarium:media - Enable sound and video support
 sci-astronomy/stellarium:stars - Install extra star catalogs
 sci-astronomy/stellarium:telescope - Enable telescope control via sci-libs/indilib
+sci-astronomy/stellarium:webengine - Show online results about the selected star in an embedded window using dev-qt/qtwebengine
 sci-astronomy/swarp:cfitsio - Link with sci-libs/cfitsio
 sci-astronomy/wcslib:fits - Enable support for the FITS format through sci-libs/cfitsio
 sci-astronomy/wcslib:pgplot - Builds PGBSOX routines, needs sci-libs/pgplot library
@@ -7281,6 +7282,7 @@ sci-libs/gmsh:metis - Enables metis support
 sci-libs/gmsh:netgen - Enable 3D Frontal triangulation using netgen lib
 sci-libs/gmsh:opencascade - Enable OpenCASCADE support
 sci-libs/gmsh:petsc - Enable sci-mathematics/petsc support
+sci-libs/gmsh:shared - Install shared library and headers
 sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version
 sci-libs/gsl:deprecated - Enable deprecated functions
 sci-libs/hdf5:hl - Enable high level API (https://support.hdfgroup.org/HDF5/doc/HL/index.html)
@@ -8926,6 +8928,9 @@ x11-themes/arc-theme:pre-rendered - Avoid media-gfx/inkscape and media-gfx/optip
 x11-themes/arc-theme:xfce - Install theme for xfce-base/xfwm4
 x11-themes/comix-xcursors:lefthanded - Install lefthanded version of theme in addition to default one.
 x11-themes/comix-xcursors:opaque - Install non-transparent version of theme in addition to default one.
+x11-themes/fluent-icon-theme:black - Install the black version of symbolic icons (for white color-scheme panels)
+x11-themes/fluent-icon-theme:hardlink - Hardlink duplicate icons to greatly reduce installation size
+x11-themes/fluent-icon-theme:round - Install the round version of symbolic icons
 x11-themes/gentoo-artwork:grub - Install extra sys-boot/grub themes
 x11-themes/gentoo-artwork:icons - Install icons
 x11-themes/gentoo-artwork:lilo - Install extra sys-boot/lilo themes
@@ -8941,6 +8946,7 @@ x11-themes/tela-icon-theme:brown - Install bworn folder version
 x11-themes/tela-icon-theme:green - Install green folder version
 x11-themes/tela-icon-theme:grey - Install grey folder version
 x11-themes/tela-icon-theme:hardlink - Hardlink duplicate icons to greatly reduce installation size
+x11-themes/tela-icon-theme:kde - Install colorshceme version for KDE plasma (folder color follow the colorscheme)
 x11-themes/tela-icon-theme:manjaro - Install manjaro folder version
 x11-themes/tela-icon-theme:orange - Install orange folder version
 x11-themes/tela-icon-theme:pink - Install pink folder version
