@@ -33,6 +33,11 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas Sturmlechner <asturm@gentoo.org> (2022-01-09)
+# No more revdeps after sys-cluster/mpe2 last-rites was initiated.
+# Removal on 2022-01-31, bug #547208
+sys-cluster/mpich2
+
 # Andrew Ammerlaan <andrewammerlaan@gentoo.org> (2022-01-08)
 # Ancient versions of spyder preventing clean up of things down the tree.
 # Sadly, this means we are also going to have to say goodbye to some plugins
@@ -233,10 +238,6 @@ perl-core/version
 # log4j-2.15.0 depends on masked >=virtual/{jdk,jre}-11
 >=dev-java/log4j-api-java9-2.15.0
 >=dev-java/log4j-api-2.15.0
-
-# Volkmar W. Pogatzki <gentoo@pogatzki.net> (2021-12-11)
-# Package without consumers. Bug #732792.  Removal in 30 days.
-app-arch/fastjar
 
 # Conrad Kostecki <conikost@gentoo.org> (2021-12-04)
 # Masking newer versions for both packages,
@@ -504,8 +505,6 @@ app-office/texmacs
 # on it so these virtuals are not yet required. If you wish to use
 # Java 11+ then install openjdk-(jdk|jre)-bin directly.
 # bug #697014
-virtual/jdk:11
-virtual/jre:11
 virtual/jdk:17
 virtual/jre:17
 

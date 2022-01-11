@@ -10,7 +10,7 @@ JAVA_PKG_IUSE="doc source test"
 MAVEN_ID="io.netty:netty-buffer:4.0.36.Final"
 JAVA_TESTING_FRAMEWORKS="junit-4"
 
-inherit java-pkg-2 java-pkg-simple
+inherit check-reqs java-pkg-2 java-pkg-simple
 
 DESCRIPTION="Async event-driven framework for high performance network applications"
 HOMEPAGE="https://netty.io/"
@@ -18,7 +18,7 @@ SRC_URI="https://github.com/netty/netty/archive/refs/tags/netty-${PV}.Final.tar.
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~ppc64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~x86"
 
 # Common dependencies
 # POM: pom.xml
