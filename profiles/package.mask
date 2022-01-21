@@ -33,6 +33,34 @@
 
 #--- END OF EXAMPLES ---
 
+# Volkmar W. Pogatzki <gentoo@pogatzki.net> (2022-01-17)
+# Java-packages with no consumers and depending on virtual/{jdk,jre}-1.6
+# Removal in 30 days.
+dev-java/felix-shell
+dev-java/felix-utils
+dev-java/glassfish-transaction-api
+dev-java/jnlp-api
+dev-java/kxml
+dev-java/myfaces-builder-annotations
+dev-java/nanoxml
+dev-java/osgi-obr
+dev-java/tomcat-jstl-spec
+
+# Jakov Smolić <jsmolic@gentoo.org> (2022-01-19)
+# The following list of packages is still using EAPI 5
+# and has no reverse dependencies.
+# Removal on 2022-02-18.
+dev-java/ecj-gcj
+dev-java/freehep-graphicsio-tests
+dev-java/freehep-graphicsio
+dev-java/freehep-graphics2d
+dev-java/colt
+
+# James Beddek <telans@posteo.de> (2022-01-19)
+# FFmpeg 5.0 ABI/API changes break many packages.
+# Masking for tracker/tinderbox.
+>=media-video/ffmpeg-5.0
+
 # Andreas Sturmlechner <asturm@gentoo.org> (2022-01-18)
 # KDE Release Service 5.23.90 (5.24 Beta) mask - pre-release version
 # See also: https://kde.org/announcements/plasma/5/5.23.90/
@@ -244,7 +272,6 @@ dev-python/spyder-line-profiler
 dev-python/spyder-memory-profiler
 # Stuck on spyder-5.0
 dev-python/spyder-notebook
-<=dev-python/spyder-unittest-0.4.1-r50
 dev-python/spyder-vim
 
 # Brian Evans <grknight@gentoo.org> (2022-01-07)
