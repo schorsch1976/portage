@@ -6653,7 +6653,6 @@ net-misc/xmrig:donate - Set the default donation level to 1% instead of 0
 net-misc/xmrig:hwloc - Use sys-apps/hwloc for CPU affinity support
 net-misc/xmrig:opencl - Enable OpenCL support
 net-misc/youtube-viewer:gtk - Install the gtk3 GUI
-net-misc/youtube-viewer:gtk2 - Use the old gtk2 GUI instead of the gtk3 one
 net-misc/ytfzf:minimal - Skip app-shells/fzf and media-video/mpv dependencies (requires custom settings)
 net-misc/zerotier:clang - Use Clang compiler instead of GCC
 net-nds/389-ds-base:accountpolicy - Enable account policy plugin - automatically lock an account after a certain amount of time has elapsed
@@ -8127,6 +8126,7 @@ sys-devel/binutils:cet - Enable Intel Control-flow Enforcement Technology.
 sys-devel/binutils:default-gold - Set ld to point to ld.gold instead of ld.bfd
 sys-devel/binutils:gold - Build ld.gold linker
 sys-devel/binutils:multitarget - Adds support to binutils for cross compiling (does not work with gas)
+sys-devel/binutils:pgo - Build binutils with Profile Guided Optimization (PGO) and LTO
 sys-devel/binutils:plugins - Enable plugin support in tools
 sys-devel/binutils-apple:classic - Use nm, otool, etc. from this ebuild instead of llvm-based tools
 sys-devel/binutils-apple:lto - Add support for Link-Time Optimization with LLVM

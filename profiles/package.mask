@@ -33,6 +33,14 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2022-01-22)
+# Prelink support is being removed from glibc and was
+# already somewhat broken for a while...
+# hmaccalc hard-depends on it (?).
+# Removal in 30 days.
+sys-devel/prelink
+app-crypt/hmaccalc
+
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2022-01-17)
 # Java-packages with no consumers and depending on virtual/{jdk,jre}-1.6
 # Removal in 30 days.
@@ -323,16 +331,6 @@ www-servers/bozohttpd
 # Removal after 2022-05-01.  Bug #830331.
 # Broken and upstream needs new maintainer.
 x11-plugins/purple-facebook
-
-# Volkmar W. Pogatzki <gentoo@pogatzki.net> (2021-11-19)
-# java-virtuals and packages without consumers.
-# Bug #828719. Removal in 30 days.
-java-virtuals/ejb-api
-java-virtuals/saaj-api
-java-virtuals/transaction-api
-java-virtuals/xmlrpc-api
-dev-java/jsr67
-dev-java/glassfish-ejb-api
 
 # Mike Gilbert <floppym@gentoo.org> (2021-12-24)
 # Replaced by sys-apps/hwdata. Removal on 2022-01-23.
