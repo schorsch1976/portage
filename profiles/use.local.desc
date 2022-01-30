@@ -12,7 +12,7 @@ app-accessibility/brltty:api - build brltty's application program interface
 app-accessibility/brltty:beeper - support the console tone generator
 app-accessibility/brltty:contracted-braille - support in-line contracted braille
 app-accessibility/brltty:fm - support for the sound card synthesizer
-app-accessibility/brltty:louis - Use braille tranlator dev-libs/liblouis
+app-accessibility/brltty:louis - Use braille translator dev-libs/liblouis
 app-accessibility/brltty:midi - support the musical instrument digital interface
 app-accessibility/brltty:pcm - support for sound card digital audio
 app-accessibility/brltty:speech - speech support
@@ -4659,6 +4659,7 @@ media-sound/mpd:wildmidi - Enable MIDI support via wildmidi
 media-sound/mpfc:wav - Enable wav audio codec support
 media-sound/mpg123:int-quality - Use rounding instead of fast truncation for integer output, where possible
 media-sound/mumble:g15 - Enable support for the Logitech G15 LCD (and compatible devices).
+media-sound/mumble:pipewire - Enable pipewire support for audio output.
 media-sound/mumble:rnnoise - Enable alternative noise suppression option based on RNNoise.
 media-sound/mumble:speech - Enable text-to-speech support in Mumble.
 media-sound/murmur:grpc - Use net-libs/grpc to enable remote control capabilities.
@@ -8085,14 +8086,9 @@ sys-cluster/mpich2:romio - Enable romio, a high-performance portable MPI-IO impl
 sys-cluster/nomad:nvidia - build with nvidia integration
 sys-cluster/openmpi:cma - Enable the CMA (Cross Memory Attach) MCA
 sys-cluster/openmpi:cuda - Add GPU direct support
-sys-cluster/openmpi:heterogeneous - Enable features required for heterogeneous platform support
 sys-cluster/openmpi:libompitrace - Enable support for contributed package libompitrace
-sys-cluster/openmpi:mpi-threads - Enable MPI_THREAD_MULTIPLE
-sys-cluster/openmpi:numa - Enable numactl to allow binding processes to CPUs
-sys-cluster/openmpi:pbs - Add support for the Portable Batch System (PBS)
 sys-cluster/openmpi:peruse - Enable PERUSE interface
 sys-cluster/openmpi:romio - Build the ROMIO MPI-IO component
-sys-cluster/openmpi:vt - Enable bundled VampirTrace support
 sys-cluster/pacemaker:smtp - Enable SMTP support via net-libs/libesmtp
 sys-cluster/pmix:munge - Enable authentication via munge
 sys-cluster/pmix:pmi - Build PMI1 and PMI2 interface

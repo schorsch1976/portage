@@ -8,8 +8,8 @@ FINDLIB_USE="ocaml"
 JAVA_PKG_WANT_SOURCE="1.8"
 JAVA_PKG_WANT_TARGET="1.8"
 
-inherit findlib toolchain-funcs java-pkg-opt-2 usr-ldscript autotools  \
-	systemd python-r1 tmpfiles
+inherit findlib toolchain-funcs java-pkg-opt-2 autotools systemd \
+	python-r1 tmpfiles
 
 DESCRIPTION="Daemon that provides access to the Linux/Unix console for a blind person"
 HOMEPAGE="https://brltty.app/"
@@ -17,7 +17,7 @@ SRC_URI="https://brltty.app/archive/${P}.tar.xz"
 
 LICENSE="GPL-2 LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~x86"
 IUSE="+api +beeper bluetooth doc +fm gpm iconv icu
 		java louis +midi ncurses nls ocaml +pcm policykit python
 		usb systemd +speech tcl xml X"
@@ -109,7 +109,6 @@ src_configure() {
 		--includedir="${EPREFIX}"/usr/include
 		--localstatedir="${EPREFIX}"/var
 		--disable-stripping
-		--with-speech-driver=-es
 		--with-writable-directory="${EPREFIX}"/run/brltty
 		$(use_enable api)
 		$(use_with beeper beep-package)
@@ -132,7 +131,10 @@ src_configure() {
 		$(use_enable X x)
 		$(use_with bluetooth bluetooth-package)
 		$(use_with ncurses curses)
-		$(use_with usb usb-package) )
+		$(use_with usb usb-package)
+	)
+	# disable espeak since we use espeak-ng
+	use speech && myconf+=( --with-speech-driver=-es )
 
 	econf "${myconf[@]}"
 
@@ -145,12 +147,12 @@ src_configure() {
 }
 
 src_compile() {
-	emake JAVA_JNI_FLAGS="${JAVA_JNI_FLAGS}" JAVAC="${JAVAC}"
+	emake -j1 JAVA_JNI_FLAGS="${JAVA_JNI_FLAGS}" JAVAC="${JAVAC}"
 
 	if use python; then
 		python_build() {
 			cd "Bindings/Python" || die
-			emake
+			emake -j1
 		}
 		python_foreach_impl run_in_build_dir python_build
 	fi
@@ -161,12 +163,12 @@ src_install() {
 		findlib_src_preinst
 	fi
 
-	emake INSTALL_ROOT="${D}" OCAML_LDCONF= install
+	emake -j1 INSTALL_ROOT="${D}" OCAML_LDCONF= install
 
 	if use python; then
 		python_install() {
 			cd "Bindings/Python" || die
-			emake INSTALL_ROOT="${D}" install
+			emake -j1 INSTALL_ROOT="${D}" install
 		}
 		python_foreach_impl run_in_build_dir python_install
 	fi
@@ -182,13 +184,6 @@ src_install() {
 	systemd_dounit Autostart/Systemd/brltty@.service
 	dotmpfiles "${FILESDIR}/${PN}.tmpfiles.conf"
 
-	if use api ; then
-		local libdir="$(get_libdir)"
-		mkdir -p "${ED}"/usr/${libdir}/ || die
-		mv "${ED}"/${libdir}/*.a "${ED}"/usr/${libdir}/ || die
-		gen_usr_ldscript libbrlapi.so
-	fi
-
 	mv doc/Manual-BRLTTY/English/BRLTTY.txt BRLTTY-en.txt || die
 	mv doc/Manual-BRLTTY/French/BRLTTY.txt BRLTTY-fr.txt || die
 	mv doc/Manual-BrlAPI/English/BrlAPI.txt BrlAPI-en.txt || die
@@ -200,6 +195,7 @@ src_install() {
 
 	keepdir /var/lib/BrlAPI
 	rm -fr "${ED}/run" || die
+	find "${ED}" -name '*.a' -delete || die
 }
 
 pkg_postinst() {
