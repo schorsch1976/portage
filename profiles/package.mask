@@ -33,6 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Sam James <sam@gentoo.org> (2022-01-31)
+# Fork of media-video/atomicparsley. media-video/atomicparsley now uses this
+# fork (wez), so just switch to that. No need for a separate package for the fork.
+# Removal on 2022-02-31. bug #668708.
+media-video/atomicparsley-wez
+
 # Michał Górny <mgorny@gentoo.org> (2022-01-30)
 # NIH package with no revdeps and an awful build system that can't work
 # with PEP 517 builders.  Last release in 2017.
@@ -347,15 +353,6 @@ sys-cluster/onesis
 # Removal after 2022-02-04. Bug #830588.
 games-util/springlobby
 
-# Ionen Wolkens <ionen@gentoo.org> (2022-01-03)
-# Obsolete, higan-purify is now provided by games-emulation/higan
-# as the icarus utility (bug #821121) and dev-games/higan-ananke
-# has no known uses without higan-purify (bug #821124). Further
-# stuck on gtk2 with dead HOMEPAGE / SRC_URI.
-# Removal after 2022-02-02.
-games-util/higan-purify
-dev-games/higan-ananke
-
 # Florian Schmaus <flow@gentoo.org> (2022-01-02)
 # Unmaintained, upstream gone, only packaged by
 # Gentoo, and the whole idea to unlock based on
@@ -383,16 +380,6 @@ x11-plugins/purple-facebook
 # Removal in 90 days, bug #721808, #760708.
 <dev-util/nvidia-cuda-sdk-11
 <dev-util/nvidia-cuda-toolkit-11
-
-# Jonas Stein <jstein@gentoo.org> (2021-12-20)
-# Package is broken and obsolete.
-# Removal on 2022-02-01.  Bug #828875.
-x11-misc/3ddesktop
-
-# Jonas Stein <jstein@gentoo.org> (2021-12-20)
-# Package is broken and obsolete.
-# Removal on 2022-02-01.  Bug #464364.
-x11-misc/habak
 
 # Mart Raudsepp <leio@gentoo.org> (2021-12-18)
 # GNOME 42 mask
