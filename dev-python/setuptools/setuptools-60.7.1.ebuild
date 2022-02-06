@@ -18,20 +18,20 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	dev-python/appdirs[${PYTHON_USEDEP}]
-	>=dev-python/jaraco-text-3.7.0[${PYTHON_USEDEP}]
-	dev-python/more-itertools[${PYTHON_USEDEP}]
-	dev-python/ordered-set[${PYTHON_USEDEP}]
-	dev-python/packaging[${PYTHON_USEDEP}]
+	>=dev-python/appdirs-1.4.4-r2[${PYTHON_USEDEP}]
+	>=dev-python/jaraco-text-3.7.0-r1[${PYTHON_USEDEP}]
+	>=dev-python/more-itertools-8.12.0-r1[${PYTHON_USEDEP}]
+	>=dev-python/ordered-set-4.0.2-r1[${PYTHON_USEDEP}]
+	>=dev-python/packaging-21.3-r2[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	${RDEPEND}
-	dev-python/wheel[${PYTHON_USEDEP}]
+	>=dev-python/wheel-0.37.1-r1[${PYTHON_USEDEP}]
 	test? (
 		$(python_gen_cond_dep '
 			dev-python/build[${PYTHON_USEDEP}]
