@@ -3506,6 +3506,7 @@ kde-apps/kopete:webpresence - Show your status and some more information on web.
 kde-apps/kopete:winpopup - Enable pop-up messages sending on windows. (same as good old "net send" messages ;])
 kde-apps/kopete:zeroconf - Enable Link-Local Messaging via the bonjour protocol.
 kde-apps/kpimtextedit:designer - Build plugins for dev-qt/designer
+kde-apps/kpimtextedit:speech - Enable text-to-speech support
 kde-apps/ksystemlog:kdesu - Run as root using kdesu from kde-plasma/kde-cli-tools
 kde-apps/ktp-accounts-kcm:experimental - Enables disabled telepathy services (currently only steam)
 kde-apps/ktp-common-internals:otr - Enable support for encrypted conversations using Off-The-Records messaging
@@ -7558,7 +7559,6 @@ sci-mathematics/why3:zip - Enable compression of session files
 sci-mathematics/why3-for-spark:coq - Add sci-mathematics/coq support
 sci-mathematics/why3-for-spark:html - Build HTML documentation
 sci-mathematics/why3-for-spark:hypothesis-selection - Enable hypothesis selection
-sci-mathematics/why3-for-spark:profiling - Enable profiling
 sci-mathematics/why3-for-spark:zarith - Use dev-ml/zarith
 sci-mathematics/why3-for-spark:zip - Enable compression of session files
 sci-mathematics/yacas:jupyter - Add support for jupyter notebook
@@ -8790,6 +8790,7 @@ x11-libs/libva-intel-media-driver:redistributable - Install redistributable medi
 x11-libs/libva-intel-media-driver:set-as-default - Override libva automatic driver selection and set this (iHD) driver as default one.
 x11-libs/libwnck:tools - Install wnckprop-3 and wnck-urgency-monitor-3 command-line tools
 x11-libs/libxcb:xkb - Enable the XCB keyboard extension
+x11-libs/libxkbcommon:tools - Build the xkbcli tools
 x11-libs/motif:motif22-compatibility - Compatibility with Open Motif 2.2
 x11-libs/pango:X - Build and install the legacy pangoxft library
 x11-libs/pango:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
