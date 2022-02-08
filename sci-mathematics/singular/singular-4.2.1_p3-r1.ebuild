@@ -18,7 +18,7 @@ S="${WORKDIR}/${PN}-${MY_DIR2}"
 
 LICENSE="BSD GPL-2 GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~riscv ~x86 ~x86-linux"
+KEYWORDS="amd64 ~ppc ~riscv ~x86 ~x86-linux"
 IUSE="emacs examples polymake +readline static-libs"
 
 RDEPEND="
@@ -71,7 +71,6 @@ src_configure() {
 		--without-python
 		--without-pythonmodule
 		$(use_enable emacs)
-		$(use_enable julia)
 		$(use_enable polymake polymake-module)
 		$(use_enable static-libs static)
 		$(use_with readline)
