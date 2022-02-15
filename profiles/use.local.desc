@@ -470,7 +470,6 @@ app-editors/xemacs:eolconv - Support detection and translation of newline conven
 app-editors/xemacs:mule - Add multi-language support to XEmacs
 app-editors/xemacs:pop - Support POP for mail retrieval
 app-editors/xemacs:xim - Enable X11 XiM input method
-app-editors/zile:valgrind - Enable usage of dev-util/valgrind in tests
 app-emacs/auctex:preview-latex - Use bundled preview-latex
 app-emacs/bbdb:tex - Install plain TeX support files
 app-emacs/bbdb:vm - Add support for app-emacs/vm
@@ -2735,6 +2734,7 @@ dev-scheme/kawa:swing - Assume Swing is available
 dev-scheme/kawa:xqtests - Support XQuery Test Suite
 dev-scheme/racket:chez - Build Racket on Chez (Racket CS)
 dev-scheme/racket:futures - Enable racket/future library for fine-grained hardware parallelism
+dev-scheme/racket:ncurses - Add ncurses support for expeditor (REPL expression editor)
 dev-scheme/racket:places - Enable racket/place library for share-nothing parallelism and message-passing communication. Compared to futures, places are heavyweight, but they have a simpler performance model.
 dev-scheme/racket:threads - Enable support for green threads
 dev-scheme/scm:arrays - Support for arrays, uniform-arrays and uniform-vectors.
@@ -4084,6 +4084,7 @@ media-gfx/pstoedit:emf - Enable media-libs/libemf support
 media-gfx/pstoedit:pptx - Enable support for generating PowerPoint pptx files
 media-gfx/qimgv:opencv - Enable HQ scaling via media-libs/opencv
 media-gfx/qimgv:video - Add support for gif/webm playback via libmpv
+media-gfx/qrencode:png - Enable PNG output support in qrencode tool
 media-gfx/renderdoc:pyside2 - Expose the QRenderdoc UI to Python scripting to allow for customisation
 media-gfx/renderdoc:qt5 - Build and install the qrenderdoc GUI
 media-gfx/shotwell:opencv - Enable face detection via media-libs/opencv
