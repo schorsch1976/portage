@@ -17,7 +17,7 @@ fi
 
 LICENSE="LGPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc ~ppc64 ~riscv ~s390 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~s390 ~x86"
 IUSE="+duktape examples gtk +introspection kde pam selinux systemd test"
 #RESTRICT="!test? ( test )"
 # Tests currently don't work with meson. See
@@ -69,6 +69,9 @@ QA_MULTILIB_PATHS="
 
 src_prepare() {
 	local PATCHES=(
+		# musl
+		"${FILESDIR}"/${PN}-0.118-make-netgroup-support-optional.patch
+		# Pending upstream
 		"${FILESDIR}"/${PN}-0.120-meson.patch
 	)
 
