@@ -2300,7 +2300,6 @@ dev-lisp/cmucl:X - Build CLX, CLM, or Hemlock
 dev-lisp/cmucl:doc - Installs package documentation
 dev-lisp/cmucl:source - Include source code for CMUCL in installation
 dev-lisp/ecls:gengc - Use generational garbage collection (experimental)
-dev-lisp/ecls:libatomic - Use dev-libs/libatomic_ops library
 dev-lisp/ecls:precisegc - Use type information during garbage collection (experimental)
 dev-lisp/gcl:ansi - Build a GCL with ANSI support (else build a traditional CLtL1 image)
 dev-lisp/gcl:athena - Build xgcl - an interface to x11-libs/libXaw
@@ -3096,6 +3095,7 @@ games-engines/frobtads:tads2compiler - Build TADS2 compiler
 games-engines/frobtads:tads3compiler - Build TADS3 compiler
 games-engines/love:gme - Use media-libs/game-music-emu to support additional music formats
 games-engines/odamex:client - Build client target
+games-engines/odamex:hidpi - Use bundled FLTK 1.4, which has better support for HiDPI screens
 games-engines/odamex:master - Build master server target (advertises odamex server list)
 games-engines/odamex:odalaunch - Build the wxWidgets based launcher
 games-engines/odamex:portmidi - Enable PortMidi support
@@ -7265,6 +7265,8 @@ sci-libs/clblas:client - Build a command line clBLAS client program.
 sci-libs/clblas:ktest - A command line tool for testing single clBLAS kernel.
 sci-libs/clblas:performance - Copy performance scripts that can measure and graph performance.
 sci-libs/clblast:client - Enable compilation of the clients to test and compare performance with reference libraries
+sci-libs/clblast:cuda - Build with support for cuda instead of opencl (beta!)
+sci-libs/clblast:opencl - Build with support for opencl
 sci-libs/coinor-clp:glpk - Enable GNU Linear Programming Kit sci-mathematics/glpk support
 sci-libs/coinor-clp:metis - Enable partitioning with sci-libs/metis
 sci-libs/coinor-clp:mumps - Enable sci-libs/mumps support
@@ -7616,9 +7618,10 @@ sci-physics/geant4_vmc:mtroot - Build MTRoot (provides ROOT IO manager classes w
 sci-physics/geant4_vmc:vgm - Enable the Virtual Geometry Model (sci-physics/vgm)
 sci-physics/hepmc:cm - Build with cm instead of default mm for length units
 sci-physics/hepmc:gev - Build with GeV instead of default MeV for momentum units
-sci-physics/lammps:cuda - Enable cuda non-bonded kernels
-sci-physics/lammps:kokkos - Enable kokkos non-bonded kernels
+sci-physics/lammps:cuda - Enable cuda gpu computing support
+sci-physics/lammps:hip - Enable hip gpu computing support
 sci-physics/lammps:lammps-memalign - Enables the use of the posix_memalign() call instead of malloc() when large chunks or memory are allocated by LAMMPS. Aliengnment is on 16 byte boundaries.
+sci-physics/lammps:opencl - Enable opencl gpu computing support
 sci-physics/pythia:fastjet - Build jets using the sci-physics/fastjet package
 sci-physics/pythia:hepmc - Adds support for High Energy Physics Monte Carlo Generators sci-physics/hepmc
 sci-physics/pythia:lhapdf - Support the use of external PDF sets via sci-physics/lhapdf
