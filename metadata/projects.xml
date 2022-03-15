@@ -721,6 +721,10 @@
       <name>Michael Palimaka</name>
     </member>
     <member>
+      <email>mattst88@gentoo.org</email>
+      <name>Matt Turner</name>
+    </member>
+    <member>
       <email>sam@gentoo.org</email>
       <name>Sam James</name>
     </member>
@@ -2272,6 +2276,10 @@
       <role>Prefix liaison</role>
     </member>
     <member>
+      <email>mattst88@gentoo.org</email>
+      <name>Matt Turner</name>
+    </member>
+    <member>
       <email>mgorny@gentoo.org</email>
       <name>Michał Górny</name>
       <role>Member</role>
@@ -2305,12 +2313,15 @@
     <member>
       <email>dolsen@gentoo.org</email>
       <name>Brian Dolbec</name>
-      <role>Gentooolkit, Mirrorselect, Esearch, Layman, Gentoo-keys</role>
+      <role>gentoolkit, mirrorselect, esearch, layman, gentoo-keys</role>
     </member>
     <member>
       <email>idl0r@gentoo.org</email>
       <name>Christian Ruppert</name>
-      <role>Gentoolkit-dev</role>
+    </member>
+    <member>
+      <email>mattst88@gentoo.org</email>
+      <name>Matt Turner</name>
     </member>
     <member>
       <email>zmedico@gentoo.org</email>
