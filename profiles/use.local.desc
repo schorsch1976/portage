@@ -1103,6 +1103,7 @@ app-text/htmltidy:deprecated - Install tools and header files which are now cons
 app-text/hyperestraier:mecab - Enable app-text/mecab support for Estraier
 app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
 app-text/kbibtex:zotero - Enable support for synchronisation with zotero.org web service
+app-text/kjots:speech - Enable text-to-speech support
 app-text/lcdf-typetools:kpathsea - Enable integration with kpathsea search library (TeX related)
 app-text/libebook:tools - Build file conversion tools
 app-text/libmwaw:tools - Build file conversion tools
@@ -1248,6 +1249,8 @@ dev-cpp/libjson-rpc-cpp:http-server - Build support for HTTP server using net-li
 dev-cpp/libjson-rpc-cpp:redis-client - Build support for Redis client using dev-libs/hiredis
 dev-cpp/libjson-rpc-cpp:redis-server - Build support for Redis server using dev-libs/hiredis
 dev-cpp/libjson-rpc-cpp:stubgen - Build header stub code generator (needed for development and when pregenerated headers are not bundled)
+dev-cpp/sdbus-c++:systemd - Use external libsystemd instead of statically-linked build
+dev-cpp/sdbus-c++:tools - Install interface stub code generator
 dev-cpp/sourcetrail:examples - Install example projects.
 dev-db/etcd:server - Installs etcd daemon
 dev-db/firebird:server - Install the server components of Firebird, not just the client
@@ -1984,7 +1987,6 @@ dev-libs/boost:tools - Build and install the boost tools (bcp, quickbook, inspec
 dev-libs/botan:boost - use dev-libs/boost
 dev-libs/check:subunit - Enable support for the subunit unit test protocol
 dev-libs/crypto++:asm - Support assembly hand optimized crypto functions (i.e. faster run time)
-dev-libs/cudnn:cuda10-2 - On Nvidia CUDA 10.2
 dev-libs/cudnn:cuda11-5 - On Nvidia CUDA 11.5
 dev-libs/cyberjack:tools - Build and install optional management tools.
 dev-libs/cyrus-sasl:authdaemond - Add Courier-IMAP authdaemond unix socket support (net-mail/courier-imap, mail-mta/courier)
@@ -2528,7 +2530,6 @@ dev-python/simplespectral:faster - Use dev-python/scipy to speed up drawing
 dev-python/simplespectral:fastest - Use dev-python/pyFFTW to speed up drawing to the max
 dev-python/socketpool:eventlet - Install dev-python/eventlet as needed for the eventlet backend.
 dev-python/socketpool:gevent - Install dev-python/gevent as needed for the gevent backend.
-dev-python/sqlalchemy:asyncio - Depend on virtual/python-greenlet for asyncio capabilities
 dev-python/subprocess-tee:test-full - Enable full test mode. Pulls in many additional dependencies, and requires having been emerged without this flag first in order to avoid a circular dependency.
 dev-python/sympy:aesara - Add support for dev-python/aesara
 dev-python/sympy:imaging - Add support for dev-python/pillow
@@ -2857,7 +2858,6 @@ dev-util/nemiver:memoryview - Enable the optional hexadecimal memory inspection 
 dev-util/nvidia-cuda-sdk:cuda - Build CUDA binaries
 dev-util/nvidia-cuda-sdk:opencl - Build OpenCL binaries
 dev-util/nvidia-cuda-toolkit:debugger - Install the CUDA debugger
-dev-util/nvidia-cuda-toolkit:eclipse - Install Eclipse plugins
 dev-util/nvidia-cuda-toolkit:nsight - Install profiling and optimizing tools (nsight-compute, nsight-systems)
 dev-util/nvidia-cuda-toolkit:profiler - Install the NVIDIA CUDA profiler (nvprof) and the related libraries
 dev-util/nvidia-cuda-toolkit:sanitizer - Install compute-sanitizer tool
@@ -3290,7 +3290,6 @@ gnome-base/gdm:plymouth - Enable support for smooth transition from sys-boot/ply
 gnome-base/gnome:classic - Install gnome-extra/gnome-shell-extensions for the Gnome Shell Classic mode
 gnome-base/gnome:extras - Install additional GNOME applications
 gnome-base/gnome-applets:tracker - Build the tracker search bar applet
-gnome-base/gnome-control-center:flickr - Add support for using photos from flickr as desktop background
 gnome-base/gnome-control-center:gnome-online-accounts - Enable configuration panel for net-libs/gnome-online-accounts accounts
 gnome-base/gnome-control-center:ibus - Enable support for enhanced input methods through app-i18n/ibus
 gnome-base/gnome-extra-apps:games - Install Gnome Games
@@ -3999,6 +3998,7 @@ media-gfx/fontforge:woff2 - Enable support for WOFF2 format
 media-gfx/fotowall:webcam - Enable webcam support
 media-gfx/freecad:addonmgr - Build the addon manager module for automatic handling of 3rd party addons
 media-gfx/freecad:cloud - Build the Cloud workbench, to access cloud providers (mostly Amazon S3).
+media-gfx/freecad:drawing - Build the Drawing workbench, a predecessor to the TechDraw workbench. Users are encouraged to learn how to use the TechDraw workbench and switch to it instead. This is a compatibility option and will be removed in a later (0.20+) version of the package.
 media-gfx/freecad:fem - Build the FEM module and workbench which provides Finite Element Analysis (FEA) workflows
 media-gfx/freecad:headless - Build FreeCAD without a GUI, usable for server-side instances. The Python modules are still available, without their GUI parts though.
 media-gfx/freecad:idf - Build the IDF module to provide file exchange capabilities with IDF files
@@ -5332,7 +5332,6 @@ net-analyzer/nagios-plugin-check_raid:dmraid - Support Device-Mapper RAID
 net-analyzer/nagios-plugin-check_raid:hpa - Support HP Array controllers
 net-analyzer/nagios-plugin-check_raid:hpsa - Support HP SmartArray (CCISS) controllers
 net-analyzer/nagios-plugin-check_raid:megaraid-sas - Support LSI MegaRAID SAS controllers
-net-analyzer/nagios-plugin-check_raid:megaraid-scsi - Support LSI MegaRAID SCSI controllers
 net-analyzer/nagios-plugin-check_raid:mpt - Support LSI MPT Fusion controllers
 net-analyzer/nagios-plugin-check_raid:mpt-sas2 - Support LSI SAS-2 controllers
 net-analyzer/nagios-plugins:nagios-dns - Install net-dns/bind-tools required for monitoring DNS servers. Disabling the flag does not remove any plugin file.
@@ -6715,6 +6714,8 @@ net-nds/389-ds-base:pam-passthru - Enable pam-passthru plugin - for simple and f
 net-nds/ldapvi:gnutls - Use net-libs/gnutls instead of dev-libs/openssl
 net-nds/nsscache:nsscache - Depend on sys-auth/libnss-cache to handle flat files
 net-nds/nsscache:s3 - Support for S3-based NSS sources
+net-nds/openldap:argon2 - Enable password hashing algorithm from app-crypt/argon2
+net-nds/openldap:cleartext - Enable use of cleartext passwords
 net-nds/openldap:experimental - Enable experimental backend options
 net-nds/openldap:kinit - Enable support for kerberos init
 net-nds/openldap:minimal - Build libraries & userspace tools only. Does not install any server code
