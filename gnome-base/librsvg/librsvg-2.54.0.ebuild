@@ -30,7 +30,7 @@ RDEPEND="
 	introspection? ( >=dev-libs/gobject-introspection-0.10.8:= )
 "
 DEPEND="${RDEPEND}
-	>=virtual/rust-1.54[${MULTILIB_USEDEP}]
+	>=virtual/rust-1.56[${MULTILIB_USEDEP}]
 	${PYTHON_DEPS}
 	$(python_gen_any_dep 'dev-python/docutils[${PYTHON_USEDEP}]')
 	dev-util/gi-docgen
@@ -47,6 +47,11 @@ QA_FLAGS_IGNORED="
 RESTRICT="test" # Lots of issues on 32bit builds, 64bit build seems to get into an infinite compilation sometimes, etc.
 
 src_prepare() {
+	# Documentation is built unconditionally and depends on introspection,
+	# but introspection is only built for the primary ABI.
+	# Disable documentation and manually build the doc subdirectory separately.
+	sed -i -e '/SUBDIRS =/s/ doc//' Makefile.in Makefile.am || die
+
 	use vala && vala_src_prepare
 	gnome2_src_prepare
 }
@@ -80,17 +85,27 @@ multilib_src_configure() {
 
 multilib_src_compile() {
 	gnome2_src_compile
+
+	if multilib_is_native_abi && use introspection; then
+		emake -C doc
+	fi
 }
 
 multilib_src_install() {
 	gnome2_src_install
+
+	if multilib_is_native_abi && use introspection; then
+		emake DESTDIR="${D}" install -C doc
+	fi
 }
 
 multilib_src_install_all() {
 	find "${ED}" -name '*.la' -delete || die
 
-	mkdir -p "${ED}"/usr/share/gtk-doc/html/ || die
-	mv "${ED}"/usr/share/doc/${PF}/Rsvg-2.0 "${ED}"/usr/share/gtk-doc/html/ || die
+	if use introspection; then
+		mkdir -p "${ED}"/usr/share/gtk-doc/html/ || die
+		mv "${ED}"/usr/share/doc/${PF}/Rsvg-2.0 "${ED}"/usr/share/gtk-doc/html/ || die
+	fi
 }
 
 pkg_postinst() {
