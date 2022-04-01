@@ -3563,6 +3563,7 @@ kde-frameworks/kiconthemes:designer - Build plugins for dev-qt/designer
 kde-frameworks/kimageformats:avif - Support the AVIF image file format
 kde-frameworks/kimageformats:eps - Support the EPS graphics file format
 kde-frameworks/kimageformats:heif - Support for HEIF/HEIC images
+kde-frameworks/kimageformats:jpegxl - Support for JPEG XL image format
 kde-frameworks/kinit:caps - Capabilities support for improved security and better OOM handling
 kde-frameworks/kio:designer - Build plugins for dev-qt/designer
 kde-frameworks/kio:kwallet - Enable permanent storage of passwords for kpasswdserver with kde-frameworks/kwallet
@@ -5617,13 +5618,11 @@ net-dns/opendnssec:signer - Enables signing capabilities for OpenDNSSEC
 net-dns/opendnssec:softhsm - Enables support for storing DNSSEC keys in a dev-libs/softhsm PKCS#11 object
 net-dns/pdns:lua-records - Enable LUA records.
 net-dns/pdns:mydns - Making it possible to use a MyDNS MySQL database with PowerDNS (not recommended for new deployments).
-net-dns/pdns:protobuf - Enable support for dev-libs/protobuf.
 net-dns/pdns:remote - Use a generic socket or pipe as a backend (via JSON RPC requests).
 net-dns/pdns:sodium - Use dev-libs/libsodium for cryptography
 net-dns/pdns:tinydns - Use a TinyDNS CDB database as backend.
 net-dns/pdns:tools - Build optional tools (dnsscan, dnsscope, etc..).
 net-dns/pdns-recursor:dnstap - Enable support for dnstap
-net-dns/pdns-recursor:protobuf - Enable support for dev-libs/protobuf.
 net-dns/pdns-recursor:sodium - Use dev-libs/libsodium for cryptography
 net-dns/pdnsd:urandom - Linux-only: use /dev/urandom (pseudo-random number generation) instead of the default use of random() PRNG.
 net-dns/resolvconf-symlink:symlink - Actually replace /etc/resolv.conf with a symlink. Without this flag, the ebuild is a no-op.
@@ -8391,6 +8390,7 @@ sys-libs/compiler-rt-sanitizers:xray - Build XRay runtime.
 sys-libs/freeipmi:nagios - Install a nagios plugin to check sensors' status.
 sys-libs/gdbm:berkdb - enable compatibility layer for UNIX-like dbm and ndbm interfaces
 sys-libs/glibc:cet - Enable Intel Control-flow Enforcement Technology (needs binutils 2.29 and gcc 8)
+sys-libs/glibc:clone3 - Enable the new clone3 syscall within glibc. Can be disabled to allow compatibility with older Electron applications.
 sys-libs/glibc:compile-locales - build *all* locales in src_install; this is generally meant for stage building only as it ignores /etc/locale.gen file and can be pretty slow
 sys-libs/glibc:crypt - build and install libcrypt and crypt.h
 sys-libs/glibc:debug - When USE=hardened, allow fortify/stack violations to dump core (SIGABRT) and not kill self (SIGKILL)
