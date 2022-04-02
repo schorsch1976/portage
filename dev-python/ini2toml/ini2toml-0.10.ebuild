@@ -20,7 +20,7 @@ SRC_URI="
 
 LICENSE="MPL-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	>=dev-python/packaging-20.7[${PYTHON_USEDEP}]
@@ -30,6 +30,7 @@ BDEPEND="
 	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 	test? (
 		dev-python/tomli[${PYTHON_USEDEP}]
+		dev-python/tomlkit[${PYTHON_USEDEP}]
 	)
 "
 
