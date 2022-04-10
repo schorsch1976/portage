@@ -33,15 +33,21 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2022-04-09)
+# A test runner specific to zope packages that was never really used
+# (only as a mistaken test-dep).  No revdeps left.
+# Removal on 2022-05-09.  Bug #837530.
+dev-python/zope-testrunner
+
+# Matt Turner <mattst88@gentoo.org> (2022-04-06)
+# Dead package upstream. No reverse dependencies.
+# Removal on 2022-05-06
+dev-util/nemiver
+
 # David Seifert <soap@gentoo.org> (2022-04-06)
 # Unsupported branches, no consumers left, removal on 2023-01-01.
 sys-devel/automake:1.13
 sys-devel/automake:1.15
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2022-04-05)
-# First version with py3 buildsystem support.
-# May be succeeded quickly by another snapshot.
-~dev-qt/qtwebengine-5.15.3_p20220330
 
 # Sergey Popov <pinkbyte@gentoo.org> (2022-04-05)
 # Upstream is dead long time ago
@@ -361,10 +367,6 @@ x11-misc/easystroke
 # The main consumer, phpunit, does not initiate the new timer correctly
 # This is likely to cause issues in tests; Unmask if using for other purposes
 >=dev-php/PHP_Timer-5.0
-
-# Jonas Stein <jstein@gentoo.org> (2021-12-24)
-# Alpha version
-=app-editors/ghex-4.0.0_alpha
 
 # Michał Górny <mgorny@gentoo.org> (2021-12-18)
 # EOL kernel with known vulnerabilities.  Please move to one of the LTS

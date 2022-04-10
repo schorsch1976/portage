@@ -18,12 +18,12 @@ HOMEPAGE="
 "
 SRC_URI="
 	mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
-	https://dev.gentoo.org/~floppym/python/${CPY_PATCHSET}.tar.xz
+	https://dev.gentoo.org/~mgorny/dist/python/${CPY_PATCHSET}.tar.xz
 "
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~m68k ~x86"
+KEYWORDS="~amd64 ~hppa ~ia64 ~m68k ~s390 ~x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
