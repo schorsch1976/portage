@@ -22,6 +22,11 @@ RDEPEND="
 	dev-python/pybtex-docutils[${PYTHON_USEDEP}]
 	dev-python/sphinx[${PYTHON_USEDEP}]
 "
+BDEPEND="
+	test? (
+		dev-python/numpydoc[${PYTHON_USEDEP}]
+	)
+"
 
 distutils_enable_tests pytest
 distutils_enable_sphinx doc
@@ -32,11 +37,6 @@ python_compile() {
 }
 
 python_test() {
-	# this is needed to keep the tests working while
-	# dev-python/namespace-sphinxcontrib is still installed
-	cat > "${BUILD_DIR}/install$(python_get_sitedir)/sphinxcontrib/__init__.py" <<-EOF || die
-		__path__ = __import__('pkgutil').extend_path(__path__, __name__)
-	EOF
+	distutils_write_namespace sphinxcontrib
 	epytest
-	rm "${BUILD_DIR}/install$(python_get_sitedir)/sphinxcontrib/__init__.py" || die
 }
