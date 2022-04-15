@@ -3882,7 +3882,6 @@ media-fonts/fira-sans:ttf - Install the TrueType version of the font
 media-fonts/fontawesome:otf - Install the OpenType version of the font
 media-fonts/fontawesome:ttf - Install the TrueType version of the font
 media-fonts/fonts-meta:emoji - Install a font supporting emojis
-media-fonts/fonts-meta:free - Install fonts for the "free" preset
 media-fonts/fonts-meta:latin - Install additional latin fonts
 media-fonts/fonts-meta:ms - Install (free) fonts for the "ms" preset
 media-fonts/ibm-plex:otf - Install OTF fonts
@@ -3991,6 +3990,7 @@ media-gfx/fontforge:woff2 - Enable support for WOFF2 format
 media-gfx/fotowall:webcam - Enable webcam support
 media-gfx/freecad:addonmgr - Build the addon manager module for automatic handling of 3rd party addons
 media-gfx/freecad:cloud - Build the Cloud workbench, to access cloud providers (mostly Amazon S3).
+media-gfx/freecad:designer - Build and install the Qt designer plugin, so the FreeCAD widgets can be used from within designer.
 media-gfx/freecad:drawing - Build the Drawing workbench, a predecessor to the TechDraw workbench. Users are encouraged to learn how to use the TechDraw workbench and switch to it instead. This is a compatibility option and will be removed in a later (0.20+) version of the package.
 media-gfx/freecad:fem - Build the FEM module and workbench which provides Finite Element Analysis (FEA) workflows
 media-gfx/freecad:headless - Build FreeCAD without a GUI, usable for server-side instances. The Python modules are still available, without their GUI parts though.
@@ -4387,6 +4387,10 @@ media-libs/sdl2-mixer:playtools - Install playwave and playmus tools (useful for
 media-libs/sdl2-mixer:tremor - enable OGG Vorbis music via libtremor
 media-libs/sdl2-mixer:wav - support WAVE files
 media-libs/sdl2-ttf:harfbuzz - Use media-libs/harfbuzz for enhanced font rendering
+media-libs/sdl_audiolib:fluidsynth - use media-sound/fluidsynth for MIDI
+media-libs/sdl_audiolib:mpg123 - Enable support for mp3 decoding via media-sound/mpg123
+media-libs/sdl_audiolib:openmpt - OpenMPT decoder via media-libs/libopenmpt
+media-libs/sdl_audiolib:soxr - Enable SoX Resampler support via media-libs/soxr
 media-libs/sge:image - enable sdl-image support
 media-libs/spandsp:fixed-point - Enable fixed point support
 media-libs/speex:utils - Enables speex commandline utilities (speexenc, speexdec).
