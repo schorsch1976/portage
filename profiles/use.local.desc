@@ -2079,7 +2079,6 @@ dev-libs/libffi-compat:pax-kernel - Use PaX emulated trampolines, for we can't u
 dev-libs/libfido2:nfc - Enable experimental NFC support
 dev-libs/libflatarray:cuda - Enables plugins for NVIDIA GPUs (e.g. CUDAAllocator)
 dev-libs/libgcrypt:asm - Enable assembly for optimization
-dev-libs/libgcrypt:o-flag-munging - Enable O-flag mangling during build
 dev-libs/libgdata:crypt - Use app-crypt/gcr for keeping tokens and passwords in non-pageable memory for improved security
 dev-libs/libgdata:gnome-online-accounts - Enable net-libs/gnome-online-accounts support
 dev-libs/libgit2:gssapi - Enable GSSAPI support for SPNEGO auth
@@ -7693,7 +7692,6 @@ sci-visualization/paraview:nvcontrol - Add NVCONTROL support for OpenGL options
 sci-visualization/paraview:offscreen - Offscreen rendering through OSMesa
 sci-visualization/paraview:plugins - Build and install additional plugins
 sci-visualization/paraview:webengine - Add support for dev-qt/qtwebengine
-sci-visualization/scidavis:muparser - Build support for muparser scripting.
 sci-visualization/scidavis:origin - Add support for reading OriginLab OPJ project files through sci-libs/liborigin.
 sci-visualization/scidavis:python - Build support for python scripting.
 sec-policy/selinux-base:ubac - Enable User Based Access Control (UBAC) in the SELinux policy
@@ -7928,6 +7926,10 @@ sys-apps/systemd:sysv-utils - Install sysvinit compatibility symlinks and manpag
 sys-apps/systemd:tpm - Enable TPM support
 sys-apps/systemd:vanilla - Disable Gentoo-specific behavior and compatibility quirks
 sys-apps/systemd:xkb - Depend on x11-libs/libxkbcommon to allow logind to control the X11 keymap
+sys-apps/systemd-utils:boot - Enable systemd-boot (UEFI boot manager)
+sys-apps/systemd-utils:sysusers - Enable systemd-sysusers
+sys-apps/systemd-utils:tmpfiles - Enable systemd-tmpfiles
+sys-apps/systemd-utils:udev - Enable systemd-udev (userspace device manager)
 sys-apps/tcp-wrappers:netgroups - Support matching NIS (host) netgroup names via the @netgroup syntax (if you don't know what this means, you most likely do not need it)
 sys-apps/texinfo:standalone - Build standalone version that survives all Portage bugs
 sys-apps/ucspi-ssl:bindist - Disable EC/RC5 algorithms in OpenSSL for patent reasons.
