@@ -33,6 +33,20 @@
 
 #--- END OF EXAMPLES ---
 
+# David Seifert <soap@gentoo.org> (2022-04-17)
+# Dead library, part of >=sys-fs/e2fsprogs-1.46.5 now, bug #806875,
+# removal on 2022-05-17.
+# (If you hit blockers, please run:
+# $ emerge --deselect sys-libs/e2fsprogs-libs
+# This is necessary as your world file should not contain dependencies.)
+sys-libs/e2fsprogs-libs
+
+# Michał Górny <mgorny@gentoo.org> (2022-04-17)
+# Unmaintained in Gentoo.  Pending a bump since January.  Non-trivial
+# to test.  No revdeps.
+# Removal on 2022-05-17.  Bug #838895.
+dev-python/pymssql
+
 # Marek Szuba <marecki@gentoo.org> (2022-04-14)
 # Singularity has been renamed upstream to Apptainer. Therefore, up-to-date
 # versions of this software are now available as app-containers/apptainer.
@@ -261,12 +275,6 @@ sys-cluster/lustre
 # Mask gcc-8 branch (ended upstream support). Please switch
 # to a fresher gcc branch.
 <sys-devel/gcc-9
-
-# David Seifert <soap@gentoo.org> (2022-03-19)
-# Unmaintained, no revdeps in tree, not even on latest version, EAPI 5,
-# typical 'webapp' smell, last upstream release more than 9 years ago.
-# Bug #402849, #513594, #690042, #828702, removal on 2022-04-18.
-sci-biology/GBrowse
 
 # Michał Górny <mgorny@gentoo.org> (2022-03-18)
 # The new version breaks building docs w/o Internet access (because it
