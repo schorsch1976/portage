@@ -78,7 +78,7 @@ SRC_URI="
 # and some are Apache 2.0 or MIT
 LICENSE="Apache-2.0 MIT BSD"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~ppc ~riscv"
 
 RDEPEND="
 	>=dev-libs/openssl-1.0.2o-r6:0=
@@ -103,7 +103,7 @@ BDEPEND="
 "
 
 # Files built without CFLAGS/LDFLAGS, acceptable for rust
-QA_FLAGS_IGNORED="usr/lib.*/py.*/site-packages/cryptography/hazmat/bindings/_rust.abi3.so"
+QA_FLAGS_IGNORED="usr/lib.*/py.*/site-packages/cryptography/hazmat/bindings/_rust.*.so"
 
 PATCHES=(
 	"${FILESDIR}"/${P}-pyo3-bump.patch

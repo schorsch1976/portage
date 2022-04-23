@@ -31,6 +31,10 @@ BDEPEND="
 	test? (
 		${RDEPEND}
 		dev-python/django-filter[${PYTHON_USEDEP}]
+		dev-python/lxml[${PYTHON_USEDEP}]
+		dev-python/mock[${PYTHON_USEDEP}]
+		dev-python/psycopg:2[${PYTHON_USEDEP}]
+		dev-python/pytz[${PYTHON_USEDEP}]
 	)
 "
 
