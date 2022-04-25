@@ -33,15 +33,35 @@
 
 #--- END OF EXAMPLES ---
 
-# Alfredo Tupone <tupone@gentoo.org> (2022-04-23)
+# Alfredo Tupone <tupone@gentoo.org> (2022-04-24)
 # New release of janestreet packages need to tested
 dev-ml/sexplib0:0/0.15
 dev-ml/base:0/0.15
-dev-ml/ppx_expect:0/0.15.0
-dev-ml/ppx_inline_test:0/0.15.0
+dev-ml/stdio:0/0.15
 dev-ml/ppx_sexp_conv:0/0.15
-dev-ml/stdio:0/0.15.0
+dev-ml/ppx_enumerate:0/0.15
+dev-ml/ppx_compare:0/0.15
+dev-ml/ppx_hash:0/0.15
+dev-ml/ppx_cold:0/0.15
 dev-ml/parsexp:0/0.15
+dev-ml/ppx_base:0/0.15
+#dev-ml/fieldslib
+dev-ml/ppx_fields_conv:0/0.15
+dev-ml/ppx_here:0/0.15
+dev-ml/ppx_let:0/0.15
+dev-ml/ppx_sexp_message:0/0.15
+dev-ml/ppx_sexp_value:0/0.15
+dev-ml/ppx_assert:0/0.15
+#dev-ml/jst-config
+dev-ml/ppx_optcomp:0/0.15
+dev-ml/time_now:0/0.15
+dev-ml/ppx_inline_test:0/0.15
+dev-ml/ppx_bench:0/0.15
+dev-ml/splittable_random:0/0.15
+dev-ml/base_quickcheck:0/0.15
+#dev-ml/bin_prot:0/0.15
+dev-ml/ppx_bin_prot:0/0.15
+dev-ml/ppx_expect:0/0.15.0
 
 # Hans de Graaff <graaff@gentoo.org> (2022-04-23)
 # Obsolete slots that are no longer used by current
@@ -237,12 +257,6 @@ net-misc/jrdesktop
 # Removal in 30 days.
 dev-java/log4j
 
-# Matt Turner <mattst88@gentoo.org> (2022-03-27)
-# Dead package. Homepage doesn't resolve. Unmaintained in Gentoo for at
-# least 6 years.
-# Removal on 2022-05-02
-app-pda/gtkpod
-
 # Ulrich Müller <ulm@gentoo.org> (2022-04-01)
 # Illegal instruction errors seen by several users.
 # Masked for testing. (bug #835930)
@@ -293,11 +307,6 @@ media-sound/xnoise
 # CONFIG_USB_RTL8152 and CONFIG_USB_USBNET since 5.13.
 # Removal on 2022-04-25.
 net-misc/realtek-r8152
-
-# Marc Schiffbauer <mschiff@gentoo.org> (2022-03-22)
-# Unmaintained upstream. No reverse dependencies.
-# Removal on 2022-04-23.
-dev-libs/bareos-fastlzlib
 
 # Sam James <sam@gentoo.org> (2022-03-22)
 # Abandoned upstream (archived many years ago), fails
