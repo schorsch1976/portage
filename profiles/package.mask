@@ -33,7 +33,57 @@
 
 #--- END OF EXAMPLES ---
 
-# Alfredo Tupone <tupone@gentoo.org> (2022-04-25)
+# Matt Turner <mattst88@gentoo.org> (2022-04-26)
+# Dead package. No reverse dependencies.
+# Removal on 2022-05-26
+gnome-base/gnome-vfs
+
+# Mike Pagano <mpagano@gentoo.org> (2022-04-26)
+# These kernels contain a major regression that causes power button
+# to stop working, apparently making it impossible to leave suspend
+# on some laptops without a (difficult) hard reset.
+~sys-kernel/gentoo-sources-5.10.111
+=sys-kernel/gentoo-sources-5.10.112
+~sys-kernel/gentoo-sources-5.15.34
+=sys-kernel/gentoo-sources-5.15.35
+~sys-kernel/gentoo-sources-5.16.20
+~sys-kernel/gentoo-sources-5.17.3
+=sys-kernel/gentoo-sources-5.17.4
+~sys-kernel/vanilla-sources-5.10.112
+~sys-kernel/vanilla-sources-5.15.35
+~sys-kernel/vanilla-sources-5.17.4
+
+# Michał Górny <mgorny@gentoo.org> (2022-04-26)
+# These kernels contain a major regression that causes power button
+# to stop working, apparently making it impossible to leave suspend
+# on some laptops without a (difficult) hard reset.
+~sys-kernel/gentoo-kernel-5.10.111
+=sys-kernel/gentoo-kernel-5.10.112
+~sys-kernel/gentoo-kernel-5.15.34
+=sys-kernel/gentoo-kernel-5.15.35
+~sys-kernel/gentoo-kernel-5.16.20
+~sys-kernel/gentoo-kernel-5.17.3
+=sys-kernel/gentoo-kernel-5.17.4
+~sys-kernel/gentoo-kernel-bin-5.10.111
+=sys-kernel/gentoo-kernel-bin-5.10.112
+~sys-kernel/gentoo-kernel-bin-5.15.34
+=sys-kernel/gentoo-kernel-bin-5.15.35
+~sys-kernel/gentoo-kernel-bin-5.16.20
+~sys-kernel/gentoo-kernel-bin-5.17.3
+=sys-kernel/gentoo-kernel-bin-5.17.4
+~sys-kernel/vanilla-kernel-5.10.111
+~sys-kernel/vanilla-kernel-5.10.112
+~sys-kernel/vanilla-kernel-5.15.34
+~sys-kernel/vanilla-kernel-5.15.35
+~sys-kernel/vanilla-kernel-5.16.20
+~sys-kernel/vanilla-kernel-5.17.3
+~sys-kernel/vanilla-kernel-5.17.4
+~virtual/dist-kernel-5.10.111
+~virtual/dist-kernel-5.15.34
+~virtual/dist-kernel-5.16.20
+~virtual/dist-kernel-5.17.3
+
+# Alfredo Tupone <tupone@gentoo.org> (2022-04-26)
 # New release of janestreet packages need to tested
 dev-ml/sexplib0:0/0.15
 dev-ml/base:0/0.15
@@ -77,6 +127,11 @@ dev-ml/ppx_variants_conv:0/0.15
 dev-ml/ppx_jane:0/0.15
 dev-ml/int_repr:0/0.15
 dev-ml/base_bigstring:0/0.15
+dev-ml/ppx_js_style:0/0.15
+dev-ml/core:0/0.15
+dev-ml/core_kernel:0/0.15
+dev-ml/sexp_pretty:0/0.15
+dev-ml/expect_test_helpers_core:0/0.15
 
 # Hans de Graaff <graaff@gentoo.org> (2022-04-23)
 # Obsolete slots that are no longer used by current
