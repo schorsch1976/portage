@@ -2209,6 +2209,7 @@ dev-libs/pocl:hardening - Enable hardening against various attacks. May worsen p
 dev-libs/pocl:hwloc - Enable hwloc support
 dev-libs/pocl:memmanager - Enables custom memory manager. Except for special circumstances, this should be disabled
 dev-libs/poco:7z - Add Support for the 7z archive format
+dev-libs/poco:activerecord - Add ActiveRecord support
 dev-libs/poco:cppparser - Build and install a minimal C++ parser
 dev-libs/poco:crypto - Encryption and digital signing classes
 dev-libs/poco:data - Database abstraction layer to easily send/retrieve data to/from various databases
@@ -2837,7 +2838,6 @@ dev-util/mdds:valgrind - Add support for memory debugging using dev-util/valgrin
 dev-util/mingw64-runtime:idl - Install idl files.
 dev-util/mingw64-runtime:libraries - Build extra libraries: mangle, pseh, winpthreads.
 dev-util/mingw64-runtime:tools - Build extra tools: gendef, genidl.
-dev-util/nemiver:memoryview - Enable the optional hexadecimal memory inspection with app-editors/ghex
 dev-util/nvidia-cuda-sdk:cuda - Build CUDA binaries
 dev-util/nvidia-cuda-sdk:opencl - Build OpenCL binaries
 dev-util/nvidia-cuda-toolkit:debugger - Install the CUDA debugger
@@ -5800,7 +5800,6 @@ net-im/ekg2:gpg - Enable jabber message encryption through app-crypt/gpgme.
 net-im/ekg2:minimal - Disable building extra plugins with no additional deps.
 net-im/ekg2:openssl - Support encryption in sim plugin, using OpenSSL.
 net-im/ekg2:sqlite - Support logging messages into SQLite3 database.
-net-im/element-desktop-bin:emoji - Use media-fonts/noto-emoji for displaying emoji
 net-im/empathy:gnome-online-accounts - Enable using net-libs/gnome-online-accounts for authorization (e.g. for Google Talk)
 net-im/empathy:map - Enable world map support through media-libs/libchamplain
 net-im/err:irc - Pull optional dependencies, needed for IRC backend
@@ -6921,21 +6920,25 @@ net-vpn/strongswan:gcrypt - Enable dev-libs/libgcrypt plugin which provides 3DES
 net-vpn/strongswan:non-root - Force IKEv1/IKEv2 daemons to normal user privileges. This might impose some restrictions mainly to the IKEv1 daemon. Disable only if you really require superuser privileges.
 net-vpn/strongswan:openssl - Enable dev-libs/openssl plugin which is required for Elliptic Curve Cryptography (DH groups 19-21,25,26) and ECDSA. Also provides 3DES, AES, Blowfish, Camellia, CAST, DES, IDEA and RC5 ciphers along with MD2, MD4, MD5 and SHA1/2 hash algorithms, RSA and DH groups 1,2,5,14-18 and 22-24(4.4+) dev-libs/openssl has to be compiled with USE="-bindist".
 net-vpn/strongswan:pkcs11 - Enable pkcs11 support
+net-vpn/strongswan:strongswan_plugins_addrblock - Enable support for the addrblock crypto plugin
 net-vpn/strongswan:strongswan_plugins_aesni - Enable support for Intel AES-NI crypto plugin
 net-vpn/strongswan:strongswan_plugins_blowfish - Enable support for the blowfish plugin
 net-vpn/strongswan:strongswan_plugins_bypass-lan - Enable support for the bypass-lan plugin
 net-vpn/strongswan:strongswan_plugins_ccm - Enable support for the ccm plugin
 net-vpn/strongswan:strongswan_plugins_chapoly - Enable ChaCha20/Poly1305 AEAD implementation and ChaCha20 XOF plugin
 net-vpn/strongswan:strongswan_plugins_ctr - Enable support for the ctr plugin
+net-vpn/strongswan:strongswan_plugins_error-notify - Enable support for the error-notify plugin
 net-vpn/strongswan:strongswan_plugins_forecast - Enable multicast and broadcast forwarding plugin
 net-vpn/strongswan:strongswan_plugins_gcm - Enable support for the gcm plugin
 net-vpn/strongswan:strongswan_plugins_ha - Enable support for the ha plugin
 net-vpn/strongswan:strongswan_plugins_ipseckey - Enable support for the ipseckey plugin
+net-vpn/strongswan:strongswan_plugins_kdf - Enable support for the kdf plugin
 net-vpn/strongswan:strongswan_plugins_led - Enable support for the led plugin
 net-vpn/strongswan:strongswan_plugins_lookip - Enable support for the lookip plugin
 net-vpn/strongswan:strongswan_plugins_newhope - Enable plugin that allows key exchange based on post-quantum computer New Hope algorithm
 net-vpn/strongswan:strongswan_plugins_ntru - Enable support for the ntru plugin
 net-vpn/strongswan:strongswan_plugins_padlock - Enable support for the padlock plugin
+net-vpn/strongswan:strongswan_plugins_prf-plus - Enable support for the prf-plus plugin
 net-vpn/strongswan:strongswan_plugins_rdrand - Enable support for the rdrand plugin
 net-vpn/strongswan:strongswan_plugins_save-keys - Enable plugin that saves IKE and/or ESP keys to files compatible with Wireshark (for debugging)
 net-vpn/strongswan:strongswan_plugins_systime-fix - Enable support for the systime-fix plugin
@@ -7513,6 +7516,7 @@ sci-mathematics/geomview:motionaveraging - Enable experimental motion averaging 
 sci-mathematics/giac:ecm - Enable the use of sci-mathematics/gmp-ecm
 sci-mathematics/giac:gc - Enable garbage collection support via dev-libs/boehm-gc
 sci-mathematics/giac:glpk - Enable the use of sci-mathematics/glpk
+sci-mathematics/gmp-ecm:cuda - Use NVidia's cuda toolkit for computations
 sci-mathematics/gmp-ecm:custom-tune - Improve performance of some operations by selecting machine-specific defaults
 sci-mathematics/gretl:R - Enable support for dev-lang/R
 sci-mathematics/gretl:extras - Build and install add-ons bundled with gretl
@@ -7571,6 +7575,7 @@ sci-mathematics/why3:coq - Add sci-mathematics/coq support
 sci-mathematics/why3:gtk - Build the IDE x11-libs/gtk+
 sci-mathematics/why3:re - Use Re (dev-ml/re) instead of Str for regular expressions
 sci-mathematics/why3:sexp - Add support for outputting S-expressions with dev-ml/ppx_sexp_conv
+sci-mathematics/why3:stackify - Enable structure reconstruction algorithm for MLCFG
 sci-mathematics/why3:zarith - Use Zarith (dev-ml/zarith) instead of Nums (dev-ml/num) for computations
 sci-mathematics/why3:zip - Enable compression of session files
 sci-mathematics/why3-for-spark:coq - Add sci-mathematics/coq support
@@ -8169,12 +8174,9 @@ sys-devel/clang-runtime:openmp - Install sys-libs/libomp for -fopenmp support
 sys-devel/clang-runtime:sanitize - Enable compiler-rt sanitizer (-fsanitize*) support
 sys-devel/distcc:gssapi - Enable support for net-libs/libgssglue
 sys-devel/gcc:ada - Build the ADA language (GNAT) frontend
-sys-devel/gcc:awt - Useful only when building GCJ, this enables Abstract Window Toolkit (AWT) peer support on top of GTK+
 sys-devel/gcc:cet - Enable support for Intel Control Flow Enforcement Technology (CET)
-sys-devel/gcc:cilk - Support the Cilk Plus language (C/C++ based languages for parallel programming)
 sys-devel/gcc:d - Enable support for the D programming language
 sys-devel/gcc:fixed-point - Enable fixed-point arithmetic support for MIPS targets in gcc (Warning: significantly increases compile time!)
-sys-devel/gcc:gcj - Build the GCJ Java language frontend.
 sys-devel/gcc:go - Build the GCC Go language frontend.
 sys-devel/gcc:graphite - Add support for the framework for loop optimizations based on a polyhedral intermediate representation
 sys-devel/gcc:jit - Enable libgccjit so other applications can embed gcc for Just-In-Time compilation. This will slow down the compiler a bit as it forces all of the toolchain to be shared libs.
@@ -8395,6 +8397,7 @@ sys-libs/libblockdev:dmraid - Support for dmraid devices, also known as ATA-RAID
 sys-libs/libblockdev:escrow - Support for building crypto plugin with escrow device support
 sys-libs/libblockdev:kbd - Enable kernel block device support.
 sys-libs/libblockdev:lvm - Enable support for Logical Volume Management via sys-fs/lvm2.
+sys-libs/libblockdev:nvme - Add nvme support via sys-libs/libnvme
 sys-libs/libblockdev:tools - Build tools
 sys-libs/libblockdev:vdo - Enable Virtual Data Optimizer support.
 sys-libs/libcap:tools - Install captree, which requires dev-lang/go
@@ -8552,7 +8555,6 @@ www-apps/icingaweb2:apache2-server - Adds support for the apache2-server
 www-apps/icingaweb2:fpm - Adds FPM support to php
 www-apps/icingaweb2:nginx - Adds support for nginx
 www-apps/ikiwiki:extras - Installs additional modules used by ikiwiki plugins
-www-apps/kibana-bin:x-pack - Enable additional features (may need a license)
 www-apps/klaus:ctags - Enable support for Exuberant ctags; makes all source code symbols hyperlinks to their definitions
 www-apps/nikola:assets - Support web asset management
 www-apps/nikola:charts - Support chart generation through dev-python/pygal

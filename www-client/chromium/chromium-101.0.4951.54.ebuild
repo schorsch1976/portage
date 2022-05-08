@@ -19,8 +19,8 @@ SRC_URI="https://commondatastorage.googleapis.com/chromium-browser-official/${P}
 	https://github.com/stha09/chromium-patches/releases/download/${PATCHSET_NAME}/${PATCHSET_NAME}.tar.xz"
 
 LICENSE="BSD"
-SLOT="0/beta"
-KEYWORDS="~amd64 ~arm64 ~x86"
+SLOT="0/stable"
+KEYWORDS="~amd64 arm64 ~x86"
 IUSE="component-build cups cpu_flags_arm_neon debug gtk4 +hangouts headless +js-type-check kerberos libcxx +official pic +proprietary-codecs pulseaudio screencast selinux +suid +system-ffmpeg +system-harfbuzz +system-icu +system-png vaapi wayland widevine"
 REQUIRED_USE="
 	component-build? ( !suid !libcxx )
@@ -529,6 +529,11 @@ src_prepare() {
 			generate_gni.sh || die
 		./generate_gni.sh || die
 		popd >/dev/null || die
+
+		pushd third_party/ffmpeg >/dev/null || die
+		cp libavcodec/ppc/h264dsp.c libavcodec/ppc/h264dsp_ppc.c || die
+		cp libavcodec/ppc/h264qpel.c libavcodec/ppc/h264qpel_ppc.c || die
+		popd >/dev/null || die
 	fi
 
 	# Remove most bundled libraries. Some are still needed.
@@ -755,6 +760,14 @@ src_configure() {
 
 	# Disable fatal linker warnings, bug 506268.
 	myconf_gn+=" fatal_linker_warnings=false"
+
+	# Disable external code space for V8 for ppc64. It is disabled for ppc64
+	# by default, but cross-compiling on amd64 enables it again.
+	if tc-is-cross-compiler; then
+		if ! use amd64 && ! use arm64; then
+			myconf_gn+=" v8_enable_external_code_space=false"
+		fi
+	fi
 
 	# Bug 491582.
 	export TMPDIR="${WORKDIR}/temp"
