@@ -2809,6 +2809,7 @@ dev-util/glade:webkit - Build catalog support for net-libs/webkit-gtk:4 widgets.
 dev-util/global:vim - Integrate the GNU GLOBAL source code tag system with Vim
 dev-util/gnome-builder:clang - Provide integration with sys-devel/clang for best possible C/C++ autocompletion, semantic highlighting, symbol resolving, and diagnostics support
 dev-util/gnome-builder:devhelp - Provide API docs browsing and integration via dev-util/devhelp
+dev-util/gnome-builder:flatpak - Enable support for flatpak applications using sys-apps/flatpak
 dev-util/gnome-builder:git - Provide support for the Git version control system via dev-libs/libgit2-glib (such as setup of Git for New Project, direct cloning for Open Project and changed lines indicators in the editor gutter)
 dev-util/gnome-builder:glade - Provide integration with dev-util/glade UI designer for Gtk
 dev-util/gnome-builder:sysprof - Provide an integrated profiler via dev-util/sysprof
@@ -3315,9 +3316,6 @@ gnome-extra/evolution-data-server:berkdb - sys-libs/db support needed to migrate
 gnome-extra/evolution-data-server:gnome-online-accounts - Enable net-libs/gnome-online-accounts based Google authentication support
 gnome-extra/evolution-data-server:oauth - Enable internal OAuth2 authentication support for Google and Outlook.com. If gnome-online-accounts is enabled and used, this is not necessary, but both can be supported at the same time with different setup at runtime
 gnome-extra/evolution-data-server:weather - Enable optional weather calendar support
-gnome-extra/filemanager-actions:caja - Install the mate-base/caja extension
-gnome-extra/filemanager-actions:nautilus - Install the gnome-base/nautilus extension
-gnome-extra/filemanager-actions:nemo - Install the gnome-extra/nemo extension
 gnome-extra/gnome-commander:gsf - Add metadata support for OLE, OLE2 and ODF
 gnome-extra/gnome-commander:pdf - Add metadata support for PDF
 gnome-extra/gnome-commander:taglib - Add metadata support for ID3, Vorbis, FLAC and APE
@@ -5270,8 +5268,6 @@ net-analyzer/graphite-web:carbon - Enable carbon support
 net-analyzer/graphite-web:memcached - Enable memcached support
 net-analyzer/greenbone-security-assistant:extras - Pdf results, extra fonts, html docs support
 net-analyzer/gvm:cli - Command Line Interface for OpenVAS Scanner
-net-analyzer/gvm:cron - A cron job to update GVM's vulnerability feeds daily
-net-analyzer/gvm:extras - Extra fonts, pdf-results! and html docs support
 net-analyzer/gvm:gsa - Greenbone Security Assistant (WebUI)
 net-analyzer/gvm:ospd - Enable support for scanner wrappers
 net-analyzer/gvm-libs:extras - Html docs support
@@ -6665,10 +6661,6 @@ net-misc/tigervnc:xorgmodule - Build the Xorg module
 net-misc/uftp:server - Install uftp server daemon
 net-misc/vde:pcap - Enable the pcap-based plugin that allows creating a switch against a real interface.
 net-misc/vde:ssl - Enable the cryptcab plugin that allows creating an encrypted virtual cable.
-net-misc/vinagre:spice - Enable access to SPICE-enabled virtual machines
-net-misc/vinagre:ssh - Enable ssh plugin using x11-libs/vte
-net-misc/vinagre:telepathy - Enable access to remote desktop via a net-libs/telepathy-glib client
-net-misc/vino:telepathy - Enable desktop sharing through a telepathy client
 net-misc/wget:cookie-check - Enable cookie checks via net-libs/libpsl
 net-misc/wget:metalink - Enable support for media-libs/libmetalink
 net-misc/wget:ntlm - Enable support for NTLM (Windows-based) authorization
@@ -7535,6 +7527,7 @@ sci-mathematics/maxima:sbcl - Compile maxima with Steel Bank Common Lisp (dev-li
 sci-mathematics/maxima:vtk - Support plotting with sci-libs/vtk
 sci-mathematics/msieve:ecm - Enable support for the GMP-ECM library
 sci-mathematics/normaliz:extras - Install Macaulay2 and sci-mathematics/singularpackages as shipped by upstream
+sci-mathematics/normaliz:nauty - Use sci-mathematics/nauty to compute automorphism groups.
 sci-mathematics/octave:glpk - Add support for sci-mathematics/glpk for linear programming
 sci-mathematics/octave:json - Allow using jsonencode and jsondecode commands via dev-libs/rapidjson
 sci-mathematics/octave:qhull - Add support for media-libs/qhull, to allow `delaunay', `convhull', and related functions
@@ -9003,6 +8996,7 @@ x11-themes/vertex-theme:gnome-shell - Install theme for gnome-base/gnome-shell
 x11-themes/vertex-theme:mate - Install Metacity theme for mate-base/mate
 x11-themes/vertex-theme:xfce - Install theme for xfce-base/xfwm4
 x11-themes/zuki-themes:gnome-shell - Install theme for gnome-base/gnome-shell
+x11-themes/zuki-themes:gtk2 - Install GTK+2 theme
 x11-themes/zuki-themes:mate - Install Metacity theme for mate-base/mate
 x11-themes/zuki-themes:xfce - Install theme for xfce-base/xfwm4
 x11-themes/zukitwo:gnome-shell - Install theme for gnome-base/gnome-shell
