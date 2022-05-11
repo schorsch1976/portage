@@ -2429,7 +2429,6 @@ dev-python/bpython:clipboard - Enable copying to clipboard using dev-python/pype
 dev-python/bpython:jedi - Enable autocompletion using dev-python/jedi
 dev-python/bpython:urwid - Ebable dev-python/urwid-based interface
 dev-python/bpython:watch - Enable watching paths using dev-python/watchdog
-dev-python/ctypescrypto:gost - Build with support for GOST Message Authentication Code
 dev-python/cvxopt:dsdp - Use interior point library sci-libs/dsdp
 dev-python/cvxopt:glpk - Use GNU Linear Programming Kit sci-mathematics/glpk
 dev-python/drf-yasg:validation - Enable swagger spec validation using swagger-spec-validator
@@ -2498,7 +2497,6 @@ dev-python/python-lsp-server:all-plugins - Pull in all optional plugins
 dev-python/python-mpd:twisted - Enable twisted support
 dev-python/python-stdnum:vies - Enable VIES
 dev-python/pyudev:qt5 - Install PyQt5 bindings
-dev-python/pyyaml:libyaml - enable support for C implementation using libyaml
 dev-python/pyzmq:draft - Enable draft API support
 dev-python/rarfile:compressed - Enables the module to support compressed v3 archives by calling the app-arch/unrar.
 dev-python/rfc3986:idna - enable support for the IDNA specification (RFC 5891)
@@ -5271,7 +5269,6 @@ net-analyzer/gvm:cli - Command Line Interface for OpenVAS Scanner
 net-analyzer/gvm:gsa - Greenbone Security Assistant (WebUI)
 net-analyzer/gvm:ospd - Enable support for scanner wrappers
 net-analyzer/gvm-libs:extras - Html docs support
-net-analyzer/gvmd:extras - Html docs support
 net-analyzer/hexinject:experimental - Install experimental packets.tcl
 net-analyzer/hexinject:tools - Install hex2raw and prettypacket tools
 net-analyzer/httping:tfo - Enable support for TCP Fast Open
@@ -6892,6 +6889,7 @@ net-voip/yate:zaptel - Enable Zaptel driver
 net-vpn/i2p:nls - Adds Native Language Support using GNU gettext.
 net-vpn/i2pd:i2p-hardening - Compile with hardening on vanilla compilers/linkers
 net-vpn/libreswan:dnssec - Use DNSSEC resolver (requires net-dns/unbound)
+net-vpn/networkmanager-sstp:gtk4 - Use gui-libs/gtk for GUI support.
 net-vpn/ocserv:otp - Enable support for one-time passwords
 net-vpn/openconnect:gssapi - Build GSSAPI support
 net-vpn/openconnect:libproxy - Enable proxy support
@@ -7896,7 +7894,7 @@ sys-apps/systemd:curl - Enable support for uploading journals
 sys-apps/systemd:dns-over-tls - Enable DNS-over-TLS support
 sys-apps/systemd:elfutils - Enable coredump stacktraces in the journal
 sys-apps/systemd:fido2 - Enable FIDO2 support
-sys-apps/systemd:gcrypt - Enable sealing of journal files using gcrypt
+sys-apps/systemd:gcrypt - Enable use of dev-libs/libgcrypt for various features
 sys-apps/systemd:gnuefi - Enable EFI boot manager and stub loader (built using sys-boot/gnu-efi)
 sys-apps/systemd:homed - Enable portable home directories
 sys-apps/systemd:hostnamed-fallback - Enable setting hostname with networkd/hostnamed without polkit (requires running sys-apps/dbus-broker)
@@ -7905,7 +7903,7 @@ sys-apps/systemd:importd - Enable import daemon
 sys-apps/systemd:kmod - Enable kernel module loading via sys-apps/kmod
 sys-apps/systemd:lz4 - Enable lz4 compression for the journal
 sys-apps/systemd:nat - Enable support for network address translation in networkd
-sys-apps/systemd:openssl - Enable use of dev-libs/openssl
+sys-apps/systemd:openssl - Enable use of dev-libs/openssl for various features
 sys-apps/systemd:pkcs11 - Enable PKCS#11 support for cryptsetup and homed
 sys-apps/systemd:pwquality - Enable password quality checking in homed
 sys-apps/systemd:qrcode - Enable qrcode output support in journal
@@ -8661,6 +8659,7 @@ www-client/seamonkey:system-libevent - Use the system-wide dev-libs/libevent ins
 www-client/seamonkey:system-libvpx - Use the system-wide media-libs/libvpx instead of bundled
 www-client/seamonkey:system-png - Use the system-wide media-libs/libpng instead of bundled (requires APNG patches)
 www-client/seamonkey:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
+www-client/seamonkey:webrtc - Enable WebRTC support. Disabled by default due to privacy concerns.
 www-client/surf:savedconfig - Without a saved config.h, this package depends on net-misc/curl and x11-terms/st for a default download mechanism
 www-client/surf:tabbed - Install surf-open.sh script for running surf in x11-misc/tabbed
 www-client/uget:aria2 - Enable support for net-misc/aria2 through xmlrpc. You'll find the plugin in the app's settings.
