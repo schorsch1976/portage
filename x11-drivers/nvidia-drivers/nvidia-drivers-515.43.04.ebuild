@@ -106,6 +106,11 @@ pkg_setup() {
 
 	use amd64 && kernel_is -ge 5 8 && CONFIG_CHECK+=" X86_PAT" #817764
 
+	use kernel-open && CONFIG_CHECK+=" MMU_NOTIFIER" #843827
+	local ERROR_MMU_NOTIFIER="CONFIG_MMU_NOTIFIER: is not set but needed to build with USE=kernel-open.
+	Cannot be directly selected in the kernel's menuconfig, and may need
+	selection of another option that requires it such as CONFIG_KVM."
+
 	MODULE_NAMES="
 		nvidia(video:kernel)
 		nvidia-drm(video:kernel)
@@ -468,6 +473,10 @@ pkg_postinst() {
 		ewarn "Open source variant of ${PN} was selected, be warned it is experimental"
 		ewarn "and only usable with Turing / Ampere and later GPUs, aka GTX 1650+."
 		ewarn "Please also see: ${EROOT}/usr/share/doc/${PF}/html/kernel_open.html"
+		ewarn
+		ewarn "Many features are not yet implemented in the drivers and limitations are"
+		ewarn "to be expected. Please do not report non-build/packaging bugs to Gentoo."
+		ewarn "Switch back to USE=-kernel-open to restore functionality if needed for now."
 	fi
 
 	if use !abi_x86_32 && [[ -v NV_HAD_ABI32 ]]; then
