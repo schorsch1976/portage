@@ -10,5 +10,5 @@ LICENSE=ZLIB
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/diskinfo-di/di-4.51.tar.gz
-_eclasses_=multilib	4a33c9008e5ee30cb8840a3fdc24df2b	toolchain-funcs	fd9cde67030b26e479eeadaced488253
+_eclasses_=multilib	4fbbbc98f236f1b43acd99476bc3cd85	toolchain-funcs	fd9cde67030b26e479eeadaced488253
 _md5_=96289b65103c14b9be0a186450576831
