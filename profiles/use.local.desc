@@ -943,7 +943,6 @@ app-misc/wildq:toml - TOML support via pytoml
 app-misc/wildq:xml - XML support via xmltodict
 app-misc/worker:avfs - Enable support for sys-fs/avfs
 app-misc/zygrib:maps - Installs additional GSHHS maps for high resolution coastline data and cities
-app-mobilephone/gammu:bluetooth - Enables bluetooth support
 app-mobilephone/gammu:curl - Enables curl support
 app-mobilephone/gammu:irda - Enables infrared support
 app-mobilephone/gammu:mysql - Use mysql for data storage
@@ -6493,6 +6492,7 @@ net-misc/kafkacat:avro - Enable avro serialization/deserialization support
 net-misc/kafkacat:json - Enable json support
 net-misc/kea:openssl - Use dev-libs/openssl instead of dev-libs/botan
 net-misc/kea:samples - Install sample configuration files
+net-misc/kea:shell - Install kea-shell text management client for Control Agent
 net-misc/knock:server - Installs the knockd server daemon.
 net-misc/libteam:zmq - Build witch net-libs/zeromq support
 net-misc/lldpd:cdp - Enable Cisco Discovery Protocol
@@ -8043,7 +8043,6 @@ sys-boot/plymouth:split-usr - Enable this if /bin and /usr/bin are separate dire
 sys-boot/refind:btrfs - Builds the EFI binary btrfs filesystem driver
 sys-boot/refind:ext2 - Builds the EFI binary ext2 filesystem driver
 sys-boot/refind:ext4 - Builds the EFI binary ext4 filesystem driver
-sys-boot/refind:gnuefi - Compile using GNU-EFI instead of Tianocore
 sys-boot/refind:hfs - Builds the EFI binary hfs filesystem driver
 sys-boot/refind:iso9660 - Builds the EFI binary iso9660 filesystem driver
 sys-boot/refind:ntfs - Builds the EFI binary ntfs filesystem driver
