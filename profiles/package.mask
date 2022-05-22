@@ -33,6 +33,41 @@
 
 #--- END OF EXAMPLES ---
 
+# Sam James <sam@gentoo.org> (2022-05-21)
+# No activity upstream since 2018, unmaintained upstream, does not support
+# Python 3.10+. Removal on 2022-06-21. bug #845726.
+dev-python/fusepy
+
+# Sam James <sam@gentoo.org> (2022-05-21)
+# Unmaintained in Gentoo, no recent activity upstream, and most importantly
+# does not yet support Python 3.10+. Removal on 2022-06-21. bugs #845720, #797850.
+dev-python/drf-yasg
+
+# Michał Górny <mgorny@gentoo.org> (2022-05-21)
+# No commit activity since 2016.  Requires patching for Python 3.10.
+# No tests.  No revdeps.
+# Removal on 2022-06-20.  Bug #846788.
+dev-python/dicttoxml
+
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2022-05-21)
+# Work in progress, do not use yet
+=dev-lang/perl-5.36*
+~virtual/perl-Archive-Tar-2.400.0
+~virtual/perl-Attribute-Handlers-1.20.0
+~virtual/perl-bignum-0.650.0
+~virtual/perl-Compress-Raw-Zlib-2.105.0
+~virtual/perl-CPAN-2.330.0
+~virtual/perl-Data-Dumper-2.184.0
+
+# Michał Górny <mgorny@gentoo.org> (2022-05-21)
+# dev-python/mongoengine has had repeated test regressions, and this
+# time I am unable to get them anywhere close to passing.  The current
+# Gentoo version is over a year old.  There are no revdeps to the two
+# packages remaining.
+# Removal on 2022-06-20.  Bug #846656.
+dev-python/flask-mongoengine
+dev-python/mongoengine
+
 # Till Schäfer <till2.schaefer@uni-dortmund.de> (2022-05-20)
 # Upstream unmaintained for a long time.
 # Has known bugs.
@@ -281,36 +316,6 @@ gnome-base/gnome-vfs
 ~sys-kernel/vanilla-sources-5.10.112
 ~sys-kernel/vanilla-sources-5.15.35
 ~sys-kernel/vanilla-sources-5.17.4
-
-# Michał Górny <mgorny@gentoo.org> (2022-04-26)
-# These kernels contain a major regression that causes power button
-# to stop working, apparently making it impossible to leave suspend
-# on some laptops without a (difficult) hard reset.
-~sys-kernel/gentoo-kernel-5.10.111
-=sys-kernel/gentoo-kernel-5.10.112
-~sys-kernel/gentoo-kernel-5.15.34
-=sys-kernel/gentoo-kernel-5.15.35
-~sys-kernel/gentoo-kernel-5.16.20
-~sys-kernel/gentoo-kernel-5.17.3
-=sys-kernel/gentoo-kernel-5.17.4
-~sys-kernel/gentoo-kernel-bin-5.10.111
-=sys-kernel/gentoo-kernel-bin-5.10.112
-~sys-kernel/gentoo-kernel-bin-5.15.34
-=sys-kernel/gentoo-kernel-bin-5.15.35
-~sys-kernel/gentoo-kernel-bin-5.16.20
-~sys-kernel/gentoo-kernel-bin-5.17.3
-=sys-kernel/gentoo-kernel-bin-5.17.4
-~sys-kernel/vanilla-kernel-5.10.111
-~sys-kernel/vanilla-kernel-5.10.112
-~sys-kernel/vanilla-kernel-5.15.34
-~sys-kernel/vanilla-kernel-5.15.35
-~sys-kernel/vanilla-kernel-5.16.20
-~sys-kernel/vanilla-kernel-5.17.3
-~sys-kernel/vanilla-kernel-5.17.4
-~virtual/dist-kernel-5.10.111
-~virtual/dist-kernel-5.15.34
-~virtual/dist-kernel-5.16.20
-~virtual/dist-kernel-5.17.3
 
 # Alfredo Tupone <tupone@gentoo.org> (2022-04-27)
 # New release of janestreet packages need to tested
