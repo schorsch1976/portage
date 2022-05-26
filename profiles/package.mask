@@ -33,6 +33,21 @@
 
 #--- END OF EXAMPLES ---
 
+# Andrey Grozin <grozin@gentoo.org> (2022-05-25)
+# Does not work with the current dev-python/pyx
+# Removal on 2022-06-24
+dev-python/pyfeyn
+
+# Michał Górny <mgorny@gentoo.org> (2022-05-25)
+# dev-python/m2r has not seen any activity since Jun 2019 and requires
+# old version of dev-python/mistune.  dev-python/sphinxcontrib-openapi
+# has not seen any activity since Oct 2020.  Their only revdep
+# is dev-python/jupyter_server[doc], so let's mask the flag and remove
+# them.
+# Removal on 2022-06-24.  Bug #843881.
+dev-python/m2r
+dev-python/sphinxcontrib-openapi
+
 # Matt Turner <mattst88@gentoo.org> (2022-05-23)
 # Dead package upstream. Depends on dead app-misc/tracker:0.
 # Removal on 2022-06-23. Bug #846605
@@ -103,6 +118,28 @@ dev-python/dicttoxml
 ~virtual/perl-if-0.61.0
 ~virtual/perl-IO-1.500.0
 ~virtual/perl-IO-Compress-2.106.0
+~virtual/perl-JSON-PP-4.70.0
+~virtual/perl-libnet-3.140.0
+~virtual/perl-Locale-Maketext-1.310.0
+~virtual/perl-Math-BigInt-1.999.830
+~virtual/perl-Math-BigInt-FastCalc-0.501.200
+~virtual/perl-Math-BigRat-0.262.100
+~virtual/perl-Module-CoreList-5.202.205.200
+~virtual/perl-Pod-Simple-3.430.0
+~virtual/perl-Scalar-List-Utils-1.620.0
+~virtual/perl-Socket-2.33.0
+~virtual/perl-Storable-3.260.0
+~virtual/perl-Test-Harness-3.440.0
+~virtual/perl-Test-Simple-1.302.190
+~virtual/perl-Text-ParseWords-3.310.0
+~virtual/perl-Text-Tabs+Wrap-2021.81.400
+~virtual/perl-threads-2.270.0
+~virtual/perl-threads-shared-1.640.0
+~virtual/perl-Time-HiRes-1.977.0
+~virtual/perl-Unicode-Collate-1.310.0
+~virtual/perl-Unicode-Normalize-1.310.0
+~virtual/perl-version-0.992.900
+~virtual/perl-XSLoader-0.310.0
 
 # Michał Górny <mgorny@gentoo.org> (2022-05-21)
 # dev-python/mongoengine has had repeated test regressions, and this
@@ -483,11 +520,6 @@ dev-ruby/sanitize:5
 # Unsupported branches, no consumers left, removal on 2023-01-01.
 sys-devel/automake:1.13
 sys-devel/automake:1.15
-
-# Ulrich Müller <ulm@gentoo.org> (2022-04-01)
-# Illegal instruction errors seen by several users.
-# Masked for testing. (bug #835930)
->=net-im/zoom-5.10
 
 # David Seifert <soap@gentoo.org> (2022-03-20)
 # Mask gcc-8 branch (ended upstream support). Please switch
