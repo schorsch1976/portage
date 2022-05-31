@@ -497,7 +497,7 @@ toolchain_pkg_setup() {
 	# See https://www.gnu.org/software/make/manual/html_node/Parallel-Output.html
 	# Avoid really confusing logs from subconfigure spam, makes logs far
 	# more legible.
-	MAKEOPTS+=" --output-sync=line"
+	MAKEOPTS="--output-sync=line ${MAKEOPTS}"
 }
 
 #---->> src_unpack <<----
@@ -817,6 +817,8 @@ toolchain_src_configure() {
 
 	local confgcc=( --host=${CHOST} )
 
+	local build_config_targets=()
+
 	if is_crosscompile || tc-is-cross-compiler ; then
 		# Straight from the GCC install doc:
 		# "GCC has code to correctly determine the correct value for target
@@ -918,7 +920,11 @@ toolchain_src_configure() {
 
 	# Build compiler itself using LTO
 	if tc_version_is_at_least 9.1 && _tc_use_if_iuse lto ; then
-		confgcc+=( --with-build-config=bootstrap-lto )
+		build_config_targets+=( bootstrap-lto )
+	fi
+
+	if tc_version_is_at_least 12 && _tc_use_if_iuse cet ; then
+		build_config_targets+=( bootstrap-cet )
 	fi
 
 	# Support to disable PCH when building libstdcxx
@@ -1096,6 +1102,8 @@ toolchain_src_configure() {
 				fi
 			done
 
+			# Convert armv6m to armv6-m
+			[[ ${arm_arch} == armv6m ]] && arm_arch=armv6-m
 			# Convert armv7{a,r,m} to armv7-{a,r,m}
 			[[ ${arm_arch} == armv7? ]] && arm_arch=${arm_arch/7/7-}
 			# See if this is a valid --with-arch flag
@@ -1272,6 +1280,8 @@ toolchain_src_configure() {
 		confgcc+=( $(use_with zstd) )
 	fi
 
+	# This only controls whether the compiler *supports* LTO, not whether
+	# it's *built using* LTO. Hence we do it without a USE flag.
 	if tc_version_is_at_least 4.6 ; then
 		confgcc+=( --enable-lto )
 	elif tc_version_is_at_least 4.5 ; then
@@ -1322,6 +1332,11 @@ toolchain_src_configure() {
 	export ac_cv_have_x='have_x=yes ac_x_includes= ac_x_libraries='
 
 	confgcc+=( "$@" ${EXTRA_ECONF} )
+
+	if [[ -n ${build_config_targets} ]] ; then
+		# ./configure --with-build-config='bootstrap-lto bootstrap-cet'
+		confgcc+=( --with-build-config="${build_config_targets[*]}" )
+	fi
 
 	# Nothing wrong with a good dose of verbosity
 	echo
