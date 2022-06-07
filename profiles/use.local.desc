@@ -2740,9 +2740,6 @@ dev-tex/abntex:lyx - Install with app-office/lyx layout
 dev-tex/biblatex:biber - Install the unicode compatible backend processor
 dev-tex/pythontex:highlighting - Syntax highlighting using dev-python/pygments
 dev-texlive/texlive-basic:luajittex - Add support for LuaJitTeX: LuaTeX based on LuaJIT which is usually faster.
-dev-util/anjuta:devhelp - Enable devhelp integration
-dev-util/anjuta:glade - Build glade plugin for anjuta
-dev-util/anjuta:terminal - Enable terminal plugin based on x11-libs/vte
 dev-util/bazel:tools - Install extra bazel tools to build from sources
 dev-util/bitcoin-tx:knots - Build enhanced Bitcoin Knots version, rather than Bitcoin Core
 dev-util/bpftool:caps - Use sys-libs/libcap to enable unprivileged run support
@@ -4341,7 +4338,6 @@ media-libs/openexr:utils - Build several binary tools for verifying and manipula
 media-libs/openh264:plugin - Install the Gecko Media Plugin (GMP) for use with Mozilla packages
 media-libs/openh264:utils - Install the CLI encoder and decoder utilities
 media-libs/openimageio:dicom - Enable DICOM medical image file support via sci-libs/dcmtk
-media-libs/openimageio:field3d - Enable f3d file (write) support via media-libs/Field3D
 media-libs/openimageio:opencv - Enable OpenCV support via media-libs/opencv
 media-libs/openimageio:openvdb - Enable OpenVDB support via media-gfx/openvdb
 media-libs/openimageio:ptex - Enable Ptex texture mapping system file support via media-libs/ptex
@@ -7330,13 +7326,19 @@ sci-libs/gdal:spatialite - Enable Spatial DBMS over sqlite dev-db/spatialite
 sci-libs/gdal:xls - Add the dev-libs/freexl library for xls import support
 sci-libs/ginkgo:cuda - Add support for cuda assimp (dev-util/nvidia-cuda-sdk)
 sci-libs/ginkgo:hwloc - Add support for hwloc (sys-apps/hwloc)
+sci-libs/gmsh:alglib - Enable alglib support for mesh optimizers
 sci-libs/gmsh:cgns - Enables cgns output support
+sci-libs/gmsh:eigen - Build matrix manipulation with dev-cpp/eigen
+sci-libs/gmsh:gmm - A simple alternative to petsc based on sci-mathematics/gmm
 sci-libs/gmsh:med - Enables med support
 sci-libs/gmsh:metis - Enables metis support
+sci-libs/gmsh:mumps - Enables mumps solver support
 sci-libs/gmsh:netgen - Enable 3D Frontal triangulation using netgen lib
 sci-libs/gmsh:opencascade - Enable OpenCASCADE support
 sci-libs/gmsh:petsc - Enable sci-mathematics/petsc support
 sci-libs/gmsh:shared - Install shared library and headers
+sci-libs/gmsh:slepc - Enable sci-mathematics/slepc support
+sci-libs/gmsh:voro - Enable support to sci-libs/voro++ meshing
 sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version
 sci-libs/gsl:deprecated - Enable deprecated functions
 sci-libs/hdf5:hl - Enable high level API (https://support.hdfgroup.org/HDF5/doc/HL/index.html)
