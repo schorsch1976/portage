@@ -117,7 +117,7 @@ esac
 # - sip - sipbuild backend
 #
 # - standalone - standalone build systems without external deps
-#                (used for bootstrapping).
+#   (used for bootstrapping).
 #
 # The variable needs to be set before the inherit line.  The eclass
 # adds appropriate build-time dependencies and verifies the value.
@@ -136,10 +136,10 @@ esac
 # - rdepend -- add it to BDEPEND+RDEPEND (e.g. when using pkg_resources)
 #
 # - pyproject.toml -- use pyproject2setuptools to install a project
-#                     using pyproject.toml (flit, poetry...)
+#   using pyproject.toml (flit, poetry...)
 #
 # - manual -- do not add the dependency and suppress the checks
-#             (assumes you will take care of doing it correctly)
+#   (assumes you will take care of doing it correctly)
 #
 # This variable is effective only if DISTUTILS_OPTIONAL is disabled.
 # It is available only in non-PEP517 mode.  It needs to be set before
@@ -611,8 +611,11 @@ distutils_enable_tests() {
 # (if ${EPYTHON} is set; fallback 'python' otherwise).
 #
 # setup.py will be passed the following, in order:
+#
 # 1. ${DISTUTILS_ARGS[@]}
+#
 # 2. ${mydistutilsargs[@]} (deprecated)
+#
 # 3. additional arguments passed to the esetup.py function.
 #
 # Please note that setup.py will respect defaults (unless overridden
@@ -1143,7 +1146,7 @@ _distutils-r1_backend_to_key() {
 _distutils-r1_get_backend() {
 	debug-print-function ${FUNCNAME} "${@}"
 
-	local build_backend
+	local build_backend legacy_fallback
 	if [[ -f pyproject.toml ]]; then
 		# if pyproject.toml exists, try getting the backend from it
 		# NB: this could fail if pyproject.toml doesn't list one
@@ -1154,6 +1157,7 @@ _distutils-r1_get_backend() {
 	then
 		# use the legacy setuptools backend as a fallback
 		build_backend=setuptools.build_meta:__legacy__
+		legacy_fallback=1
 	fi
 	if [[ -z ${build_backend} ]]; then
 		die "Unable to obtain build-backend from pyproject.toml"
@@ -1178,6 +1182,11 @@ _distutils-r1_get_backend() {
 				;;
 			poetry.masonry.api)
 				new_backend=poetry.core.masonry.api
+				;;
+			setuptools.build_meta:__legacy__)
+				# this backend should only be used as implicit fallback
+				[[ ! ${legacy_fallback} ]] &&
+					new_backend=setuptools.build_meta
 				;;
 		esac
 
@@ -1566,29 +1575,6 @@ distutils-r1_python_install() {
 		esetup.py "${args[@]}"
 	fi
 
-	local forbidden_package_names=(
-		examples test tests
-		.pytest_cache .hypothesis
-	)
-	local p
-	for p in "${forbidden_package_names[@]}"; do
-		if [[ -d ${root}$(python_get_sitedir)/${p} ]]; then
-			die "Package installs '${p}' package which is forbidden and likely a bug in the build system."
-		fi
-	done
-
-	local shopt_save=$(shopt -p nullglob)
-	shopt -s nullglob
-	local pypy_dirs=(
-		"${root}${EPREFIX}/usr/$(get_libdir)"/pypy*/share
-		"${root}${EPREFIX}/usr/lib"/pypy*/share
-	)
-	${shopt_save}
-
-	if [[ -n ${pypy_dirs} ]]; then
-		die "Package installs 'share' in PyPy prefix, see bug #465546."
-	fi
-
 	if [[ ! ${DISTUTILS_SINGLE_IMPL} || ${DISTUTILS_USE_PEP517} ]]; then
 		multibuild_merge_root "${root}" "${D%/}"
 		if [[ ${DISTUTILS_USE_PEP517} ]]; then
@@ -1629,6 +1615,8 @@ distutils-r1_run_phase() {
 	debug-print-function ${FUNCNAME} "${@}"
 
 	if [[ ${DISTUTILS_IN_SOURCE_BUILD} ]]; then
+		[[ ${DISTUTILS_USE_PEP517} ]] &&
+			die "DISTUTILS_IN_SOURCE_BUILD is not supported in PEP517 mode"
 		# only force BUILD_DIR if implementation is explicitly enabled
 		# for building; any-r1 API may select one that is not
 		# https://bugs.gentoo.org/701506
@@ -1687,6 +1675,11 @@ distutils-r1_run_phase() {
 	fi
 
 	cd "${_DISTUTILS_INITIAL_CWD}" || die
+	if [[ ! ${_DISTUTILS_IN_COMMON_IMPL} ]] &&
+		declare -f "_distutils-r1_post_python_${EBUILD_PHASE}" >/dev/null
+	then
+		"_distutils-r1_post_python_${EBUILD_PHASE}"
+	fi
 	return "${ret}"
 }
 
@@ -1701,6 +1694,7 @@ distutils-r1_run_phase() {
 # of sources made for the selected Python interpreter.
 _distutils-r1_run_common_phase() {
 	local DISTUTILS_ORIG_BUILD_DIR=${BUILD_DIR}
+	local _DISTUTILS_IN_COMMON_IMPL=1
 
 	if [[ ${DISTUTILS_SINGLE_IMPL} ]]; then
 		# reuse the dedicated code branch
@@ -1812,15 +1806,24 @@ _distutils-r1_clean_egg_info() {
 	rm -rf "${BUILD_DIR}"/lib/*.egg-info || die
 }
 
+# @FUNCTION: _distutils-r1_post_python_test
+# @INTERNAL
+# @DESCRIPTION:
+# Post-phase function called after python_test.
+_distutils-r1_post_python_test() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	if [[ ! ${DISTUTILS_USE_PEP517} ]]; then
+		_distutils-r1_clean_egg_info
+	fi
+}
+
 distutils-r1_src_test() {
 	debug-print-function ${FUNCNAME} "${@}"
 	local ret=0
 
 	if declare -f python_test >/dev/null; then
 		_distutils-r1_run_foreach_impl python_test || ret=${?}
-		if [[ ! ${DISTUTILS_USE_PEP517} ]]; then
-			_distutils-r1_run_foreach_impl _distutils-r1_clean_egg_info
-		fi
 	fi
 
 	if declare -f python_test_all >/dev/null; then
@@ -1828,6 +1831,25 @@ distutils-r1_src_test() {
 	fi
 
 	return ${ret}
+}
+
+# @FUNCTION: _distutils-r1_post_python_install
+# @INTERNAL
+# @DESCRIPTION:
+# Post-phase function called after python_install.
+_distutils-r1_post_python_install() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	local forbidden_package_names=(
+		examples test tests
+		.pytest_cache .hypothesis _trial_temp
+	)
+	local p
+	for p in "${forbidden_package_names[@]}"; do
+		if [[ -d ${D}$(python_get_sitedir)/${p} ]]; then
+			die "Package installs '${p}' package which is forbidden and likely a bug in the build system."
+		fi
+	done
 }
 
 # @FUNCTION: _distutils-r1_check_namespace_pth
@@ -1854,6 +1876,10 @@ _distutils-r1_check_namespace_pth() {
 		ewarn "the ebuild accordingly:"
 		ewarn
 		ewarn "  https://projects.gentoo.org/python/guide/concept.html#namespace-packages"
+
+		if ! has "${EAPI}" 6 7 8; then
+			die "*-nspkg.pth files are banned in EAPI ${EAPI}"
+		fi
 	fi
 }
 
