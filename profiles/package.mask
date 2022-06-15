@@ -33,6 +33,13 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2022-06-13)
+# Upstream has discontinued the fork.  No revdeps.  They recommend using
+# the original editdistance (not packaged on Gentoo)
+# or dev-python/ukkonen.
+# Removal on 2022-07-13.  Bug #851678.
+dev-python/editdistance-s
+
 # Sam James <sam@gentoo.org> (2022-06-10)
 # Masked for removal on 2022-07-10. No upstream activity in a long time,
 # no reverse dependencies, and Gentoo maintains a huge number of patches
@@ -176,11 +183,6 @@ dev-python/sphinxcontrib-openapi
 # Dead package upstream. Depends on dead app-misc/tracker:0.
 # Removal on 2022-06-23. Bug #846605
 gnome-extra/gnome-documents
-
-# Sam James <sam@gentoo.org> (2022-05-22)
-# Doesn't support Python 3.10, out of date, unmaintained in Gentoo.
-# Removal on 2022-06-22. bug #731674, bug #846158.
-net-misc/omniORB
 
 # Sam James <sam@gentoo.org> (2022-05-22)
 # No upstream activity since 2017. Doesn't support Python 3.10.
