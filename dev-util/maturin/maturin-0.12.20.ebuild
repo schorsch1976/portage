@@ -327,7 +327,7 @@ CRATES_TEST="
 	unicode-xid-0.2.3
 	unindent-0.1.9"
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( pypy3 python3_{8..11} )
 inherit cargo distutils-r1 flag-o-matic
 
 DESCRIPTION="Build and publish crates with pyo3, rust-cpython and cffi bindings"
@@ -348,12 +348,14 @@ RESTRICT="!test? ( test )"
 RDEPEND="
 	$(python_gen_cond_dep '
 		dev-python/tomli[${PYTHON_USEDEP}]
-	' 3.{8..10})"
+	' 3.{8..10} pypy3)"
 BDEPEND="
 	dev-python/setuptools-rust[${PYTHON_USEDEP}]
 	doc? ( app-text/mdbook )
 	test? (
-		dev-python/cffi[${PYTHON_USEDEP}]
+		$(python_gen_cond_dep '
+			dev-python/cffi[${PYTHON_USEDEP}]
+		' 'python*')
 		dev-python/boltons[${PYTHON_USEDEP}]
 		dev-python/virtualenv[${PYTHON_USEDEP}]
 	)"
@@ -389,14 +391,26 @@ python_compile_all() {
 	use !doc || mdbook build -d html guide || die
 }
 
+src_test() {
+	mv test-crates{,.orig} || die
+	distutils-r1_src_test
+}
+
 python_test() {
 	local -x PIP_CONFIG_FILE=${T}/pip.conf
 	local -x VIRTUALENV_SYSTEM_SITE_PACKAGES=1
 
-	# pyo3_no_extension_module is xfail but passes with >=rust-1.60, still
-	# need looking into but is not known to cause issues, disable for now.
-	cargo_src_test -- --skip locked_doesnt_build_without_cargo_lock \
+	local skip=(
+		# pyo3_no_extension_module is xfail but passes with >=rust-1.60, still
+		# need looking into but is not known to cause issues, disable for now.
+		--skip locked_doesnt_build_without_cargo_lock
 		--skip pyo3_no_extension_module
+	)
+	[[ ${EPYTHON} == pypy3 ]] && skip+=( --skip integration_pyo3_bin )
+
+	cp -r test-crates{.orig,} || die
+	cargo_src_test -- "${skip[@]}"
+	rm -r test-crates || die
 }
 
 python_install_all() {
