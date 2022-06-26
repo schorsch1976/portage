@@ -3345,6 +3345,7 @@ gui-apps/foot:grapheme-clustering - Enable grapheme clustering support
 gui-apps/grim:jpeg - Enable JPEG support.
 gui-apps/gtkgreet:layershell - Enable layer shell support
 gui-apps/mako:icons - Enable support for icons
+gui-apps/swaybg:gdk-pixbuf - Support image types other than PNG
 gui-apps/swayidle:elogind - Enable support for rootless session via elogind
 gui-apps/swaylock:gdk-pixbuf - Enable additional image format support via the x11-libs/gdk-pixbuf library
 gui-apps/waybar:mpd - Enable support for the Music Player Daemon
@@ -6500,6 +6501,7 @@ net-misc/miniupnpd:portinuse - Check if a port is in use before allowing a NAT-P
 net-misc/miniupnpd:strict - Be more strict regarding compliance with UPnP specifications.
 net-misc/modemmanager:mbim - Enable MBIM modem protocol
 net-misc/modemmanager:qmi - Enable support for the QMI modem protocol used by devices with Qualcomm chipsets
+net-misc/modemmanager:qrtr - Enable support for the QMI over IPC Router bus (QRTR) protocol
 net-misc/mosh:client - Build network client
 net-misc/mosh:examples - Include example scripts
 net-misc/mosh:mosh-hardening - Enable compiler and linker options to frustrate memory corruption exploits
@@ -8392,6 +8394,7 @@ sys-libs/glibc:multiarch - enable optimizations for multiple CPU architectures (
 sys-libs/glibc:multilib-bootstrap - Provide prebuilt libgcc.a and crt files if missing. Only needed for ABI switch.
 sys-libs/glibc:nscd - Build, and enable support for, the Name Service Cache Daemon
 sys-libs/glibc:ssp - protect stack of glibc internals
+sys-libs/glibc:stack-realign - Realign the stack in the 32-bit build for compatibility with older binaries at some performance cost
 sys-libs/glibc:static-pie - Enable static PIE support (runtime files for -static-pie gcc option).
 sys-libs/glibc:suid - Make internal pt_chown helper setuid -- not needed if using Linux and have /dev/pts mounted with gid=5
 sys-libs/glibc:systemtap - enable systemtap static probe points
@@ -8427,6 +8430,7 @@ sys-libs/libxcrypt:compat - Build with compatibility interfaces for other crypt 
 sys-libs/libxcrypt:system - Install as system libcrypt.so rather than to an alternate directory (will collide with sys-libs/glibc's version)
 sys-libs/musl-nscd:minimal - Only installs the header files
 sys-libs/ncurses:ada - Add bindings for the ADA programming language
+sys-libs/ncurses:stack-realign - Realign the stack in the 32-bit build for compatibility with older binaries at some performance cost. Avoids crashes in older 32-bit binaries. Only affects x86/32-bit multilib builds on amd64.
 sys-libs/ncurses:tinfo - Build curses library (libncurses) sep from the low-level terminfo library (libtinfo) -- usually needed only for binary packages -- but it is binary compatible in either mode
 sys-libs/ncurses:trace - Enable test trace() support in ncurses calls
 sys-libs/ncurses-compat:tinfo - Build curses library (libncurses) sep from the low-level terminfo library (libtinfo) -- usually needed only for binary packages -- but it is binary compatible in either mode
@@ -8559,7 +8563,6 @@ www-apps/drupal:uploadprogress - Install dev-php/pecl-uploadprogress package
 www-apps/gitea:acct - User and group management via acct-*/git packages
 www-apps/gitit:plugins - enables optional plugin runtime loader
 www-apps/hugo:sass - Enable SASS/SCSS support
-www-apps/hugo:test-full - Pull optional heavier test-dependency packages
 www-apps/icingaweb2:apache2-server - Adds support for the apache2-server
 www-apps/icingaweb2:fpm - Adds FPM support to php
 www-apps/icingaweb2:nginx - Adds support for nginx
