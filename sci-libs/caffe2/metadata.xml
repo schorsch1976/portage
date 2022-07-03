@@ -5,6 +5,10 @@
 		<email>tupone@gentoo.org</email>
 		<name>Tupone Alfredo</name>
 	</maintainer>
+	<use>
+		<flag name="nnpack">Use NNPACK</flag>
+		<flag name="xnnpack">Use XNNPACK</flag>
+	</use>
 	<upstream>
 		<remote-id type="github">pytorch/pytorch</remote-id>
 	</upstream>
