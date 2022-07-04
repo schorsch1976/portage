@@ -4077,6 +4077,7 @@ media-gfx/qrencode:png - Enable PNG output support in qrencode tool
 media-gfx/renderdoc:pyside2 - Expose the QRenderdoc UI to Python scripting to allow for customisation
 media-gfx/renderdoc:qt5 - Build and install the qrenderdoc GUI
 media-gfx/shotwell:opencv - Enable face detection via media-libs/opencv
+media-gfx/solvespace:system-mimalloc - Use system dev-libs/mimalloc instead of vendored library
 media-gfx/xpaint:pgf - Support for loading PGF images
 media-gfx/xsane:ocr - Enable support for Optical Character Recognition reader
 media-gfx/yafaray:fastmath - Enable mathematic approximations to make code faster
@@ -6647,7 +6648,6 @@ net-misc/stunnel:stunnel3 - Install the stunnel3 wrapper.
 net-misc/tigervnc:dri3 - Build with DRI3 support
 net-misc/tigervnc:drm - Build with DRM support
 net-misc/tigervnc:server - Build TigerVNC server
-net-misc/tigervnc:xorgmodule - Build the Xorg module
 net-misc/uftp:server - Install uftp server daemon
 net-misc/vde:pcap - Enable the pcap-based plugin that allows creating a switch against a real interface.
 net-misc/vde:ssl - Enable the cryptcab plugin that allows creating an encrypted virtual cable.
@@ -7243,7 +7243,14 @@ sci-libs/blis:eselect-ldso - Enable runtime library switching by eselect and ld.
 sci-libs/blis:openmp - Use openmp threadding model
 sci-libs/blis:pthread - Use pthread threadding model
 sci-libs/blis:serial - Use no threadding model
+sci-libs/caffe2:cuda - Add support for CUDA processing
+sci-libs/caffe2:ffmpeg - Add support for video processing operators
 sci-libs/caffe2:nnpack - Use NNPACK
+sci-libs/caffe2:numpy - Add support for math operations through numpy
+sci-libs/caffe2:opencl - Use OpenCL
+sci-libs/caffe2:opencv - Add support for image processing operators
+sci-libs/caffe2:openmp - Use OpenMP for parallel code
+sci-libs/caffe2:qnnpack - Use QNNPACK
 sci-libs/caffe2:xnnpack - Use XNNPACK
 sci-libs/cantera:cti - Install CTI tools (ck2cti, ck2yaml, ctml_writer) for conversion of Chemkin files to Cantera format
 sci-libs/cddlib:tools - Add a few executables and tests for cddlib
