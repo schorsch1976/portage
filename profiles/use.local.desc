@@ -2430,6 +2430,7 @@ dev-python/bpython:urwid - Ebable dev-python/urwid-based interface
 dev-python/bpython:watch - Enable watching paths using dev-python/watchdog
 dev-python/cvxopt:dsdp - Use interior point library sci-libs/dsdp
 dev-python/cvxopt:glpk - Use GNU Linear Programming Kit sci-mathematics/glpk
+dev-python/dnspython:dnssec - Use dev-python/cryptography to enable low-level DNSSEC RSA, DSA, ECDSA and EdDSA signature validation.
 dev-python/editorconfig-core-py:cli - Install command line interface as well as python library
 dev-python/elasticsearch-py:async - Add async support
 dev-python/hiredis:system-libs - Use dev-libs/hiredis from system
@@ -4041,6 +4042,7 @@ media-gfx/kphotoalbum:map - Enable map display support using kde-apps/marble
 media-gfx/kphotoalbum:share - Enable support for a share menu using kde-frameworks/purpose
 media-gfx/krita:color-management - Enable color management via media-libs/opencolorio
 media-gfx/krita:heif - Enable support for ISO/IEC 23008-12:2017 HEIF/HEIC image format using media-libs/libheif
+media-gfx/krita:jpegxl - Support for JPEG XL image format
 media-gfx/krita:mypaint-brush-engine - Enable MyPaint brush engine support media-libs/libmypaint
 media-gfx/krita:qtmedia - Enable sound support for animations via dev-qt/qtmultimedia
 media-gfx/krita:vc - Enable support for dev-libs/vc, could be a significant speed boost
@@ -5020,10 +5022,8 @@ media-video/handbrake:libav-aac - Support for encoding AAC using libav's interna
 media-video/handbrake:numa - Adds support for x265's NUMA capabilities.
 media-video/handbrake:x265 - Support for encoding h265 using media-libs/x265.
 media-video/kino:gpac - Enable GPAC support when exporting to 3GPP format
-media-video/libva-utils:drm - Enables VA/DRM API support.
 media-video/libva-utils:examples - Build and install decode, encode, videoprocess and other VA-API examples.
 media-video/libva-utils:putsurface - Build and install putsurface tool.
-media-video/libva-utils:test-va-api - Install test_va_api tool for thorough testing of the installed VA-API.
 media-video/libva-utils:vainfo - Build and install vainfo tool.
 media-video/makemkv:java - Handle additional Blu-ray protection mechanisms involving Java
 media-video/mjpegtools:sdlgfx - Enables y4mhist to display a graphical histogram
@@ -5116,6 +5116,7 @@ media-video/pipewire:jack-client - Install a plugin for running PipeWire as a JA
 media-video/pipewire:jack-sdk - Use PipeWire as JACK replacement
 media-video/pipewire:lv2 - Allow loading LV2 plugins via media-libs/lv2
 media-video/pipewire:pipewire-alsa - Replace PulseAudio's ALSA plugin with PipeWire's plugin
+media-video/pipewire:sound-server - Provide sound server using ALSA and bluetooth devices
 media-video/pipewire:ssl - Enable raop-sink support (needs dev-libs/openssl)
 media-video/pipewire:system-service - Install systemd unit files for running as a system service. Not recommended.
 media-video/qmplay2:audiofilters - Build with AudioFilters module
@@ -7936,9 +7937,9 @@ sys-apps/systemd:homed - Enable portable home directories
 sys-apps/systemd:hostnamed-fallback - Enable setting hostname with networkd/hostnamed without polkit (requires running sys-apps/dbus-broker)
 sys-apps/systemd:http - Enable embedded HTTP server in journald
 sys-apps/systemd:importd - Enable import daemon
+sys-apps/systemd:iptables - Use libiptc from net-firewall/iptables for NAT support in systemd-networkd; this is used only if the running kernel does not support nftables
 sys-apps/systemd:kmod - Enable kernel module loading via sys-apps/kmod
 sys-apps/systemd:lz4 - Enable lz4 compression for the journal
-sys-apps/systemd:nat - Enable support for network address translation in networkd
 sys-apps/systemd:openssl - Enable use of dev-libs/openssl for various features
 sys-apps/systemd:pkcs11 - Enable PKCS#11 support for cryptsetup and homed
 sys-apps/systemd:pwquality - Enable password quality checking in homed
@@ -8826,7 +8827,6 @@ x11-libs/libfm:automount - Use gnome-base/gvfs for automounting
 x11-libs/libfm:udisks - Use libfm's udisks-based volume monitor implementation instead of using the one from gvfs
 x11-libs/libfm:vala - Support custom actions in menus
 x11-libs/libva:drm - Enables VA/DRM API support.
-x11-libs/libva:utils - Install VA-API utility programs.
 x11-libs/libva-compat:drm - Enables VA/DRM API support.
 x11-libs/libva-compat:egl - Enables EGL support.
 x11-libs/libva-intel-driver:hybrid - Enable support for hybrid vaapi hardware acceleration on Intel Haswell and newer architectures
