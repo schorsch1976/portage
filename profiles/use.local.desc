@@ -1776,6 +1776,7 @@ dev-lang/moarvm:ubsan - Enable clang's Undefined Behavior Sanitizer functionalit
 dev-lang/mono:pax-kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
 dev-lang/mono:xen - Make mono generate code that is considerably faster on xen VMs but slightly slower on for normal systems.
 dev-lang/neko:apache - Build Apache modules
+dev-lang/nim:experimental - Apply experimental patches
 dev-lang/nqp:clang - Toggle usage of the clang compiler in conjunction with MoarVM
 dev-lang/nqp:moar - Build the MoarVM backend (experimental/broken)
 dev-lang/ocaml:flambda - Enables the Flambda optimizer: A new intermediate representation (introduced in ocaml 4.03) in the depths of the compiler designed to allow for better inlining.
@@ -8169,8 +8170,6 @@ sys-cluster/rdma-core:python - Enable pyverbs support
 sys-cluster/rdma-core:valgrind - Enable valgrind notations
 sys-cluster/resource-agents:libnet - Force use of net-libs/libnet
 sys-cluster/resource-agents:rgmanager - Install resources for rgmanager
-sys-cluster/singularity:network - Install network plug-ins
-sys-cluster/singularity:suid - Install SUID helper binary
 sys-cluster/slurm:html - Build html documentation
 sys-cluster/slurm:ipmi - Build support for collecting some ipmi stats
 sys-cluster/slurm:json - Add support for json-persing via json-c
