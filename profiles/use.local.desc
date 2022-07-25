@@ -827,6 +827,8 @@ app-misc/gramps:rcs - Adds support for family tree archives via dev-vcs/rcs
 app-misc/gramps:reports - All external software that is needed for graphical reports will be installed
 app-misc/graphlcd-base:fontconfig - Add support for media-libs/fontconfig font names.
 app-misc/graphlcd-base:freetype - Add support for media-libs/freetype.
+app-misc/graphlcd-base:graphicsmagick - Add support for media-gfx/graphicsmagick.
+app-misc/graphlcd-base:imagemagick - Add support for media-gfx/imagemagick.
 app-misc/irtrans-irserver:mono - Enable mono support
 app-misc/jdupes:dedupe - Enable deduplication support
 app-misc/jdupes:lowmem - Enable support for low-memory operation
@@ -1457,7 +1459,6 @@ dev-haskell/atomic-primops:debug - Enable extra internal checks.
 dev-haskell/attoparsec-iso8601:developer - operate in developer mode
 dev-haskell/attoparsec-iso8601:fast - compile without optimizations
 dev-haskell/authenticate:network-uri - Get Network.URI from the network-uri package
-dev-haskell/aws:network-3 - Use network-3
 dev-haskell/bifunctors:semigroups - You can disable the use of the `semigroups` package using `-f-semigroups`. Disabing this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users.
 dev-haskell/bifunctors:tagged - You can disable the use of the `tagged` package using `-f-tagged`. Disabing this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users.
 dev-haskell/biosff:fclip - Build the 'fclip' executable.
@@ -1549,7 +1550,6 @@ dev-haskell/lua:system-lua - Use @pkg-config@ to discover library and include pa
 dev-haskell/missingh:network-3 - Use network-3
 dev-haskell/mod:semirings - Derive semiring instances
 dev-haskell/monad-logger:template-haskell - Enable Template Haskell support.
-dev-haskell/monad-par:chaselev - Use Chase-Lev Deques for higher-perf work-stealing.
 dev-haskell/nats:binary - enable binary instances
 dev-haskell/nats:hashable - enable hashable instances
 dev-haskell/nats:template-haskell - enable template_haskell
@@ -1603,9 +1603,6 @@ dev-haskell/semirings:hashable - Enisable the use of the `hashable` package. Dis
 dev-haskell/semirings:unordered-containers - Enable the use of the `unordered-containers` package. Disabling this may be useful for accelerating builds in sandboxes for expert users.
 dev-haskell/sendfile:portable - Explicitly enable portable sendfile support (implemented in Haskell)
 dev-haskell/sha:exe - Build a sha1 and a sha384 executable similar to 'md5sum'.
-dev-haskell/shakespeare:test-coffee - Render tests through coffeescript render function.
-dev-haskell/shakespeare:test-export - Test export.
-dev-haskell/shakespeare:test-roy - Render tests through roy render function.
 dev-haskell/shelly:lifted - run the tests against Shelly.Lifted
 dev-haskell/simple-sendfile:allow-bsd - Allow use of BSD sendfile (disable on GNU/kFreeBSD)
 dev-haskell/skein:big-endian - When manually selecting the endianness, use big-endian (default is little-endian).
@@ -1619,7 +1616,6 @@ dev-haskell/snap-server:openssl - enable https support using dev-haskell/hsopens
 dev-haskell/snap-server:portable - no non-haskell unportable code.
 dev-haskell/splitmix:optimised-mixer - Use JavaScript for mix32
 dev-haskell/splitmix:random - Providen RandomGen SMGen instance
-dev-haskell/stack:developer-mode - By default, should extra developer information be output?
 dev-haskell/store-core:force-alignment - No description
 dev-haskell/texmath:executable - Compile test executable.
 dev-haskell/texmath:network-uri - Get Network.URI from the network-uri package.
@@ -1648,8 +1644,8 @@ dev-haskell/vector-algorithms:unsafechecks - Enable bounds checking in unsafe op
 dev-haskell/vector-instances:hashable - use dev-haskell/hashable
 dev-haskell/void:safe - dissable effective but unsafe coersions
 dev-haskell/wai-app-static:print - print debug info.
-dev-haskell/warp:allow-sendfilefd - Allow use of sendfileFd (not available on GNU/kFreeBSD).
-dev-haskell/warp:warp-debug - Add additional debuging information
+dev-haskell/warp:allow-sendfilefd - Allow use of sendfileFd (not available on GNU/kFreeBSD)
+dev-haskell/warp:x509 - Adds a dependency on the x509 library to enable getting TLS client certificates.
 dev-haskell/wcwidth:cli - Enable command line tool
 dev-haskell/wreq:aws - Enable AWS tests
 dev-haskell/wreq:httpbin - Install client
@@ -5284,7 +5280,6 @@ net-analyzer/graphite-web:memcached - Enable memcached support
 net-analyzer/gvm:cli - Command Line Interface for OpenVAS Scanner
 net-analyzer/gvm:gsa - Greenbone Security Assistant (WebUI)
 net-analyzer/gvm:ospd - Enable support for scanner wrappers
-net-analyzer/gvm-libs:extras - Html docs support
 net-analyzer/hexinject:experimental - Install experimental packets.tcl
 net-analyzer/hexinject:tools - Install hex2raw and prettypacket tools
 net-analyzer/httping:tfo - Enable support for TCP Fast Open
@@ -8747,9 +8742,7 @@ www-servers/gatling:diet - Compile against dev-libs/dietlibc
 www-servers/h2o:libh2o - Build and install libh2o
 www-servers/h2o:mruby - Enable support for mruby
 www-servers/lighttpd:brotli - Enable output compression via app-arch/brotli (recommended)
-www-servers/lighttpd:bzip2 - Enable output compression via bzip2
 www-servers/lighttpd:gnutls - Build module for TLS via net-libs/gnutls
-www-servers/lighttpd:libev - Enable fdevent handler
 www-servers/lighttpd:maxminddb - Add support for geolocation using dev-libs/libmaxminddb
 www-servers/lighttpd:mbedtls - Build module for TLS via net-libs/mbedtls
 www-servers/lighttpd:mmap - Use mmap when sendfile is not available
@@ -9118,6 +9111,7 @@ x11-wm/windowmaker:modelock - Enable XKB language status lock support. README sa
 x11-wm/windowmaker:xrandr - Enable XRandR window extension support
 x11-wm/wmfs:imlib2 - Enable image support through media-libs/imlib2
 x11-wm/xmonad:no-autorepeat-keys - Allow ignoring of keyboard autorepeat.
+x11-wm/xmonad-contrib:xft - Use Xft to render text
 x11-wm/xpra:brotli - Enable brotli compression support
 x11-wm/xpra:client - Build client-side code
 x11-wm/xpra:clipboard - Enable clipboard support
