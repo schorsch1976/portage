@@ -76,7 +76,6 @@ app-admin/hddtemp:network-cron - Monthly cronjob to update hddtemp.db.
 app-admin/keepass:aot - Generate native code at build time, rather than runtime.
 app-admin/keepassxc:autotype - Add support to autotype the passwords into other applications
 app-admin/keepassxc:browser - Enables browser plugin support
-app-admin/keepassxc:ccache - Use dev-util/ccache to build keepassxc
 app-admin/keepassxc:keeshare - Enable KeeShare sharing integration
 app-admin/keepassxc:network - Enable network support
 app-admin/keepassxc:yubikey - Enable database unlocking via YubiKey.
@@ -1719,6 +1718,9 @@ dev-java/pdfbox:tools - Build and install pdfbox-tools
 dev-java/rxtx:lfd - Installs and uses LockFileServer daemon (lfd)
 dev-java/sbt:binary - Install from (Gentoo-compiled) binary instead of building from sources. Set this when you run out of memory during build.
 dev-lang/R:lto - Use link-time optimization for R and its recommended packages.
+dev-lang/ammonite-repl-bin:scala2-13 - Install Ammonite for Scala 2.13
+dev-lang/ammonite-repl-bin:scala3-0 - Install Ammonite for Scala 3.0
+dev-lang/ammonite-repl-bin:scala3-1 - Install Ammonite for Scala 3.1
 dev-lang/bas:lr0 - Use the LR0 parser instead of the recursive descending parser
 dev-lang/crystal:debug - Build each module as a separate object file. Speeds build up.
 dev-lang/erlang:hipe - HIgh Performance Erlang extension
@@ -3081,7 +3083,6 @@ games-emulation/pcsxr:ccdda - Support compressed CDDA (requires ffmpeg)
 games-emulation/pcsxr:cdio - Use libcdio for CD support
 games-emulation/pcsxr:sdl - Use SDL sound backend (other parts of SDL are used unconditionally)
 games-emulation/ppsspp:discord - Enable interfacing with a locally running Discord desktop client
-games-emulation/ppsspp:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled
 games-emulation/snes9x:glslang - Build support for slang-type shaders
 games-emulation/snes9x:libretro - Build libretro port
 games-emulation/snes9x:netplay - Enable playing ROMs over the network (not recommended)
@@ -3453,7 +3454,6 @@ kde-apps/kdecore-meta:share - Install kde-frameworks/purpose for share file cont
 kde-apps/kdecore-meta:thumbnail - Install kde-apps/ffmpegthumbs and kde-apps/thumbnailers for thumbnail generation in kde-apps/dolphin
 kde-apps/kdecore-meta:webengine - Enable www-client/falkon which depends on dev-qt/qtwebengine
 kde-apps/kdeedu-meta:webengine - Enable packages requiring dev-qt/qtwebengine
-kde-apps/kdegraphics-mobipocket:thumbnail - Enables thumbnail generation
 kde-apps/kdemultimedia-meta:cdrom - Include packages for optical discs
 kde-apps/kdenetwork-meta:bittorrent - Pull in net-p2p/ktorrent for BitTorrent protocol support
 kde-apps/kdenetwork-meta:dropbox - Enable support for Dropbox in kde-apps/dolphin via kde-apps/dolphin-plugins-dropbox
@@ -3593,7 +3593,6 @@ kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking bac
 kde-frameworks/sonnet:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-misc/kdeconnect:X - Enable remote input mousepad plugin using x11-libs/libfakekey
 kde-misc/kdeconnect:pulseaudio - Enable system volume control plugin using media-sound/pulseaudio
-kde-misc/kio-gdrive:kaccounts - Use kde-apps/kaccounts-integration backend (default) instead of dev-libs/qtkeychain
 kde-misc/kio-gdrive:share - Enable support for a share menu using kde-frameworks/purpose
 kde-misc/tellico:bibtex - Add support for bibtex importing using btparse from dev-perl/Text-BibTeX
 kde-misc/tellico:discid - Add support for reading disc IDs from audio CDs
