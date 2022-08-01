@@ -33,6 +33,11 @@
 
 #--- END OF EXAMPLES ---
 
+# Matthew Smith <matthew@gentoo.org> (2022-07-31)
+# No updates since 2010, dead homepage, and incompatible with newer
+# sci-libs/gsl. Bug #862486. Removal on 2022-08-31.
+sci-chemistry/numbat
+
 # Marc Schiffbauer <mschiff@gentoo.org> (2022-07-30)
 # No update since 2016, compilation and build system
 # errors
@@ -483,37 +488,6 @@ games-engines/nazghul
 # Removal on 2022-08-09.  Bug #857252.
 dev-python/pydispatcher
 
-# David Seifert <soap@gentoo.org> (2022-07-02)
-# Unmaintained, no response on bugs, stuck on python 3.9. If you
-# want to unmask these, you have to at least port them to python 3.10.
-# Bugs #809524, #809527, #809530, #809533, #809833, #845729, #845816,
-# #846017, #846200, #846203, #846206, #853844, removal on 2022-08-01.
-app-misc/siglo
-dev-python/gatt-python
-dev-python/pynput
-media-libs/elgato-streamdeck
-media-video/streamdeck-ui
-net-wireless/jackit
-net-wireless/kismet-rest
-net-wireless/kismetdb
-
-# Sam James <sam@gentoo.org> (2022-07-02)
-# Deprecated dependencies, no activity upstream. Bugs #845615, #796326.
-# Removal on 2022-08-02.
-app-vim/pyclewn
-
-# Michał Górny <mgorny@gentoo.org> (2022-07-02)
-# Last release in 2014.  Archived upstream, and superseded by GeoIP2
-# (not packaged).  There is only one revdep (net-p2p/deluge) for which
-# it is optional.
-# Removal on 2022-08-01.  Bug #855737.
-dev-python/geoip-python
-
-# Matthew Smith <matthew@gentoo.org> (2022-07-02)
-# Superseded by dev-util/rebar:3.
-# Removal in 30 days. Bug #855728.
-dev-util/rebar-bin
-
 # Fabian Groffen <grobian@gentoo.org> (2022-07-02)
 # Segfaults handling SPF validations (warn on permerror), like the
 # previous release, better not to trust your important mail to
@@ -524,11 +498,6 @@ dev-util/rebar-bin
 ~app-editors/emacs-28.1.90
 ~app-editors/emacs-28.1.91
 ~app-editors/emacs-28.1.92
-
-# Marek Szuba <marecki@gentoo.org> (2022-06-30)
-# A GNOME 2-era library with no consumers left in the tree, marked
-# as deprecated since March 2022. Removal in 30 days (Bug #855299).
-gnome-extra/gtkhtml
 
 # Sam James <sam@gentoo.org> (2022-05-28)
 # GCC 9 and older no longer receive upstream support or fixes for
