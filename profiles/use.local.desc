@@ -2407,8 +2407,8 @@ dev-python/PyQt6:webchannel - Build bindings for the QtWebChannel module
 dev-python/PyQt6:websockets - Build bindings for the QtWebSockets module
 dev-python/PyQt6:widgets - Build bindings for the QtWidgets module
 dev-python/PyQt6:xml - Build bindings for the QtXml module
-dev-python/PyQt6_WebEngine:quick - Build bindings for the QtWebEngineQuick module
-dev-python/PyQt6_WebEngine:widgets - Build bindings for the QtWebEngineWidgets module
+dev-python/PyQt6-WebEngine:quick - Build bindings for the QtWebEngineQuick module
+dev-python/PyQt6-WebEngine:widgets - Build bindings for the QtWebEngineWidgets module
 dev-python/QtPy:declarative - Build bindings for the QtQml and QtQuick modules and enable the qmlscene plugin
 dev-python/QtPy:designer - Pull in bindings for the QtDesigner module and enable the designer plugin
 dev-python/QtPy:gui - Pull in bindings for the QtGui module
@@ -2471,6 +2471,7 @@ dev-python/pyocr:tesseract - Enable support for the app-text/tesseract OCR engin
 dev-python/pypax:ptpax - Enable PT_PAX_FLAGS support.
 dev-python/pypax:xtpax - Enable XATTR_PAX_FLAGS support.
 dev-python/pypy-exe:low-memory - Build using PyPy with the engine configured towards low memory footprint. This makes it possible to build PyPy using ~3.5G of RAM on amd64 and ~half of that on x86, at the cost of lengthened build time.
+dev-python/pypy3:ensurepip - Install the ensurepip module that uses bundled wheels to bootstrap pip and setuptools (if disabled, it will be only possible to use venv `--without-pip`)
 dev-python/pypy3-exe:low-memory - Build using PyPy with the engine configured towards low memory footprint. This makes it possible to build PyPy using ~3.5G of RAM on amd64 and ~half of that on x86, at the cost of lengthened build time.
 dev-python/pyside2:3d - Build Qt3DCore, Qt3DAnimation, Qt3DExtras, Qt3DInput, Qt3DLogic, and Qt3DRender modules
 dev-python/pyside2:charts - Build QtCharts module
@@ -7957,7 +7958,6 @@ sys-apps/systemd:fido2 - Enable FIDO2 support
 sys-apps/systemd:gcrypt - Enable use of dev-libs/libgcrypt for various features
 sys-apps/systemd:gnuefi - Enable EFI boot manager and stub loader (built using sys-boot/gnu-efi)
 sys-apps/systemd:homed - Enable portable home directories
-sys-apps/systemd:hostnamed-fallback - Enable setting hostname with networkd/hostnamed without polkit (requires running sys-apps/dbus-broker)
 sys-apps/systemd:http - Enable embedded HTTP server in journald
 sys-apps/systemd:importd - Enable import daemon
 sys-apps/systemd:iptables - Use libiptc from net-firewall/iptables for NAT support in systemd-networkd; this is used only if the running kernel does not support nftables
