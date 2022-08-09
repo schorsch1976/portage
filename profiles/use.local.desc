@@ -3414,6 +3414,7 @@ gui-libs/wlroots:X - Enable support for X11 applications (XWayland)
 gui-libs/wlroots:vulkan - Enable support for the vulkan backend renderer
 gui-libs/wlroots:x11-backend - Enable support for handling input/output devices through x11-libs/libxcb
 gui-libs/xdg-desktop-portal-wlr:elogind - Enable support for rootless session via elogind
+gui-wm/gamescope:pipewire - Enable screen capture via PipeWire
 gui-wm/hikari:X - Enable support for X11 applications (XWayland)
 gui-wm/sway:X - Enable support for X11 applications (XWayland)
 gui-wm/sway:grimshot - Install 'grimshot': script for taking screenshots
@@ -7578,6 +7579,9 @@ sci-mathematics/lcalc:double - Use double precision (the upstream default)
 sci-mathematics/lcalc:double-double - Use sci-libs/qdfor double-double precision
 sci-mathematics/lcalc:pari - Use sci-mathematics/pari for elliptic curve L-functions
 sci-mathematics/lcalc:quad-double - Use sci-libs/qdfor quad-double precision
+sci-mathematics/mathematica:R - Enable dev-lang/R backend support
+sci-mathematics/mathematica:cuda - Install with cuda support
+sci-mathematics/mathematica:ffmpeg - Enable media-video/ffmpeg backend support
 sci-mathematics/maxima:clisp - Compile maxima with GNU CLISP (dev-lisp/clisp)
 sci-mathematics/maxima:clozurecl - Compile maxima with 32-bit Clozure Common Lisp (dev-lisp/clozurecl)
 sci-mathematics/maxima:clozurecl64 - Compile maxima with 64-bit Clozure Common Lisp (dev-lisp/clozurecl)
