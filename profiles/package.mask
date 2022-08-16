@@ -34,6 +34,27 @@
 #--- END OF EXAMPLES ---
 
 # John Helmert III <ajak@gentoo.org> (2022-08-14)
+# Vulnerable, unmaintained in Gentoo, EAPI6. Removal in 30 days,
+# bug #772209
+app-crypt/keybase
+
+# John Helmert III <ajak@gentoo.org> (2022-08-14)
+# Remote code execution vulnerability, dead upstream. Removal in 30
+# days, bug #791004.
+x11-terms/mrxvt
+
+# John Helmert III <ajak@gentoo.org> (2022-08-14)
+# Dead upstream, vulnerable, no revdeps except a usedep. Removal in 30
+# days, bug #618000
+media-libs/libaacplus
+
+# John Helmert III <ajak@gentoo.org> (2022-08-14)
+# Many vulnerabilities (including code execution and root privilege
+# escalation), effectively unmaintained. Removal in 30 days, bugs
+# #631552, #790296, #842789
+sys-cluster/slurm
+
+# John Helmert III <ajak@gentoo.org> (2022-08-14)
 # Vulnerable and unmaintained for years, many open bugs, no revdeps,
 # EAPI 6. Removal in 30 days, bug 733354
 net-misc/calico-cni-plugin
@@ -135,11 +156,6 @@ app-crypt/kbfs
 # Fails to build with ffmpeg 5, no reverse dependencies, maintainer-needed,
 # and no commits upstream since 2017. Bug #834383. Removal on 2022-08-26.
 media-libs/libgroove
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2022-07-25)
-# Merged into kde-apps/kalarm since 22.04.3, no other revdeps, obsolete.
-# Masked for removal on 2022-08-08.
-kde-apps/kalarmcal
 
 # Michał Górny <mgorny@gentoo.org> (2022-07-25)
 # aioredis has been integrated in >=dev-python/redis-py-4.2.0.
