@@ -33,6 +33,140 @@
 
 #--- END OF EXAMPLES ---
 
+# hololeap <hololeap@protonmail.com> (2022-08-21)
+# Monolithic mask for dev-haskell/* packages which have no reverse dependencies,
+# are broken, or severely out of date. The aim is to have the Haskell overlay
+# (::haskell) be the place for development packages and only have packages
+# needed for end-user applications in ::gentoo, as the status quo has
+# proven to be unsustainable. More up-to-date versions of these packages
+# are available in ::haskell.
+# Removal on 2022-09-19.
+app-portage/fquery
+dev-games/goatee
+dev-haskell/megaparsec
+dev-haskell/parser-combinators
+dev-haskell/megaparsec-tests
+dev-haskell/hspec-megaparsec
+dev-haskell/neat-interpolation
+dev-haskell/stack
+dev-haskell/abstract-deque-tests
+dev-haskell/aeson-diff
+dev-haskell/annotated-wl-pprint
+dev-haskell/authenticate-oauth
+dev-haskell/base-prelude
+dev-haskell/base-unicode-symbols
+dev-haskell/casa-client
+dev-haskell/casa-types
+dev-haskell/cipher-aes128
+dev-haskell/concurrent-extra
+dev-haskell/configurator
+dev-haskell/contravariant-extras
+dev-haskell/convertible
+dev-haskell/cpphs
+dev-haskell/crypto-pubkey-types
+dev-haskell/cryptohash
+dev-haskell/cryptohash-cryptoapi
+dev-haskell/data-default-instances-base
+dev-haskell/dns
+dev-haskell/drbg
+dev-haskell/edit-distance-vector
+dev-haskell/either
+dev-haskell/errorcall-eq-instance
+dev-haskell/filelock
+dev-haskell/filemanip
+dev-haskell/filepattern
+dev-haskell/fsnotify
+dev-haskell/ghc-lib-parser
+dev-haskell/ghc-lib-parser-ex
+dev-haskell/githash
+dev-haskell/groupoids
+dev-haskell/groups
+dev-haskell/haddock
+dev-haskell/haddock-api
+dev-haskell/hashable-time
+dev-haskell/hashtables
+dev-haskell/haskell-src-meta
+dev-haskell/hdbc
+dev-haskell/hdbc-odbc
+dev-haskell/hdbc-postgresql
+dev-haskell/hdbc-sqlite3
+dev-haskell/hi-file-parser
+dev-haskell/hlint
+dev-haskell/hpack
+dev-haskell/hslogger
+dev-haskell/hsopenssl
+dev-haskell/hsyaml-aeson
+dev-haskell/http-common
+dev-haskell/http-download
+dev-haskell/http-streams
+dev-haskell/hxt
+dev-haskell/hxt-charproperties
+dev-haskell/hxt-regex-xmlschema
+dev-haskell/hxt-unicode
+dev-haskell/infer-license
+dev-haskell/interpolate
+dev-haskell/io-streams
+dev-haskell/io-streams-haproxy
+dev-haskell/iwlib
+dev-haskell/js-flot
+dev-haskell/js-jquery
+dev-haskell/keys
+dev-haskell/lens-aeson
+dev-haskell/memotrie
+dev-haskell/mintty
+dev-haskell/missingh
+dev-haskell/mustache
+dev-haskell/newtype-generics
+dev-haskell/open-browser
+dev-haskell/openssl-streams
+dev-haskell/optparse-simple
+dev-haskell/pantry
+dev-haskell/parallel-io
+dev-haskell/path-io
+dev-haskell/pointed
+dev-haskell/polyparse
+dev-haskell/prettyclass
+dev-haskell/project-template
+dev-haskell/readable
+dev-haskell/rebase
+dev-haskell/refact
+dev-haskell/regex-applicative-text
+dev-haskell/regex-compat-tdfa
+dev-haskell/regex-pcre
+dev-haskell/rerebase
+dev-haskell/rfc5051
+dev-haskell/rio-orphans
+dev-haskell/rio-prettyprint
+dev-haskell/rsa
+dev-haskell/selective
+dev-haskell/snap-core
+dev-haskell/snap-server
+dev-haskell/tar-conduit
+dev-haskell/template-haskell-compat-v0208
+dev-haskell/text-metrics
+dev-haskell/th-expand-syns
+dev-haskell/th-orphans
+dev-haskell/th-reify-many
+dev-haskell/threads
+dev-haskell/vector-builder
+dev-haskell/vector-instances
+dev-haskell/weigh
+dev-haskell/wreq
+dev-haskell/xhtml
+dev-haskell/zlib-bindings
+dev-util/shelltestrunner
+net-mail/list-remote-forwards
+net-mail/mailbox-count
+net-misc/haeredes
+net-misc/hath
+dev-util/bnfc
+
+# hololeap <hololeap@protonmail.com> (2022-08-21)
+# doctest-parallel does not currently work with Setup.hs (used internally by
+# haskell-cabal.eclass)
+# See: <https://github.com/martijnbastiaan/doctest-parallel/issues/45>
+dev-haskell/doctest-parallel
+
 # John Helmert III <ajak@gentoo.org> (2022-08-16)
 # Multiple vulnerabilities, unmaintained upstream, EAPI 6. Removal in 30
 # days, bug #830138
@@ -69,6 +203,12 @@ sys-cluster/slurm
 # EAPI 6. Removal in 30 days, bug 733354
 net-misc/calico-cni-plugin
 net-misc/calicoctl
+
+# Sam James <sam@gentoo.org> (2022-08-14)
+# Removes MSVC functionality which some packages are relying on - they
+# need time to adapt to upstream setuptools changes.
+# bug #865183.
+=dev-python/setuptools-65.0.0
 
 # John Helmert III <ajak@gentoo.org> (2022-08-14)
 # Vulnerable and unmaintained for years, many open bugs, no revdeps
@@ -359,141 +499,6 @@ dev-haskell/monad-journal
 dev-haskell/monad-unlift
 dev-haskell/monadcatchio-mtl
 dev-haskell/monadcatchio-transformers
-dev-haskell/monadlib
-dev-haskell/monadplus
-dev-haskell/monadrandom
-dev-haskell/mono-traversable-instances
-dev-haskell/mtl-compat
-dev-haskell/multipart
-dev-haskell/murmur-hash
-dev-haskell/mutable-containers
-dev-haskell/mysql
-dev-haskell/mysql-simple
-dev-haskell/network-conduit
-dev-haskell/network-data
-dev-haskell/newtype
-dev-haskell/nonce
-dev-haskell/numinstances
-dev-haskell/numtype-dk
-dev-haskell/objectname
-dev-haskell/openal
-dev-haskell/opengl
-dev-haskell/openglraw
-dev-haskell/pandoc-citeproc
-dev-haskell/pango
-dev-haskell/pcap
-dev-haskell/persistent-mysql
-dev-haskell/persistent-postgresql
-dev-haskell/persistent-qq
-dev-haskell/pid1
-dev-haskell/pipes
-dev-haskell/postgresql-libpq
-dev-haskell/postgresql-simple
-dev-haskell/pqueue
-dev-haskell/prelude-extras
-dev-haskell/preprocessor-tools
-dev-haskell/process-extras
-dev-haskell/profunctor-extras
-dev-haskell/psqueue
-dev-haskell/publicsuffixlist
-dev-haskell/punycode
-dev-haskell/pwstore-fast
-dev-haskell/quickcheck-unicode
-dev-haskell/ranges
-dev-haskell/readargs
-dev-haskell/readline
-dev-haskell/recaptcha
-dev-haskell/regex-pcre-builtin
-dev-haskell/riff
-dev-haskell/say
-dev-haskell/semigroupoid-extras
-dev-haskell/sendfile
-dev-haskell/shakespeare-css
-dev-haskell/shakespeare-i18n
-dev-haskell/shakespeare-js
-dev-haskell/shakespeare-text
-dev-haskell/shell-escape
-dev-haskell/size-based
-dev-haskell/stack-bin
-dev-haskell/stmonadtrans
-dev-haskell/store
-dev-haskell/store-core
-dev-haskell/stream
-dev-haskell/stringable
-dev-haskell/stringprep
-dev-haskell/stringsearch
-dev-haskell/syb-with-class
-dev-haskell/system-posix-redirect
-dev-haskell/tagshare
-dev-haskell/tagstream-conduit
-dev-haskell/tasty-ant-xml
-dev-haskell/tensor
-dev-haskell/testing-feat
-dev-haskell/testing-type-modifiers
-dev-haskell/text-binary
-dev-haskell/text-stream-decode
-dev-haskell/th-utilities
-dev-haskell/thyme
-dev-haskell/top
-dev-haskell/unexceptionalio
-dev-haskell/uniqueid
-dev-haskell/unixutils
-dev-haskell/uri
-dev-haskell/uri-bytestring
-dev-haskell/uri-bytestring-aeson
-dev-haskell/uri-encode
-dev-haskell/url
-dev-haskell/uuagc
-dev-haskell/uuagc-cabal
-dev-haskell/uulib
-dev-haskell/vector-space
-dev-haskell/wai-conduit
-dev-haskell/wai-test
-dev-haskell/wavy
-dev-haskell/with-location
-dev-haskell/wl-pprint
-dev-haskell/wl-pprint-text
-dev-haskell/wx
-dev-haskell/wxc
-dev-haskell/wxcore
-dev-haskell/wxdirect
-dev-haskell/xmlgen
-dev-haskell/yesod-auth
-dev-haskell/yesod-auth-hashdb
-dev-haskell/yesod-default
-dev-haskell/yesod-json
-dev-haskell/zlib-conduit
-dev-haskell/zlib-enum
-dev-util/bustle
-games-board/goatee-gtk
-sci-mathematics/agda
-sci-mathematics/agda-stdlib
-www-apps/gitit
-
-# Sam James <sam@gentoo.org> (2022-07-22)
-# Severely broken, unbuildable with modern glibc, several versions out of date,
-# needs a big rework. Bugs #766294, #775545, #855197, #727912, #831868, #696938,
-# and #531996, #836111, #818721. Removal on 2022-08-22.
-sci-mathematics/rstudio
-dev-haskell/pandoc-citeproc
-
-# Hans de Graaff <graaff@gentoo.org> (2022-07-20)
-# Obsolete ruby26-only slot without reverse dependencies. Use a newer
-# slot instead. Masked for removal in 30 days.
-dev-ruby/activeldap:5
-dev-ruby/web-console:3
-
-# Sam James <sam@gentoo.org> (2022-07-19)
-# Unaddressed file collisions, fails to build with slibtool, EAPI 6, and
-# out of date. Bugs #800617, #658318. No reverse dependencies in ::gentoo
-# and needs a dependency in ::sci to run tests. Removal on 2022-08-19.
-sci-libs/io_lib
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2022-07-19)
-# No upstream commits since 2017, broken by yr.no widget discontinuation.
-# Replaced by kde-misc/kweather from KDE Plasma Mobile Gear.
-# Removal on 2022-08-18.
-kde-misc/plasma-applet-weather-widget
 
 # Hans de Graaff <graaff@gentoo.org> (2022-07-16)
 # No longer supported upstream. Use a newer ruby version instead.
