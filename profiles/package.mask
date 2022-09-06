@@ -33,6 +33,11 @@
 
 #--- END OF EXAMPLES ---
 
+# Mike Gilbert <floppym@gentoo.org> (2022-09-05)
+# Crash due to double-free.
+# https://bugs.gentoo.org/868567
+=sys-apps/gawk-5.2.0
+
 # Marc Schiffbauer <mschiff@gentoo.org> (2022-09-02)
 # Dead upstream, open bugs, removal in 30 days
 # bugs #829447, #836227, #862504
@@ -292,10 +297,6 @@ app-admin/logcheck
 # https://www.erlang.org/patches/otp-24.0#incompatibilities
 <dev-lang/erlang-24
 ~dev-lang/elixir-1.11.4
-
-# Fabian Groffen <grobian@gentoo.org> (2022-08-06)
-# superseeded by sys-apps/baselayout, removal in 30 days.  bug #836114
-sys-apps/baselayout-prefix
 
 # Jimi Huotari <chiitoo@gentoo.org> (2022-08-02)
 # Masked for testing. The split of some packages may still

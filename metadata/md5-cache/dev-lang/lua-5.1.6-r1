@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=>=app-eselect/eselect-lua-3 readline? ( sys-libs/readline:= ) !dev-lang/lua:0
+DESCRIPTION=A powerful light-weight programming language designed for extending applications
+EAPI=8
+HOMEPAGE=https://www.lua.org/
+INHERIT=optfeature
+IUSE=+deprecated readline
+LICENSE=MIT
+RDEPEND=>=app-eselect/eselect-lua-3 readline? ( sys-libs/readline:= ) !dev-lang/lua:0
+SLOT=5.1
+SRC_URI=https://dev.gentoo.org/~soap/distfiles/lua-5.1.6.tar.xz
+_eclasses_=optfeature	1a2157392a869265b2afcb63a26c12ac
+_md5_=3e8a0f7fe94dc4bfd7a10e856d2fd888
