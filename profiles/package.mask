@@ -33,6 +33,16 @@
 
 #--- END OF EXAMPLES ---
 
+# Stephan Hartmannr <sultan@gentoo.org> (2022-09-12)
+# Unpatched security vulerabilities, bug #868156, bug #868354.
+www-client/chromium-bin
+
+# Mike Gilbert <floppym@gentoo.org> (2022-09-12)
+# repoman is no longer maintained and has been removed from the portage
+# git repository. Please use dev-util/pkgcheck and dev-util/pkgdev instead.
+# Removal on 2022-11-11. Bug #835013.
+app-portage/repoman
+
 # Michał Górny <mgorny@gentoo.org> (2022-09-11)
 # Bad quality package with failing tests.  No revdeps.
 # Removal on 2022-10-11.  Bug #869650.
@@ -368,12 +378,6 @@ dev-qt/qtwebsockets:6
 # Segfaults handling SPF validations (warn on permerror), like the
 # previous release, better not to trust your important mail to
 ~mail-mta/exim-4.96
-
-# Ulrich Müller <ulm@gentoo.org> (2022-06-30)
-# Pretest versions, masked for testing.
-~app-editors/emacs-28.1.90
-~app-editors/emacs-28.1.91
-~app-editors/emacs-28.1.92
 
 # Sam James <sam@gentoo.org> (2022-05-28)
 # GCC 9 and older no longer receive upstream support or fixes for
