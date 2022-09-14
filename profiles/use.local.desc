@@ -652,7 +652,6 @@ app-emulation/wine-staging:capi - Enable ISDN support using net-libs/libcapi
 app-emulation/wine-staging:crossdev-mingw - Use sys-devel/crossdev for the toolchain rather than dev-util/mingw64-toolchain (requires manual setting up)
 app-emulation/wine-staging:dos - Pull in games-emulation/dosbox to run DOS applications
 app-emulation/wine-staging:gecko - Enable mshtml support using app-emulation/wine-gecko
-app-emulation/wine-staging:gssapi - Use GSSAPI (Kerberos SSP support)
 app-emulation/wine-staging:mingw - Build PE files using a MinGW toolchain for better compatibility
 app-emulation/wine-staging:mono - Enable .NET support using app-emulation/wine-mono
 app-emulation/wine-staging:netapi - Enable support for configuring remote shares using net-fs/samba
@@ -2800,7 +2799,6 @@ dev-util/diffoscope:ssh - Use net-misc/openssh
 dev-util/diffoscope:tar - Use app-arch/tar
 dev-util/diffoscope:tcpdump - Use net-analyzer/tcpdump
 dev-util/diffoscope:zip - Use app-arch/unzip
-dev-util/edb-debugger:jumbo-build - Experimental jumbo (also known as unity) build capability
 dev-util/edi:clang - Provide integration with sys-devel/clang and dev-util/bear for autocompletion, inline errors and information about compilation units.
 dev-util/flatpak-builder:yaml - Use libyaml for yaml support
 dev-util/geany:gtk2 - Use GTK+2 instead of GTK+3
@@ -2842,6 +2840,7 @@ dev-util/kdevelop:qmake - Enable support for QMake build system
 dev-util/kdevelop:reviewboard - Enable reviewboard support
 dev-util/kernelshark:custom-optimization - Build with user-specified compiler optimizations (-Os, -O0, -O1, -O2, -O3) from CFLAGS
 dev-util/kup:gitolite - Enable support for dev-vcs/gitolite in kup-server
+dev-util/librnp:botan - Use Botan crypto backend instead of OpenSSL
 dev-util/ltrace:unwind - Use sys-libs/libunwind for frame unwinding support
 dev-util/lttng-tools:ust - Support LTTng-UST (Userspace Tracing)
 dev-util/lttng-ust:numa - Enable numa support
@@ -6159,7 +6158,6 @@ net-libs/webkit-gtk:avif - Enable support for AVIF images via media-libs/libavif
 net-libs/webkit-gtk:egl - Enable EGL support
 net-libs/webkit-gtk:examples - Install the MiniBrowser example application
 net-libs/webkit-gtk:gamepad - Enable gamepad input support via dev-libs/libmanette
-net-libs/webkit-gtk:geolocation - Enable geolocation support through app-misc/geoclue
 net-libs/webkit-gtk:jumbo-build - Combine source files to speed up build process
 net-libs/wvstreams:boost - Use dev-libs/boost to provide TR1-compatible functional interface. This USE flag is only needed with GCC earlier than version 4.1, or with other compilares not providing said interface.
 net-libs/xdp-tools:tools - Install various helper tools rather than just libxdp.
@@ -7864,7 +7862,6 @@ sys-apps/kmod:zlib - Enable support for gzipped modules
 sys-apps/kmscon:drm - Enable Linux DRM for backend
 sys-apps/kmscon:fbdev - Enable Linux FBDev for backend
 sys-apps/kmscon:gles2 - Enable GLES2 for backend
-sys-apps/kmscon:optimizations - Enable optimizations
 sys-apps/kmscon:pango - Enable pango font rendering
 sys-apps/kmscon:pixman - Enable pixman font rendering
 sys-apps/kmscon:systemd - Enable multiseat support via systemd
