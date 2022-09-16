@@ -33,6 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Joonas Niilola <juippis@gentoo.org> (2022-09-15)
+# Upstream split this font into separate packages: media-fonts/
+# source-code-pro, source-sans, source-serif. The current non-split
+# version is broken. Removal in 30 days. #865103
+media-fonts/source-pro
+
 # Stephan Hartmannr <sultan@gentoo.org> (2022-09-12)
 # Unpatched security vulerabilities, bug #868156, bug #868354.
 www-client/chromium-bin
@@ -310,12 +316,6 @@ x11-terms/mrxvt
 media-libs/libaacplus
 
 # John Helmert III <ajak@gentoo.org> (2022-08-14)
-# Many vulnerabilities (including code execution and root privilege
-# escalation), effectively unmaintained. Removal in 30 days, bugs
-# #631552, #790296, #842789
-sys-cluster/slurm
-
-# John Helmert III <ajak@gentoo.org> (2022-08-14)
 # Vulnerable and unmaintained for years, many open bugs, no revdeps,
 # EAPI 6. Removal in 30 days, bug 733354
 net-misc/calico-cni-plugin
@@ -372,7 +372,7 @@ dev-qt/qtwebsockets:6
 
 # Sam James <sam@gentoo.org> (2022-08-02)
 # Multiple rendering/font issues reported: bug #844115, bug #851141.
-=app-text/ghostscript-gpl-9.56.1
+>=app-text/ghostscript-gpl-9.56.1
 
 # Fabian Groffen <grobian@gentoo.org> (2022-07-02)
 # Segfaults handling SPF validations (warn on permerror), like the
