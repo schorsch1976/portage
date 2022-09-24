@@ -1764,6 +1764,7 @@ dev-lang/rust:nightly - Enable nightly (UNSTABLE) features (NOTE: it does not in
 dev-lang/rust:parallel-compiler - Build a multi-threaded rustc (experimental, not tested by upstream)
 dev-lang/rust:profiler - Build the profiler runtime and rust-demangler tool (needed for '-C profile-generate' or '-C instrument-coverage' codegen opts)
 dev-lang/rust:rls - Install rls, Rust Language Server (used with IDEs supporting RLS protocol)
+dev-lang/rust:rust-analyzer - Install rust-analyzer, A Rust compiler front-end for IDEs (like rls)
 dev-lang/rust:rust-src - Install rust-src, needed by developer tools and for build-std (cross)
 dev-lang/rust:rustfmt - Install rustfmt, Rust code formatter
 dev-lang/rust:system-bootstrap - Bootstrap using installed rust compiler
@@ -1771,6 +1772,7 @@ dev-lang/rust:system-llvm - Use the system LLVM installation
 dev-lang/rust:wasm - Build support for the wasm32-unknown-unknown target
 dev-lang/rust-bin:clippy - Install clippy, Rust code linter
 dev-lang/rust-bin:rls - Install rls, Rust Language Server (used with IDEs supporting RLS protocol)
+dev-lang/rust-bin:rust-analyzer - Install rust-analyzer, A Rust compiler front-end for IDEs (like rls)
 dev-lang/rust-bin:rust-src - Install rust-src, needed by developer tools and for build-std (cross)
 dev-lang/rust-bin:rustfmt - Install rustfmt, Rust code formatter
 dev-lang/scala:binary - Install from (Gentoo-compiled) binary instead of building from sources. Set this when you run out of memory during build.
@@ -4094,6 +4096,7 @@ media-gfx/openvdb:numpy - Build pyopenvdb with support for dev-python/numpy
 media-gfx/openvdb:utils - Build utility binaries
 media-gfx/photoqt:devil - Support additional image formats using media-libs/devil
 media-gfx/photoqt:freeimage - Support additional image formats using media-libs/freeimage
+media-gfx/photoqt:mpv - Support for video files using media-video/mpv
 media-gfx/potrace:metric - default to a4 paper size and metric measurement
 media-gfx/povray:io-restrictions - POV-Ray's mechanism for control of I/O operations
 media-gfx/pqiv:archive - Enable support for images in archives and cbX comic book files
@@ -8886,7 +8889,7 @@ x11-misc/clipmenu:rofi - Use rofi as default launcher
 x11-misc/colord:argyllcms - Enable ArgyllCMS sensor
 x11-misc/colord:extra-print-profiles - Generate extra print profiles. Warning: significant build time and memory requirements.
 x11-misc/fbpager:xrender - Enable transparency support via x11-libs/libXrender
-x11-misc/gmrun:xdg - Enable xdf spec for configuration and history file location
+x11-misc/gmrun:xdg - Enable xdg spec for configuration and history files location
 x11-misc/gpaste:gnome - Enable proper gnome support and enable gnome shell extension.
 x11-misc/grsync:gtk3 - Link against x11-libs/gtk+:3 instead of x11-libs/gtk+:2
 x11-misc/gtkdialog:gtk2 - Build with GTK+2 instead of GTK+3
