@@ -33,11 +33,15 @@
 
 #--- END OF EXAMPLES ---
 
-# Matt Turner <mattst88@gentoo.org> (2022-10-02)
-# Masked for testing
->=app-accessibility/at-spi2-core-2.46.0
->=app-accessibility/at-spi2-atk-2.46.0
->=dev-libs/atk-2.46.0
+# Sam Jaems <sam@gentoo.org> (2022-10-04)
+# Please upgrade to >= portage-3.0.37 for binpkg fixes.
+# bug #870283, bug #874771.
+=sys-apps/portage-3.0.31
+=sys-apps/portage-3.0.32
+=sys-apps/portage-3.0.33
+=sys-apps/portage-3.0.34
+=sys-apps/portage-3.0.35
+=sys-apps/portage-3.0.36
 
 # Matt Turner <mattst88@gentoo.org> (2022-10-01)
 # Depends on lots of unmaintained packages:
@@ -433,7 +437,9 @@ sys-devel/automake:1.11
 >=gnome-extra/evolution-data-server-3.46
 >=gnome-extra/evolution-ews-3.46
 >=gnome-extra/gnome-calculator-43
+>=gnome-extra/gnome-clocks-43
 >=gnome-extra/gnome-shell-extensions-43
+>=gnome-extra/sushi-43
 >=mail-client/evolution-3.46
 >=mail-client/geary-43
 media-libs/libshumate
@@ -443,6 +449,7 @@ net-libs/uhttpmock:1.0
 net-libs/webkit-gtk:4.1
 sci-geosciences/geocode-glib:2
 >=sci-geosciences/gnome-maps-43
+>=www-client/epiphany-43
 >=x11-wm/mutter-43
 
 # Thomas Deutschmann <whissi@gentoo.org> (2021-09-07)

@@ -3159,6 +3159,7 @@ games-fps/worldofpadman:maps - Install extra maps (PadPack)
 games-fps/xonotic:ode - Enable support for physics engine from dev-games/ode
 games-fps/yamagi-quake2:client - Build client
 games-fps/yamagi-quake2:ctf - Build support for the 'Capture The Flag' addon
+games-fps/yamagi-quake2:gles - Build GLES3 renderer
 games-fps/yamagi-quake2:rogue - Build support for the 'Ground Zero' Mission Pack
 games-fps/yamagi-quake2:softrender - Build software renderer
 games-fps/yamagi-quake2:vulkan - Build experimental Vulkan renderer
@@ -3374,6 +3375,7 @@ gui-libs/vte:icu - Enable legacy charset support using dev-libs/icu
 gui-libs/vte:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM
 gui-libs/vte-common:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM
 gui-libs/wlroots:X - Enable support for X11 applications (XWayland)
+gui-libs/wlroots:tinywl - Install the minimal wayland client, tinywl
 gui-libs/wlroots:vulkan - Enable support for the vulkan backend renderer
 gui-libs/wlroots:x11-backend - Enable support for handling input/output devices through x11-libs/libxcb
 gui-libs/xdg-desktop-portal-wlr:elogind - Enable support for rootless session via elogind
@@ -4024,7 +4026,6 @@ media-gfx/graphviz:devil - Enables DevIL output plugin -Tdevil
 media-gfx/graphviz:gtk2 - Enables gtk+ output plugin -Tgtk (needs cairo)
 media-gfx/graphviz:gts - Enables support for GNU Triangulated Surface Library (required for sfdp to work)
 media-gfx/graphviz:lasi - Enables PostScript output via media-libs/lasi, for plugin -Tlasi (needs cairo)
-media-gfx/graphviz:lefty - Builds lefty front-end, requires x11-libs/libXmu and x11-libs/libXaw
 media-gfx/gthumb:heif - Enable support for ISO/IEC 23008-12:2017 HEIF/HEIC image format using media-libs/libheif
 media-gfx/gthumb:http - Enable webservice integration through net-libs/webkit-gtk
 media-gfx/gthumb:jpegxl - Support for JPEG XL image format
@@ -4284,7 +4285,8 @@ media-libs/libvpx:postproc - Enable additional post processing filters
 media-libs/libwebp:swap-16bit-csp - Enable byte swapping for 16 bit colorspace
 media-libs/libzmf:tools - Build conversion tools
 media-libs/lilv:tools - Build command line utilities
-media-libs/lsp-plugins:lv2 - build lv2 plugins
+media-libs/lsp-plugins:lv2 - Build lv2 plugins
+media-libs/lsp-plugins:vst - Support LinuxVST plugins
 media-libs/lv2:plugins - Enables examples plugins.
 media-libs/lvtk:gtk2 - Enable x11-libs/gtk+:2 based GUI support
 media-libs/lvtk:tools - Compile and install ttl2c tool
@@ -5831,8 +5833,10 @@ net-im/teams:swiftshader - Install SwiftShader OpenGL libaries.
 net-im/teams:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled.
 net-im/teams:system-mesa - Use the system-wide media-libs/mesa instead of bundled.
 net-im/telegram-desktop:enchant - Enable the app-text/aspell spell-checking backend
+net-im/telegram-desktop:fonts - Use builtin patched copy of open-sans fonts (overrides fontconfig)
 net-im/telegram-desktop:hunspell - Enable the app-text/hunspell spell-checking backend
 net-im/telegram-desktop:qt6 - Build with Qt6 support
+net-im/telegram-desktop:qt6-imageformats - Add support for HEIF, AVIF and JpegXL by bundling kde-frameworks/kimageformats
 net-im/telepathy-connection-managers:gadu - Enable Gadu Gadu protocol support.
 net-im/telepathy-connection-managers:icq - Enable ICQ IM protocol support.
 net-im/telepathy-connection-managers:irc - Enable Internet Relay Chat (IRC) support.
@@ -6691,6 +6695,7 @@ net-nds/rpcbind:remotecalls - Enable remote calls
 net-nds/rpcbind:warmstarts - Enables rpcbind to cache configuration for warm restarts
 net-nds/tac_plus:finger - Adds support for checking user counts via fingering the NAS
 net-nds/tac_plus:maxsess - Enforce a limit on maximum sessions per user
+net-news/rssguard:qt6 - Build with Qt6 support instead of the default Qt5
 net-news/rssguard:webengine - Use dev-qt/qtwebengine for embedded web browser
 net-news/sfeed:theme-mono - Use mono theme
 net-news/sfeed:theme-mono-highlight - Use mono_highlight theme
