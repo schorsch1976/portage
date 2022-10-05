@@ -1,8 +1,27 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Conrad Kostecki <conikost@gentoo.org> (2022-10-04)
+# Binary package depends on glibc, so we need to mask for musl.
+sys-apps/tas
+
+# Sam James <sam@gentoo.org> (2022-10-04)
+# Packages with dubious sys-libs/glibc dependencies (non-binary) but
+# masking for now to allow musl profiles to graduate from exp->dev.
+dev-db/pgbouncer
+dev-libs/cgreen
+media-sound/xwax
+net-analyzer/gvmd
+net-analyzer/gvm-libs
+net-analyzer/openvas-scanner
+net-misc/grive
+net-print/pnm2ppa
+net-wireless/neard
+sys-apps/noexec
+
 # Petr Vaněk <arkamar@atlas.cz> (2022-09-23)
 # Musl does not implement rresvport function, bugs #713810 and #713376.
+app-admin/clustershell
 app-shells/pdsh
 net-analyzer/ipcad
 
@@ -41,6 +60,9 @@ net-misc/casync
 
 # Bernd Waibel <waebbl-gentoo@posteo.net> (2022-03-14)
 # Doesn't build with musl, bug #832742
+app-eselect/eselect-opencascade
+media-gfx/freecad
+media-gfx/prusaslicer
 sci-libs/opencascade
 
 # Stephan Hartmann <sultan@gentoo.org> (2022-02-10)
@@ -51,11 +73,14 @@ www-client/chromium
 # It doesn't build on musl
 # bug #832551
 net-misc/netkit-telnetd
+net-misc/sitecopy
 
 # Sam James <sam@gentoo.org> (2022-02-06)
 # Latest version doesn't build on musl
 # bug #831363
 =sys-libs/efivar-38
+app-crypt/pesign
+sys-kernel/kpatch
 
 # Andrew Ammerlaan <andrewammerlaan@gentoo.org> (2022-01-05)
 # Binary package linked to glibc (rolling mask, use for all such binpkgs)
@@ -71,6 +96,7 @@ app-editors/vscode
 app-editors/vscodium
 app-misc/kryoflux-dtc
 app-office/libreoffice-bin
+app-office/libreoffice-bin-debug
 app-text/master-pdf-editor
 app-text/zotero-bin
 dev-db/ocp
@@ -80,6 +106,8 @@ dev-games/ps2-packer
 dev-java/openjdk-bin
 dev-java/openjdk-jre-bin
 dev-libs/luise
+dev-perl/Lab-Zhinst
+dev-php/PEAR-MDB2_Driver_oci8
 dev-python/pyzotero
 dev-util/idea-community
 games-action/a-story-about-my-uncle
@@ -103,28 +131,39 @@ games-server/bedrock-server
 games-server/steamcmd
 games-server/ut2004-ded
 games-simulation/slime-rancher
+gnome-extra/nautilus-dropbox
+kde-apps/dolphin-plugins-dropbox
+mate-extra/caja-dropbox
 media-gfx/brscan4
 media-libs/amdgpu-pro-vulkan
 media-sound/baudline
 media-sound/teamspeak-server
 media-video/amdgpu-pro-amf
+media-video/dvbackup
+media-video/makemkv
 media-video/popcorntime-bin
 net-im/discord-bin
 net-im/element-desktop-bin
+net-im/gitter-bin
 net-im/mattermost-desktop-bin
 net-im/rocketchat-desktop-bin
 net-im/skypeforlinux
+net-im/skype-dbus-mock
+net-im/slack
 net-im/teams
 net-im/telegram-desktop-bin
 net-im/wazzapp-bin
 net-im/whatsapp-desktop-bin
 net-im/zoom
+net-misc/chrome-remote-desktop
 net-misc/dropbox
+net-misc/dropbox-cli
 net-misc/ipmiview
 net-misc/teamviewer
 net-misc/yandex-disk
 net-p2p/resilio-sync
 net-print/cnijfilter2
+net-print/hplip-plugin
 sci-electronics/eagle
 sci-electronics/labone
 sci-mathematics/gimps
@@ -149,6 +188,7 @@ www-client/vivaldi
 www-client/vivaldi-snapshot
 www-plugins/chrome-binary-plugins
 x11-misc/xflux
+x11-misc/xflux-gui
 
 # Ulrich Müller <ulm@gentoo.org> (2022-01-04, 2022-07-31)
 # Emacs 23 does not support x86_64-gentoo-linux-musl systems
@@ -174,7 +214,12 @@ dev-libs/level-zero
 # Use of uninitialized value $Text::WrapI18N::charmap in pattern match (m//) at /usr/lib/perl5/vendor_perl/5.34/Text/WrapI18N.pm line 155.
 # Can't exec "/usr/bin/locale": No such file or directory at /usr/lib/perl5/vendor_perl/5.34/Text/WrapI18N.pm line 134.
 # ```
+app-doc/kicad-doc
+app-i18n/man-pages-l10n
 app-text/po4a
+dev-vcs/git-annex
+games-strategy/colobot
+www-apps/ikiwiki
 
 # Hank Leininger <hlein@korelogic.com> (2021-07-14)
 # Uses glibc-specific rexec(3) function, bug #715898
@@ -184,10 +229,13 @@ net-misc/netkit-rsh
 # nvidia-drivers only works against glibc.
 dev-libs/cudnn
 dev-libs/cudnn-frontend
+dev-python/pycuda
 dev-util/nvidia-cuda-sdk
 dev-util/nvidia-cuda-toolkit
+media-video/nvidia-video-codec
 dev-libs/optix
 x11-drivers/nvidia-drivers
+x11-misc/primus
 
 # Ulrich Müller (2020-03-31)
 # Not ported to musl, bug #715642.
@@ -197,7 +245,9 @@ app-editors/jasspa-microemacs
 
 # Sergei Trofimovich <slyfox@gentoo.org> (2020-03-21)
 # musl has no support for nss subsystem.
+sys-apps/unscd
 sys-auth/libnss-nis
+sys-auth/sssd
 
 # Sergei Trofimovich <slyfox@gentoo.org> (2020-03-21)
 # Needs a port to musl. Uses glibc-specific termio and __getppid.
@@ -217,9 +267,16 @@ sys-libs/glibc
 # in supporting it.
 app-admin/mkosi
 app-admin/systemdgenie
-sys-apps/systemd
-sys-boot/systemd-boot
 dev-python/python-systemd
+gnome-extra/office-runner
+gnome-extra/gnome-logs
+sys-apps/dbus-broker
+sys-apps/gentoo-systemd-integration
+sys-apps/systemd
+sys-apps/systemd-readahead
+sys-boot/systemd-boot
+sys-power/switcheroo-control
+sys-process/systemd-cron
 >=www-misc/profile-sync-daemon-6
 
 # rust-bin requires a glibc system
