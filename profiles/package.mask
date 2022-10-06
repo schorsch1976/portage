@@ -33,6 +33,28 @@
 
 #--- END OF EXAMPLES ---
 
+# Mike Gilbert <floppym@gentoo.org> (2022-10-05)
+# Implements the obsolete BOOTP protocol; use DHCP instead.
+# No activity upstream for over two decades.
+# Fails to build with -Werror=implicit-function-declaration (#875536).
+# Removal on 2022-11-04.
+net-misc/netkit-bootpd
+
+# Matt Turner <mattst88@gentoo.org> (2022-10-01)
+# Unmaintained upstream. Last commit was 10 years ago today.
+# Unclear if it does anything useful. Many open bugs: #584352, #833102,
+# #852728, #866557, #875278.
+# Removal on 2022-11-05
+x11-libs/libva-vdpau-driver
+
+# Michał Górny <mgorny@gentoo.org> (2022-10-05)
+# Originally added for dev-python/rapidfuzz.  Now the algorithm has been
+# inlined into rapidfuzz, and the package is semi-deprecated.
+# No revdeps left in ::gentoo.
+# Removal on 2022-11-04.  Bug #875350.
+dev-cpp/jarowinkler-cpp
+dev-python/jarowinkler
+
 # Sam James <sam@gentoo.org> (2022-10-04)
 # Regression for some Intel LCDs which may cause physical damage
 # Please upgrade to 5.19.13 if affected!
@@ -46,7 +68,7 @@
 =virtual/dist-kernel-5.19.12
 
 # Sam Jaems <sam@gentoo.org> (2022-10-04)
-# Please upgrade to >= portage-3.0.37 for binpkg fixes.
+# Please upgrade to >= portage-3.0.38.1 for binpkg fixes.
 # bug #870283, bug #874771.
 =sys-apps/portage-3.0.31
 =sys-apps/portage-3.0.32
@@ -54,6 +76,8 @@
 =sys-apps/portage-3.0.34
 =sys-apps/portage-3.0.35
 =sys-apps/portage-3.0.36
+=sys-apps/portage-3.0.37
+=sys-apps/portage-3.0.38
 
 # Matt Turner <mattst88@gentoo.org> (2022-10-01)
 # Depends on lots of unmaintained packages:
@@ -453,6 +477,7 @@ sys-devel/automake:1.11
 >=gnome-extra/gnome-clocks-43
 >=gnome-extra/gnome-shell-extensions-43
 >=gnome-extra/sushi-43
+>=mail-client/balsa-2.6.4
 >=mail-client/evolution-3.46
 >=mail-client/geary-43
 media-libs/libshumate
