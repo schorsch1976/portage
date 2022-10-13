@@ -33,6 +33,20 @@
 
 #--- END OF EXAMPLES ---
 
+# Matt Turner <mattst88@gentoo.org> (2022-10-12)
+# Unmaintained and archived upstream. Last release in 2017.
+# Bug #597960.
+# Removal on 2022-11-12
+net-im/empathy
+
+# Sam James <sam@gentoo.org> (2022-10-12)
+# Upstream has withdrawn these releases because of a (yet unexplained)
+# "significant regression".
+# See https://mta.openssl.org/pipermail/openssl-announce/2022-October/000237.html.
+# and https://github.com/openssl/openssl/issues/19389.
+=dev-libs/openssl-1.1.1r
+=dev-libs/openssl-3.0.6
+
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2022-10-10)
 # Unused Java library. Removal on 2022-11-10.
 dev-java/objenesis-test
@@ -266,12 +280,6 @@ net-nds/nsscache
 # Tests fail and doesn't work on newer python targets.
 # Removal: 2022-10-10.  Bug #869512.
 dev-python/python-etcd
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2022-09-10)
-# Python 3.8 only package, with capped old dependencies, and open
-# bugs and issues.
-# Removal: 2022-10-10.  Bugs #869506, #695090, #792219, #809272.
-net-misc/electrum-ltc
 
 # Arthur Zamarin <arthurzam@gentoo.org> (2022-09-10)
 # Upstream repository archived. Python 3.8 only, with issues for
@@ -515,6 +523,7 @@ media-libs/libshumate
 >=net-libs/gnome-online-accounts-3.46
 >=net-libs/gssdp-1.6
 >=net-libs/gupnp-1.6
+>=net-misc/gupnp-tools-0.12
 net-libs/libsoup:3.0
 net-libs/phodav:3.0
 net-libs/rest:1.0
@@ -528,6 +537,7 @@ sci-geosciences/geocode-glib:2
 >=sys-libs/libosinfo-1.10.0-r1
 >=www-client/epiphany-43
 >=x11-wm/mutter-43
+>=dev-util/gnome-builder-43.2
 
 # Thomas Deutschmann <whissi@gentoo.org> (2021-09-07)
 # Masked while being tested and reverse deps aren't fully compatible
