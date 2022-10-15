@@ -33,10 +33,48 @@
 
 #--- END OF EXAMPLES ---
 
+# Matt Turner <mattst88@gentoo.org> (2022-10-14)
+# Last upstream release in 2013. Last upstream commit in 2019. No maintainer in
+# Gentoo. No reverse dependencies. EAPI=6.
+# Depends on unmaintained packages:
+# 	- x11-libs/vte:0
+# Bug #811540.
+# Removal on 2022-11-14
+x11-terms/lilyterm
+
+# Matt Turner <mattst88@gentoo.org> (2022-10-14)
+# Unmaintained upstream with last commit in 2013. No reverse dependencies.
+# Depends on unmaintained packages:
+# 	- x11-libs/gtk+:2
+# 	- x11-libs/vte:0
+# Bugs #769131, #875704.
+# Removal on 2022-11-14
+x11-misc/gtkdialog
+
+# Matt Turner <mattst88@gentoo.org> (2022-10-14)
+# Unmaintained upstream. Last release in 2008. Only reverse dependency is
+# gnome-mud, which is masked for removal.
+# Bugs #349301, #713152, #802723, #808435, #870730, #877079.
+# Removal on 2022-11-14
+net-libs/gnet
+
+# Matt Turner <mattst88@gentoo.org> (2022-10-14)
+# Needs upstream work to modernize codebase. Depends on lots of unmaintained
+# packages:
+# 	- app-text/rarian
+# 	- gnome-base/gconf
+# 	- gnome-base/libglade
+# 	- net-libs/gnet:2
+# 	- x11-libs/gtk+:2
+# 	- x11-libs/vte:0
+# Bugs #670904, #873859
+# Removal on 2022-11-14
+games-mud/gnome-mud
+
 # Sam James <sam@gentoo.org> (2022-10-13)
 # Depends on vulnerable version of Rust. See bug #877005.
 # Will be unmasked once dependency is updated.
-www-client/seamonkey
+<www-client/seamonkey-2.53.14-r1
 
 # Joshua Kinard <kumba@gentoo.org> (2022-10-13)
 # Difficult-to-resolve build issues on modern toolchains,
@@ -256,46 +294,11 @@ dev-libs/satyr
 # Removal: 2022-10-18.
 media-sound/pulseaudio-modules-bt
 
-# Joonas Niilola <juippis@gentoo.org> (2022-09-16)
-# This theme has been incorporated to enlightenment-0.25, and with
-# 0.24 removed from Gentoo's git tree, this ebuild is useless. Removal
-# in 30 days. #870355
-x11-themes/e-flat-theme
-
 # Mike Gilbert <floppym@gentoo.org> (2022-09-12)
 # repoman is no longer maintained and has been removed from the portage
 # git repository. Please use dev-util/pkgcheck and dev-util/pkgdev instead.
 # Removal on 2022-11-11. Bug #835013.
 app-portage/repoman
-
-# Michał Górny <mgorny@gentoo.org> (2022-09-11)
-# Bad quality package with failing tests.  No revdeps.
-# Removal on 2022-10-11.  Bug #869650.
-dev-python/pytest-pylint
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2022-09-10)
-# Python 3.8 only. EAPI=6 ebuild. 5 open bugs. Issues with newer
-# dependencies versions.
-# Removal: 2022-10-10.  Bugs #869524, #684334.
-net-analyzer/flent
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2022-09-10)
-# Python 3.8 only package. Tests are disabled. Newer targets fail
-# more tests then 3.8 target.
-# Removal: 2022-10-10.  Bug #869521.
-net-nds/nsscache
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2022-09-10)
-# Python 3.8 only package, with inactive since 2017 upstream.
-# Tests fail and doesn't work on newer python targets.
-# Removal: 2022-10-10.  Bug #869512.
-dev-python/python-etcd
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2022-09-10)
-# Upstream repository archived. Python 3.8 only, with issues for
-# newer targets. No reverse dependencies in tree.
-# Removal: 2022-10-10.  Bugs #869503, #747997, #832242.
-dev-python/SaltTesting
 
 # Matthias Schwarzott <zzam@gentoo.org> (2022-09-08)
 # Breaks kernel builds with BTF enabled.
@@ -502,13 +505,16 @@ sys-devel/automake:1.11
 # Migration to it is expected for GNOME 42, NOT to be unmasked with GNOME 41.
 >=app-arch/file-roller-43
 >=app-backup/deja-dup-43
->=app-text/libgepub-0.7.0
+>=app-crypt/seahorse-43
 >=app-misc/tracker-3.4.0-r1
 >=app-misc/tracker-miners-3.4.0-r1
+>=app-text/gtranslator-42
+>=app-text/libgepub-0.7.0
 >=dev-libs/gjs-1.74
 >=dev-libs/libgweather-4.2.0
 >=dev-python/nautilus-python-4.0
 >=dev-util/devhelp-43
+>=dev-util/gnome-builder-43
 >=gnome-base/gnome-applets-3.46
 >=gnome-base/gnome-desktop-43
 >=gnome-base/gnome-flashback-3.46
@@ -520,6 +526,7 @@ sys-devel/automake:1.11
 >=gnome-extra/evolution-ews-3.46
 >=gnome-extra/gnome-boxes-43
 >=gnome-extra/gnome-calculator-43
+>=gnome-extra/gnome-calendar-43
 >=gnome-extra/gnome-clocks-43
 >=gnome-extra/gnome-shell-extensions-43
 >=gnome-extra/gnome-software-43
@@ -530,16 +537,17 @@ sys-devel/automake:1.11
 >=media-gfx/gnome-photos-43
 media-libs/libshumate
 >=net-irc/polari-43
+net-libs/dleyna
 >=net-libs/gnome-online-accounts-3.46
 >=net-libs/gssdp-1.6
 >=net-libs/gupnp-1.6
->=net-misc/gupnp-tools-0.12
 net-libs/libsoup:3.0
 net-libs/phodav:3.0
 net-libs/rest:1.0
 net-libs/uhttpmock:1.0
 net-libs/webkit-gtk:4.1
 net-libs/webkit-gtk:5
+>=net-misc/gupnp-tools-0.12
 >=net-misc/rygel-0.42
 sci-geosciences/geocode-glib:2
 >=sci-geosciences/gnome-maps-43
@@ -547,7 +555,6 @@ sci-geosciences/geocode-glib:2
 >=sys-libs/libosinfo-1.10.0-r1
 >=www-client/epiphany-43
 >=x11-wm/mutter-43
->=dev-util/gnome-builder-43.2
 
 # Thomas Deutschmann <whissi@gentoo.org> (2021-09-07)
 # Masked while being tested and reverse deps aren't fully compatible

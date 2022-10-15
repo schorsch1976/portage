@@ -18,7 +18,7 @@ SRC_URI="ftp://ftp.isc.org/isc/dhcp/${MY_P}.tar.gz
 
 LICENSE="MPL-2.0 BSD SSLeay GPL-2" # GPL-2 only for init script
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc x86"
+KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 IUSE="+client ipv6 ldap selinux +server ssl vim-syntax"
 
 DEPEND="
@@ -50,26 +50,26 @@ src_unpack() {
 PATCHES=(
 	# Gentoo patches - these will probably never be accepted upstream
 	# Fix some permission issues
-	"${FILESDIR}/${PN}-3.0-fix-perms.patch"
+	"${FILESDIR}/${PN}-4.4.3-fix-perms.patch"
 
 	# Enable dhclient to equery NTP servers
-	"${FILESDIR}/${PN}-4.3.6-dhclient-ntp.patch"
-	"${FILESDIR}/${PN}-4.3.6-dhclient-resolvconf.patch"
+	"${FILESDIR}/${PN}-4.4.3-dhclient-ntp.patch"
+	"${FILESDIR}/${PN}-4.4.3-dhclient-resolvconf.patch"
 
 	# Enable dhclient to get extra configuration from stdin
-	"${FILESDIR}/${PN}-4.2.2-dhclient-stdin-conf.patch"
+	"${FILESDIR}/${PN}-4.4.3-dhclient-stdin-conf.patch"
 	# bug #265531
-	"${FILESDIR}/${PN}-4.3.6-nogateway.patch"
+	"${FILESDIR}/${PN}-4.4.3-nogateway.patch"
 	# bug #296921
-	"${FILESDIR}/${PN}-4.3.6-quieter-ping.patch"
+	"${FILESDIR}/${PN}-4.4.3-quieter-ping.patch"
 	# bug #437108
-	"${FILESDIR}/${PN}-4.4.0-always-accept-4.patch"
+	"${FILESDIR}/${PN}-4.4.3-always-accept-4.patch"
 	# bug #480636
-	"${FILESDIR}/${PN}-4.3.6-iproute2-path.patch"
+	"${FILESDIR}/${PN}-4.4.3-iproute2-path.patch"
 	# bug #471142
-	"${FILESDIR}/${PN}-4.2.5-bindtodevice-inet6.patch"
+	"${FILESDIR}/${PN}-4.4.3-bindtodevice-inet6.patch"
 	# bug #559832
-	"${FILESDIR}/${PN}-4.3.3-ldap-ipv6-client-id.patch"
+	"${FILESDIR}/${PN}-4.4.3-ldap-ipv6-client-id.patch"
 
 	# Possible upstream candidates
 )
