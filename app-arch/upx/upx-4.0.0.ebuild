@@ -16,3 +16,8 @@ KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~sparc ~x86"
 
 RDEPEND="!app-arch/upx-bin"
 BDEPEND="app-arch/xz-utils[extra-filters]"
+
+src_test() {
+	# Don't run tests in parallel, #878977
+	cmake_src_test -j1
+}
