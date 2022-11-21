@@ -2158,6 +2158,10 @@
     <subproject ref="tools-portage@gentoo.org"/>
     <subproject ref="sandbox@gentoo.org"/>
     <member>
+      <email>ajak@gentoo.org</email>
+      <name>John Helmert III</name>
+    </member>
+    <member>
       <email>floppym@gentoo.org</email>
       <name>Mike Gilbert</name>
     </member>

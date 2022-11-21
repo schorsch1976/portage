@@ -6,16 +6,18 @@
 # This file is only for generic masks. For arch-specific masks (i.e.
 # mask everywhere, unmask on arch/*) use arch/base.
 
+# Sam James <sam@gentoo.org> (2022-11-19)
+# Needs long-EOL dev-lang/spidermonkey:60 (which also needs python:2.7).
+media-libs/coin javascript
+
 # Michał Górny <mgorny@gentoo.org> (2022-11-19)
 # Requires packages masked for removal.
 mail-mta/netqmail authcram
 mail-mta/notqmail authcram
-media-plugins/gst-plugins-meta libvisual
 
 # Michał Górny <mgorny@gentoo.org> (2022-11-17)
 # Require packages masked for removal.
 net-analyzer/netdata kinesis
-kde-apps/kdesdk-meta python
 
 # Michał Górny <mgorny@gentoo.org> (2022-11-17)
 # Requires dev-python/gevent that is masked for removal.
