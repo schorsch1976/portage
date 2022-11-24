@@ -416,6 +416,7 @@ app-editors/emacs:mailutils - Retrieve e-mail using net-mail/mailutils instead o
 app-editors/emacs:source - Install C source files and make them available for find-function
 app-editors/emacs:threads - Add elisp threading support
 app-editors/emacs:toolkit-scroll-bars - Use the selected toolkit's scrollbars in preference to Emacs' own scrollbars
+app-editors/emacs:tree-sitter - Support the dev-libs/tree-sitter parsing library
 app-editors/emacs:wide-int - Prefer wide Emacs integers (typically 62-bit). This option has an effect only on architectures where "long" and "long long" types have different size.
 app-editors/emacs:xwidgets - Enable use of GTK widgets in Emacs buffers (requires GTK3)
 app-editors/fe:sendmail - Send mail after editor abend
@@ -1726,6 +1727,7 @@ dev-lang/python:ensurepip - Install the ensurepip module that uses bundled wheel
 dev-lang/python:libedit - Link readline extension against dev-libs/libedit instead of sys-libs/readline
 dev-lang/python:lto - Optimize the build using Link Time Optimization (LTO)
 dev-lang/python:pgo - Optimize the build using Profile Guided Optimization (PGO)
+dev-lang/python:valgrind - Disable pymalloc when running under dev-util/valgrind is detected (may incur minor performance penalty even when valgrind is not used)
 dev-lang/python:wininst - Install Windows executables required to create an executable installer for MS Windows
 dev-lang/python-exec:native-symlinks - Install generic symlinks like python and python3. If this flag is disabled, only versioned python3.X executables will be available to end users and ebuilds not using python eclasses.
 dev-lang/qu-prolog:pedro - Pedro subscription/notification communications system
@@ -6034,6 +6036,7 @@ net-libs/gnutls:test-full - Enable full test mode
 net-libs/gnutls:tls-heartbeat - Enable the Heartbeat Extension in TLS and DTLS
 net-libs/gnutls:tools - Build extra tools
 net-libs/gnutls:valgrind - Enable usage of dev-util/valgrind in debug
+net-libs/gssdp:man - Generate man page for tools
 net-libs/ldns:dane - Enable DNS-based Authentication of Named Entities (DANE) support
 net-libs/ldns:ecdsa - Enable ECDSA support
 net-libs/ldns:ed25519 - Enable ED25519 support
@@ -6617,6 +6620,7 @@ net-misc/remmina:kwallet - Enable KDE Wallet plugin
 net-misc/remmina:spice - Support connecting to SPICE-enabled virtual machines
 net-misc/remmina:ssh - Enable support for SSH/SFTP protocol
 net-misc/remmina:x2go - Enable support for X2Go
+net-misc/rsync:rrsync - Install rrsync script to setup restricted rsync users via ssh logins
 net-misc/rsync:stunnel - Provide helper scripts for using rsync via >=net-misc/stunnel-4
 net-misc/rsync:system-zlib - Use system zlib instead of bundled one. This is incompatible with older rsync releases!
 net-misc/rsync:xxhash - Enable dev-libs/xxhash support for hashing
@@ -6655,7 +6659,6 @@ net-misc/tigervnc:drm - Build with DRM support
 net-misc/tigervnc:server - Build TigerVNC server
 net-misc/uftp:server - Install uftp server daemon
 net-misc/vde:pcap - Enable the pcap-based plugin that allows creating a switch against a real interface.
-net-misc/vde:ssl - Enable the cryptcab plugin that allows creating an encrypted virtual cable.
 net-misc/wget:cookie-check - Enable cookie checks via net-libs/libpsl
 net-misc/wget:metalink - Enable support for media-libs/libmetalink
 net-misc/wget:ntlm - Enable support for NTLM (Windows-based) authorization
@@ -8322,6 +8325,7 @@ sys-fs/android-file-transfer-linux:fuse - Add FUSE mount helper
 sys-fs/android-file-transfer-linux:zune - Enable support for Microsoft Zune
 sys-fs/avfs:lzip - Enable app-arch/lzip support via app-arch/lzlib
 sys-fs/avfs:webdav - Allow mounting WebDAV shares via net-libs/neon
+sys-fs/bcachefs-tools:fuse - Enable bcachefs FUSE support (experimental!)
 sys-fs/bees:tools - Build extra tools useful for debugging (fiemap, fiewalk)
 sys-fs/btrfs-progs:convert - Build ext2 conversion utility (btrfs-convert)
 sys-fs/btrfs-progs:reiserfs - Enable reiserfs support in btrfs-convert tool.
@@ -8345,7 +8349,7 @@ sys-fs/cryptsetup:pwquality - Use dev-libs/libpwquality for password quality che
 sys-fs/cryptsetup:reencrypt - Build cryptsetup-reencrypt
 sys-fs/cryptsetup:ssh - Build cryptsetup-ssh for experimental support of token via SSH-server
 sys-fs/cryptsetup:urandom - Use /dev/urandom instead of /dev/random
-sys-fs/dmraid:intel_led - Enable Intel LED support
+sys-fs/dmraid:intel-led - Enable Intel LED support
 sys-fs/dmraid:led - Enable LED support
 sys-fs/dmraid:mini - Create a minimal binary suitable for early boot environments
 sys-fs/dosfstools:compat - Install symlinks for legacy names of the tools
