@@ -33,6 +33,11 @@
 
 #--- END OF EXAMPLES ---
 
+# Michael Mair-Keimberger <mmk@levelnine.at> (2022-11-25)
+# Unmaintained, last release a decade ago, upstream declared it EOL
+# Removal in 30 days.
+net-analyzer/snortsam
+
 # John Helmert III <ajak@gentoo.org> (2022-11-24)
 # Binary package several releases behind the source-based package,
 # multiple vulnerabilities, unmaintained for several years. Removal in
@@ -196,7 +201,6 @@ dev-python/Rx
 dev-python/bert
 dev-python/flask-assets
 dev-python/libpy_simdjson
-dev-python/parallax
 dev-python/pytest-salt
 dev-python/requests_pkcs12
 dev-python/slackclient
@@ -215,7 +219,6 @@ net-analyzer/carl
 net-im/skype-dbus-mock
 sci-libs/bmrblib
 sci-mathematics/relational
-sys-cluster/crmsh
 
 # Michał Górny <mgorny@gentoo.org> (2022-11-17)
 # Rarely used package with very high maintenance cost.  Hacky, requires
