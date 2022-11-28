@@ -3367,6 +3367,8 @@ gui-libs/vte:icu - Enable legacy charset support using dev-libs/icu
 gui-libs/vte:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM
 gui-libs/vte-common:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM
 gui-libs/wlroots:X - Enable support for X11 applications (XWayland)
+gui-libs/wlroots:hwdata - Use system hwdata
+gui-libs/wlroots:seatd - Enable libseatd session support
 gui-libs/wlroots:tinywl - Install the minimal wayland client, tinywl
 gui-libs/wlroots:vulkan - Enable support for the vulkan backend renderer
 gui-libs/wlroots:x11-backend - Enable support for handling input/output devices through x11-libs/libxcb
@@ -7745,6 +7747,7 @@ sys-apps/coreutils:caps - Add Linux capabilities support in output of file utili
 sys-apps/coreutils:hostname - Build the hostname program
 sys-apps/coreutils:kill - Build the kill program
 sys-apps/coreutils:multicall - Build all tools into a single `coreutils` program akin to busybox to save space
+sys-apps/coreutils:openssl - Use openssl libcrypto hash routines for hash functions
 sys-apps/coreutils:split-usr - Enable this if /bin and /usr/bin are separate directories
 sys-apps/cpu-x:bandwidth - Intégrer bandwidth
 sys-apps/cpu-x:cpu - Use the dev-libs/libcpuid library for CPU info
