@@ -33,6 +33,11 @@
 
 #--- END OF EXAMPLES ---
 
+# John Helmert III <ajak@gentoo.org> (2022-11-27)
+# Unmaintained upstream, several unresolved public vulnerabilities,
+# Removal in 30 days. Bug #882773.
+www-servers/boa
+
 # David Seifert <soap@gentoo.org> (2022-11-27)
 # Broke API for C++, causes massive carnage for consumers.
 # Bug #883223.
@@ -322,13 +327,6 @@ net-mail/vchkuser
 # Bug #864543
 <dev-lang/erlang-25
 <net-misc/rabbitmq-server-3.11.0
-
-# Ionen Wolkens <ionen@gentoo.org> (2022-11-11)
-# Had a handful of reports of unbootable systems with this new version.
-# Given it's a still-experimental new branch, mask for now in case.
-# Feel free to unmask if you've had no issues, but otherwise please
-# report to NVIDIA. https://bugs.gentoo.org/881025
-~x11-drivers/nvidia-drivers-525.53
 
 # Matt Turner <mattst88@gentoo.org> (2022-11-11)
 # Relies on function no longer present in the Xserver since v1.20
