@@ -1072,7 +1072,7 @@ app-shells/bash:mem-scramble - Build with custom malloc/free overwriting allocat
 app-shells/bash:net - Enable /dev/tcp/host/port redirection
 app-shells/bash:pgo - Optimize the build using Profile Guided Optimization (PGO)
 app-shells/bash:plugins - Add support for loading builtins at runtime via 'enable'
-app-shells/bash-completion:eselect - Support blacklisting of completions via 'eselect bash-completion'. This enables custom Gentoo patching of upstream completion loader.
+app-shells/bash-completion:eselect - Support blacklisting of completions via 'eselect bashcomp'. This enables custom Gentoo patching of upstream completion loader.
 app-shells/mksh:lksh - variant that uses POSIX-compliant arithmetics with the host “long” data type and is automatically in POSIX mode when called as /bin/sh
 app-shells/nushell:extra - Install extra plugins: binaryview, tree, clipboard-cli, trash-support and others
 app-shells/pdsh:rsh - This allows the use of rsh (remote shell) and rcp (remote copy) for authoring websites. sftp is a much more secure protocol and is preferred.
@@ -3371,6 +3371,7 @@ gui-apps/mako:icons - Enable support for icons
 gui-apps/swaybg:gdk-pixbuf - Support image types other than PNG
 gui-apps/swayidle:elogind - Enable support for rootless session via elogind
 gui-apps/swaylock:gdk-pixbuf - Enable additional image format support via the x11-libs/gdk-pixbuf library
+gui-apps/waybar:experimental - Enable experimental features
 gui-apps/waybar:mpd - Enable support for the Music Player Daemon
 gui-apps/waybar:network - Enable libnl support for network related features
 gui-apps/waybar:popups - Enable popup support with gtk-layer-shell
@@ -7852,6 +7853,7 @@ sys-apps/fwupd:uefi - Enable UEFI support
 sys-apps/gawk:mpfr - Use dev-libs/mpfr for high precision arithmetic (-M / --bignum)
 sys-apps/gawk:pma - Experimental Persistent Memory Allocator (PMA) support which allows persistence of variables, arrays, and user-defined functions across runs.
 sys-apps/gnome-disk-utility:fat - Include FAT16/FAT32 support (sys-fs/dosfstools)
+sys-apps/grep:egrep-fgrep - Install deprecated 'egrep' and 'fgrep' wrappers for 'grep -E' and 'grep -F' respectively. GNU grep 3.8 onwards warns about their usage by default, but the versions installed by this flag do not. No deprecation warnings are emitted when this flag is enabled.
 sys-apps/groff:uchardet - Enable automatic encoding detection via app-i18n/uchardet
 sys-apps/hwloc:X - use the X Window System
 sys-apps/hwloc:cairo - Enable the Cairo back-end of hwloc's lstopo command
@@ -8036,6 +8038,7 @@ sys-auth/pambase:securetty - Enable pam_securetty module in the login stack. Not
 sys-auth/pambase:sha512 - Switch Linux-PAM's pam_unix module to use sha512 for passwords hashes rather than MD5. This option requires sys-libs/pam version 1.0.1 built against sys-libs/glibc version 2.7, if it's built against an earlier version, it will silently be ignored, and MD5 hashes will be used. All the passwords changed after this USE flag is enabled will be saved to the shadow file hashed using SHA512 function. The password previously saved will be left untouched. Please note that while SHA512-hashed passwords will still be recognised if the USE flag is removed, the shadow file will not be compatible with systems using an earlier glibc version.
 sys-auth/pambase:systemd - Use pam_systemd module to register user sessions in the systemd control group hierarchy.
 sys-auth/pambase:yescrypt - Switch Linux-PAM's pam_unix module to use yescrypt for passwords hashes rather than MD5
+sys-auth/polkit:daemon - Build polkitd in addition to libpolkit. Those using sys-apps/dbus-broker may wish to disable this flag.
 sys-auth/polkit:duktape - Use dev-lang/duktape instead of dev-lang/spidermonkey as JavaScript engine
 sys-auth/polkit:systemd - Use sys-apps/systemd for session tracking
 sys-auth/seatd:builtin - Enable embedded server in libseat
@@ -9064,11 +9067,13 @@ x11-themes/mate-themes-meta:gtk2-only - Allow dependency-resolution for a system
 x11-themes/tela-icon-theme:black - Install black folder version
 x11-themes/tela-icon-theme:blue - Install blue folder version
 x11-themes/tela-icon-theme:brown - Install bworn folder version
+x11-themes/tela-icon-theme:dracula - Install dracula folder version
 x11-themes/tela-icon-theme:green - Install green folder version
 x11-themes/tela-icon-theme:grey - Install grey folder version
 x11-themes/tela-icon-theme:hardlink - Hardlink duplicate icons to greatly reduce installation size
 x11-themes/tela-icon-theme:kde - Install colorshceme version for KDE plasma (folder color follow the colorscheme)
 x11-themes/tela-icon-theme:manjaro - Install manjaro folder version
+x11-themes/tela-icon-theme:nord - Install nord folder version
 x11-themes/tela-icon-theme:orange - Install orange folder version
 x11-themes/tela-icon-theme:pink - Install pink folder version
 x11-themes/tela-icon-theme:purple - Install purple folder version

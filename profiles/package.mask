@@ -33,6 +33,32 @@
 
 #--- END OF EXAMPLES ---
 
+# Hans de Graaff <graaff@gentoo.org> (2022-12-05)
+# ruby27-only package. No longer maintained upstream. Last release in 2017.
+# No reverse dependencies. Removal in 30 days.
+dev-ruby/hipchat
+
+# Hans de Graaff <graaff@gentoo.org> (2022-12-05)
+# This package has been subsumed into its only consumer:
+# dev-ruby/nio4r. It is no longer developed, and its last standalone
+# release was 11 years ago. Removal in 30 days.
+dev-ruby/iobuffer
+
+# Marek Szuba <marecki@gentoo.org> (2022-12-05)
+# No releases since 2003 (!), upstream effectively dead, no Unicode support,
+# EAPI 6. Removal in 30 days (#884429)
+app-editors/elvis
+
+# Robin H. Johnson <robbat2@gentoo.org> (2022-12-04)
+# sys-boot/mbr-gpt was a bizzare package extremely sensitive to compiler &
+# linker changes. I don't know of any remaining consumers other than one weird
+# system I have.
+# If you're a consumer: syslinux gptmbr was the successor to this approach,
+# you'll need to replace the contents of your BIOS Boot Partition, because it's
+# not a direct 1:1 change.
+# Only upstream release in 2008. Removal in 30 days.
+sys-boot/mbr-gpt
+
 # Hans de Graaff <graaff@gentoo.org> (2022-12-03)
 # ruby27-only package with no reverse dependencies.
 # Last release in 2019. Removal in 30 days.
@@ -776,7 +802,7 @@ app-office/texmacs
 # If you still use one of these old toolchain packages, please upgrade (and
 # switch the compiler / the binutils) ASAP. If you need them for a specific
 # (isolated) use case, feel free to unmask them on your system.
-<sys-libs/glibc-2.33
+<sys-libs/glibc-2.36-r5
 <sys-devel/binutils-2.38
 
 # Michael Orlitzky <mjo@gentoo.org> (2017-01-07)
