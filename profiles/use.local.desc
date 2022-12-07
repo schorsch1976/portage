@@ -2236,9 +2236,9 @@ dev-lua/lua-cjson:internal-fpconv - Enable internal number conversion routines, 
 dev-ml/dose3:parmap - Adds multi-core CPU support via dev-ml/parmap.
 dev-ml/dose3:rpm4 - Adds support for handling rpm4 files.
 dev-ml/dose3:zip - Adds support for handling zip files.
-dev-ml/lablgtk:glade - Enable libglade bindings compilation.
-dev-ml/lablgtk:gnomecanvas - Enable libgnomecanvas bindings compilation.
-dev-ml/lablgtk:sourceview - Enable GtkSourceView support
+dev-ml/lablgtk:glade - Enable gnome-base/libglade bindings compilation
+dev-ml/lablgtk:gnomecanvas - Enable gnome-base/libgnomecanvas bindings compilation
+dev-ml/lablgtk:sourceview - Enable GtkSourceView (x11-libs/gtksourceview) support
 dev-ml/logs:cli - Enables the Logs_cli library that provides command line support for controlling Logs.
 dev-ml/logs:fmt - Enables the Logs_fmt reporter.
 dev-ml/logs:lwt - Enables the Logs_lwt library that provides Lwt logging functions.
@@ -4195,6 +4195,7 @@ media-libs/grilo:playlist - Enable support for playlists through dev-libs/totem-
 media-libs/gst-plugins-bad:bzip2 - Enable bzip2 encoder/decoder plugin
 media-libs/gst-plugins-bad:egl - Enable EGL support
 media-libs/gst-plugins-bad:gles2 - Enable GLES2 support
+media-libs/gst-plugins-bad:qsv - Enable Intel Quick Sync Video using the media-libs/oneVPL dispatcher
 media-libs/gst-plugins-base:X - Enable ximagesink and xvimagesink plugins; build GLX platform support if USE=opengl is enabled; build x11 windowing system support if USE=egl is enabled
 media-libs/gst-plugins-base:egl - Enable EGL platform support
 media-libs/gst-plugins-base:gbm - Enable Graphics Buffer Manager based EGL windowing system support (requires egl and at least one of gles or opengl)
@@ -4223,6 +4224,7 @@ media-libs/imlib2:shm - Use MIT shared memory support for X image transfer
 media-libs/imlib2:tiff - TIFF image loader support
 media-libs/imlib2:webp - WEBP image loader support
 media-libs/imlib2:zlib - Zlib loader support
+media-libs/intel-mediasdk:tools - Build analyse and inspect tools
 media-libs/leptonica:utils - Install command-line utilities
 media-libs/lib3mf:system-act - Use system-provided dev-go/act as code generator instead of package provided binaries. This flag will be removed after some time used for testing!
 media-libs/libafterimage:shaping - Use MIT shaped X windows extention.
@@ -4344,6 +4346,11 @@ media-libs/mlt:rtaudio - Builds rtaudio consumer for native audio support on mul
 media-libs/mlt:rubberband - Enable audio pitch-shifting using media-libs/rubberband
 media-libs/mlt:vidstab - Enabled video stabilization with media-libs/vidstab
 media-libs/netpbm:rle - Build converters for the RLE format (utah raster toolkit)
+media-libs/oneVPL:drm - Build with DRM support
+media-libs/oneVPL:experimental - Build dispatcher with experimental APIs
+media-libs/oneVPL:tools - Build decode/encode/analyse/inspect tools
+media-libs/oneVPL-cpu:experimental - Enable experimental API
+media-libs/oneVPL-cpu:openh264 - Use media-libs/openh264 instead of media-libs/x264
 media-libs/openal:pipewire - Enable support for the media-video/pipewire audio backend
 media-libs/openal:sndio - Enable support for the media-sound/sndio backend
 media-libs/opencv:contrib - Install user contributed scripts from opencv_contrib (Experimental!)
@@ -5014,6 +5021,7 @@ media-video/ffmpeg:openh264 - Enables H.264 encoding suppoprt via media-libs/ope
 media-video/ffmpeg:openssl - Enables dev-libs/openssl support. Adds support for encrypted network protocols (TLS/HTTPS).
 media-video/ffmpeg:pic - Force shared libraries to be built as PIC (this is slower)
 media-video/ffmpeg:postproc - Build and install libpostproc.
+media-video/ffmpeg:qsv - Enable Intel Quick Sync Video via media-libs/intel-mediasdk (ffmpeg versions older than, and including, 5.1) or media-libs/oneVPL (ffmpeg version newer than 5.1).
 media-video/ffmpeg:rav1e - Enables AV1 encoding support via media-video/rav1e.
 media-video/ffmpeg:rubberband - Adds time-stretching and pitch-shifting audio filter based on media-libs/rubberband.
 media-video/ffmpeg:snappy - Enable app-arch/snappy support. Required for e.g. Vidvox Hap encoder.
@@ -5100,18 +5108,17 @@ media-video/mplayer:yuv4mpeg - Enables yuv4mpeg video output
 media-video/mplayer:zoran - Enables ZR360[56]7/ZR36060 video output
 media-video/mpv:archive - Enable support for various archive formats via app-arch/libarchive
 media-video/mpv:bluray - Enable playback of Blu-ray filesystems
-media-video/mpv:cli - Build mpv CLI player
+media-video/mpv:cli - Enable the command-line player
 media-video/mpv:cplugins - Enable C plugins support
-media-video/mpv:drm - Enable Kernel Mode Setting / Direct Rendering Manager based video output
+media-video/mpv:drm - Enable Kernel Mode Setting / Direct Rendering Manager based video outputs
 media-video/mpv:egl - Enable support for various EGL-based video outputs / backends
 media-video/mpv:gamepad - Enable gamepad input support
 media-video/mpv:gbm - Enable Graphics Buffer Manager based EGL video backend
-media-video/mpv:jpeg - Enable support for saving screenshots in JPEG format
-media-video/mpv:libmpv - Build mpv shared library
+media-video/mpv:libmpv - Enable the shared library and headers (used by frontends / plugins)
 media-video/mpv:libplacebo - Enable support for GPU accelerated video rendering with media-libs/libplacebo
-media-video/mpv:lua - Enable Lua scripting, OSC (On Screen Controller) GUI and net-misc/youtube-dl hook-script
-media-video/mpv:mmal - Enables Multi-Media Abstraction Layer (MMAL) decoding support: Available e.g. on the Raspberry Pi.
-media-video/mpv:opengl - Enable support for various OpenGL-based video backends
+media-video/mpv:lua - Enable Lua scripting, OSC (On Screen Controller) GUI, and net-misc/yt-dlp support
+media-video/mpv:mmal - Enable Multi-Media Abstraction Layer (MMAL) decoding support: Available e.g. on the Raspberry Pi
+media-video/mpv:opengl - Enable support for OpenGL-based video backends (Note: deprecated for X11, USE=egl provides the newer support for -gpu-api=opengl)
 media-video/mpv:pipewire - Enable sound support via native PipeWire backend
 media-video/mpv:raspberry-pi - Enable support for the Raspberry Pi
 media-video/mpv:rubberband - Enable high quality pitch correction via media-libs/rubberband
@@ -5119,7 +5126,7 @@ media-video/mpv:sdl - Enable media-libs/libsdl2 based video and audio outputs (N
 media-video/mpv:sndio - Enable sound support via media-sound/sndio
 media-video/mpv:tools - Install extra tools: mpv_identify.sh, mpv_idet.sh, and umpv
 media-video/mpv:uchardet - Enable subtitles charset discovery via app-i18n/uchardet
-media-video/mpv:vulkan - Enable support for various Vulkan-based video backends
+media-video/mpv:vulkan - Enable support for Vulkan-based video backends
 media-video/mpv:zimg - Enable libzimg support (for vf_fingerprint)
 media-video/noad:libmpeg2 - Build support for mpeg2 through media-libs/libmpeg2 rather than using media-video/ffmpeg
 media-video/obs-studio:browser - Enable browser source support via (precompiled) CEF.
