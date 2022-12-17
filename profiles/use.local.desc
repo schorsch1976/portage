@@ -1251,6 +1251,7 @@ dev-ada/gnatcoll-db:shared - Build shared library
 dev-ada/gnatcoll-db:sql - Build sql library
 dev-ada/gnatcoll-db:static-pic - Build shared library
 dev-ada/gnatcoll-db:xref - Build xref library
+dev-ada/gpr:shared - Build shared library
 dev-ada/gtkada:shared - Build gtkada as shared library
 dev-ada/gtkada:static-pic - Build static library with pic code
 dev-ada/langkit:shared - Build shared library
@@ -4425,7 +4426,6 @@ media-libs/sdl-mixer:mod - basic support for MOD files
 media-libs/sdl-mixer:playtools - Install playwave and playmus tools (useful for testing)
 media-libs/sdl-mixer:smpeg - Use media-libs/smpeg for MP3 support
 media-libs/sdl-mixer:wav - support WAVE files
-media-libs/sdl-sound:physfs - Enable support for various formats through dev-games/physfs.
 media-libs/sdl2-image:webp - support loading WEBP images
 media-libs/sdl2-mixer:fluidsynth - Use media-sound/fluidsynth for MIDI support
 media-libs/sdl2-mixer:midi - basic support for MIDI files
