@@ -1086,9 +1086,20 @@ app-text/blogc:git - Build blogc-git-receiver tool
 app-text/blogc:httpd - Build blogc-runserver tool
 app-text/blogc:make - Build blogc-make tool
 app-text/coolreader:wxwidgets - Use x11-libs/wxGTK instead of Qt5
+app-text/crengine-ng:chm - Support chm format
+app-text/crengine-ng:fribidi - Support bidirectional text by dev-libs/fribidi
+app-text/crengine-ng:harfbuzz - Use media-libs/harfbuzz for kerning and ligatures
+app-text/crengine-ng:libunibreak - Use dev-libs/libunibreak for hyphenation
+app-text/crengine-ng:libutf8proc - Use dev-libs/libutf8proc for manipulating unicode strings
+app-text/crengine-ng:lto - Use link time optimization
 app-text/crm114:mew - Add support for using the mewdecode mime decoder (app-emacs/mew)
 app-text/crm114:mimencode - Add support for using the mimencode mime (net-mail/metamail)
 app-text/crm114:normalizemime - Add support for using the normalizemime (mail-filter/normalizemime)
+app-text/crqt-ng:chm - Support chm format
+app-text/crqt-ng:fribidi - Support bidirectional text by dev-libs/fribidi
+app-text/crqt-ng:harfbuzz - Use media-libs/harfbuzz for kerning and ligatures
+app-text/crqt-ng:libunibreak - Use dev-libs/libunibreak for hyphenation
+app-text/crqt-ng:libutf8proc - Use dev-libs/libutf8proc for manipulating unicode strings
 app-text/dblatex:inkscape - Use inkscape to convert SVG. Disable to use gnome-base/librsvg instead.
 app-text/dictd:judy - Build Judy-based (dev-libs/judy) plugin implementing fast "exact" and especially "lev" strategies
 app-text/dictd:minimal - Don't build server but dict client, dictzip and dictfmt only.
@@ -8158,11 +8169,11 @@ sys-devel/clang:default-compiler-rt - Use compiler-rt instead of libgcc as the d
 sys-devel/clang:default-libcxx - Use libc++ instead of libstdc++ as the default stdlib for clang
 sys-devel/clang:default-lld - Use lld as the default linker for clang
 sys-devel/clang:extra - Build extra tools (clangd, clang-tidy and a few more)
+sys-devel/clang:ieee-long-double - Use accelerated 128-bit IEEE long double ABI (ppc64le only)
 sys-devel/clang:static-analyzer - Install the Clang static analyzer
 sys-devel/clang-common:default-compiler-rt - Use compiler-rt + libunwind instead of libgcc as the default rtlib for clang
 sys-devel/clang-common:default-libcxx - Use libc++ instead of libstdc++ as the default stdlib for clang
 sys-devel/clang-common:default-lld - Use lld as the default linker for clang
-sys-devel/clang-common:ieee-long-double - Use accelerated 128-bit IEEE long double ABI (ppc64le only)
 sys-devel/clang-common:stricter - Default to stricter behavior known from newer clang versions, turning more warnings into errors
 sys-devel/clang-runtime:compiler-rt - Install sys-libs/compiler-rt for -rtlib=compiler-rt
 sys-devel/clang-runtime:libcxx - Install sys-libs/libcxx for -stdlib=libc++
