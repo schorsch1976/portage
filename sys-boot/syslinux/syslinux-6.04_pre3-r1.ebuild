@@ -21,11 +21,7 @@ RESTRICT="test"
 
 BDEPEND="
 	dev-lang/perl
-	bios? (
-		app-arch/upx
-		app-text/asciidoc
-		dev-lang/nasm
-	)
+	bios? ( dev-lang/nasm )
 "
 RDEPEND="
 	sys-apps/util-linux
@@ -73,7 +69,7 @@ src_compile() {
 	local HEXDATE=$(printf '0x%08x' "${DATE}")
 
 	tc-export AR CC LD OBJCOPY RANLIB
-	unset LDFLAGS
+	unset CFLAGS LDFLAGS
 
 	if use bios; then
 		emake bios DATE="${DATE}" HEXDATE="${HEXDATE}"

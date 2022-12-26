@@ -1100,6 +1100,11 @@ app-text/crqt-ng:fribidi - Support bidirectional text by dev-libs/fribidi
 app-text/crqt-ng:harfbuzz - Use media-libs/harfbuzz for kerning and ligatures
 app-text/crqt-ng:libunibreak - Use dev-libs/libunibreak for hyphenation
 app-text/crqt-ng:libutf8proc - Use dev-libs/libutf8proc for manipulating unicode strings
+app-text/crwx-ng:chm - Support chm format
+app-text/crwx-ng:fribidi - Support bidirectional text by dev-libs/fribidi
+app-text/crwx-ng:harfbuzz - Use media-libs/harfbuzz for kerning and ligatures
+app-text/crwx-ng:libunibreak - Use dev-libs/libunibreak for hyphenation
+app-text/crwx-ng:libutf8proc - Use dev-libs/libutf8proc for manipulating unicode strings
 app-text/dblatex:inkscape - Use inkscape to convert SVG. Disable to use gnome-base/librsvg instead.
 app-text/dictd:judy - Build Judy-based (dev-libs/judy) plugin implementing fast "exact" and especially "lev" strategies
 app-text/dictd:minimal - Don't build server but dict client, dictzip and dictfmt only.
@@ -2299,11 +2304,9 @@ dev-python/PyQt6:widgets - Build bindings for the QtWidgets module
 dev-python/PyQt6:xml - Build bindings for the QtXml module
 dev-python/PyQt6-WebEngine:quick - Build bindings for the QtWebEngineQuick module
 dev-python/PyQt6-WebEngine:widgets - Build bindings for the QtWebEngineWidgets module
-dev-python/QtPy:declarative - Build bindings for the QtQml and QtQuick modules and enable the qmlscene plugin
 dev-python/QtPy:designer - Pull in bindings for the QtDesigner module and enable the designer plugin
 dev-python/QtPy:gui - Pull in bindings for the QtGui module
 dev-python/QtPy:help - Pull in bindings for the QtHelp module
-dev-python/QtPy:location - Pull in bindings for the QtLocation module
 dev-python/QtPy:multimedia - Pull in QtMultimedia and QtMultimediaWidgets modules
 dev-python/QtPy:network - Pull in bindings for the QtNetwork module
 dev-python/QtPy:opengl - Pull in bindings for the QtOpenGL module
@@ -2315,9 +2318,7 @@ dev-python/QtPy:pyside2 - Use dev-python/pyside2 as Qt for Python implementation
 dev-python/QtPy:pyside6 - Use dev-python/pyside6 as Qt for Python implementation
 dev-python/QtPy:qml - Build bindings for the QtQml
 dev-python/QtPy:quick - Build bindings for the QtQuick
-dev-python/QtPy:sensors - Pull in bindings for the QtSensors module
 dev-python/QtPy:serialport - Pull in bindings for the QtSerialPort module
-dev-python/QtPy:speech - Build bindings for the QtTextToSpeech module
 dev-python/QtPy:sql - Pull in bindings for the QtSql module
 dev-python/QtPy:svg - Pull in bindings for the QtSvg module
 dev-python/QtPy:testlib - Pull in bindings for the QtTest module
@@ -2325,9 +2326,7 @@ dev-python/QtPy:webchannel - Pull in bindings for the QtWebChannel module
 dev-python/QtPy:webengine - Pull in QtWebEngine and QtWebEngineWidgets modules
 dev-python/QtPy:websockets - Pull in bindings for the QtWebSockets module
 dev-python/QtPy:widgets - Pull in bindings for the QtWidgets module
-dev-python/QtPy:x11extras - Pull in bindings for the QtX11Extras module
 dev-python/QtPy:xml - Pull in QtXml module
-dev-python/QtPy:xmlpatterns - Pull in bindings for the QtXmlPatterns module
 dev-python/autobahn:xbr - Add support for XBR decentralized data markets and etherium blockchain
 dev-python/bpython:clipboard - Enable copying to clipboard using dev-python/pyperclip
 dev-python/bpython:jedi - Enable autocompletion using dev-python/jedi
@@ -2434,7 +2433,6 @@ dev-python/rfc3986:idna - enable support for the IDNA specification (RFC 5891)
 dev-python/rpyc:gdb - Run tests depending on sys-devel/gdb
 dev-python/rpyc:numpy - Run tests depending on dev-python/numpy, dev-python/pandas
 dev-python/scipy:pythran - Use dev-python/pythran to accelerate runtime
-dev-python/scipy:sparse - Adds support for sparse solving with sci-libs/umfpack
 dev-python/shiboken2:docstrings - Expose documentation as Python docstrings (recommended)
 dev-python/shiboken2:numpy - Implicitly convert passed NumPy arrays to Qt lists
 dev-python/shiboken2:vulkan - Generate "QSurface::VulkanSurface" bindings
