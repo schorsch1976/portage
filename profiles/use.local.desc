@@ -206,6 +206,7 @@ app-alternatives/gzip:reference - Symlink to app-arch/gzip.
 app-alternatives/lex:flex - Symlink to sys-devel/flex.
 app-alternatives/lex:reflex - Symlink to sys-devel/reflex.
 app-alternatives/sh:bash - Symlink to app-shells/bash
+app-alternatives/sh:busybox - Symlink to sys-apps/busybox
 app-alternatives/sh:dash - Symlink to app-shells/dash
 app-alternatives/sh:ksh - Symlink to app-shells/ksh
 app-alternatives/sh:lksh - Symlink to lksh from app-shells/mksh
@@ -5535,7 +5536,6 @@ net-dns/nsd:munin - Install a plugin for net-analyzer/munin to graph statistical
 net-dns/nsd:nsec3 - Enable NSEC3 support
 net-dns/nsd:ratelimit - Enables ratelimiting, based on query name, type and source
 net-dns/nsd:root-server - Configure NSD as a root server
-net-dns/nsd:runtime-checks - Enable runtime checks, this could lead to a reduced service level
 net-dns/opendnssec:external-hsm - Enables support for storing DNSSEC keys through an arbitrary non-portage PKCS#11 interface, specified through an environment variable
 net-dns/opendnssec:opensc - Enables support for storing DNSSEC keys through a dev-libs/opensc PKCS#11 interface
 net-dns/opendnssec:signer - Enables signing capabilities for OpenDNSSEC
@@ -7541,6 +7541,7 @@ sci-mathematics/polymake:singular - Enable the interface to sci-mathematics/sing
 sci-mathematics/primecount:executable - Build the primecount CLI executable
 sci-mathematics/primesieve:executable - Build the primesieve CLI executable
 sci-mathematics/singular:polymake - Enable the interface to TOPCOM
+sci-mathematics/slepc:arpack - Adds support for ARPACK (sci-libs/arpack)
 sci-mathematics/slepc:complex-scalars - Make scalars complex
 sci-mathematics/stp:cryptominisat - Enable sci-mathematics/cryptominisat support
 sci-mathematics/stp:python - Enable building the Python interface
