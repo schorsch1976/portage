@@ -2772,6 +2772,7 @@ dev-util/google-perftools:minimal - Only build the tcmalloc_minimal library, ign
 dev-util/google-perftools:optimisememory - To build libtcmalloc with smaller internal caches.
 dev-util/heaptrack:gui - Install Qt5-based analyzer tool
 dev-util/hfstospell:clang - Use different logic in ebuild when clang is used
+dev-util/intel-graphics-compiler:vc - Enable VectorCompiler for a better performance.
 dev-util/intel-graphics-system-controller:cli - Build CLI tools for flashing manually a firmware upgrade.
 dev-util/kcov:binutils - Use sys-libs/binutils-libs for --verify support
 dev-util/kdevelop:gdbui - Enable GUI for attaching GDB to a running process
@@ -6593,6 +6594,8 @@ net-misc/stunnel:stunnel3 - Install the stunnel3 wrapper.
 net-misc/tigervnc:dri3 - Build with DRI3 support
 net-misc/tigervnc:drm - Build with DRM support
 net-misc/tigervnc:server - Build TigerVNC server
+net-misc/turbovnc:client - Build the client (vncviewer)
+net-misc/turbovnc:server - Build the server (vncserver, Xvnc)
 net-misc/uftp:server - Install uftp server daemon
 net-misc/vde:pcap - Enable the pcap-based plugin that allows creating a switch against a real interface.
 net-misc/wget:cookie-check - Enable cookie checks via net-libs/libpsl
@@ -8653,6 +8656,7 @@ www-client/links:brotli - Enable app-arch/brotli support
 www-client/links:freetype - Enable media-libs/freetype support
 www-client/links:libevent - Enable dev-libs/libevent support
 www-client/links:lzip - Enable app-arch/lzip support
+www-client/lynx:brotli - Enable support for Brotli decompression
 www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the default library for HTTPS support).
 www-client/lynx:ssl - Enable HTTPS support.
 www-client/microsoft-edge:mip - Install Microsoft Information Protection plugin.
