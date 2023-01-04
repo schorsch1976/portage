@@ -26,7 +26,7 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="HPND"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~alpha amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux"
 IUSE="examples imagequant +jpeg jpeg2k lcms test tiff tk truetype webp xcb zlib"
 REQUIRED_USE="test? ( jpeg jpeg2k tiff truetype )"
 RESTRICT="!test? ( test )"
@@ -105,6 +105,11 @@ src_test() {
 }
 
 python_test() {
+	local EPYTEST_DESELECT=(
+		# TODO (is clipboard unreliable in Xvfb?)
+		Tests/test_imagegrab.py::TestImageGrab::test_grabclipboard
+	)
+
 	"${EPYTHON}" selftest.py --installed || die "selftest failed with ${EPYTHON}"
 	# no:relaxed: pytest-relaxed plugin make our tests fail. deactivate if installed
 	epytest -p no:relaxed || die "Tests failed with ${EPYTHON}"
