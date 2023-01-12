@@ -11,8 +11,9 @@ SRC_URI="https://archive.xfce.org/src/xfce/${PN}/${PV%.*}/${P}.tar.bz2"
 
 LICENSE="LGPL-2.1+"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~riscv ~x86"
 IUSE="+introspection wayland X"
+REQUIRED_USE="|| ( wayland X )"
 
 DEPEND="
 	>=dev-libs/glib-2.68.0
@@ -37,6 +38,10 @@ BDEPEND="
 		>=dev-util/wayland-scanner-1.15
 	)
 "
+
+PATCHES=(
+	"${FILESDIR}"/${P}-no-x.patch
+)
 
 src_configure() {
 	local myconf=(
