@@ -4,7 +4,7 @@
 EAPI=8
 
 H=13a8a06d561041cafcaf5458e404c1ec354b2841
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 
 inherit python-single-r1 cmake
 
@@ -49,6 +49,7 @@ pkg_setup() {
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_SHARED_LIBS=ON
+		-DBtor2Tools_LIBRARIES=/usr/$(get_libdir)/libbtor2parser.so
 		-DUSE_PYTHON2=OFF
 		-DPYTHON=$(usex python)
 		-DTESTING=$(usex test)

@@ -10,7 +10,6 @@ acct-user/vdr:remote - Prepare group membership for media-plugins/vdr-remote.
 acct-user/vdr:serial - Prepare group membership for media-plugins/vdr-serial.
 app-accessibility/brltty:api - build brltty's application program interface
 app-accessibility/brltty:beeper - support the console tone generator
-app-accessibility/brltty:contracted-braille - support in-line contracted braille
 app-accessibility/brltty:fm - support for the sound card synthesizer
 app-accessibility/brltty:louis - Use braille translator dev-libs/liblouis
 app-accessibility/brltty:midi - support the musical instrument digital interface
@@ -4645,6 +4644,10 @@ media-sound/ncmpcpp:clock - Enable clock screen
 media-sound/ncmpcpp:lto - Build with link-time optimisation
 media-sound/ncmpcpp:outputs - Enable outputs screen
 media-sound/ncmpcpp:visualizer - Enable visualizer screen with sound wave/frequency spectrum modes
+media-sound/ncspot:clipboard - Use the system clipboard to e.g. share a link
+media-sound/ncspot:cover - Support displaying the album cover
+media-sound/ncspot:mpris - Allow ncspot to be controlled via MPRIS API
+media-sound/ncspot:notify - Show what's playing via a notification
 media-sound/patchage:jack-dbus - Use Jack via D-Bus instead of libjack
 media-sound/picard:discid - Enable reading the ID of the inserted CD
 media-sound/picard:fingerprints - Enable calculation and lookup of AcoustID fingerprints
@@ -5701,7 +5704,6 @@ net-im/dino:gpg - Enable OpenPGP encryption plugin
 net-im/dino:http - Enable HTTP file upload plugin
 net-im/dino:notification-sound - notification sounds plugin
 net-im/dino:omemo - Enable OMEMO encryption plugin
-net-im/discord-bin:system-ffmpeg - Use the system-wide media-video/ffmpeg instead of bundled
 net-im/ejabberd:captcha - Support for CAPTCHA Forms (XEP-158) on registration
 net-im/ejabberd:full-xml - Use XML features in XMPP stream (ex: CDATA), requires XML compliant clients
 net-im/ejabberd:mssql - Enable Microsoft SQL Server support (via ODBC) for data storage
@@ -6636,6 +6638,8 @@ net-nntp/slrn:canlock - Add support for cancel locks via net-libs/canlock
 net-nntp/slrn:uudeview - Add support for yEnc coding and more using dev-libs/uulib
 net-nntp/tin:cancel-locks - Enable Cancel-Lock header functionality
 net-nntp/tin:gpg - Enable app-crypt/gnupg support
+net-nntp/tin:libtls - Prefer dev-libs/libretls as SSL/TLS provider (ineffective with USE=-ssl)
+net-nntp/tin:pcre2 - Use dev-libs/libpcre2 instead of dev-libs/libpcre
 net-p2p/airdcpp-webclient:nat-pmp - Enable support for the NAT-PMP protocol
 net-p2p/airdcpp-webclient:tbb - Enable support of the TBB library to improve performance
 net-p2p/airdcpp-webclient:webui - Enable the Web UI

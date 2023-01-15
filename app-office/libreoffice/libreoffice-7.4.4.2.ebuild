@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 PYTHON_REQ_USE="threads(+),xml(+)"
 
 MY_PV="${PV/_alpha/.alpha}"
@@ -297,6 +297,7 @@ PATCHES=(
 	# 7.5 branch
 	"${FILESDIR}/${PN}-7.3.7.2-boost-1.81-locale.patch"
 	"${FILESDIR}/${PN}-7.3.7.2-zxing-cpp-1.4.0.patch"
+	"${FILESDIR}/${PN}-7.4.4.2-zxing-cpp-1.4.0-c++17.patch"
 )
 
 S="${WORKDIR}/${PN}-${MY_PV}"

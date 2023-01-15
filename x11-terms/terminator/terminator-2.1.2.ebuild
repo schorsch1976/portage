@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 inherit distutils-r1 optfeature verify-sig virtualx xdg
 
 DESCRIPTION="Multiple GNOME terminals in one window"
@@ -47,7 +47,6 @@ PATCHES=(
 )
 
 src_prepare() {
-	xdg_environment_reset
 	sed -i -e '/pytest-runner/d' setup.py || die
 	distutils-r1_src_prepare
 }

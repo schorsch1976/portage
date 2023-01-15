@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} pypy3 )
+PYTHON_COMPAT=( python3_{9..11} pypy3 )
 PYTHON_REQ_USE="threads(+)"
 
 inherit distutils-r1
@@ -24,6 +24,7 @@ KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~mips ppc ppc64 ~riscv ~s390 
 IUSE="examples"
 
 BDEPEND="
+	virtual/pkgconfig
 	test? (
 		dev-python/hypothesis[${PYTHON_USEDEP}]
 	)
@@ -31,7 +32,10 @@ BDEPEND="
 RDEPEND="
 	>=x11-libs/cairo-1.15.10[svg(+)]
 "
-DEPEND="${RDEPEND}"
+DEPEND="
+	${RDEPEND}
+	x11-base/xorg-proto
+"
 
 distutils_enable_sphinx docs \
 	dev-python/sphinx_rtd_theme

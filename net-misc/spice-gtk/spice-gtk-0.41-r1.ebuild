@@ -4,7 +4,7 @@
 EAPI=8
 
 VALA_USE_DEPEND="vapigen"
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 
 inherit desktop meson optfeature python-any-r1 readme.gentoo-r1 vala xdg
 
@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]] ; then
 	SPICE_PROTOCOL_VER=9999
 else
 	SRC_URI="https://www.spice-space.org/download/gtk/${P}.tar.xz"
-	KEYWORDS="~alpha amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~sparc x86"
+	KEYWORDS="~alpha amd64 ~arm arm64 ~ia64 ~ppc ~ppc64 ~sparc x86"
 
 	SPICE_PROTOCOL_VER=0.14.3
 fi

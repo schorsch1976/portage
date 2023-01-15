@@ -1,10 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_OPTIONAL=1
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{9..10} )
 
 inherit autotools bash-completion-r1 dist-kernel-utils distutils-r1 flag-o-matic linux-info pam systemd udev usr-ldscript
 
@@ -24,7 +24,7 @@ else
 	S="${WORKDIR}/${P%_rc?}"
 
 	if [[ ${PV} != *_rc* ]]; then
-		KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~sparc"
+		KEYWORDS="amd64 arm64 ppc64 ~riscv ~sparc"
 	fi
 fi
 
@@ -113,6 +113,9 @@ PATCHES=(
 	# systemd fixups
 	"${FILESDIR}"/2.1.7-dracut-include-systemd-overrides.patch
 	"${FILESDIR}"/2.1.7-systemd-zed-restart-always.patch
+
+	# https://github.com/openzfs/zfs/issues/14308
+	"${FILESDIR}"/2.1.7-ppc64-ieee128-compat.patch
 )
 
 pkg_pretend() {

@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{9..10} )
 inherit bash-completion-r1 gnome2-utils linux-info optfeature plocale python-single-r1 systemd xdg-utils
 
 DESCRIPTION="A firewall daemon with D-Bus interface providing a dynamic firewall"
@@ -12,7 +12,7 @@ SRC_URI="https://github.com/firewalld/firewalld/releases/download/v${PV}/${P}.ta
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv x86"
+KEYWORDS="amd64 arm arm64 ~loong ppc64 ~riscv x86"
 IUSE="gui +nftables +iptables test"
 # Tests previously restricted for bug #650760
 RESTRICT="!test? ( test ) test? ( userpriv ) test"

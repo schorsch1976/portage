@@ -33,13 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
-# Alfredo Tupone <tupone@gentoo.org> (2023-01-10)
-# They were added as a dependency of sci-libs/pytorch
-# but they are no more
-# Bug #890365
-# Removal on 2023-01-30
-dev-util/breakpad
-dev-libs/linux-syscall-support
+# David Seifert <soap@gentoo.org> (2023-01-14)
+# Py3.8 only backports
+dev-python/backports-tempfile
+dev-python/backports-weakref
+dev-python/backports-zoneinfo
+dev-python/pkgutil_resolve_name
 
 # Andreas Sturmlechner <asturm@gentoo.org> (2023-01-10)
 # Unmaintained and reportedly broken by KDE Plasma 5.25 already.
@@ -48,14 +47,6 @@ dev-libs/linux-syscall-support
 # See also: https://tinyurl.com/39dkw43a (links to reddit)
 # Removal on 2023-01-30.
 =kde-misc/latte-dock-0.10.8*
-
-# Sam James <sam@gentoo.org> (2023-01-10)
-# This version had a controversial licence change which stinted its adoption.
-# No reverse dependencies.
-# See also the old 2021-05-30-deprecate-old-bdb-slots news item for
-# additional context and bug #837629.
-# Removal on 2023-02-09.
-sys-libs/db:6.0
 
 # Jonas Stein <jstein@gentoo.org> (2023-01-09)
 # Dead upstream, open bugs unmaintained.
@@ -999,11 +990,6 @@ net-misc/gnome-online-miners
 # John Helmert III <ajak@gentoo.org> (2022-09-18)
 # Unfixed root privilege escalation, bug #631552
 sys-cluster/slurm
-
-# Matthias Schwarzott <zzam@gentoo.org> (2022-09-08)
-# Breaks kernel builds with BTF enabled.
-# Bug #868762.
-=dev-util/pahole-1.24
 
 # hololeap <hololeap@protonmail.com> (2022-08-21)
 # doctest-parallel does not currently work with Setup.hs (used internally by
