@@ -33,6 +33,63 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas Sturmlechner <asturm@gentoo.org> (2023-01-20)
+# KDE Plasma 5.26.90 (5.27 Beta) mask
+# Pre-release version - happy testing!
+~kde-plasma/bluedevil-5.26.90
+~kde-plasma/breeze-5.26.90
+~kde-plasma/breeze-grub-5.26.90
+~kde-plasma/breeze-gtk-5.26.90
+~kde-plasma/breeze-plymouth-5.26.90
+~kde-plasma/discover-5.26.90
+~kde-plasma/drkonqi-5.26.90
+~kde-plasma/kactivitymanagerd-5.26.90
+~kde-plasma/kde-cli-tools-5.26.90
+~kde-plasma/kde-gtk-config-5.26.90
+~kde-plasma/kdecoration-5.26.90
+~kde-plasma/kdeplasma-addons-5.26.90
+~kde-plasma/kgamma-5.26.90
+~kde-plasma/khotkeys-5.26.90
+~kde-plasma/kinfocenter-5.26.90
+~kde-plasma/kmenuedit-5.26.90
+~kde-plasma/kpipewire-5.26.90
+~kde-plasma/kscreen-5.26.90
+~kde-plasma/kscreenlocker-5.26.90
+~kde-plasma/ksshaskpass-5.26.90
+~kde-plasma/ksystemstats-5.26.90
+~kde-plasma/kwallet-pam-5.26.90
+~kde-plasma/kwayland-integration-5.26.90
+~kde-plasma/kwin-5.26.90
+~kde-plasma/kwrited-5.26.90
+~kde-plasma/layer-shell-qt-5.26.90
+~kde-plasma/libkscreen-5.26.90
+~kde-plasma/libksysguard-5.26.90
+~kde-plasma/libkworkspace-5.26.90
+~kde-plasma/milou-5.26.90
+~kde-plasma/oxygen-5.26.90
+~kde-plasma/oxygen-sounds-5.26.90
+~kde-plasma/plasma-browser-integration-5.26.90
+~kde-plasma/plasma-desktop-5.26.90
+~kde-plasma/plasma-disks-5.26.90
+~kde-plasma/plasma-firewall-5.26.90
+~kde-plasma/plasma-integration-5.26.90
+~kde-plasma/plasma-meta-5.26.90
+~kde-plasma/plasma-nm-5.26.90
+~kde-plasma/plasma-pa-5.26.90
+~kde-plasma/plasma-sdk-5.26.90
+~kde-plasma/plasma-systemmonitor-5.26.90
+~kde-plasma/plasma-thunderbolt-5.26.90
+~kde-plasma/plasma-workspace-5.26.90
+~kde-plasma/plasma-workspace-wallpapers-5.26.90
+~kde-plasma/plasma-vault-5.26.90
+~kde-plasma/plymouth-kcm-5.26.90
+~kde-plasma/polkit-kde-agent-5.26.90
+~kde-plasma/powerdevil-5.26.90
+~kde-plasma/sddm-kcm-5.26.90
+~kde-plasma/systemsettings-5.26.90
+~kde-plasma/xdg-desktop-portal-kde-5.26.90
+~kde-plasma/xembed-sni-proxy-5.26.90
+
 # Alfredo Tupone <tupone@gentoo.org> (2023-01-18)
 # Masked for removal in 30 days.
 # Not maintained (2006), no rev dep, bugs
@@ -729,29 +786,6 @@ dev-db/mysql-super-smack
 # Removal on 2023-01-20.  Bug #737842.
 dev-php/phptal
 
-# Michał Górny <mgorny@gentoo.org> (2022-12-20)
-# Pending version bump since 2015.  No new upstream releases since.
-# Removal on 2023-01-19.  Bug #887489.
-sys-cluster/ganglia
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-20)
-# Unmaintained.  Pending version bump since 2019.  Even then, the newest
-# upstream release has known vulnerabilities.
-# Removal on 2023-01-19.  Bug #696480.
-sys-cluster/ganglia-web
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-20)
-# Proprietary MPEG library that is no longer fetchable.  No reverse
-# dependencies.
-# Removal on 2023-01-19.  Bug #759190.
-media-video/mpeg2vidcodec
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-20)
-# An unmaintained library that was "quickly whipped up for some demos".
-# Last bumped in 2011.  No reverse dependencies.
-# Removal on 2023-01-19.  Bug #847406.
-media-libs/guilib
-
 # Georgy Yakovlev <gyakovlev@gentoo.org> (2022-12-19)
 # This version currently is not compatible with kernel build (yet)
 ~dev-util/bindgen-0.63.0
@@ -761,130 +795,6 @@ media-libs/guilib
 # ago.
 # Removal on 2023-01-20. Bug #875143.
 x11-libs/libast
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-19)
-# Unmaintained.  The current sawfish version in ::gentoo is a prerelease
-# from 2017, there was a single release in 2021.  Bugs are accumulating.
-# Includes dependencies specific to Sawfish.
-# Removal on 2023-01-18.  Bug #637978.
-dev-libs/librep
-x11-libs/rep-gtk
-x11-themes/sawfish-themes
-x11-wm/sawfish
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2022-12-18)
-# Bundled by >=dev-util/hip-5, removal on 2023-01-19
-dev-libs/rocclr
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2022-12-18)
-# Stuck at 2.7.0, no revdeps; removal on 2023-01-19
-dev-libs/rocm-hostcall
-
-# Pacho Ramos <pacho@gentoo.org> (2022-12-18)
-# Dead for ages, still included and barely maintained in bluez[deprecated].
-# See bug #885459
-# Removal: 2023-01-17.  Bug #885459.
-net-wireless/bluez-hcidump
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-17)
-# The new version requires `multipart` that conflicts
-# with dev-python/python-multipart used by dev-python/starlette.
-# No reverse dependencies.
-# Removal on 2023-01-16.  Bug #886475.
-dev-python/test_server
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-17)
-# Discontinued upstream.  Fails to build for some users.  No reverse
-# dependencies.
-# Removal on 2023-01-16.  Bug #650346.
-dev-perl/perl-mozldap
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-17)
-# No longer downloadable.  Pending version bump with no reply from
-# the maintainer.
-# Removal on 2023-01-16.  Bug #786912.
-media-gfx/iscan-plugin-network-nt
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-17)
-# Merged into sys-apps/util-linux.
-# Removal on 2023-01-16.  Bug #867220.
-net-wireless/rfkill
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-16)
-# Requires legacy gnome-base/gconf.  A number of other unresolved
-# issues.  Last release in 2014.
-# Removal on 2023-01-15.  Bug #873871.
-media-video/ogmrip
-media-video/shrip
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-16)
-# Multiple build failures reported.  Last bumped in 2010.
-# Homepage gone.
-# Removal on 2023-01-15.  Bug #839723.
-net-firewall/nufw
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-16)
-# Unmaintained.  Broken with >=net-nds/openldap-2.6.
-# Last release in 2009.
-# Removal on 2023-01-15.  Bug #835649.
-net-nds/adtool
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-16)
-# The distfile was removed from Gentoo servers in 2021, and it is
-# unclear if we were allowed to host it in the first place.  Also,
-# it had a build failure reported in 2020.  No reverse dependencies.
-# Removal on 2023-01-15.  Bug #790026.
-sci-libs/libcmatrix
-
-# Hans de Graaff <graaff@gentoo.org> (2022-12-16)
-# ruby27-only package. No longer maintained upstream.
-# No reverse dependencies. Masked for removal in 30 days.
-dev-ruby/daemon_controller
-
-# Hans de Graaff <graaff@gentoo.org> (2022-12-16)
-# ruby27-only package. No longer maintained upstream.
-# No reverse dependencies. Masked for removal in 30 days.
-dev-ruby/ferret
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-16)
-# Not installable since at least Dec 2020 due to checksum mismatch.
-# Ebuild not touched since 2018.
-# Removal on 2023-01-15.  Bug #759121.
-games-puzzle/mindless
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-16)
-# NTLK relies on a large number of corpora that either have unknown
-# license, a non-free license or that may be in violation of copyright.
-# We have been rubber stamping over this in dev-python/nltk-data
-# via LICENSE=all-rights-reserved + RESTRICT=bindist but this
-# is not a feasible long-term solution.
-#
-# dev-python/lunr is the only revdep and has no reverse dependencies
-# itself.
-#
-# Removal on 2023-01-15.  Bug #886203.
-dev-python/lunr
-dev-python/nltk
-dev-python/nltk-data
-
-# Michał Górny <mgorny@gentoo.org> (2022-12-15)
-# Fails to build since 2019.  Last bumped in 2017.
-# Removal on 2023-01-14.  Bug #688950.
-sci-astronomy/skycat
-
-# Marco Scardovi <mscardovi@icloud.com> (2022-12-15)
-# We are literally the only distro that still have
-# an installation option for that package.
-# It still uses EAPI 6 and no real support since
-# years.
-# Removal on 2023-01-14. Bug #885605
-net-print/kyocera-mita-ppds
-
-# Marco Scardovi <mscardovi@icloud.com> (2022-12-15)
-# Dead upstream, dead homepage, dead symlinks,
-# no revdeps and no version bump since 2011
-# Removal on 2023-01-14. Bug #884881
-net-print/apsfilter
 
 # Jaco Kroon <jaco@uls.co.za> (2022-12-14)
 # Multiple open bugs (bug #870910, bug #877731, bug #884815), only one of which
@@ -898,32 +808,6 @@ net-print/apsfilter
 # maintenance thereof. Last-rites bug #885845.
 # Removal on 2023-01-31.
 net-voip/captagent
-
-# Hans de Graaff <graaff@gentoo.org> (2022-12-11)
-# ruby27-only package. No reverse dependencies.
-# Last release in 2012. Removal in 30 days.
-dev-ruby/log_buddy
-
-# Hans de Graaff <graaff@gentoo.org> (2022-12-11)
-# ruby27-only slot. No reverse dependencies.
-# Use a newer mime-types slot.
-# Removal in 30 days.
-dev-ruby/mime-types:2
-
-# Hans de Graaff <graaff@gentoo.org> (2022-12-11)
-# ruby27-only package. No reverse dependencies.
-# Last release in 2013. Removal in 30 days.
-dev-ruby/nagios_analyzer
-
-# Hans de Graaff <graaff@gentoo.org> (2022-12-11)
-# ruby27-only package. No reverse dependencies.
-# Last release in 2009. Removal in 30 days.
-dev-ruby/ntlm-http
-
-# Hans de Graaff <graaff@gentoo.org> (2022-12-11)
-# ruby27-only package. No reverse dependencies.
-# Removal in 30 days.
-dev-ruby/posix-spawn
 
 # Jonas Stein <jstein@gentoo.org> (2022-12-11)
 # Unfetchable and mirror-restricted.
@@ -1029,6 +913,7 @@ dev-qt/qtwayland:6
 dev-qt/qtwebchannel:6
 dev-qt/qtwebengine:6
 dev-qt/qtwebsockets:6
+>=media-video/bino-2
 
 # Fabian Groffen <grobian@gentoo.org> (2022-07-02)
 # Segfaults handling SPF validations (warn on permerror), like the
@@ -1135,6 +1020,7 @@ dev-util/patdiff:0/0.15
 # FFmpeg 5.0 ABI/API changes break many packages.
 # Masking for tracker/tinderbox. Bug #831437
 =media-video/ffmpeg-5*
+>=media-sound/spek-0.8.5
 
 # Brian Evans <grknight@gentoo.org> (2022-01-07)
 # The main consumer, phpunit, does not initiate the new timer correctly
