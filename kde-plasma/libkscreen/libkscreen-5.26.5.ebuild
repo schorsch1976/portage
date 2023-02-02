@@ -15,7 +15,7 @@ DESCRIPTION="Plasma screen management library"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5/7"
-KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv x86"
+KEYWORDS="amd64 ~arm arm64 ~loong ~ppc64 ~riscv x86"
 IUSE=""
 
 # requires running session
@@ -35,6 +35,7 @@ DEPEND="${RDEPEND}
 	>=dev-libs/plasma-wayland-protocols-1.6.0
 "
 BDEPEND="
+	>=dev-qt/linguist-tools-${QTMIN}:5
 	>=dev-qt/qtwaylandscanner-${QTMIN}:5
 	dev-util/wayland-scanner
 "
