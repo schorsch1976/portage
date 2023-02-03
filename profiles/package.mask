@@ -33,6 +33,14 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2023-02-02)
+# dev-python/citeproc-py requires dev-python/nose and is not maintained
+# upstream.  Its only revdep, dev-python/duecredit has no reverse
+# dependencies left.
+# Removal on 2023-03-04.  Bug #888239.
+dev-python/citeproc-py
+dev-python/duecredit
+
 # Michał Górny <mgorny@gentoo.org> (2023-02-01)
 # dev-python/blockdiag still requires dev-python/nose.  There was a PR
 # made to switch to pytest in Feb 2020 but it's not progressing at all.
@@ -563,11 +571,6 @@ app-text/sword-modules
 # Removal on 2023-02-24.  Bug #837611.
 sys-cluster/wulfware
 
-# Michał Górny <mgorny@gentoo.org> (2023-01-25)
-# Unfetchable since at least 2021.  Mirror-restricted.
-# Removal on 2023-02-24.  Bug #761817.
-sci-physics/herwig
-
 # Ionen Wolkens <ionen@gentoo.org> (2023-01-24)
 # Mostly obsoleted by the better maintained net-misc/yt-dlp, please
 # migrate. If had USE=yt-dlp enabled (default) then was likely already
@@ -778,12 +781,6 @@ sys-auth/google-authenticator-libpam-hardened
 # Removal: 2023-01-30.  Bug #889194.
 x11-plugins/pidgin-funyahoo-plusplus
 
-# Maciej Barć <xgqt@gentoo.org> (2022-12-29)
-# Real upstream dead, uses old R5RS standard, many open bugs.
-# Removal on 2022-01-29.
-app-shells/scsh
-dev-scheme/scsh-lib
-
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2022-12-29)
 # Upstream is dead, last activity in Nov 2017. Does not
 # work with newer log4j, bug #857663. Use net-p2p/biglybt
@@ -926,11 +923,6 @@ dev-qt/qtwebsockets:6
 # Apparently the "b" in version means "beta". 3.24 is available, we
 # should update to that. #841437
 ~sci-physics/bullet-3.22b
-
-# Maciej Barć <xgqt@gentoo.org> (2022-02-20)
-# Masked for testing, builds and passes tests but randomly segfaults,
-# meaningless backtrace, debugging (flags, symbols) do not help
->app-shells/scsh-0.6.9
 
 # Eray Aslan <eras@gentoo.org> (2022-01-24)
 # Mask experimental software
