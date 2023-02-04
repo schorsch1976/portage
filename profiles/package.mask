@@ -33,6 +33,47 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2023-02-03)
+# Uses unmaintained dev-python/future.  No reverse dependencies.
+# Removal on 2023-03-05.  Bug #888283.
+dev-python/textX
+
+# Michał Górny <mgorny@gentoo.org> (2023-02-03)
+# Hacky build system that does not work via PEP517 build backend.
+# No reverse dependencies.
+# Removal on 2023-03-05.  Bug #890321.
+dev-python/pyFFTW
+
+# Michał Górny <mgorny@gentoo.org> (2023-02-03)
+# Dead upstream, no active maintainer, no reverse dependencies.
+# Removal on 2023-03-05.  Bug #892916.
+x11-themes/echo-icon-theme
+
+# Michał Górny <mgorny@gentoo.org> (2023-02-03)
+# Dead upstream, no active maintainer, no reverse dependencies,
+# build issues.
+# Removal on 2023-03-05.  Bug #892918.
+x11-themes/gtk-engines-nodoka
+
+# Michał Górny <mgorny@gentoo.org> (2023-02-03)
+# The package has been archived upstream.  It is broken with all Python
+# versions supported by Gentoo, and it is broken with django-2.
+# The other listed packages are its reverse dependencies.
+# Removal on 2023-03-05.  Bug #718972.
+app-misc/gcalcli
+app-misc/goobook
+dev-python/gcs-oauth2-boto-plugin
+dev-python/google-apitools
+dev-python/google-reauth-python
+dev-python/oauth2client
+net-misc/gsutil
+
+# Marek Szuba <marecki@gentoo.org> (2023-02-03)
+# New major version with breaking changes, mask until 2023-03-03
+# for revdep testing and porting. Bug #893006.
+>=dev-cpp/msgpack-cxx-5.0.0
+>=dev-libs/msgpack-5.0.0
+
 # Michał Górny <mgorny@gentoo.org> (2023-02-02)
 # dev-python/citeproc-py requires dev-python/nose and is not maintained
 # upstream.  Its only revdep, dev-python/duecredit has no reverse
@@ -105,46 +146,6 @@ app-admin/bastille
 # Removal: 2023-02-27. Bug #892323
 games-rpg/adonthell
 games-rpg/wastesedge
-
-# Michał Górny <mgorny@gentoo.org> (2023-01-27)
-# GKrellM and a variety of plugins.  It's unmaintained for some time.
-# Upstream homepage is gone, and the whole suite is collecting dust
-# and patches.  There is no ongoing effort on porting to GTK+3.
-# Removal on 2023-02-26.  Bug #892251.
-acct-group/gkrellmd
-acct-user/gkrellmd
-app-admin/gkrellm
-app-laptop/ibam
-media-plugins/gkrellmpc
-x11-plugins/bfm
-x11-plugins/gkrellaclock
-x11-plugins/gkrellfire
-x11-plugins/gkrellkam
-x11-plugins/gkrellm-bgchanger
-x11-plugins/gkrellm-bluez
-x11-plugins/gkrellm-countdown
-x11-plugins/gkrellm-cpupower
-x11-plugins/gkrellm-imonc
-x11-plugins/gkrellmlaunch
-x11-plugins/gkrellm-leds
-x11-plugins/gkrellm-mailwatch
-x11-plugins/gkrellmoon
-x11-plugins/gkrellm-plugins
-x11-plugins/gkrellm-radio
-x11-plugins/gkrellmss
-x11-plugins/gkrellm-trayicons
-x11-plugins/gkrellm-vaiobright
-x11-plugins/gkrellm-volume
-x11-plugins/gkrellmwireless
-x11-plugins/gkrellm-xkb
-x11-plugins/gkrellshoot
-x11-plugins/gkrellstock
-x11-plugins/gkrellsun
-x11-plugins/gkrelltop
-x11-plugins/gkrellweather
-x11-plugins/gkwebmon
-x11-plugins/i8krellm
-x11-themes/gkrellm-themes
 
 # Florian Schmaus <flow@gentoo.org> (2023-01-27)
 # Previous dependencies of dev-lang/clojure, now part of the clojure

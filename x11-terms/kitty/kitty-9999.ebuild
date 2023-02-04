@@ -62,7 +62,7 @@ DEPEND="
 	wayland? ( dev-libs/wayland-protocols )"
 BDEPEND="
 	${PYTHON_DEPS}
-	>=dev-lang/go-1.19
+	>=dev-lang/go-1.20
 	sys-libs/ncurses
 	virtual/pkgconfig
 	test? ( $(python_gen_cond_dep 'dev-python/pillow[${PYTHON_USEDEP}]') )
@@ -131,8 +131,20 @@ src_compile() {
 	edo "${EPYTHON}" setup.py linux-package "${conf[@]}"
 	use test && edo "${EPYTHON}" setup.py build-launcher "${conf[@]}"
 
-	[[ ${PV} == 9999 ]] || mv linux-package/share/doc/{${PN},${PF}} || die
-	rm -r linux-package/share/terminfo || die
+	rm -r linux-package/share/terminfo || die # provided by kitty-terminfo
+
+	if [[ ${PV} == 9999 ]]; then
+		mkdir -p linux-package/share/doc/${PF} || die
+	else
+		mv linux-package/share/doc/{${PN},${PF}} || die
+	fi
+
+	# generate default config as reference, command taken from docs/conf.rst
+	if ! tc-is-cross-compiler; then
+		linux-package/bin/kitty +runpy \
+			'from kitty.config import *; print(commented_out_default_config())' \
+			> linux-package/share/doc/${PF}/kitty.conf || die
+	fi
 }
 
 src_test() {
