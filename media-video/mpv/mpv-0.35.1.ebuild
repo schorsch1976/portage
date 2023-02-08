@@ -12,7 +12,7 @@ if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://github.com/mpv-player/mpv.git"
 else
 	SRC_URI="https://github.com/mpv-player/mpv/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~x86 ~amd64-linux"
+	KEYWORDS="amd64 ~arm ~arm64 ~loong ppc ppc64 ~riscv ~x86 ~amd64-linux"
 fi
 
 DESCRIPTION="Media player for the command line"
@@ -46,6 +46,7 @@ REQUIRED_USE="
 	xv? ( X )"
 RESTRICT="!test? ( test )"
 
+# raspberry-pi: default to -bin given non-bin is known broken (bug #893422)
 COMMON_DEPEND="
 	media-libs/libass:=[fontconfig]
 	media-video/ffmpeg:=[encode,threads,vaapi?,vdpau?]
@@ -93,7 +94,12 @@ COMMON_DEPEND="
 	opengl? ( media-libs/libglvnd[X?] )
 	pipewire? ( media-video/pipewire:= )
 	pulseaudio? ( media-libs/libpulse )
-	raspberry-pi? ( media-libs/raspberrypi-userland )
+	raspberry-pi? (
+		|| (
+			media-libs/raspberrypi-userland-bin
+			media-libs/raspberrypi-userland
+		)
+	)
 	rubberband? ( media-libs/rubberband )
 	sdl? ( media-libs/libsdl2[sound,threads,video] )
 	sixel? ( media-libs/libsixel )
