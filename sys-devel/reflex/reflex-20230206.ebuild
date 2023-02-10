@@ -17,6 +17,10 @@ KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~ppc ~ppc64 ~riscv ~s390 ~
 
 BDEPEND="verify-sig? ( sec-keys/openpgp-keys-thomasdickey )"
 
+PATCHES=(
+	"${FILESDIR}"/reflex-20230206-parallel-build.patch
+)
+
 src_install() {
 	default
 
