@@ -33,6 +33,29 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2023-02-15)
+# A number of test failures, and the test phase does not fail correctly.
+# Last release in 2019.  No revdeps.
+# Removal on 2023-03-17.  Bug #894606.
+dev-python/urlgrabber
+
+# Michał Górny <mgorny@gentoo.org> (2023-02-15)
+# Unmaintained.  Broken with current version of dev-python/pyglet.
+# No upstream activity since Sep 2021.  No revdeps.
+# Removal on 2023-03-17.  Bug #887973.
+dev-python/glooey
+
+# Alfredo Tupone <tupone@gentoo.org> (2023-02-14)
+# Masked for removal in 30 days.
+# Not maintained (2020), no rev dep
+dev-ml/ppxfind
+
+# Michał Górny <mgorny@gentoo.org> (2023-02-14)
+# Unmaintained and archived.  Invalid version number causes total mayhem
+# when installed alongside new dev-python/packaging.
+# Removal on 2023-03-16.  Bug #894222.
+net-p2p/bittornado
+
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2023-02-10)
 # Unused Java libraries. Removal on 2023-03-12.
 dev-java/jcip-annotations
@@ -679,63 +702,6 @@ dev-ruby/rails:5.2
 dev-ruby/railties:5.2
 dev-ruby/arel
 =www-apps/redmine-4.2.9
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2023-01-20)
-# KDE Plasma 5.26.90 (5.27 Beta) mask
-# Pre-release version - happy testing!
-~kde-plasma/bluedevil-5.26.90
-~kde-plasma/breeze-5.26.90
-~kde-plasma/breeze-grub-5.26.90
-~kde-plasma/breeze-gtk-5.26.90
-~kde-plasma/breeze-plymouth-5.26.90
-~kde-plasma/discover-5.26.90
-~kde-plasma/drkonqi-5.26.90
-~kde-plasma/kactivitymanagerd-5.26.90
-~kde-plasma/kde-cli-tools-5.26.90
-~kde-plasma/kde-gtk-config-5.26.90
-~kde-plasma/kdecoration-5.26.90
-~kde-plasma/kdeplasma-addons-5.26.90
-~kde-plasma/kgamma-5.26.90
-~kde-plasma/khotkeys-5.26.90
-~kde-plasma/kinfocenter-5.26.90
-~kde-plasma/kmenuedit-5.26.90
-~kde-plasma/kpipewire-5.26.90
-~kde-plasma/kscreen-5.26.90
-~kde-plasma/kscreenlocker-5.26.90
-~kde-plasma/ksshaskpass-5.26.90
-~kde-plasma/ksystemstats-5.26.90
-~kde-plasma/kwallet-pam-5.26.90
-~kde-plasma/kwayland-integration-5.26.90
-~kde-plasma/kwin-5.26.90
-~kde-plasma/kwrited-5.26.90
-~kde-plasma/layer-shell-qt-5.26.90
-~kde-plasma/libkscreen-5.26.90
-~kde-plasma/libksysguard-5.26.90
-~kde-plasma/libkworkspace-5.26.90
-~kde-plasma/milou-5.26.90
-~kde-plasma/oxygen-5.26.90
-~kde-plasma/oxygen-sounds-5.26.90
-~kde-plasma/plasma-browser-integration-5.26.90
-~kde-plasma/plasma-desktop-5.26.90
-~kde-plasma/plasma-disks-5.26.90
-~kde-plasma/plasma-firewall-5.26.90
-~kde-plasma/plasma-integration-5.26.90
-~kde-plasma/plasma-meta-5.26.90
-~kde-plasma/plasma-nm-5.26.90
-~kde-plasma/plasma-pa-5.26.90
-~kde-plasma/plasma-sdk-5.26.90
-~kde-plasma/plasma-systemmonitor-5.26.90
-~kde-plasma/plasma-thunderbolt-5.26.90
-~kde-plasma/plasma-workspace-5.26.90
-~kde-plasma/plasma-workspace-wallpapers-5.26.90
-~kde-plasma/plasma-vault-5.26.90
-~kde-plasma/plymouth-kcm-5.26.90
-~kde-plasma/polkit-kde-agent-5.26.90
-~kde-plasma/powerdevil-5.26.90
-~kde-plasma/sddm-kcm-5.26.90
-~kde-plasma/systemsettings-5.26.90
-~kde-plasma/xdg-desktop-portal-kde-5.26.90
-~kde-plasma/xembed-sni-proxy-5.26.90
 
 # Alfredo Tupone <tupone@gentoo.org> (2023-01-18)
 # Masked for removal in 30 days.
