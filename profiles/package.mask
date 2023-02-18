@@ -33,10 +33,16 @@
 
 #--- END OF EXAMPLES ---
 
-# Sam James <sam@gentoo.org> (2023-02-16)
-# Broken HTTP/2 transfers
-# https://github.com/curl/curl/issues/10525
-=net-misc/curl-7.88.0
+# Michał Górny <mgorny@gentoo.org> (2023-02-17)
+# Merged into dev-python/pytest-cov in 2020.  No revdeps left.
+# Removal on 2023-03-19.  Bug #895120.
+dev-python/cov-core
+
+# Michał Górny <mgorny@gentoo.org> (2023-02-17)
+# Broken against the current package versions in ::gentoo.  Upstream
+# inactive.  No revdeps.
+# Removal on 2023-03-19.  Bug #865931.
+dev-python/pytest-flake8
 
 # Michał Górny <mgorny@gentoo.org> (2023-02-15)
 # A number of test failures, and the test phase does not fail correctly.
