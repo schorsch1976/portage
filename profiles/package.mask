@@ -33,6 +33,27 @@
 
 #--- END OF EXAMPLES ---
 
+# Torokhov Sergey <torokhov-s-a@yandex.ru> (2023-02-26)
+# The masked version causes GIMP breaking of Cut/Copy/Paste
+# https://gitlab.gnome.org/GNOME/gimp/-/issues/9175
+=media-libs/babl-0.1.100
+
+# Michał Górny <mgorny@gentoo.org> (2023-02-25)
+# Major update.  Multiple packages are known to be broken.
+# Masked for further testing.
+>=dev-python/cython-3
+
+# Ulrich Müller <ulm@gentoo.org> (2023-02-26)
+# Installs headers, libs, and pkgconfig as "git2-experimental",
+# which breaks reverse dependencies. Bug #897880
+=dev-libs/libgit2-1.6.1
+
+# Matt Turner <mattst88@gentoo.org> (2023-02-25)
+# Packages are unmaintained and archived upstream.
+# Removal on 2023-03-27. Bug #897748
+gnome-extra/seahorse-nautilus
+x11-libs/libcryptui
+
 # Andrew Ammerlaan <andrewammerlaan@gentoo.org> (2023-02-25)
 # Fails tests, last upstream commit 2021, does not work with
 # python3.11. No reverse dependencies.
