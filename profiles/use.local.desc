@@ -455,6 +455,7 @@ app-editors/gvim:crypt - Use dev-libs/libsodium for crypto support
 app-editors/gvim:cscope - Enable cscope interface
 app-editors/gvim:netbeans - Include netbeans external editor integration support
 app-editors/gvim:racket - Enable support for Scheme using dev-scheme/racket
+app-editors/helix:grammar - Build and install grammar language files
 app-editors/jasspa-microemacs:nanoemacs - Build NanoEmacs instead of MicroEmacs
 app-editors/joe:xterm - Enable full xterm clipboard support
 app-editors/leafpad:emacs - Enable Emacs key theme
@@ -1651,7 +1652,6 @@ dev-java/jaxen:xom - Includes org.jaxen.xom package
 dev-java/junit:migration-support - Include the junit-jupiter-migrationsupport module, which helps with migration from JUnit 4 to JUnit Jupiter
 dev-java/junit:suite - Include the JUnit Platform Suite Engine, which adds test suite support
 dev-java/junit:vintage - Include JUnit Vintage, which allows JUnit 5 to run JUnit 3 and JUnit 4 tests
-dev-java/miglayout:swt - Add support for the SWT toolkit.
 dev-java/openjdk:headless-awt - Don't install the X backend for AWT, needed by some GUIs
 dev-java/openjdk:javafx - Import OpenJFX modules at build time, via dev-java/openjfx
 dev-java/openjdk:jbootstrap - Build OpenJDK twice, the second time using the result of the first
@@ -2656,7 +2656,6 @@ dev-ruby/faraday_middleware:rashify - Include FaradayMiddleware::Rashify
 dev-ruby/maruku:highlight - Enable source code highlighting via dev-ruby/syntax
 dev-ruby/mysql2:mariadb - Use mariadb bindings
 dev-ruby/net-ssh:ed25519 - Use dev-ruby/ed25519 for Ed25519 support
-dev-ruby/rails:asset-pipeline - Also install the default components for the asset pipeline. These are not required but they are activated automatically in new Rails projects by default.
 dev-ruby/rrdtool-bindings:graph - Enable support for graphing functions
 dev-ruby/rspec-core:highlight - Enable source code highlighting via dev-ruby/coderay
 dev-ruby/rubygems:server - Install support for the rubygems server
@@ -4270,7 +4269,6 @@ media-libs/mesa:vulkan - Enable Vulkan drivers
 media-libs/mesa:vulkan-overlay - Build vulkan-overlay-layer which displays Frames Per Second and other statistics
 media-libs/mesa:wayland - Enable support for dev-libs/wayland
 media-libs/mesa:xa - Enable the XA (X Acceleration) API for Gallium3D.
-media-libs/mesa:xvmc - Enable the XvMC acceleration interface for the Gallium3D Video Layer.
 media-libs/mesa:zink - Enable the Zink OpenGL-over-Vulkan Gallium driver
 media-libs/mesa-amber:gles1 - Enable GLESv1 support.
 media-libs/mesa-amber:gles2 - Enable GLESv2 support.
@@ -8333,6 +8331,8 @@ sys-kernel/kpatch:kmod - Enable a kernel module (.ko file) which provides an int
 sys-kernel/kpatch:kpatch - Enable a command-line tool which allows a user to manage a collection of patch modules.
 sys-kernel/kpatch:kpatch-build - Enable tools which convert a source diff patch to a patch module.
 sys-kernel/linux-firmware:compress - Compress firmware using xz (app-arch/xz-utils) before installation
+sys-kernel/linux-firmware:compress-xz - Compress firmware using xz (app-arch/xz-utils) before installation
+sys-kernel/linux-firmware:compress-zstd - Compress firmware using zstd (app-arch/zstd) before installation
 sys-kernel/linux-firmware:initramfs - Create and install initramfs for early microcode loading in /boot (only AMD for now)
 sys-kernel/linux-firmware:redistributable - Install also non-free (but redistributable) firmware files
 sys-kernel/linux-firmware:savedconfig - Allows individual selection of firmware files
@@ -8591,6 +8591,7 @@ www-client/chromium:js-type-check - Enable JavaScript type-checking for Chrome's
 www-client/chromium:libcxx - Use bundled libc++ instead of libstdc++ for building.
 www-client/chromium:lto - Build with Link Time Optimizations (via clang's ThinLTO)
 www-client/chromium:official - Enable Official build instead of Developer build.
+www-client/chromium:pax-kernel - Allow building on a PaX-enabled kernel
 www-client/chromium:pgo - Build with Profile Guided Optimizations (2-stage compilation)
 www-client/chromium:pic - Disable optimized assembly code that is not PIC friendly
 www-client/chromium:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
@@ -8775,10 +8776,7 @@ x11-drivers/xf86-video-intel:xvmc - Enables X-Video Motion Compensation support
 x11-drivers/xf86-video-openchrome:viaregtool - Install registers dumper tool
 x11-drivers/xf86-video-qxl:xspice - Include Xspice, a standard X server that is also a Spice server
 x11-libs/agg:gpc - Enable gpc polygon clipper library
-x11-libs/cairo:gles2-only - Build the OpenGL ES 2 backend
-x11-libs/cairo:gles3 - Use OpenGL ES 3.0 features (instead of ES 2.0; requires USE=gles2-only)
 x11-libs/cairo:glib - Compile with GLib Object System support
-x11-libs/cairo:opengl - Build the OpenGL backend
 x11-libs/fltk:games - Builds and installs some extra games
 x11-libs/fox:tools - Install adie, calculator, shutterbug, and pathfinder apps.
 x11-libs/gtk+:broadway - Enable the GDK Broadway backend
