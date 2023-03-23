@@ -537,9 +537,6 @@ app-emulation/dxvk:d3d11 - Enable support for DirectX 11 (d3d11.dll)
 app-emulation/dxvk:d3d9 - Enable support for DirectX 9 (d3d9.dll)
 app-emulation/dxvk:dxgi - Enable support for the DirectX Graphics Infrastructure (dxgi.dll)
 app-emulation/faudio:dumpvoices - FAudio dumps buffer data to individual files with RIFF/XWMA headers, usable with players like ffplay/testxwma.
-app-emulation/faudio:test - Build and run faudio testsuite.
-app-emulation/faudio:utils - Build all faudio utilities.
-app-emulation/faudio:xnasong - Build support for optional XNG_SONG component (note: this not required by app-emulation/wine-staging, app-emulation/wine-vanilla for faudio XAudio support).
 app-emulation/fs-uae:fmv - Enable support for CD32 FMV (full motion video)
 app-emulation/fs-uae:glew - Enable support for The OpenGL Extension Wrangler Library (media-libs/glew)
 app-emulation/fs-uae-launcher:lha - Enable LHA archive support
@@ -985,6 +982,7 @@ app-office/abiword:plugins - Enable plugins build (see http://www.abisource.com/
 app-office/abiword:redland - Enables support redland and raptor libs.
 app-office/abiword:thesaurus - Enable thesaurus support
 app-office/abiword:wordperfect - Enable wordperfect file support via app-text/libwpd
+app-office/calcurse:caldav - Support CalDAV
 app-office/calligra:activities - Enable kactivities support
 app-office/calligra:charts - Build chartshape plugin for creating business charts with dev-libs/kdiagram
 app-office/calligra:gemini - Enable tablet and 2:1 devices support
@@ -3235,7 +3233,6 @@ games-util/slade:fluidsynth - Enable MIDI software synthesis using media-sound/f
 games-util/wit:fuse - Enable image mount support via fuse
 gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
 gnome-base/gdm:bluetooth-sound - Allow loading of bluetooth sound modules. This may be necessary for accessibility screen readers, but may cause bluetooth sound issues for users logging in.
-gnome-base/gdm:elogind - Use sys-auth/elogind for session management
 gnome-base/gdm:fprint - Enables experimental fingerprint authentication using sys-auth/fprintd
 gnome-base/gdm:plymouth - Enable support for smooth transition from sys-boot/plymouth
 gnome-base/gnome:classic - Install gnome-extra/gnome-shell-extensions for the Gnome Shell Classic mode
