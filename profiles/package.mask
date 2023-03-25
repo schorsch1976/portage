@@ -33,6 +33,10 @@
 
 #--- END OF EXAMPLES ---
 
+# Sam James <sam@gentoo.org> (2023-03-24)
+# Please upgrade to make-4.4.1 as make-4.4 has a bunch of issues.
+=sys-devel/make-4.4
+
 # John Helmert III <ajak@gentoo.org> (2023-03-22)
 # Multiple vulnerabilities, unmaintained and broken in Gentoo, removal
 # on 2023-04-22. Bug #782037, #850547.
@@ -311,12 +315,6 @@ dev-lang/regina-rexx
 # Unmaintained with reported bugs.  Last release in 2004.
 # Removal on 2023-03-26.  Bug #740480.
 media-tv/nvtv
-
-# Michał Górny <mgorny@gentoo.org> (2023-02-24)
-# Fails to build with setuptools-67.2.0.  Release from Aug 2020.
-# Upstream has made a number of releases since.  No revdeps.
-# Removal on 2023-03-26.  Bug #892347.
-dev-python/pygame_sdl2
 
 # Michał Górny <mgorny@gentoo.org> (2023-02-24)
 # Fails to build with setuptools-67.2.0.  The current version is from
