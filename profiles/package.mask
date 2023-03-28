@@ -33,17 +33,17 @@
 
 #--- END OF EXAMPLES ---
 
+# Sam James <sam@gentoo.org> (2023-03-27)
+# The upstream tzinfo maintainers recommend using 2023a for now because of the
+# disruption regarding Lebanon's DST change. See https://lore.kernel.org/distributions/87cz4u2gmj.fsf@gentoo.org/T/#u.
+=sys-libs/timezone-data-2023b
+=dev-python/pytz-2023.2-r1
+=dev-perl/DateTime-TimeZone-2.580.0
+
 # Michał Górny <mgorny@gentoo.org> (2023-03-26)
 # No py3.11.  Last release in 2014.  No revdeps.
 # Removal on 2023-04-25.  Bug #896762.
 dev-python/collective-checkdocs
-
-# Hans de Graaff <graaff@gentoo.org> (2023-03-26)
-# Mask ruby27-only packages related to hiera-eyaml. These require a now
-# masked version of puppet and other obsolete ruby27-only test
-# dependencies. Masked for removal on 2023-04-26.
-dev-ruby/hiera-eyaml
-dev-ruby/hiera-eyaml-gpg
 
 # Hans de Graaff <graaff@gentoo.org> (2023-03-26)
 # Mask ruby27-only version of puppet for removal. Please upgrade to
@@ -257,12 +257,6 @@ sys-power/dptfxtract
 # Removal on 2023-03-27. Bug #897748
 gnome-extra/seahorse-nautilus
 x11-libs/libcryptui
-
-# Andrew Ammerlaan <andrewammerlaan@gentoo.org> (2023-02-25)
-# Fails tests, last upstream commit 2021, does not work with
-# python3.11. No reverse dependencies.
-# Removal on 2023-03-27. Bug 896898 and 888444
-dev-python/trio-asyncio
 
 # Ben Kohler <bkohler@gentoo.org> (2023-01-30)
 # Breaks too many revdeps for now
