@@ -3652,7 +3652,6 @@ mail-client/balsa:rubrica - Adds support for rubrica addressbook
 mail-client/balsa:systray - Enable System Tray Icon support
 mail-client/claws-mail:archive - Enable archiving plugin
 mail-client/claws-mail:bogofilter - Build mail-filter/bogofilter plugin
-mail-client/claws-mail:dillo - Enable dillo html viewer plugin
 mail-client/claws-mail:gdata - Enable plugin for access to Google data providers
 mail-client/claws-mail:libcanberra - Enable sound notification in connection with USE=notification
 mail-client/claws-mail:libnotify - Enable notification on the desktop in connection with USE=notification
@@ -3990,6 +3989,7 @@ media-gfx/hugin:sift - automatically align images with media-gfx/autopano-sift-C
 media-gfx/imagemagick:corefonts - Use media-fonts/corefonts which is required by some commands
 media-gfx/imagemagick:fpx - Enable media-libs/libfpx support
 media-gfx/imagemagick:hdri - Enable High Dynamic Range Images formats
+media-gfx/imagemagick:jpegxl - Enable support for JPEG XL image format
 media-gfx/imagemagick:lqr - Enable experimental liquid rescale support using media-libs/liblqr
 media-gfx/imagemagick:opencl - Enable OpenCL support
 media-gfx/imagemagick:pango - Enable Pango support using x11-libs/pango
@@ -5297,7 +5297,6 @@ net-analyzer/nmap:ndiff - Install the ndiff utility
 net-analyzer/nmap:nping - Install the nping utility
 net-analyzer/nmap:nse - Include support for the Nmap Scripting Engine (NSE)
 net-analyzer/nmap:symlink - Install symlink to nc
-net-analyzer/nmap:system-lua - Use dev-lang/lua instead of the bundled liblua
 net-analyzer/nmap:zenmap - Install the GTK+ based nmap GUI, zenmap
 net-analyzer/nrpe:command-args - Build support for specifying the command-line arguments from the Nagios/Icinga master. Make sure you understand the implications of this flag as it can be a security risk.
 net-analyzer/nsca:crypt - Build support for crypted communication with nsca, through dev-libs/libmcrypt. It's recommended not to disable this flag unless all the communication will be handled in an absolutely safe environment.
