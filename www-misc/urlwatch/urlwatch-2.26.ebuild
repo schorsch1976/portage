@@ -17,7 +17,7 @@ HOMEPAGE="
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	dev-python/appdirs[${PYTHON_USEDEP}]
@@ -30,6 +30,7 @@ RDEPEND="
 "
 BDEPEND="
 	test? (
+		app-text/tesseract[png]
 		dev-python/docutils[${PYTHON_USEDEP}]
 		dev-python/jq[${PYTHON_USEDEP}]
 		dev-python/pytesseract[${PYTHON_USEDEP}]
