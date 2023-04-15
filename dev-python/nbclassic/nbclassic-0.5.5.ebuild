@@ -17,14 +17,14 @@ HOMEPAGE="
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~ia64 ~loong ~ppc ~riscv ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 
 RDEPEND="
 	dev-python/argon2-cffi[${PYTHON_USEDEP}]
 	dev-python/ipykernel[${PYTHON_USEDEP}]
 	dev-python/ipython_genutils[${PYTHON_USEDEP}]
 	dev-python/jinja[${PYTHON_USEDEP}]
-	>=dev-python/jupyter_client-6.1.1[${PYTHON_USEDEP}]
+	>=dev-python/jupyter-client-6.1.1[${PYTHON_USEDEP}]
 	>=dev-python/jupyter-core-4.6.1[${PYTHON_USEDEP}]
 	>=dev-python/nbconvert-5[${PYTHON_USEDEP}]
 	dev-python/nbformat[${PYTHON_USEDEP}]
