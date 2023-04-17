@@ -1277,6 +1277,7 @@ dev-ada/gnatcoll-db:static-pic - Build shared library
 dev-ada/gnatcoll-db:xref - Build xref library
 dev-ada/gpr:shared - Build shared library
 dev-ada/gpr-unit-provider:shared - Build shared library
+dev-ada/gpr-unit-provider:static-pic - Build static library with pic code
 dev-ada/gtkada:shared - Build gtkada as shared library
 dev-ada/gtkada:static-pic - Build static library with pic code
 dev-ada/langkit:shared - Build shared library
@@ -1926,6 +1927,8 @@ dev-libs/jemalloc:xmalloc - Add support for xmalloc (abort-on-out-of-memory)
 dev-libs/kosmindoormap:openinghours - Enable support for highlighting currently open amenities/shops/etc.
 dev-libs/kreport:marble - Enable displaying of maps using kde-apps/marble
 dev-libs/kreport:scripting - Support Qml scripting using dev-qt/qtdeclarative
+dev-libs/ktextaddons:designer - Build plugins for dev-qt/designer
+dev-libs/ktextaddons:speech - Enable text-to-speech support
 dev-libs/libbase58:tools - Build command line base58 tool
 dev-libs/libbytesize:tools - Build bscalc python CLI tool
 dev-libs/libcbor:custom-alloc - Custom, dynamically defined allocator support
@@ -2173,6 +2176,7 @@ dev-libs/xmlrpc-c:libxml2 - Use dev-libs/libxml2 to parse XML instead of the int
 dev-libs/xmlrpc-c:threads - Controls whether to build the Abyss web-server with pthreads or fork 'threading'.
 dev-libs/xmlsec:gcrypt - Install xmlsec-gcrypt library
 dev-libs/xmlsec:gnutls - Install xmlsec-gnutls library
+dev-libs/xmlsec:http - Allow fetching over HTTP via libxml2.
 dev-libs/xmlsec:nss - Install xmlsec-nss library
 dev-libs/xmlsec:openssl - Install xmlsec-openssl library
 dev-libs/yaz:ziffy - Install ziffy, a promiscuous Z39.50 APDU sniffer
@@ -2309,6 +2313,7 @@ dev-python/PyQt6:qml - Build bindings for the QtQml module and enable the qml pl
 dev-python/PyQt6:quick - Build bindings for the QtQuick module
 dev-python/PyQt6:quick3d - Build bindings for the QtQuick3D module
 dev-python/PyQt6:serialport - Build bindings for the QtSerialPort module
+dev-python/PyQt6:spatialaudio - Build bindings for the QtSpatialAudio module
 dev-python/PyQt6:sql - Build bindings for the QtSql module
 dev-python/PyQt6:svg - Build bindings for the QtSvg module
 dev-python/PyQt6:testlib - Build bindings for the QtTest module
@@ -3317,7 +3322,7 @@ gui-apps/swaylock:gdk-pixbuf - Enable additional image format support via the x1
 gui-apps/waybar:evdev - Enable libevdev support for evdev related features
 gui-apps/waybar:experimental - Enable experimental features, such as Bluetooth battery reporting
 gui-apps/waybar:libinput - Enable libinput support for libinput related features
-gui-apps/waybar:logind - Enable support for logind
+gui-apps/waybar:logind - Enable support for logind (bluetooth and idle inhibit)
 gui-apps/waybar:mpd - Enable support for the Music Player Daemon
 gui-apps/waybar:mpris - Enable support for mpris
 gui-apps/waybar:network - Enable libnl support for network related features
@@ -3898,6 +3903,7 @@ media-gfx/blender:collada - Add support for Collada interchange format through m
 media-gfx/blender:color-management - Enable color management via media-libs/opencolorio.
 media-gfx/blender:cuda - Build cycles renderer with nVidia CUDA support.
 media-gfx/blender:cycles - Build cycles renderer (requires media-libs/openimageio and dev-libs/boost).
+media-gfx/blender:cycles-bin-kernels - Precompile the cycles render kernels for the CUDA/HIP/OneAPI backends, if they are enabled, at compile time. This makes it so that the user doesn't have to wait for the kernels to compile when they are used for the first time in Blender. If this option is not on, they will be built as needed at runtime.
 media-gfx/blender:dds - Adds DDS textures support to Blender.
 media-gfx/blender:embree - Use embree to accelerate certain areas of the Cycles render engine.
 media-gfx/blender:fluid - Adds fluid simulation support via the built-in Mantaflow library.
@@ -3907,6 +3913,7 @@ media-gfx/blender:ndof - Enable NDOF input devices (SpaceNavigator and friends).
 media-gfx/blender:oidn - Enable OpenImageDenoiser Support
 media-gfx/blender:opencl - Allow OpenCL Graphics Acceleration. This may require extra graphics card drivers.
 media-gfx/blender:openimageio - Enable OpenImageIO Support
+media-gfx/blender:openpgl - Enable path guiding support in Cycles
 media-gfx/blender:opensubdiv - Add rendering support form OpenSubdiv from Dreamworks Animation through media-libs/opensubdiv.
 media-gfx/blender:openvdb - Enable openvdb for volumetric processing, like the voxel remesher. Also enables volumetric GPU preview rendering for Nvidia cards.
 media-gfx/blender:optix - Add support for NVIDIA's OptiX Raytracing Engine.
@@ -6389,6 +6396,7 @@ net-misc/hylafaxplus:jbig - JBIG Fax Compression Support
 net-misc/hylafaxplus:mgetty - Receive faxes via serial port connections
 net-misc/hylafaxplus:pam - hfaxd authentication via PAM
 net-misc/icaclient:hdx - Install and enable hdx-realtime-media-engine plugin
+net-misc/icaclient:usb - Allow connecting USB devices to virtual desktops
 net-misc/icecast:kate - Add karaoke and text encapsulation support for Ogg files
 net-misc/icecast:yp - Build support for yp public directory listings
 net-misc/iputils:arping - Build and install arping -- tool for sending ARP requests to peers (see also net-analyzer/arping)
