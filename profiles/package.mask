@@ -33,6 +33,23 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2023-04-18)
+# Breaks ABI without SOVERSION bump, effectively preventing
+# xfce4-terminal from starting.
+# https://bugs.gentoo.org/904500
+=xfce-base/libxfce4ui-4.19.0
+
+# Sam James <sam@gentoo.org> (2023-04-18)
+# Fails to compile with GCC 13, out of date, QA issues, and various open bugs.
+# Removal on 2023-05-18.
+# Bug #899218, bug #899218, bug #796599, bug #672326, bug #788844.
+net-p2p/litecoind
+
+# Sam James <sam@gentoo.org> (2023-04-18)
+# Fails to compile with GCC 13, no upstream activity.
+# Removal on 2023-05-18.  Bug #895206.
+sci-geosciences/congen
+
 # David Seifert <soap@gentoo.org> (2023-04-17)
 # Unmaintained, no release in over 10 years, EAPI 6, no other distro
 # carries this, usual suckless.org assortment of build system
@@ -575,6 +592,7 @@ dev-qt/qtnetworkauth:6
 dev-qt/qtpositioning:6
 dev-qt/qtquick3d:6
 dev-qt/qtquicktimeline:6
+dev-qt/qtscxml:6
 dev-qt/qtserialport:6
 dev-qt/qtshadertools:6
 dev-qt/qtsvg:6
@@ -584,6 +602,7 @@ dev-qt/qtwebchannel:6
 dev-qt/qtwebengine:6
 dev-qt/qtwebsockets:6
 >=media-video/bino-2
+>=x11-misc/albert-0.20.13
 
 # Fabian Groffen <grobian@gentoo.org> (2022-07-02)
 # Segfaults handling SPF validations (warn on permerror), like the
