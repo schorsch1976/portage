@@ -1626,10 +1626,7 @@ dev-java/ant:resolver - Enable Apache Resolver Ant tasks
 dev-java/ant:swing - Enable Swing Ant tasks
 dev-java/ant:testutil - Enable optional test util classes
 dev-java/ant:xz - Enable XZ Ant tasks
-dev-java/commons-logging:avalon-framework - Add optional support for avalon-framework
-dev-java/commons-logging:avalon-logkit - Add optional support for avalon-logkit
 dev-java/commons-logging:log4j - Add optional support for log4j
-dev-java/commons-logging:servletapi - Add optional support for servletapi
 dev-java/dom4j:jaxen - Includes org.jaxen.dom4j package
 dev-java/eclipse-ecj:ant - Support using ecj in Ant builds via dev-java/ant-eclipse-ecj
 dev-java/emma:launcher - Install /usr/bin/emma. Collides with sci-biology/emboss.
@@ -8437,6 +8434,7 @@ sys-libs/ncurses-compat:tinfo - Build curses library (libncurses) sep from the l
 sys-libs/newlib:nano - Build additional newlib-nano library
 sys-libs/pam:berkdb - Build the pam_userdb module, that allows to authenticate users against a Berkeley DB file. Please note that enabling this USE flag will create a PAM module that links to the Berkeley DB (as provided by sys-libs/db) installed in /usr/lib and will thus not work for boot-critical services authentication.
 sys-libs/readline:utils - Install rlfe (ReadLine Front-End) helper tool -- a wrapper program for making any stdin use readline
+sys-libs/snapd-glib:qml - Build the QML bindings
 sys-libs/talloc:compat - Enable extra compatibility stuff
 sys-libs/timezone-data:leaps-timezone - Install the set of "right" timezones; these timezones include leap seconds when counting seconds since the epoch (while POSIX does not) as they are based on the TAI (International Atomic Time) clock
 sys-libs/timezone-data:zic-slim - Default to 'slim' file format for /usr/share/zoneinfo. Otherwise 'fat' format is used. Not all programs can handle 'slim' format'.
