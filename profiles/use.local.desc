@@ -1831,6 +1831,8 @@ dev-lang/yap:R - Enable support for connecting R to Prolog
 dev-lang/yap:raptor - Enable support for Raptor RDF syntax libarary
 dev-libs/aml:examples - Build and install examples
 dev-libs/antlr-c:debugger - Compiles debug info into the library
+dev-libs/apache-arrow:brotli - Enable brotli compression suppor
+dev-libs/apache-arrow:compute - Build the Arrow Compute Modules
 dev-libs/apache-arrow:dataset - Build the Arrow Dataset Modules
 dev-libs/apache-arrow:json - Enables read/write json format
 dev-libs/apache-arrow:parquet - Enables read/write parquet data format
@@ -3563,6 +3565,7 @@ kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking bac
 kde-frameworks/sonnet:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
 kde-misc/kdeconnect:X - Enable remote input mousepad plugin using x11-libs/libfakekey
 kde-misc/kdeconnect:pulseaudio - Enable system volume control plugin using media-sound/pulseaudio
+kde-misc/kdeconnect:telephony - Enable telephony plugin using kde-frameworks/modemmanager-qt
 kde-misc/kio-gdrive:share - Enable support for a share menu using kde-frameworks/purpose
 kde-misc/tellico:bibtex - Add support for bibtex importing using btparse from dev-perl/Text-BibTeX
 kde-misc/tellico:discid - Add support for reading disc IDs from audio CDs
@@ -5456,9 +5459,7 @@ net-dialup/accel-ppp:shaper - Support for traffic shaping
 net-dialup/accel-ppp:valgrind - Compile in valgrind hints
 net-dialup/freeradius:memcached - Include dev-libs/libmemcached in caching drivers
 net-dialup/freeradius:mongodb - Include support for MongoDB database
-net-dialup/freeradius:pcap - Build the RADIUS sniffer which requires net-libs/libpcap.
 net-dialup/freeradius:redis - Include support for Redis database
-net-dialup/freeradius:rest - Include support for sending and receiving HTTP requests
 net-dialup/freeradius-client:scp - Add service type hints derived from username prefix
 net-dialup/freeradius-client:shadow - Enable shadow password support
 net-dialup/mgetty:fax - Enables fax support
