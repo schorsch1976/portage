@@ -2062,7 +2062,6 @@ dev-libs/modsecurity:geoip2 - Pull in dev-libs/libmaxminddb for use by the SecGe
 dev-libs/modsecurity:json - Suppose JSON in the request body parser through dev-libs/yajl.
 dev-libs/modsecurity:lmdb - Add LMDB backend support
 dev-libs/modsecurity:pcre2 - Use dev-libs/libpcre2 as regex implementation
-dev-libs/msgpack:boost - Enable boost support
 dev-libs/ncnn:tools - Enable installation of various tools in addition to the library
 dev-libs/ncnn:vulkan - Enable vulkan compute support
 dev-libs/nettle:asm - Support assembly hand optimized crypto functions (i.e. faster run time)
@@ -2196,6 +2195,7 @@ dev-lisp/ecls:precisegc - Use type information during garbage collection (experi
 dev-lisp/gcl:ansi - Build a GCL with ANSI support (else build a traditional CLtL1 image)
 dev-lisp/gcl:athena - Build xgcl - an interface to x11-libs/libXaw
 dev-lisp/sbcl:capstone - Enable disassembly support with dev-libs/capstone
+dev-lisp/sbcl:system-bootstrap - Bootstrap SBCL using either system SBCL installation or dev-lisp/clisp
 dev-lua/lua-cjson:internal-fpconv - Enable internal number conversion routines, can increase overall performance by up to 50%
 dev-ml/lablgtk:glade - Enable gnome-base/libglade bindings compilation
 dev-ml/lablgtk:gnomecanvas - Enable gnome-base/libgnomecanvas bindings compilation
@@ -2444,7 +2444,7 @@ dev-python/pyside6:widgets - Build QtWidgets module
 dev-python/pyside6:xml - Build QtXml module
 dev-python/pytables:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)
 dev-python/python-lsp-server:all-plugins - Pull in all optional plugins
-dev-python/python-mpd:twisted - Enable twisted support
+dev-python/python-mpd2:twisted - Enable twisted support
 dev-python/python-stdnum:vies - Enable VIES
 dev-python/pyudev:qt5 - Install PyQt5 bindings
 dev-python/pyzmq:drafts - Enable draft API support
@@ -7925,7 +7925,6 @@ sys-auth/munge:gcrypt - Use libgcrypt instead of openssl
 sys-auth/nss-pam-ldapd:pynslcd - Install the python implementation along with the standard implementation
 sys-auth/nss-pam-ldapd:utils - Install the command-line utilities
 sys-auth/oath-toolkit:pam - Build PAM module for pluggable login authentication for OATH
-sys-auth/oath-toolkit:pskc - Build tools & library for the Portable Symmetric Key Container (PSKC) format per RFC6030
 sys-auth/pam_mktemp:prevent-removal - If supported, set EXT2_APPEND_FL on /tmp/.private to prevent temporary directories from being removed
 sys-auth/pam_mysql:openssl - Use OpenSSL for md5 and sha1 support
 sys-auth/pam_u2f:debug - Enable debug messages using the pam logging macros.
@@ -9085,6 +9084,8 @@ xfce-base/xfce4-settings:xklavier - Enable keyboard layout selection support usi
 xfce-base/xfdesktop:thunar - Build support for desktop icons (for example, launchers and folders)
 xfce-base/xfwm4:xpresent - Enable the XPresent extension for sync to vblank
 xfce-extra/xfce4-clipman-plugin:qrcode - Enable support for media-gfx/qrencode
+xfce-extra/xfce4-mixer:keybinder - Enable support for global hotkeys using dev-libs/keybinder.
+xfce-extra/xfce4-mixer:sndio - Enable media-sound/sndio backend.
 xfce-extra/xfce4-mpc-plugin:libmpd - Build using media-libs/libmpd backend, instead of native fallback which is preferred
 xfce-extra/xfce4-pulseaudio-plugin:keybinder - Enable support for global hotkeys using dev-libs/keybinder.
 xfce-extra/xfce4-pulseaudio-plugin:libcanberra - Enable sound event support using media-libs/libcanberra
