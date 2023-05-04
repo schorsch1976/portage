@@ -2128,6 +2128,7 @@ dev-libs/ppl:cdd - Build the ppl_lcdd program for vertex/facet enumeration accep
 dev-libs/ppl:lpsol - Build the ppl_lpsol linear program solver that uses sci-mathematics/glpk for its input routines
 dev-libs/qcoro5:network - Build dev-qt/qtnetwork support
 dev-libs/qcoro5:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
+dev-libs/qcoro5:testlib - Install coroutine-friendly versions of dev-qt/qttest macros
 dev-libs/qcoro5:websockets - Build dev-qt/qtwebsockets support
 dev-libs/qhotkey:qt6 - Use Qt6 dependencies
 dev-libs/quazip:qt5 - Build with Qt5 support
@@ -2135,6 +2136,7 @@ dev-libs/quazip:qt6 - Build with Qt6 support
 dev-libs/raft:zfs - ZFS support
 dev-libs/serd:tools - Build command line utilities
 dev-libs/serdisplib:tools - Build optional tools.
+dev-libs/sexp:cli - Build sexp console application
 dev-libs/simdjson:all-impls - Enable all implementations rather than only onem
 dev-libs/simdjson:tools - Build and install extra command line tools
 dev-libs/softhsm:gost - Enable gost algorithm
@@ -8528,6 +8530,7 @@ sys-power/nvclock:nvcontrol - Add NVCONTROL support for OpenGL options
 sys-power/suspend:crypt - Allows suspend and resume from encrypted disk
 sys-process/atop:modules - Build netatop kernel module and install netatopd daemon.
 sys-process/audit:gssapi - Enable GSSAPI support
+sys-process/audit:io-uring - Enable support for io-uring. Doesn't need the library but needs at least kernel 5.1.
 sys-process/bottom:battery - Include support for laptop battery information
 sys-process/bottom:gpu - Include support for GPU temperature and memory usage information
 sys-process/bottom:zfs - Include support for ZFS ARC memory usage information
