@@ -2364,7 +2364,6 @@ dev-python/editorconfig-core-py:cli - Install command line interface as well as 
 dev-python/httpx:cli - Install the CLI "httpx" client.
 dev-python/hypothesis:cli - Install a CLI tool used to write tests.
 dev-python/icalendar:doc - Generate examples and other extra documentation
-dev-python/ipython:matplotlib - Add support for dev-python/matplotlib
 dev-python/ipython:nbconvert - Enable support for converting notebooks to various formats using app-text/pandoc
 dev-python/ipython:notebook - Install requirements for the web notebook based on dev-python/tornado
 dev-python/matplotlib:excel - Pull dev-python/xlwt for the exceltools toolkit
@@ -4109,7 +4108,6 @@ media-libs/allegro:dumb - Enable media-libs/dumb module library support
 media-libs/allegro:physfs - Enable physfs support
 media-libs/allegro:vga - Enables the VGA graphics driver
 media-libs/alsa-lib:alisp - Enable support for ALISP (ALSA LISP) interpreter for advanced features.
-media-libs/alsa-lib:thread-safety - thread-safe API functions
 media-libs/alure:dumb - Enable media-libs/dumb module library support
 media-libs/alure:fluidsynth - Enables Fluidsynth MIDI software synthesis
 media-libs/assimp:samples - Build viewer library
@@ -7655,6 +7653,7 @@ sci-visualization/gnuplot:bitmap - Enable dot-matrix printers and pbm terminal
 sci-visualization/gnuplot:gd - Add support for media-libs/gd. Needed for GIF, JPEG, and PNG image output.
 sci-visualization/gnuplot:libcerf - Enable special functions from sci-libs/libcerf
 sci-visualization/gnuplot:regis - Enable ReGIS terminal
+sci-visualization/gr:agg - Enable the libagg anti-grain rendering engine
 sci-visualization/gwyddion:fits - Enable FITS image import via sci-libs/cfitsio
 sci-visualization/gwyddion:jansson - Enable JSON data manipulation via dev-libs/jansson
 sci-visualization/gwyddion:sourceview - Enable support for x11-libs/gtksourceview
