@@ -464,7 +464,6 @@ app-editors/nano:debug - Enable debug messages and assert warnings. Note that th
 app-editors/nano:justify - Enable justify/unjustify functions for text formatting.
 app-editors/nano:magic - Add magic file support (sys-apps/file) to automatically detect appropriate syntax highlighting
 app-editors/nano:minimal - Disable all fancy features, including ones that otherwise have a dedicated USE flag (such as spelling).
-app-editors/nano:split-usr - Enable this if /bin and /usr/bin are separate directories
 app-editors/neovim:lto - Build with Link Time Optimization (LTO)
 app-editors/neovim:nvimpager - Install nvimpager symlink to less.sh macro
 app-editors/neovim:tui - Build the neovim unix tui
@@ -3576,6 +3575,7 @@ kde-misc/tellico:discid - Add support for reading disc IDs from audio CDs
 kde-misc/tellico:yaz - Add support for searching Z39.50 databases
 kde-plasma/discover:firmware - Enable support for firmware upgrades using sys-apps/fwupd
 kde-plasma/discover:flatpak - Enable support for flatpak repositories using sys-apps/flatpak
+kde-plasma/discover:snap - Enable support for snap packages using app-containers/snapd
 kde-plasma/discover:webengine - Enable webflow support using dev-qt/qtwebview and dev-qt/qtwebengine instead of default URL handler
 kde-plasma/kde-cli-tools:kdesu - Build graphical frontend for kde-frameworks/kdesu
 kde-plasma/kdeplasma-addons:alternate-calendar - Support alternate calendar systems (currently Chinese or Indian) via dev-libs/icu
