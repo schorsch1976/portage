@@ -460,6 +460,7 @@ app-editors/helix:grammar - Build and install grammar language files
 app-editors/jasspa-microemacs:nanoemacs - Build NanoEmacs instead of MicroEmacs
 app-editors/joe:xterm - Enable full xterm clipboard support
 app-editors/leafpad:emacs - Enable Emacs key theme
+app-editors/mousepad:shortcuts - Build the "shortcuts" plugin
 app-editors/nano:debug - Enable debug messages and assert warnings. Note that these will all be sent straight to stderr rather than some logging facility.
 app-editors/nano:justify - Enable justify/unjustify functions for text formatting.
 app-editors/nano:magic - Add magic file support (sys-apps/file) to automatically detect appropriate syntax highlighting
@@ -1999,6 +2000,7 @@ dev-libs/libpcre2:bzip2 - Add support for pcregrep command to search within bzip
 dev-libs/libpcre2:pcre16 - Build PCRE library for 16 bit characters (e.g. UTF-16).
 dev-libs/libpcre2:pcre32 - Build PCRE library for 32 bit characters (e.g. UTF-32).
 dev-libs/libpcre2:readline - Add support for command line editing to pcretest, through sys-libs/readline.
+dev-libs/libpcre2:valgrind - Support Valgrind for dev-util/valgrind annotations to improve results for memcheck.
 dev-libs/libpcre2:zlib - Add support for pcregrep command to search within gzip-compressed files (via sys-libs/zlib).
 dev-libs/libpeas:glade - Install the glade catalog
 dev-libs/libpeas:python - Build support for loading dev-lang/python plugins
@@ -2366,6 +2368,7 @@ dev-python/matplotlib:gtk3 - Enable x11-libs/gtk+:3 support
 dev-python/matplotlib:webagg - Enable webagg backend that uses dev-python/tornado
 dev-python/mido:portmidi - Support using media-libs/portmidi as MIDI back-end
 dev-python/mido:rtmidi - Support using media-libs/rtmidi as MIDI back-end
+dev-python/mkdocs-material:social - Install the dependencies of the "social" plugin.
 dev-python/mpmath:matplotlib - Add support for dev-python/matplotlib
 dev-python/msgpack:native-extensions - Compiles native "C" extensions (speedups, instead of using python fallback code).
 dev-python/pandas:full-support - Pull all packages to give pandas full support
@@ -2861,7 +2864,6 @@ dev-util/trace-cmd:udis86 - Enable support for dev-libs/udis86 disassembler libr
 dev-util/uftrace:capstone - Use capstone to provide dynamic tracing without recompilation
 dev-util/vulkan-tools:cube - Build the cube/cubepp demos
 dev-util/watchman:python - Install pywatchman bindings and the watchman-{wait,make} utils
-dev-vcs/cssc:valgrind - Enable usage of dev-util/valgrind in tests
 dev-vcs/cvs:server - Enable server support
 dev-vcs/cvsync:gcrypt - Use dev-libs/libgcrypt for hash functions.
 dev-vcs/cvsync:mhash - Use app-crypt/mhash for hash functions.
@@ -3357,10 +3359,12 @@ gui-libs/vte:systemd - Support moving terminal child processes to their own syst
 gui-libs/vte-common:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM
 gui-libs/wlroots:X - Enable support for X11 applications (XWayland)
 gui-libs/wlroots:hwdata - Use system hwdata
+gui-libs/wlroots:liftoff - Enable support for libliftoff kms plane backend
 gui-libs/wlroots:seatd - Enable libseatd session support
 gui-libs/wlroots:tinywl - Install the minimal wayland client, tinywl
 gui-libs/wlroots:vulkan - Enable support for the vulkan backend renderer
 gui-libs/wlroots:x11-backend - Enable support for handling input/output devices through x11-libs/libxcb
+gui-libs/wlroots:xcb-errors - Better error reporting when using xwayland
 gui-libs/xdg-desktop-portal-wlr:elogind - Enable support for rootless session via elogind
 gui-wm/gamescope:pipewire - Enable screen capture via PipeWire
 gui-wm/gamescope:wsi-layer - Enable the WSI layer (required for HDR)
@@ -4404,7 +4408,6 @@ media-libs/suil:gtk2 - Enable GTK2 based GUI support
 media-libs/svgalib:kernel-helper - Build the helper kernel module
 media-libs/tremor:low-accuracy - enable 32bit only multiply operations
 media-libs/urt:tools - Install tools
-media-libs/vigra:valgrind - Enable valgrind in make check
 media-libs/vips:deprecated - Enable deprecated components
 media-libs/vips:fits - Enable support for the Flexible Image Transport System data format using sci-libs/cfitsio
 media-libs/vips:gsf - Enable support for structured files using gnome-extra/libgsf
@@ -6190,7 +6193,6 @@ net-mail/notmuch:doc - Install API documentation
 net-mail/notmuch:emacs - Install Emacs UI (the main one)
 net-mail/notmuch:mutt - Install helper script for Mutt
 net-mail/notmuch:nmbug - Install experimental tag sharing / pseudo-bug-tracking script for Notmuch (see http://notmuchmail.org/nmbug/)
-net-mail/notmuch:valgrind - Depend on dev-util/valgrind for test suite
 net-mail/qmailadmin:maildrop - Filter spam using maildrop
 net-mail/tpop3d:authexternal - Enable authentication by an external program
 net-mail/tpop3d:flatfile - Enable authentication against /etc/passwd-style flat files
@@ -6641,7 +6643,6 @@ net-misc/wget2:http2 - Enable HTTP/2.0 support via net-libs/nghttp2
 net-misc/wget2:lzip - Enable app-arch/lzip support via app-arch/lzlib
 net-misc/wget2:openssl - Enable crypto support via dev-libs/openssl
 net-misc/wget2:psl - Use public suffix list via net-libs/libpsl
-net-misc/wget2:valgrind - Depend on dev-util/valgrind for test suite
 net-misc/whois:xcrypt - Enable crypt through sys-libs/libxcrypt package
 net-misc/x2goserver:fuse - Use net-fs/sshfs to allow shared folders
 net-misc/xmrig:donate - Set the default donation level to 1% instead of 0
@@ -7716,6 +7717,7 @@ sys-apps/cpu-x:pci - Use the sys-apps/pciutils library for PCI info
 sys-apps/cpu-x:vulkan - Enable vulkan support
 sys-apps/dbus:elogind - Use sys-auth/elogind for session tracking.
 sys-apps/dbus:systemd - Build with sys-apps/systemd at_console support
+sys-apps/dbus:valgrind - Support Valgrind for dev-util/valgrind annotations to improve results for memcheck.
 sys-apps/dbus-broker:launcher - dbus-daemon compatibility launcher
 sys-apps/debianutils:installkernel - Install /sbin/installkernel script (for Linux). installkernel is required whenever a kernel will be installed via make install
 sys-apps/dtc:yaml - support .yaml-encoded device trees
@@ -7991,7 +7993,6 @@ sys-auth/sssd:nfsv4 - Add support for the nfsv4 idmapd plugin provided by net-fs
 sys-auth/sssd:pac - Add Privileged Attribute Certificate Support for Kerberos
 sys-auth/sssd:sudo - Build helper to let app-admin/sudo use sssd provided information
 sys-auth/sssd:systemtap - Enable SystemTAP/DTrace tracing
-sys-auth/sssd:valgrind - Depend on dev-util/valgrind for test suite
 sys-block/f3:extra - Build the additional f3probe, f3brew and f3fix utility (requires sys-block/parted and virtual/udev)
 sys-block/fio:aio - Enable AIO ioengine
 sys-block/fio:curl - Enable HTTP engine for S3 and WebDav support support via net-misc/curl
@@ -8471,6 +8472,7 @@ sys-libs/ncurses:ada - Add bindings for the ADA programming language
 sys-libs/ncurses:stack-realign - Realign the stack in the 32-bit build for compatibility with older binaries at some performance cost. Avoids crashes in older 32-bit binaries. Only affects x86/32-bit multilib builds on amd64.
 sys-libs/ncurses:tinfo - Build curses library (libncurses) sep from the low-level terminfo library (libtinfo) -- usually needed only for binary packages -- but it is binary compatible in either mode
 sys-libs/ncurses:trace - Enable test trace() support in ncurses calls
+sys-libs/ncurses-compat:stack-realign - Realign the stack in the 32-bit build for compatibility with older binaries at some performance cost. Avoids crashes in older 32-bit binaries. Only affects x86/32-bit multilib builds on amd64.
 sys-libs/ncurses-compat:tinfo - Build curses library (libncurses) sep from the low-level terminfo library (libtinfo) -- usually needed only for binary packages -- but it is binary compatible in either mode
 sys-libs/newlib:nano - Build additional newlib-nano library
 sys-libs/pam:berkdb - Build the pam_userdb module, that allows to authenticate users against a Berkeley DB file. Please note that enabling this USE flag will create a PAM module that links to the Berkeley DB (as provided by sys-libs/db) installed in /usr/lib and will thus not work for boot-critical services authentication.
