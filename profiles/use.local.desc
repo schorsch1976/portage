@@ -1746,6 +1746,7 @@ dev-lang/perl:ithreads - Enable Perl threads, has some compatibility problems
 dev-lang/perl:quadmath - Enable 128bit floating point arithmetic via libquadmath
 dev-lang/php:apparmor - Support FPM application confinement through sys-libs/libapparmor
 dev-lang/php:argon2 - Enable password hashing algorithm from app-crypt/argon2
+dev-lang/php:avif - Enable AVIF support in bundled libgd
 dev-lang/php:bcmath - Enable the BCMath Arbitrary Precision Mathematics extension
 dev-lang/php:cli - Enable the Command-Line Interface (CLI) SAPI
 dev-lang/php:coverage - Include gcov symbols for test coverage and lcov reports. Only useful for extension developers, and requires GCC.
@@ -4938,7 +4939,6 @@ media-video/droidcam:gtk - Build the dev-cpp/gtkmm:3.0 client.
 media-video/dvdrip:fping - Enables fping support for cluster rendering
 media-video/dvdrip:subtitles - Enables support for subtitle ripping
 media-video/ffdiaporama:openclipart - Support openclipart database
-media-video/ffdiaporama:texturemate - Install extra backgrounds
 media-video/ffmpeg:amf - Enables support for AMD's Advanced Media Framework (AMF)
 media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
 media-video/ffmpeg:amrenc - Enables Adaptive Multi-Rate Audio encoding support with media-libs/vo-amrwbenc.
