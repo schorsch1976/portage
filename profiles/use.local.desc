@@ -7813,14 +7813,11 @@ sys-apps/man-db:manpager - Enable manpager wrapper for colorizing output
 sys-apps/memtest86:serial - Compile with serial console support
 sys-apps/memtest86+:bios32 - Compile a BIOS-bootable 32bit memtest image
 sys-apps/memtest86+:bios64 - Compile a BIOS-bootable 64bit memtest image
-sys-apps/memtest86+:boot - Also install to /boot instead of just /usr/share/memtest86+/
+sys-apps/memtest86+:boot - Install to /boot in addition to /usr/share/memtest86+/
 sys-apps/memtest86+:efi32 - Compile a EFI32-bootable 32bit memtest image
 sys-apps/memtest86+:efi64 - Compile a UEFI-bootable 64bit memtest image
-sys-apps/memtest86+:floppy - Install a script to create floppy disks containing memtest86+ binaries.
-sys-apps/memtest86+:iso - Compile an ISO image
 sys-apps/memtest86+:iso32 - Compile a 32bit ISO image
 sys-apps/memtest86+:iso64 - Compile a 64bit ISO image
-sys-apps/memtest86+:serial - Compile with serial console support
 sys-apps/moreutils:perl - Install scripts written in Perl
 sys-apps/net-tools:arp - build the arp and rarp tools (for manipulating the ARP cache)
 sys-apps/net-tools:hostname - build the hostname and dnsdomainname tools
@@ -8715,6 +8712,10 @@ www-servers/fnord:auth - Enable HTTP authentication support
 www-servers/gatling:diet - Compile against dev-libs/dietlibc
 www-servers/h2o:libh2o - Build and install libh2o
 www-servers/h2o:mruby - Enable support for mruby
+www-servers/kore:acme - Add support for ACME
+www-servers/kore:http - Add support for HTTP
+www-servers/kore:json - Add support for JSONRPC
+www-servers/kore:openssl - Use the openssl TLS backend
 www-servers/lighttpd:brotli - Enable output compression via app-arch/brotli (recommended)
 www-servers/lighttpd:gnutls - Build module for TLS via net-libs/gnutls
 www-servers/lighttpd:maxminddb - Add support for geolocation using dev-libs/libmaxminddb
