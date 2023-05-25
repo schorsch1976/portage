@@ -23,7 +23,7 @@ S=${WORKDIR}/lxml-${P}
 
 LICENSE="BSD ElementTree GPL-2 PSF-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~x64-cygwin ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~x64-cygwin ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~x64-solaris"
 IUSE="doc examples +threads test"
 RESTRICT="!test? ( test )"
 
@@ -37,6 +37,7 @@ RDEPEND="
 "
 BDEPEND="
 	virtual/pkgconfig
+	<dev-python/cython-3[${PYTHON_USEDEP}]
 	>=dev-python/cython-0.29.29[${PYTHON_USEDEP}]
 	doc? (
 		$(python_gen_any_dep '
