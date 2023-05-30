@@ -3323,7 +3323,6 @@ gui-apps/waypipe:ffmpeg - Link with ffmpeg to allow buffer displays using video 
 gui-apps/waypipe:systemtap - Enable SystemTAP/DTrace tracing
 gui-apps/wayvnc:gbm - enable GPU-side screencopy (experimental)
 gui-apps/wayvnc:tracing - Trace kernel and memory calls
-gui-apps/wf-recorder:opencl - Enable OpenCL
 gui-libs/gtk:broadway - Enable the GDK Broadway backend.
 gui-libs/gtk:cloudproviders - Enable GtkPlacesSidebar to access cloud services
 gui-libs/gtk:colord - Use x11-misc/colord for color management in printing
@@ -6818,12 +6817,14 @@ net-vpn/openconnect:gssapi - Build GSSAPI support
 net-vpn/openconnect:libproxy - Enable proxy support
 net-vpn/openconnect:pskc - Enable PSKC file storage of HOTP/TOTP keys
 net-vpn/openconnect:stoken - Enable stoken support
+net-vpn/openvpn:dco - Enable support for kernel data channel offload
 net-vpn/openvpn:down-root - Enable the down-root plugin
 net-vpn/openvpn:iproute2 - Enabled iproute2 support instead of net-tools
 net-vpn/openvpn:mbedtls - Use mbed TLS as the backend crypto library
 net-vpn/openvpn:openssl - Use OpenSSL as the backend crypto library
 net-vpn/openvpn:pkcs11 - Enable PKCS#11 smartcard support
 net-vpn/openvpn:plugins - Enable the OpenVPN plugin system
+net-vpn/ovpn-dco:debug - Enable debug output in dmesg
 net-vpn/pptpd:gre-extreme-debug - Log all GRE accepted packets when in debug mode (required if you want upstream support)
 net-vpn/strongswan:constraints - Enable advanced X.509 constraint checking plugin
 net-vpn/strongswan:dhcp - Enable server support for querying virtual IP addresses for clients from a DHCP server. (IKEv2 only)
