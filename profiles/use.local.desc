@@ -4050,6 +4050,7 @@ media-gfx/skanpage:ocr - Enable support for Optical Character Recognition via ap
 media-gfx/solvespace:system-mimalloc - Use system dev-libs/mimalloc instead of vendored library
 media-gfx/ueberzugpp:opencv - Use media-libs/opencv for additional image formats and OpenCL accelerated scaling
 media-gfx/ueberzugpp:wayland - Enable wayland support (proper window positioning is only supported with some compositors)
+media-gfx/ueberzugpp:xcb-errors - Use x11-libs/xcb-util-errors for better error reporting with X
 media-gfx/xpaint:pgf - Support for loading PGF images
 media-gfx/xsane:ocr - Enable support for Optical Character Recognition reader
 media-gfx/yafaray:fastmath - Enable mathematic approximations to make code faster
@@ -8705,6 +8706,7 @@ www-servers/nginx:aio - Enables file AIO support
 www-servers/nginx:http - Enable HTTP core support
 www-servers/nginx:http-cache - Enable HTTP cache support
 www-servers/nginx:http2 - Enable HTTP2 module support
+www-servers/nginx:http3 - Enable HTTP3 module support
 www-servers/nginx:libatomic - Use libatomic instead of builtin atomic operations
 www-servers/nginx:pcre-jit - Enable JIT for pcre
 www-servers/nginx:pcre2 - Enable support for pcre2
