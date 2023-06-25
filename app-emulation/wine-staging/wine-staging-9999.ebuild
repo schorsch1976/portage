@@ -180,11 +180,15 @@ src_unpack() {
 		EGIT_CHECKOUT_DIR=${WORKDIR}/${P}
 		git-r3_src_unpack
 
-		EGIT_COMMIT=$(<"${EGIT_CHECKOUT_DIR}"/staging/upstream-commit) || die
-		EGIT_REPO_URI=${WINE_EGIT_REPO_URI}
-		EGIT_CHECKOUT_DIR=${S}
-		einfo "Fetching Wine commit matching the current patchset by default (${EGIT_COMMIT})"
-		git-r3_src_unpack
+		# hack: use subshell to preserve state (including what git-r3 unpack
+		# sets) for smart-live-rebuild as this is not the repo to look at
+		(
+			EGIT_COMMIT=$(<"${EGIT_CHECKOUT_DIR}"/staging/upstream-commit) || die
+			EGIT_REPO_URI=${WINE_EGIT_REPO_URI}
+			EGIT_CHECKOUT_DIR=${S}
+			einfo "Fetching Wine commit matching the current patchset by default (${EGIT_COMMIT})"
+			git-r3_src_unpack
+		)
 	else
 		default
 	fi
@@ -308,8 +312,6 @@ src_configure() {
 
 			# use *FLAGS for mingw, but strip unsupported
 			: "${CROSSCFLAGS:=$(
-				# >=wine-7.21 configure.ac no longer adds -fno-strict by mistake
-				append-cflags '-fno-strict-aliasing'
 				filter-flags '-fstack-protector*' #870136
 				filter-flags '-mfunction-return=thunk*' #878849
 				CC=${CROSSCC} test-flags-CC ${CFLAGS:--O2})}"
