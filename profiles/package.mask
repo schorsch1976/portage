@@ -33,9 +33,27 @@
 
 #--- END OF EXAMPLES ---
 
+# Michael Orlitzky <mjo@gentoo.org> (2023-07-05)
+# I suspect I was its only user, and I'm not a user any more. Upstream
+# has deleted its autoloader for the second time, making an update more
+# trouble than removal, so: removal on or after 2023-08-05.
+dev-php/php-redmine-api
+
+# Michał Górny <mgorny@gentoo.org> (2023-07-05)
+# Discontinued in favor of built-in `ast` module on all supported
+# versions of Python.  No revdeps left.
+# Removal on 2023-08-04.
+dev-python/typed-ast
+
+# Sam James <sam@gentoo.org> (2023-07-05)
+# Doesn't install all needed files by e.g. kernelshark.
+# Need to either split into libtracecmd for the libraries or revert to Makefiles.
+# See bug #909439.
+=dev-util/trace-cmd-3.2
+
 # Hans de Graaff <graaff@gentoo.org> (2023-07-04)
 # Discontinued by upstream. No reverse dependencies. Upstream recommends
-# using dry-inflector. Please file a but if you would like us to package
+# using dry-inflector. Please file a bug if you would like us to package
 # this. Masked for removal on 2023-08-04.
 dev-ruby/inflecto
 
