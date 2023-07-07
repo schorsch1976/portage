@@ -388,6 +388,8 @@ app-crypt/qca:sasl - Enable SASL plugin
 app-crypt/qca:softstore - Enable softstore plugin
 app-crypt/seahorse:ldap - Enable seahorse to manipulate GPG keys on a LDAP server.
 app-crypt/swtpm:fuse - Support sys-fs/fuse based /dev/tpm interface
+app-crypt/swtpm:gnutls - Use net-libs/gnutls as crypto engine
+app-crypt/swtpm:openssl - Use dev-libs/openssl as crypto engine
 app-crypt/tpm-emulator:mtm-emulator - Build the MTM emulator
 app-crypt/tpm-tools:pkcs11 - Build Token data management utilities based on OpenCryptoki's (dev-libs/opencryptoki) PKCS#11 implementation.
 app-crypt/tpm2-pkcs11:fapi - Enable feature API backend
@@ -2343,6 +2345,7 @@ dev-python/hypothesis:cli - Install a CLI tool used to write tests.
 dev-python/icalendar:doc - Generate examples and other extra documentation
 dev-python/ipython:nbconvert - Enable support for converting notebooks to various formats using app-text/pandoc
 dev-python/ipython:notebook - Install requirements for the web notebook based on dev-python/tornado
+dev-python/jaraco-text:cli - Install dependencies needed for CLI tools (Rust warning!)
 dev-python/matplotlib:excel - Pull dev-python/xlwt for the exceltools toolkit
 dev-python/matplotlib:gtk3 - Enable x11-libs/gtk+:3 support
 dev-python/matplotlib:webagg - Enable webagg backend that uses dev-python/tornado
@@ -2808,9 +2811,12 @@ dev-util/ostree:libmount - Use libmount
 dev-util/ostree:sodium - Use libsodium for ed25519
 dev-util/ostree:soup - Use libsoup for networking
 dev-util/perf:babeltrace - Enable dev-util/babeltrace support
+dev-util/perf:bpf - Enable support for eBPF features with dev-libs/libbpf
 dev-util/perf:clang - Enable builtin clang and LLVM support
 dev-util/perf:doc - Build documentation and man pages. With this USE flag disabled, the --help parameter for perf and its sub-tools will not be available. This is optional because it depends on a few documentation handling tools that are not always welcome on user systems.
 dev-util/perf:libpfm - Enable dev-libs/libpfm support
+dev-util/perf:libtraceevent - Enable dev-libs/libtraceevent support
+dev-util/perf:libtracefs - Enable dev-libs/libtracefs support
 dev-util/perf:numa - Enable NUMA support
 dev-util/perf:perl - Add support for Perl as a scripting language for perf tools.
 dev-util/perf:systemtap - Add support to define SDT event in perf tools.
