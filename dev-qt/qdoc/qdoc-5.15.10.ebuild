@@ -35,9 +35,6 @@ src_prepare() {
 
 src_configure() {
 	# qt5_tools_configure() not enough here, needs another fix, bug 676948
-	mkdir -p "${QT5_BUILD_DIR}"/src/qdoc || die
-	qt5_qmake "${QT5_BUILD_DIR}"
-	cp src/qdoc/qtqdoc-config.pri "${QT5_BUILD_DIR}"/src/qdoc || die
-
+	qt5_configure_oos_quirk qtqdoc-config.pri src/qdoc
 	qt5-build_src_configure
 }
