@@ -3021,7 +3021,6 @@ games-emulation/mupen64plus-core:osd - Overlay emulator messages using on-screen
 games-emulation/mupen64plus-video-glide64mk2:hires - Support hi-resolution textures (requires dev-libs/boost)
 games-emulation/pcsx2:sndio - Enable support for the media-sound/sndio backend
 games-emulation/ppsspp:discord - Enable interfacing with a locally running Discord desktop client
-games-emulation/snes9x:glslang - Build support for slang-type shaders
 games-emulation/snes9x:libretro - Build libretro port
 games-emulation/snes9x:netplay - Enable playing ROMs over the network (not recommended)
 games-emulation/vbam:link - Enable GBA linking functionality
@@ -5415,7 +5414,6 @@ net-analyzer/wireshark:mergecap - Install mergecap, to merge two or more capture
 net-analyzer/wireshark:minizip - Build with zip file compression support
 net-analyzer/wireshark:netlink - Use dev-libs/libnl
 net-analyzer/wireshark:pcap - Use net-libs/libpcap for network packet capturing (build dumpcap, rawshark)
-net-analyzer/wireshark:plugin-ifdemo - Install plugin interface demo
 net-analyzer/wireshark:plugins - Install plugins
 net-analyzer/wireshark:qt6 - Build with Qt6 support instead of the default Qt5 for GUI support
 net-analyzer/wireshark:randpkt - Install randpkt, a utility for creating pcap trace files full of random packets
@@ -8210,6 +8208,8 @@ sys-devel/sparse:xml - Build the c2xml utility (requires dev-libs/libxml2)
 sys-fabric/mstflint:adb-generic-tools - Enable compiling the following tools: mstreg and mstlink
 sys-fabric/mstflint:inband - Enable firmware updates for Mellanox SwitchX and ConnectIB devices
 sys-fabric/opensm:tools - Install ssld extra tool
+sys-firmware/broadcom-bt-firmware:compress-xz - Compress firmware using xz (app-arch/xz-utils) before installation
+sys-firmware/broadcom-bt-firmware:compress-zstd - Compress firmware using zstd (app-arch/zstd) before installation
 sys-firmware/edk2-ovmf:binary - Use pre-built binaries
 sys-firmware/intel-microcode:hostonly - Only install ucode(s) supported by currently available (=online) processor(s)
 sys-firmware/intel-microcode:initramfs - Install a small initramfs for use with CONFIG_MICROCODE_EARLY
