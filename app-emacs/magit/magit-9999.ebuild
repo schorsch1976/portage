@@ -22,6 +22,8 @@ S="${S}/lisp"
 LICENSE="GPL-3+"
 SLOT="0"
 
+PATCHES=( "${FILESDIR}"/${PN}-3.3.0-magit-libgit.patch )
+
 DOCS=( ../README.md ../docs/AUTHORS.md ../docs/RelNotes )
 ELISP_TEXINFO="../docs/*.texi"
 SITEFILE="50${PN}-gentoo.el"
@@ -30,7 +32,6 @@ RDEPEND="
 	>=app-emacs/dash-2.19.1
 	>=app-emacs/transient-0.3.6
 	>=app-emacs/with-editor-3.0.5
-	app-emacs/libegit2
 "
 BDEPEND="
 	${RDEPEND}
@@ -44,4 +45,12 @@ src_prepare() {
 	default
 
 	echo "(setq magit-version \"${PV}\")" > magit-version.el || die
+}
+
+pkg_postinst() {
+	elisp_pkg_postinst
+
+	einfo "magit version 3.3.0 dropped necessity of the app-emacs/libegit2 package"
+	einfo "magit after 3.3.0 can now use the git executable directly,"
+	einfo "if you need the libegit backend, then please add app-emacs/libegit2 to @world"
 }
