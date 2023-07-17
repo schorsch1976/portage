@@ -17,12 +17,11 @@ else
 		-> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 fi
-S="${S}/lisp"
+S="${WORKDIR}/${P}/lisp"
 
 LICENSE="GPL-3+"
 SLOT="0"
-
-PATCHES=( "${FILESDIR}"/${PN}-3.3.0-magit-libgit.patch )
+IUSE="libgit"
 
 DOCS=( ../README.md ../docs/AUTHORS.md ../docs/RelNotes )
 ELISP_TEXINFO="../docs/*.texi"
@@ -43,14 +42,16 @@ RDEPEND+="
 
 src_prepare() {
 	default
-
+	use libgit || rm magit-libgit.el || die
 	echo "(setq magit-version \"${PV}\")" > magit-version.el || die
 }
 
 pkg_postinst() {
 	elisp_pkg_postinst
 
-	einfo "magit version 3.3.0 dropped necessity of the app-emacs/libegit2 package"
-	einfo "magit after 3.3.0 can now use the git executable directly,"
-	einfo "if you need the libegit backend, then please add app-emacs/libegit2 to @world"
+	if ! use libgit; then
+		einfo "The dependency on app-emacs/libegit2 is optional"
+		einfo "since magit version 3.3.0. Enable the \"libgit\" flag"
+		einfo "if you need the libgit backend."
+	fi
 }
