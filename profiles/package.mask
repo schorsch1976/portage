@@ -33,6 +33,50 @@
 
 #--- END OF EXAMPLES ---
 
+# Mike Pagano <mpagano@gentoo.org> (2023-07-18)
+# Mask impacted kernels vulnerable to StackRot and
+# ones with a memory corruption bug
+# Bug #909829, #794547.
+=sys-kernel/gentoo-kernel-6.1.28
+=sys-kernel/gentoo-kernel-6.1.37*
+=sys-kernel/gentoo-kernel-6.3*
+=sys-kernel/gentoo-sources-6.1.28
+=sys-kernel/gentoo-sources-6.1.37*
+=sys-kernel/gentoo-sources-6.3*
+=sys-kernel/gentoo-sources-6.4.0
+=sys-kernel/gentoo-sources-6.4.1*
+=sys-kernel/gentoo-sources-6.4.2
+=sys-kernel/vanilla-kernel-6.1.28
+=sys-kernel/vanilla-kernel-6.1.37*
+=sys-kernel/vanilla-kernel-6.3*
+=sys-kernel/vanilla-sources-6.1.28
+=sys-kernel/vanilla-sources-6.1.37*
+=sys-kernel/vanilla-sources-6.3*
+=sys-kernel/vanilla-sources-6.4.0
+=sys-kernel/vanilla-sources-6.4.1*
+=sys-kernel/vanilla-sources-6.4.2
+=virtual/dist-kernel-6.1.28
+=virtual/dist-kernel-6.1.37*
+=virtual/dist-kernel-6.3*
+
+# Hans de Graaff <graaff@gentoo.org> (2023-07-18)
+# Obsolete rubu30-only package, previously a dependency of nanoc. No
+# longer maintained upstream. Masked for removal on 2023-08-18.
+dev-ruby/hamster
+
+# Hans de Graaff <graaff@gentoo.org> (2023-07-18)
+# Obsolete slots (for sinatra the slot is ruby30 only) without reverse
+# dependencies. Use the newer slot instead. Masked for removal on
+# 2023-08-18.
+dev-ruby/sinatra:2
+dev-ruby/rack-protection:2
+dev-ruby/rack-test:1.0
+
+# Hans de Graaff <graaff@gentoo.org> (2023-07-18)
+# Obsolete slot without reverse dependencies. Use the newer slot
+# instead. Masked for removal on 2023-08-18.
+dev-ruby/vcr:5
+
 # Florian Schmaus <flow@gentoo.org> (2023-07-17)
 # Obsolete acct-* packages which became leaf packages.
 # Removal on 2023-08-17.
@@ -165,17 +209,27 @@ dev-perl/Gtk2-Notify
 
 # Matt Turner <mattst88@gentoo.org> (2023-07-06)
 # GNOME 45 mask
+>=app-editors/gnome-text-editor-45_alpha
+>=app-misc/tracker-3.6_alpha
+>=app-misc/tracker-miners-3.6_alpha
 >=dev-libs/gjs-1.77
+>=dev-libs/libdex-0.3.0
+>=gnome-base/gnome-settings-daemon-45_alpha
 >=gnome-base/gnome-shell-45_alpha
 >=gnome-base/gsettings-desktop-schemas-45_alpha
+>=gnome-base/nautilus-45_alpha
+>=gnome-extra/gnome-calculator-45_alpha
 >=gnome-extra/gnome-characters-45_alpha
 >=gnome-extra/gnome-shell-extensions-45_alpha
+>=gnome-extra/gnome-software-45_alpha
 >=gnome-extra/gnome-system-monitor-45_alpha
 >=gnome-extra/gnome-weather-45_alpha
+>=gnome-extra/sushi-45_alpha
 >=gui-libs/gtk-4.11
 >=gui-libs/libadwaita-1.4_alpha
 >=media-gfx/gnome-font-viewer-45_alpha
 >=net-misc/gnome-remote-desktop-45_alpha
+>=sci-geosciences/gnome-maps-45_alpha
 >=sys-apps/baobab-45_alpha
 >=x11-themes/gnome-backgrounds-45_alpha
 >=x11-wm/mutter-45_alpha
@@ -304,11 +358,6 @@ x11-themes/gtk-engines-quartz
 # See app-crypt/swtpm for an alternative.
 # Removal on 2023-07-18.  Bug #768960, #794547.
 app-crypt/tpm-emulator
-
-# Hans de Graaff <graaff@gentoo.org> (2023-06-18)
-# Obsolete slot. Use the newer slot instead.
-# Masked for removal on 2023-07-18.
-dev-ruby/database_cleaner-active_record:2.0
 
 # Sam James <sam@gentoo.org> (2023-06-16)
 # Please upgrade to >=app-admin/eselect-1.4.22-r1 for a fix to env-update
@@ -508,10 +557,6 @@ x11-drivers/nvidia-drivers:0/390
 # Mask =sys-kernel/gentoo-sources-5.15.99 since it does
 # not include 5.15.99 and is misleading
 =sys-kernel/gentoo-sources-5.15.99
-
-# Mike Pagano <mpagano@gentoo.org> (2023-02-27)
-# Mask =www-servers/nginx-unit-1.29.0-r1 for testing
-=www-servers/nginx-unit-1.29.0-r1
 
 # Torokhov Sergey <torokhov-s-a@yandex.ru> (2023-02-26)
 # The masked version causes GIMP breaking of Cut/Copy/Paste
