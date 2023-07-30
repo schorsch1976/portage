@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig doc? ( app-doc/doxygen ) >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install postinst prepare test unpack
+DEPEND=dev-games/ois dev-libs/pugixml dev-libs/zziplib media-libs/freetype:2 x11-libs/libX11 x11-libs/libXaw x11-libs/libXrandr x11-libs/libXt assimp? ( media-libs/assimp:= ) cg? ( media-gfx/nvidia-cg-toolkit ) egl? ( media-libs/mesa[egl(+)] ) freeimage? ( media-libs/freeimage ) json? ( dev-libs/rapidjson ) opengl? ( virtual/glu virtual/opengl ) tools? ( dev-libs/tinyxml[stl] ) x11-base/xorg-proto
+DESCRIPTION=Object-oriented Graphics Rendering Engine
+EAPI=7
+HOMEPAGE=https://www.ogre3d.org/
+INHERIT=cmake
+IUSE=assimp +cache cg debug deprecated doc double-precision egl examples +freeimage json +opengl pch profile resman-pedantic tools
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=MIT public-domain
+RDEPEND=dev-games/ois dev-libs/pugixml dev-libs/zziplib media-libs/freetype:2 x11-libs/libX11 x11-libs/libXaw x11-libs/libXrandr x11-libs/libXt assimp? ( media-libs/assimp:= ) cg? ( media-gfx/nvidia-cg-toolkit ) egl? ( media-libs/mesa[egl(+)] ) freeimage? ( media-libs/freeimage ) json? ( dev-libs/rapidjson ) opengl? ( virtual/glu virtual/opengl ) tools? ( dev-libs/tinyxml[stl] )
+REQUIRED_USE=examples? ( opengl )
+RESTRICT=test
+SLOT=0/1.12
+SRC_URI=https://github.com/OGRECave/ogre/archive/v1.12.9.tar.gz -> ogre-1.12.9.tar.gz https://github.com/ocornut/imgui/archive/v1.77.tar.gz -> imgui-1.77.tar.gz
+_eclasses_=cmake	aa1d1fa7be37663d48162ac963b22692	flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=5a9198e58c76facff062b8981bb76d03

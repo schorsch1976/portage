@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile configure install
+DEPEND=x11-libs/libX11 x11-base/xorg-proto
+DESCRIPTION=Famous german card game
+EAPI=8
+HOMEPAGE=http://www.xskat.de/xskat.html
+INHERIT=desktop flag-o-matic toolchain-funcs
+KEYWORDS=~amd64 ~arm64 ~ppc64 ~x86
+LICENSE=freedist
+RDEPEND=x11-libs/libX11 media-fonts/font-misc-misc
+SLOT=0
+SRC_URI=http://www.xskat.de/xskat-4.0.tar.gz https://dev.gentoo.org/~ionen/distfiles/xskat.png
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=2c111c8e66ce83642c0064594f99013c

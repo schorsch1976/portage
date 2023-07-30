@@ -1,0 +1,15 @@
+BDEPEND=>=sys-devel/autoconf-2.62 >=sys-devel/automake-1.16 sys-apps/gawk sys-apps/help2man sys-apps/texinfo sys-devel/bison sys-devel/flex virtual/pkgconfig pvm-profiling? ( sys-devel/gcc ) emacs? ( >=app-editors/emacs-23.1:* ) test? ( dev-util/dejagnu nbd? ( sys-block/nbdkit ) ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst postrm prepare pretend setup unpack
+DEPEND=dev-libs/boehm-gc:= dev-libs/libatomic_ops sys-devel/gettext sys-libs/readline:= emacs? ( >=app-editors/emacs-23.1:* ) nbd? ( sys-libs/libnbd ) test? ( nbd? ( sys-libs/libnbd[uri-support(+)] ) )
+DESCRIPTION=Extensible editor for structured binary data
+EAPI=8
+HOMEPAGE=https://www.jemarch.net/poke
+INHERIT=elisp-common flag-o-matic toolchain-funcs git-r3
+IUSE=emacs pvm-profiling nbd nls test
+LICENSE=GPL-3+
+PROPERTIES=live
+RDEPEND=dev-libs/boehm-gc:= dev-libs/libatomic_ops sys-devel/gettext sys-libs/readline:= emacs? ( >=app-editors/emacs-23.1:* ) nbd? ( sys-libs/libnbd )
+RESTRICT=!test? ( test )
+SLOT=0
+_eclasses_=elisp-common	b3b15bdbe800c721e93b69b70cce2b67	flag-o-matic	ad475baa777c9978fa035216c8264a10	git-r3	2358a7b20091609e24bd3a83b3ac5991	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=1b472f3ba649b5dfc4980833be55820e

@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.18 app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Performs automatic updates of GeoIP2 and GeoIP Legacy binary databases
+EAPI=8
+HOMEPAGE=https://github.com/maxmind/geoipupdate
+INHERIT=go-module
+KEYWORDS=amd64 arm ppc64 ~s390 x86
+LICENSE=ISC BSD BSD-2 MIT Apache-2.0
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/maxmind/geoipupdate/archive/v4.9.0.tar.gz -> geoipupdate-4.9.0.tar.gz https://dev.gentoo.org/~sam/distfiles/net-misc/geoipupdate/geoipupdate-4.9.0-deps.tar.xz
+_eclasses_=go-module	8624eede24936fd7666e5298e5332f22	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=8f7b5fe84ed4cd31974272e500559a8e

@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile install
+DEPEND=app-admin/gkrellm:2[X]
+DESCRIPTION=CPU load flames for GKrellM 2
+EAPI=8
+HOMEPAGE=http://people.freenet.de/thomas-steinke
+INHERIT=gkrellm-plugin toolchain-funcs
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=app-admin/gkrellm:2[X]
+SLOT=0
+SRC_URI=ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/gkrellfire-0.4.2.tgz
+_eclasses_=gkrellm-plugin	4bb5351093aa148dc0326e9f9bcd1cf7	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=766294e64cd69be1bfad2a509848fc70

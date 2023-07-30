@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=Rules for Sagan log analyzer
+EAPI=7
+HOMEPAGE=https://github.com/quadrantsec/sagan-rules
+INHERIT=git-r3
+LICENSE=BSD
+PDEPEND=app-admin/sagan
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991
+_md5_=275182f47e39b3e935ea27becd4aee98

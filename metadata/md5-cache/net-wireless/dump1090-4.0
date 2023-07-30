@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile install prepare
+DEPEND=sys-libs/ncurses:=[tinfo] virtual/libusb:1 bladerf? ( net-wireless/bladerf:= ) rtlsdr? ( net-wireless/rtl-sdr:= )
+DESCRIPTION=simple Mode S decoder for RTLSDR devices
+EAPI=7
+HOMEPAGE=https://github.com/flightaware/dump1090
+INHERIT=toolchain-funcs
+IUSE=bladerf +rtlsdr
+KEYWORDS=amd64 x86
+LICENSE=BSD
+RDEPEND=sys-libs/ncurses:=[tinfo] virtual/libusb:1 bladerf? ( net-wireless/bladerf:= ) rtlsdr? ( net-wireless/rtl-sdr:= )
+SLOT=0
+SRC_URI=https://github.com/flightaware/dump1090/archive/v4.0.tar.gz -> dump1090-4.0.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=189ae7d9c058da231e4fa6b388177911

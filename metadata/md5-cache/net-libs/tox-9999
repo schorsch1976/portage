@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl] virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare test unpack
+DEPEND=dev-libs/libsodium:=[asm,urandom,-minimal] av? ( media-libs/libvpx:= media-libs/opus ) daemon? ( dev-libs/libconfig:= )
+DESCRIPTION=Encrypted P2P, messaging, and audio/video calling platform
+EAPI=8
+HOMEPAGE=https://tox.chat
+INHERIT=cmake git-r3 systemd
+IUSE=+av debug daemon dht-node ipv6 key-utils log-debug +log-error log-info log-trace log-warn test
+LICENSE=GPL-3+
+PROPERTIES=live
+RDEPEND=dev-libs/libsodium:=[asm,urandom,-minimal] av? ( media-libs/libvpx:= media-libs/opus ) daemon? ( dev-libs/libconfig:= ) daemon? ( acct-group/tox acct-user/tox ) key-utils? ( || ( sys-devel/gcc[openmp] sys-devel/clang-runtime[openmp] ) )
+REQUIRED_USE=?? ( log-debug log-error log-info log-trace log-warn ) daemon? ( dht-node )
+RESTRICT=!test? ( test )
+SLOT=0/0.2
+_eclasses_=cmake	aa1d1fa7be37663d48162ac963b22692	flag-o-matic	ad475baa777c9978fa035216c8264a10	git-r3	2358a7b20091609e24bd3a83b3ac5991	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	systemd	5f4bb0758df2e483babf68cd517078ca	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=58d3ea86fae8c6325c03d95c91b73fcf

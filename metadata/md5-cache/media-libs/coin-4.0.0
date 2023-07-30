@@ -1,0 +1,17 @@
+BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=app-arch/bzip2 dev-libs/expat media-libs/fontconfig media-libs/freetype:2 media-libs/simage sys-libs/zlib virtual/opengl virtual/glu x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXext javascript? ( dev-lang/spidermonkey:60 ) openal? ( media-libs/openal ) dev-libs/boost:0 x11-base/xorg-proto doc? ( app-doc/doxygen qthelp? ( dev-qt/qthelp:5 ) )
+DESCRIPTION=A high-level 3D graphics toolkit, fully compatible with SGI Open Inventor 2.1
+EAPI=7
+HOMEPAGE=https://github.com/coin3d/coin/wiki
+INHERIT=cmake flag-o-matic
+IUSE=debug doc +exceptions javascript man openal qthelp test threads
+KEYWORDS=amd64 ~arm ~arm64 ~hppa ppc ppc64 x86 ~amd64-linux ~x86-linux
+LICENSE=|| ( GPL-2 PEL )
+RDEPEND=app-arch/bzip2 dev-libs/expat media-libs/fontconfig media-libs/freetype:2 media-libs/simage sys-libs/zlib virtual/opengl virtual/glu x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXext javascript? ( dev-lang/spidermonkey:60 ) openal? ( media-libs/openal )
+REQUIRED_USE=man? ( doc ) qthelp? ( doc )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/coin3d/coin/releases/download/Coin-4.0.0/coin-4.0.0-src.tar.gz
+_eclasses_=cmake	aa1d1fa7be37663d48162ac963b22692	flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=e7a966941ce8dbfb3e5dbc647e456c3d

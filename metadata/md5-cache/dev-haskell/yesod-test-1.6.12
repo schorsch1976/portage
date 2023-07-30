@@ -1,0 +1,16 @@
+BDEPEND=app-text/dos2unix
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test
+DEPEND=dev-haskell/aeson:=[profile?] >=dev-haskell/attoparsec-0.10:=[profile?] dev-haskell/blaze-builder:=[profile?] >=dev-haskell/blaze-html-0.5:=[profile?] >=dev-haskell/case-insensitive-0.2:=[profile?] dev-haskell/conduit:=[profile?] dev-haskell/cookie:=[profile?] >=dev-haskell/hspec-core-2:=[profile?] <dev-haskell/hspec-core-3:=[profile?] >=dev-haskell/html-conduit-0.1:=[profile?] >=dev-haskell/http-types-0.7:=[profile?] >=dev-haskell/hunit-1.2:=[profile?] dev-haskell/memory:=[profile?] >=dev-haskell/mtl-2.0.0:=[profile?] >=dev-haskell/network-2.2:=[profile?] >=dev-haskell/pretty-show-1.6:=[profile?] dev-haskell/text:=[profile?] >=dev-haskell/wai-3.0:=[profile?] dev-haskell/wai-extra:=[profile?] >=dev-haskell/xml-conduit-1.0:=[profile?] >=dev-haskell/xml-types-0.3:=[profile?] >=dev-haskell/yesod-core-1.6.17:=[profile?] >=dev-lang/ghc-8.2.1:= >=dev-haskell/cabal-2.0.0.2 test? ( dev-haskell/hspec dev-haskell/unliftio dev-haskell/unliftio-core >=dev-haskell/yesod-form-1.6 ) hscolour? ( dev-haskell/hscolour )
+DESCRIPTION=integration testing for WAI/Yesod Applications
+EAPI=7
+HOMEPAGE=https://www.yesodweb.com
+INHERIT=haskell-cabal
+IUSE=doc hscolour profile test
+KEYWORDS=amd64 ~arm64 ~ppc64 ~riscv ~x86
+LICENSE=MIT
+RDEPEND=dev-haskell/aeson:=[profile?] >=dev-haskell/attoparsec-0.10:=[profile?] dev-haskell/blaze-builder:=[profile?] >=dev-haskell/blaze-html-0.5:=[profile?] >=dev-haskell/case-insensitive-0.2:=[profile?] dev-haskell/conduit:=[profile?] dev-haskell/cookie:=[profile?] >=dev-haskell/hspec-core-2:=[profile?] <dev-haskell/hspec-core-3:=[profile?] >=dev-haskell/html-conduit-0.1:=[profile?] >=dev-haskell/http-types-0.7:=[profile?] >=dev-haskell/hunit-1.2:=[profile?] dev-haskell/memory:=[profile?] >=dev-haskell/mtl-2.0.0:=[profile?] >=dev-haskell/network-2.2:=[profile?] >=dev-haskell/pretty-show-1.6:=[profile?] dev-haskell/text:=[profile?] >=dev-haskell/wai-3.0:=[profile?] dev-haskell/wai-extra:=[profile?] >=dev-haskell/xml-conduit-1.0:=[profile?] >=dev-haskell/xml-types-0.3:=[profile?] >=dev-haskell/yesod-core-1.6.17:=[profile?] >=dev-lang/ghc-8.2.1:=
+RESTRICT=!test? ( test )
+SLOT=0/1.6.12
+SRC_URI=https://hackage.haskell.org/package/yesod-test-1.6.12/yesod-test-1.6.12.tar.gz
+_eclasses_=ghc-package	dbe1a8d17cacb390a3df7bbba6617679	haskell-cabal	13a2f21e4152733139de87f74c2f99dd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=4212e7bda58261a1f7f4d5c5cf652ceb

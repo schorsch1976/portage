@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 >=dev-vcs/git-1.8.2.1[curl] virtual/pkgconfig
+DEFINED_PHASES=configure install postinst prepare unpack
+DEPEND=acct-group/goaccess acct-user/goaccess sys-libs/ncurses:=[unicode(+)?] geoip? ( !geoipv2? ( dev-libs/geoip ) geoipv2? ( dev-libs/libmaxminddb:0= ) ) ssl? ( dev-libs/openssl:0= )
+DESCRIPTION=A real-time web log analyzer and interactive viewer in a terminal
+EAPI=8
+HOMEPAGE=https://goaccess.io
+INHERIT=autotools git-r3 optfeature systemd tmpfiles
+IUSE=debug geoip geoipv2 getline ssl unicode
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=acct-group/goaccess acct-user/goaccess sys-libs/ncurses:=[unicode(+)?] geoip? ( !geoipv2? ( dev-libs/geoip ) geoipv2? ( dev-libs/libmaxminddb:0= ) ) ssl? ( dev-libs/openssl:0= ) virtual/tmpfiles
+REQUIRED_USE=geoipv2? ( geoip )
+SLOT=0
+_eclasses_=autotools	6ae9a4347149b19a112caa1182d03bde	git-r3	2358a7b20091609e24bd3a83b3ac5991	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	systemd	5f4bb0758df2e483babf68cd517078ca	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=e24c9ecef9fa735f39034fb747c24657

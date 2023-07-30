@@ -1,0 +1,16 @@
+BDEPEND=app-text/asciidoc app-text/docbook-xsl-stylesheets dev-libs/libxslt test? ( app-editors/vim-core ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-libs/openssl:0= sys-apps/keyutils:= tpm? ( app-crypt/tpm2-tss:= )
+DESCRIPTION=Supporting tools for IMA and EVM
+EAPI=8
+HOMEPAGE=http://linux-ima.sourceforge.net
+INHERIT=autotools
+IUSE=debug test tpm
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/openssl:0= sys-apps/keyutils:= tpm? ( app-crypt/tpm2-tss:= )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://download.sourceforge.net/linux-ima/ima-evm-utils-1.4.tar.gz
+_eclasses_=autotools	6ae9a4347149b19a112caa1182d03bde	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=002d017fc31f6e337f89b6831235caea

@@ -1,0 +1,17 @@
+BDEPEND=doc? ( app-doc/doxygen ) >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare test
+DEPEND=dev-libs/libbsd dev-libs/libyaml dev-libs/openssl:= idn? ( net-dns/libidn2:= ) gnutls? ( net-libs/gnutls:0=[dane,openssl] dev-libs/nettle:0= ) libev? ( dev-libs/libev:= ) libevent? ( dev-libs/libevent:= ) libuv? ( dev-libs/libuv:= ) test? ( dev-libs/check ) >=net-dns/unbound-1.5.9:=
+DESCRIPTION=Modern asynchronous DNS API
+EAPI=8
+HOMEPAGE=https://getdnsapi.net/
+IDEPEND=filecaps? ( sys-libs/libcap )
+INHERIT=cmake fcaps systemd tmpfiles
+IUSE=doc examples +getdns-query +getdns-server-mon gnutls +idn libev libevent libuv static-libs stubby test +unbound +filecaps
+KEYWORDS=amd64 ~x86
+LICENSE=BSD
+RDEPEND=dev-libs/libbsd dev-libs/libyaml dev-libs/openssl:= idn? ( net-dns/libidn2:= ) gnutls? ( net-libs/gnutls:0=[dane,openssl] dev-libs/nettle:0= ) libev? ( dev-libs/libev:= ) libevent? ( dev-libs/libevent:= ) libuv? ( dev-libs/libuv:= ) test? ( dev-libs/check ) >=net-dns/unbound-1.5.9:= stubby? ( acct-group/stubby acct-user/stubby sys-libs/libcap ) virtual/tmpfiles
+RESTRICT=test
+SLOT=0
+SRC_URI=https://getdnsapi.net/releases/getdns-1-7-2/getdns-1.7.2.tar.gz
+_eclasses_=cmake	aa1d1fa7be37663d48162ac963b22692	fcaps	c0a086b957a1b183a8d136eabf02f191	flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	systemd	5f4bb0758df2e483babf68cd517078ca	tmpfiles	216aa76c3a6fcb5d893c23a0de86048f	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=7667b18f03918d71f17b2493c1806866

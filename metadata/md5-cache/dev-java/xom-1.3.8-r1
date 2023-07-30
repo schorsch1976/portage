@@ -1,0 +1,16 @@
+DEFINED_PHASES=compile install preinst prepare setup test
+DEPEND=dev-java/jaxen:1.2 dev-java/xerces:2 dev-java/junit:0 >=virtual/jdk-1.8:* >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip ) test? ( dev-java/junit:4 )
+DESCRIPTION=XML Object Model
+EAPI=8
+HOMEPAGE=https://xom.nu
+INHERIT=java-pkg-2 java-pkg-simple
+IUSE=doc source test
+KEYWORDS=amd64 ~arm arm64 ppc64 x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos
+LICENSE=LGPL-2
+PROPERTIES=test_network
+RDEPEND=dev-java/jaxen:1.2 dev-java/xerces:2 >=virtual/jre-1.8:* >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip )
+RESTRICT=test !test? ( test )
+SLOT=0
+SRC_URI=https://github.com/elharo/xom/releases/download/v1.3.8/xom-1.3.8-src.tar.gz
+_eclasses_=java-pkg-2	1794573de2f5124d88b64ee5dc9aabb4	java-pkg-simple	1c8a695f6cae6a50261276f4b3da9914	java-utils-2	8c72ea36a4935f626b13a30141d0d39c
+_md5_=62026963ac133a87c1d7b556be1e9f5e

@@ -1,0 +1,16 @@
+BDEPEND=test? ( dev-perl/IO-stringy virtual/perl-Test-Harness dev-perl/Test-Output ) verify-sig? ( sec-keys/openpgp-keys-adamspiers ) verify-sig? ( app-crypt/gnupg >=app-portage/gemato-16 )
+DEFINED_PHASES=configure unpack
+DEPEND=dev-lang/perl:=
+DESCRIPTION=GNU Stow is a symlink farm manager
+EAPI=7
+HOMEPAGE=https://www.gnu.org/software/stow/ https://git.savannah.gnu.org/cgit/stow.git
+INHERIT=perl-functions verify-sig
+IUSE=test verify-sig
+KEYWORDS=amd64 arm arm64 ~hppa ~mips ~ppc ~riscv ~sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos
+LICENSE=GPL-3+
+RDEPEND=dev-lang/perl:=
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=mirror://gnu/stow/stow-2.3.1.tar.bz2 verify-sig? ( mirror://gnu/stow/stow-2.3.1.tar.bz2.sig )
+_eclasses_=perl-functions	c3fca037246e877693badea0df3b0ef8	verify-sig	ed3712fa46ee0fdc2dbbad539e20ff26
+_md5_=0431d3145b6da5416e74912faa996451

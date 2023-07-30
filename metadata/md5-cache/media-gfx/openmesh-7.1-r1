@@ -1,0 +1,16 @@
+BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtwidgets:5 media-libs/freeglut ) test? ( dev-cpp/gtest )
+DESCRIPTION=A generic data structure to represent and manipulate polygonal meshes
+EAPI=8
+HOMEPAGE=https://www.openmesh.org/
+INHERIT=cmake
+IUSE=qt5 static-libs test
+KEYWORDS=~amd64 ~ia64 ~x86
+LICENSE=BSD
+RDEPEND=qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtwidgets:5 media-libs/freeglut )
+RESTRICT=!test? ( test )
+SLOT=4
+SRC_URI=https://openmesh.org/media/Releases/7.1/OpenMesh-7.1.tar.bz2
+_eclasses_=cmake	aa1d1fa7be37663d48162ac963b22692	flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=9008b15e2100d6d05979552cb2927faf

@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.18 app-arch/unzip virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst unpack
+DESCRIPTION=Official golang implementation of the Energi Core
+EAPI=7
+HOMEPAGE=https://www.energi.world/
+INHERIT=go-module systemd git-r3
+LICENSE=GPL-3 LGPL-3
+PROPERTIES=live
+RDEPEND=acct-user/energi3
+RESTRICT=strip test
+SLOT=0
+_eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991	go-module	8624eede24936fd7666e5298e5332f22	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	systemd	5f4bb0758df2e483babf68cd517078ca	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=5ba7ca77e462f65ea1f93966004c182f

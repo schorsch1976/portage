@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install prepare test
+DEPEND=>=dev-lang/erlang-17.1 test? ( >=dev-erlang/proper-1.2 ) dev-lang/erlang:= dev-util/rebar:0 >=sys-apps/gawk-4.1
+DESCRIPTION=Erlang port of Hamcrest
+EAPI=6
+HOMEPAGE=https://github.com/hyperthunk/hamcrest-erlang
+INHERIT=rebar
+IUSE=test
+KEYWORDS=amd64 ~arm ~ia64 ppc ~sparc x86
+LICENSE=BSD
+RDEPEND=>=dev-lang/erlang-17.1 dev-lang/erlang:=
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://dev.gentoo.org/~hanno/distfiles/hamcrest-0.1.0_p20160709.tar.gz
+_eclasses_=rebar	ee6e83452f154c8ce7b91144005c5faf
+_md5_=bc176379b69ba9acb004741d06e74dc3

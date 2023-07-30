@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=app-arch/p7zip
+DESCRIPTION=High-performance programming language for technical computing
+EAPI=7
+HOMEPAGE=https://julialang.org/
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=app-arch/p7zip
+RESTRICT=strip
+SLOT=9999
+_md5_=0fef5888feb3e012e21ea760e8f44a3b

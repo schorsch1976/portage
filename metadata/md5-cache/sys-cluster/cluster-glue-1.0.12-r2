@@ -1,0 +1,15 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=acct-group/haclient acct-user/hacluster app-arch/bzip2 app-text/asciidoc app-text/docbook-xml-dtd:4.4 dev-libs/glib:2 dev-libs/libaio dev-libs/libltdl:= dev-libs/libxml2 ipmilan? ( sys-libs/openipmi ) libnet? ( net-libs/libnet:1.1 ) net-misc/curl net-misc/iputils || ( net-misc/netkit-telnetd net-misc/telnet-bsd ) doc? ( dev-libs/libxslt app-text/docbook-xsl-stylesheets )
+DESCRIPTION=Library pack for Heartbeat / Pacemaker
+EAPI=7
+HOMEPAGE=http://www.linux-ha.org/wiki/Cluster_Glue
+INHERIT=autotools flag-o-matic multilib
+IUSE=doc ipmilan libnet static-libs
+KEYWORDS=amd64 ~hppa x86
+LICENSE=GPL-2
+RDEPEND=acct-group/haclient acct-user/hacluster app-arch/bzip2 app-text/asciidoc app-text/docbook-xml-dtd:4.4 dev-libs/glib:2 dev-libs/libaio dev-libs/libltdl:= dev-libs/libxml2 ipmilan? ( sys-libs/openipmi ) libnet? ( net-libs/libnet:1.1 ) net-misc/curl net-misc/iputils || ( net-misc/netkit-telnetd net-misc/telnet-bsd )
+SLOT=0
+SRC_URI=http://hg.linux-ha.org/glue/archive/glue-1.0.12.tar.bz2
+_eclasses_=autotools	6ae9a4347149b19a112caa1182d03bde	flag-o-matic	ad475baa777c9978fa035216c8264a10	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=7b390def3783369dc81b2c0e651843f5

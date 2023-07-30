@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install prepare
+DEPEND=sys-libs/ncurses:0=
+DESCRIPTION=Console based tetrinet inc. standalone server
+EAPI=7
+HOMEPAGE=http://tetrinet.or.cz/
+INHERIT=flag-o-matic toolchain-funcs
+IUSE=ipv6
+KEYWORDS=~amd64 ~x86
+LICENSE=public-domain
+RDEPEND=sys-libs/ncurses:0=
+SLOT=0
+SRC_URI=http://tetrinet.or.cz/download/tetrinet-0.11.tar.bz2
+_eclasses_=flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=a4db1f20a050da884169545d191a4cd5

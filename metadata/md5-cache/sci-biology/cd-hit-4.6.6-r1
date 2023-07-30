@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install pretend setup
+DESCRIPTION=Clustering Database at High Identity with Tolerance
+EAPI=8
+HOMEPAGE=http://weizhong-lab.ucsd.edu/cd-hit/
+INHERIT=toolchain-funcs
+IUSE=openmp
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=https://github.com/weizhongli/cdhit/releases/download/V4.6.6/cd-hit-v4.6.6-2016-0711.tar.gz -> cd-hit-4.6.6.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=72c254d2d4b43c49ff9b0ddcde699acb

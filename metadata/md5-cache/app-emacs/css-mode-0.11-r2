@@ -1,0 +1,13 @@
+BDEPEND=>=app-editors/emacs-25.3:*
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DESCRIPTION=A major mode for editing Cascading Style Sheets (CSS)
+EAPI=7
+HOMEPAGE=https://www.garshol.priv.no/download/software/css-mode/
+INHERIT=elisp
+KEYWORDS=amd64 ppc ppc64 x86
+LICENSE=GPL-2+
+RDEPEND=>=app-editors/emacs-25.3:*
+SLOT=0
+SRC_URI=mirror://gentoo/css-mode-0.11.tar.bz2
+_eclasses_=elisp	fbefa95f5e9ab880a34bc69832b7c0d7	elisp-common	b3b15bdbe800c721e93b69b70cce2b67
+_md5_=96f2db1982cb5f28afd4312739e17287

@@ -1,0 +1,15 @@
+BDEPEND=test? ( app-emacs/f app-emacs/s ) >=app-editors/emacs-25.3:*
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DESCRIPTION=Reduce Emacs output of messages
+EAPI=8
+HOMEPAGE=https://github.com/cask/shut-up/
+INHERIT=elisp
+IUSE=test
+KEYWORDS=amd64 ~arm arm64 ~ppc64 ~riscv ~sparc ~x86
+LICENSE=GPL-3+
+RDEPEND=>=app-editors/emacs-25.3:*
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/cask/shut-up/archive/v0.3.3.tar.gz -> shut-up-0.3.3.tar.gz
+_eclasses_=elisp	fbefa95f5e9ab880a34bc69832b7c0d7	elisp-common	b3b15bdbe800c721e93b69b70cce2b67
+_md5_=460ed703fb1a93ac8851978f84bc2ec6

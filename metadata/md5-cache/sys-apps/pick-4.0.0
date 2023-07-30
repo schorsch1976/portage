@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile configure install
+DEPEND=sys-libs/ncurses:0=
+DESCRIPTION=A fuzzy search tool for the command-line
+EAPI=7
+HOMEPAGE=https://github.com/mptre/pick
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=sys-libs/ncurses:0=
+SLOT=0
+SRC_URI=https://github.com/mptre/pick/releases/download/v4.0.0/pick-4.0.0.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e
+_md5_=def794aa094041b9ba4f54d090ec7dcb

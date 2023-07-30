@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 virtual/fortran
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=sys-libs/zlib szip? ( sci-libs/szip ) netcdf? ( >=sci-libs/netcdf-4.2[hdf5] ) jpeg2k? ( >=media-libs/openjpeg-2:2 ) png? ( media-libs/libpng ) || ( dev-lang/python:3.11 dev-lang/python:3.10 ) virtual/fortran
+DESCRIPTION=A set of encoding/decoding APIs and tools for WMO GRIB, BUFR, and GTS messages
+EAPI=7
+HOMEPAGE=https://confluence.ecmwf.int/display/ECC
+INHERIT=cmake fortran-2 python-any-r1
+IUSE=+defs examples extra-test fortran memfs netcdf jpeg2k openmp png python szip test threads
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=Apache-2.0
+RDEPEND=sys-libs/zlib szip? ( sci-libs/szip ) netcdf? ( >=sci-libs/netcdf-4.2[hdf5] ) jpeg2k? ( >=media-libs/openjpeg-2:2 ) png? ( media-libs/libpng ) virtual/fortran
+REQUIRED_USE=fortran? ( !threads ( openmp ) ) openmp? ( !threads ( fortran ) ) threads? ( !fortran !openmp ) test? ( defs !memfs ) extra-test? ( test ) !test? ( memfs? ( python ) )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://confluence.ecmwf.int/download/attachments/45757960/eccodes-2.18.0-Source.tar.gz extra-test? ( http://download.ecmwf.org/test-data/eccodes/eccodes_test_data.tar.gz http://download.ecmwf.org/test-data/eccodes/data/mercator.grib2 )
+_eclasses_=cmake	aa1d1fa7be37663d48162ac963b22692	eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	flag-o-matic	ad475baa777c9978fa035216c8264a10	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	python-any-r1	845fed6b6dfc35679a4fea289272ddc0	python-utils-r1	7661dc585f75dd1f81eccefe37bef093	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=6dafa74f9ea7f026ced285a83040a174
