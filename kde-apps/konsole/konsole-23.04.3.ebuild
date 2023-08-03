@@ -14,7 +14,7 @@ HOMEPAGE="https://apps.kde.org/konsole/ https://konsole.kde.org"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS="~amd64 ~arm64 ~loong ~ppc64 ~riscv ~x86"
+KEYWORDS="amd64 arm64 ~loong ~ppc64 ~riscv x86"
 IUSE="X"
 
 DEPEND="
@@ -60,9 +60,10 @@ src_configure() {
 }
 
 src_test() {
-	# drkonqi process interferes. bug 702690
+	# DBusTest: drkonqi process interferes. bug 702690
+	# TerminalInterfaceTest: unbelievably flaky, bug 862594 and bug 662756
 	local myctestargs=(
-		-E "(DBusTest)"
+		-E "(DBusTest|TerminalInterfaceTest)"
 	)
 
 	ecm_src_test
