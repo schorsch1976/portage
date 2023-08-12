@@ -17,7 +17,7 @@ else
 	(( $(ver_cut 2) )) && WINE_SDIR=$(ver_cut 1).x || WINE_SDIR=$(ver_cut 1).0
 	SRC_URI="https://dl.winehq.org/wine/source/${WINE_SDIR}/wine-${PV}.tar.xz"
 	S="${WORKDIR}/wine-${PV}"
-	KEYWORDS="-* ~amd64 ~x86"
+	KEYWORDS="-* ~amd64 x86"
 fi
 
 DESCRIPTION="Free implementation of Windows(tm) on Unix, without external patchsets"
@@ -168,6 +168,18 @@ src_prepare() {
 	fi
 
 	default
+
+	if tc-is-clang; then
+		if use mingw; then
+			# -mabi=ms was ignored by <clang:16 then turned error in :17
+			# and it still gets used in install phase despite USE=mingw,
+			# drop as a quick fix for now which hopefully should be safe
+			sed -i '/MSVCRTFLAGS=/s/-mabi=ms//' configure.ac || die
+		else
+			# ./configure will abort looking for -mabi=ms, so do it early
+			die "building ${PN} with clang requires USE=mingw to be enabled"
+		fi
+	fi
 
 	# ensure .desktop calls this variant + slot
 	sed -i "/^Exec=/s/wine /${P} /" loader/wine.desktop || die
