@@ -176,12 +176,12 @@ src_prepare() {
 	if tc-is-clang; then
 		if use mingw; then
 			# -mabi=ms was ignored by <clang:16 then turned error in :17
-			# and it still gets used in install phase despite USE=mingw,
-			# drop as a quick fix for now which hopefully should be safe
+			# if used without --target *-windows, then gets used in install
+			# phase despite USE=mingw, drop as a quick fix for now
 			sed -i '/MSVCRTFLAGS=/s/-mabi=ms//' configure.ac || die
 		else
-			# known broken due to bug #912237, require mingw for now
-			die "building ${PN} with clang requires USE=mingw to be enabled"
+			# ./configure will fail, abort early
+			die "building ${PN} with clang is only supported with USE=mingw"
 		fi
 	fi
 
@@ -289,11 +289,13 @@ src_configure() {
 			: "${CROSSCFLAGS:=$(
 				filter-flags '-fstack-protector*' #870136
 				filter-flags '-mfunction-return=thunk*' #878849
+
 				# -mavx with mingw-gcc has a history of obscure issues and
 				# disabling is seen as safer, e.g. `WINEARCH=win32 winecfg`
 				# crashes with -march=skylake >=wine-8.10, similar issues with
 				# znver4: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=110273
-				use custom-cflags || append-cflags -mno-avx
+				append-cflags -mno-avx #912268
+
 				CC=${CROSSCC} test-flags-CC ${CFLAGS:--O2})}"
 			: "${CROSSLDFLAGS:=$(
 				filter-flags '-fuse-ld=*'
