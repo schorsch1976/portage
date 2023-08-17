@@ -5,7 +5,7 @@ EAPI=8
 
 DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..11} )
 PYTHON_REQ_USE='tk?,threads(+)'
 
 inherit distutils-r1 flag-o-matic multiprocessing prefix pypi
@@ -111,9 +111,11 @@ BDEPEND="
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/psutil[${PYTHON_USEDEP}]
 		dev-python/pytest-xdist[${PYTHON_USEDEP}]
-		>=dev-python/pygobject-3.40.1-r1:3[cairo?,${PYTHON_USEDEP}]
 		>=dev-python/tornado-6.0.4[${PYTHON_USEDEP}]
-		x11-libs/gtk+:3[introspection]
+		gtk3? (
+			>=dev-python/pygobject-3.40.1-r1:3[cairo?,${PYTHON_USEDEP}]
+			x11-libs/gtk+:3[introspection]
+		)
 	)
 "
 
@@ -253,6 +255,31 @@ python_test() {
 		"tests/test_backends_interactive.py::test_figure_leak_20490[time_mem1-{'MPLBACKEND': 'qtagg', 'QT_API': 'PyQt5'}]"
 		"tests/test_backends_interactive.py::test_figure_leak_20490[time_mem1-{'MPLBACKEND': 'qtcairo', 'QT_API': 'PyQt5'}]"
 	)
+
+	case "${ABI}" in
+		alpha|arm|hppa|m68k|o32|ppc|s390|sh|sparc|x86)
+			EPYTEST_DESELECT+=(
+				# too large for 32-bit platforms
+				'tests/test_axes.py::test_psd_csd[png]'
+			)
+			;;
+		*)
+			;;
+	esac
+
+	if use hppa ; then
+		EPYTEST_IGNORE+=(
+			tests/test_mathtext.py
+		)
+
+		EPYTEST_DESELECT+=(
+			'tests/test_quiver.py::test_barbs[png]'
+			'tests/test_quiver.py::test_barbs_pivot[png]'
+			'tests/test_quiver.py::test_barbs_flip[png]'
+			'tests/test_text.py::test_parse_math'
+			'tests/test_text.py::test_parse_math_rcparams'
+		)
+	fi
 
 	# we need to rebuild mpl against bundled freetype, otherwise
 	# over 1000 tests will fail because of mismatched font rendering
