@@ -33,6 +33,13 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2023-08-20)
+# Broken for a long time.  Barely any activity upstream, does not
+# manage to follow dev-python/numpy releases.  It was only an optional
+# test dep for one package.
+# Removal on 2023-09-19.  Bug #880415.
+dev-python/nptyping
+
 # Sam James <sam@gentoo.org> (2023-08-19)
 # Still broken, unfortunately. See bug #911721.
 =dev-util/pkgconf-2*
@@ -449,11 +456,6 @@ dev-python/pyGPG
 app-portage/layman
 
 # Sam James <sam@gentoo.org> (2023-05-10)
-# A major reverse depndency (kde-apps/libkexiv2) does not yet build against this
-# so mask for now, see bug #906087 and bug #906090.
-=media-gfx/exiv2-0.28.0
-
-# Sam James <sam@gentoo.org> (2023-05-10)
 # Lots of package breakage as usual for new versions. Masked until most/all
 # reverse dependencies are fixed. Tracker bug is bug #906077.
 =dev-libs/libfmt-10*
@@ -719,7 +721,9 @@ app-office/texmacs
 # switch the compiler / the binutils) ASAP. If you need them for a specific
 # (isolated) use case, feel free to unmask them on your system.
 <sys-libs/glibc-2.36-r5
-<sys-devel/binutils-2.38
+<sys-libs/binutils-libs-2.40
+<sys-devel/binutils-2.40
+<sys-devel/binutils-hppa64-2.40
 
 # Michael Orlitzky <mjo@gentoo.org> (2017-01-07)
 # This package has some dangerous quality and security issues, but
