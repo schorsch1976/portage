@@ -33,6 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Sam James <sam@gentoo.org> (2023-08-22)
+# Broken with new net-analyzer/net-snmp, no reverse dependencies in Gentoo,
+# no other distros package this, and upstream have discontinued development.
+# Removal on 2023-09-21.  Bug #912582.
+app-emulation/libvirt-snmp
+
 # Sam James <sam@gentoo.org> (2023-08-21)
 # Broken install.
 =net-libs/grpc-1.52.1-r1
@@ -336,6 +342,7 @@ acct-group/spi
 # Matt Turner <mattst88@gentoo.org> (2023-07-06)
 # GNOME 45 mask
 >=app-crypt/libsecret-0.21
+>=app-editors/ghex-45_alpha
 >=app-editors/gnome-text-editor-45_alpha
 >=app-misc/gnote-45_alpha
 >=app-misc/tracker-3.6_alpha
@@ -352,6 +359,7 @@ acct-group/spi
 >=gnome-base/gsettings-desktop-schemas-45_alpha
 >=gnome-base/nautilus-45_alpha
 >=gnome-extra/gnome-calculator-45_alpha
+>=gnome-extra/gnome-calendar-45_alpha
 >=gnome-extra/gnome-characters-45_alpha
 >=gnome-extra/gnome-logs-45_alpha
 >=gnome-extra/gnome-shell-extensions-45_alpha
