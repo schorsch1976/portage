@@ -1,3 +1,0 @@
-kernel.core_pattern = |/usr/sbin/minicoredumper %P %u %g %s %t %h %e
-kernel.core_pipe_limit = 0x7fffffff
-fs.suid_dumpable=2
