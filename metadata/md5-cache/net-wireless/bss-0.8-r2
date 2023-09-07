@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=net-wireless/bluez
+DESCRIPTION=Bluetooth stack smasher / fuzzer
+EAPI=7
+HOMEPAGE=http://securitech.homeunix.org/blue/
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=net-wireless/bluez
+SLOT=0
+SRC_URI=http://securitech.homeunix.org/blue/bss-0.8.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=97cef4a98bc3ee7e37591c79b98321c6

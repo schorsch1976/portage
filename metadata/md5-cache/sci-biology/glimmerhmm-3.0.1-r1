@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install
+DESCRIPTION=A eukaryotic gene finding system from TIGR
+EAPI=7
+HOMEPAGE=http://www.cbcb.umd.edu/software/GlimmerHMM/
+INHERIT=toolchain-funcs
+KEYWORDS=amd64 ~x86
+LICENSE=Artistic
+SLOT=0
+SRC_URI=ftp://ftp.cbcb.umd.edu/pub/software/glimmerhmm/GlimmerHMM-3.0.1.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=7e23482cbed8382298f1fb42831ae018

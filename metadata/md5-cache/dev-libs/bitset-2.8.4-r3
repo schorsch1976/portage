@@ -1,0 +1,16 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7
+DEFINED_PHASES=configure install prepare
+DEPEND=tcmalloc? ( dev-util/google-perftools:= ) jemalloc? ( >=dev-libs/jemalloc-3.2 )
+DESCRIPTION=A compressed bitset with supporting data structures and algorithms
+EAPI=7
+HOMEPAGE=https://github.com/chriso/bitset
+INHERIT=autotools
+IUSE=jemalloc static-libs tcmalloc
+KEYWORDS=amd64 ~arm x86
+LICENSE=LGPL-2.1
+RDEPEND=tcmalloc? ( dev-util/google-perftools:= ) jemalloc? ( >=dev-libs/jemalloc-3.2 )
+REQUIRED_USE=?? ( jemalloc tcmalloc )
+SLOT=0
+SRC_URI=https://github.com/chriso/bitset/archive/2.8.4.tar.gz -> bitset-2.8.4.tar.gz
+_eclasses_=autotools	6ae9a4347149b19a112caa1182d03bde	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=ec9184baa9f595d5a99735eadfa736b2

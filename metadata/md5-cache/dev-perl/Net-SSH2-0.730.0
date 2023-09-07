@@ -1,0 +1,16 @@
+BDEPEND=net-libs/libssh2 sys-libs/zlib !gcrypt? ( dev-libs/openssl:= ) gcrypt? ( dev-libs/libgcrypt:= ) virtual/perl-ExtUtils-Constant >=virtual/perl-ExtUtils-MakeMaker-6.50 dev-lang/perl test? ( >=virtual/perl-Test-Simple-1 )
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=net-libs/libssh2 sys-libs/zlib !gcrypt? ( dev-libs/openssl:= ) gcrypt? ( dev-libs/libgcrypt:= ) dev-lang/perl
+DESCRIPTION=Support for the SSH 2 protocol via libssh2
+EAPI=8
+HOMEPAGE=https://metacpan.org/release/Net-SSH2
+INHERIT=perl-module
+IUSE=gcrypt test examples
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1+ )
+RDEPEND=net-libs/libssh2 sys-libs/zlib !gcrypt? ( dev-libs/openssl:= ) gcrypt? ( dev-libs/libgcrypt:= ) dev-lang/perl:=
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/R/RK/RKITOVER/Net-SSH2-0.73.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	perl-functions	c3fca037246e877693badea0df3b0ef8	perl-module	dd4003d3308d7cad2b2d4e2b8298ffb2	readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=b60f1b7536fb1e03c3b2d3fbd0f8aae2

@@ -1,0 +1,14 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install postinst postrm prepare unpack
+DEPEND=>=sys-libs/ncurses-5.1:= >=sys-libs/readline-5.1:= dev-libs/expat sys-libs/zlib convert-mozilla-cookies? ( dev-perl/DBI ) idn? ( net-dns/libidn2:= ) socks5? ( >=net-proxy/dante-1.1.12 sys-libs/pam ) ssl? ( gnutls? ( >=net-libs/gnutls-1.2.3:0= ) !gnutls? ( dev-libs/openssl:0= ) ) verify-file? ( dev-perl/String-CRC32 virtual/perl-Digest-MD5 ) dev-libs/gnulib =sys-devel/libtool-2* app-arch/xz-utils nls? ( >=sys-devel/gettext-0.19 ) virtual/pkgconfig
+DESCRIPTION=A sophisticated ftp/sftp/http/https/torrent client and file transfer program
+EAPI=7
+HOMEPAGE=http://lftp.yar.ru/
+INHERIT=autotools git-r3 libtool xdg-utils
+IUSE=convert-mozilla-cookies +gnutls idn nls socks5 +ssl verify-file
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=>=sys-libs/ncurses-5.1:= >=sys-libs/readline-5.1:= dev-libs/expat sys-libs/zlib convert-mozilla-cookies? ( dev-perl/DBI ) idn? ( net-dns/libidn2:= ) socks5? ( >=net-proxy/dante-1.1.12 sys-libs/pam ) ssl? ( gnutls? ( >=net-libs/gnutls-1.2.3:0= ) !gnutls? ( dev-libs/openssl:0= ) ) verify-file? ( dev-perl/String-CRC32 virtual/perl-Digest-MD5 )
+SLOT=0
+_eclasses_=autotools	6ae9a4347149b19a112caa1182d03bde	git-r3	2358a7b20091609e24bd3a83b3ac5991	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=c72414684f807a21b454dd4c1584e78f

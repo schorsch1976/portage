@@ -1,0 +1,15 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7
+DEFINED_PHASES=configure prepare
+DEPEND=gmp? ( dev-libs/gmp:0= ) nls? ( sys-devel/gettext )
+DESCRIPTION=File comparision, ignoring small numeric differences and formats
+EAPI=7
+HOMEPAGE=https://www.nongnu.org/numdiff/
+INHERIT=autotools
+IUSE=+nls +gmp
+KEYWORDS=amd64 x86
+LICENSE=GPL-3+
+RDEPEND=gmp? ( dev-libs/gmp:0= ) nls? ( sys-devel/gettext )
+SLOT=0
+SRC_URI=https://savannah.nongnu.org/download/numdiff/numdiff-5.9.0.tar.gz
+_eclasses_=autotools	6ae9a4347149b19a112caa1182d03bde	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=597027c5eb8299804f658dbcf2bd1757

@@ -1,0 +1,15 @@
+BDEPEND=test? ( app-emacs/load-relative ) >=app-editors/emacs-25.3:*
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DESCRIPTION=List Oriented Buffer Operations for Emacs
+EAPI=8
+HOMEPAGE=https://github.com/phillord/m-buffer-el/
+INHERIT=elisp
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3+
+RDEPEND=>=app-editors/emacs-25.3:*
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/phillord/m-buffer-el/archive/v0.15.tar.gz -> m-buffer-0.15.tar.gz
+_eclasses_=elisp	fbefa95f5e9ab880a34bc69832b7c0d7	elisp-common	dc179f98b2b4d9a4473fd3bdc154bbb6
+_md5_=599f11687569ff04ca16037f5e8e1511

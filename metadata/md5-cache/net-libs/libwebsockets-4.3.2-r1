@@ -1,0 +1,16 @@
+BDEPEND=dev-lang/perl virtual/pkgconfig >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=sys-libs/zlib caps? ( sys-libs/libcap ) dbus? ( sys-apps/dbus ) http-proxy? ( net-libs/libhubbub ) libev? ( dev-libs/libev ) libevent? ( dev-libs/libevent:= ) libuv? ( dev-libs/libuv:= ) sqlite3? ( dev-db/sqlite:= ) ssl? ( !mbedtls? ( dev-libs/openssl:0= ) mbedtls? ( net-libs/mbedtls:= ) )
+DESCRIPTION=A flexible pure-C library for implementing network protocols
+EAPI=8
+HOMEPAGE=https://libwebsockets.org/
+INHERIT=cmake
+IUSE=access-log caps cgi client dbus extensions generic-sessions http-proxy http2 ipv6 +lejp libev libevent libuv mbedtls peer-limits server-status smtp socks5 sqlite3 ssl threads zip
+KEYWORDS=amd64 arm arm64 ppc ~ppc64 ~riscv x86
+LICENSE=MIT
+RDEPEND=sys-libs/zlib caps? ( sys-libs/libcap ) dbus? ( sys-apps/dbus ) http-proxy? ( net-libs/libhubbub ) libev? ( dev-libs/libev ) libevent? ( dev-libs/libevent:= ) libuv? ( dev-libs/libuv:= ) sqlite3? ( dev-db/sqlite:= ) ssl? ( !mbedtls? ( dev-libs/openssl:0= ) mbedtls? ( net-libs/mbedtls:= ) )
+REQUIRED_USE=access-log? ( http2 ) generic-sessions? ( smtp sqlite3 ) http-proxy? ( client ) mbedtls? ( ssl ) smtp? ( libuv ) socks5? ( client http-proxy ) ?? ( libev libevent )
+SLOT=0/19
+SRC_URI=https://github.com/warmcat/libwebsockets/archive/v4.3.2.tar.gz -> libwebsockets-4.3.2.tar.gz
+_eclasses_=cmake	ea305d3be967deed8faa5c9e94f9aee4	flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	862d337d98edb576796827be2c6b11ca	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=4fa1297a8b54fdbd7b431923a0dc458d

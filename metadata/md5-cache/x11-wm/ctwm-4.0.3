@@ -1,0 +1,16 @@
+BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost )
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXext x11-libs/libXmu x11-libs/libXt jpeg? ( virtual/jpeg ) xpm? ( x11-libs/libXpm ) app-arch/xz-utils x11-base/xorg-proto
+DESCRIPTION=A clean, light window manager
+EAPI=7
+HOMEPAGE=https://ctwm.org/
+INHERIT=cmake flag-o-matic virtualx
+IUSE=jpeg test xpm test
+KEYWORDS=amd64 ppc x86
+LICENSE=MIT
+RDEPEND=x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXext x11-libs/libXmu x11-libs/libXt jpeg? ( virtual/jpeg ) xpm? ( x11-libs/libXpm )
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://ctwm.org/dist/ctwm-4.0.3.tar.xz
+_eclasses_=cmake	ea305d3be967deed8faa5c9e94f9aee4	flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	862d337d98edb576796827be2c6b11ca	virtualx	817571665ee28575da44ee08135089e5	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=f28b9a8c239ec757005c407b1f0108cb

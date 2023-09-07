@@ -1,0 +1,11 @@
+BDEPEND=>=media-tv/v4l-utils-1.4[dvb(+)] >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Digital TV scan tables in v3 and v5 format
+EAPI=7
+HOMEPAGE=https://linuxtv.org/
+INHERIT=git-r3
+LICENSE=GPL-2 LGPL-2.1
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991
+_md5_=be463002f003da5fac66806c546358a3

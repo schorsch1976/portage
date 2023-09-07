@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install
+DEPEND=media-libs/alsa-lib
+DESCRIPTION=ARM software emulator
+EAPI=7
+HOMEPAGE=http://softgun.sourceforge.net/
+INHERIT=flag-o-matic toolchain-funcs
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/alsa-lib
+SLOT=0
+SRC_URI=mirror://sourceforge/softgun/softgun-0.22.tgz
+_eclasses_=flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=7b69a53f11baec22d36d5e7ccb72f24c

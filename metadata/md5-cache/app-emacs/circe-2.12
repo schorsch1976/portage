@@ -1,0 +1,15 @@
+BDEPEND=test? ( app-emacs/buttercup ) >=app-editors/emacs-25.3:*
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DESCRIPTION=A great IRC client for Emacs
+EAPI=8
+HOMEPAGE=https://github.com/jorgenschaefer/circe https://www.emacswiki.org/emacs/Circe
+INHERIT=elisp
+IUSE=test
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-3+
+RDEPEND=>=app-editors/emacs-25.3:*
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/jorgenschaefer/circe/archive/v2.12.tar.gz -> circe-2.12.tar.gz
+_eclasses_=elisp	fbefa95f5e9ab880a34bc69832b7c0d7	elisp-common	dc179f98b2b4d9a4473fd3bdc154bbb6
+_md5_=d4f0a36d2ce129af8b9526a86e1e09e8

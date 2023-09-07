@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-lang/perl x11-libs/libX11
+DESCRIPTION=Advanced Power Management battery status display for X
+EAPI=8
+HOMEPAGE=https://packages.qa.debian.org/x/xbattbar.html
+INHERIT=flag-o-matic toolchain-funcs
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2+
+RDEPEND=dev-lang/perl x11-libs/libX11 !ppc? ( >=sys-power/acpi-1.5 )
+SLOT=0
+SRC_URI=mirror://debian/pool/main/x/xbattbar/xbattbar_1.4.9.orig.tar.gz
+_eclasses_=flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=fe936c3f9029c1fad70d403859e0e138

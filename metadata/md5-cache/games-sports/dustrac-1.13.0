@@ -1,0 +1,16 @@
+BDEPEND=dev-qt/linguist-tools:5 virtual/pkgconfig >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost )
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtxml:5 media-fonts/ubuntu-font-family media-libs/libvorbis media-libs/openal virtual/opengl test? ( dev-qt/qttest:5 )
+DESCRIPTION=Tile-based, cross-platform 2D racing game
+EAPI=7
+HOMEPAGE=https://juzzlin.github.io/DustRacing2D/
+INHERIT=cmake xdg-utils virtualx
+IUSE=test test
+KEYWORDS=~amd64 ~arm64 ~x86
+LICENSE=GPL-3+ CC-BY-SA-3.0
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtxml:5 media-fonts/ubuntu-font-family media-libs/libvorbis media-libs/openal virtual/opengl
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/juzzlin/DustRacing2D/archive/1.13.0.tar.gz -> dustrac-1.13.0.tar.gz
+_eclasses_=cmake	ea305d3be967deed8faa5c9e94f9aee4	flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	862d337d98edb576796827be2c6b11ca	virtualx	817571665ee28575da44ee08135089e5	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=a93719ee6d66f9b07c29dae862110078

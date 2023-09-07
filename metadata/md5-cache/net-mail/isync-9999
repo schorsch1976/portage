@@ -1,0 +1,14 @@
+BDEPEND=dev-lang/perl >=dev-vcs/git-1.8.2.1[curl] sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7
+DEFINED_PHASES=configure prepare unpack
+DEPEND=berkdb? ( >=sys-libs/db-4.2:= ) sasl? ( dev-libs/cyrus-sasl ) ssl? ( >=dev-libs/openssl-0.9.6:0= ) zlib? ( sys-libs/zlib:0= ) !sci-chemistry/mdtraj
+DESCRIPTION=MailDir mailbox synchronizer
+EAPI=7
+HOMEPAGE=https://isync.sourceforge.io/
+INHERIT=git-r3 autotools
+IUSE=berkdb sasl ssl zlib
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=berkdb? ( >=sys-libs/db-4.2:= ) sasl? ( dev-libs/cyrus-sasl ) ssl? ( >=dev-libs/openssl-0.9.6:0= ) zlib? ( sys-libs/zlib:0= ) !sci-chemistry/mdtraj
+SLOT=0
+_eclasses_=autotools	6ae9a4347149b19a112caa1182d03bde	git-r3	2358a7b20091609e24bd3a83b3ac5991	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=5b9279cadf90050159757fb6984b2cf3

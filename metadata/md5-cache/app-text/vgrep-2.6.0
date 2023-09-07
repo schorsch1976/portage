@@ -1,0 +1,13 @@
+BDEPEND=dev-go/go-md2man >=dev-lang/go-1.18 app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=A pager for grep, git-grep and similar grep implementations
+EAPI=8
+HOMEPAGE=https://github.com/vrothberg/vgrep
+INHERIT=go-module
+KEYWORDS=amd64
+LICENSE=BSD GPL-3+ MIT MIT-with-advertising
+RESTRICT=strip test strip
+SLOT=0
+SRC_URI=https://github.com/vrothberg/vgrep/archive/v2.6.0.tar.gz -> vgrep-2.6.0.tar.gz
+_eclasses_=go-module	8624eede24936fd7666e5298e5332f22	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=361d99b3c760add5ce52e54a83a392ed

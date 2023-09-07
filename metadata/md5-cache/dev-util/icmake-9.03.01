@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install prepare
+DESCRIPTION=Hybrid between a make utility and a shell scripting language
+EAPI=7
+HOMEPAGE=https://fbb-git.gitlab.io/icmake/ https://gitlab.com/fbb-git/icmake
+INHERIT=toolchain-funcs flag-o-matic
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://gitlab.com/fbb-git/icmake/-/archive/9.03.01/icmake-9.03.01.tar.gz
+_eclasses_=flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=b52085903c9adfa2843423f0adde05b4

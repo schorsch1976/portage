@@ -1,0 +1,16 @@
+BDEPEND=|| ( dev-lang/python:3.11 dev-lang/python:3.10 ) sys-devel/gettext virtual/pkgconfig virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst setup
+DEPEND=acct-user/tvheadend virtual/libiconv dbus? ( sys-apps/dbus ) dvbcsa? ( media-libs/libdvbcsa ) dvben50221? ( media-tv/linuxtv-dvb-apps ) ffmpeg? ( <media-video/ffmpeg-5:= ) hdhomerun? ( media-libs/libhdhomerun ) dev-libs/openssl:0= uriparser? ( dev-libs/uriparser ) zeroconf? ( net-dns/avahi ) zlib? ( sys-libs/zlib ) dvb? ( virtual/linuxtv-dvb-headers )
+DESCRIPTION=Tvheadend is a TV streaming server and digital video recorder
+EAPI=8
+HOMEPAGE=https://tvheadend.org/
+INHERIT=linux-info python-any-r1 systemd toolchain-funcs
+IUSE=+capmt +constcw +cwc dbus debug dvbcsa dvben50221 +dvb +ffmpeg hdhomerun +imagecache +inotify iptv satip systemd +timeshift uriparser xmltv zeroconf zlib
+KEYWORDS=amd64 arm arm64 x86
+LICENSE=GPL-3
+RDEPEND=acct-user/tvheadend virtual/libiconv dbus? ( sys-apps/dbus ) dvbcsa? ( media-libs/libdvbcsa ) dvben50221? ( media-tv/linuxtv-dvb-apps ) ffmpeg? ( <media-video/ffmpeg-5:= ) hdhomerun? ( media-libs/libhdhomerun ) dev-libs/openssl:0= uriparser? ( dev-libs/uriparser ) zeroconf? ( net-dns/avahi ) zlib? ( sys-libs/zlib ) dvb? ( media-tv/dtv-scan-tables ) xmltv? ( media-tv/xmltv )
+REQUIRED_USE=dvbcsa? ( || ( capmt constcw cwc dvben50221 ) )
+SLOT=0
+SRC_URI=https://github.com/tvheadend/tvheadend/archive/v4.2.8.tar.gz -> tvheadend-4.2.8.tar.gz
+_eclasses_=linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-any-r1	f5169813d1619761b459800587005fd2	python-utils-r1	59e60e9c5cbd3f214d7f1002e798b387	systemd	5f4bb0758df2e483babf68cd517078ca	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=f5696af6264b58a5fa2c16c45c875198

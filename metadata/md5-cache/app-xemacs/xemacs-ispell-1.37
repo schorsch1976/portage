@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Spell-checking with GNU ispell
+EAPI=8
+HOMEPAGE=http://xemacs.org/
+INHERIT=xemacs-packages
+KEYWORDS=~alpha amd64 ~hppa ppc ppc64 ~riscv sparc x86
+LICENSE=GPL-2+
+RDEPEND=app-editors/xemacs
+SLOT=0
+SRC_URI=http://ftp.xemacs.org/pub/xemacs/packages/ispell-1.37-pkg.tar.gz
+_eclasses_=xemacs-packages	2dd9abfafe67a3baec07d3972df93ec8
+_md5_=adec07d0ac13b5d622072d72d731dc8e

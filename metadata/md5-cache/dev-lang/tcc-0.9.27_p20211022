@@ -1,0 +1,14 @@
+BDEPEND=dev-lang/perl
+DEFINED_PHASES=compile configure install prepare test
+DESCRIPTION=A very small C compiler for ix86/amd64
+EAPI=8
+HOMEPAGE=https://bellard.org/tcc/ https://repo.or.cz/tinycc.git/
+INHERIT=toolchain-funcs
+IUSE=test
+KEYWORDS=amd64 ~arm64 ~riscv ~x86 ~amd64-linux
+LICENSE=LGPL-2.1
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://repo.or.cz/tinycc.git/snapshot/16456168430c9e185dd94b8215aa77d02bbb8a2c.tar.gz -> tcc-0.9.27_p20211022.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=028d588ead6cd53a62afd437e9791f40

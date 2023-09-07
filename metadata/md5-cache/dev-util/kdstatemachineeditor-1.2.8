@@ -1,0 +1,16 @@
+BDEPEND=media-gfx/graphviz doc? ( app-doc/doxygen dev-qt/qthelp:5 ) >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-qt/qtcore:5 dev-qt/qtdeclarative:5[widgets] dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 test? ( dev-qt/qttest:5 dev-qt/qtxmlpatterns:5 )
+DESCRIPTION=Framework for creating Qt State Machine metacode using graphical user interfaces
+EAPI=8
+HOMEPAGE=https://github.com/KDAB/KDStateMachineEditor
+INHERIT=cmake qmake-utils
+IUSE=doc test
+KEYWORDS=~amd64
+LICENSE=GPL-2+
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtdeclarative:5[widgets] dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/KDAB/KDStateMachineEditor/releases/download/v1.2.8/kdstatemachineeditor-1.2.8.tar.gz
+_eclasses_=cmake	ea305d3be967deed8faa5c9e94f9aee4	flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	toolchain-funcs	862d337d98edb576796827be2c6b11ca	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=b3ce28f01a1171e5bf4562b6bbbd8ce3

@@ -1,0 +1,14 @@
+BDEPEND=app-emacs/dash app-emacs/f >=app-editors/emacs-25.3:*
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DESCRIPTION=desktop+ extends standard desktop module
+EAPI=7
+HOMEPAGE=https://github.com/ffevotte/desktop-plus
+INHERIT=elisp
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3+
+RDEPEND=app-emacs/dash app-emacs/f >=app-editors/emacs-25.3:*
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/ffevotte/desktop-plus/archive/v0.2.tar.gz -> desktop+-0.2.tar.gz
+_eclasses_=elisp	fbefa95f5e9ab880a34bc69832b7c0d7	elisp-common	dc179f98b2b4d9a4473fd3bdc154bbb6
+_md5_=098794d4cd6c17343c24ddd702f19e63

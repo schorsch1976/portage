@@ -1,0 +1,16 @@
+BDEPEND=app-text/docbook-xml-dtd:4.2 app-text/docbook-xml-dtd:4.5 app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets dev-libs/libxslt virtual/pkgconfig test? ( sys-apps/iproute2 ) nls? ( sys-devel/gettext ) >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst preinst prepare test unpack
+DEPEND=caps? ( sys-libs/libcap ) idn? ( net-dns/libidn2:= ) nls? ( virtual/libintl ) virtual/os-headers
+DESCRIPTION=Network monitoring tools including ping and ping6
+EAPI=8
+HOMEPAGE=https://wiki.linuxfoundation.org/networking/iputils
+IDEPEND=filecaps? ( sys-libs/libcap )
+INHERIT=fcaps meson plocale systemd toolchain-funcs git-r3
+IUSE=+arping caps clockdiff doc idn nls test tracepath +filecaps
+LICENSE=BSD arping? ( GPL-2+ ) clockdiff? ( BSD ) tracepath? ( GPL-2+ )
+PROPERTIES=live
+RDEPEND=caps? ( sys-libs/libcap ) idn? ( net-dns/libidn2:= ) nls? ( virtual/libintl )
+RESTRICT=!test? ( test )
+SLOT=0
+_eclasses_=fcaps	c0a086b957a1b183a8d136eabf02f191	git-r3	2358a7b20091609e24bd3a83b3ac5991	meson	08b7183c3f4811568ee93eb0f79a89fe	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	plocale	950fbaec7deeba41b5bcc0572cca99b9	python-utils-r1	59e60e9c5cbd3f214d7f1002e798b387	systemd	5f4bb0758df2e483babf68cd517078ca	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=3214a0749ffbbdbd8a3628ba5eff48b9

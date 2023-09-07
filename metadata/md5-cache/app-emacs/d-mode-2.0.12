@@ -1,0 +1,13 @@
+BDEPEND=>=app-editors/emacs-25.3:*
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DESCRIPTION=Emacs major mode for editing D code
+EAPI=8
+HOMEPAGE=https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode https://www.emacswiki.org/emacs/DMode
+INHERIT=elisp
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3+
+RDEPEND=>=app-editors/emacs-25.3:*
+SLOT=0
+SRC_URI=https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode/archive/2.0.12.tar.gz -> d-mode-2.0.12.tar.gz
+_eclasses_=elisp	fbefa95f5e9ab880a34bc69832b7c0d7	elisp-common	dc179f98b2b4d9a4473fd3bdc154bbb6
+_md5_=903fc6c08f0a7be29250d9ff2be7ac05

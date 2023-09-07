@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=sys-libs/glibc dev-libs/popt sys-libs/zlib
+DESCRIPTION=A small utility for creating backups on DV tapes
+EAPI=7
+HOMEPAGE=http://dvbackup.sourceforge.net/
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=sys-libs/glibc dev-libs/popt sys-libs/zlib media-libs/libdv
+SLOT=0
+SRC_URI=mirror://sourceforge/dvbackup/dvbackup-0.0.4.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=f921070cf2a973b9c5954c634ecabdf0

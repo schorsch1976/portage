@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Audio video multiplexer for 8 audio channels
+EAPI=8
+HOMEPAGE=http://panteltje.com/panteltje/dvd/
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2+
+SLOT=0
+SRC_URI=http://panteltje.com/panteltje/dvd/tcmplex-panteltje-0.4.7.tgz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=517d0a09caebed8e246e49a0556a6ae7

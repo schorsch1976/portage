@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare test unpack
+DEPEND=>=dev-lang/go-1.10
+DESCRIPTION=A pure Go re-implementation of genlop
+EAPI=6
+HOMEPAGE=https://github.com/klausman/golop
+INHERIT=golang-vcs golang-build prefix
+LICENSE=Apache-2.0
+PROPERTIES=live
+RESTRICT=strip
+SLOT=0
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	golang-base	9f0e420ab37bc55a318d74bab3aae891	golang-build	b689e250dc38d720b04019511cd5806f	golang-vcs	f57b351cff0915c615aec171678539b1	prefix	eab3c99d77fe00506c109c8a736186f7
+_md5_=b6bd001be12f9e6e4c265569ed25443a

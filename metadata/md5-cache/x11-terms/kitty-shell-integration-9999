@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Shell integration scripts for kitty, a GPU-based terminal emulator
+EAPI=8
+HOMEPAGE=https://sw.kovidgoyal.net/kitty/
+INHERIT=git-r3
+LICENSE=GPL-3
+PROPERTIES=live
+RESTRICT=test
+SLOT=0
+_eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991
+_md5_=a81df473f26fc18d635b4eb80881e197

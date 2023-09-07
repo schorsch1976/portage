@@ -1,0 +1,14 @@
+BDEPEND=media-gfx/mkbold-mkitalic X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings ) X? ( media-gfx/ebdftopcf )
+DEFINED_PHASES=compile install postinst postrm setup
+DESCRIPTION=Japanese fixed fonts that cover JIS0213 charset
+EAPI=7
+HOMEPAGE=https://wiki.gentoo.org/wiki/No_homepage
+INHERIT=font font-ebdftopcf
+IUSE=X X
+KEYWORDS=~alpha amd64 arm ~ia64 ~loong ppc ~riscv ~s390 sparc x86
+LICENSE=public-domain
+RESTRICT=binchecks strip
+SLOT=0
+SRC_URI=mirror://gentoo/jiskan16-2004-1.bdf.gz mirror://gentoo/jiskan16-2000-1.bdf.gz mirror://gentoo/jiskan16-2000-2.bdf.gz mirror://gentoo/K14-2004-1.bdf.gz mirror://gentoo/K14-2000-1.bdf.gz mirror://gentoo/K14-2000-2.bdf.gz mirror://gentoo/K12-1.bdf.gz mirror://gentoo/K12-2.bdf.gz mirror://gentoo/A14.bdf.gz mirror://gentoo/A12.bdf.gz mirror://gentoo/jiskan24-2000-1.bdf.gz mirror://gentoo/jiskan24-2000-2.bdf.gz
+_eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb	font-ebdftopcf	39dc8195299452f48380cb51392cba37
+_md5_=addcce3552502856c7b9b1498d028c02

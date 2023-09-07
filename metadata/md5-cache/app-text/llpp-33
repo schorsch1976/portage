@@ -1,0 +1,16 @@
+BDEPEND=app-text/asciidoc >=dev-lang/ocaml-4.09[ocamlopt?] virtual/pkgconfig
+DEFINED_PHASES=compile install postinst postrm preinst prepare
+DEPEND=>=app-text/mupdf-1.17.0:0= app-arch/bzip2 media-libs/fontconfig:1.0 media-libs/freetype:2 media-libs/jbig2dec:= media-libs/openjpeg:2 sys-libs/zlib virtual/jpeg:0 x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-misc/xsel dev-ml/lablgl:=[glut,ocamlopt?] dev-util/desktop-file-utils x11-misc/shared-mime-info
+DESCRIPTION=Graphical PDF viewer which aims to superficially resemble less(1)
+EAPI=7
+HOMEPAGE=https://github.com/moosotc/llpp
+INHERIT=toolchain-funcs xdg
+IUSE=+ocamlopt
+KEYWORDS=amd64 ~ppc x86
+LICENSE=public-domain
+RDEPEND=>=app-text/mupdf-1.17.0:0= app-arch/bzip2 media-libs/fontconfig:1.0 media-libs/freetype:2 media-libs/jbig2dec:= media-libs/openjpeg:2 sys-libs/zlib virtual/jpeg:0 x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-misc/xsel
+RESTRICT=!ocamlopt? ( strip )
+SLOT=0
+SRC_URI=https://github.com/moosotc/llpp/archive/v33.tar.gz -> llpp-33.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca	xdg	4a14c5c24f121e7da66e5aab4a168c6e	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=537fae251231dddca0857518de18bf78

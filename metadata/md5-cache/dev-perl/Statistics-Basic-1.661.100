@@ -1,0 +1,16 @@
+BDEPEND=>=dev-perl/Number-Format-1.420.0 virtual/perl-Scalar-List-Utils virtual/perl-ExtUtils-MakeMaker dev-lang/perl
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-lang/perl
+DESCRIPTION=A collection of very basic statistics modules
+EAPI=7
+HOMEPAGE=https://metacpan.org/release/Statistics-Basic
+INHERIT=perl-module
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1+ )
+RDEPEND=>=dev-perl/Number-Format-1.420.0 virtual/perl-Scalar-List-Utils dev-lang/perl:=
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/J/JE/JETTERO/Statistics-Basic-1.6611.tar.gz
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	perl-functions	c3fca037246e877693badea0df3b0ef8	perl-module	dd4003d3308d7cad2b2d4e2b8298ffb2	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=efec5be4fb57a47702f78aaf3b4acaf3

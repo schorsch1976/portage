@@ -1,0 +1,12 @@
+BDEPEND=net-libs/rpcsvc-proto virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install prepare unpack
+DESCRIPTION=Client library for accessing NFS shares over a network
+EAPI=8
+HOMEPAGE=https://github.com/sahlberg/libnfs
+INHERIT=autotools git-r3
+IUSE=examples static-libs utils
+LICENSE=LGPL-2.1 GPL-3
+PROPERTIES=live
+SLOT=0/14
+_eclasses_=autotools	6ae9a4347149b19a112caa1182d03bde	git-r3	2358a7b20091609e24bd3a83b3ac5991	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=7c30300d7f35822f1e98827312bde780

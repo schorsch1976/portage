@@ -1,0 +1,13 @@
+BDEPEND=app-arch/unzip
+DEFINED_PHASES=install nofetch setup
+DESCRIPTION=Microsemi Adaptec RAID Controller Command Line Utility
+EAPI=8
+HOMEPAGE=https://www.microsemi.com/
+INHERIT=linux-info
+KEYWORDS=-* amd64 x86
+LICENSE=Microsemi
+RESTRICT=fetch mirror bindist
+SLOT=0
+SRC_URI=http://download.adaptec.com/raid/storage_manager/arcconf_v2_01_22270.zip
+_eclasses_=linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	multilib	c19072c3cd7ac5cb21de013f7e9832e0	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=642a57b7d0ab6e0c6feca2cf2c1bebf9

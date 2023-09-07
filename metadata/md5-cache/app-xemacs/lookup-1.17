@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=MULE: Dictionary support
+EAPI=8
+HOMEPAGE=http://xemacs.org/
+INHERIT=xemacs-packages
+KEYWORDS=~alpha amd64 ppc ppc64 ~riscv sparc x86
+LICENSE=GPL-2+
+RDEPEND=app-xemacs/mule-base app-xemacs/cookie app-editors/xemacs
+SLOT=0
+SRC_URI=http://ftp.xemacs.org/pub/xemacs/packages/lookup-1.17-pkg.tar.gz
+_eclasses_=xemacs-packages	2dd9abfafe67a3baec07d3972df93ec8
+_md5_=d33165244f7332814a0fd0b2ea07f9ba

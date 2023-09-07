@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig virtual/fortran
+DEFINED_PHASES=compile install postinst prepare setup test
+DEPEND=mpi? ( virtual/mpi ) net-libs/libtirpc virtual/fortran
+DESCRIPTION=Message-passing parallel language and runtime system
+EAPI=8
+HOMEPAGE=http://charm.cs.uiuc.edu/
+INHERIT=flag-o-matic fortran-2 multilib multiprocessing toolchain-funcs
+IUSE=charmdebug charmtracing charmproduction cmkopt examples mlogft mpi ampi numa smp static-libs syncft tcp
+KEYWORDS=~amd64 ~x86
+LICENSE=charm
+RDEPEND=mpi? ( virtual/mpi ) virtual/fortran
+REQUIRED_USE=cmkopt? ( !charmdebug !charmtracing ) charmproduction? ( !charmdebug !charmtracing )
+SLOT=0
+SRC_URI=http://charm.cs.uiuc.edu/distrib/charm-6.8.2.tar.gz
+_eclasses_=flag-o-matic	be27a904c614cb93ae037762dc69bcc2	fortran-2	40c4450f1c4ecb2ee694d96e1958d4ea	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	862d337d98edb576796827be2c6b11ca
+_md5_=c3800ee7f2aee0114bb88f8a23395286

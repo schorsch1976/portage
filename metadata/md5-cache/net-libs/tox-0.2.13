@@ -1,0 +1,17 @@
+BDEPEND=virtual/pkgconfig >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 virtual/pkgconfig
+DEFINED_PHASES=compile configure install postinst prepare test
+DEPEND=dev-libs/libsodium:=[asm,urandom,-minimal] av? ( media-libs/libvpx:= media-libs/opus ) daemon? ( dev-libs/libconfig:= )
+DESCRIPTION=Encrypted P2P, messaging, and audio/video calling platform
+EAPI=8
+HOMEPAGE=https://tox.chat https://github.com/TokTok/c-toxcore
+INHERIT=cmake systemd
+IUSE=+av daemon dht-node ipv6 log-debug +log-error log-info log-trace log-warn test
+KEYWORDS=amd64 ~arm x86
+LICENSE=GPL-3+
+RDEPEND=dev-libs/libsodium:=[asm,urandom,-minimal] av? ( media-libs/libvpx:= media-libs/opus ) daemon? ( dev-libs/libconfig:= ) daemon? ( acct-group/tox acct-user/tox )
+REQUIRED_USE=?? ( log-debug log-error log-info log-trace log-warn ) daemon? ( dht-node )
+RESTRICT=!test? ( test )
+SLOT=0/0.2
+SRC_URI=https://github.com/TokTok/c-toxcore/archive/v0.2.13.tar.gz -> c-toxcore-0.2.13.tar.gz
+_eclasses_=cmake	ea305d3be967deed8faa5c9e94f9aee4	flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	systemd	5f4bb0758df2e483babf68cd517078ca	toolchain-funcs	862d337d98edb576796827be2c6b11ca	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=af230e3c2aad9d09344e9c9e186ab7e7
