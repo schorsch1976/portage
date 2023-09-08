@@ -98,6 +98,12 @@ qt6-build_src_unpack() {
 qt6-build_src_prepare() {
 	cmake_src_prepare
 
+	if [[ -e CMakeLists.txt ]]; then
+		# build may be skipped entirely and install nothing without errors
+		# if checking for a major dependency/condition failed
+		sed -i '/message(NOTICE.*Skipping/s/NOTICE/FATAL_ERROR/' CMakeLists.txt || die
+	fi
+
 	if in_iuse test && use test && [[ -e tests/auto/CMakeLists.txt ]]; then
 		# upstream seems to install before running tests, and cmake
 		# subdir that is present in about half of the Qt6 components
@@ -246,7 +252,7 @@ _qt6-build_match_cpu_flags() {
 	while IFS=' ' read -ra intrins; do
 		[[ ${intrins[*]} == *=[^_]* && ${intrins[*]} == *=_* ]] &&
 			for intrin in "${intrins[@]}"; do
-				[[ ${intrin} == *?=[^_]* ]] && flags+=(-mno-${intrin%=*})
+				[[ ${intrin} == *?=* ]] && flags+=( -mno-${intrin%=*} )
 			done
 	done < <(
 		# TODO: review if can drop fma= matching after QTBUG-116357
