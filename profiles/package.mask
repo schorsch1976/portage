@@ -43,12 +43,6 @@ dev-libs/kasync
 dev-libs/sink
 mail-client/kube
 
-# Hans de Graaff <graaff@gentoo.org> (2023-09-05)
-
-# Upstream snapshotm masked for testing. Some known defects, but it
-# compiles against openssl-3.
-~app-crypt/xca-2.4.0_p20230526
-
 # David Seifert <soap@gentoo.org> (2023-09-05)
 # OpenSSL 1.1 based, does not work with 3.0+. tpm2-openssl is the
 # spiritual successor for OpenSSL 3.0+, but isn't packaged.
@@ -419,6 +413,8 @@ acct-group/spi
 >=dev-cpp/gtkmm-4.11
 >=dev-libs/gjs-1.77
 >=dev-libs/glib-2.77
+>=dev-libs/gobject-introspection-1.77
+>=dev-libs/gobject-introspection-common-1.77
 >=dev-libs/libdex-0.3.0
 >=dev-util/gdbus-codegen-2.77
 >=dev-util/glib-utils-2.77
@@ -540,11 +536,6 @@ gnome-extra/tecla
 # and layman, use app-crypt/gpgme[python] as a proper upstream
 # supported gpg library. Removal on 2023-08-17.
 dev-python/pyGPG
-
-# David Seifert <soap@gentoo.org> (2023-05-19)
-# Abandoned, replaced by 'eselect repository' (app-eselect/eselect-repository),
-# tons of open bugs. Removal on 2023-08-17. Bug #761199.
-app-portage/layman
 
 # Sam James <sam@gentoo.org> (2023-05-10)
 # Lots of package breakage as usual for new versions. Masked until most/all
@@ -811,7 +802,7 @@ app-office/texmacs
 # If you still use one of these old toolchain packages, please upgrade (and
 # switch the compiler / the binutils) ASAP. If you need them for a specific
 # (isolated) use case, feel free to unmask them on your system.
-<sys-libs/glibc-2.36-r5
+<sys-libs/glibc-2.37-r3
 <sys-libs/binutils-libs-2.40
 <sys-devel/binutils-2.40
 <sys-devel/binutils-hppa64-2.40
