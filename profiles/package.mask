@@ -33,6 +33,28 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2023-09-11)
+# Dead project accumulating open bugs and incompatibilities.
+# No Gentoo maintainer commits since February 2021.
+# Many Gentoo packaging issues (some may need to go upstream):
+#  bug #713106, #753134, bug #667686, bug #771705, bug #668880, #770358, bug #851255
+#  bug #711462, #904741
+# But more pressingly, lacks support for the udev 'tags' API which libgudev now
+# requires. No fix has been committed upstream and other software like Plymouth
+# has been broken with eudev for some time because of this missing support.
+# See bug #913702.
+# Removal on 2023-10-11.
+sys-fs/eudev
+
+# Leonardo Hernández Hernández <leohdz172@proton.me> (2023-09-10)
+# Upstream has marked this packaged as unmaintained[0] and recommends usage of
+# the active fork eza[1] available as sys-apps/eza
+# Please transition to the new package.
+# Removal: 2023-10-10.  Bug #913737.
+# [0]: https://github.com/ogham/exa/commit/fb05c421ae98e076989eb6e8b1bcf42c07c1d0fe
+# [1]: https://github.com/eza-community/eza
+sys-apps/exa
+
 # Hans de Graaff <graaff@gentoo.org> (2023-09-10)
 # Obsolete slot that no longer has any reverse dependencies. Not
 # compatible with openssl 3. Use the newer slot instead. Masked for
@@ -298,12 +320,6 @@ sci-libs/rosetta-db
 # its github README. Stuck on php-7.4. Removal on or
 # after 30 days.
 dev-php/swoole-async
-
-# William Hubbs <williamh@gentoo.org> (2023-07-25)
-# This package has been replaced by app-accessibility/espeak-ng.
-# Please transition to the new package.
-# Removal: 2023-08-24.  Bug #877221.
-app-accessibility/espeak
 
 # Mike Gilbert <floppym@gentoo.org> (2023-07-24)
 # Migrated to sys-apps/systemd-utils.
