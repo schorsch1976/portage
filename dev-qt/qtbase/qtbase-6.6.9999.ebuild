@@ -34,7 +34,7 @@ REQUIRED_USE="
 		printf '%s? ( sql ) ' ${QT6_IUSE[sql]//+/}
 		printf '%s? ( gui widgets ) ' ${QT6_IUSE[widgets]//+/}
 	)
-	accessibility? ( X dbus )
+	accessibility? ( dbus )
 	eglfs? ( opengl )
 	gles2-only? ( opengl )
 	gui? ( || ( X eglfs wayland ) )
@@ -136,7 +136,6 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-6.5.2-hppa-forkfd-grow-stack.patch
 	"${FILESDIR}"/${PN}-6.5.2-no-glx.patch
 	"${FILESDIR}"/${PN}-6.5.2-no-symlink-check.patch
-	"${FILESDIR}"/${PN}-6.5.3-xkbcommon160.patch
 )
 
 src_prepare() {
