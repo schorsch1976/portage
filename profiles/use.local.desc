@@ -837,7 +837,6 @@ app-misc/graphlcd-base:graphicsmagick - Add support for media-gfx/graphicsmagick
 app-misc/graphlcd-base:imagemagick - Add support for media-gfx/imagemagick.
 app-misc/irtrans-irserver:mono - Enable mono support
 app-misc/jdupes:dedupe - Enable deduplication support
-app-misc/jdupes:lowmem - Enable support for low-memory operation
 app-misc/jp:jpp - Install jpp which is an extended superset of the jp CLI for JMESPath
 app-misc/jpipe:jp-symlink - Install a jp symlink that points to jpipe.
 app-misc/jpipe:jpp-symlink - Install a jpp symlink that points to jpipe.
@@ -3159,6 +3158,7 @@ games-simulation/openttd:dedicated - Build only the openttd server, and not the 
 games-simulation/openttd:fluidsynth - Compile with support for FluidSynth
 games-simulation/openttd:lzo - Enables LZO compression for savegames. This is only needed to load extremely old savegames. (versions before 0.2)
 games-simulation/openttd:openmedia - Enables the free open media sets: OpenGFX, OpenSFX, OpenMSX, removing the requirement for proprietary TTD assets to play OpenTTD.
+games-simulation/simutrans:midi - support for background MIDI music via media-sound/fluidsynth
 games-simulation/simutrans:minimal - Don't install any PakSets (scenario data)
 games-simulation/simutrans-paksets:128 - Install higher resolution scenario data (128 px graphics)
 games-simulation/simutrans-paksets:comic192 - Install comic-like scenario data (192 px graphics)
@@ -8084,6 +8084,7 @@ sys-cluster/openmpi:romio - Build the ROMIO MPI-IO component
 sys-cluster/pacemaker:smtp - Enable SMTP support via net-libs/libesmtp
 sys-cluster/pmix:munge - Enable authentication via munge
 sys-cluster/pmix:pmi - Build PMI1 and PMI2 interface
+sys-cluster/rdma-core:lttng - Enable support for the LTTng tracer
 sys-cluster/rdma-core:neigh - Enable iwpmd support
 sys-cluster/rdma-core:python - Enable pyverbs support
 sys-cluster/resource-agents:libnet - Force use of net-libs/libnet
@@ -8276,8 +8277,6 @@ sys-fs/ecryptfs-utils:pkcs11 - Enable PKCS#11 (Smartcards) key module
 sys-fs/ecryptfs-utils:tpm - Enable support for Trusted Platform Module (TPM) using app-crypt/trousers
 sys-fs/erofs-utils:fuse - Builds erofsfuse (requires sys-fs/fuse).
 sys-fs/erofs-utils:uuid - Enables UUID support via sys-apps/util-linux.
-sys-fs/eudev:kmod - enable module loading through libkmod
-sys-fs/eudev:rule-generator - install legacy rule generator rules and support scripts - note that the functionality within was dropped from sys-apps/systemd-utils as it is not stable in all cases; use at your own risk
 sys-fs/ext4magic:expert-mode - Builds ext4magic with expert mode. Highly useful in recovering data from a corrupted filesystem
 sys-fs/ext4magic:file-attr - Enable the recovery of file attributes (append, immutable, nodump etc)
 sys-fs/lessfs:filelog - Enable the ability to log to a file instead of syslog
