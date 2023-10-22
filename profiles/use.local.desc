@@ -2339,6 +2339,7 @@ dev-python/autobahn:xbr - Add support for XBR decentralized data markets and eth
 dev-python/bpython:clipboard - Enable copying to clipboard using dev-python/pyperclip
 dev-python/bpython:jedi - Enable autocompletion using dev-python/jedi
 dev-python/bpython:watch - Enable watching paths using dev-python/watchdog
+dev-python/cbor2:native-extensions - Compiles native "C" extensions (speedups, instead of using python fallback code).
 dev-python/cvxopt:dsdp - Use interior point library sci-libs/dsdp
 dev-python/cvxopt:glpk - Use GNU Linear Programming Kit sci-mathematics/glpk
 dev-python/dnspython:dnssec - Use dev-python/cryptography to enable low-level DNSSEC RSA, DSA, ECDSA and EdDSA signature validation.
@@ -5080,6 +5081,7 @@ media-video/noad:libmpeg2 - Build support for mpeg2 through media-libs/libmpeg2 
 media-video/obs-studio:browser - Enable browser source support via (precompiled) CEF.
 media-video/obs-studio:decklink - Build the Decklink plugin.
 media-video/obs-studio:fdk - Build with LibFDK AAC support.
+media-video/obs-studio:mpegts - Enable native SRT/RIST mpegts output.
 media-video/obs-studio:pipewire - Build with PipeWire support.
 media-video/obs-studio:python - Build with scripting support for Python 3.
 media-video/obs-studio:qsv - Build with Intel Quick Sync Video support.
