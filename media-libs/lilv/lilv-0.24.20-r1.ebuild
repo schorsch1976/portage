@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{9..12} )
 PYTHON_REQ_USE='threads(+)'
 
 inherit meson-multilib python-single-r1
@@ -24,7 +24,7 @@ BDEPEND="
 	doc? (
 		app-doc/doxygen
 		dev-python/sphinx
-		dev-python/sphinx_lv2_theme
+		dev-python/sphinx-lv2-theme
 	)
 "
 # Take care on bumps to check minimum versions!
