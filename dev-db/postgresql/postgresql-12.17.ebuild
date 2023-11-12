@@ -4,11 +4,11 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10,11,12} )
-LLVM_MAX_SLOT=15
+LLVM_MAX_SLOT=17
 
 inherit flag-o-matic linux-info llvm pam python-single-r1 systemd tmpfiles
 
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~mips ppc ppc64 ~s390 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
 
 SLOT=$(ver_cut 1)
 
@@ -36,8 +36,8 @@ icu? ( dev-libs/icu:= )
 kerberos? ( virtual/krb5 )
 ldap? ( net-nds/openldap:= )
 llvm? (
-	<sys-devel/llvm-16:=
-	<sys-devel/clang-16:=
+	<sys-devel/llvm-18:=
+	<sys-devel/clang-18:=
 )
 pam? ( sys-libs/pam )
 perl? ( >=dev-lang/perl-5.8:= )
