@@ -33,6 +33,10 @@
 
 #--- END OF EXAMPLES ---
 
+# Florian Schmaus <flow@gentoo.org> (2023-11-15)
+# Installs launcher.bash into wrong position. Bug #917346.
+=dev-java/java-config-2.3.2
+
 # Arthur Zamarin <arthurzam@gentoo.org> (2023-11-10)
 # No reverse dependencies, no tests, no upstream activity. All ebuild
 # maintenance on this package was done randomly by @python project members,
@@ -375,12 +379,6 @@ net-misc/openr2
 =dev-db/mariadb-10.6.13
 =dev-db/mariadb-10.11.2
 =dev-db/mariadb-10.11.3
-
-# Sam James <sam@gentoo.org> (2023-05-19)
-# Breaks Portage's pid-sandbox at least with 5.10 kernels. Pending investigation.
-# If you're hitting this, try: FEATURES="-pid-sandbox" emerge -v1 sys-apps/util-linux
-# as a workaround. bug #906797.
-~sys-apps/util-linux-2.39
 
 # Sam James <sam@gentoo.org> (2023-05-10)
 # Lots of package breakage as usual for new versions. Masked until most/all
