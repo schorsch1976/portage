@@ -30,6 +30,7 @@ PYTHON_COMPAT=( python3_{10..12} )
 inherit flag-o-matic meson-multilib optfeature prefix python-any-r1 systemd tmpfiles udev
 
 if [[ ${PV} == 9999 ]]; then
+	PIPEWIRE_DOCS_PREBUILT=0
 	EGIT_REPO_URI="https://gitlab.freedesktop.org/${PN}/${PN}.git"
 	inherit git-r3
 else
@@ -46,7 +47,7 @@ else
 		PIPEWIRE_DOCS_USEFLAG="man"
 	fi
 
-	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~mips ~ppc ~riscv ~x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~mips ~ppc ~riscv ~sparc ~x86"
 fi
 
 DESCRIPTION="Multimedia processing graphs"
@@ -203,7 +204,6 @@ multilib_src_configure() {
 		$(meson_native_use_feature doc docs)
 		$(meson_native_use_feature man)
 		$(meson_native_enabled examples) # TODO: Figure out if this is still important now that media-session gone
-		$(meson_native_enabled man)
 		$(meson_feature test tests)
 		-Dinstalled_tests=disabled # Matches upstream; Gentoo never installs tests
 		$(meson_feature ieee1394 libffado)
