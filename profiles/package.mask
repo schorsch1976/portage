@@ -33,6 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2023-12-16)
+# This package is completely broken upstream: it installs locales
+# into an incorrect subdirectory:
+# https://github.com/breezy-team/setuptools-gettext/issues/30
+=dev-python/setuptools-gettext-0.1.8
+
 # Michał Górny <mgorny@gentoo.org> (2023-12-15)
 # Superseded by dev-python/pypy3_10-exe{,-bin}.
 # Removal on 2024-01-14.  Bug #920036.
@@ -143,11 +149,6 @@ dev-python/backcall
 # Removal on 2023-12-30.  Bug #918899.
 dev-python/frozendict
 
-# Sam James <sam@gentoo.org> (2023-11-29)
-# Breaks dev-python/passlib (bug #918708). This release has also now been
-# yanked from pypi: https://github.com/pyca/bcrypt/issues/677.
-=dev-python/bcrypt-4.1.0
-
 # John Helmert III <ajak@gentoo.org> (2023-11-25)
 # Multiple vulnerabilities, unmaintained upstream and in Gentoo.
 # subtitleripper included as sole reverse dependency, similarly
@@ -204,11 +205,6 @@ dev-haskell/terminfo
 =sys-fs/btrfs-progs-6.6-r1
 =sys-fs/btrfs-progs-6.6-r2
 
-# Mart Raudsepp <leio@gentoo.org> (2023-11-04)
-# gst-transcoder was merged into gst-plugins-bad and can be installed via
-# media-libs/gst-plugins-bad instead. Removal on 2023-12-04. Bug #916871.
-media-plugins/gst-transcoder
-
 # Michał Górny <mgorny@gentoo.org> (2023-10-29)
 # This version contains a major bug that causes pytest internal error
 # when tests are skippeed at module level.
@@ -218,16 +214,6 @@ media-plugins/gst-transcoder
 # Tomáš Mózes <hydrapolic@gmail.com> (2023-11-02)
 # Performance regression. Bug #916713.
 =dev-db/mydumper-0.15.1.3
-
-# Michał Górny <mgorny@gentoo.org> (2023-10-27)
-# dev-games/cegui is unmaintained, does not support Python 3.11 and has
-# a ton of open bugs.  It is only used by games-rpg/sumwars.  CeGUI has
-# had no release since 2016, and apparently the current git
-# is incompatible with SumWars.  SumWars have had no activity
-# since 2014.
-# Removal on 2023-11-26.  Bug #896688.
-dev-games/cegui
-games-rpg/sumwars
 
 # Michał Górny <mgorny@gentoo.org> (2023-10-26)
 # An unmaintained programming language with last release in 2009.
@@ -249,12 +235,6 @@ dev-libs/libe
 dev-libs/libpo6
 dev-libs/libtreadstone
 
-# Volkmar W. Pogatzki <gentoo@pogatzki.net> (2023-10-23)
-# Java libraries. No reverse dependencies.
-# Removal on 2023-11-23.
-dev-java/apache-rat-core
-dev-java/apache-rat-tasks
-
 # Ulrich Müller <ulm@gentoo.org> (2023-10-19)
 # Pretest versions, masked for testing.
 <app-editors/emacs-29.1.9999:29-vcs
@@ -265,18 +245,6 @@ dev-java/apache-rat-tasks
 # Removal on 2023-11-15.
 dev-perl/PathTools
 
-# Michał Górny <mgorny@gentoo.org> (2023-10-14)
-# media-video/transcode is dead for many years.  We already piled up
-# a lot of downstream patches just to keep it working, and it's broken
-# again (ffmpeg-5 this time).  The mask includes revdeps.
-# Removal on 2023-11-13.  Bug #861311.
-app-cdr/dvdshrink
-media-plugins/vdr-burn
-media-plugins/vdr-burn-templates
-media-video/dvd9to5
-media-video/dvdrip
-media-video/transcode
-
 # Sam James <sam@gentoo.org> (2023-10-06)
 # Breaks building scipy: https://github.com/cython/cython/issues/5748
 =dev-python/cython-3.0.3
@@ -285,19 +253,6 @@ media-video/transcode
 # =dev-python/setuptools-scm-8.0.1 broke compatibility hard but reverted
 # the changes in 8.0.2.
 ~dev-python/setuptools-scm-8.0.1
-
-# Jaco Kroon <jaco@uls.co.za> (2023-09-19)
-# Joonas Niilola <juippis@gentoo.org> (2023-09-21)
-# DAHDI is not suited for a rolling-release distribution. Upstream releases new
-# versions sporadically and it may take multiple years between them. Old
-# versions are constantly broken with newer kernels, requiring heavy patching
-# downstream. Has no active maintainer in Gentoo. If you use DAHDI and have
-# some ideas how to help, please see bug #914477.
-# Removal on 2024-03-01.
-net-libs/libpri
-net-misc/dahdi
-net-misc/dahdi-tools
-net-misc/openr2
 
 # Sam James <sam@gentoo.org> (2023-09-09)
 # OpenSSL 1.1.x is EOL on 2023-09-11. Please upgrade immediately to >= OpenSSL 3.
