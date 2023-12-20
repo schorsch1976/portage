@@ -6,6 +6,11 @@
 # This file is only for generic masks. For arch-specific masks (i.e.
 # mask everywhere, unmask on arch/*) use arch/base.
 
+# Sam James <sam@gentoo.org> (2023-12-18)
+# libgrust build is broken for multilib
+# https://gcc.gnu.org/PR113056
+=sys-devel/gcc-14.0.0_pre20231217 rust
+
 # John Helmert III <ajak@gentoo.org> (2023-11-25)
 # app-text/gocr has been masked for removal, bug #824290
 media-gfx/xsane ocr
@@ -50,21 +55,9 @@ dev-haskell/scientific test
 dev-haskell/splitmix test
 dev-haskell/tasty-expected-failure test
 
-# Ionen Wolkens <ionen@gentoo.org> (2023-10-10)
-# Broken with Qt6.6 and, given USE has no revdeps, simpler to just
-# mask for now to save desktop profile users (default bluetooth)
-# from failures. Update: could be cleaned up now but waiting for
-# 6.6.0 stable to avoid unnecessary rebuilds.
-~dev-python/PyQt6-6.5.3 bluetooth
-
 # Matt Turner <mattst88@gentoo.org> (2023-09-14)
 # Not ported to libsoup:3.0
 app-office/abiword collab
-
-# Sam James <sam@gentoo.org> (2023-09-09)
-# Needs <dev-libs/openssl-3 which is EOL on 2023-09-11. Please upgrade immediately.
-# See bug #913685.
-sci-libs/gloo ssl
 
 # WANG Xuerui <xen0n@gentoo.org> (2023-08-28)
 # Breaks multiple high-profile packages depending on outdated proc-macro2 when

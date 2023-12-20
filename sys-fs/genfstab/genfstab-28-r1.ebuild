@@ -13,13 +13,14 @@ S="${WORKDIR}/arch-install-scripts-${PV}"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 arm64 ~loong ~x86"
+KEYWORDS="amd64 arm64 ~loong x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 BDEPEND="
 	app-alternatives/awk
 	app-text/asciidoc
+	sys-devel/m4
 "
 
 src_test() {
