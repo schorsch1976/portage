@@ -11,11 +11,13 @@ DESCRIPTION="Automatically reload changed modules without restarting Apache"
 
 SLOT="0"
 LICENSE="Apache-2.0"
-KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~riscv ~x86"
+KEYWORDS="~amd64 ~arm ppc ppc64 ~riscv ~x86"
 
 RDEPEND="www-apache/mod_perl"
-BDEPEND="${RDEPEND}
+BDEPEND="
+	${RDEPEND}
 	dev-perl/Apache-Test
+	test? ( dev-perl/HTML-Parser )
 "
 
 src_test() {
