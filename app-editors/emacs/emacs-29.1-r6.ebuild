@@ -409,14 +409,6 @@ src_test() {
 	# subtests which caused failure. Elements should begin with a %.
 	# e.g. %lisp/gnus/mml-sec-tests.el.
 	local exclude_tests=(
-		# Reason: not yet known
-		# mml-secure-en-decrypt-{1,2,3,4}
-		# mml-secure-find-usable-keys-{1,2}
-		# mml-secure-key-checks
-		# mml-secure-select-preferred-keys-4
-		# mml-secure-sign-verify-1
-		%lisp/gnus/mml-sec-tests.el
-
 		# Reason: permission denied on /nonexistent
 		# (vc-*-bzr only fails if breezy is installed, as they
 		# try to access cache dirs under /nonexistent)
@@ -444,6 +436,15 @@ src_test() {
 			%src/keyboard-tests.el
 		)
 	use xpm || exclude_tests+=( %src/image-tests.el )
+
+	# Redirect GnuPG's sockets, in order not to exceed the 108 char limit
+	# for socket paths on Linux.
+	mkdir "${T}"/gnupg || die
+	local f
+	for f in S.gpg-agent{,.browser,.extra,.ssh}; do
+		printf "%%Assuan%%\nsocket=%s\n" "${T}/gnupg/${f}" \
+			> "test/lisp/gnus/mml-sec-resources/${f}" || die
+	done
 
 	# See test/README for possible options
 	emake \
