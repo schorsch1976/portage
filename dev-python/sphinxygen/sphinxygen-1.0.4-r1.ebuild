@@ -22,6 +22,11 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 S="${WORKDIR}/${PN}-v${PV}"
 
+DEPEND="
+	app-doc/doxygen
+	dev-python/sphinx[${PYTHON_USEDEP}]
+"
+RDEPEND="${DEPEND}"
 BDEPEND="test? ( dev-python/html5lib[${PYTHON_USEDEP}] )"
 
 distutils_enable_tests pytest
