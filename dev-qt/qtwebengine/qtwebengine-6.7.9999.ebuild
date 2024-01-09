@@ -102,7 +102,7 @@ BDEPEND="
 	dev-util/gperf
 	net-libs/nodejs[ssl]
 	sys-devel/bison
-	sys-devel/flex
+	app-alternatives/lex
 "
 
 PATCHES=( "${WORKDIR}"/patches/${PN} )
@@ -279,6 +279,13 @@ src_test() {
 
 	# random failures in several tests without -j1
 	qt6-build_src_test -j1
+}
+
+src_install() {
+	qt6-build_src_install
+
+	[[ -e ${D}${QT6_LIBDIR}/libQt6WebEngineCore.so ]] || #601472
+		die "${CATEGORY}/${PF} failed to build anything. Please report to https://bugs.gentoo.org/"
 }
 
 pkg_postinst() {
