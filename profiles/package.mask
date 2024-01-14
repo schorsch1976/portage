@@ -33,6 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2024-01-12)
+# Breaks data collection for a lot of packages, by attempting to import
+# all modules (not just test files), and therefore failing if they have
+# optional runtime dependencies.
+=dev-python/pytest-asyncio-0.23.3
+
 # Michał Górny <mgorny@gentoo.org> (2024-01-11)
 # These plugins are no longer maintained.  At least
 # dev-python/pytest-virtualenv is broken.  They have no revdeps left.
@@ -404,6 +410,11 @@ dev-python/ruamel-std-pathlib
 ~media-libs/pulseaudio-qt-1.4.0
 ~net-libs/kdsoap-2.2.0
 ~net-libs/kdsoap-ws-discovery-client-0.3.0
+~net-libs/signon-ui-0.15_p20231016
+~net-libs/accounts-qt-1.16_p20220803
+~net-libs/accounts-qml-0.7_p20231028
+~net-libs/signon-oauth2-0.25_p20210102
+=net-libs/signond-8.61-r100
 ~sys-auth/polkit-qt-0.175.0
 
 # Hans de Graaff <graaff@gentoo.org> (2023-12-17)
