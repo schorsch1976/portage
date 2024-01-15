@@ -196,7 +196,7 @@ else the example tab will be empty alongside missing documentation.
 
 Build Systems:
 - CMakeProjectManager (dev-util/cmake)
-- MesonProjectManager (dev-util/meson)
+- MesonProjectManager (dev-build/meson)
 - QbsProjectManager (dev-util/qbs)
 
 C++:
@@ -209,7 +209,7 @@ Code Analyzer:
 - Cppcheck (dev-util/cppcheck)
 - CtfVisualizer (USE=tracing)
 - PerfProfiler (USE=tracing)
-- Valgrind (dev-util/valgrind)
+- Valgrind (dev-debug/valgrind)
 
 Core:
 - Help (USE=help + dev-qt/qt-docs:6 with USE=\"examples qch\")

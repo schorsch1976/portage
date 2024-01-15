@@ -595,7 +595,7 @@ net-fs/samba test
 
 # Mike Gilbert <floppym@gentoo.org> (2020-04-23)
 # Tests are very sensitive to the host environment.
-dev-util/meson test
+dev-build/meson test
 
 # Alfredo Tupone <tupone@gentoo.org> (2020-04-04)
 # Ada support is not yet ready for sys-devel/gcc
@@ -705,7 +705,7 @@ dev-python/paramiko server
 # and compiler/binutils combinations.)
 sys-devel/binutils cet
 sys-devel/binutils-hppa64 cet
-sys-devel/gdb cet
+dev-debug/gdb cet
 sys-libs/binutils-libs cet
 sys-libs/glibc cet
 sys-devel/gcc cet
