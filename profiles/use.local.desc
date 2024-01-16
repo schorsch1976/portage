@@ -476,6 +476,10 @@ app-editors/vim:racket - Enable support for Scheme using dev-scheme/racket
 app-editors/vim:terminal - Enable terminal emulation support
 app-editors/vim:vim-pager - Install vimpager and vimmanpager links
 app-editors/vis:tre - more memory efficient regex search using dev-libs/tre
+app-editors/vscode:egl - Use EGL platform, enables smooth rending in high refresh rate monitors on X11/Xwayland
+app-editors/vscode:wayland - Run in wayland mode under wayland sessions, xwayland otherwise. This flag doesn't affect x11 sessions.
+app-editors/vscodium:egl - Use EGL platform, enables smooth rending in high refresh rate monitors on X11/Xwayland
+app-editors/vscodium:wayland - Run in wayland mode under wayland sessions, xwayland otherwise. This flag doesn't affect x11 sessions.
 app-editors/xemacs:athena - Chooses the MIT Athena widget set
 app-editors/xemacs:bignum - Support for OpenSSL bignum implementation
 app-editors/xemacs:dnd - Enables support for the x11-libs/dnd drag-n-drop library
@@ -791,6 +795,7 @@ app-i18n/imsettings:xfconf - Enable support for xfce-base/xfconf
 app-i18n/libime:data - Build data
 app-i18n/librime:debug - Enable debugging (including logging of input of RIME input methods)
 app-i18n/mozc:fcitx4 - Enable support for app-i18n/fcitx 4
+app-i18n/mozc:fcitx5 - Enable support for app-i18n/fcitx 5
 app-i18n/mozc:gui - Install graphical user interface tool (mozc_tool)
 app-i18n/mozc:ibus - Enable support for app-i18n/ibus
 app-i18n/mozc:renderer - Enable native candidate window
@@ -840,6 +845,9 @@ app-misc/ddcutil:user-permissions - Adds a udev rules to allow non-root users in
 app-misc/digitemp:ds2490 - Build support for the ds2490 sensor
 app-misc/digitemp:ds9097 - Build support for the ds9097 sensor
 app-misc/digitemp:ds9097u - Build support for the ds9097u sensor
+app-misc/ebusd:contrib - Compile and install additional user contribued plugins.
+app-misc/ebusd:knx - Enable support for connecting to KNX.
+app-misc/ebusd:mqtt - Enable support for connecting to MQTT.
 app-misc/fastfetch:chafa - Enables text/graphics renderer with media-gfx/chafa
 app-misc/fastfetch:ddcutil - Use app-misc/ddcutil to query monitor settings
 app-misc/fastfetch:drm - Enables support for X.org's x11-libs/libdrm
@@ -1294,6 +1302,7 @@ dev-ada/spawn:static-pic - Build static library with pic code
 dev-ada/templates-parser:shared - Build shared library
 dev-ada/xmlada:shared - Build shared library
 dev-ada/xmlada:static-pic - Build static library with pic code
+dev-build/cmake:dap - Build debugger for CMake with Debug Adapter Protocol support via dev-cpp/cppdap
 dev-cpp/glog:gflags - Use dev-cpp/gflags for flag parsing
 dev-cpp/glog:libunwind - Use libunwind library (sys-libs/libunwind or sys-libs/llvm-libunwind) instead of built-in fallback implementation for stack unwinding
 dev-cpp/jwt-cpp:picojson - Enable use of dev-cpp/picojson
@@ -1405,6 +1414,8 @@ dev-embedded/openocd:ftdi - Enable support for USB FTDI chips via dev-embedded/l
 dev-embedded/openocd:jlink - Build the SEGGER J-Link driver
 dev-embedded/openocd:parport - Enable support for parport JTAG devices
 dev-embedded/openocd:verbose-io - Verbose IO and comm JTAG and USB messages
+dev-embedded/rpi-eeprom:pi4 - Install firmware files for the Raspberry Pi 4
+dev-embedded/rpi-eeprom:pi5 - Install firmware files for the Raspberry Pi 5
 dev-embedded/sdcc:avr - Add support for AVR -- not supported upstream
 dev-embedded/sdcc:boehm-gc - Enable Hans Boehm's garbage collector dev-libs/boehm-gc
 dev-embedded/sdcc:device-lib - Enable built of devices libraries
@@ -2776,7 +2787,6 @@ dev-util/ccache:redis - Enable Redis backend for storage via dev-libs/hiredis
 dev-util/ccache:static-c++ - Avoid dynamic dependency on gcc's libstdc++.
 dev-util/cccc:apidoc - Build software docs with doxygen/graphviz and metrics with cccc
 dev-util/cccc:mfc - Add patch for MFC dialect options
-dev-util/cmake:dap - Build debugger for CMake with Debug Adapter Protocol support via dev-cpp/cppdap
 dev-util/codeblocks:contrib - Build additional contrib components
 dev-util/codeblocks:fortran - Build FortranProject plugin which enables to use Code::Blocks IDE for Fortran language
 dev-util/cppcheck:charts - Enable QtCharts usage in the GUI
@@ -6016,7 +6026,7 @@ net-libs/loudmouth:asyncns - Use net-libs/libasyncns for asynchronous name resol
 net-libs/loudmouth:openssl - Enable dev-libs/openssl support instead of gnutls (which is the default).
 net-libs/mbedtls:cmac - Enable block cipher-based message authentication code algorithm
 net-libs/mbedtls:havege - Enable the HAVEGE random generator. Warning: the HAVEGE random generator is not suitable for virtualized environments
-net-libs/mbedtls:programs - Build PolarSSL programs
+net-libs/mbedtls:programs - Build Mbed TLS programs
 net-libs/neon:libproxy - Add support for net-libs/libproxy
 net-libs/neon:pkcs11 - Add support for PKCS#11 using dev-libs/pakchois
 net-libs/nghttp2:hpack-tools - Install HPACK (header compression) helper tools
@@ -8069,20 +8079,6 @@ sys-cluster/rdma-core:neigh - Enable iwpmd support
 sys-cluster/rdma-core:python - Enable pyverbs support
 sys-cluster/resource-agents:libnet - Force use of net-libs/libnet
 sys-cluster/resource-agents:rgmanager - Install resources for rgmanager
-sys-cluster/slurm:html - Build html documentation
-sys-cluster/slurm:ipmi - Build support for collecting some ipmi stats
-sys-cluster/slurm:json - Add support for json-persing via json-c
-sys-cluster/slurm:multiple-slurmd - Allow multiple slurmd to run
-sys-cluster/slurm:munge - Enable authentication via munge
-sys-cluster/slurm:numa - Add NUMA awareness
-sys-cluster/slurm:nvml - Enable the NVML device discovery
-sys-cluster/slurm:ofed - Add Infiniband support via ofed
-sys-cluster/slurm:rrdtool - Enable RRD export plugin
-sys-cluster/slurm:slurmdbd - Install SQL server for slurmdbd
-sys-cluster/slurm:slurmrestd - Enable interface to Slurm via REST API
-sys-cluster/slurm:torque - Enable perl scripts that emulates pbs (qstat, qsub etc.)
-sys-cluster/slurm:ucx - Enable Unified Communication X library support
-sys-cluster/slurm:yaml - Enable YAML support
 sys-cluster/spark-bin:scala211 - Install Spark JARs pre-built with Scala 2.11.
 sys-cluster/spark-bin:scala212 - Install Spark JARs pre-built with Scala 2.12.
 sys-cluster/torque:autorun - Enable the AUTORUN_JOBS codebase
