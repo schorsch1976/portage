@@ -568,6 +568,7 @@ app-emulation/libvirt:libssh2 - Use net-libs/libssh2 to communicate with remote 
 app-emulation/libvirt:libvirtd - Builds the libvirtd daemon as well as the client utilities instead of just the client utilities
 app-emulation/libvirt:lvm - Allow using the Logical Volume Manager (sys-fs/lvm2) as pool for disk image storage
 app-emulation/libvirt:lxc - Support management of Linux Containers virtualisation (app-containers/lxc)
+app-emulation/libvirt:nbd - Allow using sys-block/nbdkit to access network disks
 app-emulation/libvirt:nfs - Allow using Network File System mounts as pool for disk image storage
 app-emulation/libvirt:numa - Use NUMA for memory segmenting via sys-process/numactl and sys-process/numad
 app-emulation/libvirt:openvz - Support management of OpenVZ virtualisation (openvz-sources)
@@ -2448,7 +2449,6 @@ dev-python/pypax:ptpax - Enable PT_PAX_FLAGS support.
 dev-python/pypax:xtpax - Enable XATTR_PAX_FLAGS support.
 dev-python/pypy:full-stdlib - Install complete stdlib as necessary to use PyPy for general purpose programs. By default, only a limited subset that is used when building dev-python/pypy3-exe is installed. Note that PyPy2.7's stdlib contains multiple known vulnerabilities.
 dev-python/pypy-exe:low-memory - Build using PyPy with the engine configured towards low memory footprint. This makes it possible to build PyPy using ~3.5G of RAM on amd64 and ~half of that on x86, at the cost of lengthened build time.
-dev-python/pypy3-exe:low-memory - Build using PyPy with the engine configured towards low memory footprint. This makes it possible to build PyPy using ~3.5G of RAM on amd64 and ~half of that on x86, at the cost of lengthened build time.
 dev-python/pypy3_10:ensurepip - Install the ensurepip module that uses bundled wheels to bootstrap pip and setuptools (if disabled, it will be only possible to use venv `--without-pip`)
 dev-python/pypy3_10-exe:low-memory - Build using PyPy with the engine configured towards low memory footprint. This makes it possible to build PyPy using ~3.5G of RAM on amd64 and ~half of that on x86, at the cost of lengthened build time.
 dev-python/pypy3_9:ensurepip - Install the ensurepip module that uses bundled wheels to bootstrap pip and setuptools (if disabled, it will be only possible to use venv `--without-pip`)
@@ -8281,6 +8281,7 @@ sys-kernel/gentoo-kernel-bin:initramfs - Build initramfs along with the kernel.
 sys-kernel/gentoo-sources:experimental - Apply experimental patches; for more information, see "https://wiki.gentoo.org/wiki/Project:Kernel/Experimental".
 sys-kernel/installkernel:dracut - Generate an initrd or UKI on each kernel installation
 sys-kernel/installkernel:grub - Re-generate grub.cfg on each kernel installation
+sys-kernel/installkernel:module-rebuild - Rebuild external kernel modules before generating the initramfs
 sys-kernel/installkernel:systemd - Use systemd's kernel-install to install kernels'
 sys-kernel/installkernel:uki - Install UKIs to ESP/EFI/Linux for EFI stub booting and/or bootloaders with support for auto-discovering UKIs
 sys-kernel/installkernel:ukify - Build an UKI with systemd's ukify on each kernel installation
