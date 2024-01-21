@@ -555,9 +555,9 @@ app-emulation/libguestfs:erlang - Build Erlang bindings
 app-emulation/libguestfs:fuse - Enable image mount support via sys-fs/fuse
 app-emulation/libguestfs:inspect-icons - Use media-gfx/icoutils for accessing/inspecting icon file within images
 app-emulation/libguestfs:libvirt - Use app-emulation/libvirt to manipulate VMs
-app-emulation/libguestfs:systemtap - Use dev-util/systemtap to inspect VM via "probes"
+app-emulation/libguestfs:systemtap - Use dev-debug/systemtap to inspect VM via "probes"
 app-emulation/libspectrum:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
-app-emulation/libvirt:dtrace - Enable dtrace support via dev-util/systemtap
+app-emulation/libvirt:dtrace - Enable dtrace support via dev-debug/systemtap
 app-emulation/libvirt:firewalld - DBus interface to iptables/ebtables allowing for better runtime management of your firewall.
 app-emulation/libvirt:fuse - Allow LXC to use sys-fs/fuse for mountpoints
 app-emulation/libvirt:glusterfs - Enable GlusterFS support via sys-cluster/glusterfs
@@ -1311,6 +1311,21 @@ dev-build/bazel:tools - Install extra bazel tools to build from sources
 dev-build/cmake:dap - Build debugger for CMake with Debug Adapter Protocol support via dev-cpp/cppdap
 dev-build/muon:archive - Enable extracting wraps using app-arch/libarchive.
 dev-build/muon:libpkgconf - Enable looking up packages via dev-util/pkgconf.
+dev-cpp/eigen:adolc - Add test support for Adolc (sci-libs/adolc)
+dev-cpp/eigen:benchmark - Build benchmark suite
+dev-cpp/eigen:boost - Add test support for Boost.Multiprecision (dev-libs/boost)
+dev-cpp/eigen:cholmod - Add test support for CHOLMOD (sci-libs/cholmod)
+dev-cpp/eigen:clang - Use clang for cuda units compilation
+dev-cpp/eigen:fftw - Add test support for fftw (sci-libs/fftw)
+dev-cpp/eigen:hip - Enable HIP GPU computing support
+dev-cpp/eigen:klu - Add test support for KLU (sci-libs/klu)
+dev-cpp/eigen:opengl - Add test support for OpenGL
+dev-cpp/eigen:openmp - Add test support for the OpenMP (support parallel computing)
+dev-cpp/eigen:pastix - Add test support for PaStiX (sci-libs/pastix)
+dev-cpp/eigen:sparsehash - Add test support for GoogleHash (dev-cpp/sparsehash)
+dev-cpp/eigen:spqr - Add test support for SPQR (sci-libs/spqr)
+dev-cpp/eigen:superlu - Add test support for SuperLU (sci-libs/superlu)
+dev-cpp/eigen:umfpack - Add test support for UMFPACK (sci-libs/umfpack)
 dev-cpp/glog:gflags - Use dev-cpp/gflags for flag parsing
 dev-cpp/glog:libunwind - Use libunwind library (sys-libs/libunwind or sys-libs/llvm-libunwind) instead of built-in fallback implementation for stack unwinding
 dev-cpp/jwt-cpp:picojson - Enable use of dev-cpp/picojson
@@ -1348,7 +1363,7 @@ dev-db/mariadb:server - Build the server program
 dev-db/mariadb:sphinx - Add suport for the sphinx full-text search engine
 dev-db/mariadb:sst-mariabackup - Add tools needed to support the mariabackup SST method
 dev-db/mariadb:sst-rsync - Add tools needed to support the rsync SST method
-dev-db/mariadb:systemtap - Build support for profiling and tracing using dev-util/systemtap
+dev-db/mariadb:systemtap - Build support for profiling and tracing using dev-debug/systemtap
 dev-db/mariadb:test - Install upstream testsuites for end use.
 dev-db/mariadb:yassl - Enable SSL connections and crypto functions using the bundled yaSSL
 dev-db/mongodb:mongosh - Install the MongoDB shell from app-admin/mongosh-bin
@@ -1362,7 +1377,7 @@ dev-db/mysql:numa - Enable NUMA support using sys-process/numactl (NUMA kernel s
 dev-db/mysql:profiling - Add support for statement profiling (requires USE=community).
 dev-db/mysql:router - Build the MySQL router program
 dev-db/mysql:server - Build the server program
-dev-db/mysql:systemtap - Build support for profiling and tracing using dev-util/systemtap
+dev-db/mysql:systemtap - Build support for profiling and tracing using dev-debug/systemtap
 dev-db/mysql:test - Install upstream testsuites for end use.
 dev-db/mysql-connector-c++:legacy - Build the legacy 1.x API as well as the DevX API
 dev-db/oracle-instantclient:jdbc - Support for XA, Internationalization, and RowSet operations under JDBC
@@ -1399,10 +1414,12 @@ dev-db/spatialite:xls - Add the dev-libs/freexl library for xls import support
 dev-db/sqldeveloper:sybase - Add support for the Sybase SQL Database Server
 dev-db/sqlite:secure-delete - Enable overwriting of deleted content with zeros by default (http://sqlite.org/pragma.html#pragma_secure_delete), causing some performance penalty
 dev-db/sqlite:tools - Install additional tools, among which are included: sqlite3-analyzer, sqlite3-changeset, sqlite3-db-dump, sqlite3-diff, sqlite3-rbu, sqlite3-expert and others.
+dev-db/sqlitebrowser:sqlcipher - Allow to open and to edit databases encrypted using dev-db/sqlcipher
 dev-db/sqlitestudio:cli - Build CLI interface
 dev-db/timescaledb:proprietary-extensions - Enable proprietary features/extensions licensed under the TimeScale License
 dev-db/unixODBC:minimal - Disable bundled drivers and extra libraries (most users don't need these)
 dev-db/unixODBC:odbcmanual - Administrator, Internal Structure, Programmer and User documentation
+dev-debug/bpftrace:fuzzing - Build bpftrace for fuzzing
 dev-debug/gdb:cet - Enable Intel Control-flow Enforcement Technology.
 dev-debug/gdb:debuginfod - Enable debuginfod support via dev-libs/elfutils libdebuginfod
 dev-debug/gdb:lzma - Support lzma compression in ELF debug info
@@ -1413,6 +1430,13 @@ dev-debug/gdb:sim - Build gdb's simulators for various hardware platforms. See h
 dev-debug/gdb:source-highlight - Enable listing highlighting via dev-util/source-highlight
 dev-debug/gdb:xml - Support parsing XML data files needed (at least) for cpu features, memory maps, and syscall tracing
 dev-debug/gdb:xxhash - Use dev-libs/xxhash to speed up internal hashing.
+dev-debug/ltrace:elfutils - Use libdwfl from dev-libs/elfutils for frame unwinding support
+dev-debug/ltrace:unwind - Use sys-libs/libunwind for frame unwinding support
+dev-debug/strace:aio - Enable dev-libs/libaio support for tracing Asynchronous I/O operations
+dev-debug/strace:elfutils - Enable stack backtraces (-k flag) via dev-libs/elfutils
+dev-debug/strace:unwind - Enable stack backtraces (-k flag) via sys-libs/libunwind
+dev-debug/sysdig:modules - Build kernel modules needed for tracing local events. Disable this only if you intend to use sysdig purely to work with dumpfiles.
+dev-debug/systemtap:libvirt - Support probing of libvirt domains.
 dev-embedded/avrdude:ftdi - Enable support for USB FTDI chips via dev-embedded/libftdi
 dev-embedded/libftdi:tools - build ftdi_eeprom helper tool
 dev-embedded/openocd:capstone - Use dev-libs/capstone for disassembly support
@@ -1959,7 +1983,7 @@ dev-libs/glib:dbus - Enable dependencies required by glib libraries using dbus s
 dev-libs/glib:elf - Enable support for listing and extracting from ELF resource files with gresource tool
 dev-libs/glib:mime - Pull in shared MIME database that many glib-based applications require at runtime to detect or open files. Warning: do not disable this flag unless installing on a headless server.
 dev-libs/glib:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
-dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util/systemtap
+dev-libs/glib:systemtap - Build support for profiling and tracing using dev-debug/systemtap
 dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software; build gresource utility with ELF support.
 dev-libs/gmime:smime - Enable experimental S/MIME support
 dev-libs/gmp:cpudetection - Enables runtime CPU detection (useful for binpkgs, compatibility on other CPUs). This only works on amd64/x86 at present. If this flag is enabled, GMP will work on a variety of amd64/x86 CPUs and load accelerated routines for use at runtime depending on the CPU in use. This makes it suitable for binary packages (binpkgs). If this flag is disabled, GMP will be tuned for the CPU being used at build-time and may not be usable on other machines.
@@ -2782,7 +2806,6 @@ dev-util/Tensile:client - Build and install tensile_client executable to run ben
 dev-util/babeltrace:elfutils - Build the dev-util/lttng-ust debug information filter component class
 dev-util/babeltrace:plugins - Build support for Babeltrace 2 Python plugins
 dev-util/bpftool:caps - Use sys-libs/libcap to enable unprivileged run support
-dev-util/bpftrace:fuzzing - Build bpftrace for fuzzing
 dev-util/buildbot:docker - Add support for worker docker command steps
 dev-util/buildbot:irc - Add support for status delivery through an ircbot.
 dev-util/cargo-audit:fix - Add support for 'fix' subcommand (experimental)
@@ -2844,7 +2867,7 @@ dev-util/glade:gjs - Build catalog support for dev-libs/gjs widgets.
 dev-util/glade:webkit - Build catalog support for net-libs/webkit-gtk:4 widgets.
 dev-util/global:vim - Integrate the GNU GLOBAL source code tag system with Vim
 dev-util/gnome-builder:clang - Provide integration with sys-devel/clang for best possible C/C++ autocompletion, semantic highlighting, symbol resolving, and diagnostics support
-dev-util/gnome-builder:d-spy - Provide D-Bus debugging functionality via dev-util/d-spy
+dev-util/gnome-builder:d-spy - Provide D-Bus debugging functionality via dev-debug/d-spy
 dev-util/gnome-builder:flatpak - Enable support for flatpak applications using sys-apps/flatpak
 dev-util/gnome-builder:git - Provide support for the Git version control system via dev-libs/libgit2-glib (such as setup of Git for New Project, direct cloning for Open Project and changed lines indicators in the editor gutter)
 dev-util/gnome-builder:sysprof - Provide an integrated profiler via dev-util/sysprof
@@ -2866,8 +2889,6 @@ dev-util/kernelshark:custom-optimization - Build with user-specified compiler op
 dev-util/kup:gitolite - Enable support for dev-vcs/gitolite in kup-server
 dev-util/libabigail:btf - Handle reading kernel debug files in BTF format via dev-libs/libbpf
 dev-util/librnp:botan - Use Botan crypto backend instead of OpenSSL
-dev-util/ltrace:elfutils - Use libdwfl from dev-libs/elfutils for frame unwinding support
-dev-util/ltrace:unwind - Use sys-libs/libunwind for frame unwinding support
 dev-util/lttng-tools:ust - Support LTTng-UST (Userspace Tracing)
 dev-util/lttng-ust:numa - Enable numa support
 dev-util/massif-visualizer:callgraph - Enable detailed snapshot analysis using media-gfx/kgraphviewer
@@ -2922,12 +2943,7 @@ dev-util/schroot:lvm - Enable support for chroots using LVM snapshots
 dev-util/schroot:zfs - Enable support for chroots using ZFS shapshots/clones
 dev-util/sdl-jstest:sdl - Enable media-libs/libsdl2 based input test
 dev-util/sdl-jstest:sdl1 - Enable media-libs/libsdl based input test
-dev-util/strace:aio - Enable dev-libs/libaio support for tracing Asynchronous I/O operations
-dev-util/strace:elfutils - Enable stack backtraces (-k flag) via dev-libs/elfutils
-dev-util/strace:unwind - Enable stack backtraces (-k flag) via sys-libs/libunwind
-dev-util/sysdig:modules - Build kernel modules needed for tracing local events. Disable this only if you intend to use sysdig purely to work with dumpfiles.
 dev-util/sysprof:unwind - Use sys-libs/libunwind to unwind the stack
-dev-util/systemtap:libvirt - Support probing of libvirt domains.
 dev-util/trace-cmd:udis86 - Enable support for dev-libs/udis86 disassembler library
 dev-util/uftrace:capstone - Use capstone to provide dynamic tracing without recompilation
 dev-util/vulkan-tools:cube - Build the cube/cubepp demos
@@ -6009,7 +6025,6 @@ net-libs/libupnp:reuseaddr - Allow clean restarts by binding the socket with SO_
 net-libs/libupnp:samples - Install sample applications
 net-libs/libvncserver:24bpp - Enable 24bpp support
 net-libs/libvncserver:filetransfer - Enable support for TightVNC's file transfer protocol
-net-libs/libvncserver:gcrypt - Use dev-libs/libgcrypt as crypto backend
 net-libs/libvncserver:lzo - Enable LZO support via dev-libs/lzo instead of using internal miniLZO implementation
 net-libs/libwebsockets:access-log - Support generating Apache-compatible access logs
 net-libs/libwebsockets:client - The client part of the library and libwebsockets-test-client
@@ -6301,6 +6316,7 @@ net-misc/curl:nghttp3 - Enable HTTP/3.0 support using net-libs/nghttp3 and net-l
 net-misc/curl:openssl - Enable openssl ssl backend
 net-misc/curl:pop3 - Enable Post Office Protocol 3 support
 net-misc/curl:progress-meter - Enable the progress meter
+net-misc/curl:psl - Enable Public Suffix List (PSL) support. See https://daniel.haxx.se/blog/2024/01/10/psl-in-curl/.
 net-misc/curl:rtmp - Enable RTMP Streaming Media support
 net-misc/curl:rustls - Enable Rustls ssl backend
 net-misc/curl:smtp - Enable Simple Mail Transfer Protocol support
@@ -7919,7 +7935,7 @@ sys-auth/pambase:homed - Use pam_systemd_home module to manage home directories 
 sys-auth/pambase:minimal - Disables the standard PAM modules that provide extra information to users on login; this includes pam_lastlog, pam_motd, pam_mail and other similar modules. This might not be a good idea on a multi-user system but could reduce slightly the overhead on single-user non-networked systems.
 sys-auth/pambase:mktemp - Enable pam_mktemp module on system auth stack for session handling. This module creates a private temporary directory for the user, and sets TMP and TMPDIR accordingly.
 sys-auth/pambase:nullok - Enable the nullok option with the pam_unix module. This allows people to login with blank passwords.
-sys-auth/pambase:pam_krb5 - Enable pam_krb5 module on system auth stack, as an alternative to pam_unix. If Kerberos authentication succeed, only pam_unix will be ignore, and all the other modules will proceed as usual, including Gnome Keyring and other session modules. It requires sys-libs/pam as PAM implementation.
+sys-auth/pambase:pam_krb5 - Enable pam_krb5 module on system auth stack, as an alternative to pam_unix. If Kerberos authentication succeeds, only pam_unix will be ignorde, and all the other modules will proceed as usual, including Gnome Keyring and other session modules. It requires sys-libs/pam as PAM implementation.
 sys-auth/pambase:pam_ssh - Enable pam_ssh module on system auth stack for authentication and session handling. This module will accept as password the passphrase of a private SSH key (one of ~/.ssh/id_rsa, ~/.ssh/id_dsa or ~/.ssh/identity), and will spawn an ssh-agent instance to cache the open key.
 sys-auth/pambase:passwdqc - Enable pam_passwdqc module on system auth stack for password quality validation. This module produces warnings, rejecting or providing example passwords when changing your system password. It is used by default by OpenWall GNU/*/Linux and by FreeBSD.
 sys-auth/pambase:pwhistory - Enable pam_pwhistory module on system auth stack to save the last passwords for each user in order to force password change history and keep the user from alternating between the same password too frequently.
