@@ -833,6 +833,7 @@ app-metrics/collectd:xfs - Enable optional capability to filter on XFS file syst
 app-metrics/node_exporter:systemd - Enables systemd collector by default
 app-metrics/prometheus-podman-exporter:btrfs - Collect metrics for btrfs filesystem
 app-misc/FreeSSM:small-resolution - Build the app for small resolution screeens
+app-misc/anki:gui - Enable support for a graphical user interface. Disable for standalone sync server.
 app-misc/blink1:mini-tool - Build and install command-line mini-tool blink1-mini-tool (normally used for embedded devices)
 app-misc/blink1:server - Build and install REST API server (currently hard-coded to TCP port 8080)
 app-misc/blink1:tool - Build and install command-line tool blink1-tool
@@ -1319,6 +1320,7 @@ dev-cpp/eigen:clang - Use clang for cuda units compilation
 dev-cpp/eigen:fftw - Add test support for fftw (sci-libs/fftw)
 dev-cpp/eigen:hip - Enable HIP GPU computing support
 dev-cpp/eigen:klu - Add test support for KLU (sci-libs/klu)
+dev-cpp/eigen:mathjax - Use MathJax for rendering math in HTML docs (dev-libs/mathjax)
 dev-cpp/eigen:opengl - Add test support for OpenGL
 dev-cpp/eigen:openmp - Add test support for the OpenMP (support parallel computing)
 dev-cpp/eigen:pastix - Add test support for PaStiX (sci-libs/pastix)
@@ -2078,7 +2080,6 @@ dev-libs/libpy:sparsehash - Include libpy wrappers for dev-cpp/sparsehash
 dev-libs/librdkafka:lz4 - Enable support for Kafka's LZ4 compression based on KIP-57 (uses app-arch/lz4)
 dev-libs/librelp:gnutls - Use GnuTLS
 dev-libs/librelp:openssl - Use OpenSSL
-dev-libs/libsecp256k1:asm - Enable x86_64 assembly optimisation
 dev-libs/libsecp256k1:ecdh - Enable ECDH shared secret computation
 dev-libs/libsecp256k1:ellswift - Enable ElligatorSwift encoding for public keys
 dev-libs/libsecp256k1:endomorphism - Enable endomorphism
@@ -4734,6 +4735,7 @@ media-sound/musescore:osc - Enable OSC remote control protocol
 media-sound/musescore:portmidi - Enable support for building against media-libs/portmidi
 media-sound/musescore:sf3 - Enable SoundFont 3 support using media-libs/libvorbis
 media-sound/musescore:sfz - Enable experimental SFZ sampler
+media-sound/musescore:video - Support exporting scores as videos using the command line
 media-sound/musescore:webengine - Use dev-qt/qtwebengine for embedded web browser
 media-sound/ncmpc:async-connect - Enable asynchronous connect
 media-sound/ncmpc:chat-screen - Enable the chat screen
@@ -6975,7 +6977,6 @@ net-wireless/hostapd:netlink - Adding support for using netlink to create VLANs
 net-wireless/hostapd:suiteb - Adding support for NSA Suite B Cryptography
 net-wireless/hostapd:wps - Add support for Wi-Fi Protected Setup
 net-wireless/iwd:client - Enable iwctl client tool
-net-wireless/iwd:crda - Use net-wireless/crda for regulatory domain loading instead of in-kernel (4.15+) support
 net-wireless/iwd:monitor - Enable iwmon monitor tool
 net-wireless/iwd:ofono - Enable support for oFono SIM authentication
 net-wireless/iwd:standalone - Enable standalone mode with built-in DHCP client and DNS handling"
@@ -7020,11 +7021,9 @@ net-wireless/urh:rtlsdr - use native backend which directly uses net-wireless/rt
 net-wireless/urh:sdrplay - use native backend which directly uses net-wireless/sdrplay
 net-wireless/urh:uhd - use native backend which directly uses net-wireless/uhd
 net-wireless/wepattack:john - Build with app-crypt/johntheripper support
-net-wireless/wireless-regdb:crda - Use obsolete net-wireless/crda for regulatory domain loading instead of in-kernel (4.15+) support
 net-wireless/wireless-tools:multicall - Build the most commonly used tools as one binary
 net-wireless/wpa_supplicant:ap - Add support for access point mode
 net-wireless/wpa_supplicant:broadcom-sta - Flag to help users disable features not supported by broadcom-sta driver
-net-wireless/wpa_supplicant:crda - Use net-wireless/crda for regulatory domain loading instead of in-kernel (4.15+) support
 net-wireless/wpa_supplicant:eap-sim - Add support for EAP-SIM authentication algorithm
 net-wireless/wpa_supplicant:eapol-test - Build and install eapol_test binary
 net-wireless/wpa_supplicant:fasteap - Add support for FAST-EAP authentication algorithm
@@ -8486,6 +8485,7 @@ sys-process/bottom:battery - Include support for laptop battery information
 sys-process/bottom:gpu - Include support for GPU temperature and memory usage information
 sys-process/bottom:zfs - Include support for ZFS ARC memory usage information
 sys-process/criu:bpf - Add support for BPF programs via dev-libs/libbpf
+sys-process/criu:filecaps - Install the criu binary with file capabilities to allow for rootless CRIU
 sys-process/criu:nftables - Add support for net-firewall/nftables
 sys-process/criu:setproctitle - Use dev-libs/libbsd to make process titles of service workers to be more verbose
 sys-process/cronie:anacron - Install the periodic anacron command scheduler.
