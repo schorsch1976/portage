@@ -1690,6 +1690,7 @@ dev-java/ant:bsf - Enable support for Apache Bean Scripting Framework (dev-java/
 dev-java/ant:commonslogging - Enable commons-logging Ant tasks
 dev-java/ant:commonsnet - Enable commons-net Ant tasks
 dev-java/ant:jai - Enable JAI (Java Imaging) Ant task
+dev-java/ant:jakartamail - Enable Jakartamail Ant task
 dev-java/ant:javamail - Enable JavaMail Ant task
 dev-java/ant:jdepend - Enable Jdepend Ant tasks
 dev-java/ant:jmf - Enable JMF (Java Media Framework) Ant tasks
@@ -1703,6 +1704,7 @@ dev-java/ant:regexp - Enable Apache Regexp Ant tasks
 dev-java/ant:resolver - Enable Apache Resolver Ant tasks
 dev-java/ant:swing - Enable Swing Ant tasks
 dev-java/ant:testutil - Enable optional test util classes
+dev-java/ant:xalan - Enable Apache Xalan2 Ant tasks
 dev-java/ant:xz - Enable XZ Ant tasks
 dev-java/commons-logging:log4j - Add optional support for log4j
 dev-java/dom4j:jaxen - Includes org.jaxen.dom4j package
@@ -5673,8 +5675,9 @@ net-fs/netatalk:tracker - Add support for spotlight like tracker
 net-fs/nfs-utils:junction - Enable NFS junction support in nfsref
 net-fs/nfs-utils:ldap - Add ldap support
 net-fs/nfs-utils:libmount - Link mount.nfs with libmount
-net-fs/nfs-utils:nfsdcld - Enable nfsdcld NFSv4 clientid tracking daemon
+net-fs/nfs-utils:nfsdcld - Enable nfsdcld NFSv4 clientid tracking daemon and tools
 net-fs/nfs-utils:nfsidmap - Enable support for newer nfsidmap helper
+net-fs/nfs-utils:nfsv3 - Enable support for NFSv2 and NFSv3
 net-fs/nfs-utils:nfsv4 - Enable support for NFSv4
 net-fs/nfs-utils:nfsv41 - Enable support for NFSv4.1
 net-fs/nfs-utils:uuid - Support UUID lookups in rpc.mountd
