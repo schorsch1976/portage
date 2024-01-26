@@ -4,7 +4,10 @@
 EAPI=8
 
 DESCRIPTION="Gentoo fork of installkernel script from debianutils"
-HOMEPAGE="https://github.com/projg2/installkernel-gentoo"
+HOMEPAGE="
+	https://github.com/projg2/installkernel-gentoo
+	https://wiki.gentoo.org/wiki/Installkernel
+"
 SRC_URI="https://github.com/projg2/installkernel-gentoo/archive/v${PV}.tar.gz
 	-> ${P}.tar.gz"
 S="${WORKDIR}/${PN}-gentoo-${PV}"
@@ -12,7 +15,7 @@ S="${WORKDIR}/${PN}-gentoo-${PV}"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~x86-linux"
-IUSE="+dracut grub uki ukify"
+IUSE="dracut grub uki ukify"
 
 RDEPEND="
 	>=sys-apps/debianutils-4.9-r1
