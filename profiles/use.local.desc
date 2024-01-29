@@ -8304,7 +8304,6 @@ sys-kernel/gentoo-kernel-bin:initramfs - Build initramfs along with the kernel.
 sys-kernel/gentoo-sources:experimental - Apply experimental patches; for more information, see "https://wiki.gentoo.org/wiki/Project:Kernel/Experimental".
 sys-kernel/installkernel:dracut - Generate an initrd or UKI on each kernel installation
 sys-kernel/installkernel:grub - Re-generate grub.cfg on each kernel installation
-sys-kernel/installkernel:module-rebuild - Rebuild external kernel modules before generating the initramfs
 sys-kernel/installkernel:systemd - Use systemd's kernel-install to install kernels'
 sys-kernel/installkernel:uki - Install UKIs to ESP/EFI/Linux for EFI stub booting and/or bootloaders with support for auto-discovering UKIs
 sys-kernel/installkernel:ukify - Build an UKI with systemd's ukify on each kernel installation
@@ -8593,6 +8592,7 @@ www-client/chromium:proprietary-codecs - Enable codecs for patent-encumbered aud
 www-client/chromium:system-harfbuzz - Use system media-libs/harfbuzz instead of the bundled library.
 www-client/chromium:system-icu - Use system dev-libs/icu instead of the bundled one
 www-client/chromium:system-png - Use system media-libs/libpng instead of the bundled library
+www-client/chromium:system-toolchain - Use system toolchain instead of the bundled one (if possible)
 www-client/chromium:system-zstd - Use system app-arch/zstd instead of the bundled one.
 www-client/chromium:widevine - Unsupported closed-source DRM capability (required by Netflix VOD)
 www-client/elinks:bittorrent - Enable support for the BitTorrent protocol
