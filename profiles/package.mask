@@ -33,6 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2024-02-03)
+# Doesn't work with Flask 3, and is abandoned upstream.  It can be
+# trivially replaced by a local function.  No revdeps.
+# Removal on 2024-03-04.  Bug #923701.
+dev-python/flask-gravatar
+
 # Michał Górny <mgorny@gentoo.org> (2024-01-31)
 # Breaks some plugins and a variety of test suites.  Upstream seems
 # to be planning to improve compatibility a bit.  Masking for testing
@@ -456,12 +462,6 @@ net-misc/openr2
 # Matt Turner <mattst88@gentoo.org> (2023-07-06)
 # GNOME 45 mask
 >=gnome-extra/gnome-logs-45_alpha
-
-# Sam James <sam@gentoo.org> (2023-07-05)
-# Doesn't install all needed files by e.g. kernelshark.
-# Need to either split into libtracecmd for the libraries or revert to Makefiles.
-# See bug #909439.
-=dev-util/trace-cmd-3.2
 
 # Michał Górny <mgorny@gentoo.org> (2023-06-21)
 # suitesparseconfig-7.0.0 fails to build with multilib enabled
