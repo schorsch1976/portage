@@ -5971,11 +5971,6 @@ net-libs/gnutls:test-full - Enable full test mode
 net-libs/gnutls:tls-heartbeat - Enable the Heartbeat Extension in TLS and DTLS
 net-libs/gnutls:tools - Build extra tools
 net-libs/gssdp:man - Generate man page for tools
-net-libs/ldns:dane - Enable DNS-based Authentication of Named Entities (DANE) support
-net-libs/ldns:ecdsa - Enable ECDSA support
-net-libs/ldns:ed25519 - Enable ED25519 support
-net-libs/ldns:ed448 - Enable ED448 support
-net-libs/ldns:gost - Enable GOST support
 net-libs/libetpan:liblockfile - Enable support for liblockfile library
 net-libs/libetpan:lmdb - Use dev-db/lmdb as cache DB
 net-libs/libgsasl:gcrypt - Use dev-libs/libgcrypt for low-level crypto
@@ -7813,7 +7808,6 @@ sys-apps/net-tools:arp - build the arp and rarp tools (for manipulating the ARP 
 sys-apps/net-tools:hostname - build the hostname and dnsdomainname tools
 sys-apps/net-tools:plipconfig - build the plipconfig tool (for working with old PLIP hardware)
 sys-apps/net-tools:slattach - build the slattach tool (for working with old serial ports)
-sys-apps/nvme-cli:hugepages - Use huge pages for memory allocations via sys-libs/libhugetlbfs
 sys-apps/nvme-cli:json - Support JSON output via dev-libs/json-c
 sys-apps/openrazer:client - Build the OpenRazer daemon client
 sys-apps/openrazer:daemon - Build the OpenRazer daemon service
@@ -8288,6 +8282,8 @@ sys-fs/zfs-auto-snapshot:cron - Install /etc/cron.* files
 sys-fs/zfs-auto-snapshot:default-exclude - Only take snapshots of datasets with com.sun:auto-snapshot=true property set
 sys-fs/zfs-kmod:dist-kernel-cap - Prevents upgrading to an unsupported kernel version when combined with USE=dist-kernel
 sys-fs/zfs-kmod:rootfs - Pull dependencies and check kernel options required for root-on-zfs
+sys-kernel/asahi-sources:rust - Pull in the Rust For Linux dependencies
+sys-kernel/asahi-sources:symlink - Automatically symlink the kernel sources to /usr/src/linux
 sys-kernel/genkernel:firmware - Prefer system firmware sys-kernel/linux-firmware over local copy.
 sys-kernel/gentoo-kernel:generic-uki - Build and install a generic initramfs and Unified Kernel Image, this is intended for building binpkgs with a pre-generated UKI included (EXPERIMENTAL).
 sys-kernel/gentoo-kernel:hardened - Use selection of hardening options recommended by Kernel Self Protection Project
