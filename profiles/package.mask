@@ -33,6 +33,22 @@
 
 #--- END OF EXAMPLES ---
 
+# Ulrich Müller <ulm@gentoo.org> (2024-02-08)
+# Masked for testing.
+# Test failure in watchpoints.dem, undefined function FresnelC.
+~sci-visualization/gnuplot-6.0.0
+
+# Michał Górny <mgorny@gentoo.org> (2024-02-07)
+# Does not build anymore.  Carries a large stack of patches already.
+# Last upstream activity in late 2020.  No reverse dependencies left.
+# Removal on 2024-03-08.  Bug #806079.
+sys-libs/libhugetlbfs
+
+# Joonas Niilola <juippis@gentoo.org> (2024-02-07)
+# The webpage it was built to scrape isn't online anymore.
+# Removal: 2024-03-08.  Bug #924007.
+net-misc/buka
+
 # Michał Górny <mgorny@gentoo.org> (2024-02-03)
 # Doesn't work with Flask 3, and is abandoned upstream.  It can be
 # trivially replaced by a local function.  No revdeps.
@@ -134,11 +150,6 @@ dev-python/pytest-fixture-config
 dev-python/pytest-shutil
 dev-python/pytest-verbose-parametrize
 dev-python/pytest-virtualenv
-
-# Viorel Munteanu <ceamac@gentoo.org> (2024-01-08)
-# Masked for removal due to licensing issues and possible GPL infringement.
-# Removal: 2024-02-07.  Bug #766129.
-x11-misc/albert
 
 # Michał Górny <mgorny@gentoo.org> (2024-01-07)
 # A Gentoo fork of an abandoned library that was historically used
@@ -277,7 +288,7 @@ net-nds/tac_plus
 ~kde-plasma/kglobalacceld-5.93.0
 ~kde-plasma/kinfocenter-5.93.0
 ~kde-plasma/kmenuedit-5.93.0
-~kde-plasma/kpipewire-5.93.1
+~kde-plasma/kpipewire-5.93.2
 ~kde-plasma/kscreen-5.93.0
 ~kde-plasma/kscreenlocker-5.93.0
 ~kde-plasma/ksshaskpass-5.93.0

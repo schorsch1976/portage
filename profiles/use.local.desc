@@ -3423,6 +3423,7 @@ gui-apps/waypipe:ffmpeg - Link with ffmpeg to allow buffer displays using video 
 gui-apps/waypipe:systemtap - Enable SystemTAP/DTrace tracing
 gui-apps/wayvnc:gbm - enable GPU-side screencopy (experimental)
 gui-apps/wayvnc:tracing - Trace kernel and memory calls
+gui-apps/wf-recorder:pulseaudio - Enable support for audio capture via PulseAudio
 gui-libs/gtk:broadway - Enable the GDK Broadway backend.
 gui-libs/gtk:cloudproviders - Enable GtkPlacesSidebar to access cloud services
 gui-libs/gtk:colord - Use x11-misc/colord for color management in printing
@@ -7653,6 +7654,7 @@ sec-policy/selinux-base:unknown-perms - Default allow unknown classes in kernels
 sec-policy/selinux-base-policy:unconfined - Enable support for the unconfined SELinux policy module
 sys-apps/accountsservice:elogind - Use sys-auth/elogind for session tracking
 sys-apps/accountsservice:systemd - Use sys-apps/systemd for session tracking
+sys-apps/bfs:io-uring - Use sys-libs/liburing for faster async I/O
 sys-apps/busybox:make-symlinks - Create all the appropriate symlinks in /bin and /sbin.
 sys-apps/busybox:math - Enable math support in gawk (requires libm)
 sys-apps/busybox:mdev - Create the appropriate symlink in /sbin and install mdev.conf and support files
@@ -8544,7 +8546,6 @@ www-apps/cgit:lua - Enable support for Lua scripting
 www-apps/drupal:uploadprogress - Install dev-php/pecl-uploadprogress package
 www-apps/gitea:acct - User and group management via acct-*/git packages
 www-apps/hugo:extended - Enable SASS/SCSS and WebP encoding support
-www-apps/hugo:sass - (deprecated) Enable SASS/SCSS support
 www-apps/icingaweb2:apache2-server - Adds support for the apache2-server
 www-apps/icingaweb2:fpm - Adds FPM support to php
 www-apps/icingaweb2:nginx - Adds support for nginx
@@ -8750,6 +8751,7 @@ x11-base/xwayland:unwind - Enable libunwind usage for backtraces
 x11-base/xwayland:xcsecurity - Build Security extension
 x11-drivers/nvidia-drivers:kernel-open - Use the open source variant of drivers (Turing/Ampere+ GPUs only, aka GTX 1650+, experimental)
 x11-drivers/nvidia-drivers:persistenced - Install the persistence daemon for keeping devices state when unused (e.g. for headless)
+x11-drivers/nvidia-drivers:powerd - Install the NVIDIA dynamic boost support daemon (only useful with specific laptops, ignore if unsure)
 x11-drivers/nvidia-drivers:static-libs - Install the XNVCtrl static library for accessing sensors and other features
 x11-drivers/nvidia-drivers:tools - Install additional tools such as nvidia-settings
 x11-drivers/xf86-video-geode:ztv - Enable building the V4L2 ZTV driver
@@ -8799,8 +8801,6 @@ x11-libs/vte:systemd - Support moving terminal child processes to their own syst
 x11-libs/wxGTK:gstreamer - Enable the wxMediaCtrl class for playing audio and video through gstreamer.
 x11-libs/wxGTK:sdl - Use Simple Directmedia Layer (media-libs/libsdl) for audio.
 x11-libs/xapp:mate - Install status applet for mate-base/mate
-x11-misc/albert:debug - Enable debugging informations
-x11-misc/albert:python-extensions - Install default python extensions system-wide
 x11-misc/alock:doc - Build and install manpage with app-text/asciidoc.
 x11-misc/appmenu-gtk-module:gtk2 - Build module for GTK+2
 x11-misc/autorandr:launcher - Install the launcher, i.e., an alternative to the udev/systemd hooks
