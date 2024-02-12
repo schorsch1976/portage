@@ -667,6 +667,12 @@ app-emulation/virtualbox:sdk - Enable building of SDK
 app-emulation/virtualbox:udev - Controls installation of special USB udev rules.
 app-emulation/virtualbox:vboxwebsrv - Build and install the VirtualBox webservice
 app-emulation/virtualbox:vde - Support for VDE networking via net-misc/vde
+app-emulation/virtualbox-kvm:dtrace - Install dtrace Extension Pack
+app-emulation/virtualbox-kvm:lvm - Build VBoxVolInfo that needs devicemapper from sys-fs/lvm2.
+app-emulation/virtualbox-kvm:sdk - Enable building of SDK
+app-emulation/virtualbox-kvm:udev - Controls installation of special USB udev rules.
+app-emulation/virtualbox-kvm:vboxwebsrv - Build and install the VirtualBox webservice
+app-emulation/virtualbox-kvm:vde - Support for VDE networking via net-misc/vde
 app-emulation/vkd3d:spirv-tools - Enable SPIRV shader debugging support using dev-util/spirv-tools
 app-emulation/vkd3d-proton:crossdev-mingw - Use sys-devel/crossdev for the toolchain rather than dev-util/mingw64-toolchain (requires manual setting up)
 app-emulation/vkd3d-proton:extras - Install extra tools and demos in /usr/lib/vkd3d-proton
@@ -2460,6 +2466,7 @@ dev-python/mkdocs-material:social - Install the dependencies of the "social" plu
 dev-python/msgpack:native-extensions - Compiles native "C" extensions (speedups, instead of using python fallback code).
 dev-python/multidict:native-extensions - Compile native C extensions (speedups, instead of using Python fallback code).
 dev-python/mypy:native-extensions - Compiles native C extensions (speedups, instead of using Python fallback code).
+dev-python/netaddr:cli - Provide a command-line interface
 dev-python/pandas:full-support - Pull all packages to give pandas full support
 dev-python/paramiko:server - Enable server feature
 dev-python/peewee:native-extensions - Compiles native C extension for more complete SQLite3 support.
@@ -3903,6 +3910,7 @@ mail-mta/postfix:eai - Add support for SMTPUTF8
 mail-mta/postfix:ldap-bind - Add support for binding to LDAP backend using dev-libs/cyrus-sasl
 mail-mta/postfix:lmdb - Add support for using dev-db/lmdb for lookup tables
 mail-mta/postfix:memcached - Add support for using net-misc/memcached for lookup tables
+mail-mta/postfix:mongodb - Add support for using dev-db/mongodb for lookup tables
 mail-mta/qpsmtpd:postfix - create user with permissions for proper postfix interaction
 mail-mta/ssmtp:mta - Install symlinks for sendmail-compatible MTA.
 mate-base/caja:mate - Install x11-themes/mate-icon-theme which is needed when this package is used in the MATE desktop environment.
@@ -5024,6 +5032,7 @@ media-video/ffmpeg:rubberband - Adds time-stretching and pitch-shifting audio fi
 media-video/ffmpeg:shaderc - Use media-libs/shaderc to compile GLSL
 media-video/ffmpeg:snappy - Enable app-arch/snappy support. Required for e.g. Vidvox Hap encoder.
 media-video/ffmpeg:sndio - Enable support for the media-sound/sndio backend
+media-video/ffmpeg:soc - Apply additional patches for efficient playback on some SoCs (e.g. ARM, RISC-V).
 media-video/ffmpeg:srt - Enable support for Secure Reliable Transport (SRT) via net-libs/srt
 media-video/ffmpeg:ssh - Enable SSH/sftp support via net-libs/libssh.
 media-video/ffmpeg:svt-av1 - Enables AV1 encoding support via media-libs/svt-av1.
@@ -6451,7 +6460,6 @@ net-misc/moonlight:cuda - Enable accelerated video rendering on NVIDIA hardware
 net-misc/moonlight:embedded - Optimize UI for fullscreen non-desktop usage
 net-misc/moonlight:glslow - Prefer direct KMS/DRM rendering over EGL/GLES rendering for better performance on some weaker GPUs
 net-misc/moonlight:libdrm - Enable video rendering via x11-libs/libdrm
-net-misc/moonlight:mmal - Enable accelerated video rendering on the Raspberry Pi
 net-misc/moonlight:soundio - Enable sound output via media-libs/libsoundio instead of media-libs/libsdl2
 net-misc/mosh:client - Build network client
 net-misc/mosh:examples - Include example scripts
@@ -6649,8 +6657,6 @@ net-nds/openldap:sha2 - Enable support for pw-sha2 password hashes
 net-nds/openldap:smbkrb5passwd - Enable overlay for syncing ldap, unix and lanman passwords
 net-nds/rpcbind:remotecalls - Enable remote calls
 net-nds/rpcbind:warmstarts - Enables rpcbind to cache configuration for warm restarts
-net-nds/tac_plus:finger - Adds support for checking user counts via fingering the NAS
-net-nds/tac_plus:maxsess - Enforce a limit on maximum sessions per user
 net-news/rssguard:libmpv - Enable media player support via libmpv from media-video/mpv
 net-news/rssguard:qt6 - Build with Qt6 support instead of the default Qt5
 net-news/rssguard:qtmultimedia - Enable media player support via dev-qt/qtmultimedia
