@@ -17,7 +17,7 @@ if [[ ${PV} == 9999* ]]; then
 	EGIT_BRANCH="develop"
 else
 	inherit pypi
-	KEYWORDS="~amd64 ~arm ~arm64 ~riscv ~x86"
+	KEYWORDS="amd64 ~arm ~arm64 ~riscv x86"
 fi
 
 LICENSE="Apache-2.0"
@@ -264,6 +264,26 @@ python_test() {
 
 		# need root
 		tests/pytests/unit/modules/test_cmdmod.py::test_runas_env_sudo_group
+	)
+	# https://bugs.gentoo.org/924377
+	has_version 'sys-apps/systemd' || EPYTEST_DESELECT+=(
+		tests/pytests/unit/modules/test_aptpkg.py::test_autoremove
+		tests/pytests/unit/modules/test_aptpkg.py::test_upgrade
+		tests/pytests/unit/modules/test_aptpkg.py::test_upgrade_downloadonly
+		tests/pytests/unit/modules/test_aptpkg.py::test_upgrade_allow_downgrades
+		tests/pytests/unit/modules/test_aptpkg.py::test_call_apt_default
+		tests/pytests/unit/modules/test_aptpkg.py::test_call_apt_with_kwargs
+		tests/pytests/unit/modules/test_linux_sysctl.py::test_persist_no_conf_failure
+		tests/pytests/unit/modules/test_yumpkg.py::test_latest_version_with_options
+		tests/pytests/unit/modules/test_yumpkg.py::test_list_repo_pkgs_with_options
+		tests/pytests/unit/modules/test_yumpkg.py::test_list_upgrades_dnf
+		tests/pytests/unit/modules/test_yumpkg.py::test_list_upgrades_yum
+		tests/pytests/unit/modules/test_yumpkg.py::test_refresh_db_with_options
+		tests/pytests/unit/modules/test_yumpkg.py::test_call_yum_default
+		tests/pytests/unit/modules/test_yumpkg.py::test_call_yum_with_kwargs
+		tests/unit/modules/test_kernelpkg_linux_yum.py::YumKernelPkgTestCase::test_remove_error
+		tests/unit/modules/test_kernelpkg_linux_yum.py::YumKernelPkgTestCase::test_remove_success
+		tests/unit/modules/test_zypperpkg.py::ZypperTestCase::test_remove_purge
 	)
 
 	# testsuite likes lots of files
