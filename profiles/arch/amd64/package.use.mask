@@ -342,7 +342,7 @@ dev-util/catalyst -system-bootloader
 # Ilya Tumaykin <itumaykin+gentoo@gmail.com> (2018-06-17)
 # Vulkan support is only available on few selected arches atm.
 # Mask everywhere, unmask where appropriate.
-media-video/mpv -libplacebo -vulkan
+media-video/mpv -vulkan
 
 # Richard Yao <ryao@gentoo.org> (2018-04-16)
 # sys-fs/zfs is keyworded on amd64
@@ -414,7 +414,7 @@ sys-boot/grub:2 -grub_platforms_xen-32
 # sd-boot is not supported on all archs.
 sys-apps/systemd -boot -gnuefi -ukify
 sys-apps/systemd-utils -boot -ukify
-sys-kernel/installkernel -systemd-boot -ukify
+sys-kernel/installkernel -systemd-boot -ukify -uki
 
 # Ben de Groot <yngwin@gentoo.org> (2015-03-15)
 # media-libs/libbdplus is keyworded on amd64, so unmask the useflag
