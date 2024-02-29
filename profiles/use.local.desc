@@ -686,6 +686,7 @@ app-emulation/wine-proton:osmesa - Enable off-screen rendering (OpenGL in bitmap
 app-emulation/wine-proton:perl - Install helpers that require perl (winedump/winemaker)
 app-emulation/wine-proton:sdl - Enable gamepad support using media-libs/libsdl2
 app-emulation/wine-proton:vkd3d - Enable DirectX 12 support using app-emulation/vkd3d
+app-emulation/wine-proton:wow64 - Enable running 32bit applications without 32bit ELF multilib by mapping to 64bit calls (experimental, may have worse OpenGL performance or other issues compared to USE=abi_x86_32) -- still requires (just) dev-util/mingw64-toolchain with abi_x86_32
 app-emulation/wine-staging:capi - Enable ISDN support using net-libs/libcapi
 app-emulation/wine-staging:crossdev-mingw - Use sys-devel/crossdev for the toolchain rather than dev-util/mingw64-toolchain (requires manual setting up)
 app-emulation/wine-staging:dos - Pull in games-emulation/dosbox to run DOS applications
@@ -5974,6 +5975,7 @@ net-irc/weechat:scripts - Build infrastructure for scripting
 net-irc/weechat:trigger - Enable trigger plugin
 net-irc/weechat:typing - Enable typing plugin
 net-irc/weechat:xfer - Enable xfer plugin support
+net-irc/znc:argon2 - Store password hashes using Argon2id instead of SHA-256
 net-irc/znc:zlib - Enable mod_deflate-like gzip support for znc's web interface using sys-libs/zlib.
 net-libs/aqbanking:ebics - Enable support for Electronic Banking Internet Communication Standard (EBICS)
 net-libs/axtls:cgi-lua - Enables lua backed cgi for axhttpd server
@@ -7724,7 +7726,6 @@ sys-apps/duc:leveldb - Use dev-libs/leveldb as the backend
 sys-apps/duc:ncurses - Build support for the ncurses client
 sys-apps/duc:sqlite - Use dev-db/sqlite:3 as the backend
 sys-apps/duc:tokyocabinet - Use dev-db/tokyocabinet as the backend
-sys-apps/earlyoom:docs - Generate man page
 sys-apps/elfix:ptpax - Enable PT_PAX_FLAGS support.
 sys-apps/elfix:xtpax - Enable XATTR_PAX_FLAGS support.
 sys-apps/etckeeper:cron - Install cron script
