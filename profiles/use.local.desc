@@ -1906,6 +1906,7 @@ dev-lang/rust:system-bootstrap - Bootstrap using installed rust compiler
 dev-lang/rust:system-llvm - Use the system LLVM installation
 dev-lang/rust:wasm - Build support for the wasm32-unknown-unknown target
 dev-lang/rust-bin:clippy - Install clippy, Rust code linter
+dev-lang/rust-bin:profiler - Build the profiler runtime and rust-demangler tool (needed for '-C profile-generate' or '-C instrument-coverage' codegen opts)
 dev-lang/rust-bin:rust-analyzer - Install rust-analyzer, A Rust compiler front-end for IDEs (language server)
 dev-lang/rust-bin:rust-src - Install rust-src, needed by developer tools and for build-std (cross)
 dev-lang/rust-bin:rustfmt - Install rustfmt, Rust code formatter
@@ -3719,6 +3720,7 @@ kde-plasma/plasma-meta:legacy-systray - Add support for legacy applications usin
 kde-plasma/plasma-meta:oxygen-theme - Pull in Oxygen icons, sound theme and visual style for KDE Plasma
 kde-plasma/plasma-meta:plymouth - Pull in Breeze theme for sys-boot/plymouth
 kde-plasma/plasma-meta:pulseaudio - Install Plasma applet for PulseAudio volume management
+kde-plasma/plasma-meta:qt5 - Pull in required packages for seamless integration of KF5/Qt5-based applications
 kde-plasma/plasma-meta:sddm - Pull in the x11-misc/sddm display manager and system settings module
 kde-plasma/plasma-meta:sdk - Pull in kde-plasma/plasma-sdk for Plasma development
 kde-plasma/plasma-meta:smart - Pull in kde-plasma/plasma-disks for disk health monitoring
@@ -3726,6 +3728,7 @@ kde-plasma/plasma-meta:thunderbolt - Pull in kde-plasma/plasma-thunderbolt contr
 kde-plasma/plasma-meta:unsupported - Allow packages that are known to ruin runtime experience ** DO NOT FILE BUGS WITH THIS ENABLED **
 kde-plasma/plasma-meta:wacom - Pull in kde-plasma/wacomtablet control center module
 kde-plasma/plasma-meta:wallpapers - Install wallpapers for the Plasma Workspace
+kde-plasma/plasma-meta:webengine - Use kde-apps/khelpcenter to access the locally installed KDE Help System Handbook
 kde-plasma/plasma-meta:xwayland - Enable Wayland windows screensharing to XWayland applications via gui-apps/xwaylandvideobridge
 kde-plasma/plasma-nm:openconnect - Build support for the OpenConnect VPN client
 kde-plasma/plasma-nm:teamd - Enable Teamd control support
@@ -4109,7 +4112,7 @@ media-gfx/graphicsmagick:dynamic-loading - Compile graphicsmagick with dynamical
 media-gfx/graphicsmagick:fpx - Enable FlashPix support with media-libs/libfpx
 media-gfx/graphicsmagick:q16 - Set storage quantum size to 16 (~2*memory)
 media-gfx/graphicsmagick:q32 - Set storage quantum size to 32 (~5*memory)
-media-gfx/graphviz:X - Builds dotty, lneato, unflatten, vimdot, builds plugin -Txlib, and enables support for x11 in various other modules (needs cairo)
+media-gfx/graphviz:X - Builds unflatten, vimdot, builds plugin -Txlib, and enables support for x11 in various other modules (needs cairo)
 media-gfx/graphviz:devil - Enables DevIL output plugin -Tdevil
 media-gfx/graphviz:gtk2 - Enables gtk+ output plugin -Tgtk (needs cairo)
 media-gfx/graphviz:gts - Enables support for GNU Triangulated Surface Library (required for sfdp to work)
@@ -8576,6 +8579,7 @@ virtual/mysql:server - Build server (mysqld)
 virtual/pkgconfig:native-symlinks - Install generic symlinks like pkgconf and pkg-config. If this flag is disabled, only CHOST-prefixed pkg-config executables will be available to end users and ebuilds.
 virtual/podofo-build:boost - Add support for boost
 virtual/podofo-build:tools - Build and install commandline tools
+virtual/rust:profiler - Build the profiler runtime and rust-demangler tool (needed for '-C profile-generate' or '-C instrument-coverage' codegen opts)
 virtual/rust:rustfmt - Install rustfmt, Rust code formatter
 virtual/ssh:minimal - Prefer net-misc/dropbear over net-misc/openssh
 virtual/wine:proton - Enable Valve Software's fork of Wine
