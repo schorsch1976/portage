@@ -403,6 +403,7 @@ BDEPEND="
 		dev-lang/go
 		dev-python/OutputCheck
 		dev-python/lit
+		dev-python/psutil
 		net-libs/nodejs[npm]
 	)
 "
@@ -484,7 +485,10 @@ src_prepare() {
 		git-issues/git-issue-2299.dfy
 		git-issues/git-issue-2301.dfy
 		git-issues/git-issue-505.dfy
+		metatests/InconsistentCompilerBehavior.dfy
+		metatests/TestBeyondVerifierExpect.dfy
 		separate-verification/assumptions.dfy
+		server/counterexample_none.transcript
 		triggers/emptyTrigger.dfy
 		unicodechars/DafnyTests/RunAllTestsOption.dfy
 		vstte2012/Combinators.dfy
