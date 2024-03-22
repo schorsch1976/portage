@@ -1311,6 +1311,8 @@ dev-ada/gpr-unit-provider:shared - Build shared library
 dev-ada/gpr-unit-provider:static-pic - Build static library with pic code
 dev-ada/gtkada:shared - Build gtkada as shared library
 dev-ada/gtkada:static-pic - Build static library with pic code
+dev-ada/lal-refactor:shared - Build shared library
+dev-ada/lal-refactor:static-pic - Build static library with pic code
 dev-ada/langkit:shared - Build shared library
 dev-ada/langkit:static-pic - Build static library with pic code
 dev-ada/libadalang:static-pic - Build static library with pic code
@@ -2495,6 +2497,7 @@ dev-python/pymongo:native-extensions - Compiles native C extensions
 dev-python/pymongo:test-full - Run test suite in full, including tests that run a local database instance.
 dev-python/pyocr:cuneiform - Enable support for the app-text/cuneiform OCR engine
 dev-python/pyocr:tesseract - Enable support for the app-text/tesseract OCR engine
+dev-python/pyopengl_accelerate:numpy - Building NumPy native format handlers.
 dev-python/pypax:ptpax - Enable PT_PAX_FLAGS support.
 dev-python/pypax:xtpax - Enable XATTR_PAX_FLAGS support.
 dev-python/pypy:full-stdlib - Install complete stdlib as necessary to use PyPy for general purpose programs. By default, only a limited subset that is used when building PyPy3 executables is installed. Note that PyPy2.7's stdlib contains multiple known vulnerabilities.
@@ -7670,6 +7673,9 @@ sci-physics/pythia:hepmc2 - Adds support for High Energy Physics Monte Carlo Gen
 sci-physics/pythia:hepmc3 - Adds support for High Energy Physics Monte Carlo Generators 3 sci-physics/hepmc
 sci-physics/pythia:lhapdf - Support the use of external PDF sets via sci-physics/lhapdf
 sci-physics/pythia:root - Use sci-physics/root trees and histograms (in examples only)
+sci-physics/rivet:hepmc2 - Build with HepMC2
+sci-physics/rivet:hepmc3 - Build with HepMC3
+sci-physics/rivet:zlib - Build with zlib
 sci-physics/root:R - Enable support for dev-lang/R
 sci-physics/root:asimage - Enable support for media-libs/libafterimage
 sci-physics/root:cudnn - Enable support for nVidia cuDNN library
@@ -8714,7 +8720,9 @@ www-client/netsurf:rosprite - RISC OS Sprite bitmap image support via media-libs
 www-client/netsurf:svgtiny - Use media-libs/libsvgtiny instead of gnome-base/librsvg for SVG support
 www-client/netsurf:truetype - Use media-libs/freetype for text in the framebuffer frontend
 www-client/opera:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
+www-client/opera-beta:ffmpeg-chromium - Use Chromium FFmpeg fork (media-video/ffmpeg-chromium) rather than mainline FFmpeg (media-video/ffmpeg)
 www-client/opera-beta:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
+www-client/opera-developer:ffmpeg-chromium - Use Chromium FFmpeg fork (media-video/ffmpeg-chromium) rather than mainline FFmpeg (media-video/ffmpeg)
 www-client/opera-developer:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
 www-client/qutebrowser:adblock - Enable Brave's ABP-style adblocker library for improved adblocking
 www-client/qutebrowser:qt6 - Use Qt6 that provides a newer Chromium version
