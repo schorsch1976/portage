@@ -33,6 +33,40 @@
 
 #--- END OF EXAMPLES ---
 
+# Conrad Kostecki <conikost@gentoo.org> (2024-03-22)
+# Stuck on old EAPI6. Last stable release over 10 years ago.
+# Not compatible with PHP8. Removal on 2024-04-22.
+dev-php/onphp
+
+# Conrad Kostecki <conikost@gentoo.org> (2024-03-22)
+# Stuck on old EAPI6. PEAR channel long dead.
+# Removal on 2024-04-22.
+dev-php/mockery
+
+# Conrad Kostecki <conikost@gentoo.org> (2024-03-22)
+# Stuck on old EAPI6. Not compatible with PHP7 and newer.
+# Upstream stopped development.
+# Removal on 2024-04-22.
+dev-php/libchart
+
+# Michał Górny <mgorny@gentoo.org> (2024-03-22)
+# New versions of Hatchling counterintuitively ignore changes
+# to pyproject.toml when PKG-INFO exists (i.e. when unpacking
+# from sdist).  Masked until upstream reaches final decision on how
+# things are going to behave, and we add safety checks and/or hacks
+# in the eclass.
+#
+# https://github.com/pypa/hatch/issues/1325
+# https://discuss.python.org/t/respecting-core-metadata-2-2-when-building-from-source-distributions/48886/5
+>=dev-python/hatchling-1.22
+
+# Hans de Graaff <graaff@gentoo.org> (2024-03-22)
+# Broken with modern compilers, bug 884249. No longer maintained
+# upstream, last release 5 years ago. No reverse dependencies left. Use
+# dev-ruby/concurrent-ruby instead.
+# Removal on 2024-04-22.
+dev-ruby/atomic
+
 # Rahil Bhimjiani <me@rahil.rocks> (2024-03-17)
 # buildah-1.34.0 isn't getting security fixes from upstream
 # https://github.com/containers/buildah/issues/5320
@@ -675,14 +709,6 @@ www-plugins/gosuslugi-plugin
 # on 32-bit architecture.  No revdeps left.
 # Removal on 2024-03-21.  Bug #924881.
 dev-python/pendulum
-
-# Alfredo Tupone <tupone@gentoo.org> (2024-02-18)
-# Not ported to python3_12
-# Removal on 2024-03-18.
-=sci-libs/pytorch-2.0*
-=sci-libs/caffe2-2.0*
-=sci-libs/pytorch-1*
-=sci-libs/caffe2-1*
 
 # Sam James <sam@gentoo.org> (2024-02-18)
 # Lots of changes, including a port to a new build system. Needs lots of testing.
