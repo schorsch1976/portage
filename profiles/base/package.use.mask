@@ -46,6 +46,7 @@ sci-physics/root R
 dev-debug/gdb cet
 sys-devel/binutils cet
 sys-devel/binutils-hppa64 cet
+sys-devel/clang-common cet
 sys-devel/gcc cet
 sys-libs/binutils-libs cet
 sys-libs/glibc cet
@@ -269,7 +270,7 @@ x11-wm/stumpwm doc
 # Bernd Waibel <waebbl-gentoo@posteo.net> (2022-11-25)
 # USE=tbb is broken in 7.7.0
 # https://tracker.dev.opencascade.org/view.php?id=33152
-~sci-libs/opencascade-7.7.0 tbb
+>=sci-libs/opencascade-7.7.0 tbb
 
 # Guillermo Joandet <gjoandet@gmail.com> (2022-11-22)
 # app-text/pandoc is not keyworded on most architectures
