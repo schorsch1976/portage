@@ -2689,6 +2689,7 @@ dev-qt/qtdatavis3d:qml - Build QML/QtQuick bindings and imports
 dev-qt/qtdeclarative:localstorage - Build the LocalStorage import for QtQuick (requires QtSql)
 dev-qt/qtdeclarative:network - Enable QtNetwork support
 dev-qt/qtdeclarative:opengl - Enable OpenGL support
+dev-qt/qtdeclarative:qmlls - Build the qmlls tool using dev-qt/qtlanguageserver
 dev-qt/qtdeclarative:sql - Enable QtSQL support
 dev-qt/qtdeclarative:widgets - Enable QtWidgets support
 dev-qt/qtdiag:network - Report network information
@@ -4631,7 +4632,7 @@ media-sound/asunder:mac - Support for creation of Monkey's Audio files (APE)
 media-sound/audacity:audiocom - Enable integrated uploading to audio.com
 media-sound/audacity:id3tag - Enables ID3 tagging with id3tag library
 media-sound/audacity:lv2 - Add support for Ladspa V2
-media-sound/audacity:mpg123 - Use media-sound/mpg123 instead of media-libs/libmad for decoding MPEG decoding
+media-sound/audacity:mpg123 - Use media-sound/mpg123-base instead of media-libs/libmad for MPEG decoding
 media-sound/audacity:portmidi - Enable support for MIDI via media-libs/portmidi
 media-sound/audacity:portmixer - Enable the internal portmixer feature
 media-sound/audacity:portsmf - Enable support for Portable Standard Midi File Library
@@ -6688,6 +6689,7 @@ net-misc/turbovnc:viewer - Build the viewer (vncviewer)
 net-misc/uftp:server - Install uftp server daemon
 net-misc/vde:pcap - Enable the pcap-based plugin that allows creating a switch against a real interface.
 net-misc/wget:cookie-check - Enable cookie checks via net-libs/libpsl
+net-misc/wget:libproxy - Support for automatic proxy configuration management through net-libs/libproxy.
 net-misc/wget:metalink - Enable support for media-libs/libmetalink
 net-misc/wget:ntlm - Enable support for NTLM (Windows-based) authorization
 net-misc/wget:uuid - Generate UUIDs for the WARC (Web ARChive file format) using libuuid; otherwise use a simple RNG (random number generator)
@@ -8758,7 +8760,7 @@ www-client/vivaldi-snapshot:proprietary-codecs - Use system FFmpeg library to su
 www-client/vivaldi-snapshot:widevine - Unsupported closed-source DRM capability (required by Netflix VOD)
 www-client/w3m:gdk-pixbuf - Enable support for x11-libs/gdk-pixbuf
 www-client/w3m:lynxkeymap - If you prefer Lynx-like key binding
-www-misc/litmus:libproxy - Support for automatic proxy configuratino management through net-libs/libproxy.
+www-misc/litmus:libproxy - Support for automatic proxy configuration management through net-libs/libproxy.
 www-misc/litmus:libxml2 - Use dev-libs/libxml2 to parse XML
 www-misc/litmus:pkcs11 - Support for PKCS #11 through PaKChoiS (dev-libs/pakchois).
 www-plugins/lightspark:ppapi - Install the PPAPI plugin (for Chromium)
