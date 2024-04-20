@@ -33,6 +33,11 @@
 
 #--- END OF EXAMPLES ---
 
+# Andrew Ammerlaan <andrewammerlaan@gentoo.org> (2024-04-18)
+# Upstream gone, unfetchable, stuck on EAPI 6. Bug 605796
+# Removal on 2024-05-18
+sci-visualization/spectromatic
+
 # Fabian Groffen <grobian@gentoo.org> (2024-04-16)
 # Official latest Python support 3.8, replacement app-metrics/go-carbon
 # is more performant and designed to be a drop-in replacement.
@@ -954,7 +959,7 @@ app-office/texmacs
 # If you still use one of these old toolchain packages, please upgrade (and
 # switch the compiler / the binutils) ASAP. If you need them for a specific
 # (isolated) use case, feel free to unmask them on your system.
-<sys-libs/glibc-2.37-r3
+<sys-libs/glibc-2.38
 <sys-libs/binutils-libs-2.40
 <sys-devel/binutils-2.40
 <sys-devel/binutils-hppa64-2.40
