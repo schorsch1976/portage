@@ -1262,11 +1262,6 @@
       <role>SELinux</role>
     </member>
     <member>
-      <email>klondike@gentoo.org</email>
-      <name>Francisco Blas Izquierdo Riera</name>
-      <role>Documentation, PR</role>
-    </member>
-    <member>
       <email>perfinion@gentoo.org</email>
       <name>Jason Zaman</name>
       <role>SELinux</role>
@@ -1891,6 +1886,10 @@
     <description>The Overlays project is responsible for the administration of the overlays and the overlays.gentoo.org / repos.gentoo.org websites.</description>
     <subproject ref="repo-qa-checks@gentoo.org"/>
     <member>
+      <email>flow@gentoo.org</email>
+      <name>Florian Schmaus</name>
+    </member>
+    <member>
       <email>gokturk@gentoo.org</email>
       <name>Göktürk Yüksek</name>
       <role>Git</role>
@@ -2386,10 +2385,6 @@
     <member>
       <email>kensington@gentoo.org</email>
       <name>Michael Palimaka</name>
-    </member>
-    <member>
-      <email>pesa@gentoo.org</email>
-      <name>Davide Pesavento</name>
     </member>
   </project>
   <project>
