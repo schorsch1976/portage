@@ -348,6 +348,7 @@ app-containers/skopeo:device-mapper - Compiles with libdevmapper
 app-containers/skopeo:rootless - Compiles with libsubid
 app-containers/snapd:forced-devmode - Automatically disable application confinement if feature detection fails.
 app-crypt/aespipe:cpu_flags_x86_padlock - Use VIA padlock instructions, detected at run time, code still works on non-padlock processors
+app-crypt/badkeys:ssh - Enable ssh scan mode via dev-python/paramiko.
 app-crypt/ccid:twinserial - Enable twinserial reader
 app-crypt/codecrypt:cryptopp - Build algorithms that need Crypto++ support dev-libs/crypto++
 app-crypt/dehydrated:cron - Install cron job to sign/renew non-existent/changed/expiring certificates
@@ -854,6 +855,7 @@ app-misc/blink1:tool - Build and install command-line tool blink1-tool
 app-misc/broot:X - X11 clipboard interaction
 app-misc/byobu:screen - Use app-misc/screen as the default backend
 app-misc/ca-certificates:cacert - Include root/class3 certs from CAcert (https://www.cacert.org/)
+app-misc/carbon-c-relay:client - build and install sendmetric client utility
 app-misc/carbon-c-relay:lz4 - add support for LZ4 compressed transport
 app-misc/carbon-c-relay:oniguruma - use dev-libs/oniguruma as regex implementation
 app-misc/carbon-c-relay:pcre2 - use dev-libs/libpcre2 as regex implementation
@@ -1137,6 +1139,7 @@ app-text/blogc:make - Build blogc-make tool
 app-text/calibre:font-subsetting - Enable font subsetting support
 app-text/calibre:system-mathjax - Use a system copy of mathjax
 app-text/calibre:unrar - Enable support for comic books compressed with the non-free Rar format
+app-text/cmigemo:vim - Install Vim plugin for C/Migemo
 app-text/crengine-ng:chm - Support chm format
 app-text/crengine-ng:fribidi - Support bidirectional text by dev-libs/fribidi
 app-text/crengine-ng:harfbuzz - Use media-libs/harfbuzz for kerning and ligatures
@@ -6426,7 +6429,6 @@ net-misc/eventd:purple - Enable plugin for IM notifications via libpurple
 net-misc/eventd:webhook - Enable plugin to send payloads to webhook handlers
 net-misc/eventd:websocket - Enable support for WebSocket protocol
 net-misc/fatrat:bittorrent - Use the bittorrent protocol via net-libs/libtorrent-rasterbar.
-net-misc/felix:bird - Use BIRD, e.g. for route reflection
 net-misc/freerdp:aad - Enable login via Azure AD
 net-misc/freerdp:client - Build client binaries
 net-misc/freerdp:fuse - Clipboard with FUSE file copy support
@@ -8421,6 +8423,7 @@ sys-libs/compiler-rt:clang - Force building using installed clang (rather than t
 sys-libs/compiler-rt-sanitizers:asan - Build Address Sanitizer runtime.
 sys-libs/compiler-rt-sanitizers:cfi - Build Control Flow Integrity runtime.
 sys-libs/compiler-rt-sanitizers:clang - Force building using installed clang (rather than the default CC/CXX).
+sys-libs/compiler-rt-sanitizers:ctx-profile - Build ctx profiling runtime.
 sys-libs/compiler-rt-sanitizers:dfsan - Build Data Flow Sanitizer runtime.
 sys-libs/compiler-rt-sanitizers:gwp-asan - Build GWP-ASAN runtime.
 sys-libs/compiler-rt-sanitizers:hwasan - Build Hardware ASAN runtime.
