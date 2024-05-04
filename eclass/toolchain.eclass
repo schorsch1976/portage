@@ -633,7 +633,7 @@ toolchain_src_prepare() {
 	fi
 
 	if use test ; then
-		cp "${DISTDIR}"/${PN}-validate-failures-${GCC_VALIDATE_FAILURES_VERSION}.py "${T}"/validate_failures.py || die
+		cp "${DISTDIR}"/gcc-validate-failures-${GCC_VALIDATE_FAILURES_VERSION}.py "${T}"/validate_failures.py || die
 		chmod +x "${T}"/validate_failures.py || die
 	fi
 
@@ -1894,6 +1894,7 @@ gcc_do_make() {
 #---->> src_test <<----
 
 # TODO: add JIT testing
+# TODO: add multilib testing
 toolchain_src_test() {
 	# GCC's testsuite is a special case.
 	#
