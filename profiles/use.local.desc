@@ -2931,6 +2931,7 @@ dev-util/mingw64-runtime:default-ucrt - Use ucrt instead of msvcrt-os as the def
 dev-util/mingw64-runtime:idl - Install idl files
 dev-util/mingw64-runtime:libraries - Build extra libraries: mangle, pseh, winpthreads
 dev-util/mingw64-runtime:tools - Build extra tools: gendef, genidl, widl
+dev-util/mingw64-toolchain:bin-symlinks - Symlink executables to usr/bin to be in default PATH (conflicts with crossdev mingw, and crossdev is preferable for a fully featured toolchain)
 dev-util/nvidia-cuda-toolkit:debugger - Install the CUDA debugger
 dev-util/nvidia-cuda-toolkit:nsight - Install profiling and optimizing tools (nsight-compute, nsight-systems)
 dev-util/nvidia-cuda-toolkit:profiler - Install the NVIDIA CUDA profiler (nvprof) and the related libraries
@@ -7437,6 +7438,7 @@ sci-libs/nlopt:octave - Add plugin for sci-mathematics/octave
 sci-libs/o2scl:armadillo - Build matrix manipulation with sci-libs/armadillo
 sci-libs/o2scl:eigen - Build matrix manipulation with dev-cpp/eigen
 sci-libs/octomap:dynamicEDT3D - Build and install dynamicEDT3D library: A library for incrementally updatable Euclidean distance transforms in 3D.
+sci-libs/onnx:disableStaticReg - Disable Static Registration
 sci-libs/openblas:dynamic - Build dynamic architecture detection at run time (for multi targets)
 sci-libs/openblas:eselect-ldso - Enable BLAS/LAPACK runtime switching
 sci-libs/openblas:index-64bit - Compile a separate INTERFACE64 OpenBLAS
@@ -8805,10 +8807,8 @@ www-servers/lighttpd:brotli - Enable output compression via app-arch/brotli (rec
 www-servers/lighttpd:gnutls - Build module for TLS via net-libs/gnutls
 www-servers/lighttpd:maxminddb - Add support for geolocation using dev-libs/libmaxminddb
 www-servers/lighttpd:mbedtls - Build module for TLS via net-libs/mbedtls
-www-servers/lighttpd:mmap - Use mmap when sendfile is not available
 www-servers/lighttpd:nettle - Use dev-libs/nettle as crypto backend
 www-servers/lighttpd:nss - Build module for TLS via Mozilla's Network Security Services
-www-servers/lighttpd:rrdtool - Enable rrdtool support via mod_rrdtool
 www-servers/lighttpd:webdav - Enable webdav properties
 www-servers/lighttpd:zlib - Enable output compression via gzip or deflate algorithms from sys-libs/zlib
 www-servers/lighttpd:zstd - Enable output compression via Zstandard (app-arch/zstd) algorithm
