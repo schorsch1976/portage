@@ -33,6 +33,10 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas Sturmlechner <asturm@gentoo.org> (2024-05-14)
+# Breaks build of revdeps.
+~app-text/poppler-24.05.0
+
 # Arthur Zamarin <arthurzam@gentoo.org> (2024-05-13)
 # EAPI=6, fails to compile, archived upstream, uses deprecated go eclasses.
 # Removal: 2024-06-12.  Bugs #931879, #734186.
@@ -732,9 +736,9 @@ sec-keys/openpgp-keys-jiatan
 ~kde-misc/plasma-pass-1.2.2
 ~app-editors/kile-2.9.94
 ~dev-db/futuresql-0.1.1
-~dev-libs/appstream-1.0.2
+~dev-libs/appstream-1.0.3
 ~dev-libs/kdiagram-3.0.1
-~dev-libs/kirigami-addons-1.2.0
+~dev-libs/kirigami-addons-1.2.1
 ~dev-libs/ktextaddons-1.5.4
 ~dev-libs/kweathercore-0.8.0
 ~dev-util/massif-visualizer-0.8.0
