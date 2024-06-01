@@ -2954,6 +2954,7 @@ dev-util/ostree:sodium - Use libsodium for ed25519
 dev-util/ostree:soup - Use libsoup for networking
 dev-util/perf:babeltrace - Enable dev-util/babeltrace support
 dev-util/perf:bpf - Enable support for eBPF features with dev-libs/libbpf
+dev-util/perf:capstone - Use dev-libs/capstone for disassembly support
 dev-util/perf:clang - Enable builtin clang and LLVM support
 dev-util/perf:doc - Build documentation and man pages. With this USE flag disabled, the --help parameter for perf and its sub-tools will not be available. This is optional because it depends on a few documentation handling tools that are not always welcome on user systems.
 dev-util/perf:libpfm - Enable dev-libs/libpfm support
@@ -2985,7 +2986,6 @@ dev-util/schroot:zfs - Enable support for chroots using ZFS shapshots/clones
 dev-util/sdl-jstest:sdl - Enable media-libs/libsdl2 based input test
 dev-util/sdl-jstest:sdl1 - Enable media-libs/libsdl based input test
 dev-util/sysprof:unwind - Use sys-libs/libunwind to unwind the stack
-dev-util/trace-cmd:udis86 - Enable support for dev-libs/udis86 disassembler library
 dev-util/uftrace:capstone - Use capstone to provide dynamic tracing without recompilation
 dev-util/vulkan-tools:cube - Build the cube/cubepp demos
 dev-util/watchman:python - Install pywatchman bindings and the watchman-{wait,make} utils
