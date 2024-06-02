@@ -12,7 +12,7 @@ DESCRIPTION="Library for rendering dynamic web content in Qt5 C++ and QML applic
 HOMEPAGE="https://www.qt.io/"
 
 if [[ ${QT5_BUILD_TYPE} == release ]]; then
-	KEYWORDS="~amd64 ~arm64 ~x86"
+	KEYWORDS="amd64 arm64 ~x86"
 	if [[ ${PV} == ${QT5_PV}_p* ]]; then
 		SRC_URI="https://dev.gentoo.org/~asturm/distfiles/${PN}-5.15.13_p20240510.tar.xz"
 		S="${WORKDIR}/${PN}-5.15.13_p20240510"
@@ -100,6 +100,10 @@ BDEPEND="${PYTHON_DEPS}
 "
 
 PATCHES=( "${WORKDIR}/${PATCHSET}" )
+
+python_check_deps() {
+	python_has_version "dev-python/html5lib[${PYTHON_USEDEP}]"
+}
 
 qtwebengine_check-reqs() {
 	# bug #307861
