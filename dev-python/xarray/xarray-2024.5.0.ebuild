@@ -17,7 +17,7 @@ HOMEPAGE="
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
+KEYWORDS="~amd64 ~arm64 ~loong ~riscv ~x86"
 IUSE="big-endian"
 
 RDEPEND="
@@ -48,6 +48,12 @@ python_test() {
 		EPYTEST_DESELECT+=(
 			'xarray/tests/test_missing.py::test_interpolate_na_2d[coords1]'
 		)
+
+		if ! has_version "dev-python/scipy[${PYTHON_USEDEP}]" ; then
+			EPYTEST_DESELECT+=(
+				xarray/tests/test_calendar_ops.py::test_interp_calendar
+			)
+		fi
 	fi
 
 	if use big-endian ; then
