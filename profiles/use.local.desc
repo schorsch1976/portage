@@ -2281,6 +2281,7 @@ dev-lisp/clisp:svm - Build CLISP with support for the Support Vector Machine mod
 dev-lisp/clx:doc - Builds documentation
 dev-lisp/cmucl:X - Build CLX, CLM, or Hemlock
 dev-lisp/cmucl:doc - Installs package documentation
+dev-lisp/cmucl:gui - Build CLX, CLM, or Hemlock
 dev-lisp/cmucl:source - Include source code for CMUCL in installation
 dev-lisp/ecl:gengc - Use generational garbage collection (experimental)
 dev-lisp/ecl:precisegc - Use type information during garbage collection (experimental)
@@ -7397,8 +7398,6 @@ sci-libs/libccd:double-precision - More precise calculations at the expense of s
 sci-libs/libgeodecomp:hpx - Enables HPX backend
 sci-libs/libgeodecomp:opencv - Enables OpenCV related code
 sci-libs/libgeodecomp:silo - Enables SILO related code
-sci-libs/libghemical:mopac7 - Use sci-chemistry/mopac7 for semi-empirical calculations
-sci-libs/libghemical:mpqc - Use sci-chemistry/mpqc for quantum-mechanical calculations
 sci-libs/liborigin:tools - Install opj2dat command line util
 sci-libs/libqalculate:hardened - Disable unsafe functions like 'command' and variables like 'uptime'.
 sci-libs/libsc:romio - Build with support for the ROMIO MPI-IO component
