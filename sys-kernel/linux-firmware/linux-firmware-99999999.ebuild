@@ -84,7 +84,15 @@ pkg_setup() {
 }
 
 pkg_pretend() {
-	use initramfs && mount-boot_pkg_pretend
+	if use initramfs; then
+		if [[ -z ${ROOT} ]] && use dist-kernel; then
+			# Check, but don't die because we can fix the problem and then
+			# emerge --config ... to re-run installation.
+			nonfatal mount-boot_check_status
+		else
+			mount-boot_pkg_pretend
+		fi
+	fi
 }
 
 src_unpack() {
@@ -107,27 +115,12 @@ src_prepare() {
 		|| die
 
 	chmod +x copy-firmware.sh || die
+	cp "${FILESDIR}/${PN}-make-amd-ucode-img.bash" "${T}/make-amd-ucode-img" || die
+	chmod +x "${T}/make-amd-ucode-img" || die
 
 	if use initramfs && ! use dist-kernel; then
 		if [[ -d "${S}/amd-ucode" ]]; then
-			local UCODETMP="${T}/ucode_tmp"
-			local UCODEDIR="${UCODETMP}/kernel/x86/microcode"
-			mkdir -p "${UCODEDIR}" || die
-			echo 1 > "${UCODETMP}/early_cpio"
-
-			local amd_ucode_file="${UCODEDIR}/AuthenticAMD.bin"
-			cat "${S}"/amd-ucode/*.bin > "${amd_ucode_file}" || die "Failed to concat amd cpu ucode"
-
-			if [[ ! -s "${amd_ucode_file}" ]]; then
-				die "Sanity check failed: '${amd_ucode_file}' is empty!"
-			fi
-
-			pushd "${UCODETMP}" &>/dev/null || die
-			find . -print0 | cpio --quiet --null -o -H newc -R 0:0 > "${S}"/amd-uc.img
-			popd &>/dev/null || die
-			if [[ ! -s "${S}/amd-uc.img" ]]; then
-				die "Failed to create '${S}/amd-uc.img'!"
-			fi
+			."/${T}/make-amd-ucode-img" "${S}/amd-ucode" "${S}/amd-ucode.img" || die
 		else
 			# If this will ever happen something has changed which
 			# must be reviewed
@@ -361,6 +354,17 @@ src_install() {
 		insinto /usr/lib/dracut/dracut.conf.d
 		newins - 10-${PN}.conf <<<"early_microcode=$(usex initramfs)"
 	)
+	if use initramfs; then
+		# Install installkernel/kernel-install hooks for non-dracut initramfs
+		# generators that don't bundled the microcode
+		dobin "${T}/make-amd-ucode-img"
+		(
+			exeinto /usr/lib/kernel/preinst.d
+			doexe "${FILESDIR}/35-amd-microcode.install"
+			exeinto /usr/lib/kernel/install.d
+			doexe "${FILESDIR}/35-amd-microcode-systemd.install"
+		)
+	fi
 
 	if use initramfs && ! use dist-kernel; then
 		insinto /boot
@@ -379,7 +383,7 @@ pkg_preinst() {
 	fi
 
 	# Make sure /boot is available if needed.
-	use initramfs && mount-boot_pkg_preinst
+	use initramfs && ! use dist-kernel && mount-boot_pkg_preinst
 }
 
 pkg_postinst() {
@@ -397,21 +401,22 @@ pkg_postinst() {
 		fi
 	done
 
-	# Don't forget to umount /boot if it was previously mounted by us.
 	if use initramfs; then
 		if [[ -z ${ROOT} ]] && use dist-kernel; then
 			dist-kernel_reinstall_initramfs "${KV_DIR}" "${KV_FULL}"
+		else
+			# Don't forget to umount /boot if it was previously mounted by us.
+			mount-boot_pkg_postinst
 		fi
-		mount-boot_pkg_postinst
 	fi
 }
 
 pkg_prerm() {
 	# Make sure /boot is mounted so that we can remove /boot/amd-uc.img!
-	use initramfs && mount-boot_pkg_prerm
+	use initramfs && ! use dist-kernel && mount-boot_pkg_prerm
 }
 
 pkg_postrm() {
 	# Don't forget to umount /boot if it was previously mounted by us.
-	use initramfs && mount-boot_pkg_postrm
+	use initramfs && ! use dist-kernel && mount-boot_pkg_postrm
 }
