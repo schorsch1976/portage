@@ -30,9 +30,11 @@ DEPEND="
 	>=kde-apps/libkleo-${PVCUT}:6
 	>=kde-apps/mimetreeparser-${PVCUT}:6
 	>=kde-frameworks/kcodecs-${KFMIN}:6
+	>=kde-frameworks/kcolorscheme-${KFMIN}:6
 	>=kde-frameworks/kconfig-${KFMIN}:6
 	>=kde-frameworks/kconfigwidgets-${KFMIN}:6
 	>=kde-frameworks/kcoreaddons-${KFMIN}:6
+	>=kde-frameworks/kcrash-${KFMIN}:6
 	>=kde-frameworks/kdbusaddons-${KFMIN}:6
 	>=kde-frameworks/ki18n-${KFMIN}:6
 	>=kde-frameworks/kiconthemes-${KFMIN}:6
@@ -58,7 +60,7 @@ RDEPEND="${DEPEND}
 src_configure() {
 	local mycmakeargs=(
 		$(cmake_use_find_package pim KPim6AkonadiMime)
-		$(cmake_use_find_package pim KPim6IdentityManagement)
+		$(cmake_use_find_package pim KPim6IdentityManagementCore)
 		$(cmake_use_find_package pim KPim6MailTransport)
 	)
 	ecm_src_configure

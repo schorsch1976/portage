@@ -5073,7 +5073,7 @@ media-video/ffmpeg:libdrm - Enables x11-libs/libdrm support for better screen gr
 media-video/ffmpeg:libdvdnav - Uses media-libs/libdvdnav to enable DVD demuxing
 media-video/ffmpeg:libdvdread - Uses media-libs/libdvdread to enable DVD demuxing
 media-video/ffmpeg:libilbc - Enables iLBC de/encoding via media-libs/libilbc.
-media-video/ffmpeg:liblc3 - Enables LC3 de/encoding via media-libs/liblc3.
+media-video/ffmpeg:liblc3 - Enables LC3 de/encoding via media-sound/liblc3.
 media-video/ffmpeg:libplacebo - Adds flexible GPU-accelerated processing filter based on media-libs/libplacebo.
 media-video/ffmpeg:librtmp - Enables Real Time Messaging Protocol using librtmp (media-video/rtmpdump) in addition to FFmpeg's native implementation.
 media-video/ffmpeg:libsoxr - Enables audio resampling through media-libs/soxr.
@@ -6109,6 +6109,7 @@ net-libs/libwebsockets:client - The client part of the library and libwebsockets
 net-libs/libwebsockets:extensions - Compile with extensions (permessage-deflate)
 net-libs/libwebsockets:generic-sessions - With the Generic Sessions plugin
 net-libs/libwebsockets:http-proxy - Support for rewriting HTTP proxying
+net-libs/libwebsockets:ipv6 - Compile without support for ipv6
 net-libs/libwebsockets:lejp - With the Lightweight JSON Parser
 net-libs/libwebsockets:libev - Support event loops via dev-libs/libev
 net-libs/libwebsockets:libevent - Support event loops via dev-libs/libevent
