@@ -33,6 +33,23 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2024-07-21)
+# Masked for testing
+=sys-libs/glibc-2.40*
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2024-07-21)
+# No more revdeps after net-libs/telepathy-accounts-signon last-rites.
+# Removal on 2024-08-20.
+net-libs/libsignon-glib
+
+# Hans de Graaff <graaff@gentoo.org> (2024-07-21)
+# Obsolete slots that are no longer used by any cucumber
+# version. Removal on 2024-08-21.
+dev-util/cucumber-core:10
+dev-util/cucumber-cucumber-expressions:16
+dev-util/cucumber-gherking:22
+dev-util/cucumber-html-formatter:20
+
 # Arthur Zamarin <arthurzam@gentoo.org> (2024-07-20)
 # EAPI=6, fails to apply patch during src_prepare.
 # Removal on 2024-08-19.  Bugs #936398, #908957, #908959.
@@ -72,6 +89,7 @@ games-strategy/crimson
 # [2] https://github.com/NVIDIA/egl-wayland/issues/117
 # [3] https://bugzilla.mozilla.org/show_bug.cgi?id=1898476
 # [4] https://github.com/NVIDIA/egl-wayland/issues/118
+# and: https://bugzilla.mozilla.org/show_bug.cgi?id=1908825
 ~gui-libs/egl-wayland-1.1.14
 
 # Hans de Graaff <graaff@gentoo.org> (2024-07-17)
