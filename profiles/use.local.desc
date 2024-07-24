@@ -464,6 +464,7 @@ app-editors/gvim:crypt - Use dev-libs/libsodium for crypto support
 app-editors/gvim:cscope - Enable cscope interface
 app-editors/gvim:netbeans - Include netbeans external editor integration support
 app-editors/gvim:racket - Enable support for Scheme using dev-scheme/racket
+app-editors/helix:grammar - Build and install grammar language files
 app-editors/jasspa-microemacs:nanoemacs - Build NanoEmacs instead of MicroEmacs
 app-editors/joe:xterm - Enable full xterm clipboard support
 app-editors/leafpad:emacs - Enable Emacs key theme
@@ -3162,6 +3163,10 @@ games-emulation/mupen64plus-video-glide64mk2:hires - Support hi-resolution textu
 games-emulation/pcsx2:clang - Use Clang compiler to build (the only compiler that is currently supported by upstream on Linux, do not report bugs if force-disabled)
 games-emulation/pcsx2:sndio - Enable support for the media-sound/sndio backend
 games-emulation/ppsspp:discord - Enable interfacing with a locally running Discord desktop client
+games-emulation/rmg:angrylion-plugin - Enable the mupen64plus-video-angrylion-plus XMAME licensed plugin
+games-emulation/rmg:discord - Enable Discord RPC support
+games-emulation/rmg:dynarec - Enable the new dynarec for the mupen64plus-core plugin
+games-emulation/rmg:rust-plugin - Enable the mupen64plus-input-gca rust plugin
 games-emulation/snes9x:libretro - Build libretro port
 games-emulation/snes9x:netplay - Enable playing ROMs over the network (not recommended)
 games-emulation/vbam:link - Enable GBA linking functionality
@@ -8788,7 +8793,7 @@ x11-base/xorg-server:xvfb - Build the Xvfb server
 x11-base/xwayland:libei - Enable emulated input using dev-libs/libei
 x11-base/xwayland:unwind - Enable libunwind usage for backtraces
 x11-base/xwayland:xcsecurity - Build Security extension
-x11-drivers/nvidia-drivers:kernel-open - Use the open source variant of the drivers (Turing/Ampere+ GPUs only, aka GTX 1650+)
+x11-drivers/nvidia-drivers:kernel-open - Use the open source variant of the drivers (Turing/Ampere+ GPUs only, aka GTX 1650+ -- recommended with >=560.xx drivers if usable)
 x11-drivers/nvidia-drivers:persistenced - Install the persistence daemon for keeping devices state when unused (e.g. for headless)
 x11-drivers/nvidia-drivers:powerd - Install the NVIDIA dynamic boost support daemon (only useful with specific laptops, ignore if unsure)
 x11-drivers/nvidia-drivers:static-libs - Install the XNVCtrl static library for accessing sensors and other features
