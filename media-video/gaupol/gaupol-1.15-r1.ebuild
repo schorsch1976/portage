@@ -14,7 +14,7 @@ SRC_URI="https://github.com/otsaloma/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86"
+KEYWORDS="amd64 arm64 x86"
 
 RDEPEND="
 	app-text/iso-codes
@@ -28,7 +28,7 @@ BDEPEND="
 		app-dicts/myspell-en
 		|| (
 			app-text/enchant[hunspell]
-			app-text/enchant[nuspell]
+			>=app-text/enchant-2.2.8[nuspell]
 		)
 		app-text/gspell[introspection]
 	)
