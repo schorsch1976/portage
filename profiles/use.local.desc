@@ -3414,6 +3414,7 @@ gnome-base/nautilus:gstreamer - Enable the Audio/Video file properties page
 gnome-base/nautilus:previewer - Use gnome-extra/sushi to preview files from the file mananger
 gnome-base/nautilus:sendto - Enable the nautilus-sendto extension to send files to various locations/devices
 gnome-extra/cinnamon:desktop-portal - Enable sys-apps/xdg-desktop-portal backend implementation for Cinnamon
+gnome-extra/cinnamon:internal-polkit - Use Cinnamon's internal polkit agent instead of gnome-extra/polkit-gnome. This does not currently support multi-user fast switching.
 gnome-extra/cinnamon-control-center:gnome-online-accounts - Enable configuration panel for net-libs/gnome-online-accounts accounts
 gnome-extra/cinnamon-control-center:modemmanager - Enable support for mobile broadband devices using net-misc/modemmanager
 gnome-extra/cjs:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
@@ -7878,6 +7879,7 @@ sys-apps/net-tools:hostname - build the hostname and dnsdomainname tools
 sys-apps/net-tools:plipconfig - build the plipconfig tool (for working with old PLIP hardware)
 sys-apps/net-tools:slattach - build the slattach tool (for working with old serial ports)
 sys-apps/nvme-cli:json - Support JSON output via dev-libs/json-c
+sys-apps/nvme-cli:pdc - Set default Persistent Discovery Controllers behavior
 sys-apps/openrazer:client - Build the OpenRazer daemon client
 sys-apps/openrazer:daemon - Build the OpenRazer daemon service
 sys-apps/openrc:bash - enable the use of bash in service scripts (experimental)
