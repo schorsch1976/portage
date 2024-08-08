@@ -877,7 +877,6 @@ app-misc/ebusd:mqtt - Enable support for connecting to MQTT.
 app-misc/fastfetch:chafa - Enables text/graphics renderer with media-gfx/chafa
 app-misc/fastfetch:ddcutil - Use app-misc/ddcutil to query monitor settings
 app-misc/fastfetch:drm - Enables support for X.org's x11-libs/libdrm
-app-misc/fastfetch:nvidia-gpu - Enables extra support for NVIDIA GPU
 app-misc/fastfetch:osmesa - Enables offscreen rendering support from media-libs/mesa
 app-misc/fastfetch:vulkan - Enables reading GPU via media-libs/vulkan-loader
 app-misc/fastfetch:xfce - Enables support for XFCE config
@@ -4085,6 +4084,7 @@ media-gfx/digikam:imagemagick - Enable support for additional image formats such
 media-gfx/digikam:lensfun - Enable support for media-libs/lensfun
 media-gfx/digikam:panorama - Build the panorama plugin which requires media-gfx/hugin
 media-gfx/digikam:semantic-desktop - Enable kde-frameworks/kfilemetadata support
+media-gfx/digikam:video - Enable integrated video player
 media-gfx/eog-plugins:map - Enable world map display using media-libs/libchamplain
 media-gfx/eom:imagemagick - Use media-gfx/imagemagick as an external backend for the thumbnailer
 media-gfx/exact-image:swig - Adds Swig support dev-lang/swig
