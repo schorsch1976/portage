@@ -1950,21 +1950,26 @@ toolchain_src_test() {
 		# TODO: Does this handle s390 (-m31) correctly?
 		is_multilib && GCC_TESTS_RUNTESTFLAGS+=" --target_board=unix\{,-m32\}"
 
+		GCC_TESTS_RUNTESTFLAGS=(
+			"${GCC_TESTS_RUNTESTFLAGS}"
+                        CFLAGS_FOR_TARGET="${CFLAGS_FOR_TARGET:-${CFLAGS}}"
+                        CXXFLAGS_FOR_TARGET="${CXXFLAGS_FOR_TARGET:-${CXXFLAGS}}"
+                        LDFLAGS_FOR_TARGET="${LDFLAGS_FOR_TARGET:-${LDFLAGS}}"
+                        CFLAGS="${CFLAGS}"
+                        CXXFLAGS="${CXXFLAGS}"
+                        FCFLAGS="${FCFLAGS}"
+                        FFLAGS="${FFLAGS}"
+                        LDFLAGS="${LDFLAGS}"
+		)
+
 		# nonfatal here as we die if the comparison below fails. Also, note that
 		# the exit code of targets other than 'check' may be unreliable.
 		nonfatal emake -C "${WORKDIR}"/build -k "${GCC_TESTS_CHECK_TARGET}" \
-			RUNTESTFLAGS="${GCC_TESTS_RUNTESTFLAGS}" \
-			CFLAGS_FOR_TARGET="${CFLAGS_FOR_TARGET:-${CFLAGS}}" \
-			CXXFLAGS_FOR_TARGET="${CXXFLAGS_FOR_TARGET:-${CXXFLAGS}}" \
-			LDFLAGS_FOR_TARGET="${LDFLAGS_FOR_TARGET:-${LDFLAGS}}" \
-			CFLAGS="${CFLAGS}" \
-			CXXFLAGS="${CXXFLAGS}" \
-			FCFLAGS="${FCFLAGS}" \
-			FFLAGS="${FFLAGS}" \
-			LDFLAGS="${LDFLAGS}"
+			RUNTESTFLAGS="${GCC_TESTS_RUNTESTFLAGS[*]}"
 	)
 
 	# Produce an updated failure manifest.
+	# XXX: Manifests aren't ideal w/ multilib because of https://gcc.gnu.org/PR116260
 	einfo "Generating a new failure manifest ${T}/${CHOST}.xfail"
 	rm -f "${T}"/${CHOST}.xfail
 	edo "${T}"/validate_failures.py \
