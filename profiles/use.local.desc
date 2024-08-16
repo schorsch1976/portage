@@ -3374,6 +3374,7 @@ games-strategy/wesnoth:server - Enable compilation of server
 games-util/gslist:web - Enable the web interface
 games-util/heroic-bin:gamescope - Run Heroic Launcher inside gamescope
 games-util/lgogdownloader:gui - Enable GUI login support for passing reCAPTCHA
+games-util/sc-controller:trayicon - Enable system tray icon
 games-util/slade:fluidsynth - Enable MIDI software synthesis using media-sound/fluidsynth
 games-util/wit:fuse - Enable image mount support via fuse
 gnome-base/gdm:bluetooth-sound - Allow loading of bluetooth sound modules. This may be necessary for accessibility screen readers, but may cause bluetooth sound issues for users logging in.
@@ -3633,6 +3634,7 @@ kde-apps/parley:webengine - Build browser integration for the editor, requires d
 kde-apps/pimcommon:designer - Build plugins for dev-qt/designer
 kde-apps/spectacle:share - Enable support for a share menu using kde-frameworks/purpose
 kde-apps/step:qalculate - Enable the libqalculate library for unit conversion
+kde-apps/thumbnailers:blender - Enable blender thumbnail generation using kde-frameworks/karchive
 kde-apps/thumbnailers:mobi - Enable mobipocket thumbnail generation using kde-apps/kdegraphics-mobipocket
 kde-apps/umbrello:php - Enable PHP import support using dev-util/kdevelop and dev-util/kdevelop-pg-qt
 kde-apps/yakuake:absolute-position - Use kde-plasma/kwayland for absolute window positioning in KWin
@@ -5917,6 +5919,7 @@ net-im/toxic:sound - Enables audio calling
 net-im/toxic:video - Enables video calling
 net-im/zoom:bundled-qt - Use bundled Qt and icu instead of system-wide libs
 net-im/zoom:opencl - Use OpenCL for virtual background support (virtual/opencl)
+net-im/zoom:zoom-symlink - Install a zoom symlink in /usr/bin
 net-irc/anope:ldap - Build LDAP modules for e.g. opertypes
 net-irc/anope:sql - Build modules which require SQL
 net-irc/anope:ssl - Provide SSL services using OpenSSL
@@ -8196,6 +8199,7 @@ sys-devel/binutils-hppa64:gprofng - Enable the next-generation gprofng profiler
 sys-devel/binutils-hppa64:multitarget - Adds support to binutils for cross compiling (does not work with gas)
 sys-devel/binutils-hppa64:pgo - Build binutils with Profile Guided Optimization (PGO) and LTO
 sys-devel/binutils-hppa64:plugins - Enable plugin support in tools
+sys-devel/bpf-toolchain:bin-symlinks - Symlink executables to usr/bin to be in default PATH (conflicts with crossdev bpf, and crossdev is preferable for a fully featured toolchain)
 sys-devel/clang:extra - Build extra tools (clangd, clang-tidy and a few more)
 sys-devel/clang:ieee-long-double - Use accelerated 128-bit IEEE long double ABI (ppc64le only)
 sys-devel/clang:static-analyzer - Install the Clang static analyzer
