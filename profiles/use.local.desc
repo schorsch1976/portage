@@ -804,7 +804,6 @@ app-i18n/fcitx-qt:qt6 - Build support for QT6
 app-i18n/fcitx-qt:staticplugin - Build plugin as static
 app-i18n/fcitx-rime:configuration-tool - Install configuration tool
 app-i18n/fcitx-unikey:macro-editor - Install macro editor
-app-i18n/freewnn:uum - Build uum
 app-i18n/ibus:emoji - Enable support for Emoji
 app-i18n/ibus:gtk2 - Enable the GTK-2 input method module
 app-i18n/ibus:gtk3 - Enable the GTK-3 input method module
@@ -2499,8 +2498,6 @@ dev-python/pyarrow:parquet - Enables read/write parquet data format
 dev-python/pyglet:image - Enable support for image formats other than PNG and BMP
 dev-python/pymongo:native-extensions - Compiles native C extensions
 dev-python/pymongo:test-full - Run test suite in full, including tests that run a local database instance.
-dev-python/pyocr:cuneiform - Enable support for the app-text/cuneiform OCR engine
-dev-python/pyocr:tesseract - Enable support for the app-text/tesseract OCR engine
 dev-python/pyopengl_accelerate:numpy - Building NumPy native format handlers.
 dev-python/pypax:ptpax - Enable PT_PAX_FLAGS support.
 dev-python/pypax:xtpax - Enable XATTR_PAX_FLAGS support.
@@ -3470,7 +3467,6 @@ gui-apps/waybar:mpd - Enable support for the Music Player Daemon
 gui-apps/waybar:mpris - Enable support for mpris
 gui-apps/waybar:network - Enable libnl support for network related features
 gui-apps/waybar:pipewire - Enable support for pipewire
-gui-apps/waybar:popups - Enable popup support with gtk-layer-shell
 gui-apps/waybar:pulseaudio - Enable support for volume control via PulseAudio
 gui-apps/waybar:sndio - Enable support for volume control via sndio
 gui-apps/waybar:tray - Enable support for tray
@@ -3505,7 +3501,6 @@ gui-libs/wlroots:drm - Enable Direct Rendering Management
 gui-libs/wlroots:libinput - Enable support for input devices via dev-libs/libinput
 gui-libs/wlroots:liftoff - Enable support for libliftoff KMS plane backend
 gui-libs/wlroots:session - Enable session support (is required for DRM and libinput)
-gui-libs/wlroots:tinywl - Install the minimal wayland client, tinywl
 gui-libs/wlroots:x11-backend - Enable support for handling input/output devices through x11-libs/libxcb
 gui-libs/wlroots:xcb-errors - Better error reporting when using xwayland
 gui-libs/xdg-desktop-portal-wlr:elogind - Enable support for rootless session via elogind
