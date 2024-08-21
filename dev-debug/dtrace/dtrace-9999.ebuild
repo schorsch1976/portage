@@ -65,6 +65,9 @@ BDEPEND="
 	>=sys-devel/bpf-toolchain-14.1.0
 	sys-devel/flex
 "
+# TODO: Make this optional, valgrind.h is included unconditionally
+# https://github.com/oracle/dtrace-utils/issues/80
+DEPEND+=" dev-debug/valgrind"
 
 pkg_pretend() {
 	# TODO: optional kernel patches
@@ -113,7 +116,7 @@ src_configure() {
 	local confargs=(
 		# TODO: Maybe we should set the UNPRIV_UID to something? -3 is a bit... kludgy
 		--prefix="${EPREFIX}"/usr
-		--mandir="${EPREFIX}"/usr/share/man
+		--mandir="${EPREFIX}"/usr/share/man/man8
 		--docdir="${EPREFIX}"/usr/share/doc/${PF}
 		HAVE_LIBCTF=yes
 		HAVE_LIBSYSTEMD=$(usex systemd)
