@@ -33,6 +33,29 @@
 
 #--- END OF EXAMPLES ---
 
+# Sam James <sam@gentoo.org> (2024-09-10)
+# Breaks both C++ stdlib impls with a casing issue:
+# * libstdc++ (https://gcc.gnu.org/PR116657)
+# * libcxx (https://github.com/llvm/llvm-project/issues/107779)
+=sys-libs/timezone-data-2024b
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2024-09-09)
+# No revdeps for years, KF5-based. Removal on 2024-10-09.
+net-libs/libmediawiki
+
+# Alfredo Tupone <tupone@gentoo.org> (2024-06-09)
+# These packages are no more needed. Use dev-ml/dune-private-libs
+# that include these
+# remove on 2024-10-08. Bug #939339
+dev-ml/stdune
+dev-ml/ordering
+dev-ml/dyn
+
+# Michał Górny <mgorny@gentoo.org> (2024-09-08)
+# Does not build anymore.  No upstream activity since 2021.
+# Removal on 2024-10-08.  Bug #932532.
+sci-physics/qmeq
+
 # Andreas Sturmlechner <asturm@gentoo.org> (2024-09-07)
 # These packages are EOL in Plasma 6.
 # Removal on 2024-10-07.
@@ -280,11 +303,6 @@ kde-misc/plasma-applet-network-monitor
 # of a downstream patch porting away from KDElibs4. No reports of it even
 # being in a working state (e.g. bug 813031). Removal on 2024-09-29.
 kde-misc/kio-locate
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2024-08-29)
-# Depends on kde-apps/konqueror:5 which is close to being obsolete.
-# No signs of upstream porting work. Removal on 2024-09-29.
-kde-misc/kio-gopher
 
 # Andreas Sturmlechner <asturm@gentoo.org> (2024-08-25)
 # Broken with current Plasma 5 version, not ported to Plasma 6.

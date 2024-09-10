@@ -13,7 +13,7 @@ SRC_URI="https://github.com/abseil/abseil-cpp/archive/${PV}.tar.gz -> ${P}.tar.g
 
 LICENSE="Apache-2.0"
 SLOT="0/${PV:2:4}.$(ver_cut 2).0"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~s390 ~sparc ~x86 ~arm64-macos ~x64-macos"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~loong ~mips ~ppc64 ~riscv ~s390 ~sparc ~x86 ~arm64-macos ~x64-macos"
 IUSE="test"
 
 RDEPEND=">=dev-cpp/gtest-1.13.0[${MULTILIB_USEDEP}]"
@@ -37,6 +37,8 @@ PATCHES=(
 
 src_prepare() {
 	cmake_src_prepare
+
+	use ppc && eapply "${FILESDIR}/${PN}-atomic-patch"
 
 	# un-hardcode abseil compiler flags
 	sed -i \
@@ -68,4 +70,20 @@ multilib_src_configure() {
 	fi
 
 	cmake_src_configure
+}
+
+multilib_src_test() {
+	if ! use amd64; then
+		CMAKE_SKIP_TESTS=(
+			absl_symbolize_test
+		)
+
+		if use ppc; then
+			CMAKE_SKIP_TESTS+=(
+				absl_failure_signal_handler_test
+			)
+		fi
+	fi
+
+	cmake_src_test
 }
