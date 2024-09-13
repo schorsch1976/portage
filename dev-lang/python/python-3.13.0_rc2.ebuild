@@ -31,7 +31,7 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="PSF-2"
 SLOT="${PYVER}"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 IUSE="
 	bluetooth build +debug +ensurepip examples gdbm +gil jit
 	libedit +ncurses pgo +readline +sqlite +ssl test tk valgrind
@@ -53,7 +53,6 @@ RDEPEND="
 	dev-libs/mpdecimal:=
 	dev-python/gentoo-common
 	>=sys-libs/zlib-1.1.3:=
-	virtual/libcrypt:=
 	virtual/libintl
 	ensurepip? ( dev-python/ensurepip-pip )
 	gdbm? ( sys-libs/gdbm:=[berkdb] )
@@ -211,7 +210,7 @@ build_cbuild_python() {
 		# We disabled these for CBUILD because Python's setup.py can't handle locating
 		# libdir correctly for cross. This should be rechecked for the pure Makefile approach,
 		# and uncommented if needed.
-		#_ctypes _crypt
+		#_ctypes
 	EOF
 
 	ECONF_SOURCE="${S}" econf_build "${myeconfargs_cbuild[@]}"
@@ -270,12 +269,6 @@ src_configure() {
 				# bug 653850
 				-x test_resource
 				-x test_strtod
-			)
-			;;
-		ia64*)
-			COMMON_TEST_SKIPS+=(
-				-x test_ctypes
-				-x test_external_inspection
 			)
 			;;
 		mips*)
@@ -372,11 +365,6 @@ src_configure() {
 					# bug 931908
 					-x test_exceptions
 					-x test_os
-				)
-				;;
-			ia64*)
-				profile_task_flags+=(
-					-x test_signal
 				)
 				;;
 			powerpc64-*) # big endian
