@@ -33,6 +33,19 @@
 
 #--- END OF EXAMPLES ---
 
+# Hans de Graaff <graaff@gentoo.org> (2024-09-14)
+# Obsolete slots that were used for older cucumber version but that no
+# longer have reverse dependencies. Removal on 2024-10-14.
+dev-util/cucumber-compatibility-kit:10
+dev-util/cucumber-core:12
+dev-util/cucumber-gherkin:22
+
+# Hans de Graaff <graaff@gentoo.org> (2024-09-14)
+# Old slots that are not compatible with ruby32. Use the newer slots
+# instead. Removal on 2024-10-14.
+dev-ruby/hiera-eyaml:3
+dev-util/aruba:0
+
 # Arthur Zamarin <arthurzam@gentoo.org> (2024-09-10)
 # ia64 only package. Since we drop ia64, we can remove this package.
 # Removal on 2024-10-10.  Bug #939298.
