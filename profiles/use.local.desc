@@ -475,11 +475,6 @@ app-editors/nano:magic - Add magic file support (sys-apps/file) to automatically
 app-editors/nano:minimal - Disable all fancy features, including ones that otherwise have a dedicated USE flag (such as spelling).
 app-editors/neovim:nvimpager - Install nvimpager symlink to less.sh macro
 app-editors/okteta:designer - Build plugins for dev-qt/designer
-app-editors/pluma-plugins:bracketcompletion - Auto complete bracket pairs
-app-editors/pluma-plugins:codecomment - Comment code blocks
-app-editors/pluma-plugins:smartspaces - Insert smart spaces
-app-editors/pluma-plugins:synctex - Enable synctex support for pdflatex
-app-editors/pluma-plugins:terminal - Embed a terminal in the bottom pane
 app-editors/qhexedit2:gui - Install Qt5 hex editor
 app-editors/tea:aspell - Enable spellchecking using app-text/aspell
 app-editors/vim:X - Link console vim against X11 libraries to enable title and clipboard features in xterm
@@ -4707,7 +4702,6 @@ media-sound/easyeffects:calf - Enable use of media-plugins/calf for adding vario
 media-sound/easyeffects:doc - Install packages needed to display built-in user documentation
 media-sound/easyeffects:mda-lv2 - Enable use of media-plugins/mda-lv2 for the loudness FX
 media-sound/easyeffects:zamaudio - Enable use of media-plugins/zam-plugins for the maximizer FX
-media-sound/easytag:nautilus - Build gnome-base/nautilus extension
 media-sound/ecasound:lv2 - Add support for Ladspa V2
 media-sound/ecasound:oil - Use dev-libs/liboil for inner loop optimizations
 media-sound/elisa:mpris - Enable MPRIS support
@@ -7707,7 +7701,6 @@ sec-policy/selinux-base:unknown-perms - Default allow unknown classes in kernels
 sec-policy/selinux-base-policy:unconfined - Enable support for the unconfined SELinux policy module
 sys-apps/accountsservice:elogind - Use sys-auth/elogind for session tracking
 sys-apps/accountsservice:systemd - Use sys-apps/systemd for session tracking
-sys-apps/azure-nvme-utils:lun-fallback - Enable fallback LUN calculation via NSID
 sys-apps/bfs:io-uring - Use sys-libs/liburing for faster async I/O
 sys-apps/busybox:make-symlinks - Create all the appropriate symlinks in /bin and /sbin.
 sys-apps/busybox:math - Enable math support in gawk (requires libm)
