@@ -3070,6 +3070,7 @@ games-action/trine-enchanted-edition:launcher - Install GTK+ launcher
 games-action/trine2:launcher - Install GTK+ launcher
 games-arcade/bomns:editor - enables building the level editor
 games-arcade/commandergenius:downloader - Allows some Keen games to be downloaded from the menu
+games-arcade/jazz2:sdl - Prefer SDL2 over GLFW backend
 games-arcade/jazz2:server - Build the multiplayer game server
 games-arcade/jazz2-data:cc - Install The Christmas Chronicles additional data
 games-arcade/jazz2-data:demo - Use the free demo data instead of the full retail game data
@@ -3848,6 +3849,7 @@ mail-client/thunderbird:libproxy - Enable libproxy support
 mail-client/thunderbird:openh264 - Use media-libs/openh264 for H.264 support instead of downloading binary blob from Mozilla at runtime
 mail-client/thunderbird:pgo - Add support for profile-guided optimization using gcc-4.5, for faster binaries. This option will double the compile time.
 mail-client/thunderbird:pulseaudio - Add sound server support via media-libs/libpulse (may be PulseAudio or Pipewire, or apulse if installed)
+mail-client/thunderbird:rust-extensions - Compile and install experimental rust extensions, that may become part of Thunderbird some day.
 mail-client/thunderbird:sndio - Enable support for the media-sound/sndio backend
 mail-client/thunderbird:system-av1 - Use the system-wide media-libs/dav1d and media-libs/libaom library instead of bundled.
 mail-client/thunderbird:system-harfbuzz - Use the system-wide media-libs/harfbuzz and media-gfx/graphite2 instead of bundled.
