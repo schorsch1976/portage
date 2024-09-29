@@ -1283,6 +1283,7 @@ app-text/xpdf:textselect - Allow text selection
 app-text/xpdf:utils - Install command-line PDF converters and various utilities
 app-text/zathura:synctex - Use libsynctex to get latex codeline from pdf
 app-text/zathura-meta:cb - Install plug-in for ComicBook support
+app-text/zeal:X - Enable global shortcut support on X11
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
 app-xemacs/xemacs-packages-all:mule - Add multi-language support to XEmacs
 dev-ada/AdaSAT:shared - Build shared library
@@ -1785,7 +1786,6 @@ dev-lang/ghc:llvm - Pull in dependencies for the sys-devel/llvm codegen backend.
 dev-lang/ghc:numa - Enable NUMA thread balancing policy using sys-process/numactl.
 dev-lang/ghc:unregisterised - Create an unregisterised build in which only the C codegen backend will be available.
 dev-lang/gnat-gpl:ada - Build the ADA language (GNAT) frontend
-dev-lang/gnat-gpl:bootstrap - Used to bootstrap gnat-gpl
 dev-lang/gnat-gpl:cet - Enable support for Intel Control Flow Enforcement Technology (CET)
 dev-lang/gnat-gpl:d - Enable support for the D programming language
 dev-lang/gnat-gpl:default-stack-clash-protection - Build packages with stack clash protection on by default
@@ -1802,6 +1802,7 @@ dev-lang/gnat-gpl:pgo - Build GCC using Profile Guided Optimization (PGO)
 dev-lang/gnat-gpl:rust - Build support for the Rust language, installs gccrs.
 dev-lang/gnat-gpl:sanitize - Build support for various sanitizer functions (ASAN/TSAN/etc...)
 dev-lang/gnat-gpl:ssp - Build packages with stack smashing protector on by default
+dev-lang/gnat-gpl:system-bootstrap - Bootstrap using installed Ada compiler
 dev-lang/gnat-gpl:systemtap - enable systemtap static probe points
 dev-lang/gnat-gpl:vtv - Build support for virtual table verification (a C++ hardening feature)
 dev-lang/gnucobol:json - Enable support for JSON template formatting via dev-libs/json-c
@@ -4336,7 +4337,7 @@ media-libs/libsdl:joystick - Control joystick support (disable at your own risk)
 media-libs/libsdl:sound - Control audio support (disable at your own risk)
 media-libs/libsdl:tslib - Build with tslib support for touchscreen devices
 media-libs/libsdl:video - Control video support (disable at your own risk)
-media-libs/libsdl2:fcitx4 - Enable support for app-i18n/fcitx 4
+media-libs/libsdl2:fcitx - Enable support for app-i18n/fcitx
 media-libs/libsdl2:gles1 - include OpenGL ES 1.0 support
 media-libs/libsdl2:haptic - Enable the haptic (force feedback) subsystem
 media-libs/libsdl2:ibus - Enable support for app-i18n/ibus
