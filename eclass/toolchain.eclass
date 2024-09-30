@@ -872,8 +872,8 @@ toolchain_src_configure() {
 		local ada_candidate
 		# We always prefer the version being built if possible
 		# as it has the greatest chance of success. Failing that,
-		# try the latest installed GCC and iterate downwards.
-		for ada_candidate in ${SLOT} $(seq ${latest_gcc} -1 10) ; do
+		# try GCC 10 and iterate upwards.
+		for ada_candidate in ${SLOT} $(seq 10 ${latest_gcc}) ; do
 			has_version -b "sys-devel/gcc:${ada_candidate}" || continue
 
 			ebegin "Testing sys-devel/gcc:${ada_candidate} for Ada"
@@ -891,7 +891,7 @@ toolchain_src_configure() {
 
 		# As a last resort, use dev-lang/gnat-gpl.
 		# TODO: Make gnat-gpl coinstallable with gcc:10.
-		if [[ -z ${ada_bootstrap} ]] ; then
+		if ver_test ${ada_bootstrap} -gt ${PV} || [[ -z ${ada_bootstrap} ]] ; then
 			ebegin "Testing dev-lang/gnat-gpl for Ada"
 			if has_version -b "dev-lang/gnat-gpl" ; then
 				ada_bootstrap=10
@@ -989,6 +989,34 @@ toolchain_src_configure() {
 
 		export PATH="${T}/ada-wrappers:${PATH}"
 		export CC="$(tc-getCC) -specs=${T}/ada.spec"
+	fi
+
+	if _tc_use_if_iuse d ; then
+		local latest_gcc=$(best_version -b "sys-devel/gcc")
+		latest_gcc="${latest_gcc#sys-devel/gcc-}"
+		latest_gcc=$(ver_cut 1 ${latest_gcc})
+
+		local d_bootstrap
+		local d_candidate
+		# We always prefer the version being built if possible
+		# as it has the greatest chance of success. Failing that,
+		# try GCC 10 and iterate upwards.
+		for d_candidate in ${SLOT} $(seq 10 ${latest_gcc}) ; do
+			has_version -b "sys-devel/gcc:${d_candidate}" || continue
+
+			ebegin "Testing sys-devel/gcc:${d_candidate} for D"
+			if has_version -b "sys-devel/gcc:${d_candidate}[d(-)]" ; then
+				d_bootstrap=${d_candidate}
+
+				eend 0
+				break
+			fi
+			eend 1
+		done
+
+		if [[ -n ${d_bootstrap} ]] ; then
+			export GDC="${BROOT}/usr/${CTARGET}/gcc-bin/${d_bootstrap}/gdc"
+		fi
 	fi
 
 	confgcc+=(
@@ -1576,7 +1604,9 @@ toolchain_src_configure() {
 	einfo "STDCXX_INCDIR:   ${STDCXX_INCDIR}"
 	einfo "Languages:       ${GCC_LANG}"
 	einfo "GCC version:     $($(tc-getCC) -v 2>&1 | grep ' version ' | awk '{ print $3 }')"
-	is_ada && einfo "GNAT version:    $(gnat 2>&1 | grep GNAT | awk '{ print $2 }')"
+	is_ada && einfo "GNAT version:    $(${GNAT} 2>&1 | grep GNAT | awk '{ print $2 }')"
+	is_d && einfo "GDC version:     $(${GDC} -v 2>&1 | grep ' version ' | awk '{ print $3 }')"
+
 	echo
 
 	# Build in a separate build tree
@@ -2277,7 +2307,7 @@ toolchain_src_install() {
 	cd "${D}"${BINPATH} || die
 	# Ugh: we really need to auto-detect this list.
 	#      It's constantly out of date.
-	for x in cpp gcc gccrs g++ c++ gcov g77 gfortran gccgo gnat* ; do
+	for x in cpp gcc gccrs g++ c++ gcov gdc g77 gfortran gccgo gnat* ; do
 		# For some reason, g77 gets made instead of ${CTARGET}-g77...
 		# this should take care of that
 		if [[ -f ${x} ]] ; then
