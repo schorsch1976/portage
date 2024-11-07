@@ -33,6 +33,30 @@
 
 #--- END OF EXAMPLES ---
 
+# Matt Turner <mattst88@gentoo.org> (2024-11-06)
+# Replaced by kernel modesetting (CONFIG_DRM_VBOXVIDEO) and the
+# xf86-video-modesetting driver in the Xserver. Bug #929007
+#
+# Removal on 2024-12-06. Bug #924715.
+x11-drivers/xf86-video-vboxvideo
+
+# Matt Turner <mattst88@gentoo.org> (2024-11-06)
+# Driver for integrated GPU paired only with Texas Instruments ARM CPUs.
+#
+# Not maintained upstream. No releases since 2016. No sign of users.
+#
+# Removal on 2024-12-06. Bug #924715.
+x11-drivers/xf86-video-omap
+
+# Matt Turner <mattst88@gentoo.org> (2024-11-06)
+# Driver for integrated GPU paired only with x86 VIA CPUs.
+#
+# Has not worked in Gentoo for more than two years (see bug #875233) without
+# any actual users noticing.
+#
+# Removal on 2024-12-06. Bug #875233.
+x11-drivers/xf86-video-openchrome
+
 # Holger Hoffstätte <holger@applied-asynchrony.com> (2024-11-03)
 # Vendors an unreleased libbpf version and announces incorrect version.
 # Please downgrade to 7.4.0. Bug Bug #941185. Removal on 2024-12-03.
@@ -243,15 +267,6 @@ app-i18n/kcm-fcitx
 =dev-qt/qtwebsockets-6.8.0*
 =dev-qt/qtwebview-6.8.0*
 
-# Andreas Sturmlechner <asturm@gentoo.org> (2024-10-07)
-# No more revdeps, merged into kde-frameworks/kpeople upstream.
-# Removal on 2024-11-06.
-dev-libs/kpeoplevcard
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2024-10-07)
-# Unmaintained and archived upstream, removal on 2024-11-06.
-net-im/choqok
-
 # Hans de Graaff <graaff@gentoo.org> (2024-10-06)
 # Obsolete slot without reverse dependencies. Use the newer slot
 # instead. Removal on 2024-11-08.
@@ -263,18 +278,6 @@ dev-ruby/base64:0.1
 # we can work out how to resolve the situation.
 # See also: https://github.com/gentoo/gentoo/pull/36091
 ~sys-boot/plymouth-24.004.60
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2024-10-05)
-# Masked for removal in 30 days. Broken since KF6 incapacitated
-# breeze-icons-rcc, but no one even complained. Upstream porting
-# effort stalled indefinitely:
-# https://invent.kde.org/office/kexi/-/issues/152
-# Removal on 2024-11-04.
-app-office/kexi
-dev-db/kdb
-dev-libs/kproperty
-dev-libs/kreport
-kde-frameworks/breeze-icons-rcc
 
 # Sebastian Pipping <sping@gentoo.org> (2024-10-03)
 # Masked for removal in 30 days.  Last release in 2021,
