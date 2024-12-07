@@ -12,7 +12,7 @@ SRC_URI="https://github.com/firehol/firehol/releases/download/v${PV}/${P}.tar.xz
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="doc ipv6 ipset"
-KEYWORDS="~amd64 arm ~arm64 ~ppc ~x86"
+KEYWORDS="amd64 arm ~arm64 ~ppc ~x86"
 
 # Set the dependency versions to aid cross-compiling. Keep them at their
 # minimums as the configure script merely checks whether they are sufficient.
@@ -46,12 +46,16 @@ pkg_setup() {
 		~NETFILTER_XT_MATCH_OWNER \
 		~NETFILTER_XT_MATCH_STATE \
 		~NF_CONNTRACK \
-		~NF_CONNTRACK_IPV4 \
 		~NF_CONNTRACK_MARK \
 		~NF_NAT \
 		~NF_NAT_FTP \
 		~NF_NAT_IRC \
 	"
+
+	if kernel_is -lt 4 19; then
+		CONFIG_CHECK+=" ~NF_CONNTRACK_IPV4"
+	fi
+
 	linux-info_pkg_setup
 }
 
