@@ -411,16 +411,29 @@ if tc_has_feature valgrind ; then
 fi
 
 if [[ ${PN} != gnat-gpl ]] && tc_has_feature ada ; then
-	BDEPEND+="
-		ada? (
-			|| (
-				sys-devel/gcc:${SLOT}[ada]
-				<sys-devel/gcc-${SLOT}[ada]
-				<dev-lang/ada-bootstrap-${SLOT}
-				dev-lang/gnat-gpl[ada]
+	if tc_use_major_version_only ; then
+		BDEPEND+="
+			ada? (
+				|| (
+					sys-devel/gcc:${SLOT}[ada]
+					<sys-devel/gcc-${SLOT}[ada]
+					<dev-lang/ada-bootstrap-$((${SLOT} + 1))
+					dev-lang/gnat-gpl[ada]
+				)
 			)
-		)
-	"
+		"
+	else
+                BDEPEND+="
+                        ada? (
+                                || (
+                                        sys-devel/gcc:${SLOT}[ada]
+                                        <sys-devel/gcc-${SLOT}[ada]
+                                        <dev-lang/ada-bootstrap-${SLOT}
+                                        dev-lang/gnat-gpl[ada]
+                                )
+                        )
+                "
+	fi
 fi
 
 # TODO: Add a pkg_setup & pkg_pretend check for whether the active compiler
@@ -970,7 +983,9 @@ toolchain_setup_ada() {
 	# As a penultimate resort, try dev-lang/ada-bootstrap.
 	if ver_test ${ada_bootstrap} -gt ${PV} || [[ -z ${ada_bootstrap} ]] ; then
 		ebegin "Testing fallback dev-lang/ada-bootstrap for Ada"
-		if has_version -b "<dev-lang/ada-bootstrap-${SLOT}" ; then
+		# XXX: This can be cleaned up like BDEPEND for tc_use_major_version_only
+		# once we only support such versions.
+		if has_version -b "=dev-lang/ada-bootstrap-${SLOT}*" || has_version -b "<dev-lang/ada-bootstrap-${SLOT}" ; then
 			# Workaround the old scheme
 			if has_version -b "=dev-lang/ada-bootstrap-0_p2021*" ; then
 				ada_bootstrap=10
