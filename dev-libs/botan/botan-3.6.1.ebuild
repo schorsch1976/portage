@@ -56,7 +56,9 @@ BDEPEND="
 # https://botan.randombit.net/handbook/packaging.html#minimize-distribution-patches
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-3.6.1-boost-1.87.patch
+	"${FILESDIR}"/${P}-boost-1.87.patch
+	"${FILESDIR}"/${P}-tests-glibcxx_assertions.patch
+	"${FILESDIR}"/${PN}-3.6.1-no-avx2.patch
 )
 
 python_check_deps() {
