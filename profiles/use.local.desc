@@ -1314,6 +1314,7 @@ dev-ada/spawn:glib - Add support to dev-libs/glib-based mainloop.
 dev-ada/spawn:shared - Build shared library
 dev-ada/spawn:static-pic - Build static library with pic code
 dev-ada/templates-parser:shared - Build shared library
+dev-ada/templates-parser:static-pic - Build static library with pic code
 dev-ada/xmlada:shared - Build shared library
 dev-ada/xmlada:static-pic - Build static library with pic code
 dev-build/bazelisk:bazel-symlink - Install bazel symlink that points to bazelisk
@@ -3023,7 +3024,6 @@ games-action/dxx-rebirth:sdl2 - Use libSDL2, SDL2-mixer instead of libSDL-1* and
 games-action/dxx-rebirth:tracker - Enable support for the PHP-based multiplayer game tracker
 games-action/hotline-miami:bundled-libs - Use bundled libraries.
 games-action/hotline-miami:launcher - Install qt launcher
-games-action/prismlauncher:qt6 - Build with Qt6 support instead of the default Qt5
 games-action/supermariowar:server - Compile and install Super Mario War server files
 games-action/supertuxkart:nettle - Use dev-libs/nettle crypto backend
 games-action/supertuxkart:recorder - Enable recording with media-libs/libopenglrecorder
@@ -4921,9 +4921,7 @@ media-sound/spotify:pulseaudio - Controls the dependency on pulseaudio or apulse
 media-sound/strawberry:chromaprint - Enables audio fingerprinting support with media-libs/chromaprint
 media-sound/strawberry:loudness - Enable loudness normalisation according to the EBU R128 standard using media-libs/libebur128
 media-sound/strawberry:moodbar - Enable moodbar support
-media-sound/strawberry:soup - Allow streaming with media-plugins/gst-plugins-soup
 media-sound/strawberry:streaming - Enable Online Streaming Support
-media-sound/strawberry:vlc - Enable media-video/vlc backend
 media-sound/supercollider:ableton-link - Enable support for Ableton Link
 media-sound/supercollider:emacs - Enable the SCEL user interface
 media-sound/supercollider:gedit - Enable the SCED user interface
@@ -5541,7 +5539,6 @@ net-analyzer/wireshark:minizip - Build with zip file compression support
 net-analyzer/wireshark:netlink - Use dev-libs/libnl
 net-analyzer/wireshark:pcap - Use net-libs/libpcap for network packet capturing (build dumpcap, rawshark)
 net-analyzer/wireshark:plugins - Install plugins
-net-analyzer/wireshark:qt6 - Build with Qt6 support instead of the default Qt5 for GUI support
 net-analyzer/wireshark:randpkt - Install randpkt, a utility for creating pcap trace files full of random packets
 net-analyzer/wireshark:randpktdump - Install randpktdump, an extcap interface to provide access to the random packet generator (randpkt)
 net-analyzer/wireshark:reordercap - Install reordercap, to reorder input file by timestamp into output file
@@ -5925,7 +5922,6 @@ net-im/toxic:notification - Enables desktop notifications with libnotify, with s
 net-im/toxic:qrcode - Enables QR code support
 net-im/toxic:sound - Enables audio calling
 net-im/toxic:video - Enables video calling
-net-im/zoom:bundled-qt - Use bundled Qt and icu instead of system-wide libs
 net-im/zoom:opencl - Use OpenCL for virtual background support (virtual/opencl)
 net-im/zoom:zoom-symlink - Install a zoom symlink in /usr/bin
 net-irc/anope:ldap - Build LDAP modules for e.g. opertypes
