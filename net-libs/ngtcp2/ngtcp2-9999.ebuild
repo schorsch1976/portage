@@ -19,6 +19,7 @@ HOMEPAGE="https://github.com/ngtcp2/ngtcp2/"
 LICENSE="MIT"
 SLOT="0/0"
 IUSE="+gnutls openssl +ssl static-libs test"
+# Without static-libs, src_test just won't run any tests and "pass".
 REQUIRED_USE="ssl? ( || ( gnutls openssl ) ) test? ( static-libs )"
 
 BDEPEND="virtual/pkgconfig"
@@ -33,10 +34,6 @@ DEPEND="
 	test? ( >=dev-util/cunit-2.1[${MULTILIB_USEDEP}] )
 "
 RESTRICT="!test? ( test )"
-
-PATCHES=(
-	"${FILESDIR}"/${PN}-1.10.0-munit-c23.patch
-)
 
 multilib_src_configure() {
 	local mycmakeargs=(
