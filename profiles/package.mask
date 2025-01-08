@@ -33,6 +33,18 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2025-01-06)
+# Masked for testing
+=dev-lang/perl-5.40.1*
+~virtual/perl-File-Spec-3.910.0
+~virtual/perl-Module-CoreList-5.202.501.184_rc
+
+# Hans de Graaff <graaff@gentoo.org> (2025-01-06)
+# ruby32-only package. Depends on assumptions that are no longer true in
+# ruby33. No reverse dependencies left. Last release in 2007. Upstream
+# gone. Removal on 2025-02-06.
+dev-ruby/dust
+
 # Sam James <sam@gentoo.org> (2025-01-05)
 # Removed upstream in gstreamer-1.24. See bug #947522. Removal on 2025-02-05.
 media-plugins/gst-plugins-kate
@@ -190,16 +202,6 @@ kde-frameworks/kemoticons
 =sys-kernel/vanilla-kernel-6.12.2
 =virtual/dist-kernel-6.12.2
 
-# Volkmar W. Pogatzki <gentoo@pogatzki.net> (2024-12-04)
-# Bugs #845294 #757543 #517744 #704198 #366739 #350302 #614318 #637422
-# #738898 #501586.
-# Blocks removal of dev-java/swt-3.7.2-r4, bug #944885.
-# Users should switch to dev-util/android-sdk-cmdline-tools for a CLI replacement
-# or dev-util/android-studio for a GUI replacement.
-# Removal on 2025-01-04
-dev-util/android-sdk-update-manager
-dev-java/swt:3.7
-
 # Andreas Sturmlechner <asturm@gentoo.org> (2024-11-28)
 # Grave data loss bug. See also:
 # https://github.com/nicotine-plus/nicotine-plus/issues/3152
@@ -283,14 +285,6 @@ dev-php/swoole
 =virtual/rust-1.80.1
 =virtual/rust-1.81.0-r1
 =virtual/rust-1.82.0
-
-# Matt Jolly <kangie@gentoo.org> (2024-11-09)
-# Does not build with any rust version in the tree. Removal in 30 days.
-=dev-lang/starlark-rust-0.8.0
-
-# Matt Jolly <kangie@gentoo.org> (2024-11-09)
-# Does not build with any rust version in the tree. Removal in 30 days.
-=dev-util/wasmer-0.11.0
 
 # Viorel Munteanu <ceamac@gentoo.org> (2024-10-18)
 # Experimental version, for testing purposes only.

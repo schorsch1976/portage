@@ -4865,7 +4865,8 @@ media-sound/qmmp:cue - enable CUE sheet parsing
 media-sound/qmmp:dbus - Enable DBus notifiications and MPRIS support
 media-sound/qmmp:enca - Detects the character encoding automatically
 media-sound/qmmp:game - Enable Game music support
-media-sound/qmmp:gnome - Enable Gnome hotkey support (requires Qt5DBus)
+media-sound/qmmp:gnome - Enable Gnome hotkey support (requires QtDBus)
+media-sound/qmmp:libxmp - Enable module files renderer (modplug replacement) via media-libs/libxmp
 media-sound/qmmp:lyrics - Fetch track lyrics from the web
 media-sound/qmmp:midi - Enable midi support using wildmidi library
 media-sound/qmmp:notifier - Enable qmmps' notifier system
@@ -5895,7 +5896,6 @@ net-im/telegram-desktop:enchant - Use the app-text/enchant spell-checking backen
 net-im/telegram-desktop:fonts - Use builtin patched copy of open-sans fonts (overrides fontconfig)
 net-im/telegram-desktop:libdispatch - Use dev-libs/libdispatch to speed up concurrent code execution
 net-im/telegram-desktop:qt6 - Build with Qt6 support
-net-im/telegram-desktop:qt6-imageformats - Add support for HEIF, AVIF and JpegXL by bundling kde-frameworks/kimageformats
 net-im/tkabber:plugins - Enables installation the extra plugins
 net-im/tokodon:mpv - Use media-libs/mpvqt instead of dev-qt/qtmultimedia for video playback (default)
 net-im/tokodon:webengine - Use dev-qt/qtwebengine for built-in authentication page (default is external browser)
@@ -8597,6 +8597,7 @@ www-client/firefox:system-libvpx - Use the system-wide media-libs/libvpx instead
 www-client/firefox:system-png - Use the system-wide media-libs/libpng instead of bundled (requires APNG patches)
 www-client/firefox:system-webp - Use the system-wide media-libs/libwebp instead of bundled
 www-client/firefox:wasm - Sandbox certain third-party libraries through WebAssembly using RLBox
+www-client/firefox:wasm-sandbox - Sandbox certain third-party libraries through WebAssembly using RLBox
 www-client/firefox:wifi - Enable necko-wifi for NetworkManager integration, and access point MAC address scanning for better precision with opt-in geolocation services
 www-client/firefox-bin:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
 www-client/jd:migemo - Enable migemo support for Japanese

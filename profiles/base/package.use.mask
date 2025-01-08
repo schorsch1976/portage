@@ -5,8 +5,7 @@
 
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2025-01-04)
 # No suitable versions of dev-libs/protobuf available.
-# Bug #947534.
->=dev-java/protobuf-java-4.29.1 system-protoc
+=dev-java/protobuf-java-4.29.1 system-protoc
 
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-01-03)
 # Blocking cleanup of kde-apps/kdegraphics-mobipocket:5
@@ -517,7 +516,8 @@ dev-util/rizin test
 # Sam James <sam@gentoo.org> (2021-12-27)
 # Doc building is broken and no new releases in a long time.
 # bug #830013
-sci-libs/flann doc
+# fixed in sci-libs/flann-1.9.2-20221027
+<=sci-libs/flann-1.9.2 doc
 
 # Joonas Niilola <juippis@gentoo.org> (2021-12-20)
 # Broken, upstream issue/PR open since 2021-05 without reply.
