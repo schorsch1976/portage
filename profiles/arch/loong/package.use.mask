@@ -1,6 +1,18 @@
 # Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Sam James <sam@gentoo.org> (2025-01-10)
+# dev-lang/ada-bootstrap exists here
+>=sys-devel/gcc-14 -ada
+
+# WANG Xuerui <xen0n@gentoo.org> (2025-01-10)
+# bootstrap-emacs crashes at build time
+app-editors/emacs jit
+
+# WANG Xuerui <xen0n@gentoo.org> (2025-01-06)
+# necessary dep is keyworded and passes tests
+dev-db/mariadb -galera
+
 # WANG Xuerui <xen0n@gentoo.org> (2025-01-06)
 # 2 test cases abort with "LLVM ERROR: Relocation type not implemented yet!"
 sci-libs/symengine llvm
@@ -33,10 +45,6 @@ net-voip/yate ilbc
 # Paul Zander <negril.nx+gentoo@gmail.com> (2024-09-14)
 # needs re-keywording and clean-up of media-libs/opencollada
 media-libs/assimp collada
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2024-09-07)
-# kde-plasma/plasma-workspace:6 is not keyworded
-virtual/notification-daemon kde
 
 # Sam James <sam@gentoo.org> (2024-08-31)
 # dnstap USE masked due to missing keywords
@@ -73,11 +81,6 @@ kde-frameworks/purpose:5 kaccounts
 # Andreas Sturmlechner <asturm@gentoo.org> (2024-06-15)
 # Requires unkeyworded dev-qt/qtwebengine (and revdeps)
 kde-plasma/plasma-nm openconnect
-
-# Sam James <sam@gentoo.org> (2024-06-13)
-# Needs as-yet-unkeyworded KF6 (bug #934215)
-app-crypt/pinentry qt6
-app-office/libreoffice qt6
 
 # WANG Xuerui <xen0n@gentoo.org> (2024-06-03)
 # Requires arch-specific code in python (relocs handling), in addition to
@@ -163,7 +166,6 @@ dev-python/requests-cache test
 
 # WANG Xuerui <xen0n@gentoo.org> (2023-07-26)
 # no llvm:15 or lld:16 on loong
-app-office/libreoffice clang
 <dev-db/postgresql-16 llvm
 <dev-lang/rust-1.73.0 wasm
 
