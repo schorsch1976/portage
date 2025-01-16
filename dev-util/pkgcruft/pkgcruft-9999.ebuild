@@ -4,9 +4,10 @@
 EAPI=8
 
 CRATES=" "
+LLVM_COMPAT=( {17..19} )
 RUST_MIN_VER="1.82.0"
 
-inherit cargo edo flag-o-matic shell-completion toolchain-funcs
+inherit cargo edo llvm-r2 shell-completion toolchain-funcs
 
 DESCRIPTION="QA library and tools based on pkgcraft"
 HOMEPAGE="https://pkgcraft.github.io/"
@@ -33,11 +34,18 @@ RESTRICT="!test? ( test )"
 
 # clang needed for bindgen
 BDEPEND+="
-	llvm-core/clang
+	$(llvm_gen_dep '
+		llvm-core/clang:${LLVM_SLOT}
+	')
 	test? ( dev-util/cargo-nextest )
 "
 
 QA_FLAGS_IGNORED="usr/bin/pkgcruft"
+
+pkg_setup() {
+	llvm-r2_pkg_setup
+	rust_pkg_setup
+}
 
 src_unpack() {
 	if [[ ${PV} == 9999 ]] ; then
@@ -52,10 +60,8 @@ src_compile() {
 	# For scallop building bash
 	tc-export AR CC
 
-	# scallop uses modified bash-5.2 which relies on unprotoyped functions
-	append-cflags -std=gnu17
-
 	cargo_src_compile
+	edo cargo run --features shell --bin pkgcruft-shell-comp -p pkgcruft
 }
 
 src_test() {

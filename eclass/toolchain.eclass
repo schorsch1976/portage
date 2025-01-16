@@ -3160,14 +3160,15 @@ toolchain_death_notice() {
 			(echo '' | $(tc-getCC ${CTARGET}) ${CFLAGS} -v -E - 2>&1) > "${dir}"/gccinfo.log
 			[[ -e "${T}"/build.log ]] && cp "${T}"/build.log "${dir}"
 			tar -arf "${WORKDIR}"/gcc-build-logs.tar.xz \
-				"${dir#${WORKDIR}/}"/gccinfo.log "${dir#${WORKDIR}/}"/build.log $(find -name "${dir}"/config.log)
-			rm "${dir}"/gccinfo.log "${dir}"/build.log
+				"${dir#${WORKDIR}/}"/gccinfo.log "${dir#${WORKDIR}/}"/build.log $(find -name "${dir#${WORKDIR}/}"/config.log)
+			rm "${dir#${WORKDIR}/}"/gccinfo.log "${dir#${WORKDIR}/}"/build.log
 			eerror
 			eerror "Please include ${WORKDIR}/gcc-build-logs.tar.xz in your bug report."
 			eerror
 			popd >/dev/null
 		fi
 	done
+	xz -9e "${WORKDIR}"/gcc-build-logs.tar.xz
 }
 
 fi
