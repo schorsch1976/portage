@@ -963,13 +963,13 @@
     <url>https://wiki.gentoo.org/wiki/Project:GSoC</url>
     <description>The central project to unite efforts for Google Summer of Code participation</description>
     <member>
-      <email>alicef@gentoo.org</email>
-      <name>Arisu Tachibana</name>
+      <email>amadio@gentoo.org</email>
+      <name>Guilherme Amadio</name>
       <role>2022 Mentor</role>
     </member>
     <member>
-      <email>amadio@gentoo.org</email>
-      <name>Guilherme Amadio</name>
+      <email>alicef@gentoo.org</email>
+      <name>Arisu Tachibana</name>
       <role>2022 Mentor</role>
     </member>
     <member>
@@ -2599,6 +2599,11 @@
       <email>gyakovlev@gentoo.org</email>
       <name>Georgy Yakovlev</name>
       <role>Self-appointed lead</role>
+    </member>
+    <member>
+      <email>kangie@gentoo.org</email>
+      <name>Matt Jolly</name>
+      <role>Accidentally started maintaining eclasses</role>
     </member>
     <member>
       <email>mgorny@gentoo.org</email>
