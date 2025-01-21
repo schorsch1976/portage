@@ -835,7 +835,6 @@ app-metrics/collectd:filecaps - When set collectd daemon will have set required 
 app-metrics/collectd:java - Must be set (workaround for java-pkg-opt-2 eclass limitation) when you want java or genericjmx plugin
 app-metrics/collectd:udev - Enable optional udev usage in disk plugin; Required for smart plugin
 app-metrics/collectd:xfs - Enable optional capability to filter on XFS file system in df plugin; Requires XFS headers from sys-fs/xfsprogs
-app-metrics/node_exporter:systemd - Enables systemd collector by default
 app-metrics/prometheus-podman-exporter:btrfs - Collect metrics for btrfs filesystem
 app-misc/FreeSSM:small-resolution - Build the app for small resolution screeens
 app-misc/anki:gui - Enable support for a graphical user interface. Disable for standalone sync server.
@@ -1891,6 +1890,7 @@ dev-lang/ruby:systemtap - Enable SystemTap/DTrace tracing
 dev-lang/rust:clippy - Install clippy, Rust code linter
 dev-lang/rust:dist - Install dist tarballs (used for bootstrapping)
 dev-lang/rust:miri - Install miri, an interpreter for Rust's mid-level intermediate representation (requires USE=nightly, sometimes is broken)
+dev-lang/rust:mrustc-bootstrap - Use dev-lang/mrustc to build the bootstrap Rust sysroot from this package's source
 dev-lang/rust:nightly - Enable nightly (UNSTABLE) features (NOTE: it does not install nightly version, just enables features marked as nightly at time of release)
 dev-lang/rust:parallel-compiler - Build a multi-threaded rustc (experimental, not tested by upstream)
 dev-lang/rust:rust-analyzer - Install rust-analyzer, A Rust compiler front-end for IDEs (language server)
@@ -1925,6 +1925,7 @@ dev-libs/apache-arrow:json - Enables read/write json format
 dev-libs/apache-arrow:parquet - Enables read/write parquet data format
 dev-libs/apache-arrow:re2 - Build with support for regular expressions using the re2 library
 dev-libs/appstream:apt - Enables Debians APT support
+dev-libs/appstream:compose - Enable appstream compose
 dev-libs/appstream-glib:fonts - Enable fonts support for appstream-builder.
 dev-libs/appstream-glib:stemmer - Add word stemming via dev-libs/snowball-stemmer.
 dev-libs/apr:old-kernel - Enable compatibility with older kernels
@@ -6386,6 +6387,7 @@ net-misc/hylafaxplus:jbig - JBIG Fax Compression Support
 net-misc/hylafaxplus:mgetty - Receive faxes via serial port connections
 net-misc/hylafaxplus:pam - hfaxd authentication via PAM
 net-misc/icaclient:hdx - Install and enable hdx-realtime-media-engine plugin
+net-misc/icaclient:selfservice - Install and enable the self-service component
 net-misc/icaclient:usb - Allow connecting USB devices to virtual desktops
 net-misc/icecast:kate - Add karaoke and text encapsulation support for Ogg files
 net-misc/icecast:yp - Build support for yp public directory listings
@@ -8584,6 +8586,7 @@ www-apps/wordpress:themes - Installs themes (including default theme)
 www-apps/xpra-html5:brotli - Install assets compressed with brotli
 www-apps/xpra-html5:gzip - Install assets compressed with gzip
 www-apps/xpra-html5:minify - Minify JavaScript code for smaller transfers
+www-client/chromium:bundled-toolchain - Download and use the upstream binary toolchain(s) to build Chromium
 www-client/chromium:debug - Enable DCHECK feature with severity configurable at runtime. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
 www-client/chromium:ffmpeg-chromium - (binpkg only) Use Chromium FFmpeg fork (media-video/ffmpeg-chromium) rather than mainline FFmpeg (media-video/ffmpeg)
 www-client/chromium:gtk4 - Build with GTK4 headers.

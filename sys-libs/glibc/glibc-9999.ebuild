@@ -193,6 +193,7 @@ XFAIL_NSPAWN_TEST_LIST=(
 	# upstream, as systemd-nspawn's default seccomp whitelist is too strict.
 	# https://sourceware.org/PR30603
 	test-errno-linux
+	tst-aarch64-pkey
 	tst-bz21269
 	tst-mlock2
 	tst-ntp_gettime
@@ -1292,6 +1293,17 @@ glibc_src_test() {
 		for myt in ${XFAIL_TEST_LIST[@]} ; do
 			myxfailparams+="test-xfail-${myt}=yes "
 		done
+	fi
+
+	# on some architectures, libsupport requires libgcc_s.so support for unwinding
+	# if it's not present then many tests fail
+
+	if tc-is-gcc ; then
+		local lgc=$(${CC} -print-libgcc-file-name)
+		lgc=${lgc/.a/_s.so.1}
+		einfo "Copying ${lgc} into build directory"
+		cp "${lgc}" ./ || die
+		chmod ugo+x ./libgcc_s.so.1 || die
 	fi
 
 	# sandbox does not understand unshare() and prevents

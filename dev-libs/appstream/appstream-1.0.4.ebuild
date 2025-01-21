@@ -21,7 +21,7 @@ HOMEPAGE="https://www.freedesktop.org/wiki/Distributions/AppStream/"
 LICENSE="LGPL-2.1+ GPL-2+"
 # check as_api_level
 SLOT="0/5"
-IUSE="apt doc +introspection qt6 systemd test"
+IUSE="apt compose doc +introspection qt6 systemd test"
 RESTRICT="test" # bug 691962
 
 RDEPEND="
@@ -32,6 +32,13 @@ RDEPEND="
 	dev-libs/libyaml
 	dev-libs/snowball-stemmer:=
 	>=net-misc/curl-7.62
+	compose? (	dev-libs/glib:2
+				dev-libs/libyaml
+				gnome-base/librsvg:2
+				media-libs/fontconfig:1.0
+				media-libs/freetype:2
+				x11-libs/cairo
+				x11-libs/gdk-pixbuf:2 )
 	introspection? ( >=dev-libs/gobject-introspection-1.56:= )
 	qt6? ( dev-qt/qtbase:6 )
 	systemd? ( sys-apps/systemd:= )
@@ -68,6 +75,7 @@ src_configure() {
 		-Dstemming=true
 		-Dvapi=false
 		-Dapt-support=$(usex apt true false)
+		-Dcompose=$(usex compose true false)
 		-Dinstall-docs=$(usex doc true false)
 		-Dgir=$(usex introspection true false)
 		-Dqt=$(usex qt6 true false)
