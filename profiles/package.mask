@@ -33,11 +33,46 @@
 
 #--- END OF EXAMPLES ---
 
+# Conrad Kostecki <conikost@gentoo.org> (2024-01-28)
+# A package, which depends on Qt5. Upstream dead for many years.
+# Removal on 2025-02-28.
+net-wireless/linssid
+
+# Conrad Kostecki <conikost@gentoo.org> (2024-01-28)
+# Binary package, which depends on Qt5.
+# Please update to v5 beta or v6 beta. Removal on 2025-02-28.
+media-sound/teamspeak-client:3
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-01-28)
+# Last release 8 years ago, dead upstream (repository gone as well),
+# depends on Qt5, no one else packages this. Removal on 2025-02-27.
+net-misc/qtm
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-01-28)
+# Last release+commit 7 years ago, dead upstream, unmaintained in Gentoo,
+# depends on Qt5, broken with >= ffmpeg-5, no one else packages this.
+# Removal on 2025-02-27. Bug #900947
+app-misc/qcma
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-01-28)
+# Last release+commit 8 years ago, dead upstream, unmaintained in Gentoo,
+# depends on Qt5, no one else packages this. Removal on 2025-02-27.
+x11-misc/urxvtconfig
+
+# Arthur Zamarin <arthurzam@gentoo.org> (2025-01-28)
+# Since we are done with EGO_SUM, this tool isn't needed any more.
+# Removal on 2025-02-27.  Bug #948966.
+dev-go/get-ego-vendor
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-01-28)
+# Last release from 14 years ago, dead upstream (repository gone as well).
+# Plenty of other options in ::gentoo. Bug #947724, removal on 2025-02-27.
+media-sound/bempc
+
 # Anthony G. Basile <blueness@gentoo.org> (2025-01-25)
 # Bug 909889. Needs PEP517 build. Very low user base
 # Remove 2025-02-24.
 app-portage/grs
-
 
 # Arthur Zamarin <arthurzam@gentoo.org> (2025-01-24)
 # EAPI=7, uses deprecated Go eclasses, fails to compile, installation
@@ -78,10 +113,13 @@ dev-python/spyder-terminal
 dev-qt/qtbluetooth:5
 
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-01-23)
+# Qt5 package without any revdeps. Use dev-qt/qttools[qdbus] instead.
+dev-qt/qdbusviewer
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-01-23)
 # Qt5 packages without any revdeps.
 dev-qt/pixeltool
 dev-qt/qdbus
-dev-qt/qdbusviewer
 dev-qt/qdoc
 dev-qt/qtplugininfo
 dev-qt/qtquicktimeline:5
