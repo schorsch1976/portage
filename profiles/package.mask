@@ -33,6 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Ionen Wolkens <ionen@gentoo.org> (2025-01-30)
+# Breaks the only consumer of pytest-bdd (qutebrowser),
+# not looked into yet but mask for now as it prevents
+# using it to test PyQt6 for the upcoming Qt bump.
+>=dev-python/gherkin-official-31.0.0
+
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-01-30)
 # Last release 15 years ago, dead upstream (never imported from kdesvn),
 # no revdeps probably since amarok last-rites. Removal on 2025-02-27.
@@ -291,14 +297,6 @@ sci-mathematics/mathlib-tools
 acct-group/aspnet
 acct-user/aspnet
 www-servers/xsp
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2025-01-02)
-# No more revdeps, depends on Qt5, bug #942178. Removal on 2025-01-29.
-dev-libs/libqt5pas
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2025-01-01)
-# Transitional package without any revdeps left. Removal on 2025-01-31
-kde-apps/konsolepart
 
 # Nowa Ammerlaan <nowa@gentoo.org> (2025-01-01)
 # Broken with Qt6 and in wayland sessions. Archived upstream. Has been on life
