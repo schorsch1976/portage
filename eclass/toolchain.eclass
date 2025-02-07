@@ -2099,6 +2099,11 @@ gcc_do_filter_flags() {
 	# https://gcc.gnu.org/PR100431
 	filter-flags -Werror=format-security
 
+	if ver_test -lt 10.1 ; then
+		filter-flags '-fdiagnostics-urls=*'
+		filter-flags '-Wstringop-overread'
+	fi
+
 	if ver_test -lt 13.6 ; then
 		# These aren't supported by the just-built compiler either.
 		filter-flags -fharden-compares -fharden-conditional-branches \
@@ -2967,7 +2972,7 @@ toolchain_pkg_postrm() {
 		return 0
 	else
 		# Removed the last GCC installed (bug #906040)
-		if ! has_version "sys-devel/gcc" && has_version "sys-devel/clang" ; then
+		if ! has_version "sys-devel/gcc" && has_version "llvm-core/clang" ; then
 			einfo "Last GCC version removed. Cleaning up ${EROOT}/etc/clang/gentoo-gcc-install.cfg."
 			echo > "${EROOT}"/etc/clang/gentoo-gcc-install.cfg
 		fi
