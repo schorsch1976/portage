@@ -8,7 +8,7 @@ inherit flag-o-matic qt6-build toolchain-funcs
 DESCRIPTION="Cross-platform application development framework"
 
 if [[ ${QT6_BUILD_TYPE} == release ]]; then
-	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~x86"
+	KEYWORDS="amd64 arm arm64 ~hppa ~loong ~ppc ppc64 ~riscv ~x86"
 fi
 
 declare -A QT6_IUSE=(
@@ -272,6 +272,12 @@ src_configure() {
 		$(qt_feature postgres sql_psql)
 		$(qt_feature sqlite sql_sqlite)
 		$(qt_feature sqlite system_sqlite)
+	)
+
+	tc-is-cross-compiler && mycmakeargs+=(
+		-DQT_HOST_PATH="${BROOT}"/usr
+		-DQT_FORCE_BUILD_TOOLS=ON
+		-DQT_NO_GENERATE_QMAKE_WRAPPER_FOR_TARGET=ON
 	)
 
 	qt6-build_src_configure

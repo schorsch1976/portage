@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( pypy3 python3_{10..13} )
+PYTHON_COMPAT=( pypy3 pypy3_11 python3_{10..13} )
 inherit bash-completion-r1 distutils-r1 optfeature wrapper
 
 DESCRIPTION="youtube-dl fork with additional features and fixes"
@@ -34,10 +34,10 @@ python_test() {
 		test/test_networking.py::TestHTTPRequestHandler::test_connect_timeout
 		# fails with FEATURES=distcc, bug #915614
 		test/test_networking.py::TestYoutubeDLNetworking::test_proxy\[None-expected2\]
-		# needs (optional) websockets-15 which is not stable yet, and
-		# it is not considered a big issue if websockets tests fails
-		# as not even advertised as a optfeature, so just skip for now
-		test/test_websockets.py::TestWebsSocketRequestHandlerConformance::test_verify_cert\[Websockets\]
+		# websockets tests break easily depending on dev-python/websockets
+		# version and, as far as I know, most users do not use/need it --
+		# thus being neither in RDEPEND nor optfeature (bug #940630,#950030)
+		test/test_websockets.py
 	)
 
 	epytest -m 'not download'

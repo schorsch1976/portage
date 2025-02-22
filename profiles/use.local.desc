@@ -354,6 +354,19 @@ app-crypt/aespipe:cpu_flags_x86_padlock - Use VIA padlock instructions, detected
 app-crypt/badkeys:dkim - Enable dkim scan mode via dev-python/dnspython.
 app-crypt/badkeys:ssh - Enable ssh scan mode via dev-python/paramiko.
 app-crypt/ccid:twinserial - Enable twinserial reader
+app-crypt/certbot:certbot-apache - Enable Apache plugin.
+app-crypt/certbot:certbot-dns-dnsimple - Enable DNSimple Authenticator plugin.
+app-crypt/certbot:certbot-dns-dnsmadeeasy - Enable DNS Made Easy DNS Authenticator plugin.
+app-crypt/certbot:certbot-dns-gehirn - Enable Gehirn Infrastructure Service DNS Authenticator plugin.
+app-crypt/certbot:certbot-dns-google - Enable Google Cloud DNS Authenticator plugin.
+app-crypt/certbot:certbot-dns-linode - Enable Linode DNS Authenticator plugin plugin.
+app-crypt/certbot:certbot-dns-luadns - Enable LuaDNS Authenticator plugin.
+app-crypt/certbot:certbot-dns-nsone - Enable NS1 DNS Authenticator plugin.
+app-crypt/certbot:certbot-dns-ovh - Enable OVH DNS Authenticator plugin.
+app-crypt/certbot:certbot-dns-rfc2136 - Enable RFC 2136 DNS Authenticator plugin.
+app-crypt/certbot:certbot-dns-route53 - Enable Route53 DNS Authenticator plugin.
+app-crypt/certbot:certbot-dns-sakuracloud - Enable Sakura Cloud DNS Authenticator plugin.
+app-crypt/certbot:certbot-nginx - Enable Nginx plugin.
 app-crypt/codecrypt:cryptopp - Build algorithms that need Crypto++ support dev-libs/crypto++
 app-crypt/dehydrated:cron - Install cron job to sign/renew non-existent/changed/expiring certificates
 app-crypt/eid-mw:dialogs - Enable "askaccess" dialog box, by using x11-libs/gtk+
@@ -559,6 +572,7 @@ app-emulation/fuse:backend-svga - Use svgalib rendering backend
 app-emulation/fuse:memlimit - Add compile-time memory usage limiting
 app-emulation/fuse-utils:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/grub-xen-host:pvh - Build an additional grub bin for pvh.
+app-emulation/guestfs-tools:libvirt - Use app-emulation/libvirt to manipulate VMs
 app-emulation/hercules-sdl:object-rexx - Enable REXX support via Open Object Rexx (dev-lang/oorexx)
 app-emulation/hercules-sdl:regina-rexx - Enable REXX support via Regina Rexx (dev-lang/regina-rexx)
 app-emulation/libcacard:passthrough - Enable smartcard passthrough support via sys-apps/pcsc-lite
@@ -2552,9 +2566,6 @@ dev-python/reedsolo:native-extensions - Compile native C extensions.
 dev-python/rfc3986:idna - enable support for the IDNA specification (RFC 5891)
 dev-python/rpyc:gdb - Run tests depending on dev-debug/gdb
 dev-python/rpyc:numpy - Run tests depending on dev-python/numpy, dev-python/pandas
-dev-python/shiboken6:docstrings - Expose documentation as Python docstrings (recommended)
-dev-python/shiboken6:numpy - Implicitly convert passed NumPy arrays to Qt lists
-dev-python/shiboken6:vulkan - Generate "QSurface::VulkanSurface" bindings
 dev-python/simplejson:native-extensions - Compiles native "C" extensions (speedups, instead of using Python fallback code).
 dev-python/stripe:telemetry - Enable sending "telemetry to Stripe regarding request latency and feature usage" by default. Upstream enables it by default in their PyPI distribution; it can also be explicitly controlled via stripe.enable_telemetry variable (boolean).
 dev-python/subprocess-tee:test-full - Enable full test mode. Pulls in many additional dependencies, and requires having been emerged without this flag first in order to avoid a circular dependency.
@@ -4605,6 +4616,7 @@ media-plugins/gst-plugins-vaapi:drm - Enable DRM renderer
 media-plugins/gst-plugins-vaapi:gles2 - Enable GLESv2 and GLESv3 support
 media-plugins/imlib2_loaders:xcf - Enable XCF image loader
 media-plugins/ir_lv2:tools - Build convert4chan tool
+media-plugins/live:tools - Build test tools
 media-plugins/mpg123-output-plugins:int-quality - Use rounding instead of fast truncation for integer output, where possible
 media-plugins/vdr-cdplayer:cdparanoia - Enable cdparanoia (audio CD ripper) support
 media-plugins/vdr-dvbapi:dvbcsa - use media-libs/libdvbcsa free implementation of the DVB Common Scrambling Algorithm

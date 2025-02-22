@@ -86,8 +86,6 @@ RDEPEND="
 DEPEND="
 	${RDEPEND}
 "
-# TODO: 4.0.0_rc1 release notes say:
-# "Perl is no longer required to build Wireshark, but may be required to build some source code files and run code analysis checks."
 BDEPEND="
 	${PYTHON_DEPS}
 	dev-lang/perl
@@ -153,19 +151,6 @@ src_configure() {
 	local mycmakeargs
 
 	python_setup
-
-	# Workaround bug #213705. If krb5-config --libs has -lcrypto then pass
-	# --with-ssl to ./configure. (Mimics code from acinclude.m4).
-	if use kerberos ; then
-		case $(krb5-config --libs) in
-			*-lcrypto*)
-				ewarn "Kerberos was built with ssl support: linkage with openssl is enabled."
-				ewarn "Note there are annoying license incompatibilities between the OpenSSL"
-				ewarn "license and the GPL, so do your check before distributing such package."
-				mycmakeargs+=( -DENABLE_GNUTLS=$(usex ssl) )
-				;;
-		esac
-	fi
 
 	if use gui ; then
 		append-cxxflags -fPIC -DPIC
@@ -252,11 +237,6 @@ src_configure() {
 
 src_test() {
 	cmake_build test-programs
-
-	EPYTEST_DESELECT=(
-		# https://gitlab.com/wireshark/wireshark/-/issues/20330
-		suite_sharkd.py::TestSharkd::test_sharkd_req_follow_http2
-	)
 
 	# https://www.wireshark.org/docs/wsdg_html_chunked/ChTestsRunPytest.html
 	epytest \
