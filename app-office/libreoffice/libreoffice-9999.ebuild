@@ -49,13 +49,13 @@ ADDONS_SRC=(
 	# not packaged in Gentoo, https://www.netlib.org/fp/dtoa.c
 	"${ADDONS_URI}/dtoa-20180411.tgz"
 	# not packaged in Gentoo, https://github.com/serge-sans-paille/frozen
-	"${ADDONS_URI}/frozen-1.1.1.tar.gz"
+	"${ADDONS_URI}/frozen-1.2.0.tar.gz"
 	# not packaged in Gentoo, https://skia.org/
-	"${ADDONS_URI}/skia-m116-2ddcf183eb260f63698aa74d1bb380f247ad7ccd.tar.xz"
+	"${ADDONS_URI}/skia-m130-3c64459d5df2fa9794b277f0959ed8a92552bf4c.tar.xz"
 	# not packaged in Gentoo, https://github.com/tsyrogit/zxcvbn-c
 	"${ADDONS_URI}/zxcvbn-c-2.5.tar.gz"
+
 	"base? (
-		${ADDONS_URI}/commons-logging-1.2-src.tar.gz
 		${ADDONS_URI}/ba2930200c9f019c2d93a8c88c651a0f-flow-engine-0.9.4.zip
 		${ADDONS_URI}/d8bd5eed178db6e2b18eeed243f85aa8-flute-1.1.6.zip
 		${ADDONS_URI}/eeb2c7ddf0d302fba4bfc6e97eac9624-libbase-1.1.6.zip
@@ -70,7 +70,7 @@ ADDONS_SRC=(
 	)"
 	# Java-WebSocket: not packaged in Gentoo, https://github.com/TooTallNate/Java-WebSocket
 	"java? (
-		${ADDONS_URI}/Java-WebSocket-1.5.6.tar.gz
+		${ADDONS_URI}/Java-WebSocket-1.6.0.tar.gz
 		${ADDONS_URI}/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_0.zip
 	)"
 	# no release for 8 years, should we package it?
@@ -93,7 +93,7 @@ KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86 ~amd64-linux"
 LO_EXTS="nlpsolver scripting-beanshell scripting-javascript wiki-publisher"
 
 IUSE="accessibility base bluetooth +branding clang coinmp +cups custom-cflags +dbus debug eds
-googledrive gstreamer +gtk kde ldap +mariadb odk pdfimport postgres qt6 test valgrind vulkan
+googledrive gstreamer gtk kde ldap +mariadb odk pdfimport postgres qt6 test valgrind vulkan
 $(printf 'libreoffice_extensions_%s ' ${LO_EXTS})"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
@@ -166,7 +166,7 @@ COMMON_DEPEND="${PYTHON_DEPS}
 	media-libs/libzmf
 	media-libs/openjpeg:=
 	media-libs/tiff:=
-	media-libs/zxing-cpp:=
+	>=media-libs/zxing-cpp-2.3.0:=
 	net-misc/curl
 	sci-mathematics/lpsolve:=
 	sys-libs/zlib
@@ -197,10 +197,9 @@ COMMON_DEPEND="${PYTHON_DEPS}
 	gtk? (
 		app-accessibility/at-spi2-core:2
 		dev-libs/glib:2
-		dev-libs/gobject-introspection
 		gnome-base/dconf
 		media-libs/mesa[egl(+)]
-		x11-libs/gtk+:3[X]
+		gui-libs/gtk[X]
 		x11-libs/pango
 	)
 	kde? (
@@ -228,7 +227,7 @@ DEPEND="${COMMON_DEPEND}
 	dev-perl/Archive-Zip
 	>=dev-util/cppunit-1.14.0
 	>=dev-util/gperf-3.1
-	dev-util/mdds:1/2.1
+	dev-util/mdds:1/3.0
 	media-libs/glm
 	x11-base/xorg-proto
 	x11-libs/libXt
@@ -295,10 +294,10 @@ PATCHES=(
 	# not upstreamable stuff
 	"${FILESDIR}/${PN}-6.1-nomancompress.patch"
 	"${FILESDIR}/${PN}-24.2-qtdetect.patch"
+	"${FILESDIR}/${PN}-25.2-cflags.patch"
 
 	# TODO: upstream
-	"${FILESDIR}/${PN}-24.8-unused-qt5network.patch"
-	"${FILESDIR}/${PN}-24.8-unused-qt6network.patch"
+	"${FILESDIR}/${PN}-25.2-unused-qt6network.patch"
 )
 
 _check_reqs() {
@@ -358,15 +357,6 @@ src_prepare() {
 	# hack in the autogen.sh
 	touch autogen.lastrun
 
-	# sed in the tests
-	sed -i \
-		-e "s#all : build unitcheck#all : build#g" \
-		solenv/gbuild/Module.mk || die
-	sed -i \
-		-e "s#check: dev-install subsequentcheck#check: unitcheck slowcheck dev-install subsequentcheck#g" \
-		-e "s#Makefile.gbuild all slowcheck#Makefile.gbuild all#g" \
-		Makefile.in || die
-
 	sed -i \
 		-e "s,/usr/share/bash-completion/completions,$(get_bashcompdir)," \
 		-e "s,\$INSTALLDIRNAME.sh,${PN}," \
@@ -410,9 +400,6 @@ src_configure() {
 		RANLIB=llvm-ranlib
 		LDFLAGS+=" -fuse-ld=lld"
 
-		# Workaround for bug #907905
-		filter-lto
-
 		# Not implemented by Clang, bug #903889
 		filter-flags -Wlto-type-mismatch -Werror=lto-type-mismatch
 	else
@@ -428,6 +415,10 @@ src_configure() {
 		# bug #838115
 		sed -i -e "s/-flto=thin/-flto/" solenv/gbuild/platform/com_GCC_defs.mk || die
 	fi
+
+	# ODR violations (not just in skia/vulkan): bug #916435
+	# Runtime crashes with Clang: bug #907905
+	filter-lto
 
 	if use custom-cflags ; then
 		elog "USE=custom-cflags has been selected. You are on your own to make sure that"
@@ -473,6 +464,8 @@ src_configure() {
 	# --without-system-sane: just sane.h header that is used for scan in writer,
 	#   not linked or anything else, worthless to depend on
 	# --disable-pdfium: not yet packaged
+	# --disable-qt6-multimedia: TODO
+	# --disable-cpdb: not yet packaged
 	local myeconfargs=(
 		--with-system-dicts
 		--with-system-epoxy
@@ -490,14 +483,20 @@ src_configure() {
 		--disable-breakpad
 		--disable-bundle-mariadb
 		--disable-ccache
+		--disable-cpdb
 		--disable-epm
 		--disable-fetch-external
 		--disable-firebird-sdbc
+		--disable-gtk3
 		--disable-gtk3-kde5
+		# Coveered by our own toolchain defaults
+		--disable-hardening-flags
 		--disable-online-update
 		--disable-openssl
 		--disable-pdfium
 		--disable-qt5
+		--disable-qt6-multimedia
+		--without-dotnet
 		--with-extra-buildid="${gentoo_buildid}"
 		--enable-extension-integration
 		--with-external-dict-dir="${EPREFIX}/usr/share/myspell"
@@ -522,6 +521,7 @@ src_configure() {
 		--without-system-libfixmath
 		--without-system-sane
 		--without-system-zxcvbn
+		--without-system-java-websocket
 		$(use_enable base report-builder)
 		$(use_enable bluetooth sdremote-bluetooth)
 		$(use_enable coinmp)
@@ -530,7 +530,7 @@ src_configure() {
 		$(use_enable debug)
 		$(use_enable eds evolution2)
 		$(use_enable gstreamer gstreamer-1-0)
-		$(use_enable gtk gtk3)
+		$(use_enable gtk gtk4)
 		$(use_enable kde kf6)
 		$(use_enable ldap)
 		$(use_enable odk)
@@ -547,7 +547,7 @@ src_configure() {
 		$(use_with valgrind)
 	)
 
-	if use eds || use gtk; then
+	if use eds || use gtk ; then
 		myeconfargs+=( --enable-dconf --enable-gio )
 	else
 		myeconfargs+=( --disable-dconf --disable-gio )
@@ -588,22 +588,23 @@ src_compile() {
 	addpredict /dev/ati
 	addpredict /dev/nvidiactl
 
-	default
+	emake -Onone
 }
 
 src_test() {
-	emake unitcheck
-	emake slowcheck
+	emake -Onone unitcheck
+	emake -Onone slowcheck
 }
 
 src_install() {
-	emake DESTDIR="${D}" distro-pack-install -o build -o check
+	emake -Onone DESTDIR="${D}" distro-pack-install
 
-	# bug 593514
-	if use gtk; then
-		dosym libreoffice/program/liblibreofficekitgtk.so \
-			/usr/$(get_libdir)/liblibreofficekitgtk.so
-	fi
+	# TODO: still relevant for gtk4?
+	# bug #593514
+	#if use gtk3; then
+	#	dosym libreoffice/program/liblibreofficekitgtk.so \
+	#		/usr/$(get_libdir)/liblibreofficekitgtk.so
+	#fi
 
 	# bash completion aliases
 	bashcomp_alias \
