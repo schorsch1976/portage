@@ -453,17 +453,12 @@ app-emulation/virtualbox-kvm
 # exim_tinydb utility crashes due to invalid free() (used in startup script)
 =mail-mta/exim-4.98
 
-# Leonardo Hernández Hernández <leohdz172@proton.me> (2024-07-07)
-# New major ffmpeg version. Tracker bug #928905.
->=media-video/ffmpeg-7.0
-
 # Sam James <sam@gentoo.org> (2024-06-25)
 # The symbol versioning "fix" breaks anything built with 3.0.0.
 =dev-libs/libassuan-3.0.1
 
 # Alfredo Tupone <tupone@gentoo.org> (2024-06-09)
 # Not ready for testing
->=dev-lang/ocaml-5
 dev-ml/sexplib0:0/0.17
 dev-ml/ocaml_intrinsics:0/0.17
 dev-ml/ocaml_intrinsics_kernel:0/0.17
