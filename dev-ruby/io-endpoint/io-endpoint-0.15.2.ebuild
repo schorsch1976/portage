@@ -3,7 +3,7 @@
 
 EAPI=8
 
-USE_RUBY="ruby32 ruby33"
+USE_RUBY="ruby32 ruby33 ruby34"
 
 RUBY_FAKEGEM_RECIPE_TEST="sus"
 RUBY_FAKEGEM_EXTRADOC="readme.md"
@@ -29,6 +29,9 @@ all_ruby_prepare() {
 	sed -i -E 's/require_relative "(.+)"/require File.expand_path("\1")/g' "${RUBY_FAKEGEM_GEMSPEC}" || die
 
 	sed -e '/covered/I s:^:#:' -i config/sus.rb || die
+
+	sed -e "s:/tmp/test.ipc:${TMP}/test.ipc:" \
+		-i test/io/endpoint/unix_endpoint.rb || die
 
 	# Avoid tests that require unpackaged "bake" and require running
 	# with Bundler.
