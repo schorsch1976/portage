@@ -1,6 +1,8 @@
 # Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Uses GLEP 84 format
+
 ####################################################################
 #
 # When you add an entry to the top of this file, add your name, the date
@@ -20,18 +22,38 @@
 # - Best last rites (removal) practices -
 # Include the following info:
 # a) reason for masking
-# b) bug # for the removal (and yes you should have one)
-# c) date of removal (either the date or "in x days")
+# b) date of removal
+# c) bug # for the removal (and yes you should have one)
+#
+# See GLEP 84 for the full description of the format.
 #
 ## Example:
 ##
 ## # Dev E. Loper <developer@gentoo.org> (2019-07-01)
-## # Masked for removal in 30 days.  Doesn't work
-## # with new libfoo. Upstream dead, gtk-1, smells
-## # funny. (bug #987654)
+## # Doesn't work with new libfoo. Upstream dead, gtk-1, smells funny.
+## # Removal on 2019-08-01. Bug #987654.
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-04-24)
+# A pain to maintain. No more revdeps. Bug #925718
+dev-qt/qtwebengine:5
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-04-24)
+# Requires Qt5WebEngine; bug #925722
+# Removal on 2025-05-24 - with a good chance to be kept if ported by then.
+www-client/otter
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-04-24)
+# Requires Qt5WebEngine; no more revdeps. Bug #926684
+# Removal on 2025-05-24.
+dev-python/pyqtwebengine
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-04-24)
+# Dead upstream, Qt5 based, no more revdeps. Bug #949019
+# Removal on 2025-05-24.
+dev-python/python-poppler-qt5
 
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-04-22)
 # Dead upstream, depends on downstream patching even for Qt5 support.
@@ -211,13 +233,6 @@ net-im/yowsup
 # Sam James <sam@gentoo.org> (2025-03-27)
 # Large-scale breakage (bug #951350).
 =dev-build/cmake-4*
-
-# Maciej Barć <xgqt@gentoo.org> (2025-03-25)
-# It is possible Gentoo could be hit by "legal" action when having this package.
-# Very unstable development, switches upstream to avoid "legal" trouble.
-# See also: bug #948196 bug #927392
-# Removal on 2025-04-25.
-games-emulation/ryujinx
 
 # Michał Górny <mgorny@gentoo.org> (2025-03-17)
 # Xfce 4.22 prereleases.  Masked because they tend to be quite unstable.
