@@ -36,6 +36,28 @@
 
 #--- END OF EXAMPLES ---
 
+# Matt Jolly <kangie@gentoo.org> (2025-04-28)
+# Unmaintained in Gentoo, depends on masked x11-wm/fvwm,
+# SRC_URI uses mirror://gentoo and the files don't exist on mirrors.
+# Bug #949035; Removal on 2025-05-28 (with x11-wm/fvwm)
+x11-themes/fvwm_icons
+x11-themes/fvwm_sounds
+
+# Matt Jolly <kangie@gentoo.org> (2025-04-28)
+# Unmaintained in Gentoo, is not supported upstream,
+# and has a modern successor that does not bring in additional dependencies.
+# Migrate to x11-wm/fvwm3: https://github.com/fvwmorg/fvwm3/discussions/878
+# Bug #949035; removal on 2025-05-28.
+x11-wm/fvwm
+x11-themes/fvwm-themes
+x11-themes/fvwm-themes-extra
+=x11-themes/fvwm-crystal-3.7.5
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-04-28)
+# Package destabilisation mask for potential runtime errors and lack of
+# Qt6-compatible plugins. Bug #955031
+~sci-geosciences/qgis-3.38.3
+
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-04-26)
 # Dead upstream, stuck on Qt5, blocking x11-libs/qscintilla[qt5] cleanup
 # Bug #947297; removal on 2025-05-26
@@ -47,10 +69,6 @@ dev-db/sqliteman
 sci-visualization/scidavis
 x11-libs/qwtplot3d
 x11-libs/qwt:5
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2025-04-24)
-# A pain to maintain. No more revdeps. Bug #925718
-dev-qt/qtwebengine:5
 
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-04-24)
 # Requires Qt5WebEngine; bug #925722
@@ -216,13 +234,6 @@ dev-java/jchart2d
 dev-java/jcalendar
 dev-java/jgoodies-looks
 dev-java/jgoodies-common
-
-# Andreas Sturmlechner <asturm@gentoo.org> (2025-03-30)
-# Depends on dev-python/python-poppler-qt5, stuck on py3.12, new 0.7.0
-# release available w/ PyQt6 support would require packaging new pymupdf
-# dependency (bug #949686). Use media-gfx/inkscape or app-text/pdfarranger
-# alternatively. Removal on 2025-04-29. Bugs #947726, #952250
-app-text/krop
 
 # Conrad Kostecki <conikost@gentoo.org> (2025-03-28)
 # Upstream is dead and broken. All 'whatsapp' deps
