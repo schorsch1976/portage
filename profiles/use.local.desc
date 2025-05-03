@@ -1320,7 +1320,6 @@ dev-ada/langkit-contrib:static-pic - Build static library with pic code
 dev-ada/libadalang:static-pic - Build static library with pic code
 dev-ada/libadalang-tools:shared - Build shared library
 dev-ada/libadalang-tools:static-pic - Build static library with pic code
-dev-ada/libgpr:shared - Build shared library
 dev-ada/libgpr:static-pic - Build static library with pic code
 dev-ada/prettier-ada:shared - Build shared library
 dev-ada/prettier-ada:static-pic - Build static library with pic code
@@ -2028,7 +2027,6 @@ dev-libs/ktextaddons:designer - Build plugins for dev-qt/designer
 dev-libs/libbase58:tools - Build command line base58 tool
 dev-libs/libbytesize:tools - Build bscalc python CLI tool
 dev-libs/libcdio:minimal - Only build the libcdio library and little more, just to be used to link against from multimedia players. With this USE flag enabled, none of the command-line utilities are built, nor is the CDDA library.
-dev-libs/libcec:cubox - Enable support for enable support for the TDA995x
 dev-libs/libcec:exynos - Enable support for Exynos chipsets
 dev-libs/libcec:kernel-cec - Enable support for Linux kernel CEC framework
 dev-libs/libcec:tools - Enable build of cec-client and other test and demo executable tools
@@ -3630,6 +3628,7 @@ kde-frameworks/kplotting:designer - Build plugins for dev-qt/designer
 kde-frameworks/ktexteditor:editorconfig - Enable support for EditorConfig configuration files
 kde-frameworks/ktextwidgets:designer - Build plugins for dev-qt/designer
 kde-frameworks/kwallet:gpg - Support wallets with GnuPG encryption in addition to the default blowfish-encrypted file
+kde-frameworks/kwallet:minimal - Pull in required runtime components for KWallet via kde-frameworks/kwallet
 kde-frameworks/kwidgetsaddons:designer - Build plugins for dev-qt/designer
 kde-frameworks/kxmlgui:designer - Build plugins for dev-qt/designer
 kde-frameworks/networkmanager-qt:teamd - Enable Teamd control support
@@ -7630,7 +7629,6 @@ sci-mathematics/petsc:int64 - Use 64 bit indexes
 sci-mathematics/petsc:metis - Add support for metis (sci-libs/parmetis)
 sci-mathematics/petsc:mumps - Add support for mumps (sci-libs/mumps)
 sci-mathematics/petsc:scotch - Add support for scotch (sci-libs/scotch)
-sci-mathematics/petsc:sparse - Use suitesparse (sci-libs/suitesparse) including cholmod (sci-libs/cholmod) for sparse factorization
 sci-mathematics/petsc:superlu - Use superlu (sci-libs/superlu) for preconditioning
 sci-mathematics/polymake:bliss - Enable sci-libs/bliss interface for graph and face lattice isomorphism computations.
 sci-mathematics/polymake:cdd - Enable sci-libs/cddlib interface for convex hull computations (Should be kept enabled).
