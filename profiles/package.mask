@@ -36,6 +36,23 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2025-05-03)
+# Not actively maintained in ::gentoo.  Last bumped a year ago.
+# Still on EAPI 7, no Python 3.13 support, does not work with new
+# dev-lang/swig.  Lots of bugs open.
+# Removal on 2025-06-02.  Bug #950475, #952653.
+sci-chemistry/modeller
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-05-03)
+# Dead upstream since 2014, depends on Qt5. Bug #949079
+# Removal  on 2025-05-31
+media-video/ffdiaporama
+
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-05-03)
+# Dead upstream since 2011, relies on downstream patching even for Qt5.
+# No one else packages this. Bugs #644482, #953769; removal on 2025-05-31
+sci-electronics/osqoop
+
 # Matt Turner <mattst88@gentoo.org> (2024-05-02)
 # Masked for testing
 =dev-util/mesa_clc-25.1*
@@ -152,10 +169,6 @@ dev-python/unittest-or-fail
 # ruby32-only slot. Use the newer slot instead.
 # Masked for removal on 2025-05-21.
 dev-ruby/highline:2
-
-# Sam James <sam@gentoo.org> (2025-04-21)
-# Several packages need porting. Tracker bug #954128.
-=dev-python/cython-3.1*
 
 # Hans de Graaff <graaff@gentoo.org> (2025-04-20)
 # ruby32-only slot. Use the newer slot instead.

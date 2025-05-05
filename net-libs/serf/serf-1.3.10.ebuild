@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..13} )
 inherit flag-o-matic python-any-r1 scons-utils toolchain-funcs
 
 DESCRIPTION="HTTP client library"
@@ -28,7 +28,6 @@ RDEPEND="
 	kerberos? ( virtual/krb5 )
 "
 DEPEND="${RDEPEND}"
-BDEPEND=">=dev-build/scons-2.3.0"
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-1.3.8-static-lib.patch
