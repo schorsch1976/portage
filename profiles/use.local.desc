@@ -1580,7 +1580,7 @@ dev-games/physfs:qpak - Enable Quake I/II QPAK archive support
 dev-games/physfs:slb - Enable Independence War SLB archive support
 dev-games/physfs:vdf - Enable Gothic/Gothic II VDF archive support
 dev-games/physfs:wad - Enable Doom WAD archive support
-dev-games/simgear:dns - Enable DNS resolver via net-libs/udns
+dev-games/simgear:ffmpeg - Enable video recording via media-video/ffmpeg
 dev-games/simgear:gdal - Enable alternative terrain engine based on pagedLOD via sci-libs/gdal
 dev-games/simgear:subversion - Enable terrasync scenery downloader
 dev-games/tiled:minimal - Exclude optional plugins, development headers and examples
@@ -2919,6 +2919,7 @@ dev-util/mingw64-runtime:idl - Install idl files
 dev-util/mingw64-runtime:libraries - Build extra libraries: mangle, pseh, winpthreads
 dev-util/mingw64-runtime:tools - Build extra tools: gendef, genidl, widl
 dev-util/mingw64-toolchain:bin-symlinks - Symlink executables to usr/bin to be in default PATH (conflicts with crossdev mingw, and crossdev is preferable for a fully featured toolchain)
+dev-util/nvidia-cuda-toolkit:clang - Depend on llvm-core/clang as host compiler
 dev-util/nvidia-cuda-toolkit:debugger - Install the CUDA debugger
 dev-util/nvidia-cuda-toolkit:nsight - Install profiling and optimizing tools (nsight-compute, nsight-systems)
 dev-util/nvidia-cuda-toolkit:profiler - Install the NVIDIA CUDA profiler (nvprof) and the related libraries
@@ -3289,7 +3290,7 @@ games-simulation/corsix-th:midi - Adds support for background MIDI music via SDL
 games-simulation/corsix-th:tools - Build tools for decoding RNC files
 games-simulation/flightgear:dbus - Enable screensaver DBus interaction
 games-simulation/flightgear:gdal - Enable alternative terrain engine based on pagedLOD using sci-libs/gdal
-games-simulation/flightgear:qt5 - Build Qt5 launcher application
+games-simulation/flightgear:qt6 - Build Qt6 launcher application
 games-simulation/flightgear:udev - Enable event-based Input devices through virtual/udev
 games-simulation/flightgear:utils - Build various utilities (fgpanel, fgviewer among others)
 games-simulation/openrct2:scripting - Enable the dev-lang/duktape scripting engine for executing user scripts.
@@ -5361,7 +5362,6 @@ media-video/rav1e:capi - Build the C-API library and header file
 media-video/rtmpdump:gnutls - Use GnuTLS instead of OpenSSL for Cryptography
 media-video/rtmpdump:ssl - Enable Cryptographic features
 media-video/rtmpdump:tools - Enable installation of various binary tools in addition to librtmp library
-media-video/simplescreenrecorder:asm - Enable x86 assembly optimisation.
 media-video/totem:python - Build dev-lang/python using plugins (dbusservice for notifications and MPRIS control, interactive python console and opensubtitles lookup)
 media-video/vdr:alternatechannel - Use alternate channel on record
 media-video/vdr:bidi - fribidi support, for languages, written from right to left
@@ -6080,8 +6080,6 @@ net-irc/soju:moderncsqlite - Use moderncsqlite, a cgo-free port of SQLite
 net-irc/unrealircd:class-nofakelag - Enable an unsupported class::options flag called “nofakelag” allowing you to grant fakelag exemption to normal user (instead of just opers).
 net-irc/unrealircd:operoverride - Enable OperOverride extension
 net-irc/unrealircd:operoverride-verify - Enable requiring opers to invite themselves to +s/+p channels
-net-irc/unrealircd:prefixaq - Enable chanadmin and chanowner prefixes
-net-irc/unrealircd:showlistmodes - Display channel modes in /LIST (only configured at compiletime)
 net-irc/weechat:alias - Enable plugin for alias control
 net-irc/weechat:buflist - Enable buflist plugin
 net-irc/weechat:charset - Enable encoding conversions
@@ -6799,13 +6797,11 @@ net-p2p/bitcoin-core:cli - Build and install bitcoin-cli command line interface
 net-p2p/bitcoin-core:daemon - Build and install bitcoind daemon
 net-p2p/bitcoin-core:external-signer - Include support for external wallet signer programs
 net-p2p/bitcoin-core:gui - Build and install Bitcoin-Qt GUI
-net-p2p/bitcoin-core:nat-pmp - Enable NAT-PMP port forwarding
 net-p2p/bitcoin-core:qrcode - Enable generation of QR Codes for receiving payments
 net-p2p/bitcoin-core:sqlite - Support descriptor wallets in SQLite format
 net-p2p/bitcoin-core:system-libsecp256k1 - Link with dev-libs/libsecp256k1 rather than embedding an internal copy
 net-p2p/bitcoin-core:systemtap - Enable SystemTap/DTrace tracing
 net-p2p/bitcoin-core:test-full - Run tests that take a long time
-net-p2p/bitcoin-core:upnp - Enable Universal Plug and Play
 net-p2p/bitcoin-core:zeromq - Report blocks and transactions via zeromq
 net-p2p/dbhub:switch-user - Enable support for switching user
 net-p2p/deluge:console - Enable default console UI
@@ -7698,6 +7694,7 @@ sci-ml/XNNPACK:assembly - Build with assembly micro-kernels
 sci-ml/XNNPACK:jit - Build with JIT micro-kernels
 sci-ml/XNNPACK:memopt - Build with optimized memory allocation scheme
 sci-ml/XNNPACK:sparse - Build with graph rewriting for sparse inference
+sci-ml/caffe2:cusparselt - Use the CUDA Sparse Matrix Multiplication
 sci-ml/caffe2:distributed - Support distributed applications
 sci-ml/caffe2:fbgemm - Use sci-ml/FBGEMM
 sci-ml/caffe2:flash - Enable flash attention
@@ -8213,6 +8210,7 @@ sys-cluster/ceph:uring - Build with support for sys-libs/liburing
 sys-cluster/ceph:xfs - Add xfs support
 sys-cluster/ceph:zbd - Enable sys-block/libzbd bluestore backend
 sys-cluster/charliecloud:ch-image - Build the internal builder ch-image (previously named ch-grow)
+sys-cluster/charliecloud:fuse - Enable FUSE support for mounting squashfs images
 sys-cluster/charm:ampi - Build implementation of MPI on top of Charm++
 sys-cluster/charm:charmdebug - Enable the charm debugger
 sys-cluster/charm:charmproduction - Optimize performance of Charm++ runtime
@@ -8529,7 +8527,6 @@ sys-libs/libnbd:fuse - Install the sys-fs/fuse powered nbdfuse.
 sys-libs/libnbd:go - Build bindings for dev-lang/go
 sys-libs/libnvme:json - Support JSON output via dev-libs/json-c
 sys-libs/libnvme:keyutils - Add support for sys-apps/keyutils
-sys-libs/libnvme:uring - uring support via sys-libs/liburing
 sys-libs/libnvme:uuid - UUID support via sys-apps/util-linux
 sys-libs/libseccomp:experimental-loong - Add experimental LoongArch patchset
 sys-libs/libunwind:debug-frame - Adds support for DWARF .debug_frame section: Use the information from this section if available
@@ -8680,6 +8677,7 @@ www-client/chromium:official - Enable Official build instead of Developer build.
 www-client/chromium:pax-kernel - Allow building on a PaX-enabled kernel
 www-client/chromium:pgo - Build with Profile Guided Optimizations (2-stage compilation)
 www-client/chromium:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
+www-client/chromium:rar - Enable the Safe Browsing feature to inspect RAR files.
 www-client/chromium:system-harfbuzz - Use system media-libs/harfbuzz instead of the bundled library.
 www-client/chromium:system-icu - Use system dev-libs/icu instead of the bundled one
 www-client/chromium:system-png - Use system media-libs/libpng instead of the bundled library
