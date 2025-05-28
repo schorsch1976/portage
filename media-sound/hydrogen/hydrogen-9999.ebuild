@@ -24,7 +24,7 @@ IUSE="alsa +archive doc jack ladspa osc oss portaudio portmidi pulseaudio"
 
 DEPEND="
 	dev-qt/qtbase:6[gui,network,widgets,xml]
-	dev-qt/qtsvg:5
+	dev-qt/qtsvg:6
 	media-libs/libsndfile
 	alsa? ( media-libs/alsa-lib )
 	archive? ( app-arch/libarchive:= )
@@ -58,7 +58,6 @@ src_configure() {
 		-DWANT_LIBARCHIVE=$(usex archive)
 		-DWANT_JACK=$(usex jack)
 		-DWANT_LADSPA=$(usex ladspa)
-		-DWANT_LIBARCHIVE=$(usex archive)
 		-DWANT_LRDF=$(usex ladspa)
 		-DWANT_OSC=$(usex osc)
 		-DWANT_OSS=$(usex oss)
