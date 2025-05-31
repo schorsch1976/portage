@@ -267,6 +267,7 @@ app-arch/p7zip:natspec - Use dev-libs/libnatspec to correctly decode non-ascii f
 app-arch/p7zip:rar - Enable support for non-free rar decoder
 app-arch/rar:all-sfx - Install all SFX (Self-Extracting) files rather than just the native format (allows creation of Windows EXEs on Linux ELF systems)
 app-arch/rpm:sequoia - Use app-crypt/rpm-sequoia instead of the deprecated internal parser
+app-arch/sasquatch:deprecated - Enable deprecated LZMA1 support
 app-arch/tar:minimal - just install `tar`
 app-arch/unzip:natspec - Use dev-libs/libnatspec to correctly decode non-ascii file names archived in Windows.
 app-arch/wimlib:fuse - Use fuse libraries
@@ -1165,7 +1166,6 @@ app-text/enchant:hunspell - Adds support for app-text/hunspell spell checker
 app-text/enchant:nuspell - Adds support for app-text/nuspell spell checker
 app-text/enchant:voikko - Adds support for dev-libs/libvoikko spell checker
 app-text/evince:dvi - Enable the built-in DVI viewer
-app-text/evince:nautilus - Enable property page extension in gnome-base/nautilus
 app-text/evince:postscript - Enable support for PostScript and Adobe Illustrator documents with app-text/libspectre
 app-text/evince:spell - Enable inline spell check for annotations via app-text/gspell
 app-text/evince:xps - Enable XPS viewer using app-text/libgxps
@@ -1540,18 +1540,23 @@ dev-games/ogre:bullet - Use sci-physics/bullet for physics plugin
 dev-games/ogre:cache - Enable GL state cache support
 dev-games/ogre:cg - NVIDIA toolkit plugin
 dev-games/ogre:deprecated - Build deprecated nodeless positioning of Lights and Cameras.
+dev-games/ogre:dotscene - DotScene (.scene) file format support through dev-libs/pugixml
 dev-games/ogre:double-precision - More precise calculations at the expense of speed
 dev-games/ogre:egl - Use egl instead of glx
+dev-games/ogre:egl-only - Use EGL instead of GLX
 dev-games/ogre:fine-granularity - Enable fine light mask granularity. This impacts on performance and should not be enabled unless an application really needs it.
 dev-games/ogre:freeimage - Support images via media-libs/freeimage
 dev-games/ogre:gl3plus - Build OpenGL 3+ RenderSystem
 dev-games/ogre:gles3 - Enable OpenGL ES 3.x Features
+dev-games/ogre:glslang - Build Glslang plugin
 dev-games/ogre:json - Use dev-libs/rapidjson (needed by Hlms JSON materials)
 dev-games/ogre:legacy-animations - Use the skeletal animation from 1.x. It's much slower, but the new system is still experimental.
 dev-games/ogre:ois - Pull in Object-oriented Input System library dev-games/ois for samples
 dev-games/ogre:poco - When USE=threads, use poco for threading
 dev-games/ogre:resman-pedantic - Resource Manager PEDANTIC : require an explicit resource group. Case sensitive lookup. Some demos might not work with this setting. (default: case-insensitive + sensitive lookup in all groups)
+dev-games/ogre:samples - Build and install Ogre demos
 dev-games/ogre:tbb - When USE=threads, use tbb for threading
+dev-games/ogre:tiny - Build Tiny RenderSystem (software-rendering)
 dev-games/ogre:tools - Build and install AssimpConverter (assimp USE flag is enabled), MeshUpgrader, VRMLConverter and XMLConverter
 dev-games/openscenegraph:collada - Enable DAE file support via dev-libs/collada-dom
 dev-games/openscenegraph:dicom - Enable DICOM medical image file support via sci-libs/dcmtk
@@ -2902,7 +2907,6 @@ dev-util/hip:video_cards_nvidia - Build for Nvidia platform
 dev-util/idea-community:experimental - Enables Wayland support preview.
 dev-util/intel-graphics-compiler:vc - Enable VectorCompiler for a better performance.
 dev-util/intel-graphics-system-controller:cli - Build CLI tools for flashing manually a firmware upgrade.
-dev-util/kcov:binutils - Use sys-libs/binutils-libs for `--verify` support
 dev-util/kdevelop:gdbui - Enable GUI for attaching GDB to a running process
 dev-util/kdevelop:qmake - Enable support for QMake build system
 dev-util/kdevelop:share - Enable support for patch sharing using kde-frameworks/purpose
@@ -3632,7 +3636,6 @@ kde-frameworks/kfilemetadata:epub - Enable support for reading EPUB ebook metada
 kde-frameworks/kfilemetadata:mobi - Enable mobipocket support via kde-apps/kdegraphics-mobipocket
 kde-frameworks/kiconthemes:designer - Build plugins for dev-qt/designer
 kde-frameworks/kimageformats:eps - Support the EPS graphics file format
-kde-frameworks/kinit:caps - Capabilities support for improved security and better OOM handling
 kde-frameworks/kio:designer - Build plugins for dev-qt/designer
 kde-frameworks/kio:kwallet - Enable permanent storage of passwords for kpasswdserver with kde-frameworks/kwallet
 kde-frameworks/kitemmodels:qml - Enable QML support via dev-qt/qtdeclarative
@@ -5117,7 +5120,6 @@ media-video/aravis:viewer - Build the GTK+-based video viewer.
 media-video/bluray_info:mpv - Build bluray_player, powered by media-video/mpv
 media-video/droidcam:gtk - Build the dev-cpp/gtkmm:3.0 client.
 media-video/dvd_info:libmpv - Build DVD player using libmpv
-media-video/ffdiaporama:openclipart - Support openclipart database
 media-video/ffmpeg:amf - Enable AMD's Advanced Media Framework support via media-video/amdgpu-pro-amf
 media-video/ffmpeg:amr - Enable Adaptive Multi-Rate Audio support via media-libs/opencore-amr
 media-video/ffmpeg:amrenc - Enable Adaptive Multi-Rate Audio encoding support via media-libs/vo-amrwbenc
@@ -7454,6 +7456,7 @@ sci-libs/libqalculate:hardened - Disable unsafe functions like 'command' and var
 sci-libs/libsc:romio - Build with support for the ROMIO MPI-IO component
 sci-libs/libsemigroups:eigen - Use dev-cpp/eigen (at build time only) to speed up some matrix operations.
 sci-libs/libsigrok:ftdi - Enable drivers that need dev-embedded/libftdi
+sci-libs/libsigrok:gpib - Enable drivers that need sci-libs/linux-gpib
 sci-libs/libsigrok:hidapi - Enable drivers that need dev-libs/hidapi
 sci-libs/libsigrok:nettle - Enable drivers that need dev-libs/nettle
 sci-libs/libsigrok:parport - Enable drivers that are parallel (IEEE1284) based
@@ -8490,6 +8493,7 @@ sys-kernel/mips-sources:ip27 - Enables additional support for SGI Origin (IP27)
 sys-kernel/mips-sources:ip28 - Enables additional support for SGI Indigo2 Impact R10000 (IP28)
 sys-kernel/mips-sources:ip30 - Enables support for SGI Octane (IP30, 'Speedracer')
 sys-kernel/rt-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
+sys-kernel/vanilla-kernel:generic-uki - Build and install a generic initramfs and Unified Kernel Image, this is intended for building binpkgs with a pre-generated UKI included (EXPERIMENTAL).
 sys-kernel/vanilla-kernel:initramfs - Build initramfs along with the kernel.
 sys-libs/binutils-libs:64-bit-bfd - Support 64-bit targets even on 32-bit hosts (is ignored on 64-bit hosts)
 sys-libs/binutils-libs:cet - Enable Intel Control-flow Enforcement Technology.
