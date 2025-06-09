@@ -36,6 +36,31 @@
 
 #--- END OF EXAMPLES ---
 
+# Jimi Huotari <chiitoo@gentoo.org> (2025-06-07)
+# The only consumer, net-im/qtox, no longer depends on these, and the
+# upstream for them has been dormant since 2021.
+# Bugs: #955911, #957503
+# Removal on 2025-07-07.
+net-libs/toxext
+net-libs/tox_extension_messages
+
+# Michał Górny <mgorny@gentoo.org> (2025-06-07)
+# Broken and dangerous.  Archived in 2022.  The last reverse dependency
+# stopped using it in 2023 (except for outdated ebuilds).
+# Removal on 2025-07-07.  Bug #957272, #806474.
+dev-python/pytest-tempdir
+
+# Arthur Zamarin <arthurzam@gentoo.org> (2025-06-07)
+# EAPI=7, maintainer-needed, fails to compile, upstream gone, not
+# packaged anywhere else.
+# Removal on 2025-07-07.  Bug #957444.
+dev-util/bin_replace_string
+
+# Michał Górny <mgorny@gentoo.org> (2025-06-07)
+# Destabilized due to unresolved test failures.  If you need this
+# package, please use the ~arch version.
+=dev-python/lmdb-1.5.1
+
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-06-04)
 # Breaks at least app-office/scribus and media-gfx/inkscape right now.
 # Bugs #957137, #957138
@@ -277,13 +302,13 @@ net-im/yowsup
 
 # Michał Górny <mgorny@gentoo.org> (2025-03-17)
 # Xfce 4.22 prereleases.  Masked because they tend to be quite unstable.
+>=dev-build/xfce4-dev-tools-4.21
 >=xfce-base/exo-4.21
 >=xfce-base/garcon-4.21
 >=xfce-base/libxfce4ui-4.21
 >=xfce-base/thunar-4.21
 >=xfce-base/tumbler-4.21
 >=xfce-base/xfce4-appfinder-4.21
->=xfce-base/xfce4-dev-tools-4.21
 >=xfce-base/xfce4-panel-4.21
 >=xfce-base/xfce4-power-manager-4.21
 >=xfce-base/xfce4-session-4.21

@@ -2412,6 +2412,7 @@ dev-python/matplotlib:webagg - Enable webagg backend that uses dev-python/tornad
 dev-python/mido:portmidi - Support using media-libs/portmidi as MIDI back-end
 dev-python/mido:rtmidi - Support using media-libs/rtmidi as MIDI back-end
 dev-python/mkdocs-material:social - Install the dependencies of the "social" plugin.
+dev-python/mpmath:test-full - Run test suite in full via additional (large) test dependencies, like dev-python/matplotlib.
 dev-python/msgpack:native-extensions - Compiles native "C" extensions (speedups, instead of using python fallback code).
 dev-python/multidict:native-extensions - Compile native C extensions (speedups, instead of using Python fallback code).
 dev-python/mypy:native-extensions - Compiles native C extensions (speedups, instead of using Python fallback code).
@@ -3261,6 +3262,7 @@ games-mud/tf:gmcp - enable GMCP support.
 games-mud/tf:option102 - enable telnet option 102 support.
 games-puzzle/braid-gog:launcher - Install FLTK-based launcher that you probably don't need
 games-puzzle/braid-hb:launcher - Install FLTK-based launcher that you probably don't need
+games-puzzle/enigma:non-free - Install the non-free Pentagonal Dreams menu music track
 games-puzzle/gnome-tetravex:cli - Build the gnome-tetravex-cli command-line interface
 games-puzzle/gnome-tetravex:gui - Build the gnome-tetravex graphical Gtk user interface
 games-puzzle/nightsky:bundled-libs - Use the upstream provided bundled libraries.
@@ -3290,6 +3292,7 @@ games-rpg/manaplus:sdl2 - Use libsdl2 instead of libsdl
 games-rpg/the-longest-journey:hd - Install high definition backgrounds and sprites
 games-rpg/the-longest-journey:hd-fmv - Install upscaled full motion videos
 games-rpg/to-the-moon:bundled-libs - Use bundled libraries
+games-rpg/xu4:allegro - Add support for Allegro
 games-simulation/corsix-th:midi - Adds support for background MIDI music via SDL_mixer
 games-simulation/corsix-th:tools - Build tools for decoding RNC files
 games-simulation/flightgear:dbus - Enable screensaver DBus interaction
@@ -3739,6 +3742,7 @@ llvm-core/clang-runtime:sanitize - Enable compiler-rt sanitizer (-fsanitize*) su
 llvm-core/clang-toolchain-symlinks:gcc-symlinks - Install symlinks for 'gcc' and 'g++' for extra compatibility.
 llvm-core/clang-toolchain-symlinks:multilib-symlinks - Install symlinks for all ABI CHOSTs. Note that this can result in gcc being overrode for native builds, as well as conflict with crossdev if used for the same targets.
 llvm-core/clang-toolchain-symlinks:native-symlinks - Install generic tool symlinks like 'cc' and 'c++', as well as ${CTARGET}-*. These symlinks are installed into slotted LLVM bindir, so they should not take precedence over symlinks installed into /usr/bin by sys-devel/gcc-config but they can be helpful for GCC-free setups.
+llvm-core/flang:clang - Force building using installed clang (rather than the default CC/CXX). This is the default since building Flang specifically with GCC requires lots of memory for now.
 llvm-core/libclc:spirv - Build SPIRV targets
 llvm-core/lld-toolchain-symlinks:multilib-symlinks - Install symlinks for all ABI CHOSTs. Note that this can result in gcc being overrode for native builds, as well as conflict with crossdev if used for the same targets.
 llvm-core/lld-toolchain-symlinks:native-symlinks - Install generic 'ld' symlink, as well as ${CTARGET}-ld. These symlinks are installed into slotted LLVM bindir, so they should not take precedence over symlinks installed into /usr/bin by sys-devel/binutils-config but they can be helpful for binutils-free setups.
