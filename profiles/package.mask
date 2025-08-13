@@ -64,6 +64,7 @@ dev-java/jide-oss
 # Michał Górny <mgorny@gentoo.org> (2025-08-05)
 # Accidental breaking change.  Yanked upstream.  Bug #961089.
 # Followed by another yanked breaking release.
+=dev-python/setuptools-scm-9.1.1
 =dev-python/setuptools-scm-9.0.3
 =dev-python/setuptools-scm-9.0.0
 
@@ -252,13 +253,6 @@ virtual/perl-Unicode-Normalize
 # Destabilized due to unresolved test failures.  If you need this
 # package, please use the ~arch version.
 =dev-python/lmdb-1.5.1
-
-# Sam James <sam@gentoo.org> (2025-06-03)
-# Major changes to packaging as bindings are split out by upstream.
->=app-crypt/gpgme-2
->=dev-cpp/gpgmepp-2
->=dev-libs/qgpgme-2
->dev-python/gpgmepy-1.9999
 
 # Sam James <sam@gentoo.org> (2025-06-03)
 # Fetching from GitHub seems broken with this:
