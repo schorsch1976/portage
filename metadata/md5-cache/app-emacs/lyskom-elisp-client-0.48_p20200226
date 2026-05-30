@@ -1,0 +1,14 @@
+BDEPEND=>=app-editors/emacs-26.3:*
+DEFINED_PHASES=compile configure info install postinst postrm prepare setup test unpack
+DESCRIPTION=Elisp client for the LysKOM conference system
+EAPI=7
+HOMEPAGE=http://www.lysator.liu.se/lyskom/klienter/emacslisp/index.en.html
+INHERIT=elisp readme.gentoo-r1
+IUSE=l10n_sv
+KEYWORDS=amd64 ~sparc x86
+LICENSE=GPL-2+
+RDEPEND=>=app-editors/emacs-26.3:*
+SLOT=0
+SRC_URI=https://dev.gentoo.org/~ulm/distfiles/lyskom-elisp-client-0.48_p20200226.tar.xz
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	elisp	a37bfc35b86403c770beebbd71661c30	elisp-common	0ea9a0d3bc26353e1642c73560a24fdf	readme.gentoo-r1	9ca94b2d607e7454ca6cfb44ab8ce327
+_md5_=ae1ea3ef078a42db25de501a8ed422d1
