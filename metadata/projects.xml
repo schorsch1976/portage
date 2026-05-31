@@ -1154,6 +1154,10 @@
       <role>SELinux</role>
     </member>
     <member>
+      <email>mschiff@gentoo.org</email>
+      <name>Marc Schiffbauer</name>
+    </member>
+    <member>
       <email>perfinion@gentoo.org</email>
       <name>Jason Zaman</name>
       <role>SELinux</role>
@@ -2081,6 +2085,11 @@
       <email>dilfridge@gentoo.org</email>
       <name>Andreas K. Hüttel</name>
       <role>www.g.o, Facebook (admin), LinkedIn (admin)</role>
+    </member>
+    <member>
+      <email>eschwartz@gentoo.org</email>
+      <name>Eli Schwartz</name>
+      <role>Bluesky (admin)</role>
     </member>
     <member>
       <email>jstein@gentoo.org</email>
