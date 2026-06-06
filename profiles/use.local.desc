@@ -3531,7 +3531,6 @@ gui-wm/wayfire:X - Enable support for X11 applications (XWayland).
 gui-wm/wayfire:gles3 - Enable OpenGL ES 3.x Features.
 kde-apps/akonadi:designer - Install plugin for dev-qt/qttools[designer]
 kde-apps/akonadi:tools - Install tools for developers and testing
-kde-apps/akonadi:webengine - Enable support for system-wide defined KAccounts
 kde-apps/akregator:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-apps/analitza:eigen - Enable dev-cpp/eigen mathematical templates support
 kde-apps/ark:zip - Enable ZIP archive support via dev-libs/libzip
@@ -4491,6 +4490,7 @@ media-libs/noise-suppression-for-voice:vst3 - Enable the VST3 plugin
 media-libs/oidn:apps - Build the standalone denoise, self test, and benchmark binaries.
 media-libs/oidn:hip - Build OIDN with AMD HIP support.
 media-libs/oidn:openimageio - Enable OpenImageIO Support
+media-libs/openal:dbus - Request real-time priority via sys-auth/rtkit
 media-libs/openal:pipewire - Enable support for the media-video/pipewire audio backend
 media-libs/openal:sndio - Enable support for the media-sound/sndio backend
 media-libs/opencolorio:apps - Build the OCIO command line apps
@@ -4670,6 +4670,7 @@ media-plugins/audacious-plugins:cue - Support CUE sheets using the libcue librar
 media-plugins/audacious-plugins:fluidsynth - Support FluidSynth as MIDI synth backend
 media-plugins/audacious-plugins:gme - Support various gaming console music formats
 media-plugins/audacious-plugins:http - Support HTTP streams through neon
+media-plugins/audacious-plugins:mpris - Enable support for MPRIS2 interface
 media-plugins/audacious-plugins:openmpt - Add support for OpenMPT
 media-plugins/audacious-plugins:pipewire - Build the PipeWire output plugin
 media-plugins/audacious-plugins:qtmedia - Enable playback via dev-qt/qtmultimedia
