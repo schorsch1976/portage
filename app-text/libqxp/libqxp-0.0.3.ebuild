@@ -3,6 +3,8 @@
 
 EAPI=9
 
+inherit autotools
+
 DESCRIPTION="Library parsing QuarkXpress documents"
 HOMEPAGE="https://wiki.documentfoundation.org/DLP/Libraries/libqxp"
 SRC_URI="https://dev-www.libreoffice.org/src/${PN}/${P}.tar.xz"
@@ -25,6 +27,15 @@ BDEPEND="
 	virtual/pkgconfig
 	doc? ( app-text/doxygen )
 "
+
+src_prepare() {
+	default
+
+	# old bundled version
+	rm m4/ax_cxx_compile_stdcxx.m4 || die
+
+	eautoreconf
+}
 
 src_configure() {
 	local myeconfargs=(
