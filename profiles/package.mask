@@ -36,6 +36,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2026-06-23)
+# Work in progress
+=dev-lang/perl-5.44*
+~virtual/perl-Archive-Tar-3.120.0
+~virtual/perl-Compress-Raw-Bzip2-2.218.0
+
 # Michał Górny <mgorny@gentoo.org> (2026-06-20)
 # No py3.14 in compat, tests lost on bump, no revdeps.
 # Removal on 2026-07-20.  Bug #973904.
@@ -120,10 +126,6 @@ x11-misc/mygestures
 # Fails to start (bug #976623)
 =sys-auth/elogind-255.26
 =sys-auth/elogind-257.15
-
-# Sam James <sam@gentoo.org> (2026-06-01)
-# Needs porting to Rust eclasses, bug #976139.
-=gnome-extra/gnome-commander-2.0.0
 
 # David Seifert <soap@gentoo.org> (2026-05-30)
 # Last update 25 years ago, stuck on linux-mod.eclass, lots of QA issues,
