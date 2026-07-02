@@ -48,7 +48,7 @@ PATCHES=(
 check_space() {
 	if use test; then
 		# https://bugs.gentoo.org/978323
-		local CHECKREQS_DISK_BUILD=10G
+		local CHECKREQS_DISK_BUILD=11G
 		check-reqs_pkg_setup
 	fi
 }
