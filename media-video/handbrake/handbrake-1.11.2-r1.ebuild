@@ -25,7 +25,7 @@ else
 		)
 	"
 	S="${WORKDIR}/${MY_P}"
-	KEYWORDS="~amd64 ~arm64 ~x86"
+	KEYWORDS="amd64 ~arm64 ~x86"
 fi
 
 # contrib/<project>/module.defs
@@ -148,6 +148,9 @@ src_unpack() {
 
 src_prepare() {
 	default
+
+	# bug #979520
+	cp "${FILESDIR}"/ffmpeg-8.0.2/A99-fix-nv-codec-headers-13.1.patch contrib/ffmpeg/ || die
 
 	mkdir download || die
 	for name in "${!BUNDLED[@]}"; do
