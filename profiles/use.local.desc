@@ -3694,7 +3694,7 @@ kde-frameworks/sonnet:aspell - Enable the app-text/aspell spell-checking backend
 kde-frameworks/sonnet:designer - Build plugins for dev-qt/qttools[designer]
 kde-frameworks/sonnet:hunspell - Enable the app-text/hunspell spell-checking backend
 kde-frameworks/sonnet:qml - Enable QML/QtQuick support via dev-qt/qtdeclarative
-kde-misc/kdeconnect:X - Enable remote input mousepad plugin using x11-libs/libfakekey
+kde-misc/kdeconnect:X - Enable remote input mousepad/shareinputdevices plugins relying on X11 libs
 kde-misc/kdeconnect:pulseaudio - Enable system volume control plugin using media-libs/libpulse
 kde-misc/kdeconnect:telephony - Enable telephony plugin using kde-frameworks/modemmanager-qt
 kde-misc/kio-gdrive:share - Enable support for a share menu using kde-frameworks/purpose
@@ -5389,6 +5389,7 @@ media-video/pipewire:lv2 - Allow loading LV2 plugins via media-libs/lv2
 media-video/pipewire:modemmanager - Combined with USE=bluetooth, allows PipeWire to perform telephony on mobile devices.
 media-video/pipewire:pipewire-alsa - Install ALSA plugin, similar to media-plugins/alsa-plugins's USE=pulseaudio.
 media-video/pipewire:roc - Enable roc support for real-time audio streaming over the network, using media-libs/roc-toolkit. See https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Network#roc
+media-video/pipewire:sofa - Spatially Oriented Format for Acoustics (SOFA) support via media-libs/libmysofa
 media-video/pipewire:sound-server - Provide sound server using ALSA and bluetooth devices
 media-video/pipewire:ssl - Enable raop-sink support (needs dev-libs/openssl)
 media-video/pipewire:system-service - Install systemd unit files for running as a system service. Not recommended.
@@ -8572,6 +8573,7 @@ sys-libs/glibc:hash-sysv-compat - enable sysv linker hashes in glibc for compati
 sys-libs/glibc:multiarch - enable optimizations for multiple CPU architectures (detected at runtime)
 sys-libs/glibc:multilib-bootstrap - Provide prebuilt libgcc.a and crt files if missing. Only needed for ABI switch.
 sys-libs/glibc:nscd - Build, and enable support for, the Name Service Cache Daemon
+sys-libs/glibc:old-kernel - Support the oldest kernel also supported by upstream glibc, otherwise the oldest in the Gentoo tree
 sys-libs/glibc:perl - Install additional scripts written in Perl
 sys-libs/glibc:sframe - enable building with sframe backtrace support
 sys-libs/glibc:ssp - protect stack of glibc internals
@@ -8643,6 +8645,7 @@ sys-process/atop:modules - Build netatop kernel module and install netatopd daem
 sys-process/audit:gssapi - Enable GSSAPI support
 sys-process/bottom:battery - Include support for laptop battery information
 sys-process/bottom:gpu - Include support for GPU temperature and memory usage information
+sys-process/bottom:nvidia - Include support for Nvidia GPU usage information
 sys-process/bottom:zfs - Include support for ZFS ARC memory usage information
 sys-process/criu:bpf - Add support for BPF programs via dev-libs/libbpf
 sys-process/criu:filecaps - Install the criu binary with file capabilities to allow for rootless CRIU
