@@ -1,3 +1,0 @@
-# /etc/conf.d/vinylncsa
-
-VINYLNCSA_OPTS="-a -w /var/log/vinyl/${SVCNAME}.log"

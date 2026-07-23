@@ -1,2 +1,0 @@
-# inadyn runtime directory for pid file
-d /run/inadyn 0755 inadyn inadyn -

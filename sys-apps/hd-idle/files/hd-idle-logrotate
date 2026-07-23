@@ -1,5 +1,0 @@
-/var/log/hd-idle.log {
-    create
-    missingok
-    notifempty
-}

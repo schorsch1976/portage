@@ -1,2 +1,0 @@
-# redis runtime directory
-d /run/redis-openvas 0755 gvm root -

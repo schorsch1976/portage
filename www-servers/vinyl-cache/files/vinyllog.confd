@@ -1,3 +1,0 @@
-# /etc/conf.d/vinyllog
-
-VINYLLOG_OPTS="-a -w /var/log/vinyl/vinyllog.log"

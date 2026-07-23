@@ -1,4 +1,0 @@
-/var/lib/lidarr/.config/Lidarr/logs/*.txt{
-    missingok
-    su lidarr lidarr
-}
