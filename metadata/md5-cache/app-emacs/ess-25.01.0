@@ -1,0 +1,14 @@
+BDEPEND=doc? ( app-text/texi2html dev-texlive/texlive-fontsextra dev-texlive/texlive-latex dev-texlive/texlive-latexextra dev-texlive/texlive-mathscience dev-texlive/texlive-plaingeneric virtual/latex-base ) >=app-editors/emacs-26.3:*
+DEFINED_PHASES=compile configure info install postinst postrm prepare setup test unpack
+DESCRIPTION=Emacs Speaks Statistics
+EAPI=8
+HOMEPAGE=https://ess.r-project.org/ https://github.com/emacs-ess/ESS/
+INHERIT=elisp readme.gentoo-r1
+IUSE=doc
+KEYWORDS=amd64 ~arm ppc x86
+LICENSE=GPL-2+ GPL-3+ Texinfo-manual
+RDEPEND=>=app-editors/emacs-26.3:*
+SLOT=0
+SRC_URI=https://github.com/emacs-ess/ESS/archive/refs/tags/v25.01.0.tar.gz -> ess-25.01.0.tar.gz
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	elisp	a37bfc35b86403c770beebbd71661c30	elisp-common	0ea9a0d3bc26353e1642c73560a24fdf	readme.gentoo-r1	9ca94b2d607e7454ca6cfb44ab8ce327
+_md5_=1e5726a58a61577bdf2ce53fc567228b

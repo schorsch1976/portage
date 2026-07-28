@@ -1,0 +1,13 @@
+BDEPEND=app-emacs/dash app-emacs/flycheck app-emacs/lsp-mode app-emacs/markdown-mode >=app-editors/emacs-27.1:*
+DEFINED_PHASES=compile configure info install postinst postrm prepare setup test unpack
+DESCRIPTION=UI modules for lsp-mode
+EAPI=8
+HOMEPAGE=https://emacs-lsp.github.io/lsp-ui/ https://github.com/emacs-lsp/lsp-ui/
+INHERIT=elisp
+KEYWORDS=~amd64 ~arm64
+LICENSE=GPL-3
+RDEPEND=app-emacs/dash app-emacs/flycheck app-emacs/lsp-mode app-emacs/markdown-mode >=app-editors/emacs-27.1:*
+SLOT=0
+SRC_URI=https://github.com/emacs-lsp/lsp-ui/archive/9.0.0.tar.gz -> lsp-ui-9.0.0.tar.gz
+_eclasses_=elisp	a37bfc35b86403c770beebbd71661c30	elisp-common	0ea9a0d3bc26353e1642c73560a24fdf
+_md5_=93c16f3722ac7747680efa9341b7a756

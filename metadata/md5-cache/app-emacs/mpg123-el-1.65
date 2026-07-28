@@ -1,0 +1,13 @@
+BDEPEND=>=app-editors/emacs-26.3:*
+DEFINED_PHASES=compile configure info install postinst postrm prepare setup test unpack
+DESCRIPTION=Emacs front-end to mpg123 audio player and OggVorbis audio player
+EAPI=8
+HOMEPAGE=https://www.gentei.org/~yuuji/software/mpg123el/
+INHERIT=elisp flag-o-matic toolchain-funcs
+KEYWORDS=amd64 ppc x86
+LICENSE=mpg123-el
+RDEPEND=media-sound/mpg123 media-sound/alsa-utils >=app-editors/emacs-26.3:*
+SLOT=0
+SRC_URI=https://dev.gentoo.org/~ulm/distfiles/mpg123-el-1.65.tar.xz
+_eclasses_=elisp	a37bfc35b86403c770beebbd71661c30	elisp-common	0ea9a0d3bc26353e1642c73560a24fdf	flag-o-matic	fd3558f73f6503093adee69adf41020d	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=4c5863f2835f8dadcabef0ea372c769a
