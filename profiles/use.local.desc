@@ -3554,10 +3554,14 @@ gui-wm/gamescope:pipewire - Enable screen capture via PipeWire
 gui-wm/gamescope:wsi-layer - Enable the WSI layer (required for HDR)
 gui-wm/labwc:icons - Add support for window icons. Icons will only be displayed with USE=svg enabled
 gui-wm/sway:X - Enable support for X11 applications (XWayland)
+gui-wm/sway:drm - Enable support for gui-libs/wlroots compiled with USE=drm
+gui-wm/sway:libinput - Enable support for gui-libs/wlroots compiled with USE=libinput
+gui-wm/sway:session - Enable support for gui-libs/wlroots compiled with USE=session
 gui-wm/sway:swaybar - Install 'swaybar': sway's status bar component
 gui-wm/sway:swaynag - Install 'swaynag': shows a message with buttons
 gui-wm/sway:tray - Enable support for StatusNotifierItem tray specification
 gui-wm/sway:wallpapers - Install sway's default wallpaper image
+gui-wm/sway:x11-backend - Enable support for gui-libs/wlroots compiled with USE=x11-backend
 gui-wm/wayfire:X - Enable support for X11 applications (XWayland).
 gui-wm/wayfire:gles3 - Enable OpenGL ES 3.x Features.
 kde-apps/akonadi:designer - Install plugin for dev-qt/qttools[designer]
@@ -3629,6 +3633,7 @@ kde-apps/kdeutils-meta:webengine - Install app-editors/ghostwriter and kde-apps/
 kde-apps/kget:bittorrent - Enable bittorrent transfer plugin through net-libs/libktorrent
 kde-apps/kget:gpg - Enable signature verification by GpgME++ via app-crypt/gpgme
 kde-apps/kget:mms - Enable MMS (Microsoft Media Server) plugin through media-libs/libmms
+kde-apps/kgpg:pim - Enable addressbook support using kde-apps/akonadi
 kde-apps/kig:scripting - Support Python scripting
 kde-apps/kio-extras:X - Enable support for XCursor thumbnails via x11-libs/libX11
 kde-apps/kio-extras:activities - Enable activities KIO worker and fileitem plugin
