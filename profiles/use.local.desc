@@ -37,6 +37,7 @@ app-accessibility/speech-dispatcher:espeak - Adds support for espeak-ng speech e
 app-accessibility/speech-dispatcher:flite - Adds support for flite speech engine
 app-accessibility/speech-dispatcher:pipewire - Enables support for PipeWire. Recommended for latency related advantages if it works in your setup.
 app-admin/calamares:livecd - USE flag for Gentoo modules branding on LIVEDVD
+app-admin/chipass:yubikey - YubiKey HMAC-SHA1 challenge-response database protection
 app-admin/clsync:apidoc - Provide doxygen generated API docs.
 app-admin/clsync:cgroups - Use cgroups to limit /dev access.
 app-admin/clsync:clsync - Build clsync binary. Most likely you want it. However it is possible to build only libclsync without clsync itself.
@@ -4735,6 +4736,7 @@ media-plugins/live:tools - Build test tools
 media-plugins/mpg123-output-plugins:int-quality - Use rounding instead of fast truncation for integer output, where possible
 media-plugins/photoqt-extensions:histogram - Support histogram using dev-qt/qtcharts
 media-plugins/qmmp-plugin-pack:mpv - Enable video support via media-video/mpv(experimental)
+media-plugins/qmmp-plugin-pack:timidity - Enable midi support via media-libs/libtimidity
 media-plugins/vdr-cdplayer:cdparanoia - Enable cdparanoia (audio CD ripper) support
 media-plugins/vdr-dvbapi:dvbcsa - use media-libs/libdvbcsa free implementation of the DVB Common Scrambling Algorithm
 media-plugins/vdr-epgsearch:conflictcheckonly - install the "conflictcheckonly" vdr-plugin
@@ -7762,6 +7764,7 @@ sci-ml/gloo:libuv - Enable libuv support
 sci-ml/gloo:redis - Enable Redis backend for storage via dev-libs/hiredis
 sci-ml/gloo:rocm - Enable ROCm gpu computing support
 sci-ml/huggingface_hub:torch - Support pytorch
+sci-ml/kineto:rocm - Enable ROCm gpu computing support
 sci-ml/oneDNN:cblas - Use virtual/cblas for sgemm routines
 sci-ml/oneDNN:mkl - Use sci-libs/mkl for sgemm routines
 sci-ml/onnx:disableStaticReg - Disable Static Registration
@@ -8742,7 +8745,6 @@ www-apache/pwauth:domain-aware - Ignore leading domain names in username (Window
 www-apache/pwauth:faillog - Log failed login attempts
 www-apache/pwauth:ignore-case - Ignore string case in username (mostly Windows compat)
 www-apps/cgit:highlight - Enable source code highlighting
-www-apps/cgit:lua - Enable support for Lua scripting
 www-apps/drupal:uploadprogress - Install dev-php/pecl-uploadprogress package
 www-apps/gitea:acct - User and group management via acct-*/git packages
 www-apps/gitea:gogit - (EXPERIMENTAL) Use go-git variants of Git commands.
