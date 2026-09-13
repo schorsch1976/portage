@@ -25,15 +25,24 @@ PATCHES=(
 src_compile() {
 	emake \
 		CC="$(tc-getCC)" \
-		CXX="$(tc-getCXX)" \
 		CFLAGS="${CFLAGS}" \
+		ROOT="." LIB="." BIN="." \
 		all
+
+	ln -sf libCVector.so.$(ver_cut 1-3) libCVector.so.$(ver_cut 1) || die
+	ln -sf libCVector.so.$(ver_cut 1-3) libCVector.so || die
+}
+
+src_test() {
+	local -x LD_LIBRARY_PATH="${S}${LD_LIBRARY_PATH:+${LIB_LIBRARY_PATH}}"
+	emake \
+		CC="$(tc-getCC)" \
+		CFLAGS="${CFLAGS}" \
+		ROOT="." LIB="." BIN="." \
+		tests
 }
 
 src_install() {
-	ln -sf libCVector.so.$(ver_cut 1-3) libCVector.so.$(ver_cut 1) || die
-	ln -sf libCVector.so.$(ver_cut 1-3) libCVector.so || die
-
 	dolib.so libCVector.so*
 	doheader *.h
 
