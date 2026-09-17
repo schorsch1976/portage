@@ -1,5 +1,0 @@
-#!/sbin/openrc-run
-command="/usr/bin/throttled"
-pidfile="/run/throttled.pid"
-description="Stop Intel throttling"
-command_background="yes"

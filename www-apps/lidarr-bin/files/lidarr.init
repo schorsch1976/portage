@@ -1,7 +1,0 @@
-#!/sbin/openrc-run
-
-pidfile="/run/lidarr.pid"
-command="/opt/lidarr/Lidarr"
-command_user="lidarr:lidarr"
-command_background=true
-
