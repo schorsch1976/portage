@@ -13,7 +13,7 @@ if [[ ${PV} == *9999 ]] ; then
 	inherit git-r3
 else
 	SRC_URI="https://github.com/strukturag/libde265/releases/download/v${PV}/${P}.tar.gz"
-	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
+	KEYWORDS="amd64 arm arm64 ~loong ppc64 ~riscv x86"
 fi
 
 LICENSE="LGPL-3 tools? ( MIT )"
@@ -41,6 +41,7 @@ multilib_src_configure() {
 		-DENABLE_SDL=$(usex sdl)
 
 		# dev-tools dir isn't in release tarballs
+		# https://github.com/strukturag/libde265/issues/545
 		#-DENABLE_INTERNAL_DEVELOPMENT_TOOLS=$(usex test)
 
 		# Require libvideogfx or libswscale
