@@ -1,9 +1,0 @@
-DEFINED_PHASES=postinst
-DESCRIPTION=An implementation of the ACME protocol
-EAPI=8
-HOMEPAGE=https://github.com/certbot/certbot https://pypi.org/project/acme/ https://letsencrypt.org/
-KEYWORDS=amd64 arm arm64 ~ppc64 ~riscv
-LICENSE=metapackage
-RDEPEND=>=app-crypt/certbot-3.2.0-r100
-SLOT=0
-_md5_=8dbebc0a79641a357491db3362caad8a

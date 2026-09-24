@@ -1,8 +1,0 @@
-https://bugs.gentoo.org/874987
---- a/battalion.c
-+++ b/battalion.c
-@@ -5471,3 +5471,3 @@
- 
--main (int argc, char*argv[])
-+int main (int argc, char*argv[])
-     { 

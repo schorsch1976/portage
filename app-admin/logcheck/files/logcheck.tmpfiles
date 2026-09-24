@@ -1,2 +1,0 @@
-# logcheck lock directory
-d /var/lock/logcheck 0755 logcheck logcheck -

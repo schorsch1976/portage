@@ -1,8 +1,0 @@
-[Unit]
-Description=smartctl Exporter
-
-[Socket]
-ListenStream=9633
-
-[Install]
-WantedBy=sockets.target
