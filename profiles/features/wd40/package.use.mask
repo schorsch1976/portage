@@ -1,6 +1,11 @@
 # Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Michał Górny <mgorny@gentoo.org> (2025-10-09)
+# Need dev-python/dnspython -> uv-build.
+dev-python/psycopg test
+dev-python/wtforms test
+
 # Thibaud CANALE <thican@thican.net> (2026-05-17)
 # Tests require dev-python/trio
 dev-python/cloudflare test
@@ -29,6 +34,7 @@ dev-python/iso8601 test
 dev-python/isoduration test
 dev-python/isort test
 dev-python/jsondiff test
+dev-python/jsonpatch test
 dev-python/jsonpath-ng test
 dev-python/kombu test
 dev-python/mccabe test
