@@ -2079,6 +2079,7 @@ dev-libs/efl:ico - Enable Ico image loader
 dev-libs/efl:json - Enable lottie animation support
 dev-libs/efl:mono - Enable mono bindings
 dev-libs/efl:physics - Enable Bullet physics effects and support
+dev-libs/efl:pipewire - Enable support for PipeWire audio backend
 dev-libs/efl:pmaps - Enable PMAPS image loader
 dev-libs/efl:psd - Enable PSD image loader
 dev-libs/efl:scim - Enable Smart Common Input Method
@@ -4553,7 +4554,11 @@ media-libs/mesa:wayland - Enable support for dev-libs/wayland
 media-libs/mesa-amber:gles1 - Enable GLESv1 support.
 media-libs/mesa-amber:wayland - Enable support for dev-libs/wayland
 media-libs/mlt:frei0r - Build the module for media-plugins/frei0r-plugins
+media-libs/mlt:gpl - Build GPL code. Should be enabled unless you require LGPL libraries.
+media-libs/mlt:libplacebo - Enable use of GPU-accelerated filters from media-libs/libplacebo
+media-libs/mlt:lv2 - Enable LV2 features using media-libs/lilv
 media-libs/mlt:opencv - Build motion tracking module using media-libs/opencv
+media-libs/mlt:openfx - Build support for OpenFX plugins
 media-libs/mlt:python - Build SWIG bindings for Python
 media-libs/mlt:rnnoise - Build noise-reduction module using media-libs/rnnoise
 media-libs/mlt:rtaudio - Builds rtaudio consumer for native audio support on multiple platforms
@@ -8732,6 +8737,7 @@ sys-power/nut:modbus - Includes all UPS drivers that use MODBUS.
 sys-power/nut:monitor - Add a Qt6 gui monitor.
 sys-power/nut:serial - Includes all UPS drivers that use SERIAL.
 sys-power/nut:snmp - Includes all UPS drivers that use SNMP.
+sys-power/nut:upower - Monitor UPS and battery devices managed by the UPower daemon.
 sys-power/nut:usb - Includes all UPS drivers that use USB.
 sys-power/nut:xml - Includes all UPS drivers that use XML.
 sys-power/nvclock:gtk - Install the GTK+ based graphical interface
@@ -9283,6 +9289,7 @@ x11-wm/e16:xsm - Enable X Session Management support using x11-libs/libSM
 x11-wm/e16:xsync - Enable X Sync support
 x11-wm/e16:zoom - Support resolution change of current window (zoom) usingx11-libs/libXxf86vm (xvidtune)
 x11-wm/echinus:xrandr - Enable support for multihead configuration
+x11-wm/enlightenment:pipewire - Enable support for PipeWire in audio mixed plugin
 x11-wm/enlightenment:xwayland - Enable XWayland application support
 x11-wm/fluxbox:slit - Enables the Fluxbox slit (or dock)
 x11-wm/fluxbox:systray - Enables the system tray in the Fluxbox toolbar
