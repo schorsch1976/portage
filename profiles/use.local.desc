@@ -241,7 +241,6 @@ app-alternatives/yacc:bison - Symlink to app-alternatives/yacc.
 app-alternatives/yacc:byacc - Symlink to dev-util/byacc.
 app-alternatives/yacc:reference - Symlink to dev-util/yacc.
 app-antivirus/clamav:clamapp - Build applications (clamscan, clamd, clamdscan, clamonacc (also has its own USE flag), sigtool, clambc, clamav-milter (also requires milter USE flag), clamdtop, clamsubmit, clamconf).
-app-antivirus/clamav:clamdtop - A Top like tool which shows what clamd is currently scanning amongst other things
 app-antivirus/clamav:clamonacc - Build the clamonacc on-access scanner
 app-antivirus/clamav:clamsubmit - A tool to submit false positives / negatives
 app-antivirus/clamav:experimental - Enable experimental features
@@ -1528,7 +1527,8 @@ dev-db/unixODBC:minimal - Disable bundled drivers and extra libraries (most user
 dev-db/unixODBC:odbcmanual - Administrator, Internal Structure, Programmer and User documentation
 dev-db/valkey:tcmalloc - Use tcmalloc from dev-util/google-perftools for allocations.
 dev-debug/bpftrace:pcap - Enable skb_output using net-libs/libpcap
-dev-debug/drgn:debuginfod - Enable debuginfod support
+dev-debug/drgn:debuginfod - Enable debuginfod support.
+dev-debug/drgn:json - Use dev-libs/json-c for app-emulation/qemu debugging over the QEMU Machine Protocol (QMP).
 dev-debug/drgn:lzma - Support XZ-compressed debug information (MiniDebugInfo).
 dev-debug/dtrace:test-install - Install the testsuite for manual use. It is not suitable for automatic execution within the ebuild because it requires root privileges. BTF must be available for the running kernel at build-time with this flag.
 dev-debug/gdb:babeltrace - Enable dev-util/babeltrace support
@@ -1805,7 +1805,6 @@ dev-haskell/vector-algorithms:internalchecks - Enable internal consistency check
 dev-haskell/vector-algorithms:properties - Enable the quickcheck tests
 dev-haskell/vector-algorithms:unsafechecks - Enable bounds checking in unsafe operations at the cost of a significant performance penalty.
 dev-haskell/void:safe - Disable effective but unsafe coercions
-dev-haskell/wai-app-static:crypton - Use the crypton library for MD5 computation
 dev-haskell/wai-app-static:print - print debug info
 dev-haskell/warp:allow-sendfilefd - Allow use of sendfileFd (not available on GNU/kFreeBSD)
 dev-haskell/warp:x509 - Adds a dependency on the x509 library to enable getting TLS client certificates.
@@ -2055,6 +2054,7 @@ dev-libs/cutlass:tools - Enable CUTLASS Tools
 dev-libs/cyberjack:tools - Build and install optional management tools.
 dev-libs/cyrus-sasl:authdaemond - Add Courier-IMAP authdaemond unix socket support (net-mail/courier-imap, mail-mta/courier)
 dev-libs/cyrus-sasl:ldapdb - Enable ldapdb plugin
+dev-libs/cyrus-sasl:ntlm - Enable NTLM authentication (discouraged)
 dev-libs/cyrus-sasl:openldap - Add ldap support for saslauthd
 dev-libs/cyrus-sasl:sample - Enable sample client and server
 dev-libs/cyrus-sasl:srp - Enable SRP authentication
@@ -2099,7 +2099,6 @@ dev-libs/elfutils:stackprof - Build eu-stackprof tool: a tool for collecting sys
 dev-libs/elfutils:stacktrace - Build experimental eu-stacktrace tool. Relies on integration with dev-util/sysprof. See https://developers.redhat.com/articles/2024/06/11/get-system-wide-profiles-binaries-without-frame-pointers.
 dev-libs/elfutils:utils - Install command-line utilities (all the eu-* programs).
 dev-libs/fcgi:html - Install HTML documentation
-dev-libs/folks:telepathy - Load contacts from the Telepathy framework
 dev-libs/folks:utils - Build the folks-inspect utility
 dev-libs/fstrm:utils - Build fstrm utility programs
 dev-libs/gf2x:custom-tune - Extra long compile time for tuning hardware specific low-level routines
@@ -3389,6 +3388,8 @@ games-strategy/freeciv:sound - Add support for sound provided by media-libs/sdl3
 games-strategy/freeciv:system-lua - Use dev-lang/lua instead of the bundled liblua
 games-strategy/freeciv:web-server - Build the freeciv-web server in place of the freeciv server
 games-strategy/freeorion:client - Build game client
+games-strategy/hedgewars:ffmpeg - Enable video recording feature
+games-strategy/hedgewars:server - Enable local server
 games-strategy/ja2-stracciatella:editor - Adds necessary file to run the editor
 games-strategy/ja2-stracciatella:launcher - Build the ja2-stracciatella launcher
 games-strategy/ja2-stracciatella:ru-gold - Support for russian gold ja2 version
@@ -6953,6 +6954,7 @@ net-print/cups-filters:foomatic - Build the included foomatic-rip printer driver
 net-print/cups-filters:pclm - Enable PCLm support
 net-print/cups-meta:browsed - Include support for the cups-browsed daemon.
 net-print/cups-meta:foomatic - Include support for the foomatic-rip printer driver. Strongly recommended.
+net-print/cups-meta:foomatic-db-ppds - Include foomatic-db-ppds/openprinting-ppds for PostScript printers.
 net-print/cups-meta:poppler - Include support for the app-text/poppler filters.
 net-print/dymo-cups-drivers:usb-modeswitch - Include usb_modeswitch for some hardware (bug #601242)
 net-print/fax4cups:efax - Install net-misc/efax backend
@@ -6973,6 +6975,10 @@ net-print/hplip-plugin:orblite - Install the ORBlite scanner plugin
 net-print/kyocera-1x2x-mfp-driver:rastertokpsl-fix - Use custom wrapper script to sanitize arguments before passing to 'rastertokpsl' filter program
 net-print/libcupsfilters:poppler - Build the pdftoraster filter
 net-print/libppd:poppler - Use the app-text/poppler pdftops filter
+net-proxy/3proxy:ftp - enable FTP proxy (ftppr) and FTP over HTTP proxy
+net-proxy/3proxy:http-server - enable httpsrv service to serve both a site and a proxy, also required by administration pages
+net-proxy/3proxy:mail - enable IMAP/POP3/SMTP proxies (imapp/pop3/smtpp)
+net-proxy/3proxy:modules - build standalone modules in addition to the combined proxy 3proxy
 net-proxy/haproxy:51degrees - Device Detection using 51 Degrees
 net-proxy/haproxy:ech - Enable OpenSSL ECH
 net-proxy/haproxy:net_ns - Enable network namespace support (CONFIG_NET_NS)
@@ -8053,14 +8059,7 @@ sys-apps/flashrom:stlinkv3-spi - Enable SPI programmer using STLINK-V3
 sys-apps/flashrom:tools - Install ich_descriptor_tool, a tool for reading descriptor-mode SPI-flash images for Intel chipsets
 sys-apps/flashrom:usbblaster-spi - Enable support for Altera USB-Blaster dongles
 sys-apps/fwupd:amdgpu - Build and install AMD dGPU (Navi3x and above) plugin
-sys-apps/fwupd:archive - Use app-arch/libarchive for archives support
-sys-apps/fwupd:cbor - Enable CBOR support for coSWID and uSWID via dev-libs/libcbor
-sys-apps/fwupd:flashrom - Enable flashrom plugin via sys-apps/flashrom
 sys-apps/fwupd:modemmanager - Build and install Modem Manager plugin
-sys-apps/fwupd:nvme - Build and install NVMe plugin
-sys-apps/fwupd:protobuf - Enable protobuf plugins
-sys-apps/fwupd:spi - Install Intel-SPI plugin
-sys-apps/fwupd:synaptics - Install synaptics plugin
 sys-apps/fwupd:tpm - Install Trusted Platform Module plugin
 sys-apps/fwupd:uefi - Enable UEFI support
 sys-apps/gawk:mpfr - Use dev-libs/mpfr for high precision arithmetic (-M / --bignum)
@@ -8763,8 +8762,6 @@ sys-process/fcron:system-crontab - Set up fcron to respect /etc/crontab and /etc
 sys-process/htop:bfd - With USE=unwind, demangle symbol names (like for C++) in backtraces via sys-libs/binutils-libs
 sys-process/htop:delayacct - Enable Linux delay accounting support via dev-libs/libnl
 sys-process/htop:hwloc - Use sys-apps/hwloc for CPU affinity support
-sys-process/htop:openvz - Enable openvz support
-sys-process/htop:vserver - Enable vserver support
 sys-process/lsof:rpc - support looking up RPC service info
 sys-process/nvtop:unicode - Enable support for ncurses Unicode choice
 sys-process/procenv:numa - Enable NUMA support using sys-process/numactl
