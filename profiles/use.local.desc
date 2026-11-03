@@ -2479,7 +2479,6 @@ dev-python/amqp:extras - Install extra tools to generate initial Python mod from
 dev-python/apprise:dbus - Support sending notifications to the desktop over D-Bus
 dev-python/apprise:mqtt - Support sending notifications over MQTT
 dev-python/authlib:django - Enable Django framework support
-dev-python/authlib:jose - Enable JSON Object Signing and Encryption (JOSE) support via dev-python/pycryptodome
 dev-python/blake3:rust - Build the Rust implementation (if disabled, the "experimental" C implementation is used instead).
 dev-python/bpython:clipboard - Enable copying to clipboard using dev-python/pyperclip
 dev-python/bpython:jedi - Enable autocompletion using dev-python/jedi
@@ -5106,7 +5105,6 @@ media-sound/xmms2:fluidsynth - Enable fluidsynth support (MIDI)
 media-sound/xmms2:gme - Support for various game audio formats using media-libs/game-music-emu
 media-sound/xmms2:ices - Icecast source output plugin
 media-sound/xmms2:libvisual - Install xmms2-libvisual for use with the 'visualization' effect
-media-sound/xmms2:mac - Support for Monkey's Audio (APE) format using media-sound/mac
 media-sound/xmms2:mlib-update - Enable building of xmms2-mlib-updater client
 media-sound/xmms2:server - Build xmms2 player daemon (otherwise only clients are built)
 media-sound/xmms2:tremor - Support Vorbis using an alternate fixed-point decoder with media-libs/tremor
@@ -7839,6 +7837,7 @@ sci-ml/datasets:vision - Support vision
 sci-ml/evaluate:evaluator - Enable evaluator
 sci-ml/evaluate:template - Enable template
 sci-ml/evaluate:torch - Support pytorch
+sci-ml/ggml:opencl - Build an OpenCL backend, so far only works on Adreno and Intel GPUs
 sci-ml/ggml:rocm - Enable ROCm gpu computing support
 sci-ml/gloo:libuv - Enable libuv support
 sci-ml/gloo:redis - Enable Redis backend for storage via dev-libs/hiredis
