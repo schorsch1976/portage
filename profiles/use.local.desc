@@ -2554,6 +2554,7 @@ dev-python/pyqt6:webchannel - Build bindings for the QtWebChannel module
 dev-python/pyqt6:websockets - Build bindings for the QtWebSockets module
 dev-python/pyqt6:widgets - Build bindings for the QtWidgets module
 dev-python/pyqt6:xml - Build bindings for the QtXml module
+dev-python/pyqt6-pdf:widgets - Build bindings for the QtPdfWidgets module
 dev-python/pyqt6-webengine:quick - Build bindings for the QtWebEngineQuick module
 dev-python/pyqt6-webengine:widgets - Build bindings for the QtWebEngineWidgets module
 dev-python/pyqtgraph:pyqt6 - Use dev-python/pyqt6 as Qt for Python implementation
@@ -3753,6 +3754,7 @@ kde-plasma/kwin:gamepad - Support using game controllers as input devices
 kde-plasma/kwin:lock - Enable screen locking via kde-plasma/kscreenlocker
 kde-plasma/kwin:screencast - Enable screencast portal using media-video/pipewire
 kde-plasma/kwin:shortcuts - Enable global shortcuts support via kde-plasma/kglobalacceld
+kde-plasma/kwin-x11:activities - Enable Plasma Activities support via kde-plasma/plasma-activities
 kde-plasma/kwin-x11:lock - Enable screen locking via kde-plasma/kscreenlocker
 kde-plasma/kwin-x11:nightlight - Enable night light support via kde-plasma/knighttime
 kde-plasma/kwin-x11:shortcuts - Enable global shortcuts support via kde-plasma/kglobalacceld
@@ -6904,6 +6906,7 @@ net-p2p/airdcpp-webclient:tbb - Enable support of the TBB library to improve per
 net-p2p/airdcpp-webclient:webui - Enable the Web UI
 net-p2p/amule:bfd - Backtrace symbol resolution via sys-libs/binutils-libs
 net-p2p/amule:daemon - Enable amule daemon
+net-p2p/amule:mediainfo - Support extracting metadata using media-libs/libmediainfo
 net-p2p/amule:remote - Enable remote controlling of the client
 net-p2p/amule:stats - Enable statistic reporting
 net-p2p/bitcoin-core:berkdb - Support legacy wallets in Berkeley DB format
@@ -7057,6 +7060,7 @@ net-voip/yate:zaptel - Enable Zaptel driver
 net-vpn/eduvpn-common:openvpn - enable support for OpenVPN
 net-vpn/frp:client - Build and install frp client (frpc)
 net-vpn/frp:server - Build and install frp server (frps)
+net-vpn/i2pd:torrents - Build the built-in torrent client
 net-vpn/libreswan:dnssec - Use DNSSEC resolver (requires net-dns/unbound)
 net-vpn/libreswan:ikev1 - Enable the IKEv1 protocol
 net-vpn/networkmanager-sstp:gtk4 - Use gui-libs/gtk for GUI support.
@@ -9092,7 +9096,6 @@ x11-libs/libxcb:xkb - Enable the XCB keyboard extension
 x11-libs/libxkbcommon:tools - Build the xkbcli tools
 x11-libs/libxkbcommon:wayland - Build the Wayland utilities
 x11-libs/motif:xcursor - Add support for cursors (x11-libs/libXcursor)
-x11-libs/motif:xrandr - Add support for monitor information (x11-libs/libXrandr)
 x11-libs/motif:xrender - Add support for transparency (x11-libs/libXrender)
 x11-libs/pango:X - Build and install the legacy pangoxft library
 x11-libs/pango:examples - Install source code examples
