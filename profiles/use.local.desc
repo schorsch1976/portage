@@ -3832,7 +3832,6 @@ llvm-core/llvm:binutils-plugin - Build the binutils plugin
 llvm-core/llvm:debuginfod - Install llvm-debuginfod (requires net-misc/curl and dev-cpp/cpp-httplib)
 llvm-core/llvm:doc - Build and install the HTML documentation and regenerate the man pages
 llvm-core/llvm:exegesis - Enable performance counter support for llvm-exegesis tool that can be used to measure host machine instruction characteristics
-llvm-core/llvm:ncurses - Support querying terminal properties using ncurses' terminfo
 llvm-core/llvm:z3 - Enable support for sci-mathematics/z3 constraint solver
 llvm-core/llvm-toolchain-symlinks:multilib-symlinks - Install symlinks for all ABI CHOSTs. Note that this can result in gcc being overrode for native builds, as well as conflict with crossdev if used for the same targets.
 llvm-core/llvm-toolchain-symlinks:native-symlinks - Install generic tool symlinks like 'objdump' and 'ranlib', as well as ${CTARGET}-*. These symlinks are installed into slotted LLVM bindir, so they should not take precedence over symlinks installed into /usr/bin by sys-devel/binutils-config but they can be helpful for binutils-free setups.
@@ -8504,7 +8503,6 @@ sys-devel/gcc-config:native-symlinks - Install native symlinks like 'gcc' or 'g+
 sys-devel/gettext:git - When running `autopoint`, use git to store the internal development files; this requires git at runtime, but will be faster/smaller than raw archives
 sys-devel/mold:mimalloc - Build using dev-libs/mimalloc as memory allocator.
 sys-devel/sparse:gtk - Build the test-inspect utility (requires x11-libs/gtk+:3)
-sys-devel/sparse:llvm - Build the sparse-llvm utility
 sys-devel/sparse:xml - Build the c2xml utility (requires dev-libs/libxml2)
 sys-devel/wild:lto - Build with the experimental LTO plugin support
 sys-fabric/mstflint:adb-generic-tools - Enable compiling the following tools: mstreg and mstlink
@@ -8849,21 +8847,6 @@ www-apps/wordpress:themes - Installs themes (including default theme)
 www-apps/xpra-html5:brotli - Install assets compressed with brotli
 www-apps/xpra-html5:gzip - Install assets compressed with gzip
 www-apps/xpra-html5:minify - Minify JavaScript code for smaller transfers
-www-client/chromium:bundled-toolchain - Download and use the upstream binary toolchain(s) to build Chromium
-www-client/chromium:debug - Enable DCHECK feature with severity configurable at runtime. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
-www-client/chromium:ffmpeg-chromium - (binpkg only) Use Chromium FFmpeg fork (media-video/ffmpeg-chromium) rather than mainline FFmpeg (media-video/ffmpeg)
-www-client/chromium:gtk4 - Build with GTK4 headers.
-www-client/chromium:hangouts - Enable support for Google Hangouts features such as screen sharing
-www-client/chromium:headless - Build Ozone only with headless backend, NOT RECOMMENDED for general use.
-www-client/chromium:official - Enable Official build instead of Developer build.
-www-client/chromium:pax-kernel - Allow building on a PaX-enabled kernel
-www-client/chromium:pgo - Build with Profile Guided Optimizations (2-stage compilation)
-www-client/chromium:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
-www-client/chromium:rar - Enable the Safe Browsing feature to inspect RAR files.
-www-client/chromium:system-harfbuzz - Use system media-libs/harfbuzz instead of the bundled library.
-www-client/chromium:system-icu - Use system dev-libs/icu instead of the bundled one
-www-client/chromium:system-zstd - Use system app-arch/zstd instead of the bundled one.
-www-client/chromium:widevine - Unsupported closed-source DRM capability (required by Netflix VOD)
 www-client/dillo:mbedtls - Build against the net-libs/mbedtls library for TLS support.
 www-client/dillo:openssl - Build against the dev-libs/openssl library for TLS support.
 www-client/dillo:xembed - Enable XEmbed protocol support
