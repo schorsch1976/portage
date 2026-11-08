@@ -877,6 +877,8 @@ app-i18n/tomoe:hyperestraier - Enable support for app-text/hyperestraier
 app-i18n/uim:anthy - Enable support for app-i18n/anthy-unicode or app-i18n/anthy if prior 1.9.0
 app-i18n/uim:eb - Enable support for dev-libs/eb
 app-i18n/uim:gtk2 - Enable support for x11-libs/gtk+:2
+app-i18n/uim:gtk4 - Build the GTK 4 input method module
+app-i18n/uim:ibus - Build the app-i18n/ibus engine (ibus-engine-uim)
 app-i18n/uim:skk - Enable support for app-i18n/skk-jisyo
 app-laptop/hdapsd:libconfig - Require dev-libs/libconfig to allow the daemon to read a configuration file at startup
 app-laptop/ibam:gkrellm - Enable building of app-admin/gkrellm module
@@ -6564,6 +6566,7 @@ net-misc/frr:nhrp - Build Next Hop Resolution Protocol daemon
 net-misc/frr:ospfapi - Build OSPFAPI support
 net-misc/frr:pam - Add support for PAM (via sys-libs/pam) to the Virtual Terminal Interface Shell (vtysh)
 net-misc/frr:rpki - Enable RPKI
+net-misc/frr:zeromq - Enable the ZeroMQ handler (libfrrzmq)
 net-misc/geckodriver:unchained - Apply the geckodriver-unchained patch, for Gecko-based non-Firefox browsers (e.g. Librewolf)
 net-misc/gerbera:curl - Support HTTP media sources (e.g. internet radio)
 net-misc/gerbera:exiv2 - Use media-gfx/exiv2 to extract EXIF information
@@ -8275,6 +8278,7 @@ sys-auth/sssd:openid - Add support for login via OpenID Connect, such as Keycloa
 sys-auth/sssd:passkey - Add support for FIDO2 passkeys"
 sys-auth/sssd:samba - Add Privileged Attribute Certificate Support for Kerberos
 sys-auth/sssd:systemtap - Enable SystemTap/DTrace tracing
+sys-block/di:rpc - Enable remote NFS quota support
 sys-block/f3:extra - Build the additional f3probe, f3brew and f3fix utility (requires sys-block/parted and virtual/udev)
 sys-block/fio:aio - Enable AIO ioengine
 sys-block/fio:curl - Enable HTTP engine for S3 and WebDav support support via net-misc/curl
@@ -8618,6 +8622,7 @@ sys-fs/zfs-auto-snapshot:default-exclude - Only take snapshots of datasets with 
 sys-fs/zfs-kmod:dist-kernel-cap - Prevents upgrading to an unsupported kernel version when combined with USE=dist-kernel
 sys-fs/zfs-kmod:rootfs - Pull dependencies and check kernel options required for root-on-zfs
 sys-kernel/asahi-sources:symlink - Automatically symlink the kernel sources to /usr/src/linux
+sys-kernel/dracut:asciidoctor - Build manpages using dev-ruby/asciidoctor instead of app-text/asciidoc.
 sys-kernel/dracut:dracut-cpio - Build the enhanced 'dracut-cpio' program
 sys-kernel/genkernel:firmware - Prefer system firmware sys-kernel/linux-firmware over local copy.
 sys-kernel/gentoo-kernel:hardened - Use selection of hardening options recommended by Kernel Self Protection Project
